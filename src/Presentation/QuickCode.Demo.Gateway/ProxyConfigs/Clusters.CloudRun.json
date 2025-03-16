@@ -5,7 +5,7 @@
         "clusterId": "auth-api",
         "destinations": {
           "destination1": {
-            "address": "https://demo-user-manager-module-7exu2rabtq-ew.a.run.app"
+            "address": "https://demo-user-manager-module-821209474183.europe-west1.run.app"
           }
         }
       },
@@ -13,7 +13,7 @@
         "clusterId": "user-manager-module-api",
         "destinations": {
           "destination1": {
-            "address": "https://demo-user-manager-module-7exu2rabtq-ew.a.run.app"
+            "address": "https://demo-user-manager-module-821209474183.europe-west1.run.app"
           }
         }
       },
@@ -21,7 +21,7 @@
         "clusterId": "email-manager-module-api",
         "destinations": {
           "destination1": {
-            "address": "https://demo-email-manager-module-7exu2rabtq-ew.a.run.app"
+            "address": "https://demo-email-manager-module-821209474183.europe-west1.run.app"
           }
         }
       },
@@ -29,7 +29,7 @@
         "clusterId": "sms-manager-module-api",
         "destinations": {
           "destination1": {
-            "address": "https://demo-sms-manager-module-7exu2rabtq-ew.a.run.app"
+            "address": "https://demo-sms-manager-module-821209474183.europe-west1.run.app"
           }
         }
       }
@@ -43,7 +43,7 @@
           "path": "api/auth/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -63,7 +63,7 @@
           "path": "api/user-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -83,7 +83,7 @@
           "path": "api/email-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -103,7 +103,7 @@
           "path": "api/sms-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"

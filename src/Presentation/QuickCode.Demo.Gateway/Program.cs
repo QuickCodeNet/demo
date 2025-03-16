@@ -359,7 +359,7 @@ IResult GetServicesHtml(HttpContext context)
     const string swaggerHtml = "/index.html";
     
     const string quickcodeBaseUrl = ".quickcode.net";
-    const string cloudRunBaseUrl = "-7exu2rabtq-ew.a.run.app";
+    const string cloudRunBaseUrl = "-821209474183.europe-west1.run.app";
 
     var displayUrl = context.Request.GetDisplayUrl();
     var isRewriteUrl = displayUrl.Contains(quickcodeBaseUrl);

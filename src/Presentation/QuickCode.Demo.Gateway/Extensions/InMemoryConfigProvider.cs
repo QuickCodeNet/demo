@@ -102,7 +102,7 @@ namespace QuickCode.Demo.Gateway.Extensions
                                 Hosts = new List<string>()
                                 {
                                     "localhost:6060",
-                                    $"{projectName.ToLowerInvariant()}-gateway-7exu2rabtq-ew.a.run.app",
+                                    $"{projectName.ToLowerInvariant()}-gateway-821209474183.europe-west1.run.app",
                                     $"{projectName.ToLowerInvariant()}-gateway.quickcode.net"
                                 }
                             },

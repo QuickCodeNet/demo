@@ -43,7 +43,7 @@
           "path": "api/auth/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -63,7 +63,7 @@
           "path": "api/user-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -83,7 +83,7 @@
           "path": "api/email-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
@@ -103,7 +103,7 @@
           "path": "api/sms-manager-module/{**catch-all}",
           "hosts": [
             "localhost:6060",
-            "demo-gateway-7exu2rabtq-ew.a.run.app",
+            "demo-gateway-821209474183.europe-west1.run.app",
             "demo-gateway",
             "quickcode-demo-gateway-api",
             "demo-gateway.quickcode.net"
