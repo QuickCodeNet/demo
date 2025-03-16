@@ -2,7 +2,7 @@ name: Demo Build and Deploy
 
 on:
   push:
-    branches: [ 'master' ]
+    branches: [ 'main' ]
 
 jobs:         
   event-listener-service:
