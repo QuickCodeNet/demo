@@ -163,7 +163,7 @@ void ConfigureEnvironmentVariables(IConfiguration configuration)
 
 Func<HttpContext, Func<Task>, Task> YarpMiddlewareKafkaManager(IServiceProvider services)
 {
-   return async (context, next) =>
+    return async (context, next) =>
     {
         try
         {
@@ -178,17 +178,21 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareKafkaManager(IServiceProvider 
             var stopwatch = Stopwatch.StartNew();
             try
             {
-                await next(); 
-                await KafkaHelper.SendKafkaMessageIfEventExists(services, memoryCache, kafkaProducer, context,
-                    stopwatch);
+                await next();
+                _ = Task.Run(async () =>
+                {
+                    await KafkaHelper.SendKafkaMessageIfEventExists(services, memoryCache, kafkaProducer, context, stopwatch);
+                });
             }
             catch (Exception ex)
             {
                 var kafkaEvent = await KafkaHelper.CheckKafkaEventExists(services, memoryCache, context);
                 if (kafkaEvent is not null)
                 {
-                    await KafkaHelper.SendErrorKafkaMessage(kafkaProducer, kafkaEvent.TopicName, context, stopwatch,
-                        ex);
+                    _ = Task.Run(async () =>
+                    {
+                        await KafkaHelper.SendErrorKafkaMessage(kafkaProducer, kafkaEvent.TopicName, context, stopwatch, ex);
+                    });
                 }
 
                 throw;
