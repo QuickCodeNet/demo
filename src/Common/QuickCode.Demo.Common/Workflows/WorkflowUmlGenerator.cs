@@ -21,8 +21,7 @@ public static class WorkflowUmlGenerator
         }
 
         var firstStep = workflow.Steps.First();
-        plantUml.AppendLine($"\nUser -> {Sanitize(firstStep.Key)} : {workflow.Description}");
-        plantUml.AppendLine($"activate {Sanitize(firstStep.Key)}");
+        plantUml.AppendLine($"\nUser -> {Sanitize(firstStep.Key)} ++: {workflow.Description}");
 
         foreach (var step in workflow.Steps)
         {
@@ -52,22 +51,20 @@ public static class WorkflowUmlGenerator
                 {
                     var actionName = Sanitize(transition.Action);
                     plantUml.AppendLine($"{transitionType} {transition.Condition}");
-                    plantUml.AppendLine($"{stepName} -> {actionName} : Call {actionName}");
-                    plantUml.AppendLine($"activate {actionName}");
+                    plantUml.AppendLine($"{stepName} -> {actionName} ++: Call {actionName}");
 
-                    if (workflow.Steps.ContainsKey(transition.Action))
-                    {
-                        plantUml.AppendLine($"deactivate {actionName}");
-                    }
+
+                    plantUml.AppendLine($"{actionName} --> {stepName} -- : Return {actionName}");
+
 
                     transitionType = "else";
                 }
 
                 plantUml.AppendLine("end");
             }
-
-            plantUml.AppendLine($"deactivate {stepName}");
+            
         }
+        plantUml.AppendLine($"\n{Sanitize(firstStep.Key)} --> User --: {workflow.Description}");
 
         plantUml.AppendLine("@enduml");
         return plantUml.ToString();

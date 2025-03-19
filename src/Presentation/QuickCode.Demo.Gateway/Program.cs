@@ -422,6 +422,7 @@ IResult GetServicesHtml(HttpContext context)
     fileContent = fileContent.Replace("<!--|@EVENT_LISTENER_URL@|-->", eventListenerUrl);
     fileContent = fileContent.Replace("<!--|@VERSION@|-->", $"{Assembly.GetExecutingAssembly().GetName().Version}");
     fileContent = fileContent.Replace("<!--|@IS_HTTPS@|-->", isHttpsText);
+    fileContent = fileContent.Replace("<!--|@DISPLAY_URL@|-->", displayUrl);
     
 
     return Results.Extensions.Html(@$"{fileContent}");
@@ -453,3 +454,4 @@ void SetApiKeyToClients(IApiPermissionGroupsClient apiPermissionGroupsClient, IA
     (apiPermissionGroupsClient as ClientBase)!.SetApiKey(configUserManagerApiKey);
     (apiMethodDefinitionsClient as ClientBase)!.SetApiKey(configUserManagerApiKey);
 }
+
