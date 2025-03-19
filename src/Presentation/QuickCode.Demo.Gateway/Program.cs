@@ -365,10 +365,15 @@ IResult GetServicesHtml(HttpContext context)
     const string quickcodeBaseUrl = ".quickcode.net";
     const string cloudRunBaseUrl = "-821209474183.europe-west1.run.app";
 
-    var forwardedHost = context.Request.Headers["X-Forwarded-Host"].FirstOrDefault();
-    var forwardedProto = context.Request.Headers["X-Forwarded-Proto"].FirstOrDefault() ?? "http";
+    var request = context.Request;
 
-    var displayUrl = $"{forwardedProto}://{forwardedHost}{context.Request.Path}{context.Request.QueryString}";
+
+    var scheme = request.Scheme;  
+    var host = request.Host.Value; 
+    var path = request.Path;  
+    var query = request.QueryString; 
+
+    var displayUrl = $"{scheme}://{host}{path}{query}";
     
     var isRewriteUrl = displayUrl.Contains(quickcodeBaseUrl);
     var portalUrl = isRewriteUrl ? portalUrlConfig!.Replace(cloudRunBaseUrl, quickcodeBaseUrl) : portalUrlConfig!;
