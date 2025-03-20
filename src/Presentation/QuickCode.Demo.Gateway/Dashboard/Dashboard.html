@@ -53,13 +53,12 @@
             <div class="col-12 col-xl-auto p-0 pe-4"><span class="h4 align-middle"><!--|@PROJECT_NAME@|--> Gateway Dashboard</span></div>
             <div class="col-6 col-xl-auto p-0 pe-2"><span class="align-middle"><!--|@ENVIRONMENT@|--> (<!--|@LAST_UPDATE@|-->)</span></div>
             <div class="col-6 col-xl-auto p-0 pe-3"><span class="align-middle"><!--|@VERSION@|--></span></div>
-            <div class="col-6 col-xl-auto p-0 pe-3"><span class="align-middle"><!--|@DISPLAY_URL@|--></span></div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row  pb-2 ps-0 pt-1">
             <div class="col-auto p-1 ">
-                <button onclick=" window.open('<!--|@PORTAL_URL@|-->', '_blank' ).focus();" type="button" class="btn btn-outline-info btn-sm">
+                <button id="portalButton" type="button" class="btn btn-outline-info btn-sm">
                     Portal
                 </button>
             </div>
@@ -113,13 +112,22 @@
 </html>
 
 <script>
-    $( document ).ready(function() {
-        console.log( "ready!" );
-        if(localStorage.getItem('lastTab') === null || localStorage.getItem('lastTab') === "" ) {
+    $(document).ready(function() {
+        console.log("ready!");
+
+        if (localStorage.getItem('lastTab') === null || localStorage.getItem('lastTab') === "") {
             localStorage.setItem('lastTab', "Gateway Api");
         }
 
         setSelectedTab();
+
+        const currentHost = window.location.hostname;
+        if (currentHost.startsWith("<!--|@PROJECT_NAME_LOWER@|-->-gateway")) {
+            const portalHost = currentHost.replace("<!--|@PROJECT_NAME_LOWER@|-->-gateway", "<!--|@PROJECT_NAME_LOWER@|-->-portal");
+            $("#portalButton").attr("onclick", `window.open('https://${portalHost}', '_blank').focus();`);
+        }else{
+            $("#portalButton").attr("onclick", `window.open('<!--|@PORTAL_URL@|-->', '_blank').focus();`);
+        }
     });
 
     function resizeIframe(obj) {

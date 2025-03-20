@@ -424,6 +424,7 @@ IResult GetServicesHtml(HttpContext context)
     fileContent = fileContent.Replace("<!--|@LAST_UPDATE@|-->", lastUpdateValue);
     fileContent = fileContent.Replace("<!--|@ENVIRONMENT@|-->", environmentName);
     fileContent = fileContent.Replace("<!--|@PROJECT_NAME@|-->", projectName);
+    fileContent = fileContent.Replace("<!--|@PROJECT_NAME_LOWER@|-->", projectName.ToLower());
     fileContent = fileContent.Replace("<!--|@PORTAL_URL@|-->", portalUrl);
     fileContent = fileContent.Replace("<!--|@ELASTIC_URL@|-->", elasticUrl);
     fileContent = fileContent.Replace("<!--|@GITHUB_URL@|-->", githubUrl);
@@ -431,9 +432,6 @@ IResult GetServicesHtml(HttpContext context)
     fileContent = fileContent.Replace("<!--|@EVENT_LISTENER_URL@|-->", eventListenerUrl);
     fileContent = fileContent.Replace("<!--|@VERSION@|-->", $"{Assembly.GetExecutingAssembly().GetName().Version}");
     fileContent = fileContent.Replace("<!--|@IS_HTTPS@|-->", isHttpsText);
-    fileContent = fileContent.Replace("<!--|@DISPLAY_URL@|-->", displayUrl);
-    
-
     return Results.Extensions.Html(@$"{fileContent}");
 }
 
