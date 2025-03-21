@@ -88,6 +88,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<EmailManagerModuleContracts.EmailSendersDto>(model.SelectedItem);
             var result = await pageClient.EmailSendersPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -99,6 +100,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<EmailManagerModuleContracts.EmailSendersDto>(model.SelectedItem);
             var result = await pageClient.EmailSendersPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -110,6 +112,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.EmailSendersDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -177,6 +180,12 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             var listResponse = (await pageClient.EmailSendersGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<EmailSendersObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"EmailSendersData";
+            cache.Remove(cacheKey);
         }
     }
 }

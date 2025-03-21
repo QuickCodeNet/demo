@@ -92,6 +92,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<UserManagerModuleContracts.AspNetUserRolesDto>(model.SelectedItem);
             var result = await pageClient.AspNetUserRolesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -103,6 +104,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<UserManagerModuleContracts.AspNetUserRolesDto>(model.SelectedItem);
             var result = await pageClient.AspNetUserRolesPutAsync(request.UserId, request.RoleId, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -114,6 +116,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.AspNetUserRolesDeleteAsync(request.UserId, request.RoleId);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -181,6 +184,12 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var listResponse = (await pageClient.AspNetUserRolesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<AspNetUserRolesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"AspNetUserRolesData";
+            cache.Remove(cacheKey);
         }
 
         private async Task<Dictionary<string, IEnumerable<SelectListItem>>> FillPageComboBoxes(Dictionary<string, IEnumerable<SelectListItem>> comboBoxList)

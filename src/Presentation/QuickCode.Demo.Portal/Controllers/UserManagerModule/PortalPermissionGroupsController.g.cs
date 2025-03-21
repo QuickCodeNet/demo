@@ -94,6 +94,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<UserManagerModuleContracts.PortalPermissionGroupsDto>(model.SelectedItem);
             var result = await pageClient.PortalPermissionGroupsPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -105,6 +106,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<UserManagerModuleContracts.PortalPermissionGroupsDto>(model.SelectedItem);
             var result = await pageClient.PortalPermissionGroupsPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -116,6 +118,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.PortalPermissionGroupsDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -183,6 +186,12 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var listResponse = (await pageClient.PortalPermissionGroupsGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<PortalPermissionGroupsObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"PortalPermissionGroupsData";
+            cache.Remove(cacheKey);
         }
 
         private async Task<Dictionary<string, IEnumerable<SelectListItem>>> FillPageComboBoxes(Dictionary<string, IEnumerable<SelectListItem>> comboBoxList)

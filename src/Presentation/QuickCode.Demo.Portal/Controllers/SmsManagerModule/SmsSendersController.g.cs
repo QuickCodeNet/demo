@@ -88,6 +88,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<SmsManagerModuleContracts.SmsSendersDto>(model.SelectedItem);
             var result = await pageClient.SmsSendersPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -99,6 +100,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<SmsManagerModuleContracts.SmsSendersDto>(model.SelectedItem);
             var result = await pageClient.SmsSendersPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -110,6 +112,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.SmsSendersDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -177,6 +180,12 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             var listResponse = (await pageClient.SmsSendersGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<SmsSendersObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"SmsSendersData";
+            cache.Remove(cacheKey);
         }
     }
 }

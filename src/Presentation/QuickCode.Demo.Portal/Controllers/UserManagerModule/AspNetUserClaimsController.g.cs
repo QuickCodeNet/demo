@@ -90,6 +90,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<UserManagerModuleContracts.AspNetUserClaimsDto>(model.SelectedItem);
             var result = await pageClient.AspNetUserClaimsPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -101,6 +102,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<UserManagerModuleContracts.AspNetUserClaimsDto>(model.SelectedItem);
             var result = await pageClient.AspNetUserClaimsPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -112,6 +114,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.AspNetUserClaimsDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -179,6 +182,12 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var listResponse = (await pageClient.AspNetUserClaimsGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<AspNetUserClaimsObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"AspNetUserClaimsData";
+            cache.Remove(cacheKey);
         }
 
         private async Task<Dictionary<string, IEnumerable<SelectListItem>>> FillPageComboBoxes(Dictionary<string, IEnumerable<SelectListItem>> comboBoxList)

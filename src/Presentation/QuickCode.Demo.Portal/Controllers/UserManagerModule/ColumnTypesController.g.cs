@@ -87,6 +87,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<UserManagerModuleContracts.ColumnTypesDto>(model.SelectedItem);
             var result = await pageClient.ColumnTypesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -98,6 +99,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<UserManagerModuleContracts.ColumnTypesDto>(model.SelectedItem);
             var result = await pageClient.ColumnTypesPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -109,6 +111,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.ColumnTypesDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -176,6 +179,12 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var listResponse = (await pageClient.ColumnTypesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<ColumnTypesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"ColumnTypesData";
+            cache.Remove(cacheKey);
         }
     }
 }

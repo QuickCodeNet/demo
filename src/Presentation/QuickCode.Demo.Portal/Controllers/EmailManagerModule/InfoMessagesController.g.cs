@@ -93,6 +93,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<EmailManagerModuleContracts.InfoMessagesDto>(model.SelectedItem);
             var result = await pageClient.InfoMessagesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -104,6 +105,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<EmailManagerModuleContracts.InfoMessagesDto>(model.SelectedItem);
             var result = await pageClient.InfoMessagesPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -115,6 +117,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.InfoMessagesDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -182,6 +185,12 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             var listResponse = (await pageClient.InfoMessagesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<InfoMessagesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"InfoMessagesData";
+            cache.Remove(cacheKey);
         }
 
         private async Task<Dictionary<string, IEnumerable<SelectListItem>>> FillPageComboBoxes(Dictionary<string, IEnumerable<SelectListItem>> comboBoxList)

@@ -87,6 +87,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<UserManagerModuleContracts.TableComboboxSettingsDto>(model.SelectedItem);
             var result = await pageClient.TableComboboxSettingsPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -98,6 +99,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<UserManagerModuleContracts.TableComboboxSettingsDto>(model.SelectedItem);
             var result = await pageClient.TableComboboxSettingsPutAsync(request.TableName, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -109,6 +111,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.TableComboboxSettingsDeleteAsync(request.TableName);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -176,6 +179,12 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var listResponse = (await pageClient.TableComboboxSettingsGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<TableComboboxSettingsObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"TableComboboxSettingsData";
+            cache.Remove(cacheKey);
         }
     }
 }

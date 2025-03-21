@@ -50,6 +50,7 @@ namespace QuickCode.Demo.Portal.Controllers
             Func<Task<ObservableCollection<T>>> getDataFunc,
             Func<T, bool> filterPredicate = null)
         {
+            var expireMinutes = 5;
             var cacheKey = $"{key}Data"; 
             var comboBoxList = new Dictionary<string, IEnumerable<SelectListItem>>();
             
@@ -58,7 +59,7 @@ namespace QuickCode.Demo.Portal.Controllers
                 cachedData = await getDataFunc();
 
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromMinutes(5));
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(expireMinutes));
 
                 cache.Set(cacheKey, cachedData, cacheEntryOptions);
             }

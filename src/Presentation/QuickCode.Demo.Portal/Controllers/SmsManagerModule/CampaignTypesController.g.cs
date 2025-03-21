@@ -88,6 +88,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<SmsManagerModuleContracts.CampaignTypesDto>(model.SelectedItem);
             var result = await pageClient.CampaignTypesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -99,6 +100,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<SmsManagerModuleContracts.CampaignTypesDto>(model.SelectedItem);
             var result = await pageClient.CampaignTypesPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -110,6 +112,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.CampaignTypesDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -177,6 +180,12 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             var listResponse = (await pageClient.CampaignTypesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<CampaignTypesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"CampaignTypesData";
+            cache.Remove(cacheKey);
         }
     }
 }

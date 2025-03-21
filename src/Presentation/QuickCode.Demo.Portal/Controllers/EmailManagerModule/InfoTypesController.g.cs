@@ -88,6 +88,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<EmailManagerModuleContracts.InfoTypesDto>(model.SelectedItem);
             var result = await pageClient.InfoTypesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -99,6 +100,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<EmailManagerModuleContracts.InfoTypesDto>(model.SelectedItem);
             var result = await pageClient.InfoTypesPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -110,6 +112,7 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.InfoTypesDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -177,6 +180,12 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
             var listResponse = (await pageClient.InfoTypesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<InfoTypesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"InfoTypesData";
+            cache.Remove(cacheKey);
         }
     }
 }

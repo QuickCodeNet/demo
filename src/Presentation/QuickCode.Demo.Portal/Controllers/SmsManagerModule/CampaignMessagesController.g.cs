@@ -93,6 +93,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var selected = mapper.Map<SmsManagerModuleContracts.CampaignMessagesDto>(model.SelectedItem);
             var result = await pageClient.CampaignMessagesPostAsync(selected);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -104,6 +105,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = mapper.Map<SmsManagerModuleContracts.CampaignMessagesDto>(model.SelectedItem);
             var result = await pageClient.CampaignMessagesPutAsync(request.Id, request);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -115,6 +117,7 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             ModelBinder(ref model);
             var request = model.SelectedItem;
             var result = await pageClient.CampaignMessagesDeleteAsync(request.Id);
+            ClearCache();
             SetModelBinder(ref model);
             return Ok(result);
         }
@@ -182,6 +185,12 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
             var listResponse = (await pageClient.CampaignMessagesGetAsync(model.CurrentPage, model.PageSize));
             model.List = mapper.Map<List<CampaignMessagesObj>>(listResponse.ToList());
             return model;
+        }
+
+        public void ClearCache()
+        {
+            var cacheKey = $"CampaignMessagesData";
+            cache.Remove(cacheKey);
         }
 
         private async Task<Dictionary<string, IEnumerable<SelectListItem>>> FillPageComboBoxes(Dictionary<string, IEnumerable<SelectListItem>> comboBoxList)
