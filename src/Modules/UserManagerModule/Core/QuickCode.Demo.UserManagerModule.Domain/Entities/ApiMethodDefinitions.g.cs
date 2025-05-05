@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
+using QuickCode.Demo.Common;
+
+namespace QuickCode.Demo.UserManagerModule.Domain.Entities;
+
+[Table("ApiMethodDefinitions")]
+public partial class ApiMethodDefinitions  : BaseSoftDeletable 
+{
+	[Key]
+	[Column("Id")]
+	public int Id { get; set; }
+	
+	[Column("HttpMethod")]
+	[StringLength(250)]
+	public string HttpMethod { get; set; }
+	
+	[Column("ControllerName")]
+	[StringLength(250)]
+	public string ControllerName { get; set; }
+	
+	[Column("UrlPath")]
+	[StringLength(250)]
+	public string UrlPath { get; set; }
+	
+	[Column("ItemType")]
+	[StringLength(1)]
+	public string ItemType { get; set; }
+	
+	[InverseProperty("ApiMethodDefinition")]
+	public virtual ICollection<KafkaEvents> KafkaEvents { get; } = new List<KafkaEvents>();
+
+
+	[InverseProperty("ApiMethodDefinition")]
+	public virtual ICollection<ApiPermissionGroups> ApiPermissionGroups { get; } = new List<ApiPermissionGroups>();
+
+}
+

@@ -1,0 +1,43 @@
+using System;
+using System.Linq;
+using MediatR;
+using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using QuickCode.Demo.Common.Models;
+using QuickCode.Demo.UserManagerModule.Domain.Entities;
+using QuickCode.Demo.UserManagerModule.Application.Interfaces.Repositories;
+using QuickCode.Demo.UserManagerModule.Application.Dtos;
+
+namespace QuickCode.Demo.UserManagerModule.Application.Features
+{
+    public class ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTQuery : IRequest<Response<ApiMethodDefinitionsApiPermissionGroups_KEY_RESTResponseDto>>
+    {
+        public int ApiMethodDefinitionsId { get; set; }
+        public int ApiPermissionGroupsId { get; set; }
+
+        public ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTQuery(int apiMethodDefinitionsId, int apiPermissionGroupsId)
+        {
+            this.ApiMethodDefinitionsId = apiMethodDefinitionsId;
+            this.ApiPermissionGroupsId = apiPermissionGroupsId;
+        }
+
+        public class ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTHandler : IRequestHandler<ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTQuery, Response<ApiMethodDefinitionsApiPermissionGroups_KEY_RESTResponseDto>>
+        {
+            private readonly ILogger<ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTHandler> _logger;
+            private readonly IApiMethodDefinitionsRepository _repository;
+            public ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTHandler(ILogger<ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTHandler> logger, IApiMethodDefinitionsRepository repository)
+            {
+                _logger = logger;
+                _repository = repository;
+            }
+
+            public async Task<Response<ApiMethodDefinitionsApiPermissionGroups_KEY_RESTResponseDto>> Handle(ApiMethodDefinitionsApiMethodDefinitionsApiPermissionGroups_KEY_RESTQuery request, CancellationToken cancellationToken)
+            {
+                var returnValue = await _repository.ApiMethodDefinitionsApiPermissionGroups_KEY_RESTAsync(request.ApiMethodDefinitionsId, request.ApiPermissionGroupsId);
+                return returnValue.ToResponse();
+            }
+        }
+    }
+}

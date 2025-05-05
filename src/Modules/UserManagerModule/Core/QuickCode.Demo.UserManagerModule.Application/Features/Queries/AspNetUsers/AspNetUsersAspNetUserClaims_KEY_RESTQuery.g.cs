@@ -1,0 +1,43 @@
+using System;
+using System.Linq;
+using MediatR;
+using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using QuickCode.Demo.Common.Models;
+using QuickCode.Demo.UserManagerModule.Domain.Entities;
+using QuickCode.Demo.UserManagerModule.Application.Interfaces.Repositories;
+using QuickCode.Demo.UserManagerModule.Application.Dtos;
+
+namespace QuickCode.Demo.UserManagerModule.Application.Features
+{
+    public class AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTQuery : IRequest<Response<AspNetUsersAspNetUserClaims_KEY_RESTResponseDto>>
+    {
+        public string AspNetUsersId { get; set; }
+        public int AspNetUserClaimsId { get; set; }
+
+        public AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTQuery(string aspNetUsersId, int aspNetUserClaimsId)
+        {
+            this.AspNetUsersId = aspNetUsersId;
+            this.AspNetUserClaimsId = aspNetUserClaimsId;
+        }
+
+        public class AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTHandler : IRequestHandler<AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTQuery, Response<AspNetUsersAspNetUserClaims_KEY_RESTResponseDto>>
+        {
+            private readonly ILogger<AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTHandler> _logger;
+            private readonly IAspNetUsersRepository _repository;
+            public AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTHandler(ILogger<AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTHandler> logger, IAspNetUsersRepository repository)
+            {
+                _logger = logger;
+                _repository = repository;
+            }
+
+            public async Task<Response<AspNetUsersAspNetUserClaims_KEY_RESTResponseDto>> Handle(AspNetUsersAspNetUsersAspNetUserClaims_KEY_RESTQuery request, CancellationToken cancellationToken)
+            {
+                var returnValue = await _repository.AspNetUsersAspNetUserClaims_KEY_RESTAsync(request.AspNetUsersId, request.AspNetUserClaimsId);
+                return returnValue.ToResponse();
+            }
+        }
+    }
+}
