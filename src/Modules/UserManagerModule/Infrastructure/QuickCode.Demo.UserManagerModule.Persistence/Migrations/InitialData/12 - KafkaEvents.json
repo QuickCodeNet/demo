@@ -1,0 +1,559 @@
+{
+"KafkaEvents": [
+  {
+    "ApiMethodDefinitionId": 3,
+    "TopicName": "demo.user_manager_module.portal_menus.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 5,
+    "TopicName": "demo.user_manager_module.portal_menus.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 6,
+    "TopicName": "demo.user_manager_module.portal_menus.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 9,
+    "TopicName": "demo.user_manager_module.column_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 11,
+    "TopicName": "demo.user_manager_module.column_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 12,
+    "TopicName": "demo.user_manager_module.column_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 17,
+    "TopicName": "demo.user_manager_module.portal_permission_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 19,
+    "TopicName": "demo.user_manager_module.portal_permission_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 20,
+    "TopicName": "demo.user_manager_module.portal_permission_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 25,
+    "TopicName": "demo.user_manager_module.portal_permissions.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 27,
+    "TopicName": "demo.user_manager_module.portal_permissions.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 28,
+    "TopicName": "demo.user_manager_module.portal_permissions.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 35,
+    "TopicName": "demo.user_manager_module.api_method_definitions.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 37,
+    "TopicName": "demo.user_manager_module.api_method_definitions.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 38,
+    "TopicName": "demo.user_manager_module.api_method_definitions.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 43,
+    "TopicName": "demo.user_manager_module.topic_workflows.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 45,
+    "TopicName": "demo.user_manager_module.topic_workflows.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 46,
+    "TopicName": "demo.user_manager_module.topic_workflows.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 54,
+    "TopicName": "demo.user_manager_module.kafka_events.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 56,
+    "TopicName": "demo.user_manager_module.kafka_events.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 57,
+    "TopicName": "demo.user_manager_module.kafka_events.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 62,
+    "TopicName": "demo.user_manager_module.api_permission_groups.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 64,
+    "TopicName": "demo.user_manager_module.api_permission_groups.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 65,
+    "TopicName": "demo.user_manager_module.api_permission_groups.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 70,
+    "TopicName": "demo.user_manager_module.portal_permission_groups.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 72,
+    "TopicName": "demo.user_manager_module.portal_permission_groups.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 73,
+    "TopicName": "demo.user_manager_module.portal_permission_groups.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 82,
+    "TopicName": "demo.user_manager_module.permission_groups.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 84,
+    "TopicName": "demo.user_manager_module.permission_groups.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 85,
+    "TopicName": "demo.user_manager_module.permission_groups.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 88,
+    "TopicName": "demo.user_manager_module.table_combobox_settings.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 90,
+    "TopicName": "demo.user_manager_module.table_combobox_settings.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 91,
+    "TopicName": "demo.user_manager_module.table_combobox_settings.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 98,
+    "TopicName": "demo.user_manager_module.asp_net_roles.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 100,
+    "TopicName": "demo.user_manager_module.asp_net_roles.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 101,
+    "TopicName": "demo.user_manager_module.asp_net_roles.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 115,
+    "TopicName": "demo.user_manager_module.asp_net_users.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 117,
+    "TopicName": "demo.user_manager_module.asp_net_users.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 118,
+    "TopicName": "demo.user_manager_module.asp_net_users.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 120,
+    "TopicName": "demo.user_manager_module.refresh_tokens.update_refresh_token.patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 123,
+    "TopicName": "demo.user_manager_module.refresh_tokens.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 125,
+    "TopicName": "demo.user_manager_module.refresh_tokens.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 126,
+    "TopicName": "demo.user_manager_module.refresh_tokens.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 129,
+    "TopicName": "demo.user_manager_module.asp_net_role_claims.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 131,
+    "TopicName": "demo.user_manager_module.asp_net_role_claims.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 132,
+    "TopicName": "demo.user_manager_module.asp_net_role_claims.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 135,
+    "TopicName": "demo.user_manager_module.asp_net_user_claims.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 137,
+    "TopicName": "demo.user_manager_module.asp_net_user_claims.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 138,
+    "TopicName": "demo.user_manager_module.asp_net_user_claims.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 141,
+    "TopicName": "demo.user_manager_module.asp_net_user_logins.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 143,
+    "TopicName": "demo.user_manager_module.asp_net_user_logins.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 144,
+    "TopicName": "demo.user_manager_module.asp_net_user_logins.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 147,
+    "TopicName": "demo.user_manager_module.asp_net_user_roles.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 149,
+    "TopicName": "demo.user_manager_module.asp_net_user_roles.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 150,
+    "TopicName": "demo.user_manager_module.asp_net_user_roles.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 153,
+    "TopicName": "demo.user_manager_module.asp_net_user_tokens.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 155,
+    "TopicName": "demo.user_manager_module.asp_net_user_tokens.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 156,
+    "TopicName": "demo.user_manager_module.asp_net_user_tokens.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 159,
+    "TopicName": "demo.email_manager_module.info_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 161,
+    "TopicName": "demo.email_manager_module.info_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 162,
+    "TopicName": "demo.email_manager_module.info_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 165,
+    "TopicName": "demo.email_manager_module.campaign_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 167,
+    "TopicName": "demo.email_manager_module.campaign_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 168,
+    "TopicName": "demo.email_manager_module.campaign_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 171,
+    "TopicName": "demo.email_manager_module.otp_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 173,
+    "TopicName": "demo.email_manager_module.otp_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 174,
+    "TopicName": "demo.email_manager_module.otp_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 179,
+    "TopicName": "demo.email_manager_module.otp_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 181,
+    "TopicName": "demo.email_manager_module.otp_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 182,
+    "TopicName": "demo.email_manager_module.otp_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 187,
+    "TopicName": "demo.email_manager_module.info_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 189,
+    "TopicName": "demo.email_manager_module.info_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 190,
+    "TopicName": "demo.email_manager_module.info_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 195,
+    "TopicName": "demo.email_manager_module.campaign_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 197,
+    "TopicName": "demo.email_manager_module.campaign_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 198,
+    "TopicName": "demo.email_manager_module.campaign_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 207,
+    "TopicName": "demo.email_manager_module.email_senders.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 209,
+    "TopicName": "demo.email_manager_module.email_senders.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 210,
+    "TopicName": "demo.email_manager_module.email_senders.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 213,
+    "TopicName": "demo.sms_manager_module.info_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 215,
+    "TopicName": "demo.sms_manager_module.info_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 216,
+    "TopicName": "demo.sms_manager_module.info_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 219,
+    "TopicName": "demo.sms_manager_module.campaign_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 221,
+    "TopicName": "demo.sms_manager_module.campaign_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 222,
+    "TopicName": "demo.sms_manager_module.campaign_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 225,
+    "TopicName": "demo.sms_manager_module.otp_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 227,
+    "TopicName": "demo.sms_manager_module.otp_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 228,
+    "TopicName": "demo.sms_manager_module.otp_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 233,
+    "TopicName": "demo.sms_manager_module.otp_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 235,
+    "TopicName": "demo.sms_manager_module.otp_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 236,
+    "TopicName": "demo.sms_manager_module.otp_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 241,
+    "TopicName": "demo.sms_manager_module.info_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 243,
+    "TopicName": "demo.sms_manager_module.info_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 244,
+    "TopicName": "demo.sms_manager_module.info_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 249,
+    "TopicName": "demo.sms_manager_module.campaign_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 251,
+    "TopicName": "demo.sms_manager_module.campaign_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 252,
+    "TopicName": "demo.sms_manager_module.campaign_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 261,
+    "TopicName": "demo.sms_manager_module.sms_senders.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 263,
+    "TopicName": "demo.sms_manager_module.sms_senders.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 264,
+    "TopicName": "demo.sms_manager_module.sms_senders.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 266,
+    "TopicName": "demo.user_manager_module.portal_permissions.update_portal_permission.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 268,
+    "TopicName": "demo.user_manager_module.api_method_definitions.update_api_permission.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 271,
+    "TopicName": "demo.auth.register.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 272,
+    "TopicName": "demo.auth.login.post",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionId": 273,
+    "TopicName": "demo.auth.validate.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 274,
+    "TopicName": "demo.auth.refresh.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 276,
+    "TopicName": "demo.auth.resendconfirmationemail.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 277,
+    "TopicName": "demo.auth.forgotpassword.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 278,
+    "TopicName": "demo.auth.resetpassword.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 279,
+    "TopicName": "demo.auth.manage.user2fa.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 281,
+    "TopicName": "demo.auth.manage.info.post",
+    "IsActive": false
+  }
+]
+}
