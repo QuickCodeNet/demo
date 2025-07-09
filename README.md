@@ -230,6 +230,7 @@ docker-compose up --build
 - On merge to `main`, Docker images are built and pushed to Google Container Registry.
 - **Automatic deployment to Google Cloud Run** is triggered after a successful build.
 - All secrets and environment variables are managed via **GitHub Secrets** and **GCP environment variables**.
+  ![GitHub Actions](docs/images/github-actions.png)
 
 **Example Workflow:**
 1. Developer pushes code to GitHub.
