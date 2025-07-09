@@ -31,11 +31,11 @@ It is designed for scalable, maintainable, and testable microservice architectur
 
 - **.NET 9** (C#)
 - **Entity Framework Core**
-- **PostgreSQL / SQL Server**
+- **PostgreSQL / SQL Server / MySQL Support**
 - **Docker & Docker Compose**
 - **Google Cloud Run**
 - **GitHub Actions (CI/CD)**
-- **MediatR (or custom mediator) for CQRS**
+- **Custom mediator for CQRS**
 - **Swagger/OpenAPI**
 - **Serilog, HealthChecks, etc.**
 
@@ -76,18 +76,18 @@ QuickCode projects include ready-to-use management dashboards for both Gateway a
 - **Gateway Dashboard:**
     - Central entry point for all APIs and modules
     - Health checks, Swagger Map, config management, and quick links to Portal, Kibana, Kafdrop, and GitHub
-    - Example (Demo): [https://demo-gateway.quickcode.net](https://demo-gateway.quickcode.net)
     - Your project: e.g. [https://demo-gateway.quickcode.net](https://demo-gateway.quickcode.net)
-
+    ![Gateway Dashboard](docs/images/quickcode-gateway-dashboard.png)
+  
 - **Portal Dashboard:**
     - Admin interface for managing all tables, users, roles, permissions, and workflows
     - Secure login, user management, and event/workflow configuration
     - Demo user credentials:
       - Username : demo@quickcode.net
       - Password : String1!
-    - Example (Demo): [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
     - Your project: e.g. [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
-
+    ![Portal Login](docs/images/quickcode-portal-login.png)
+  
 These dashboards are automatically deployed and available for every generated project, providing a unified and professional management experience out of the box.
 
 ### 3.4. Domain & Routing
@@ -95,14 +95,12 @@ These dashboards are automatically deployed and available for every generated pr
 All services and modules are deployed to Google Cloud Run and exposed via user-friendly, corporate domains ending with `.quickcode.net` for a seamless and professional experience.
 
 - **Gateway:**
-    - e.g. `https://demo-gateway.quickcode.net`
-    - Demo: [https://demo-gateway.quickcode.net](https://demo-gateway.quickcode.net)
+    - link: [https://demo-gateway.quickcode.net](https://demo-gateway.quickcode.net)
 - **Portal:**
-    - e.g. `https://demo-portal.quickcode.net`
-    - Demo: [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
+    - link: [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
 - **Module APIs:**
-    - e.g. `https://demo-user-manager-module.quickcode.net`, `https://demo-email-manager-module.quickcode.net`
-    - Demo: `https://demo-user-manager-module.quickcode.net`, etc.
+    - link: [https://demo-user-manager-modul.quickcode.net](https://demo-user-manager-modul.quickcode.net)
+    - etc.
 
 #### Gateway Routing
 - The Gateway automatically routes requests to the correct module API based on the path and host.
@@ -133,6 +131,38 @@ All services and modules are deployed to Google Cloud Run and exposed via user-f
 ```
 
 This ensures all APIs and dashboards are accessible via clean, memorable URLs, both in demo and production environments.
+
+### 3.5. Advanced Features
+
+#### Gateway API Monitoring & Kafka Integration
+![API Gateway & Monitoring](docs/images/quickcode-gateway-dashboard.png)
+- **API Call Tracking:** Every API call passing through the Gateway is monitored and logged
+- **Predefined Topics:** Kafka integration with predefined topics for different types of API calls
+- **Real-time Monitoring:** Track API performance, usage patterns, and system health
+- **Event Streaming:** All API events are streamed to Kafka for real-time processing
+
+#### Custom Workflows with YAML Configuration
+![Workflow Editor](docs/images/workflow-editor.png)
+- **YAML-based Workflow Definition:** Create custom workflows using simple YAML configuration
+- **Endpoint Integration:** Workflows can trigger API calls to any endpoint
+- **Topic-based Processing:** Workflows can subscribe to Kafka topics and process events
+- **Dynamic Execution:** Workflows can be modified and deployed without code changes
+
+#### User Group-Based Api Management
+![Api User Management](docs/images/api-permission-manager.png)
+- **Endpoint-Level Permissions:** Configure access control for each API endpoint based on user groups
+- **Portal Page Management:** Granular control over portal pages and CRUD operations per user group
+- **Dynamic Authorization:** Real-time permission updates without system restart
+- **Audit Trail:** Complete logging of all permission changes and access attempts
+
+#### Management Screens
+![Portal Permission Management](docs/images/portal-permission-manager.png)
+- **Gateway Management:** Configure API routes, permissions, and monitoring settings
+- **Portal Management:** Manage user groups, page access, and CRUD permissions
+- **Workflow Management:** Create, edit, and monitor custom workflows
+- **Kafka Topic Management:** Monitor and configure Kafka topics and event processing
+
+These features provide enterprise-level control and monitoring capabilities, making the system suitable for large-scale deployments with complex permission requirements.
 
 ---
 
