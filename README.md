@@ -2,9 +2,17 @@
 
 [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/)
 [![Docker](https://img.shields.io/badge/Docker-✓-green.svg)](https://www.docker.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-✓-purple.svg)](https://github.com/features/actions)
 [![Cloud Run](https://img.shields.io/badge/Google%20Cloud%20Run-✓-orange.svg)](https://cloud.google.com/run)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-✓-blue.svg)](https://www.postgresql.org/)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-✓-red.svg)](https://www.microsoft.com/sql-server)
+[![MySQL](https://img.shields.io/badge/MySQL-✓-orange.svg)](https://www.mysql.com/)
+[![Kafka](https://img.shields.io/badge/Apache%20Kafka-✓-black.svg)](https://kafka.apache.org/)
+[![Elasticsearch](https://img.shields.io/badge/Elasticsearch-✓-yellow.svg)](https://www.elastic.co/elasticsearch)
+[![Kibana](https://img.shields.io/badge/Kibana-✓-blue.svg)](https://www.elastic.co/kibana)
+[![Entity Framework](https://img.shields.io/badge/Entity%20Framework-✓-green.svg)](https://docs.microsoft.com/ef/)
+[![CQRS](https://img.shields.io/badge/CQRS-✓-purple.svg)](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ## Table of Contents
 
 1. [About the Solution](#about-the-solution)
