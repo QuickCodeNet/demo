@@ -42,8 +42,11 @@
     - [7.1. Environment Variables & Secrets](#71-environment-variables--secrets)
     - [7.2. Code Quality & Standards](#72-code-quality--standards)
     - [7.3. Contributing](#73-contributing)
-8. [FAQ](#faq)
-9. [Contact](#contact)
+8. [FAQ](#8-faq)
+    - [How do I add a new module?](#how-do-i-add-a-new-module)
+    - [How do I update secrets?](#how-do-i-update-secrets)
+    - [How do I troubleshoot a failing service?](#how-do-i-troubleshoot-a-failing-service)
+9. [Contact](#9-contact)
 
 ---
 
