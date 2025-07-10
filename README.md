@@ -1,8 +1,7 @@
-# 🚀 Demo - Microservice Generator Platform
+# 🚀 Demo - Generated Microservice Platform
 
-> **Modular .NET 9 Microservices Architecture**  
-
-> *Generated with [QuickCode.net](https://quickcode.net) Microservice Generator • Deployed on Google Cloud Run • CI/CD with GitHub Actions • Containerized with Docker • Event-driven with Kafka • Monitored with Elasticsearch & Kibana*
+> **Ready-to-Deploy Microservices**  
+> *Generated with [QuickCode.Net](https://quickcode.net) • Deployed on Google Cloud Run • CI/CD with GitHub Actions • Containerized with Docker • Event-driven with Kafka • Monitored with Elasticsearch & Kibana*
 
 > **Design, Visualize, Code, Deploy**
 
@@ -20,6 +19,8 @@
 [![CQRS](https://img.shields.io/badge/CQRS-✓-purple.svg)](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ## Table of Contents
+
+- [Onboarding Checklist](#onboarding-checklist)
 
 1. [About the Solution](#about-the-solution)
 2. [Technologies & Stack](#technologies--stack)
@@ -47,6 +48,86 @@
     - [How do I update secrets?](#how-do-i-update-secrets)
     - [How do I troubleshoot a failing service?](#how-do-i-troubleshoot-a-failing-service)
 9. [Contact](#9-contact)
+
+---
+
+## 🚀 Onboarding Checklist
+
+### 1. Install Prerequisites
+- [ ] **Docker Desktop** (or Docker Engine) is installed and running  
+  [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [ ] **.NET 9 SDK** is installed  
+  [Download .NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- [ ] **Git** is installed  
+  [Download Git](https://git-scm.com/downloads)
+
+### 2. Clone the Repository
+- [ ] Open a terminal and run:
+  ```bash
+  git clone https://github.com/QuickCodeNet/demo.git
+  ```
+
+  ```bash
+  cd demo
+  ```
+
+### 3. Configure Environment Variables
+- [ ] If required, copy `.env.example` to `.env` and fill in any necessary secrets or API keys  
+  (If `.env.example` does not exist, check the README or ask the project owner for required environment variables.)
+
+### 4. Build and Start the Project
+- [ ] Start all services with Docker:
+    - On **macOS/Linux**:
+      ```bash
+      docker compose up --build
+      ```
+    - On **Windows**:
+      ```bash
+      docker-compose up --build
+      ```
+- [ ] Wait until all containers are up and healthy (check terminal output for errors).
+
+### 5. Access the Application
+- [ ] Open your browser and go to:
+    - **Portal:** [http://localhost:6020](http://localhost:6020)
+    - **Gateway:** [http://localhost:6060](http://localhost:6060)
+- [ ] Log in to the Portal using demo credentials (if provided):
+    - **Username:** demo@quickcode.net
+    - **Password:** String1!
+
+### 6. Run Tests and Check Code Coverage
+- [ ] In a new terminal, run all tests:
+  ```bash
+  dotnet test QuickCode.Demo.Docker.sln
+  ```
+- [ ] Generate a code coverage report:
+  ```bash
+  ./run-coverage-report.sh
+  ```
+- [ ] Open `coverage-report/index.html` in your browser to review the results.
+
+### 7. Explore the System
+- [ ] Visit the **Gateway Dashboard** and check available modules and health checks.
+- [ ] In the **Portal**, try user, role, permission, and workflow management features.
+- [ ] Review logs and monitoring dashboards (Kibana, Elastic) if available.
+
+### 8. Development Workflow
+- [ ] Create a new branch for your feature or bugfix:
+  ```bash
+  git checkout -b feature/my-feature
+  ```
+- [ ] Make your changes, commit, and push:
+  ```bash
+  git add .
+  git commit -m "Describe your changes"
+  git push origin feature/my-feature
+  ```
+- [ ] Open a Pull Request on GitHub.
+
+### 9. CI/CD and Deployment
+- [ ] Check GitHub Actions for automated build and deployment status.
+- [ ] Review Cloud Run deployment logs if you have access.
+
 
 ---
 
@@ -109,17 +190,17 @@ QuickCode projects include ready-to-use management dashboards for both Gateway a
     - Central entry point for all APIs and modules
     - Health checks, Swagger Map, config management, and quick links to Portal, Kibana, Kafdrop, and GitHub
     - Your project: e.g. [https://demo-gateway.quickcode.net](https://demo-gateway.quickcode.net)
-    ![Gateway Dashboard](docs/images/quickcode-gateway-dashboard.png)
-  
+      ![Gateway Dashboard](docs/images/quickcode-gateway-dashboard.png)
+
 - **Portal Dashboard:**
     - Admin interface for managing all tables, users, roles, permissions, and workflows
     - Secure login, user management, and event/workflow configuration
     - Demo user credentials:
-      - Username : demo@quickcode.net
-      - Password : String1!
+        - Username : demo@quickcode.net
+        - Password : String1!
     - Your project: e.g. [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
-    ![Portal Login](docs/images/quickcode-portal-login.png)
-  
+      ![Portal Login](docs/images/quickcode-portal-login.png)
+
 These dashboards are automatically deployed and available for every generated project, providing a unified and professional management experience out of the box.
 
 ### 3.4. Domain & Routing
@@ -131,7 +212,7 @@ All services and modules are deployed to Google Cloud Run and exposed via user-f
 - **Portal:**
     - link: [https://demo-portal.quickcode.net](https://demo-portal.quickcode.net)
 - **Module APIs:**
-    - link: [https://demo-user-manager-modul.quickcode.net](https://demo-user-manager-modul.quickcode.net)
+    - link: [https://demo-user-manager-module.quickcode.net](https://demo-user-manager-module.quickcode.net)
     - etc.
 
 #### Gateway Routing
@@ -200,34 +281,23 @@ These features provide enterprise-level control and monitoring capabilities, mak
 
 ## 4. Setup & Run
 
-### 4.1. Running with Docker
+### 4.1. Quick Start with Docker
 
-#### On macOS and Linux
+**On macOS and Linux:**
 ```bash
 docker compose up --build
 ```
-> **Note:**
-> - On macOS and most modern Linux distributions, use `docker compose up --build` (with a space).
-> - Docker Compose v2 (the space version) is included with Docker Desktop and most recent Docker installations.
-    > [Install Docker Desktop](https://www.docker.com/products/docker-desktop/) if you haven't already.
 
-#### On Windows (or older Docker installations)
+**On Windows (or older Docker installations):**
 ```bash
 docker-compose up --build
 ```
-> **Note:**
-> - On Windows or with older Docker installations, use `docker-compose up --build` (with a dash).
-> - If you get an error, try the macOS/Linux command above.
 
-2. **Access the main services:**
-    - **Portal:** http://localhost:6020
-    - **Gateway:** http://localhost:6010
-    - **APIs:** Each module exposes its own API (see docker-compose for ports).
+**Access the services:**
+- **Portal:** http://localhost:6020
+- **Gateway:** http://localhost:6060
 
-3. **Stop all services:**
-   ```bash
-   docker-compose down
-   ```
+> **Note:** For detailed step-by-step instructions, see the [Onboarding Checklist](#onboarding-checklist) above.
 
 ### 4.2. Local Development
 
@@ -240,7 +310,7 @@ docker-compose up --build
 
 - **Unit & Integration Tests:**
   ```bash
-  dotnet test QuickCode.Demo.sln
+  dotnet test QuickCode.Demo.docker.sln
   ```
 - **Code Coverage:**
   ```bash
