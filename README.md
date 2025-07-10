@@ -1,4 +1,10 @@
-# Demo Solution
+# 🚀 Demo - Microservice Generator Platform
+
+> **Modular .NET 9 Microservices Architecture**  
+
+> *Generated with [QuickCode.net](https://quickcode.net) Microservice Generator • Deployed on Google Cloud Run • CI/CD with GitHub Actions • Containerized with Docker • Event-driven with Kafka • Monitored with Elasticsearch & Kibana*
+
+> **Design, Visualize, Code, Deploy**
 
 [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/)
 [![Docker](https://img.shields.io/badge/Docker-✓-green.svg)](https://www.docker.com/)
