@@ -1,12 +1,24 @@
 # Demo Solution
 
+[![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/)
+[![Docker](https://img.shields.io/badge/Docker-✓-green.svg)](https://www.docker.com/)
+[![Cloud Run](https://img.shields.io/badge/Google%20Cloud%20Run-✓-orange.svg)](https://cloud.google.com/run)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ## Table of Contents
 
 1. [About the Solution](#about-the-solution)
 2. [Technologies & Stack](#technologies--stack)
 3. [Solution & Module Structure](#solution--module-structure)
-    - [3.1. Solution Overview](#31-solution-overview)
+    - [3.1. Solution Overview & Architecture Diagram](#31-solution-overview--architecture-diagram)
     - [3.2. Module Descriptions](#32-module-descriptions)
+    - [3.3. Gateway & Portal Dashboards](#33-gateway--portal-dashboards)
+    - [3.4. Domain & Routing](#34-domain--routing)
+    - [3.5. Advanced Features](#35-advanced-features)
+        - [Gateway API Monitoring & Kafka Integration](#gateway-api-monitoring--kafka-integration)
+        - [Custom Workflows with YAML Configuration](#custom-workflows-with-yaml-configuration)
+        - [User Group-Based Api Management](#user-group-based-api-management)
+        - [Management Screens](#management-screens)
 4. [Setup & Run](#setup--run)
     - [4.1. Running with Docker](#41-running-with-docker)
     - [4.2. Local Development](#42-local-development)
@@ -17,6 +29,7 @@
     - [7.2. Code Quality & Standards](#72-code-quality--standards)
     - [7.3. Contributing](#73-contributing)
 8. [FAQ](#faq)
+9. [Contact](#contact)
 
 ---
 
@@ -43,7 +56,7 @@ It is designed for scalable, maintainable, and testable microservice architectur
 
 ## 3. Solution & Module Structure
 
-### 3.1. Solution Overview
+### 3.1. Solution Overview & Architecture Diagram
 
 ```
 demo/
@@ -62,6 +75,8 @@ demo/
   docker-compose.yml
   README.md
 ```
+- Architecture Diagram:
+  ![Architecture Diagram](docs/images/quickcode-architectural-uml.png)
 
 ### 3.2. Module Descriptions
 
@@ -275,5 +290,17 @@ docker-compose up --build
 **A:** Check logs with `docker-compose logs <service>`, and review health check endpoints.
 
 ---
+
+## 9. Contact
+
+**Project Owner:** Üzeyir Apaydın
+- LinkedIn: [linkedin.com/in/uzeyirapaydin](https://linkedin.com/in/uzeyirapaydin)
+- GitHub: [github.com/uzeyirapaydin](https://github.com/uzeyirapaydin) or [github.com/QuickCodeNet](https://github.com/QuickCodeNet)
+- Email: uzeyir@quickcode.net
+
+For enterprise solutions, collaboration, or technical discussions, please reach out.
+
+---
+
 
 **Feel free to reach out or open an issue for further questions!** 
