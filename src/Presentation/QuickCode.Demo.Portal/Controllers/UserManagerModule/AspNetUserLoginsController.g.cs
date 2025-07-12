@@ -148,19 +148,15 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
         {
             var model = GetModel<AspNetUserLoginsData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<AspNetUserLoginsData> PrepareModel(AspNetUserLoginsData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.AspNetUserLoginsCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.AspNetUserLoginsListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.AspNetUserLoginsCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.AspNetUserLoginsListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
 

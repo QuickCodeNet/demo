@@ -146,19 +146,15 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
         {
             var model = GetModel<InfoTypesData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<InfoTypesData> PrepareModel(InfoTypesData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.InfoTypesCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.InfoTypesListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.InfoTypesCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.InfoTypesListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
     }

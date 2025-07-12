@@ -146,19 +146,15 @@ namespace QuickCode.Demo.Portal.Controllers.SmsManagerModule
         {
             var model = GetModel<SmsSendersData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<SmsSendersData> PrepareModel(SmsSendersData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.SmsSendersCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.SmsSendersListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.SmsSendersCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.SmsSendersListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
     }

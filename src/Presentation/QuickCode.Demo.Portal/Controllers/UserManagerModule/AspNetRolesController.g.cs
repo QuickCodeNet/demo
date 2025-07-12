@@ -145,19 +145,15 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
         {
             var model = GetModel<AspNetRolesData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<AspNetRolesData> PrepareModel(AspNetRolesData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.AspNetRolesCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.AspNetRolesListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.AspNetRolesCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.AspNetRolesListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
     }

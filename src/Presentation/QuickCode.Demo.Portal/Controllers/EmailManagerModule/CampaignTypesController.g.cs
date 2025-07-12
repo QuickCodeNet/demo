@@ -146,19 +146,15 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
         {
             var model = GetModel<CampaignTypesData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<CampaignTypesData> PrepareModel(CampaignTypesData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.CampaignTypesCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.CampaignTypesListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.CampaignTypesCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.CampaignTypesListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
     }

@@ -145,19 +145,15 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
         {
             var model = GetModel<PermissionGroupsData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<PermissionGroupsData> PrepareModel(PermissionGroupsData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.PermissionGroupsCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.PermissionGroupsListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.PermissionGroupsCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.PermissionGroupsListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
     }

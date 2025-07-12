@@ -19,6 +19,9 @@ using QuickCode.Demo.Gateway.Models;
 using QuickCode.Demo.Gateway.Extensions;
 using QuickCode.Demo.Gateway.KafkaProducer;
 using Serilog;
+using QuickCode.Demo.Common.Middleware;
+using QuickCode.Demo.Gateway.Middleware;
+
 using InMemoryConfigProvider = QuickCode.Demo.Gateway.Extensions.InMemoryConfigProvider;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -76,15 +79,13 @@ void ConfigureMiddlewares()
         app.UseHsts();
     }
     
-    app.Use(async (context, next) =>
-    {
-        context.Response.Headers.TryAdd("X-Content-Type-Options", "nosniff");
-        context.Response.Headers.TryAdd("Referrer-Policy", "no-referrer");
-        context.Response.Headers.TryAdd("X-XSS-Protection", "1; mode=block");
-        //context.Response.Headers.TryAdd("X-Frame-Options", "DENY");
-        await next();
-    });
-
+    app.UseGatewaySecurityHeaders(); 
+    app.UseRateLimiting();
+    app.UseInputValidation();
+    app.UseSecurityLogging();
+    app.UseSecurityAudit();
+    app.UsePasswordPolicy();
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 

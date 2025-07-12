@@ -31,6 +31,7 @@ using OpenTelemetry.Trace;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Logs;
+using QuickCode.Demo.Common.Middleware;
 
 Dictionary<string, string> environmentVariableConfigMap = new()
 {
@@ -188,17 +189,16 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-    app.UseExceptionHandler("/error"); // Kendi hata endpoint’iniz varsa
+    app.UseExceptionHandler("/error"); 
     app.UseHsts();
 }
 
-app.Use(async (context, next) =>
-{
-    context.Response.Headers.TryAdd("X-Content-Type-Options", "nosniff");
-    context.Response.Headers.TryAdd("Referrer-Policy", "no-referrer");
-    context.Response.Headers.TryAdd("X-XSS-Protection", "1; mode=block");
-    await next();
-});
+app.UseSecurityHeaders();
+app.UseRateLimiting();
+app.UseInputValidation();
+app.UseSecurityLogging();
+app.UseSecurityAudit();
+app.UsePasswordPolicy();
 
 app.UseSwagger();
 app.UseSwaggerUI();

@@ -151,19 +151,15 @@ namespace QuickCode.Demo.Portal.Controllers.EmailManagerModule
         {
             var model = GetModel<OtpMessagesData>();
             model.CurrentPage = 1;
+            model.PageSize = PageSize;
             return await PrepareModel(model);
         }
 
         private async Task<OtpMessagesData> PrepareModel(OtpMessagesData model)
         {
-            if (model.List == null)
-            {
-                model.PageSize = PageSize;
-                model.NumberOfRecord = await pageClient.OtpMessagesCountAsync();
-                model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
-                model.List = (await pageClient.OtpMessagesListAsync(model.CurrentPage, PageSize)).ToList();
-            }
-
+            model.NumberOfRecord = await pageClient.OtpMessagesCountAsync();
+            model.TotalPage = (model.NumberOfRecord + PageSize - 1) / PageSize;
+            model.List = (await pageClient.OtpMessagesListAsync(model.CurrentPage, PageSize)).ToList();
             return model;
         }
 

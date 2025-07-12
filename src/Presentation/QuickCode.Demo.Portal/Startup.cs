@@ -31,6 +31,8 @@ using QuickCode.Demo.Portal.Helpers;
 using QuickCode.Demo.Portal.Helpers.Authorization;
 using QuickCode.Demo.Portal.Mapper;
 using QuickCode.Demo.Portal.ViewEngines;
+using QuickCode.Demo.Common.Middleware;
+using QuickCode.Demo.Portal.Middleware;
 
 namespace QuickCode.Demo.Portal
 {
@@ -136,6 +138,13 @@ namespace QuickCode.Demo.Portal
             app.UseResponseCaching();
             app.UseAuthorization();
             app.UseMiddleware<CustomExceptionHandlingMiddleware>();
+            
+            app.UsePortalSecurityHeaders();
+            app.UseRateLimiting();
+            app.UseInputValidation();
+            app.UseSecurityLogging();
+            app.UseSecurityAudit();
+            app.UsePasswordPolicy();
             
             app.UseStatusCodePages(async context =>
             {

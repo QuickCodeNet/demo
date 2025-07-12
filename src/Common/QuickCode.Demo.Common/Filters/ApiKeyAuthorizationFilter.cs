@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
@@ -25,7 +26,7 @@ public class ApiKeyAuthorizationFilter : IAuthorizationFilter
             context.Result = new BadRequestObjectResult("Api Key Missing! - Bad Request!");
         }
 
-        if (!_apiSecretKey.Equals(apiKey))
+        if (!string.Equals(_apiSecretKey, apiKey, StringComparison.Ordinal))
         {
             context.Result = new UnauthorizedObjectResult("Invalid Api Key");
         }
