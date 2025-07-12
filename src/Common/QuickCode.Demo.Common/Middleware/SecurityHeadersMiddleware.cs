@@ -43,6 +43,7 @@ public class SecurityHeadersMiddleware
             "https://cdn.jsdelivr.net; " +
             "img-src 'self' data: https:; " +
             "connect-src 'self'; " +
+            "frame-src 'self' http://localhost:* https://localhost:*; " +
             "frame-ancestors 'self';");
         
         // Additional security headers

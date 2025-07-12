@@ -407,7 +407,8 @@ IResult GetServicesHtml(HttpContext context)
     
     destinations.Add(new { ClusterId = "Event Listener Service", Address = $"{eventListenerUrl}/swagger/index.html" }!);
 
-    var tabsComboBoxHtml = destinations.Select((value, index) => $"<li><a data-toggle=\"tab\"  class=\"dropdown-item\" href=\"{value.Address}\">{value.ClusterId.KebabCaseToPascal()}</a></li>");
+    var tabsComboBoxHtml = destinations.Select((value, index) =>
+        $"<li><a id=\"{value.ClusterId.ToLower().Replace(" ", "_")}\" data-toggle=\"tab\"  class=\"dropdown-item\" href=\"{value.Address}\">{value.ClusterId.KebabCaseToPascal()}</a></li>");
 
     var lastUpdate = DateTime.UtcNow - InMemoryConfigProvider.LastUpdateDateTime;
     var lastUpdateValue = $"{lastUpdate.TotalSeconds:0}s ago";

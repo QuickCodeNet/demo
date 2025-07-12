@@ -124,9 +124,13 @@
         const currentHost = window.location.hostname;
         if (currentHost.startsWith("<!--|@PROJECT_NAME_LOWER@|-->-gateway")) {
             const portalHost = currentHost.replace("<!--|@PROJECT_NAME_LOWER@|-->-gateway", "<!--|@PROJECT_NAME_LOWER@|-->-portal");
+            const eventListenerService = currentHost.replace("<!--|@PROJECT_NAME_LOWER@|-->-gateway", "<!--|@PROJECT_NAME_LOWER@|-->-event-listener-service");
             $("#portalButton").attr("onclick", `window.open('https://${portalHost}', '_blank').focus();`);
-        }else{
-            $("#portalButton").attr("onclick", `window.open('<!--|@PORTAL_URL@|-->', '_blank').focus();`);
+            $("#event_listener_service").attr("href", `https://${eventListenerService}/swagger/index.html`);
+        }
+        else
+        {
+            $("#portalButton").attr("onclick",  `window.open('<!--|@PORTAL_URL@|-->', '_blank').focus();`);
         }
     });
 
