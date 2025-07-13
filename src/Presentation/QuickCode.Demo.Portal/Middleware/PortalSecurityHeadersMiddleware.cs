@@ -50,7 +50,7 @@ public class PortalSecurityHeadersMiddleware
             "https://cdn.jsdelivr.net; " +
             "img-src 'self' data: https:; " +
             "connect-src 'self'; " +
-            "frame-src 'self' http://localhost:* https://localhost:* https://template0-*.quickcode.net https://demo-*-821209474183.europe-west1.run.app; " +
+            "frame-src 'self' http://localhost:* https://localhost:* https://demo-*.quickcode.net https://demo-*-821209474183.europe-west1.run.app; " +
             "frame-ancestors 'none';");
         
         // Additional security headers
