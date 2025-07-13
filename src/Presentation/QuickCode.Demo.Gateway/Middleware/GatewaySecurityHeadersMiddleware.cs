@@ -42,7 +42,7 @@ public class GatewaySecurityHeadersMiddleware
             "https://cdn.jsdelivr.net; " +
             "img-src 'self' data: https:; " +
             "connect-src 'self'; " +
-            "frame-src 'self' http://localhost:* https://localhost:* https://demo-*.quickcode.net https://demo-*-821209474183.europe-west1.run.app; " +
+            "frame-src 'self' http://localhost:* https://localhost:* https://*.quickcode.net https://*.europe-west1.run.app; " +
             "frame-ancestors 'self';"); // For Swagger iframe 
         
         // Additional security headers
