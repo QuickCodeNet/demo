@@ -113,7 +113,6 @@ services:
       - ASPNETCORE_ENVIRONMENT=Local
       - ASPNETCORE_URLS=http://+
     ports:
-      - "6100:80"
       - "${EVENT_LISTENER_PORT:-6100}:80"
       
 volumes:

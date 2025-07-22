@@ -11,6 +11,7 @@ using QuickCode.Demo.Common.Nswag;
 using QuickCode.Demo.Common.Models;
 using QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts;
 using QuickCode.Demo.Portal.Models;
+using LoginRequest = QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts.LoginRequest;
 
 namespace QuickCode.Demo.Portal.Controllers
 {

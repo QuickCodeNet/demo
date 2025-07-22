@@ -325,6 +325,52 @@ docker-compose up --build
 
 ---
 
+## API Testing with Postman Collections
+
+Ready-to-use Postman collections are provided for all modules in this project. This enables you to quickly test and explore every API endpoint.
+
+### How to Use
+
+1. **Import All Collections:**
+    - In Postman, click **Import** and select all JSON files from the `src/postman_files` directory.
+    - You will see collections for the **User Manager API** and other modules (such as Email Manager Module, Sms Manager Module , etc.).
+
+2. **Authentication Flow:**
+    - Each collection contains an **Authentication** folder with a `Login` request.
+    - Run the `Login` request first.
+        - The test script in this request will automatically save the `access_token` (or `token`) to your Postman environment.
+
+3. **Environment Setup:**
+    - Make sure you have a Postman environment with a `token` variable (it will be set automatically after login).
+    - Optionally, set a `baseUrl` variable if your API base URL is different from the default.
+
+4. **Test Any Endpoint:**
+    - After logging in, you can immediately test any endpoint in any collection.
+    - All requests use the token automatically via the `Authorization: Bearer {{token}}` header.
+
+---
+
+### Example Workflow
+
+1. **Import all collections from `src/postman_files`.**
+2. **Select or create a Postman environment.**
+3. **Run the `Login` request in the `Authentication` folder of the User Manager API or any other module.**
+4. **The token is saved to the environment.**
+5. **You can now use all other endpoints in all collections without manually copying tokens.**
+
+---
+
+### Notes
+
+- All collections are automatically generated from the latest Swagger/OpenAPI definitions, ensuring they are always up to date.
+- If your token expires or you get a 401 error, simply re-run the `login` request to refresh your token.
+
+---
+
+**This setup makes onboarding, testing, and integration with your APIs fast and reliable for all developers and partners.**
+
+---
+
 ## 6. CI/CD & Cloud Run Deployment
 
 - **GitHub Actions** is used for CI/CD.

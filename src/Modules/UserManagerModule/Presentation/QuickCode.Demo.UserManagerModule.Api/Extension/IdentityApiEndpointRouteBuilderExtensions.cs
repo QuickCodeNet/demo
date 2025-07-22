@@ -23,6 +23,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using QuickCode.Demo.Common.Models;
 using QuickCode.Demo.UserManagerModule.Application.Features;
 using QuickCode.Demo.UserManagerModule.Persistence.Contexts;
 using AccessTokenResponse = Microsoft.AspNetCore.Authentication.BearerToken.AccessTokenResponse;
@@ -30,7 +31,6 @@ using ForgotPasswordRequest = Microsoft.AspNetCore.Identity.Data.ForgotPasswordR
 using InfoRequest = Microsoft.AspNetCore.Identity.Data.InfoRequest;
 using InfoResponse = Microsoft.AspNetCore.Identity.Data.InfoResponse;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
-using LoginRequest = Microsoft.AspNetCore.Identity.Data.LoginRequest;
 using RefreshRequest = Microsoft.AspNetCore.Identity.Data.RefreshRequest;
 using RefreshTokensDto = QuickCode.Demo.UserManagerModule.Application.Dtos.RefreshTokensDto;
 using RefreshTokensUpdateRefreshTokenRequestDto = QuickCode.Demo.UserManagerModule.Application.Dtos.RefreshTokensUpdateRefreshTokenRequestDto;
