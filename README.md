@@ -174,7 +174,7 @@ demo/
   README.md
 ```
 - Architecture Diagram:
-  ![Architecture Diagram](docs/images/quickcode-architectural-uml.png)
+  ![Architecture Diagram](https://www.quickcode.net/diagram/demo)
 
 ### 3.2. Module Descriptions
 
