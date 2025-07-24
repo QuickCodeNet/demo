@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http.Extensions;
 using QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts;
 using Microsoft.Extensions.Caching.Memory;
-using Newtonsoft.Json;
 using QuickCode.Demo.Common.Controllers;
 using Yarp.ReverseProxy.Transforms;
 using QuickCode.Demo.Common.Helpers;
@@ -22,6 +21,8 @@ using QuickCode.Demo.Gateway.KafkaProducer;
 using Serilog;
 using QuickCode.Demo.Common.Middleware;
 using QuickCode.Demo.Gateway.Middleware;
+using Newtonsoft.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 using InMemoryConfigProvider = QuickCode.Demo.Gateway.Extensions.InMemoryConfigProvider;
 
@@ -70,7 +71,24 @@ await app.RunAsync();
 
 void ConfigureMiddlewares()
 {
-    app.UseExceptionHandler("/error");
+    app.UseExceptionHandler(errorApp =>
+    {
+        errorApp.Run(async context =>
+        {
+            context.Response.StatusCode = 500;
+            context.Response.ContentType = "application/json";
+            
+            var errorResponse = new
+            {
+                error = "Internal Server Error - Gateway",
+                message = "An error occurred while processing your request",
+                statusCode = 500,
+                timestamp = DateTime.UtcNow
+            };
+            
+            await context.Response.WriteAsync(JsonSerializer.Serialize(errorResponse));
+        });
+    });
 
 	if (!app.Environment.IsDevelopment())
 	{
