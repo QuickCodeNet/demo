@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 namespace QuickCode.Demo.EmailManagerModule.Api.Controllers;
 
 [ApiController]
-[Route("error")]
+[Route("[controller]")]
 public class ErrorController : ControllerBase
 {
     private readonly IWebHostEnvironment _env;
@@ -19,7 +19,8 @@ public class ErrorController : ControllerBase
         _logger = logger;
     }
 
-    [Route("")]
+    [Route("/error")]
+    [HttpGet]  
     public IActionResult HandleError()
     {
         var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerFeature>();
