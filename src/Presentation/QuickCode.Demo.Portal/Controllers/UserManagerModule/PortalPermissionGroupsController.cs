@@ -24,7 +24,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var groups = await pagePermissionGroupsClient.PermissionGroupsListAsync();
             model.SelectedGroupId = groups.First().Id;
             model.ComboList = await FillPageComboBoxes(model.ComboList);
-            model.Items = (await pagePortalPermissionsClient.PortalPermissionsGetPortalPermissionsAsync(model.SelectedGroupId)).Value;
+            model.Items = await pagePortalPermissionsClient.PortalPermissionsGetPortalPermissionsAsync(model.SelectedGroupId);
             SetModelBinder(ref model);
             return View("PortalPermissionGroups", model);
         }
@@ -34,7 +34,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
         public async Task<IActionResult> GetGroupPermissions(GetPortalPermissionGroupData model)
         {
             ModelBinder(ref model);
-            model.Items = (await pagePortalPermissionsClient.PortalPermissionsGetPortalPermissionsAsync(model.SelectedGroupId)).Value;
+            model.Items = await pagePortalPermissionsClient.PortalPermissionsGetPortalPermissionsAsync(model.SelectedGroupId);
             SetModelBinder(ref model);
             return View("PortalPermissionGroups", model);
         }

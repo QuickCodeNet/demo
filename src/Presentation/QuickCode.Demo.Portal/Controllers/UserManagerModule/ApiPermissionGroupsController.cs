@@ -24,7 +24,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             var groups = await pagePermissionGroupsClient.PermissionGroupsListAsync();
             model.SelectedGroupId = groups.First().Id;
             model.ComboList = await FillPageComboBoxes(model.ComboList);
-            model.Items = (await pageApiMethodDefinitionsClient.ApiMethodDefinitionsGetApiPermissionsAsync(model.SelectedGroupId)).Value;
+            model.Items = await pageApiMethodDefinitionsClient.ApiMethodDefinitionsGetApiPermissionsAsync(model.SelectedGroupId);
             SetModelBinder(ref model);
             return View("ApiPermissionGroups", model);
         }
@@ -34,7 +34,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
         public async Task<IActionResult> GetModulePermissions(GetApiPermissionGroupData model)
         {
             ModelBinder(ref model);
-            model.Items = (await pageApiMethodDefinitionsClient.ApiMethodDefinitionsGetApiPermissionsAsync(model.SelectedGroupId)).Value;
+            model.Items = await pageApiMethodDefinitionsClient.ApiMethodDefinitionsGetApiPermissionsAsync(model.SelectedGroupId);
             SetModelBinder(ref model);
             return View("ApiPermissionGroups", model);
         }

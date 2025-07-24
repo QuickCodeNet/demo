@@ -1,13 +1,8 @@
-using QuickCode.Demo.UserManagerModule.Application;
 using QuickCode.Demo.UserManagerModule.Application.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using QuickCode.Demo.Common.Mediator;
-using Microsoft.Extensions.Logging; 
-using QuickCode.Demo.Common.Models;
 using QuickCode.Demo.UserManagerModule.Application.Features;
 using QuickCode.Demo.UserManagerModule.Application.Dtos;
 using QuickCode.Demo.UserManagerModule.Application.Features.Queries.PortalPermissionGroups;
@@ -17,14 +12,18 @@ namespace QuickCode.Demo.UserManagerModule.Api.Controllers
     public partial class PortalPermissionsController 
     {
 	    [HttpGet("get-portal-permissions/{permissionGroupId}")]
-        public async Task<Response<PortalPermissionGroupList>> GetPortalPermissions(int permissionGroupId)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PortalPermissionGroupList))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetPortalPermissions(int permissionGroupId)
         {
-            var returnValue = await mediator.Send(new PortalPermissionGroupsGetItemsQuery(permissionGroupId));
-            return returnValue;
+            var response = await mediator.Send(new PortalPermissionGroupsGetItemsQuery(permissionGroupId));
+            return Ok(response.Value);
         }
 
         [HttpPost("update-portal-permission")]
-		public async Task<Response<bool>> UpdatePortalPermission(UpdatePortalPermissionGroupRequest request)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+		public async Task<IActionResult> UpdatePortalPermission(UpdatePortalPermissionGroupRequest request)
         {
 			if (request.Value == 1)
             {
@@ -34,8 +33,8 @@ namespace QuickCode.Demo.UserManagerModule.Api.Controllers
                     PortalPermissionId = request.PortalPermissionId,
                     PortalPermissionTypeId = request.PortalPermissionTypeId
                 }));
-				
-				return new Response<bool>() { Value = response.Code == 0 };
+
+                return Ok(response.Code == 0);
             }
             else
             {
@@ -52,12 +51,12 @@ namespace QuickCode.Demo.UserManagerModule.Api.Controllers
                         Id = deleteItem.Id
                     }));
 					
-                    return new Response<bool>() { Value = deleteResponse.Value };
+                    return Ok(deleteResponse.Value);
                 }
 
             }
 
-            return new Response<bool>() { Value = false };
+            return Ok(false);
         }
     }
 }
