@@ -29,12 +29,12 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<ApiModulePermissionsResponse> ApiMethodDefinitionsGetApiPermissionsAsync(int permissionGroupId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiModulePermissions> ApiMethodDefinitionsGetApiPermissionsAsync(int permissionGroupId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BooleanResponse> ApiMethodDefinitionsUpdateApiPermissionAsync(UpdateApiPermissionGroupRequest body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<bool> ApiMethodDefinitionsUpdateApiPermissionAsync(UpdateApiPermissionGroupRequest body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -559,6 +559,17 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial interface IErrorClient
+    {
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task ErrorHandleErrorAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial interface IKafkaEventsClient
     {
 
@@ -774,12 +785,12 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<PortalPermissionGroupListResponse> PortalPermissionsGetPortalPermissionsAsync(int permissionGroupId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PortalPermissionGroupList> PortalPermissionsGetPortalPermissionsAsync(int permissionGroupId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BooleanResponse> PortalPermissionsUpdatePortalPermissionAsync(UpdatePortalPermissionGroupRequest body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<bool> PortalPermissionsUpdatePortalPermissionAsync(UpdatePortalPermissionGroupRequest body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -1257,46 +1268,6 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<ApiModulePermissions>(data, options);
-
-        }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ApiModulePermissionsResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("code")]
-        public int Code { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("value")]
-        public ApiModulePermissions Value { get; set; }
-
-        public string ToJson()
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Serialize(this, options);
-
-        }
-        public static ApiModulePermissionsResponse FromJson(string data)
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Deserialize<ApiModulePermissionsResponse>(data, options);
 
         }
 
@@ -2140,46 +2111,6 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BooleanResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("code")]
-        public int Code { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("value")]
-        public bool Value { get; set; }
-
-        public string ToJson()
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Serialize(this, options);
-
-        }
-        public static BooleanResponse FromJson(string data)
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Deserialize<BooleanResponse>(data, options);
-
-        }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ColumnTypesDto
     {
 
@@ -2557,15 +2488,30 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class LoginRequest
     {
+        /// <summary>
+        /// Email address of the user
+        /// </summary>
 
         [System.Text.Json.Serialization.JsonPropertyName("email")]
-        public string Email { get; set; }
+        public string Email { get; set; } = "demo@quickcode.net";
+
+        /// <summary>
+        /// User's password
+        /// </summary>
 
         [System.Text.Json.Serialization.JsonPropertyName("password")]
-        public string Password { get; set; }
+        public string Password { get; set; } = "String1!";
+
+        /// <summary>
+        /// Two-factor authentication code, if applicable
+        /// </summary>
 
         [System.Text.Json.Serialization.JsonPropertyName("twoFactorCode")]
         public string TwoFactorCode { get; set; }
+
+        /// <summary>
+        /// Two-factor recovery code, if applicable
+        /// </summary>
 
         [System.Text.Json.Serialization.JsonPropertyName("twoFactorRecoveryCode")]
         public string TwoFactorRecoveryCode { get; set; }
@@ -2889,46 +2835,6 @@ namespace QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<PortalPermissionGroupList>(data, options);
-
-        }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.2.0.0 (NJsonSchema v11.1.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class PortalPermissionGroupListResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("code")]
-        public int Code { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("value")]
-        public PortalPermissionGroupList Value { get; set; }
-
-        public string ToJson()
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Serialize(this, options);
-
-        }
-        public static PortalPermissionGroupListResponse FromJson(string data)
-        {
-
-            var options = new System.Text.Json.JsonSerializerOptions();
-
-            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
-            foreach(var converter in converters)
-                options.Converters.Add(converter);
-
-            return System.Text.Json.JsonSerializer.Deserialize<PortalPermissionGroupListResponse>(data, options);
 
         }
 

@@ -1361,6 +1361,19 @@
         }
       }
     },
+    "/error": {
+      "get": {
+        "tags": [
+          "Error"
+        ],
+        "operationId": "ErrorHandleError",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/email-manager-module/info-messages": {
       "get": {
         "tags": [

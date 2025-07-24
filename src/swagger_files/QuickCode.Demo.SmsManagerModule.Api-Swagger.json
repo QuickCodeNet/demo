@@ -722,6 +722,19 @@
         }
       }
     },
+    "/error": {
+      "get": {
+        "tags": [
+          "Error"
+        ],
+        "operationId": "ErrorHandleError",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/sms-manager-module/info-messages": {
       "get": {
         "tags": [

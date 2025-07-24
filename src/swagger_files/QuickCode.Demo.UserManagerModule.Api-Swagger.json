@@ -37,7 +37,17 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiModulePermissionsResponse"
+                  "$ref": "#/components/schemas/ApiModulePermissions"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }
@@ -76,7 +86,17 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/BooleanResponse"
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }
@@ -4617,6 +4637,19 @@
         }
       }
     },
+    "/error": {
+      "get": {
+        "tags": [
+          "Error"
+        ],
+        "operationId": "ErrorHandleError",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/user-manager-module/kafka-events": {
       "get": {
         "tags": [
@@ -6551,7 +6584,17 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PortalPermissionGroupListResponse"
+                  "$ref": "#/components/schemas/PortalPermissionGroupList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }
@@ -6590,7 +6633,17 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/BooleanResponse"
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }
@@ -8779,23 +8832,6 @@
         },
         "additionalProperties": false
       },
-      "ApiModulePermissionsResponse": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "value": {
-            "$ref": "#/components/schemas/ApiModulePermissions"
-          }
-        },
-        "additionalProperties": false
-      },
       "ApiPermissionGroupsDto": {
         "type": "object",
         "properties": {
@@ -9269,23 +9305,6 @@
         },
         "additionalProperties": false
       },
-      "BooleanResponse": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "value": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
       "ColumnTypesDto": {
         "type": "object",
         "properties": {
@@ -9509,26 +9528,31 @@
         "additionalProperties": false
       },
       "LoginRequest": {
-        "required": [
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "email": {
             "type": "string",
+            "description": "Email address of the user",
+            "format": "email",
+            "default": "demo@quickcode.net",
             "nullable": true
           },
           "password": {
             "type": "string",
+            "description": "User's password",
+            "default": "String1!",
             "nullable": true
           },
           "twoFactorCode": {
             "type": "string",
+            "description": "Two-factor authentication code, if applicable",
+            "default": null,
             "nullable": true
           },
           "twoFactorRecoveryCode": {
             "type": "string",
+            "description": "Two-factor recovery code, if applicable",
+            "default": null,
             "nullable": true
           }
         },
@@ -9714,23 +9738,6 @@
               "$ref": "#/components/schemas/PortalPermissionItem"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PortalPermissionGroupListResponse": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "value": {
-            "$ref": "#/components/schemas/PortalPermissionGroupList"
           }
         },
         "additionalProperties": false
