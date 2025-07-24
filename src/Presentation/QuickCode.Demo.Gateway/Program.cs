@@ -143,6 +143,24 @@ void ConfigureMiddlewares()
     {
         proxyPipeline.Use(YarpMiddlewareKafkaManager(app.Services));
         proxyPipeline.Use(YarpMiddlewareApiAuthorization(app.Services));
+		proxyPipeline.Use((context, next) =>
+        {
+            try
+            {
+                return next();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Gateway Exception: {ex.Message}");
+                context.Response.StatusCode = 500;
+                return context.Response.WriteAsJsonAsync(new
+                {
+                    status = 500,
+                    title = "Gateway error",
+                    detail = "An internal error occurred in the gateway."
+                });
+            }
+        });
     });
 }
 
