@@ -112,6 +112,19 @@ void ConfigureMiddlewares()
     
     app.MapGet("/", GetServicesHtml).WithTags("Dashboard");
 
+    app.Map("/error", (HttpContext context) =>
+    {
+        var exception = context.Features.Get<IExceptionHandlerFeature>()?.Error;
+
+        var isDev = app.Environment.IsDevelopment();
+
+        return Results.Problem(
+            title: "Unexpected error Gateway",
+            detail: isDev ? exception?.Message : "Something went wrong.",
+            statusCode: 500
+        );
+    }).ExcludeFromDescription();
+
     gatewayGroup.MapGet("/reset", () =>
     {
         if (InMemoryConfigProvider.IsClustersUpdatedFromConfig == 1)
