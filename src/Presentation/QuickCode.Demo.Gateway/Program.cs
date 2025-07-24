@@ -5,6 +5,7 @@ using QuickCode.Demo.Common;
 using QuickCode.Demo.Common.Extensions;
 using QuickCode.Demo.Gateway.Messaging;
 using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http.Extensions;
 using QuickCode.Demo.Common.Nswag.Clients.UserManagerModuleApi.Contracts;
