@@ -69,15 +69,12 @@ await app.RunAsync();
 
 void ConfigureMiddlewares()
 {
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
-    else
-    {
-        app.UseExceptionHandler("/error");
-        app.UseHsts();
-    }
+    app.UseExceptionHandler("/error");
+
+	if (!app.Environment.IsDevelopment())
+	{
+    	app.UseHsts();
+	}
     
     app.UseGatewaySecurityHeaders(); 
     app.UseRateLimiting();

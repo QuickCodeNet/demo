@@ -156,13 +156,10 @@ if (useHealthCheck && databaseType != "inMemory")
     });
 }
 
-if (app.Environment.IsDevelopment())
+app.UseExceptionHandler("/error");
+
+if (!app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();
-}
-else
-{
-    app.UseExceptionHandler("/error"); 
     app.UseHsts();
 }
 
