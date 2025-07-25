@@ -291,267 +291,542 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 159,
-    "TopicName": "demo.email_manager_module.info_messages.post",
+    "ApiMethodDefinitionId": 183,
+    "TopicName": "demo.apartment_manage_module.sites.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 161,
-    "TopicName": "demo.email_manager_module.info_messages.put",
+    "ApiMethodDefinitionId": 185,
+    "TopicName": "demo.apartment_manage_module.sites.put",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 162,
-    "TopicName": "demo.email_manager_module.info_messages.delete",
+    "ApiMethodDefinitionId": 186,
+    "TopicName": "demo.apartment_manage_module.sites.delete",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 165,
-    "TopicName": "demo.email_manager_module.campaign_messages.post",
+    "ApiMethodDefinitionId": 192,
+    "TopicName": "demo.apartment_manage_module.expense_types.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 167,
-    "TopicName": "demo.email_manager_module.campaign_messages.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 168,
-    "TopicName": "demo.email_manager_module.campaign_messages.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 171,
-    "TopicName": "demo.email_manager_module.otp_messages.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 173,
-    "TopicName": "demo.email_manager_module.otp_messages.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 174,
-    "TopicName": "demo.email_manager_module.otp_messages.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 179,
-    "TopicName": "demo.email_manager_module.otp_types.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 181,
-    "TopicName": "demo.email_manager_module.otp_types.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 182,
-    "TopicName": "demo.email_manager_module.otp_types.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 187,
-    "TopicName": "demo.email_manager_module.info_types.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 189,
-    "TopicName": "demo.email_manager_module.info_types.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 190,
-    "TopicName": "demo.email_manager_module.info_types.delete",
+    "ApiMethodDefinitionId": 194,
+    "TopicName": "demo.apartment_manage_module.expense_types.put",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 195,
-    "TopicName": "demo.email_manager_module.campaign_types.post",
+    "TopicName": "demo.apartment_manage_module.expense_types.delete",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 197,
-    "TopicName": "demo.email_manager_module.campaign_types.put",
+    "ApiMethodDefinitionId": 201,
+    "TopicName": "demo.apartment_manage_module.fee_types.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 198,
-    "TopicName": "demo.email_manager_module.campaign_types.delete",
+    "ApiMethodDefinitionId": 203,
+    "TopicName": "demo.apartment_manage_module.fee_types.put",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 207,
-    "TopicName": "demo.email_manager_module.email_senders.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 209,
-    "TopicName": "demo.email_manager_module.email_senders.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 210,
-    "TopicName": "demo.email_manager_module.email_senders.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 213,
-    "TopicName": "demo.sms_manager_module.info_messages.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 215,
-    "TopicName": "demo.sms_manager_module.info_messages.put",
+    "ApiMethodDefinitionId": 204,
+    "TopicName": "demo.apartment_manage_module.fee_types.delete",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 216,
-    "TopicName": "demo.sms_manager_module.info_messages.delete",
+    "TopicName": "demo.apartment_manage_module.payment_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 218,
+    "TopicName": "demo.apartment_manage_module.payment_types.put",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 219,
-    "TopicName": "demo.sms_manager_module.campaign_messages.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 221,
-    "TopicName": "demo.sms_manager_module.campaign_messages.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 222,
-    "TopicName": "demo.sms_manager_module.campaign_messages.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 225,
-    "TopicName": "demo.sms_manager_module.otp_messages.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 227,
-    "TopicName": "demo.sms_manager_module.otp_messages.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 228,
-    "TopicName": "demo.sms_manager_module.otp_messages.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 233,
-    "TopicName": "demo.sms_manager_module.otp_types.post",
+    "TopicName": "demo.apartment_manage_module.payment_types.delete",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 235,
-    "TopicName": "demo.sms_manager_module.otp_types.put",
+    "TopicName": "demo.apartment_manage_module.contacts.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 236,
-    "TopicName": "demo.sms_manager_module.otp_types.delete",
+    "ApiMethodDefinitionId": 237,
+    "TopicName": "demo.apartment_manage_module.contacts.put",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 241,
-    "TopicName": "demo.sms_manager_module.info_types.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 243,
-    "TopicName": "demo.sms_manager_module.info_types.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 244,
-    "TopicName": "demo.sms_manager_module.info_types.delete",
+    "ApiMethodDefinitionId": 238,
+    "TopicName": "demo.apartment_manage_module.contacts.delete",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 249,
-    "TopicName": "demo.sms_manager_module.campaign_types.post",
+    "TopicName": "demo.apartment_manage_module.flat_contacts.post",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 251,
-    "TopicName": "demo.sms_manager_module.campaign_types.put",
+    "TopicName": "demo.apartment_manage_module.flat_contacts.put",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 252,
-    "TopicName": "demo.sms_manager_module.campaign_types.delete",
+    "TopicName": "demo.apartment_manage_module.flat_contacts.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 259,
+    "TopicName": "demo.apartment_manage_module.site_managers.post",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 261,
-    "TopicName": "demo.sms_manager_module.sms_senders.post",
+    "TopicName": "demo.apartment_manage_module.site_managers.put",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 263,
-    "TopicName": "demo.sms_manager_module.sms_senders.put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 264,
-    "TopicName": "demo.sms_manager_module.sms_senders.delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 266,
-    "TopicName": "demo.user_manager_module.portal_permissions.update_portal_permission.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 268,
-    "TopicName": "demo.user_manager_module.api_method_definitions.update_api_permission.post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionId": 271,
-    "TopicName": "demo.auth.register.post",
+    "ApiMethodDefinitionId": 262,
+    "TopicName": "demo.apartment_manage_module.site_managers.delete",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 272,
-    "TopicName": "demo.auth.login.post",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionId": 273,
-    "TopicName": "demo.auth.validate.post",
+    "TopicName": "demo.apartment_manage_module.payment_months.post",
     "IsActive": false
   },
   {
     "ApiMethodDefinitionId": 274,
+    "TopicName": "demo.apartment_manage_module.payment_months.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 275,
+    "TopicName": "demo.apartment_manage_module.payment_months.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 285,
+    "TopicName": "demo.apartment_manage_module.payment_years.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 287,
+    "TopicName": "demo.apartment_manage_module.payment_years.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 288,
+    "TopicName": "demo.apartment_manage_module.payment_years.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 305,
+    "TopicName": "demo.apartment_manage_module.apartments.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 307,
+    "TopicName": "demo.apartment_manage_module.apartments.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 308,
+    "TopicName": "demo.apartment_manage_module.apartments.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 328,
+    "TopicName": "demo.apartment_manage_module.flats.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 330,
+    "TopicName": "demo.apartment_manage_module.flats.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 331,
+    "TopicName": "demo.apartment_manage_module.flats.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 338,
+    "TopicName": "demo.apartment_manage_module.apartment_fee_plans.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 340,
+    "TopicName": "demo.apartment_manage_module.apartment_fee_plans.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 341,
+    "TopicName": "demo.apartment_manage_module.apartment_fee_plans.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 351,
+    "TopicName": "demo.apartment_manage_module.flat_payments.mark_payment_as_paid.patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 354,
+    "TopicName": "demo.apartment_manage_module.flat_payments.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 356,
+    "TopicName": "demo.apartment_manage_module.flat_payments.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 357,
+    "TopicName": "demo.apartment_manage_module.flat_payments.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 371,
+    "TopicName": "demo.apartment_manage_module.common_expenses.mark_expense_as_paid.patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 374,
+    "TopicName": "demo.apartment_manage_module.common_expenses.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 376,
+    "TopicName": "demo.apartment_manage_module.common_expenses.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 377,
+    "TopicName": "demo.apartment_manage_module.common_expenses.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 385,
+    "TopicName": "demo.apartment_manage_module.expense_installments.mark_installment_as_paid.patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 388,
+    "TopicName": "demo.apartment_manage_module.expense_installments.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 390,
+    "TopicName": "demo.apartment_manage_module.expense_installments.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 391,
+    "TopicName": "demo.apartment_manage_module.expense_installments.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 397,
+    "TopicName": "demo.apartment_manage_module.flat_expense_installments.mark_flat_installment_as_paid.patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 400,
+    "TopicName": "demo.apartment_manage_module.flat_expense_installments.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 402,
+    "TopicName": "demo.apartment_manage_module.flat_expense_installments.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 403,
+    "TopicName": "demo.apartment_manage_module.flat_expense_installments.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 409,
+    "TopicName": "demo.apartment_manage_module.user_site_accesses.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 411,
+    "TopicName": "demo.apartment_manage_module.user_site_accesses.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 412,
+    "TopicName": "demo.apartment_manage_module.user_site_accesses.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 415,
+    "TopicName": "demo.email_manager_module.info_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 417,
+    "TopicName": "demo.email_manager_module.info_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 418,
+    "TopicName": "demo.email_manager_module.info_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 421,
+    "TopicName": "demo.email_manager_module.campaign_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 423,
+    "TopicName": "demo.email_manager_module.campaign_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 424,
+    "TopicName": "demo.email_manager_module.campaign_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 427,
+    "TopicName": "demo.email_manager_module.otp_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 429,
+    "TopicName": "demo.email_manager_module.otp_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 430,
+    "TopicName": "demo.email_manager_module.otp_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 435,
+    "TopicName": "demo.email_manager_module.otp_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 437,
+    "TopicName": "demo.email_manager_module.otp_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 438,
+    "TopicName": "demo.email_manager_module.otp_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 443,
+    "TopicName": "demo.email_manager_module.info_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 445,
+    "TopicName": "demo.email_manager_module.info_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 446,
+    "TopicName": "demo.email_manager_module.info_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 451,
+    "TopicName": "demo.email_manager_module.campaign_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 453,
+    "TopicName": "demo.email_manager_module.campaign_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 454,
+    "TopicName": "demo.email_manager_module.campaign_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 463,
+    "TopicName": "demo.email_manager_module.email_senders.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 465,
+    "TopicName": "demo.email_manager_module.email_senders.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 466,
+    "TopicName": "demo.email_manager_module.email_senders.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 469,
+    "TopicName": "demo.sms_manager_module.info_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 471,
+    "TopicName": "demo.sms_manager_module.info_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 472,
+    "TopicName": "demo.sms_manager_module.info_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 475,
+    "TopicName": "demo.sms_manager_module.campaign_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 477,
+    "TopicName": "demo.sms_manager_module.campaign_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 478,
+    "TopicName": "demo.sms_manager_module.campaign_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 481,
+    "TopicName": "demo.sms_manager_module.otp_messages.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 483,
+    "TopicName": "demo.sms_manager_module.otp_messages.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 484,
+    "TopicName": "demo.sms_manager_module.otp_messages.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 489,
+    "TopicName": "demo.sms_manager_module.otp_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 491,
+    "TopicName": "demo.sms_manager_module.otp_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 492,
+    "TopicName": "demo.sms_manager_module.otp_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 497,
+    "TopicName": "demo.sms_manager_module.info_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 499,
+    "TopicName": "demo.sms_manager_module.info_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 500,
+    "TopicName": "demo.sms_manager_module.info_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 505,
+    "TopicName": "demo.sms_manager_module.campaign_types.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 507,
+    "TopicName": "demo.sms_manager_module.campaign_types.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 508,
+    "TopicName": "demo.sms_manager_module.campaign_types.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 517,
+    "TopicName": "demo.sms_manager_module.sms_senders.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 519,
+    "TopicName": "demo.sms_manager_module.sms_senders.put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 520,
+    "TopicName": "demo.sms_manager_module.sms_senders.delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 522,
+    "TopicName": "demo.user_manager_module.portal_permissions.update_portal_permission.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 524,
+    "TopicName": "demo.user_manager_module.api_method_definitions.update_api_permission.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 527,
+    "TopicName": "demo.auth.register.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 528,
+    "TopicName": "demo.auth.login.post",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionId": 529,
+    "TopicName": "demo.auth.validate.post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionId": 530,
     "TopicName": "demo.auth.refresh.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 276,
+    "ApiMethodDefinitionId": 532,
     "TopicName": "demo.auth.resendconfirmationemail.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 277,
+    "ApiMethodDefinitionId": 533,
     "TopicName": "demo.auth.forgotpassword.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 278,
+    "ApiMethodDefinitionId": 534,
     "TopicName": "demo.auth.resetpassword.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 279,
+    "ApiMethodDefinitionId": 535,
     "TopicName": "demo.auth.manage.user2fa.post",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionId": 281,
+    "ApiMethodDefinitionId": 537,
     "TopicName": "demo.auth.manage.info.post",
     "IsActive": false
   }

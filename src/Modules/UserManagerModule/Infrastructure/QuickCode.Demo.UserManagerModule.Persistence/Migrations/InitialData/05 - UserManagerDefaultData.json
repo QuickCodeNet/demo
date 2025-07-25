@@ -97,71 +97,156 @@
     },
     {
       "Id": 20,
-      "Name": "EmailManagerModuleCampaignMessages",
+      "Name": "ApartmentManageModuleApartmentFeePlans",
       "ItemType": "G"
     },
     {
       "Id": 21,
-      "Name": "EmailManagerModuleCampaignTypes",
+      "Name": "ApartmentManageModuleApartments",
       "ItemType": "G"
     },
     {
       "Id": 22,
-      "Name": "EmailManagerModuleEmailSenders",
+      "Name": "ApartmentManageModuleCommonExpenses",
       "ItemType": "G"
     },
     {
       "Id": 23,
-      "Name": "EmailManagerModuleInfoMessages",
+      "Name": "ApartmentManageModuleContacts",
       "ItemType": "G"
     },
     {
       "Id": 24,
-      "Name": "EmailManagerModuleInfoTypes",
+      "Name": "ApartmentManageModuleExpenseInstallments",
       "ItemType": "G"
     },
     {
       "Id": 25,
-      "Name": "EmailManagerModuleOtpMessages",
+      "Name": "ApartmentManageModuleExpenseTypes",
       "ItemType": "G"
     },
     {
       "Id": 26,
-      "Name": "EmailManagerModuleOtpTypes",
+      "Name": "ApartmentManageModuleFeeTypes",
       "ItemType": "G"
     },
     {
       "Id": 27,
-      "Name": "SmsManagerModuleCampaignMessages",
+      "Name": "ApartmentManageModuleFlatContacts",
       "ItemType": "G"
     },
     {
       "Id": 28,
-      "Name": "SmsManagerModuleCampaignTypes",
+      "Name": "ApartmentManageModuleFlatExpenseInstallments",
       "ItemType": "G"
     },
     {
       "Id": 29,
-      "Name": "SmsManagerModuleInfoMessages",
+      "Name": "ApartmentManageModuleFlatPayments",
       "ItemType": "G"
     },
     {
       "Id": 30,
-      "Name": "SmsManagerModuleInfoTypes",
+      "Name": "ApartmentManageModuleFlats",
       "ItemType": "G"
     },
     {
       "Id": 31,
-      "Name": "SmsManagerModuleOtpMessages",
+      "Name": "ApartmentManageModulePaymentMonths",
       "ItemType": "G"
     },
     {
       "Id": 32,
-      "Name": "SmsManagerModuleOtpTypes",
+      "Name": "ApartmentManageModulePaymentTypes",
       "ItemType": "G"
     },
     {
       "Id": 33,
+      "Name": "ApartmentManageModulePaymentYears",
+      "ItemType": "G"
+    },
+    {
+      "Id": 34,
+      "Name": "ApartmentManageModuleSiteManagers",
+      "ItemType": "G"
+    },
+    {
+      "Id": 35,
+      "Name": "ApartmentManageModuleSites",
+      "ItemType": "G"
+    },
+    {
+      "Id": 36,
+      "Name": "ApartmentManageModuleUserSiteAccesses",
+      "ItemType": "G"
+    },
+    {
+      "Id": 37,
+      "Name": "EmailManagerModuleCampaignMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 38,
+      "Name": "EmailManagerModuleCampaignTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 39,
+      "Name": "EmailManagerModuleEmailSenders",
+      "ItemType": "G"
+    },
+    {
+      "Id": 40,
+      "Name": "EmailManagerModuleInfoMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 41,
+      "Name": "EmailManagerModuleInfoTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 42,
+      "Name": "EmailManagerModuleOtpMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 43,
+      "Name": "EmailManagerModuleOtpTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 44,
+      "Name": "SmsManagerModuleCampaignMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 45,
+      "Name": "SmsManagerModuleCampaignTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 46,
+      "Name": "SmsManagerModuleInfoMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 47,
+      "Name": "SmsManagerModuleInfoTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 48,
+      "Name": "SmsManagerModuleOtpMessages",
+      "ItemType": "G"
+    },
+    {
+      "Id": 49,
+      "Name": "SmsManagerModuleOtpTypes",
+      "ItemType": "G"
+    },
+    {
+      "Id": 50,
       "Name": "SmsManagerModuleSmsSenders",
       "ItemType": "G"
     }
@@ -348,11 +433,173 @@
       "ItemType": "G"
     },
     {
+      "Name": "ApartmentManageModule",
+      "Text": "ApartmentManageModule",
+      "Tooltip": "ApartmentManageModule",
+      "ActionName": "",
+      "OrderNo": 119,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "ApartmentFeePlans",
+      "Text": "ApartmentFeePlans",
+      "Tooltip": "ApartmentFeePlans",
+      "ActionName": "/ApartmentManageModuleApartmentFeePlans/List",
+      "OrderNo": 119,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "Apartments",
+      "Text": "Apartments",
+      "Tooltip": "Apartments",
+      "ActionName": "/ApartmentManageModuleApartments/List",
+      "OrderNo": 120,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "CommonExpenses",
+      "Text": "CommonExpenses",
+      "Tooltip": "CommonExpenses",
+      "ActionName": "/ApartmentManageModuleCommonExpenses/List",
+      "OrderNo": 121,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "Contacts",
+      "Text": "Contacts",
+      "Tooltip": "Contacts",
+      "ActionName": "/ApartmentManageModuleContacts/List",
+      "OrderNo": 122,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "ExpenseInstallments",
+      "Text": "ExpenseInstallments",
+      "Tooltip": "ExpenseInstallments",
+      "ActionName": "/ApartmentManageModuleExpenseInstallments/List",
+      "OrderNo": 123,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "ExpenseTypes",
+      "Text": "ExpenseTypes",
+      "Tooltip": "ExpenseTypes",
+      "ActionName": "/ApartmentManageModuleExpenseTypes/List",
+      "OrderNo": 124,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "FeeTypes",
+      "Text": "FeeTypes",
+      "Tooltip": "FeeTypes",
+      "ActionName": "/ApartmentManageModuleFeeTypes/List",
+      "OrderNo": 125,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "FlatContacts",
+      "Text": "FlatContacts",
+      "Tooltip": "FlatContacts",
+      "ActionName": "/ApartmentManageModuleFlatContacts/List",
+      "OrderNo": 126,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "FlatExpenseInstallments",
+      "Text": "FlatExpenseInstallments",
+      "Tooltip": "FlatExpenseInstallments",
+      "ActionName": "/ApartmentManageModuleFlatExpenseInstallments/List",
+      "OrderNo": 127,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "FlatPayments",
+      "Text": "FlatPayments",
+      "Tooltip": "FlatPayments",
+      "ActionName": "/ApartmentManageModuleFlatPayments/List",
+      "OrderNo": 128,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "Flats",
+      "Text": "Flats",
+      "Tooltip": "Flats",
+      "ActionName": "/ApartmentManageModuleFlats/List",
+      "OrderNo": 129,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "PaymentMonths",
+      "Text": "PaymentMonths",
+      "Tooltip": "PaymentMonths",
+      "ActionName": "/ApartmentManageModulePaymentMonths/List",
+      "OrderNo": 130,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "PaymentTypes",
+      "Text": "PaymentTypes",
+      "Tooltip": "PaymentTypes",
+      "ActionName": "/ApartmentManageModulePaymentTypes/List",
+      "OrderNo": 131,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "PaymentYears",
+      "Text": "PaymentYears",
+      "Tooltip": "PaymentYears",
+      "ActionName": "/ApartmentManageModulePaymentYears/List",
+      "OrderNo": 132,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "SiteManagers",
+      "Text": "SiteManagers",
+      "Tooltip": "SiteManagers",
+      "ActionName": "/ApartmentManageModuleSiteManagers/List",
+      "OrderNo": 133,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "Sites",
+      "Text": "Sites",
+      "Tooltip": "Sites",
+      "ActionName": "/ApartmentManageModuleSites/List",
+      "OrderNo": 134,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
+      "Name": "UserSiteAccesses",
+      "Text": "UserSiteAccesses",
+      "Tooltip": "UserSiteAccesses",
+      "ActionName": "/ApartmentManageModuleUserSiteAccesses/List",
+      "OrderNo": 135,
+      "ParentName": "ApartmentManageModule",
+      "ItemType": "G"
+    },
+    {
       "Name": "EmailManagerModule",
       "Text": "EmailManagerModule",
       "Tooltip": "EmailManagerModule",
       "ActionName": "",
-      "OrderNo": 119,
+      "OrderNo": 136,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -361,7 +608,7 @@
       "Text": "CampaignMessages",
       "Tooltip": "CampaignMessages",
       "ActionName": "/EmailManagerModuleCampaignMessages/List",
-      "OrderNo": 119,
+      "OrderNo": 136,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -370,7 +617,7 @@
       "Text": "CampaignTypes",
       "Tooltip": "CampaignTypes",
       "ActionName": "/EmailManagerModuleCampaignTypes/List",
-      "OrderNo": 120,
+      "OrderNo": 137,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -379,7 +626,7 @@
       "Text": "EmailSenders",
       "Tooltip": "EmailSenders",
       "ActionName": "/EmailManagerModuleEmailSenders/List",
-      "OrderNo": 121,
+      "OrderNo": 138,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -388,7 +635,7 @@
       "Text": "InfoMessages",
       "Tooltip": "InfoMessages",
       "ActionName": "/EmailManagerModuleInfoMessages/List",
-      "OrderNo": 122,
+      "OrderNo": 139,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -397,7 +644,7 @@
       "Text": "InfoTypes",
       "Tooltip": "InfoTypes",
       "ActionName": "/EmailManagerModuleInfoTypes/List",
-      "OrderNo": 123,
+      "OrderNo": 140,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -406,7 +653,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/EmailManagerModuleOtpMessages/List",
-      "OrderNo": 124,
+      "OrderNo": 141,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -415,7 +662,7 @@
       "Text": "OtpTypes",
       "Tooltip": "OtpTypes",
       "ActionName": "/EmailManagerModuleOtpTypes/List",
-      "OrderNo": 125,
+      "OrderNo": 142,
       "ParentName": "EmailManagerModule",
       "ItemType": "G"
     },
@@ -424,7 +671,7 @@
       "Text": "SmsManagerModule",
       "Tooltip": "SmsManagerModule",
       "ActionName": "",
-      "OrderNo": 126,
+      "OrderNo": 143,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -433,7 +680,7 @@
       "Text": "CampaignMessages",
       "Tooltip": "CampaignMessages",
       "ActionName": "/SmsManagerModuleCampaignMessages/List",
-      "OrderNo": 126,
+      "OrderNo": 143,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -442,7 +689,7 @@
       "Text": "CampaignTypes",
       "Tooltip": "CampaignTypes",
       "ActionName": "/SmsManagerModuleCampaignTypes/List",
-      "OrderNo": 127,
+      "OrderNo": 144,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -451,7 +698,7 @@
       "Text": "InfoMessages",
       "Tooltip": "InfoMessages",
       "ActionName": "/SmsManagerModuleInfoMessages/List",
-      "OrderNo": 128,
+      "OrderNo": 145,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -460,7 +707,7 @@
       "Text": "InfoTypes",
       "Tooltip": "InfoTypes",
       "ActionName": "/SmsManagerModuleInfoTypes/List",
-      "OrderNo": 129,
+      "OrderNo": 146,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -469,7 +716,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/SmsManagerModuleOtpMessages/List",
-      "OrderNo": 130,
+      "OrderNo": 147,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -478,7 +725,7 @@
       "Text": "OtpTypes",
       "Tooltip": "OtpTypes",
       "ActionName": "/SmsManagerModuleOtpTypes/List",
-      "OrderNo": 131,
+      "OrderNo": 148,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     },
@@ -487,7 +734,7 @@
       "Text": "SmsSenders",
       "Tooltip": "SmsSenders",
       "ActionName": "/SmsManagerModuleSmsSenders/List",
-      "OrderNo": 132,
+      "OrderNo": 149,
       "ParentName": "SmsManagerModule",
       "ItemType": "G"
     }
@@ -533,6 +780,78 @@
       "TableName": "PortalPermissions",
       "IdColumn": "Id",
       "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Sites",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Apartments",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentYears",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentMonths",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ApartmentFeePlans",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentTypes",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ExpenseTypes",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "CommonExpenses",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Contacts",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ExpenseInstallments",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "FeeTypes",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Flats",
+      "IdColumn": "Id",
+      "TextColumns": "FlatNumber",
       "StringFormat": "{0}"
     },
     {
@@ -1719,6 +2038,601 @@
     },
     {
       "PortalPermissionId": 33,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 34,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 35,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 36,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 37,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 38,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 39,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 40,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 41,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 42,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 43,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 44,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 45,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 46,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 47,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 48,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 49,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 4
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 0
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 2,
+      "PortalPermissionTypeId": 1
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 2
+    },
+    {
+      "PortalPermissionId": 50,
+      "PermissionGroupId": 1,
+      "PortalPermissionTypeId": 3
+    },
+    {
+      "PortalPermissionId": 50,
       "PermissionGroupId": 1,
       "PortalPermissionTypeId": 4
     }

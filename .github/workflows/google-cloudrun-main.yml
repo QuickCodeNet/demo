@@ -25,6 +25,11 @@ jobs:
     uses: ./.github/workflows/google-cloudrun-user-manager-module.yml
     secrets: inherit
 
+  apartment-manage-module:
+    name: Apartment Manage Module Api
+    uses: ./.github/workflows/google-cloudrun-apartment-manage-module.yml
+    secrets: inherit
+
   email-manager-module:
     name: Email Manager Module Api
     uses: ./.github/workflows/google-cloudrun-email-manager-module.yml
@@ -44,6 +49,7 @@ jobs:
       - gateway
       - portal
       - user-manager-module
+      - apartment-manage-module
       - email-manager-module
       - sms-manager-module
     if: always()

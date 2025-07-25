@@ -1095,873 +1095,2665 @@
   {
     "Id": 157,
     "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-active-sites/{sitesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 158,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-site-by-id/{sitesId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 159,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-flats-count-by-site/{sitesId:int}/{sitesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 160,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-owners-count-by-site/{sitesId:int}/{sitesIsActive:bool}/{flatContactsRelationshipType}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 161,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-tenants-count-by-site/{sitesId:int}/{sitesIsActive:bool}/{flatContactsRelationshipType}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 162,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-total-payments-by-site/{sitesId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 163,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 164,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartments/{apartmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 165,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flats",
+    "ItemType": "M"
+  },
+  {
+    "Id": 166,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flats/{flatsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 167,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/site-managers",
+    "ItemType": "M"
+  },
+  {
+    "Id": 168,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/site-managers/{siteManagersId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 169,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 170,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 171,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 172,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 173,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 174,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartment-fee-plans/{apartmentFeePlansId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 175,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 176,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/expense-installments/{expenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 177,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 178,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 179,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/user-site-accesses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 180,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/user-site-accesses/{userSiteAccessesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 181,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites",
+    "ItemType": "M"
+  },
+  {
+    "Id": 182,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 183,
+    "HttpMethod": "POST",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites",
+    "ItemType": "M"
+  },
+  {
+    "Id": 184,
+    "HttpMethod": "GET",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 185,
+    "HttpMethod": "PUT",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 186,
+    "HttpMethod": "DELETE",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 187,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/get-active-expense-types/{expenseTypesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 188,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{expenseTypesId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 189,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{expenseTypesId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 190,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 191,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 192,
+    "HttpMethod": "POST",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 193,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 194,
+    "HttpMethod": "PUT",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 195,
+    "HttpMethod": "DELETE",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 196,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/get-active-fee-types/{feeTypesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 197,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{feeTypesId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 198,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{feeTypesId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 199,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 200,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 201,
+    "HttpMethod": "POST",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 202,
+    "HttpMethod": "GET",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 203,
+    "HttpMethod": "PUT",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 204,
+    "HttpMethod": "DELETE",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 205,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/get-active-payment-types/{paymentTypesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 206,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 207,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 208,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 209,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 210,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 211,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/expense-installments/{expenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 212,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 213,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 214,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 215,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 216,
+    "HttpMethod": "POST",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types",
+    "ItemType": "M"
+  },
+  {
+    "Id": 217,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 218,
+    "HttpMethod": "PUT",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 219,
+    "HttpMethod": "DELETE",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 220,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-active-contacts/{contactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 221,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-id/{contactsId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 222,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-phone/{contactsPhone}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 223,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-email/{contactsEmail}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 224,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-identity/{contactsIdentityNumber}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 225,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/check-contact-by-phone/{contactsPhone}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 226,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/check-contact-by-email/{contactsEmail}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 227,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-active-contacts-count/{contactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 228,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contacts-with-pager/{contactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 229,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/flat-contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 230,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/flat-contacts/{flatContactsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 231,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/site-managers",
+    "ItemType": "M"
+  },
+  {
+    "Id": 232,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/site-managers/{siteManagersId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 233,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 234,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 235,
+    "HttpMethod": "POST",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 236,
+    "HttpMethod": "GET",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 237,
+    "HttpMethod": "PUT",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 238,
+    "HttpMethod": "DELETE",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 239,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-owners/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 240,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-tenants/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 241,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-flats/{flatContactsContactId:int}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 242,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-owned-flats/{flatContactsContactId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 243,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-rented-flats/{flatContactsContactId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 244,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/check-flat-has-owner/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 245,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/check-flat-has-tenant/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 246,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-contacts-count/{flatContactsFlatId:int}/{flatContactsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 247,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 248,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 249,
+    "HttpMethod": "POST",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 250,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 251,
+    "HttpMethod": "PUT",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 252,
+    "HttpMethod": "DELETE",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 253,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-site-managers/{siteManagersSiteId:int}/{siteManagersIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 254,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-active-manager-by-site/{siteManagersSiteId:int}/{siteManagersIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 255,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-site-manager-with-contact/{siteManagersContactId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 256,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/check-site-has-manager/{siteManagersSiteId:int}/{siteManagersIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 257,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers",
+    "ItemType": "M"
+  },
+  {
+    "Id": 258,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 259,
+    "HttpMethod": "POST",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers",
+    "ItemType": "M"
+  },
+  {
+    "Id": 260,
+    "HttpMethod": "GET",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 261,
+    "HttpMethod": "PUT",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 262,
+    "HttpMethod": "DELETE",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 263,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/get-all-months",
+    "ItemType": "M"
+  },
+  {
+    "Id": 264,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 265,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/apartment-fee-plans/{apartmentFeePlansId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 266,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 267,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 268,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 269,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 270,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months",
+    "ItemType": "M"
+  },
+  {
+    "Id": 271,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 272,
+    "HttpMethod": "POST",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months",
+    "ItemType": "M"
+  },
+  {
+    "Id": 273,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 274,
+    "HttpMethod": "PUT",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 275,
+    "HttpMethod": "DELETE",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 276,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/get-all-years",
+    "ItemType": "M"
+  },
+  {
+    "Id": 277,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 278,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/apartment-fee-plans/{apartmentFeePlansId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 279,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 280,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 281,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 282,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 283,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years",
+    "ItemType": "M"
+  },
+  {
+    "Id": 284,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 285,
+    "HttpMethod": "POST",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years",
+    "ItemType": "M"
+  },
+  {
+    "Id": 286,
+    "HttpMethod": "GET",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 287,
+    "HttpMethod": "PUT",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 288,
+    "HttpMethod": "DELETE",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 289,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/get-apartments-by-site/{apartmentsSiteId:int}/{apartmentsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 290,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/get-active-apartments/{apartmentsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 291,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flats",
+    "ItemType": "M"
+  },
+  {
+    "Id": 292,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flats/{flatsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 293,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 294,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 295,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 296,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/common-expenses/{commonExpensesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 297,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 298,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/apartment-fee-plans/{apartmentFeePlansId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 299,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 300,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/expense-installments/{expenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 301,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 302,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 303,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 304,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 305,
+    "HttpMethod": "POST",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 306,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 307,
+    "HttpMethod": "PUT",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 308,
+    "HttpMethod": "DELETE",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 309,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-by-apartment/{flatsApartmentId:int}/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 310,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-by-site/{flatsSiteId:int}/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 311,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-with-contacts/{flatsId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 312,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-vacant-flats/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 313,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-rented-flats/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 314,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flat-by-number/{flatsSiteId:int}/{flatsFlatNumber}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 315,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-owned-flats/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 316,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-count-by-site/{flatsSiteId:int}/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 317,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-count-by-apartment/{flatsApartmentId:int}/{flatsIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 318,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-contacts",
+    "ItemType": "M"
+  },
+  {
+    "Id": 319,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-contacts/{flatContactsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 320,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 321,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 322,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 323,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 324,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/user-site-accesses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 325,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/user-site-accesses/{userSiteAccessesId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 326,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats",
+    "ItemType": "M"
+  },
+  {
+    "Id": 327,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 328,
+    "HttpMethod": "POST",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats",
+    "ItemType": "M"
+  },
+  {
+    "Id": 329,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 330,
+    "HttpMethod": "PUT",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 331,
+    "HttpMethod": "DELETE",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 332,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/get-fee-plan-by-year-month/{apartmentFeePlansSiteId:int}/{apartmentFeePlansApartmentId:int}/{apartmentFeePlansYearId:int}/{apartmentFeePlansMonthId:int}/{apartmentFeePlansIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 333,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/get-fee-plans-by-site/{apartmentFeePlansSiteId:int}/{apartmentFeePlansIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 334,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{apartmentFeePlansId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 335,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{apartmentFeePlansId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 336,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 337,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 338,
+    "HttpMethod": "POST",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans",
+    "ItemType": "M"
+  },
+  {
+    "Id": 339,
+    "HttpMethod": "GET",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 340,
+    "HttpMethod": "PUT",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 341,
+    "HttpMethod": "DELETE",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 342,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-payments-by-flat-year-month/{flatPaymentsSiteId:int}/{flatPaymentsFlatId:int}/{flatPaymentsYearId:int}/{flatPaymentsMonthId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 343,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-by-flat/{flatPaymentsSiteId:int}/{flatPaymentsFlatId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 344,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-by-site/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 345,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-total-cash-in-safe/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 346,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-pending-payments-by-flat-year-month/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 347,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-flat-payments-by-month/{flatPaymentsFlatId:int}/{flatPaymentsYearId:int}/{flatPaymentsMonthId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 348,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-payments-count-by-flat/{flatPaymentsFlatId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 349,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-total-paid-amount-by-flat/{flatPaymentsFlatId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 350,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-count-by-site/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 351,
+    "HttpMethod": "PATCH",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/mark-payment-as-paid/{flatPaymentsId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 352,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 353,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 354,
+    "HttpMethod": "POST",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 355,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 356,
+    "HttpMethod": "PUT",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 357,
+    "HttpMethod": "DELETE",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 358,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-apartment-month/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesYearId:int}/{commonExpensesMonthId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 359,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-site/{commonExpensesSiteId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 360,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-summary-by-year/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesYearId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 361,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-type/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesExpenseTypeId:int}/{commonExpensesYearId:int}/{commonExpensesMonthId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 362,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-unpaid-expenses-by-apartment/{commonExpensesApartmentId:int}/{commonExpensesPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 363,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-count-by-apartment/{commonExpensesApartmentId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 364,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-total-expense-amount-by-apartment/{commonExpensesApartmentId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 365,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-payments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 366,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-payments/{flatPaymentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 367,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 368,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/expense-installments/{expenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 369,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 370,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 371,
+    "HttpMethod": "PATCH",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/mark-expense-as-paid/{commonExpensesId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 372,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 373,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 374,
+    "HttpMethod": "POST",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 375,
+    "HttpMethod": "GET",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 376,
+    "HttpMethod": "PUT",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 377,
+    "HttpMethod": "DELETE",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 378,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-expense-installments/{expenseInstallmentsExpenseId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 379,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-unpaid-installments/{expenseInstallmentsExpenseId:int}/{expenseInstallmentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 380,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-overdue-installments/{expenseInstallmentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 381,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-apartment-installments/{expenseInstallmentsSiteId:int}/{expenseInstallmentsApartmentId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 382,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-site-installments/{expenseInstallmentsSiteId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 383,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{expenseInstallmentsId}/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 384,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{expenseInstallmentsId}/flat-expense-installments/{flatExpenseInstallmentsId}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 385,
+    "HttpMethod": "PATCH",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/mark-installment-as-paid/{expenseInstallmentsId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 386,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 387,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 388,
+    "HttpMethod": "POST",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 389,
+    "HttpMethod": "GET",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 390,
+    "HttpMethod": "PUT",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 391,
+    "HttpMethod": "DELETE",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 392,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-expense-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsExpenseId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 393,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-unpaid-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 394,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-overdue-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 395,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-apartment-flat-installments/{flatExpenseInstallmentsSiteId:int}/{flatExpenseInstallmentsApartmentId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 396,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-total-debt/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 397,
+    "HttpMethod": "PATCH",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/mark-flat-installment-as-paid/{flatExpenseInstallmentsId:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 398,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 399,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 400,
+    "HttpMethod": "POST",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments",
+    "ItemType": "M"
+  },
+  {
+    "Id": 401,
+    "HttpMethod": "GET",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 402,
+    "HttpMethod": "PUT",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 403,
+    "HttpMethod": "DELETE",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 404,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-user-sites/{userSiteAccessesUserId:int}/{userSiteAccessesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 405,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-site-users/{userSiteAccessesSiteId:int}/{userSiteAccessesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 406,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-user-flats/{userSiteAccessesUserId:int}/{userSiteAccessesIsActive:bool}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 407,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 408,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/count",
+    "ItemType": "M"
+  },
+  {
+    "Id": 409,
+    "HttpMethod": "POST",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses",
+    "ItemType": "M"
+  },
+  {
+    "Id": 410,
+    "HttpMethod": "GET",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 411,
+    "HttpMethod": "PUT",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 412,
+    "HttpMethod": "DELETE",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}",
+    "ItemType": "M"
+  },
+  {
+    "Id": 413,
+    "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 158,
+    "Id": 414,
     "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 159,
+    "Id": 415,
     "HttpMethod": "POST",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 160,
+    "Id": 416,
     "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 161,
+    "Id": 417,
     "HttpMethod": "PUT",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 162,
+    "Id": 418,
     "HttpMethod": "DELETE",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/email-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 163,
+    "Id": 419,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 164,
+    "Id": 420,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 165,
+    "Id": 421,
     "HttpMethod": "POST",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 166,
+    "Id": 422,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 167,
+    "Id": 423,
     "HttpMethod": "PUT",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 168,
+    "Id": 424,
     "HttpMethod": "DELETE",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 169,
+    "Id": 425,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 170,
+    "Id": 426,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 171,
+    "Id": 427,
     "HttpMethod": "POST",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 172,
+    "Id": 428,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 173,
+    "Id": 429,
     "HttpMethod": "PUT",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 174,
+    "Id": 430,
     "HttpMethod": "DELETE",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/email-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 175,
+    "Id": 431,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/{otpTypesId}/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 176,
+    "Id": 432,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/{otpTypesId}/otp-messages/{otpMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 177,
+    "Id": 433,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types",
     "ItemType": "M"
   },
   {
-    "Id": 178,
+    "Id": 434,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 179,
+    "Id": 435,
     "HttpMethod": "POST",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types",
     "ItemType": "M"
   },
   {
-    "Id": 180,
+    "Id": 436,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 181,
+    "Id": 437,
     "HttpMethod": "PUT",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 182,
+    "Id": 438,
     "HttpMethod": "DELETE",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/email-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 183,
+    "Id": 439,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/{infoTypesId}/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 184,
+    "Id": 440,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/{infoTypesId}/info-messages/{infoMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 185,
+    "Id": 441,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types",
     "ItemType": "M"
   },
   {
-    "Id": 186,
+    "Id": 442,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 187,
+    "Id": 443,
     "HttpMethod": "POST",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types",
     "ItemType": "M"
   },
   {
-    "Id": 188,
+    "Id": 444,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 189,
+    "Id": 445,
     "HttpMethod": "PUT",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 190,
+    "Id": 446,
     "HttpMethod": "DELETE",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/email-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 191,
+    "Id": 447,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/{campaignTypesId}/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 192,
+    "Id": 448,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/{campaignTypesId}/campaign-messages/{campaignMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 193,
+    "Id": 449,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types",
     "ItemType": "M"
   },
   {
-    "Id": 194,
+    "Id": 450,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 195,
+    "Id": 451,
     "HttpMethod": "POST",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types",
     "ItemType": "M"
   },
   {
-    "Id": 196,
+    "Id": 452,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 197,
+    "Id": 453,
     "HttpMethod": "PUT",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 198,
+    "Id": 454,
     "HttpMethod": "DELETE",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/email-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 199,
+    "Id": 455,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 200,
+    "Id": 456,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/info-messages/{infoMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 201,
+    "Id": 457,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 202,
+    "Id": 458,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/otp-messages/{otpMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 203,
+    "Id": 459,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 204,
+    "Id": 460,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/campaign-messages/{campaignMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 205,
+    "Id": 461,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders",
     "ItemType": "M"
   },
   {
-    "Id": 206,
+    "Id": 462,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/count",
     "ItemType": "M"
   },
   {
-    "Id": 207,
+    "Id": 463,
     "HttpMethod": "POST",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders",
     "ItemType": "M"
   },
   {
-    "Id": 208,
+    "Id": 464,
     "HttpMethod": "GET",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 209,
+    "Id": 465,
     "HttpMethod": "PUT",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 210,
+    "Id": 466,
     "HttpMethod": "DELETE",
     "ControllerName": "EmailSendersController",
     "UrlPath": "/api/email-manager-module/email-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 211,
+    "Id": 467,
     "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 212,
+    "Id": 468,
     "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 213,
+    "Id": 469,
     "HttpMethod": "POST",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 214,
+    "Id": 470,
     "HttpMethod": "GET",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 215,
+    "Id": 471,
     "HttpMethod": "PUT",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 216,
+    "Id": 472,
     "HttpMethod": "DELETE",
     "ControllerName": "InfoMessagesController",
     "UrlPath": "/api/sms-manager-module/info-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 217,
+    "Id": 473,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 218,
+    "Id": 474,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 219,
+    "Id": 475,
     "HttpMethod": "POST",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 220,
+    "Id": 476,
     "HttpMethod": "GET",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 221,
+    "Id": 477,
     "HttpMethod": "PUT",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 222,
+    "Id": 478,
     "HttpMethod": "DELETE",
     "ControllerName": "CampaignMessagesController",
     "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 223,
+    "Id": 479,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 224,
+    "Id": 480,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages/count",
     "ItemType": "M"
   },
   {
-    "Id": 225,
+    "Id": 481,
     "HttpMethod": "POST",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 226,
+    "Id": 482,
     "HttpMethod": "GET",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 227,
+    "Id": 483,
     "HttpMethod": "PUT",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 228,
+    "Id": 484,
     "HttpMethod": "DELETE",
     "ControllerName": "OtpMessagesController",
     "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 229,
+    "Id": 485,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/{otpTypesId}/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 230,
+    "Id": 486,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/{otpTypesId}/otp-messages/{otpMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 231,
+    "Id": 487,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types",
     "ItemType": "M"
   },
   {
-    "Id": 232,
+    "Id": 488,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 233,
+    "Id": 489,
     "HttpMethod": "POST",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types",
     "ItemType": "M"
   },
   {
-    "Id": 234,
+    "Id": 490,
     "HttpMethod": "GET",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 235,
+    "Id": 491,
     "HttpMethod": "PUT",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 236,
+    "Id": 492,
     "HttpMethod": "DELETE",
     "ControllerName": "OtpTypesController",
     "UrlPath": "/api/sms-manager-module/otp-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 237,
+    "Id": 493,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/{infoTypesId}/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 238,
+    "Id": 494,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/{infoTypesId}/info-messages/{infoMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 239,
+    "Id": 495,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types",
     "ItemType": "M"
   },
   {
-    "Id": 240,
+    "Id": 496,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 241,
+    "Id": 497,
     "HttpMethod": "POST",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types",
     "ItemType": "M"
   },
   {
-    "Id": 242,
+    "Id": 498,
     "HttpMethod": "GET",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 243,
+    "Id": 499,
     "HttpMethod": "PUT",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 244,
+    "Id": 500,
     "HttpMethod": "DELETE",
     "ControllerName": "InfoTypesController",
     "UrlPath": "/api/sms-manager-module/info-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 245,
+    "Id": 501,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/{campaignTypesId}/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 246,
+    "Id": 502,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/{campaignTypesId}/campaign-messages/{campaignMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 247,
+    "Id": 503,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types",
     "ItemType": "M"
   },
   {
-    "Id": 248,
+    "Id": 504,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/count",
     "ItemType": "M"
   },
   {
-    "Id": 249,
+    "Id": 505,
     "HttpMethod": "POST",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types",
     "ItemType": "M"
   },
   {
-    "Id": 250,
+    "Id": 506,
     "HttpMethod": "GET",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 251,
+    "Id": 507,
     "HttpMethod": "PUT",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 252,
+    "Id": 508,
     "HttpMethod": "DELETE",
     "ControllerName": "CampaignTypesController",
     "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 253,
+    "Id": 509,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/info-messages",
     "ItemType": "M"
   },
   {
-    "Id": 254,
+    "Id": 510,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/info-messages/{infoMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 255,
+    "Id": 511,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/otp-messages",
     "ItemType": "M"
   },
   {
-    "Id": 256,
+    "Id": 512,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/otp-messages/{otpMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 257,
+    "Id": 513,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/campaign-messages",
     "ItemType": "M"
   },
   {
-    "Id": 258,
+    "Id": 514,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/campaign-messages/{campaignMessagesId}",
     "ItemType": "M"
   },
   {
-    "Id": 259,
+    "Id": 515,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders",
     "ItemType": "M"
   },
   {
-    "Id": 260,
+    "Id": 516,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/count",
     "ItemType": "M"
   },
   {
-    "Id": 261,
+    "Id": 517,
     "HttpMethod": "POST",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders",
     "ItemType": "M"
   },
   {
-    "Id": 262,
+    "Id": 518,
     "HttpMethod": "GET",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 263,
+    "Id": 519,
     "HttpMethod": "PUT",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 264,
+    "Id": 520,
     "HttpMethod": "DELETE",
     "ControllerName": "SmsSendersController",
     "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}",
     "ItemType": "M"
   },
   {
-    "Id": 265,
+    "Id": 521,
     "HttpMethod": "GET",
     "ControllerName": "PortalPermissionsController",
     "UrlPath": "/api/user-manager-module/portal-permissions/get-portal-permissions/{permissionGroupId}",
     "ItemType": "M"
   },
   {
-    "Id": 266,
+    "Id": 522,
     "HttpMethod": "POST",
     "ControllerName": "PortalPermissionsController",
     "UrlPath": "/api/user-manager-module/portal-permissions/update-portal-permission",
     "ItemType": "M"
   },
   {
-    "Id": 267,
+    "Id": 523,
     "HttpMethod": "GET",
     "ControllerName": "ApiMethodDefinitionsController",
     "UrlPath": "/api/user-manager-module/api-method-definitions/get-api-permissions/{permissionGroupId}",
     "ItemType": "M"
   },
   {
-    "Id": 268,
+    "Id": 524,
     "HttpMethod": "POST",
     "ControllerName": "ApiMethodDefinitionsController",
     "UrlPath": "/api/user-manager-module/api-method-definitions/update-api-permission",
     "ItemType": "M"
   },
   {
-    "Id": 269,
+    "Id": 525,
     "HttpMethod": "GET",
     "ControllerName": "ApiMethodDefinitionsController",
     "UrlPath": "/api/user-manager-module/topic-workflows/{id}/uml",
     "ItemType": "M"
   },
   {
-    "Id": 270,
+    "Id": 526,
     "HttpMethod": "GET",
     "ControllerName": "ApiMethodDefinitionsController",
     "UrlPath": "/api/user-manager-module/topic-workflows/{id}/diagram",
     "ItemType": "M"
   },
   {
-    "Id": 271,
+    "Id": 527,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/register",
     "ItemType": "M"
   },
   {
-    "Id": 272,
+    "Id": 528,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/login",
     "ItemType": "M"
   },
   {
-    "Id": 273,
+    "Id": 529,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/validate",
     "ItemType": "M"
   },
   {
-    "Id": 274,
+    "Id": 530,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/refresh",
     "ItemType": "M"
   },
   {
-    "Id": 275,
+    "Id": 531,
     "HttpMethod": "GET",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/confirmEmail",
     "ItemType": "M"
   },
   {
-    "Id": 276,
+    "Id": 532,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/resendConfirmationEmail",
     "ItemType": "M"
   },
   {
-    "Id": 277,
+    "Id": 533,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/forgotPassword",
     "ItemType": "M"
   },
   {
-    "Id": 278,
+    "Id": 534,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/resetPassword",
     "ItemType": "M"
   },
   {
-    "Id": 279,
+    "Id": 535,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/manage/user2fa",
     "ItemType": "M"
   },
   {
-    "Id": 280,
+    "Id": 536,
     "HttpMethod": "GET",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/manage/info",
     "ItemType": "M"
   },
   {
-    "Id": 281,
+    "Id": 537,
     "HttpMethod": "POST",
     "ControllerName": "AuthenticationController",
     "UrlPath": "/api/auth/manage/info",

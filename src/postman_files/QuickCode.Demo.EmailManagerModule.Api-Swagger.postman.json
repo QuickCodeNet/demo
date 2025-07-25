@@ -1085,6 +1085,68 @@
       ]
     },
     {
+      "name": "Error",
+      "item": [
+        {
+          "name": "ErrorHandleError",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/error",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "error"
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "InfoMessages",
       "item": [
         {

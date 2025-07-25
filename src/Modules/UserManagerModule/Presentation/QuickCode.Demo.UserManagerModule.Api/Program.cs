@@ -36,7 +36,8 @@ Dictionary<string, string> environmentVariableConfigMap = new()
     { "READ_CONNECTION_STRING", "ConnectionStrings:ReadConnection" },
     { "WRITE_CONNECTION_STRING", "ConnectionStrings:WriteConnection" },
     { "ELASTIC_CONNECTION_STRING", "ConnectionStrings:ElasticConnection" },
-    { "EMAILMANAGERMODULEAPIKEY" , "QuickCodeApiKeys:EmailManagerModuleApiKey" },
+    { "APARTMENTMANAGEMODULEAPIKEY" , "QuickCodeApiKeys:ApartmentManageModuleApiKey" },
+	{ "EMAILMANAGERMODULEAPIKEY" , "QuickCodeApiKeys:EmailManagerModuleApiKey" },
 	{ "SMSMANAGERMODULEAPIKEY" , "QuickCodeApiKeys:SmsManagerModuleApiKey" },
 	{ "EMAILSENDERMODULEAPIKEY" , "QuickCodeApiKeys:EmailSenderModule" },
 	{ "APIKEY" , "AppSettings:ApiKey" }
