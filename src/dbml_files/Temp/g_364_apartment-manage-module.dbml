@@ -1,0 +1,321 @@
+﻿Table "SITE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]
+  "ADDRESS" string [not null]
+  "CITY" string [not null]
+  "DISTRICT" string [not null]
+  "POSTAL_CODE" string [not null]
+  "COUNTRY" string [not null, default: "Türkiye"]
+  "PHONE" string [null]
+  "EMAIL" string [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_ACTIVE_SITES[] Where:IS_ACTIVE[true] Select:ID, NAME, ADDRESS, CITY, DISTRICT'
+  Note: 'Query:GET_SITE_BY_ID[1] Where:ID Select:ID, NAME, ADDRESS, CITY, DISTRICT, PHONE, EMAIL'
+  Note: 'Query:GET_FLATS_COUNT_BY_SITE[*] Where:ID, IS_ACTIVE[true]'
+  Note: 'Query:GET_OWNERS_COUNT_BY_SITE[*] Tables:SITE S, FLAT_CONTACT FC Where:S.ID, FC.RELATIONSHIP_TYPE[Owner], S.IS_ACTIVE[true]'
+  Note: 'Query:GET_TENANTS_COUNT_BY_SITE[*] Tables:SITE S, FLAT_CONTACT FC Where:S.ID, FC.RELATIONSHIP_TYPE[Tenant], S.IS_ACTIVE[true]'
+  Note: 'Query:GET_TOTAL_PAYMENTS_BY_SITE[1] Tables:SITE S, FLAT_PAYMENT FP Where:S.ID, FP.PAID[true] Select:SUM(FP.PAYMENT_AMOUNT) TOTAL_PAYMENTS'
+}
+
+Table "EXPENSE_TYPE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null, unique]
+  "DESCRIPTION" string [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  Note: 'Query:GET_ACTIVE_EXPENSE_TYPES[] Where:IS_ACTIVE[true] Select:ID, NAME, DESCRIPTION'
+}
+
+Table "FEE_TYPE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null, unique]
+  "DESCRIPTION" string [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  Note: 'Query:GET_ACTIVE_FEE_TYPES[] Where:IS_ACTIVE[true] Select:ID, NAME, DESCRIPTION'
+}
+
+Table "PAYMENT_TYPE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null, unique]
+  "DESCRIPTION" string [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  Note: 'Query:GET_ACTIVE_PAYMENT_TYPES[] Where:IS_ACTIVE[true] Select:ID, NAME, DESCRIPTION'
+}
+
+Table "CONTACT" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]
+  "PHONE" string [not null]
+  "EMAIL" string [null]
+  "IDENTITY_NUMBER" string [null]
+  "ADDRESS" string [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_ACTIVE_CONTACTS[] Where:IS_ACTIVE[true] Select:ID, NAME, PHONE, EMAIL'
+  Note: 'Query:GET_CONTACT_BY_ID[1] Where:ID Select:ID, NAME, PHONE, EMAIL, IDENTITY_NUMBER, ADDRESS'
+  Note: 'Query:GET_CONTACT_BY_PHONE[1] Where:PHONE Select:ID, NAME, EMAIL'
+  Note: 'Query:GET_CONTACT_BY_EMAIL[1] Where:EMAIL Select:ID, NAME, PHONE'
+  Note: 'Query:GET_CONTACT_BY_IDENTITY[1] Where:IDENTITY_NUMBER Select:ID, NAME, PHONE'
+  Note: 'Query:CHECK_CONTACT_BY_PHONE[?] Where:PHONE'
+  Note: 'Query:CHECK_CONTACT_BY_EMAIL[?] Where:EMAIL'
+  Note: 'Query:GET_ACTIVE_CONTACTS_COUNT[*] Where:IS_ACTIVE[true]'
+  Note: 'Query:GET_CONTACTS_WITH_PAGER[P] Where:IS_ACTIVE[true] Select:ID, NAME, PHONE, EMAIL'
+}
+
+Enum "RELATIONSHIP_TYPE" {
+  OWNER [note: "Ev Sahibi"]
+  TENANT [note: "Kiracı"]
+  FAMILY_MEMBER [note: "Aile Üyesi"]
+  GUEST [note: "Misafir"]
+}
+
+Enum "ACCESS_TYPE" {
+  OWNER [note: "Ev Sahibi"]
+  TENANT [note: "Kiracı"]
+  MANAGER [note: "Yönetici"]
+  ADMIN [note: "Yönetici"]
+  VIEWER [note: "Görüntüleyici"]
+}
+
+Table "FLAT_CONTACT" {
+  "ID" integer [pk, increment, not null]
+  "FLAT_ID" integer [not null]
+  "CONTACT_ID" integer [not null]
+  "RELATIONSHIP_TYPE" RELATIONSHIP_TYPE [not null]
+  "START_DATE" datetime [not null]
+  "END_DATE" datetime [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_FLAT_OWNERS[] Where:FLAT_ID, RELATIONSHIP_TYPE[OWNER], IS_ACTIVE[true] Select:CONTACT_ID, START_DATE'
+  Note: 'Query:GET_FLAT_TENANTS[] Where:FLAT_ID, RELATIONSHIP_TYPE[TENANT], IS_ACTIVE[true] Select:CONTACT_ID, START_DATE, END_DATE'
+  Note: 'Query:GET_CONTACT_FLATS[] Where:CONTACT_ID, IS_ACTIVE[true] Select:FLAT_ID, RELATIONSHIP_TYPE, START_DATE'
+  Note: 'Query:GET_CONTACT_OWNED_FLATS[] Where:CONTACT_ID, RELATIONSHIP_TYPE[OWNER], IS_ACTIVE[true] Select:FLAT_ID'
+  Note: 'Query:GET_CONTACT_RENTED_FLATS[] Where:CONTACT_ID, RELATIONSHIP_TYPE[TENANT], IS_ACTIVE[true] Select:FLAT_ID'
+  Note: 'Query:CHECK_FLAT_HAS_OWNER[?] Where:FLAT_ID, RELATIONSHIP_TYPE[OWNER], IS_ACTIVE[true]'
+  Note: 'Query:CHECK_FLAT_HAS_TENANT[?] Where:FLAT_ID, RELATIONSHIP_TYPE[TENANT], IS_ACTIVE[true]'
+  Note: 'Query:GET_FLAT_CONTACTS_COUNT[*] Where:FLAT_ID, IS_ACTIVE[true]'
+}
+
+Table "SITE_MANAGER" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "CONTACT_ID" integer [not null]
+  "START_DATE" datetime [not null]
+  "END_DATE" datetime [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_SITE_MANAGERS[] Where:SITE_ID, IS_ACTIVE[true] Select:CONTACT_ID, START_DATE'
+  Note: 'Query:GET_ACTIVE_MANAGER_BY_SITE[1] Where:SITE_ID, IS_ACTIVE[true] Select:CONTACT_ID, START_DATE'
+  Note: 'Query:GET_SITE_MANAGER_WITH_CONTACT[] Tables:SITE_MANAGER SM, CONTACT P Where:SM.CONTACT_ID Select:SM.ID, P.NAME, P.PHONE, P.EMAIL, SM.START_DATE, SM.END_DATE'
+  Note: 'Query:CHECK_SITE_HAS_MANAGER[?] Where:SITE_ID, IS_ACTIVE[true]'
+}
+
+Table "PAYMENT_MONTH" {
+  "ID" integer [pk, not null]
+  "NAME" string [not null, unique]
+  Note: 'Query:GET_ALL_MONTHS[] Select:ID, NAME'
+}
+
+Table "PAYMENT_YEAR" {
+  "ID" integer [pk, not null]
+  "NAME" string [not null, unique]
+  Note: 'Query:GET_ALL_YEARS[] Select:ID, NAME'
+}
+
+Table "APARTMENT" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "NAME" string [not null]
+  "ADDRESS" string [not null]
+  "TOTAL_FLATS" integer [not null, default: 0]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_APARTMENTS_BY_SITE[] Where:SITE_ID, IS_ACTIVE[true] Select:ID, NAME, ADDRESS, TOTAL_FLATS'
+  Note: 'Query:GET_ACTIVE_APARTMENTS[] Where:IS_ACTIVE[true] Select:ID, SITE_ID, NAME, ADDRESS'
+}
+
+Table "FLAT" {
+  "ID" integer [pk, increment, not null]
+  "APARTMENT_ID" integer [not null]
+  "SITE_ID" integer [not null]
+  "FLAT_NUMBER" string [not null]
+  "FLOOR" integer [null]
+  "SQUARE_METERS" integer [null]
+  "ROOM_COUNT" integer [null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_FLATS_BY_APARTMENT[] Where:APARTMENT_ID, IS_ACTIVE[true] Select:ID, FLAT_NUMBER'
+  Note: 'Query:GET_FLATS_BY_SITE[] Where:SITE_ID, IS_ACTIVE[true] Select:ID, APARTMENT_ID, FLAT_NUMBER'
+  Note: 'Query:GET_FLATS_WITH_CONTACTS[] Tables:FLAT F, FLAT_CONTACT FP, CONTACT P Where:F.ID Select:F.ID FLAT_ID, F.FLAT_NUMBER, P.NAME CONTACT_NAME, P.PHONE CONTACT_PHONE, FP.RELATIONSHIP_TYPE'
+  Note: 'Query:GET_VACANT_FLATS[] Where:NOT EXISTS FLAT_CONTACT, IS_ACTIVE[true] Select:ID, APARTMENT_ID, FLAT_NUMBER'
+  Note: 'Query:GET_RENTED_FLATS[] Where:EXISTS FLAT_CONTACT WHERE RELATIONSHIP_TYPE[TENANT], IS_ACTIVE[true] Select:ID, APARTMENT_ID, FLAT_NUMBER'
+  Note: 'Query:GET_FLAT_BY_NUMBER[1] Where:FLAT_NUMBER, SITE_ID Select:ID, APARTMENT_ID, FLOOR, SQUARE_METERS'
+  Note: 'Query:GET_OWNED_FLATS[] Where:EXISTS FLAT_CONTACT WHERE RELATIONSHIP_TYPE[OWNER], IS_ACTIVE[true] Select:ID, APARTMENT_ID, FLAT_NUMBER'
+  Note: 'Query:GET_FLATS_COUNT_BY_SITE[*] Where:SITE_ID, IS_ACTIVE[true]'
+  Note: 'Query:GET_FLATS_COUNT_BY_APARTMENT[*] Where:APARTMENT_ID, IS_ACTIVE[true]'
+}
+
+Table "APARTMENT_FEE_PLAN" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "APARTMENT_ID" integer [not null]
+  "YEAR_ID" integer [not null]
+  "MONTH_ID" integer [not null]
+  "FEE_AMOUNT" decimal [not null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  Note: 'Query:GET_FEE_PLAN_BY_YEAR_MONTH[] Where:SITE_ID, APARTMENT_ID, YEAR_ID, MONTH_ID, IS_ACTIVE[true] Select:FEE_AMOUNT'
+  Note: 'Query:GET_FEE_PLANS_BY_SITE[] Where:SITE_ID, IS_ACTIVE[true] Select:APARTMENT_ID, YEAR_ID, MONTH_ID, FEE_AMOUNT'
+}
+
+Table "FLAT_PAYMENT" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "FLAT_ID" integer [not null]
+  "APARTMENT_ID" integer [not null]
+  "YEAR_ID" integer [not null]
+  "MONTH_ID" integer [not null]
+  "PAYMENT_AMOUNT" decimal [not null]
+  "FEE_TYPE_ID" integer [not null]
+  "DESCRIPTION" string [not null]
+  "FEE_PLAN_ID" integer [not null]
+  "EXPENSE_ID" integer [null]
+  "PAID" boolean [not null, default: false]
+  "PAID_AT" datetime [null]
+  "PAYMENT_TYPE_ID" integer [not null]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_PAYMENTS_BY_FLAT_YEAR_MONTH[] Where:SITE_ID, FLAT_ID, YEAR_ID, MONTH_ID Select:ID, PAYMENT_AMOUNT, FEE_TYPE_ID, DESCRIPTION, FEE_PLAN_ID, EXPENSE_ID, PAID, PAID_AT, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_UNPAID_PAYMENTS_BY_FLAT[] Where:SITE_ID, FLAT_ID, PAID[false] Select:ID, YEAR_ID, MONTH_ID, PAYMENT_AMOUNT, FEE_TYPE_ID, DESCRIPTION, FEE_PLAN_ID, EXPENSE_ID, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_UNPAID_PAYMENTS_BY_SITE[] Where:SITE_ID, PAID[false] Select:ID, FLAT_ID, APARTMENT_ID, YEAR_ID, MONTH_ID, PAYMENT_AMOUNT, FEE_TYPE_ID, DESCRIPTION'
+  Note: 'Command:MARK_PAYMENT_AS_PAID Where:ID Set:PAID[true], PAID_AT[Now], PAYMENT_TYPE_ID'
+  Note: 'Query:GET_TOTAL_CASH_IN_SAFE[] Where:SITE_ID, PAID[true] Select:SUM(PAYMENT_AMOUNT) TOTAL_CASH'
+  Note: 'Query:GET_PENDING_PAYMENTS_BY_FLAT_YEAR_MONTH[] Where:SITE_ID, PAID[false] Select:ID, FLAT_ID, APARTMENT_ID, YEAR_ID, MONTH_ID, PAYMENT_AMOUNT, FEE_TYPE_ID, DESCRIPTION, FEE_PLAN_ID, EXPENSE_ID, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_FLAT_PAYMENTS_BY_MONTH[] Where:FLAT_ID, YEAR_ID, MONTH_ID Select:ID, PAYMENT_AMOUNT, FEE_TYPE_ID, PAID'
+  Note: 'Query:GET_PAYMENTS_COUNT_BY_FLAT[*] Where:FLAT_ID'
+  Note: 'Query:GET_TOTAL_PAID_AMOUNT_BY_FLAT[1] Where:FLAT_ID, PAID[true] Select:SUM(PAYMENT_AMOUNT) TOTAL_AMOUNT'
+  Note: 'Query:GET_UNPAID_PAYMENTS_COUNT_BY_SITE[*] Where:SITE_ID, PAID[false]'
+}
+
+Table "COMMON_EXPENSE" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "APARTMENT_ID" integer [not null]
+  "NAME" string [not null]
+  "EXPENSE_TYPE_ID" integer [not null]
+  "YEAR_ID" integer [not null]
+  "MONTH_ID" integer [not null]
+  "EXPENSE_AMOUNT" decimal [not null]
+  "DESCRIPTION" string [null]
+  "PAID" boolean [not null, default: false]
+  "PAID_AT" datetime [null]
+  "PAYMENT_TYPE_ID" integer [not null]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_EXPENSES_BY_APARTMENT_MONTH[] Where:SITE_ID, APARTMENT_ID, YEAR_ID, MONTH_ID Select:ID, NAME, EXPENSE_TYPE_ID, EXPENSE_AMOUNT, DESCRIPTION, PAID, PAID_AT, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_EXPENSES_BY_SITE[] Where:SITE_ID Select:ID, APARTMENT_ID, NAME, EXPENSE_TYPE_ID, EXPENSE_AMOUNT, DESCRIPTION, PAID, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_EXPENSES_SUMMARY_BY_YEAR[] Where:SITE_ID, APARTMENT_ID, YEAR_ID Select:EXPENSE_TYPE_ID, SUM(EXPENSE_AMOUNT) TOTAL_AMOUNT'
+  Note: 'Query:GET_EXPENSES_BY_TYPE[] Where:SITE_ID, APARTMENT_ID, EXPENSE_TYPE_ID, YEAR_ID, MONTH_ID Select:ID, NAME, EXPENSE_AMOUNT, DESCRIPTION, PAID, PAID_AT, PAYMENT_TYPE_ID'
+  Note: 'Command:MARK_EXPENSE_AS_PAID Where:ID Set:PAID[true], PAID_AT[Now], PAYMENT_TYPE_ID'
+  Note: 'Query:GET_UNPAID_EXPENSES_BY_APARTMENT[] Where:APARTMENT_ID, PAID[false] Select:ID, NAME, EXPENSE_AMOUNT'
+  Note: 'Query:GET_EXPENSES_COUNT_BY_APARTMENT[*] Where:APARTMENT_ID'
+  Note: 'Query:GET_TOTAL_EXPENSE_AMOUNT_BY_APARTMENT[1] Where:APARTMENT_ID Select:SUM(EXPENSE_AMOUNT) TOTAL_AMOUNT'
+}
+
+Table "EXPENSE_INSTALLMENT" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "APARTMENT_ID" integer [not null]
+  "EXPENSE_ID" integer [not null]
+  "INSTALLMENT_NUMBER" integer [not null]
+  "TOTAL_INSTALLMENTS" integer [not null]
+  "INSTALLMENT_AMOUNT" decimal [not null]
+  "DUE_DATE" datetime [not null]
+  "PAID" boolean [not null, default: false]
+  "PAID_AT" datetime [null]
+  "PAYMENT_TYPE_ID" integer [not null]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_EXPENSE_INSTALLMENTS[] Where:EXPENSE_ID Select:ID, INSTALLMENT_NUMBER, TOTAL_INSTALLMENTS, INSTALLMENT_AMOUNT, DUE_DATE, PAID, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_UNPAID_INSTALLMENTS[] Where:EXPENSE_ID, PAID[false] Select:ID, INSTALLMENT_NUMBER, INSTALLMENT_AMOUNT, DUE_DATE'
+  Note: 'Query:GET_OVERDUE_INSTALLMENTS[] Where:PAID[false], DUE_DATE[<|Now] Select:ID, EXPENSE_ID, INSTALLMENT_NUMBER, INSTALLMENT_AMOUNT, DUE_DATE'
+  Note: 'Query:GET_APARTMENT_INSTALLMENTS[] Where:SITE_ID, APARTMENT_ID Select:ID, EXPENSE_ID, INSTALLMENT_NUMBER, INSTALLMENT_AMOUNT, DUE_DATE, PAID'
+  Note: 'Query:GET_SITE_INSTALLMENTS[] Where:SITE_ID Select:ID, APARTMENT_ID, EXPENSE_ID, INSTALLMENT_NUMBER, INSTALLMENT_AMOUNT, DUE_DATE, PAID'
+  Note: 'Command:MARK_INSTALLMENT_AS_PAID Where:ID Set:PAID[true], PAID_AT[Now], PAYMENT_TYPE_ID'
+}
+
+Table "FLAT_EXPENSE_INSTALLMENT" {
+  "ID" integer [pk, increment, not null]
+  "SITE_ID" integer [not null]
+  "APARTMENT_ID" integer [not null]
+  "FLAT_ID" integer [not null]
+  "EXPENSE_ID" integer [not null]
+  "EXPENSE_INSTALLMENT_ID" integer [not null]
+  "FLAT_INSTALLMENT_NUMBER" integer [not null]
+  "TOTAL_FLAT_INSTALLMENTS" integer [not null]
+  "FLAT_INSTALLMENT_AMOUNT" decimal [not null]
+  "DUE_DATE" datetime [not null]
+  "PAID" boolean [not null, default: false]
+  "PAID_AT" datetime [null]
+  "PAYMENT_TYPE_ID" integer [not null]
+  "CREATED_DATE" datetime [not null, default: '(getdate())']
+  Note: 'Query:GET_FLAT_EXPENSE_INSTALLMENTS[] Where:FLAT_ID, EXPENSE_ID Select:ID, FLAT_INSTALLMENT_NUMBER, TOTAL_FLAT_INSTALLMENTS, FLAT_INSTALLMENT_AMOUNT, DUE_DATE, PAID, PAYMENT_TYPE_ID'
+  Note: 'Query:GET_FLAT_UNPAID_INSTALLMENTS[] Where:FLAT_ID, PAID[false] Select:ID, EXPENSE_ID, FLAT_INSTALLMENT_NUMBER, FLAT_INSTALLMENT_AMOUNT, DUE_DATE'
+  Note: 'Query:GET_FLAT_OVERDUE_INSTALLMENTS[] Where:FLAT_ID, PAID[false], DUE_DATE[<|Now] Select:ID, EXPENSE_ID, FLAT_INSTALLMENT_NUMBER, FLAT_INSTALLMENT_AMOUNT, DUE_DATE'
+  Note: 'Query:GET_APARTMENT_FLAT_INSTALLMENTS[] Where:SITE_ID, APARTMENT_ID Select:ID, FLAT_ID, EXPENSE_ID, FLAT_INSTALLMENT_NUMBER, FLAT_INSTALLMENT_AMOUNT, DUE_DATE, PAID'
+  Note: 'Query:GET_FLAT_TOTAL_DEBT[] Where:FLAT_ID, PAID[false] Select:SUM(FLAT_INSTALLMENT_AMOUNT) TOTAL_DEBT'
+  Note: 'Command:MARK_FLAT_INSTALLMENT_AS_PAID Where:ID Set:PAID[true], PAID_AT[Now], PAYMENT_TYPE_ID'
+}
+
+Table "USER_SITE_ACCESS" {
+  "ID" integer [pk, increment, not null]
+  "USER_ID" integer [not null]
+  "SITE_ID" integer [not null]
+  "FLAT_ID" integer [null]
+  "ACCESS_TYPE" ACCESS_TYPE [not null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "GRANTED_DATE" datetime [not null, default: '(getdate())']
+  "GRANTED_BY" integer [null]
+  Note: 'Query:GET_USER_SITES[] Where:USER_ID, IS_ACTIVE[true] Select:SITE_ID, ACCESS_TYPE, FLAT_ID'
+  Note: 'Query:GET_SITE_USERS[] Where:SITE_ID, IS_ACTIVE[true] Select:USER_ID, ACCESS_TYPE, FLAT_ID'
+  Note: 'Query:GET_USER_FLATS[] Where:USER_ID, IS_ACTIVE[true] Select:SITE_ID, FLAT_ID, ACCESS_TYPE'
+}
+
+Ref: "APARTMENT"."SITE_ID" > "SITE"."ID"
+Ref: "FLAT"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "FLAT"."SITE_ID" > "SITE"."ID"
+Ref: "FLAT_CONTACT"."FLAT_ID" > "FLAT"."ID"
+Ref: "FLAT_CONTACT"."CONTACT_ID" > "CONTACT"."ID"
+Ref: "SITE_MANAGER"."SITE_ID" > "SITE"."ID"
+Ref: "SITE_MANAGER"."CONTACT_ID" > "CONTACT"."ID"
+Ref: "FLAT_PAYMENT"."SITE_ID" > "SITE"."ID"
+Ref: "FLAT_PAYMENT"."FLAT_ID" > "FLAT"."ID"
+Ref: "FLAT_PAYMENT"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "FLAT_PAYMENT"."FEE_TYPE_ID" > "FEE_TYPE"."ID"
+Ref: "FLAT_PAYMENT"."PAYMENT_TYPE_ID" > "PAYMENT_TYPE"."ID"
+
+Ref: "COMMON_EXPENSE"."SITE_ID" > "SITE"."ID"
+Ref: "COMMON_EXPENSE"."PAYMENT_TYPE_ID" > "PAYMENT_TYPE"."ID"
+Ref: "COMMON_EXPENSE"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "COMMON_EXPENSE"."EXPENSE_TYPE_ID" > "EXPENSE_TYPE"."ID"
+
+Ref: "APARTMENT_FEE_PLAN"."SITE_ID" > "SITE"."ID"
+Ref: "APARTMENT_FEE_PLAN"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "APARTMENT_FEE_PLAN"."YEAR_ID" > "PAYMENT_YEAR"."ID"
+Ref: "APARTMENT_FEE_PLAN"."MONTH_ID" > "PAYMENT_MONTH"."ID"
+Ref: "FLAT_PAYMENT"."YEAR_ID" > "PAYMENT_YEAR"."ID"
+Ref: "FLAT_PAYMENT"."MONTH_ID" > "PAYMENT_MONTH"."ID"
+Ref: "FLAT_PAYMENT"."FEE_PLAN_ID" > "APARTMENT_FEE_PLAN"."ID"
+Ref: "FLAT_PAYMENT"."EXPENSE_ID" > "COMMON_EXPENSE"."ID"
+Ref: "COMMON_EXPENSE"."YEAR_ID" > "PAYMENT_YEAR"."ID"
+Ref: "COMMON_EXPENSE"."MONTH_ID" > "PAYMENT_MONTH"."ID"
+Ref: "EXPENSE_INSTALLMENT"."SITE_ID" > "SITE"."ID"
+Ref: "EXPENSE_INSTALLMENT"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "EXPENSE_INSTALLMENT"."EXPENSE_ID" > "COMMON_EXPENSE"."ID"
+Ref: "EXPENSE_INSTALLMENT"."PAYMENT_TYPE_ID" > "PAYMENT_TYPE"."ID"
+
+Ref: "FLAT_EXPENSE_INSTALLMENT"."SITE_ID" > "SITE"."ID"
+Ref: "FLAT_EXPENSE_INSTALLMENT"."PAYMENT_TYPE_ID" > "PAYMENT_TYPE"."ID"
+Ref: "FLAT_EXPENSE_INSTALLMENT"."APARTMENT_ID" > "APARTMENT"."ID"
+Ref: "FLAT_EXPENSE_INSTALLMENT"."FLAT_ID" > "FLAT"."ID"
+Ref: "FLAT_EXPENSE_INSTALLMENT"."EXPENSE_ID" > "COMMON_EXPENSE"."ID"
+Ref: "FLAT_EXPENSE_INSTALLMENT"."EXPENSE_INSTALLMENT_ID" > "EXPENSE_INSTALLMENT"."ID"
+
+Ref: "USER_SITE_ACCESS"."SITE_ID" > "SITE"."ID"
+Ref: "USER_SITE_ACCESS"."FLAT_ID" > "FLAT"."ID"
