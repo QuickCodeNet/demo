@@ -1,0 +1,29 @@
+﻿{
+	"PortalPermissionTypes": [
+		{
+			"Id": 0,
+			"Name": "List",
+			"Description": "View Records"
+		},
+		{
+			"Id": 1,
+			"Name": "Detail",
+			"Description": "View Single Record"
+		},
+		{
+			"Id": 2,
+			"Name": "Insert",
+			"Description": "Add New Record"
+		},
+		{
+			"Id": 3,
+			"Name": "Delete",
+			"Description": "Remove Record"
+		},
+		{
+			"Id": 4,
+			"Name": "Update",
+			"Description": "Edit Record"
+		}
+	]
+}
