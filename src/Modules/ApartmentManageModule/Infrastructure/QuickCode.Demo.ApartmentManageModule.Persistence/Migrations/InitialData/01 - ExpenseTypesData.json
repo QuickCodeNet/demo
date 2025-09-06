@@ -1,0 +1,10 @@
+﻿{
+  "EXPENSE_TYPES": [
+    { "NAME": "Elektrik Gideri", "DESCRIPTION": "Elektrik faturası ödemeleri", "IS_ACTIVE": true },
+    { "NAME": "Su Gideri", "DESCRIPTION": "Su faturası ödemeleri", "IS_ACTIVE": true },
+    { "NAME": "Temizlik Gideri", "DESCRIPTION": "Apartman temizlik hizmetleri", "IS_ACTIVE": true },
+    { "NAME": "Asansör Gideri", "DESCRIPTION": "Asansör bakım ve onarım", "IS_ACTIVE": true },
+    { "NAME": "Bahçe Temizliği", "DESCRIPTION": "Bahçe bakım ve temizlik", "IS_ACTIVE": true },
+    { "NAME": "Diğer Giderler", "DESCRIPTION": "Çeşitli ortak giderler", "IS_ACTIVE": true }
+  ]
+} 

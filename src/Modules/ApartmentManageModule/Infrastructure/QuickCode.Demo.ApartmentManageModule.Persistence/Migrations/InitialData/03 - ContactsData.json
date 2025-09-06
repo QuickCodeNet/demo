@@ -1,0 +1,14 @@
+﻿{
+  "CONTACTS": [
+    { "NAME": "Ahmet Yılmaz", "PHONE": "5551111001", "EMAIL": "ahmet@example.com", "IDENTITY_NUMBER": "12345678901", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Mehmet Demir", "PHONE": "5551111002", "EMAIL": "mehmet@example.com", "IDENTITY_NUMBER": "12345678902", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Fatma Kaya", "PHONE": "5551111003", "EMAIL": "fatma@example.com", "IDENTITY_NUMBER": "12345678903", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Ali Özkan", "PHONE": "5551111004", "EMAIL": "ali@example.com", "IDENTITY_NUMBER": "12345678904", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Ayşe Çelik", "PHONE": "5551111005", "EMAIL": "ayse@example.com", "IDENTITY_NUMBER": "12345678905", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Mustafa Şahin", "PHONE": "5551111006", "EMAIL": "mustafa@example.com", "IDENTITY_NUMBER": "12345678906", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Zeynep Arslan", "PHONE": "5551111007", "EMAIL": "zeynep@example.com", "IDENTITY_NUMBER": "12345678907", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Hasan Yıldız", "PHONE": "5551111008", "EMAIL": "hasan@example.com", "IDENTITY_NUMBER": "12345678908", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Elif Öztürk", "PHONE": "5551111009", "EMAIL": "elif@example.com", "IDENTITY_NUMBER": "12345678909", "ADDRESS": "İstanbul", "IS_ACTIVE": true },
+    { "NAME": "Burak Korkmaz", "PHONE": "5551111010", "EMAIL": "burak@example.com", "IDENTITY_NUMBER": "12345678910", "ADDRESS": "İstanbul", "IS_ACTIVE": true }
+  ]
+} 

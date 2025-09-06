@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <GenerateCode>True</GenerateCode>
+        
+    </PropertyGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591;AD0001</NoWarn>
+        <UserSecretsId>089bf36e-214c-4a56-9682-7502b3f26351</UserSecretsId>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Build" Version="17.12.6" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="RestSharp" Version="112.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.4" />
+        <PackageReference Include="System.Data.Common" Version="4.3.0" />
+        <PackageReference Include="System.Runtime" Version="4.3.1" />
+        <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.3.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.2" />
+        <PackageReference Include="NSwag.MSBuild" Version="14.2.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.1" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.SqlServer.Storage" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.PostgreSQL.Storage" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" Version="9.0.0" />
+        <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+        <PackageReference Include="Polly" Version="8.6.1" />
+        <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.2" />
+        <PackageReference Include="OpenTelemetry" Version="1.12.0" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.12.0.0" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.12.0" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.12.0" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.12.0-beta.1" />
+        <PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.6.0-rc.1" />
+        <PackageReference Include="OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="1.12.0-beta.1" />
+        <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Core\QuickCode.Demo.ApartmentManageModule.Application\QuickCode.Demo.ApartmentManageModule.Application.csproj" PrivateAssets="All" />
+        <ProjectReference Include="..\..\Infrastructure\QuickCode.Demo.ApartmentManageModule.Persistence\QuickCode.Demo.ApartmentManageModule.Persistence.csproj" PrivateAssets="All" />
+        <ProjectReference Include="..\..\..\..\Common\QuickCode.Demo.Common\QuickCode.Demo.Common.csproj" PrivateAssets="All" >
+            <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+        </ProjectReference>
+    </ItemGroup>
+    <Target Name="NSwag_swagger_out" BeforeTargets="PostBuildEvent" Condition="'$(GenerateCode)' == 'True'">
+        <Exec Command="dotnet new tool-manifest --force" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+        <Exec Command="dotnet tool install Swashbuckle.AspNetCore.Cli --version 8.1.4" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor" />
+        <Exec Condition="$([MSBuild]::IsOSUnixLike())" Command="dotnet swagger tofile --output $([MSBuild]::Escape('$(SolutionDir)swagger_files\$(AssemblyName)-Swagger.json')) $([MSBuild]::Escape('$(TargetDir)$(AssemblyName).dll')) v1" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor;ASPNETCORE_ENVIRONMENT=Local;RUN_MIGRATION=NO;" />
+        <Exec Condition="$([MSBuild]::IsOSPlatform('Windows'))" Command="dotnet swagger tofile --output $([MSBuild]::Escape('$(SolutionDir)swagger_files\$(AssemblyName)-Swagger.json')) $([MSBuild]::Escape('$(TargetDir)$(AssemblyName).dll')) v1" EnvironmentVariables="DOTNET_ROLL_FORWARD=LatestMajor;ASPNETCORE_ENVIRONMENT=Local;RUN_MIGRATION=NO;" />
+    </Target>
+</Project>
