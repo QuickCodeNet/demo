@@ -4,7 +4,6 @@ on:
   push:
     branches: [ 'main' ]
 
-
 jobs:         
   event-listener-service:
     name: Kafka Event Listener Api
