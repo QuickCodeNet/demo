@@ -1,0 +1,41 @@
+﻿using System.Linq;
+using QuickCode.Demo.Common.Mediator;
+using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using QuickCode.Demo.Common.Models;
+using QuickCode.Demo.UserManagerModule.Domain.Entities;
+using QuickCode.Demo.UserManagerModule.Application.Interfaces.Repositories;
+using QuickCode.Demo.UserManagerModule.Application.Dtos;
+using QuickCode.Demo.UserManagerModule.Domain.Enums;
+
+namespace QuickCode.Demo.UserManagerModule.Application.Features
+{
+    public class PermissionGroupsGetItemQuery : IRequest<Response<PermissionGroupsDto>>
+    {
+        public string Name { get; set; }
+
+        public PermissionGroupsGetItemQuery(string name)
+        {
+            this.Name = name;
+        }
+
+        public class PermissionGroupsGetItemHandler : IRequestHandler<PermissionGroupsGetItemQuery, Response<PermissionGroupsDto>>
+        {
+            private readonly ILogger<PermissionGroupsGetItemHandler> _logger;
+            private readonly IPermissionGroupsRepository _repository;
+            public PermissionGroupsGetItemHandler(ILogger<PermissionGroupsGetItemHandler> logger, IPermissionGroupsRepository repository)
+            {
+                _logger = logger;
+                _repository = repository;
+            }
+
+            public async Task<Response<PermissionGroupsDto>> Handle(PermissionGroupsGetItemQuery request, CancellationToken cancellationToken)
+            {
+                var returnValue = await _repository.GetByPkAsync(request.Name);
+                return returnValue.ToResponse();
+            }
+        }
+    }
+}
