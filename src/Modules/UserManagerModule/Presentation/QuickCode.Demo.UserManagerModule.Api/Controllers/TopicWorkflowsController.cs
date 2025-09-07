@@ -46,10 +46,10 @@ namespace QuickCode.Demo.UserManagerModule.Api.Controllers
             {
                 var cacheKey = $"diagram_{id}";
                 if (Cache.TryGetValue(cacheKey, out byte[] cachedImage))
-                    return File(cachedImage, "image/png");
+                    return File(cachedImage, "image/svg+xml");
 
                 var workflowsDto =  await mediator.Send(new TopicWorkflowsGetItemQuery(id));
-                var plantUmlBaseUrl = "https://www.plantuml.com/plantuml/png/";
+                var plantUmlBaseUrl = "https://www.plantuml.com/plantuml/svg/";
                 var workflow = WorkflowDeserializer.ParseWorkflow(workflowsDto.Value.WorkflowContent);
 
                 var client = HttpClientFactory.CreateClient();
@@ -63,7 +63,7 @@ namespace QuickCode.Demo.UserManagerModule.Api.Controllers
                 var imageBytes = await response.Content.ReadAsByteArrayAsync();
                 Cache.Set(cacheKey, imageBytes, TimeSpan.FromHours(1));
 
-                return File(imageBytes, "image/png");
+                return File(imageBytes, "image/svg+xml");
             }
             catch (Exception ex)
             {

@@ -89,7 +89,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
                 return NotFound("Diagram image not found.");
             }
 
-            var contentType = "image/png"; 
+            var contentType = "image/svg+xml"; 
             if (fileResponse.Headers.TryGetValue("Content-Type", out var values))
             {
                 contentType = values.FirstOrDefault() ?? contentType;
@@ -99,7 +99,7 @@ namespace QuickCode.Demo.Portal.Controllers.UserManagerModule
             await fileResponse.Stream.CopyToAsync(memoryStream);
             var fileBytes = memoryStream.ToArray(); 
             
-            return File(fileBytes, contentType, $"diagram{workflowId}.png"); 
+            return File(fileBytes, contentType, $"diagram{workflowId}.svg"); 
         }
 
         [Route("GetUml/{workflowId}")]
