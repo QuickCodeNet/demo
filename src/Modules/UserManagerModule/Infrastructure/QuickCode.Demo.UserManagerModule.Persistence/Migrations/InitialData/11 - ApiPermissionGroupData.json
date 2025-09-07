@@ -1,6 +1,2611 @@
 ﻿{
 "ApiPermissionGroups": [
   {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenusPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenuscountPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalmenusPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypesColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypescountColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulecolumntypesColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsgetworkflowstopicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiusermanagermoduletopicworkflowsgetworkflows2topicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowscountTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgetkafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgetactivekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowsKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowstopicworkflowsidKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventscountKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersaspnetusersidPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsapipermissiongroupspermissiongroupnamePermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupscountPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypescountPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsPortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionscountPortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupsportalpermissiongroupspermissiongroupnamePortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupportalpermissiongroupsportalpermissionnameportalpermissiongroupspermissiongroupnameportalpermissiongroupsportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupscountPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupsapipermissiongroupspermissiongroupnameApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupapipermissiongroupspermissiongroupnameapipermissiongroupsapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupscountApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventsApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventskafkaeventstopicnameApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsapipermissiongroupspermissiongroupnameApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionscountApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingscountTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesaspnetuserrolesuseridAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsaspnetroleclaimsidAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolescountAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersgetuseraspnetusersemailAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesaspnetuserrolesuseridAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsaspnetuserclaimsidAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensaspnetusertokensuseridAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsaspnetuserloginsloginproviderAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensrefreshtokensidAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserscountAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetusersAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensgetrefreshtokenrefreshtokenstokenRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiusermanagermodulerefreshtokensupdaterefreshtokenrefreshtokenstokenRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokenscountRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulerefreshtokensRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimscountAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimscountAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginscountAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolescountAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokenscountAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetactivesitessitesisactiveboolSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetsitebyidsitesidintSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetflatscountbysitesitesidintsitesisactiveboolSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetownerscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgettenantscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgettotalpaymentsbysitesitesidintflatpaymentspaidboolSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentsSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentsapartmentsidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatsSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatsflatsidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidsitemanagersSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidsitemanagerssitemanagersidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatpaymentsSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatpaymentsflatpaymentsidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidcommonexpensesSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidcommonexpensescommonexpensesidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansapartmentfeeplansidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsexpenseinstallmentsidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsflatexpenseinstallmentsidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesusersiteaccessesidSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitescountSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulesitesSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesgetactiveexpensetypesexpensetypesisactiveboolExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensesExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensescommonexpensesidExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypescountExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesgetactivefeetypesfeetypesisactiveboolFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsflatpaymentsidFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypescountFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulefeetypesFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesgetactivepaymenttypespaymenttypesisactiveboolPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsflatpaymentsidPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensesPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensescommonexpensesidPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsexpenseinstallmentsidPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsflatexpenseinstallmentsidPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypescountPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetactivecontactscontactsisactiveboolContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyidcontactsidintContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyphonecontactsphoneContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyemailcontactsemailContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyidentitycontactsidentitynumberContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscheckcontactbyphonecontactsphoneContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscheckcontactbyemailcontactsemailContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetactivecontactscountcontactsisactiveboolContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactswithpagercontactsisactiveboolContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsflatcontactsidContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidsitemanagersContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidsitemanagerssitemanagersidContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscountContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulecontactsContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflatownersflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflattenantsflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactflatsflatcontactscontactidintflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactownedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactrentedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscheckflathasownerflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscheckflathastenantflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflatcontactscountflatcontactsflatidintflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscountFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerssitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetactivemanagerbysitesitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerwithcontactsitemanagerscontactidintSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagerschecksitehasmanagersitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagerscountSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsgetallmonthsPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansapartmentfeeplansidPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsflatpaymentsidPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensesPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensescommonexpensesidPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthscountPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsgetallyearsPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansapartmentfeeplansidPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsflatpaymentsidPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensesPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensescommonexpensesidPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearscountPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsgetapartmentsbysiteapartmentssiteidintapartmentsisactiveboolApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsgetactiveapartmentsapartmentsisactiveboolApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsflatsidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsflatpaymentsidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensesApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensescommonexpensesidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansapartmentfeeplansidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsexpenseinstallmentsidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsflatexpenseinstallmentsidApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentscountApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleapartmentsApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatsbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatsbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatswithcontactsflatsidintFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetvacantflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetrentedflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatbynumberflatssiteidintflatsflatnumberFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetownedflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatscountbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatscountbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsflatcontactsidFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsflatpaymentsidFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsflatexpenseinstallmentsidFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesusersiteaccessesidFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatscountFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatsFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplanbyyearmonthapartmentfeeplanssiteidintapartmentfeeplansapartmentidintapartmentfeeplansyearidintapartmentfeeplansmonthidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplansbysiteapartmentfeeplanssiteidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsflatpaymentsidApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplanscountApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbyflatflatpaymentssiteidintflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgettotalcashinsafeflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpendingpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetflatpaymentsbymonthflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentscountbyflatflatpaymentsflatidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgettotalpaidamountbyflatflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentscountbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleflatpaymentsmarkpaymentaspaidflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentscountFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbyapartmentmonthcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbysitecommonexpensessiteidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensessummarybyyearcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbytypecommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesexpensetypeidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetunpaidexpensesbyapartmentcommonexpensesapartmentidintcommonexpensespaidboolCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensescountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgettotalexpenseamountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsflatpaymentsidCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsexpenseinstallmentsidCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsflatexpenseinstallmentsidCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemodulecommonexpensesmarkexpenseaspaidcommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescountCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetexpenseinstallmentsexpenseinstallmentsexpenseidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetunpaidinstallmentsexpenseinstallmentsexpenseidintexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetoverdueinstallmentsexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetapartmentinstallmentsexpenseinstallmentssiteidintexpenseinstallmentsapartmentidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetsiteinstallmentsexpenseinstallmentssiteidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsflatexpenseinstallmentsidExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleexpenseinstallmentsmarkinstallmentaspaidexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentscountExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatexpenseinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentsexpenseidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatunpaidinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatoverdueinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetapartmentflatinstallmentsflatexpenseinstallmentssiteidintflatexpenseinstallmentsapartmentidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflattotaldebtflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleflatexpenseinstallmentsmarkflatinstallmentaspaidflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentscountFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetusersitesusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetsiteusersusersiteaccessessiteidintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetuserflatsusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessescountUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagescountInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagescountCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagescountOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypescountOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypescountInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescountCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesinfomessagesidEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesotpmessagesidEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagesEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagescampaignmessagesidEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsenderscountEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleemailsendersEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagescountInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagescountCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagescountOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypescountOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypescountInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescountCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesinfomessagesidSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesotpmessagesidSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagesSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagescampaignmessagesidSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssendersSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderscountSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulesmssendersSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Admin",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsgetportalpermissionspermissiongroupnamePortalPermissionsController",
     "PermissionGroupName": "Admin",
     "IsActive": true
@@ -29,6 +2634,2611 @@
     "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsiddiagramApiMethodDefinitionsController",
     "PermissionGroupName": "Admin",
     "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenusPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenuscountPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalmenusPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypesColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypescountColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulecolumntypesColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulecolumntypesidintColumnTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsgetworkflowstopicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiusermanagermoduletopicworkflowsgetworkflows2topicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowscountTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgetkafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgetactivekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowsKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowstopicworkflowsidKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventscountKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulekafkaeventsKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersaspnetusersidPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsapipermissiongroupspermissiongroupnamePermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupscountPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypescountPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsPortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionscountPortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupsportalpermissiongroupspermissiongroupnamePortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupportalpermissiongroupsportalpermissionnameportalpermissiongroupspermissiongroupnameportalpermissiongroupsportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupscountPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupsapipermissiongroupspermissiongroupnameApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupapipermissiongroupspermissiongroupnameapipermissiongroupsapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupscountApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventsApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventskafkaeventstopicnameApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsapipermissiongroupspermissiongroupnameApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionscountApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingscountTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesaspnetuserrolesuseridAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsaspnetroleclaimsidAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolescountAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersgetuseraspnetusersemailAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesaspnetuserrolesuseridAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsaspnetuserclaimsidAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensaspnetusertokensuseridAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsaspnetuserloginsloginproviderAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensrefreshtokensidAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserscountAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetusersAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensgetrefreshtokenrefreshtokenstokenRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiusermanagermodulerefreshtokensupdaterefreshtokenrefreshtokenstokenRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokenscountRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermodulerefreshtokensRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimscountAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimscountAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginscountAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolescountAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokenscountAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetactivesitessitesisactiveboolSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetsitebyidsitesidintSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetflatscountbysitesitesidintsitesisactiveboolSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgetownerscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgettenantscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesgettotalpaymentsbysitesitesidintflatpaymentspaidboolSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentsSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentsapartmentsidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatsSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatsflatsidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidsitemanagersSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidsitemanagerssitemanagersidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatpaymentsSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatpaymentsflatpaymentsidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidcommonexpensesSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidcommonexpensescommonexpensesidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansapartmentfeeplansidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsexpenseinstallmentsidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsflatexpenseinstallmentsidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesusersiteaccessesidSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitescountSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulesitesSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulesitesidintSitesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesgetactiveexpensetypesexpensetypesisactiveboolExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensesExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensescommonexpensesidExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypescountExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesgetactivefeetypesfeetypesisactiveboolFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsflatpaymentsidFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypescountFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulefeetypesFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesgetactivepaymenttypespaymenttypesisactiveboolPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsflatpaymentsidPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensesPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensescommonexpensesidPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsexpenseinstallmentsidPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsflatexpenseinstallmentsidPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypescountPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetactivecontactscontactsisactiveboolContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyidcontactsidintContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyphonecontactsphoneContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyemailcontactsemailContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactbyidentitycontactsidentitynumberContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscheckcontactbyphonecontactsphoneContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscheckcontactbyemailcontactsemailContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetactivecontactscountcontactsisactiveboolContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsgetcontactswithpagercontactsisactiveboolContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsflatcontactsidContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidsitemanagersContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscontactsidsitemanagerssitemanagersidContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactscountContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulecontactsContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulecontactsidintContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflatownersflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflattenantsflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactflatsflatcontactscontactidintflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactownedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetcontactrentedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscheckflathasownerflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscheckflathastenantflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsgetflatcontactscountflatcontactsflatidintflatcontactsisactiveboolFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactscountFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerssitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetactivemanagerbysitesitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerwithcontactsitemanagerscontactidintSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagerschecksitehasmanagersitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagerscountSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsgetallmonthsPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansapartmentfeeplansidPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsflatpaymentsidPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensesPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensescommonexpensesidPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthscountPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsgetallyearsPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansapartmentfeeplansidPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsflatpaymentsidPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensesPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensescommonexpensesidPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearscountPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsgetapartmentsbysiteapartmentssiteidintapartmentsisactiveboolApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsgetactiveapartmentsapartmentsisactiveboolApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsflatsidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsflatpaymentsidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensesApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensescommonexpensesidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansapartmentfeeplansidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsexpenseinstallmentsidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsflatexpenseinstallmentsidApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentscountApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleapartmentsApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatsbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatsbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatswithcontactsflatsidintFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetvacantflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetrentedflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatbynumberflatssiteidintflatsflatnumberFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetownedflatsflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatscountbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsgetflatscountbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsflatcontactsidFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsflatpaymentsidFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsflatexpenseinstallmentsidFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesusersiteaccessesidFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatscountFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatsFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatsidintFlatsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplanbyyearmonthapartmentfeeplanssiteidintapartmentfeeplansapartmentidintapartmentfeeplansyearidintapartmentfeeplansmonthidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplansbysiteapartmentfeeplanssiteidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsflatpaymentsidApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplanscountApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbyflatflatpaymentssiteidintflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgettotalcashinsafeflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpendingpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetflatpaymentsbymonthflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentscountbyflatflatpaymentsflatidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgettotalpaidamountbyflatflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentscountbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleflatpaymentsmarkpaymentaspaidflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentscountFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbyapartmentmonthcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbysitecommonexpensessiteidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensessummarybyyearcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbytypecommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesexpensetypeidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetunpaidexpensesbyapartmentcommonexpensesapartmentidintcommonexpensespaidboolCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgetexpensescountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesgettotalexpenseamountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsflatpaymentsidCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsexpenseinstallmentsidCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsflatexpenseinstallmentsidCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemodulecommonexpensesmarkexpenseaspaidcommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensescountCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetexpenseinstallmentsexpenseinstallmentsexpenseidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetunpaidinstallmentsexpenseinstallmentsexpenseidintexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetoverdueinstallmentsexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetapartmentinstallmentsexpenseinstallmentssiteidintexpenseinstallmentsapartmentidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsgetsiteinstallmentsexpenseinstallmentssiteidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsflatexpenseinstallmentsidExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleexpenseinstallmentsmarkinstallmentaspaidexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentscountExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatexpenseinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentsexpenseidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatunpaidinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatoverdueinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetapartmentflatinstallmentsflatexpenseinstallmentssiteidintflatexpenseinstallmentsapartmentidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflattotaldebtflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiapartmentmanagemoduleflatexpenseinstallmentsmarkflatinstallmentaspaidflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentscountFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetusersitesusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetsiteusersusersiteaccessessiteidintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesgetuserflatsusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessescountUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagescountInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagescountCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagescountOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypescountOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypescountInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypescountCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesinfomessagesidEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesotpmessagesidEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagesEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagescampaignmessagesidEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsenderscountEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiemailmanagermoduleemailsendersEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagescountInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleinfomessagesInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagescountCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagescountOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleotpmessagesOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypescountOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleotptypesOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleotptypesidintOtpTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypescountInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermoduleinfotypesInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermoduleinfotypesidintInfoTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypescountCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulecampaigntypesCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesinfomessagesidSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesotpmessagesidSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagesSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagescampaignmessagesidSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssendersSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssenderscountSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapismsmanagermodulesmssendersSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapismsmanagermodulesmssendersidintSmsSendersController",
+    "PermissionGroupName": "Viewer",
+    "IsActive": false
   },
   {
     "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpermissionsgetportalpermissionspermissiongroupnamePortalPermissionsController",
