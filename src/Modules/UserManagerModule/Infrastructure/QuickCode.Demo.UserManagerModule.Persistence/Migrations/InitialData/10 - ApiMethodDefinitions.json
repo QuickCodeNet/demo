@@ -1,6 +1,3132 @@
 ﻿{
 "ApiMethodDefinitions": [
   {
+    "Key": "GetapiusermanagermoduleportalmenusPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalmenuscountPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalmenusPortalMenusController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypesColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypescountColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulecolumntypesColumnTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsgetworkflowstopicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-workflows/{topicWorkflowsKafkaEventsTopicName}"
+  },
+  {
+    "Key": "Getapiusermanagermoduletopicworkflowsgetworkflows2topicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-workflows-2/{topicWorkflowsKafkaEventsTopicName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowscountTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "HttpMethod": "Post",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Put",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgetkafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgetactivekafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-active-kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{kafkaEventsTopicName}/topic-workflows"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventskafkaeventstopicnametopicworkflowstopicworkflowsidKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{kafkaEventsTopicName}/topic-workflows/{topicWorkflowsId}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventscountKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulekafkaeventsKafkaEventsController",
+    "HttpMethod": "Post",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "PutapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Put",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/asp-net-users"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameaspnetusersaspnetusersidPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/asp-net-users/{aspNetUsersId}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/portal-permission-groups/{portalPermissionGroupsPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupsnameapipermissiongroupsapipermissiongroupspermissiongroupnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupsName}/api-permission-groups/{apiPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupscountPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "PutapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{portalPermissionTypesId}/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypesidportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{portalPermissionTypesId}/portal-permission-groups/{portalPermissionGroupsPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypescountPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{portalPermissionsName}/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsportalpermissionsnameportalpermissiongroupsportalpermissiongroupsportalpermissionnamePortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{portalPermissionsName}/portal-permission-groups/{portalPermissionGroupsPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionscountPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupsportalpermissiongroupspermissiongroupnamePortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/get-portal-permission-groups/{portalPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupportalpermissiongroupsportalpermissionnameportalpermissiongroupspermissiongroupnameportalpermissiongroupsportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/get-portal-permission-group/{portalPermissionGroupsPortalPermissionName}/{portalPermissionGroupsPermissionGroupName}/{portalPermissionGroupsPortalPermissionTypeId:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupscountPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupsapipermissiongroupspermissiongroupnameApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/get-api-permission-groups/{apiPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupapipermissiongroupspermissiongroupnameapipermissiongroupsapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/get-api-permission-group/{apiPermissionGroupsPermissionGroupName}/{apiPermissionGroupsApiMethodDefinitionKey}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupscountApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventsApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionsKey}/kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeykafkaeventskafkaeventstopicnameApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionsKey}/kafka-events/{kafkaEventsTopicName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionsKey}/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionskeyapipermissiongroupsapipermissiongroupspermissiongroupnameApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionsKey}/api-permission-groups/{apiPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionscountApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingscountTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "HttpMethod": "Post",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "PutapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Put",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRolesId}/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetuserrolesaspnetuserrolesuseridAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRolesId}/asp-net-user-roles/{aspNetUserRolesUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRolesId}/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetrolesidaspnetroleclaimsaspnetroleclaimsidAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRolesId}/asp-net-role-claims/{aspNetRoleClaimsId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolescountAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersgetuseraspnetusersemailAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/get-user/{aspNetUsersEmail}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserrolesaspnetuserrolesuseridAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-roles/{aspNetUserRolesUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserclaimsaspnetuserclaimsidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-claims/{aspNetUserClaimsId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetusertokensaspnetusertokensuseridAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-tokens/{aspNetUserTokensUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidaspnetuserloginsaspnetuserloginsloginproviderAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/asp-net-user-logins/{aspNetUserLoginsLoginProvider}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/refresh-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetusersidrefreshtokensrefreshtokensidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUsersId}/refresh-tokens/{refreshTokensId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserscountAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetusersAspNetUsersController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensgetrefreshtokenrefreshtokenstokenRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/get-refresh-token/{refreshTokensToken}"
+  },
+  {
+    "Key": "PatchapiusermanagermodulerefreshtokensupdaterefreshtokenrefreshtokenstokenRefreshTokensController",
+    "HttpMethod": "Patch",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/update-refresh-token/{refreshTokensToken}"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokenscountRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulerefreshtokensRefreshTokensController",
+    "HttpMethod": "Post",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Put",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Delete",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimscountAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimscountAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginscountAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolescountAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokenscountAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgetactivesitessitesisactiveboolSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-active-sites/{sitesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgetsitebyidsitesidintSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-site-by-id/{sitesId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgetflatscountbysitesitesidintsitesisactiveboolSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-flats-count-by-site/{sitesId:int}/{sitesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgetownerscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-owners-count-by-site/{sitesId:int}/{sitesIsActive:bool}/{flatContactsRelationshipType}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgettenantscountbysitesitesidintsitesisactiveboolflatcontactsrelationshiptypeSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-tenants-count-by-site/{sitesId:int}/{sitesIsActive:bool}/{flatContactsRelationshipType}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesgettotalpaymentsbysitesitesidintflatpaymentspaidboolSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/get-total-payments-by-site/{sitesId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidapartmentsSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidapartmentsapartmentsidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartments/{apartmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatsSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flats"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatsflatsidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flats/{flatsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidsitemanagersSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/site-managers"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidsitemanagerssitemanagersidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/site-managers/{siteManagersId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatpaymentsSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatpaymentsflatpaymentsidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidcommonexpensesSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidcommonexpensescommonexpensesidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidapartmentfeeplansapartmentfeeplansidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/apartment-fee-plans/{apartmentFeePlansId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidexpenseinstallmentsexpenseinstallmentsidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/expense-installments/{expenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidflatexpenseinstallmentsflatexpenseinstallmentsidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/user-site-accesses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitessitesidusersiteaccessesusersiteaccessesidSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{sitesId}/user-site-accesses/{userSiteAccessesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitescountSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulesitesSitesController",
+    "HttpMethod": "Post",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitesidintSitesController",
+    "HttpMethod": "Get",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulesitesidintSitesController",
+    "HttpMethod": "Put",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulesitesidintSitesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "SitesController",
+    "UrlPath": "/api/apartment-manage-module/sites/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypesgetactiveexpensetypesexpensetypesisactiveboolExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/get-active-expense-types/{expenseTypesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensesExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{expenseTypesId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypesexpensetypesidcommonexpensescommonexpensesidExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{expenseTypesId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypescountExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleexpensetypesExpenseTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleexpensetypesidintExpenseTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ExpenseTypesController",
+    "UrlPath": "/api/apartment-manage-module/expense-types/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypesgetactivefeetypesfeetypesisactiveboolFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/get-active-fee-types/{feeTypesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{feeTypesId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypesfeetypesidflatpaymentsflatpaymentsidFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{feeTypesId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypesFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypescountFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulefeetypesFeeTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulefeetypesidintFeeTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "FeeTypesController",
+    "UrlPath": "/api/apartment-manage-module/fee-types/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypesgetactivepaymenttypespaymenttypesisactiveboolPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/get-active-payment-types/{paymentTypesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatpaymentsflatpaymentsidPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensesPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidcommonexpensescommonexpensesidPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidexpenseinstallmentsexpenseinstallmentsidPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/expense-installments/{expenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypespaymenttypesidflatexpenseinstallmentsflatexpenseinstallmentsidPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{paymentTypesId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypescountPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulepaymenttypesPaymentTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulepaymenttypesidintPaymentTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PaymentTypesController",
+    "UrlPath": "/api/apartment-manage-module/payment-types/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetactivecontactscontactsisactiveboolContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-active-contacts/{contactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetcontactbyidcontactsidintContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-id/{contactsId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetcontactbyphonecontactsphoneContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-phone/{contactsPhone}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetcontactbyemailcontactsemailContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-email/{contactsEmail}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetcontactbyidentitycontactsidentitynumberContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contact-by-identity/{contactsIdentityNumber}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscheckcontactbyphonecontactsphoneContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/check-contact-by-phone/{contactsPhone}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscheckcontactbyemailcontactsemailContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/check-contact-by-email/{contactsEmail}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetactivecontactscountcontactsisactiveboolContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-active-contacts-count/{contactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsgetcontactswithpagercontactsisactiveboolContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/get-contacts-with-pager/{contactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/flat-contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscontactsidflatcontactsflatcontactsidContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/flat-contacts/{flatContactsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscontactsidsitemanagersContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/site-managers"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscontactsidsitemanagerssitemanagersidContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{contactsId}/site-managers/{siteManagersId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactscountContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulecontactsContactsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecontactsidintContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulecontactsidintContactsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulecontactsidintContactsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ContactsController",
+    "UrlPath": "/api/apartment-manage-module/contacts/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetflatownersflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-owners/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetflattenantsflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-tenants/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetcontactflatsflatcontactscontactidintflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-flats/{flatContactsContactId:int}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetcontactownedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-owned-flats/{flatContactsContactId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetcontactrentedflatsflatcontactscontactidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-contact-rented-flats/{flatContactsContactId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactscheckflathasownerflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/check-flat-has-owner/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactscheckflathastenantflatcontactsflatidintflatcontactsrelationshiptypeflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/check-flat-has-tenant/{flatContactsFlatId:int}/{flatContactsRelationshipType}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsgetflatcontactscountflatcontactsflatidintflatcontactsisactiveboolFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/get-flat-contacts-count/{flatContactsFlatId:int}/{flatContactsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactscountFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleflatcontactsFlatContactsController",
+    "HttpMethod": "Post",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "HttpMethod": "Put",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleflatcontactsidintFlatContactsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "FlatContactsController",
+    "UrlPath": "/api/apartment-manage-module/flat-contacts/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerssitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-site-managers/{siteManagersSiteId:int}/{siteManagersIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagersgetactivemanagerbysitesitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-active-manager-by-site/{siteManagersSiteId:int}/{siteManagersIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagersgetsitemanagerwithcontactsitemanagerscontactidintSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/get-site-manager-with-contact/{siteManagersContactId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagerschecksitehasmanagersitemanagerssiteidintsitemanagersisactiveboolSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/check-site-has-manager/{siteManagersSiteId:int}/{siteManagersIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagerscountSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulesitemanagersSiteManagersController",
+    "HttpMethod": "Post",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "HttpMethod": "Put",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulesitemanagersidintSiteManagersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "SiteManagersController",
+    "UrlPath": "/api/apartment-manage-module/site-managers/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthsgetallmonthsPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/get-all-months"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidapartmentfeeplansapartmentfeeplansidPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/apartment-fee-plans/{apartmentFeePlansId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidflatpaymentsflatpaymentsidPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensesPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthspaymentmonthsidcommonexpensescommonexpensesidPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{paymentMonthsId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthscountPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulepaymentmonthsPaymentMonthsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulepaymentmonthsidintPaymentMonthsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PaymentMonthsController",
+    "UrlPath": "/api/apartment-manage-module/payment-months/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearsgetallyearsPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/get-all-years"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidapartmentfeeplansapartmentfeeplansidPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/apartment-fee-plans/{apartmentFeePlansId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidflatpaymentsflatpaymentsidPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensesPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearspaymentyearsidcommonexpensescommonexpensesidPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{paymentYearsId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearscountPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulepaymentyearsPaymentYearsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulepaymentyearsidintPaymentYearsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PaymentYearsController",
+    "UrlPath": "/api/apartment-manage-module/payment-years/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsgetapartmentsbysiteapartmentssiteidintapartmentsisactiveboolApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/get-apartments-by-site/{apartmentsSiteId:int}/{apartmentsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsgetactiveapartmentsapartmentsisactiveboolApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/get-active-apartments/{apartmentsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flats"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatsflatsidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flats/{flatsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatpaymentsflatpaymentsidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensesApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidcommonexpensescommonexpensesidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/common-expenses/{commonExpensesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidapartmentfeeplansapartmentfeeplansidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/apartment-fee-plans/{apartmentFeePlansId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidexpenseinstallmentsexpenseinstallmentsidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/expense-installments/{expenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsapartmentsidflatexpenseinstallmentsflatexpenseinstallmentsidApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{apartmentsId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentscountApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleapartmentsApartmentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleapartmentsidintApartmentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApartmentsController",
+    "UrlPath": "/api/apartment-manage-module/apartments/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatsbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-by-apartment/{flatsApartmentId:int}/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatsbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-by-site/{flatsSiteId:int}/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatswithcontactsflatsidintFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-with-contacts/{flatsId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetvacantflatsflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-vacant-flats/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetrentedflatsflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-rented-flats/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatbynumberflatssiteidintflatsflatnumberFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flat-by-number/{flatsSiteId:int}/{flatsFlatNumber}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetownedflatsflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-owned-flats/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatscountbysiteflatssiteidintflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-count-by-site/{flatsSiteId:int}/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsgetflatscountbyapartmentflatsapartmentidintflatsisactiveboolFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/get-flats-count-by-apartment/{flatsApartmentId:int}/{flatsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-contacts"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatcontactsflatcontactsidFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-contacts/{flatContactsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatpaymentsflatpaymentsidFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidflatexpenseinstallmentsflatexpenseinstallmentsidFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/user-site-accesses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsflatsidusersiteaccessesusersiteaccessesidFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{flatsId}/user-site-accesses/{userSiteAccessesId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatscountFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleflatsFlatsController",
+    "HttpMethod": "Post",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatsidintFlatsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleflatsidintFlatsController",
+    "HttpMethod": "Put",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleflatsidintFlatsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "FlatsController",
+    "UrlPath": "/api/apartment-manage-module/flats/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplanbyyearmonthapartmentfeeplanssiteidintapartmentfeeplansapartmentidintapartmentfeeplansyearidintapartmentfeeplansmonthidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/get-fee-plan-by-year-month/{apartmentFeePlansSiteId:int}/{apartmentFeePlansApartmentId:int}/{apartmentFeePlansYearId:int}/{apartmentFeePlansMonthId:int}/{apartmentFeePlansIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansgetfeeplansbysiteapartmentfeeplanssiteidintapartmentfeeplansisactiveboolApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/get-fee-plans-by-site/{apartmentFeePlansSiteId:int}/{apartmentFeePlansIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{apartmentFeePlansId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansapartmentfeeplansidflatpaymentsflatpaymentsidApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{apartmentFeePlansId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplanscountApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleapartmentfeeplansApartmentFeePlansController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleapartmentfeeplansidintApartmentFeePlansController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApartmentFeePlansController",
+    "UrlPath": "/api/apartment-manage-module/apartment-fee-plans/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-payments-by-flat-year-month/{flatPaymentsSiteId:int}/{flatPaymentsFlatId:int}/{flatPaymentsYearId:int}/{flatPaymentsMonthId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbyflatflatpaymentssiteidintflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-by-flat/{flatPaymentsSiteId:int}/{flatPaymentsFlatId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentsbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-by-site/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgettotalcashinsafeflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-total-cash-in-safe/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetpendingpaymentsbyflatyearmonthflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-pending-payments-by-flat-year-month/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetflatpaymentsbymonthflatpaymentsflatidintflatpaymentsyearidintflatpaymentsmonthidintFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-flat-payments-by-month/{flatPaymentsFlatId:int}/{flatPaymentsYearId:int}/{flatPaymentsMonthId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetpaymentscountbyflatflatpaymentsflatidintFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-payments-count-by-flat/{flatPaymentsFlatId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgettotalpaidamountbyflatflatpaymentsflatidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-total-paid-amount-by-flat/{flatPaymentsFlatId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsgetunpaidpaymentscountbysiteflatpaymentssiteidintflatpaymentspaidboolFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/get-unpaid-payments-count-by-site/{flatPaymentsSiteId:int}/{flatPaymentsPaid:bool}"
+  },
+  {
+    "Key": "PatchapiapartmentmanagemoduleflatpaymentsmarkpaymentaspaidflatpaymentsidintFlatPaymentsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/mark-payment-as-paid/{flatPaymentsId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentscountFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleflatpaymentsFlatPaymentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleflatpaymentsidintFlatPaymentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "FlatPaymentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-payments/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbyapartmentmonthcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-apartment-month/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesYearId:int}/{commonExpensesMonthId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbysitecommonexpensessiteidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-site/{commonExpensesSiteId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetexpensessummarybyyearcommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesyearidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-summary-by-year/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesYearId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetexpensesbytypecommonexpensessiteidintcommonexpensesapartmentidintcommonexpensesexpensetypeidintcommonexpensesyearidintcommonexpensesmonthidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-by-type/{commonExpensesSiteId:int}/{commonExpensesApartmentId:int}/{commonExpensesExpenseTypeId:int}/{commonExpensesYearId:int}/{commonExpensesMonthId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetunpaidexpensesbyapartmentcommonexpensesapartmentidintcommonexpensespaidboolCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-unpaid-expenses-by-apartment/{commonExpensesApartmentId:int}/{commonExpensesPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgetexpensescountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-expenses-count-by-apartment/{commonExpensesApartmentId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesgettotalexpenseamountbyapartmentcommonexpensesapartmentidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/get-total-expense-amount-by-apartment/{commonExpensesApartmentId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-payments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatpaymentsflatpaymentsidCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-payments/{flatPaymentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidexpenseinstallmentsexpenseinstallmentsidCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/expense-installments/{expenseInstallmentsId}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescommonexpensesidflatexpenseinstallmentsflatexpenseinstallmentsidCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{commonExpensesId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "PatchapiapartmentmanagemodulecommonexpensesmarkexpenseaspaidcommonexpensesidintCommonExpensesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/mark-expense-as-paid/{commonExpensesId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensescountCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemodulecommonexpensesCommonExpensesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemodulecommonexpensesidintCommonExpensesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CommonExpensesController",
+    "UrlPath": "/api/apartment-manage-module/common-expenses/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsgetexpenseinstallmentsexpenseinstallmentsexpenseidintExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-expense-installments/{expenseInstallmentsExpenseId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsgetunpaidinstallmentsexpenseinstallmentsexpenseidintexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-unpaid-installments/{expenseInstallmentsExpenseId:int}/{expenseInstallmentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsgetoverdueinstallmentsexpenseinstallmentspaidboolExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-overdue-installments/{expenseInstallmentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsgetapartmentinstallmentsexpenseinstallmentssiteidintexpenseinstallmentsapartmentidintExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-apartment-installments/{expenseInstallmentsSiteId:int}/{expenseInstallmentsApartmentId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsgetsiteinstallmentsexpenseinstallmentssiteidintExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/get-site-installments/{expenseInstallmentsSiteId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{expenseInstallmentsId}/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsexpenseinstallmentsidflatexpenseinstallmentsflatexpenseinstallmentsidExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{expenseInstallmentsId}/flat-expense-installments/{flatExpenseInstallmentsId}"
+  },
+  {
+    "Key": "PatchapiapartmentmanagemoduleexpenseinstallmentsmarkinstallmentaspaidexpenseinstallmentsidintExpenseInstallmentsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/mark-installment-as-paid/{expenseInstallmentsId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentscountExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleexpenseinstallmentsExpenseInstallmentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleexpenseinstallmentsidintExpenseInstallmentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/expense-installments/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatexpenseinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentsexpenseidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-expense-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsExpenseId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatunpaidinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-unpaid-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflatoverdueinstallmentsflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-overdue-installments/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetapartmentflatinstallmentsflatexpenseinstallmentssiteidintflatexpenseinstallmentsapartmentidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-apartment-flat-installments/{flatExpenseInstallmentsSiteId:int}/{flatExpenseInstallmentsApartmentId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsgetflattotaldebtflatexpenseinstallmentsflatidintflatexpenseinstallmentspaidboolFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/get-flat-total-debt/{flatExpenseInstallmentsFlatId:int}/{flatExpenseInstallmentsPaid:bool}"
+  },
+  {
+    "Key": "PatchapiapartmentmanagemoduleflatexpenseinstallmentsmarkflatinstallmentaspaidflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/mark-flat-installment-as-paid/{flatExpenseInstallmentsId:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentscountFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleflatexpenseinstallmentsFlatExpenseInstallmentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleflatexpenseinstallmentsidintFlatExpenseInstallmentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "FlatExpenseInstallmentsController",
+    "UrlPath": "/api/apartment-manage-module/flat-expense-installments/{id:int}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessesgetusersitesusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-user-sites/{userSiteAccessesUserId:int}/{userSiteAccessesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessesgetsiteusersusersiteaccessessiteidintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-site-users/{userSiteAccessesSiteId:int}/{userSiteAccessesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessesgetuserflatsusersiteaccessesuseridintusersiteaccessesisactiveboolUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/get-user-flats/{userSiteAccessesUserId:int}/{userSiteAccessesIsActive:bool}"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessescountUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/count"
+  },
+  {
+    "Key": "PostapiapartmentmanagemoduleusersiteaccessesUserSiteAccessesController",
+    "HttpMethod": "Post",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses"
+  },
+  {
+    "Key": "GetapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}"
+  },
+  {
+    "Key": "PutapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "HttpMethod": "Put",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}"
+  },
+  {
+    "Key": "DeleteapiapartmentmanagemoduleusersiteaccessesidintUserSiteAccessesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "UserSiteAccessesController",
+    "UrlPath": "/api/apartment-manage-module/user-site-accesses/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfomessagescountInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleinfomessagesInfoMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/email-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignmessagescountCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulecampaignmessagesCampaignMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/email-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagescountOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/{otpTypesId}/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/{otpTypesId}/otp-messages/{otpMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotptypesOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotptypescountOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleotptypesOtpTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/email-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/{infoTypesId}/info-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/{infoTypesId}/info-messages/{infoMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfotypesInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfotypescountInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleinfotypesInfoTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/email-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/{campaignTypesId}/campaign-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/{campaignTypesId}/campaign-messages/{campaignMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaigntypescountCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulecampaigntypesCampaignTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/email-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/info-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidinfomessagesinfomessagesidEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/info-messages/{infoMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidotpmessagesotpmessagesidEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/otp-messages/{otpMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagesEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/campaign-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersemailsendersidcampaignmessagescampaignmessagesidEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{emailSendersId}/campaign-messages/{campaignMessagesId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsenderscountEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleemailsendersEmailSendersController",
+    "HttpMethod": "Post",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "HttpMethod": "Put",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleemailsendersidintEmailSendersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "EmailSendersController",
+    "UrlPath": "/api/email-manager-module/email-senders/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfomessagesInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfomessagescountInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleinfomessagesInfoMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleinfomessagesidintInfoMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "InfoMessagesController",
+    "UrlPath": "/api/sms-manager-module/info-messages/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignmessagescountCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulecampaignmessagesCampaignMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulecampaignmessagesidintCampaignMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignMessagesController",
+    "UrlPath": "/api/sms-manager-module/campaign-messages/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagescountOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotptypesotptypesidotpmessagesOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/{otpTypesId}/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotptypesotptypesidotpmessagesotpmessagesidOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/{otpTypesId}/otp-messages/{otpMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotptypesOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotptypescountOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleotptypesOtpTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleotptypesidintOtpTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpTypesController",
+    "UrlPath": "/api/sms-manager-module/otp-types/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/{infoTypesId}/info-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfotypesinfotypesidinfomessagesinfomessagesidInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/{infoTypesId}/info-messages/{infoMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfotypesInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfotypescountInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleinfotypesInfoTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types"
+  },
+  {
+    "Key": "GetapismsmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleinfotypesidintInfoTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "InfoTypesController",
+    "UrlPath": "/api/sms-manager-module/info-types/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagesCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/{campaignTypesId}/campaign-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaigntypescampaigntypesidcampaignmessagescampaignmessagesidCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/{campaignTypesId}/campaign-messages/{campaignMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaigntypesCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaigntypescountCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulecampaigntypesCampaignTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulecampaigntypesidintCampaignTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignTypesController",
+    "UrlPath": "/api/sms-manager-module/campaign-types/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/info-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidinfomessagesinfomessagesidSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/info-messages/{infoMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidotpmessagesotpmessagesidSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/otp-messages/{otpMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagesSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/campaign-messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderssmssendersidcampaignmessagescampaignmessagesidSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{smsSendersId}/campaign-messages/{campaignMessagesId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssendersSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssenderscountSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulesmssendersSmsSendersController",
+    "HttpMethod": "Post",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders"
+  },
+  {
+    "Key": "GetapismsmanagermodulesmssendersidintSmsSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulesmssendersidintSmsSendersController",
+    "HttpMethod": "Put",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulesmssendersidintSmsSendersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "SmsSendersController",
+    "UrlPath": "/api/sms-manager-module/sms-senders/{id:int}"
+  },
+  {
     "Key": "GetapiusermanagermoduleportalpermissionsgetportalpermissionspermissiongroupnamePortalPermissionsController",
     "HttpMethod": "Get",
     "ControllerName": "PortalPermissionsController",
