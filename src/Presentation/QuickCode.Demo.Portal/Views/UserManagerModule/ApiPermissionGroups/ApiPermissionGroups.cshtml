@@ -28,7 +28,7 @@ TempData["Title"] = title;
                     <tbody>
                     <tr>
                         <td>
-                            <select bc-label="GroupId" class="custom-select " asp-for="SelectedGroupName" asp-items="@Model.ComboList["PermissionGroups"].SetListWithSelected(Model.SelectedGroupName)" onchange="submitform();" style="width:350px;"></select>
+                            <select bc-label="GroupId" class="custom-select searchable-select" asp-for="SelectedGroupName" asp-items="@Model.ComboList["PermissionGroups"].SetListWithSelected(Model.SelectedGroupName)" data-placeholder="Search for Group Name..." onchange="submitform();" style="width:350px;"></select>
                         </td>
                     </tr>
                     </tbody>

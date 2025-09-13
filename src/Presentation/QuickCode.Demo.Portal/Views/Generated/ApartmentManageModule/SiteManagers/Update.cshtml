@@ -15,11 +15,11 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Site Id" class="custom-select " asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"></select>
+	<select bc-label="Site Id" class="custom-select searchable-select" asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"  data-placeholder="Search for SiteId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Contact Id" class="custom-select " asp-for="SelectedItem.ContactId" asp-items="@Model.GetComboBoxList("Contacts", Model.SelectedItem.ContactId)"></select>
+	<select bc-label="Contact Id" class="custom-select searchable-select" asp-for="SelectedItem.ContactId" asp-items="@Model.GetComboBoxList("Contacts", Model.SelectedItem.ContactId)"  data-placeholder="Search for ContactId..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -260,4 +260,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

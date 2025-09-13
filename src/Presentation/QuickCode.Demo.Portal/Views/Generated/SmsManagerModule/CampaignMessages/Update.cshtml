@@ -15,11 +15,11 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Sms Sender Id" class="custom-select " asp-for="SelectedItem.SmsSenderId" asp-items="@Model.GetComboBoxList("SmsSenders", Model.SelectedItem.SmsSenderId)"></select>
+	<select bc-label="Sms Sender Id" class="custom-select searchable-select" asp-for="SelectedItem.SmsSenderId" asp-items="@Model.GetComboBoxList("SmsSenders", Model.SelectedItem.SmsSenderId)"  data-placeholder="Search for SmsSenderId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Campaign Type Id" class="custom-select " asp-for="SelectedItem.CampaignTypeId" asp-items="@Model.GetComboBoxList("CampaignTypes", Model.SelectedItem.CampaignTypeId)"></select>
+	<select bc-label="Campaign Type Id" class="custom-select searchable-select" asp-for="SelectedItem.CampaignTypeId" asp-items="@Model.GetComboBoxList("CampaignTypes", Model.SelectedItem.CampaignTypeId)"  data-placeholder="Search for CampaignTypeId..."></select>
 </form-group>
 
 <form-group>
@@ -233,4 +233,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

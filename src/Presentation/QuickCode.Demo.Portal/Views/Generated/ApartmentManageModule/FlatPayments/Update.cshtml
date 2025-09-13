@@ -15,23 +15,23 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Site Id" class="custom-select " asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"></select>
+	<select bc-label="Site Id" class="custom-select searchable-select" asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"  data-placeholder="Search for SiteId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Flat Id" class="custom-select " asp-for="SelectedItem.FlatId" asp-items="@Model.GetComboBoxList("Flats", Model.SelectedItem.FlatId)"></select>
+	<select bc-label="Flat Id" class="custom-select searchable-select" asp-for="SelectedItem.FlatId" asp-items="@Model.GetComboBoxList("Flats", Model.SelectedItem.FlatId)"  data-placeholder="Search for FlatId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Apartment Id" class="custom-select " asp-for="SelectedItem.ApartmentId" asp-items="@Model.GetComboBoxList("Apartments", Model.SelectedItem.ApartmentId)"></select>
+	<select bc-label="Apartment Id" class="custom-select searchable-select" asp-for="SelectedItem.ApartmentId" asp-items="@Model.GetComboBoxList("Apartments", Model.SelectedItem.ApartmentId)"  data-placeholder="Search for ApartmentId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Year Id" class="custom-select " asp-for="SelectedItem.YearId" asp-items="@Model.GetComboBoxList("PaymentYears", Model.SelectedItem.YearId)"></select>
+	<select bc-label="Year Id" class="custom-select searchable-select" asp-for="SelectedItem.YearId" asp-items="@Model.GetComboBoxList("PaymentYears", Model.SelectedItem.YearId)"  data-placeholder="Search for YearId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Month Id" class="custom-select " asp-for="SelectedItem.MonthId" asp-items="@Model.GetComboBoxList("PaymentMonths", Model.SelectedItem.MonthId)"></select>
+	<select bc-label="Month Id" class="custom-select searchable-select" asp-for="SelectedItem.MonthId" asp-items="@Model.GetComboBoxList("PaymentMonths", Model.SelectedItem.MonthId)"  data-placeholder="Search for MonthId..."></select>
 </form-group>
 
 <form-group>
@@ -39,7 +39,7 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Fee Type Id" class="custom-select " asp-for="SelectedItem.FeeTypeId" asp-items="@Model.GetComboBoxList("FeeTypes", Model.SelectedItem.FeeTypeId)"></select>
+	<select bc-label="Fee Type Id" class="custom-select searchable-select" asp-for="SelectedItem.FeeTypeId" asp-items="@Model.GetComboBoxList("FeeTypes", Model.SelectedItem.FeeTypeId)"  data-placeholder="Search for FeeTypeId..."></select>
 </form-group>
 
 <form-group>
@@ -47,11 +47,11 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Fee Plan Id" class="custom-select " asp-for="SelectedItem.FeePlanId" asp-items="@Model.GetComboBoxList("ApartmentFeePlans", Model.SelectedItem.FeePlanId)"></select>
+	<select bc-label="Fee Plan Id" class="custom-select searchable-select" asp-for="SelectedItem.FeePlanId" asp-items="@Model.GetComboBoxList("ApartmentFeePlans", Model.SelectedItem.FeePlanId)"  data-placeholder="Search for FeePlanId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Expense Id" class="custom-select " asp-for="SelectedItem.ExpenseId" asp-items="@Model.GetComboBoxList("CommonExpenses", Model.SelectedItem.ExpenseId)"></select>
+	<select bc-label="Expense Id" class="custom-select searchable-select" asp-for="SelectedItem.ExpenseId" asp-items="@Model.GetComboBoxList("CommonExpenses", Model.SelectedItem.ExpenseId)"  data-placeholder="Search for ExpenseId..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -88,7 +88,7 @@
 </div>
 
 <form-group>
-	<select bc-label="Payment Type Id" class="custom-select " asp-for="SelectedItem.PaymentTypeId" asp-items="@Model.GetComboBoxList("PaymentTypes", Model.SelectedItem.PaymentTypeId)"></select>
+	<select bc-label="Payment Type Id" class="custom-select searchable-select" asp-for="SelectedItem.PaymentTypeId" asp-items="@Model.GetComboBoxList("PaymentTypes", Model.SelectedItem.PaymentTypeId)"  data-placeholder="Search for PaymentTypeId..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -286,4 +286,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

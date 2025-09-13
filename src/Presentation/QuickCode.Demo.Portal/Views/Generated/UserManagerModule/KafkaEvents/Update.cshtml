@@ -15,7 +15,7 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Api Method Definition Key" class="custom-select " asp-for="SelectedItem.ApiMethodDefinitionKey" asp-items="@Model.GetComboBoxList("ApiMethodDefinitions", Model.SelectedItem.ApiMethodDefinitionKey)"></select>
+	<select bc-label="Api Method Definition Key" class="custom-select searchable-select" asp-for="SelectedItem.ApiMethodDefinitionKey" asp-items="@Model.GetComboBoxList("ApiMethodDefinitions", Model.SelectedItem.ApiMethodDefinitionKey)"  data-placeholder="Search for ApiMethodDefinitionKey..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -226,4 +226,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

@@ -11,11 +11,11 @@
         <div class="card-body">
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" class="needs-validation" bc-validation="true">
                 <form-group>
-	<select bc-label="Sms Sender Id" class="custom-select " asp-for="SelectedItem.SmsSenderId" asp-items="@Model.GetComboBoxList("SmsSenders", Model.SelectedItem.SmsSenderId)"></select>
+	<select bc-label="Sms Sender Id" class="custom-select searchable-select" asp-for="SelectedItem.SmsSenderId" asp-items="@Model.GetComboBoxList("SmsSenders", Model.SelectedItem.SmsSenderId)"  data-placeholder="Search for SmsSenderId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Otp Type Id" class="custom-select " asp-for="SelectedItem.OtpTypeId" asp-items="@Model.GetComboBoxList("OtpTypes", Model.SelectedItem.OtpTypeId)"></select>
+	<select bc-label="Otp Type Id" class="custom-select searchable-select" asp-for="SelectedItem.OtpTypeId" asp-items="@Model.GetComboBoxList("OtpTypes", Model.SelectedItem.OtpTypeId)"  data-placeholder="Search for OtpTypeId..."></select>
 </form-group>
 
 <form-group>
@@ -237,4 +237,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

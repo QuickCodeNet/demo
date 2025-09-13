@@ -11,7 +11,7 @@
         <div class="card-body">
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" class="needs-validation" bc-validation="true">
                 <form-group>
-	<select bc-label="Site Id" class="custom-select " asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"></select>
+	<select bc-label="Site Id" class="custom-select searchable-select" asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"  data-placeholder="Search for SiteId..."></select>
 </form-group>
 
 <form-group>
@@ -244,4 +244,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

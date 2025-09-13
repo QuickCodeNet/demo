@@ -36,14 +36,15 @@ public class PortalSecurityHeadersMiddleware
             "https://cdnjs.cloudflare.com/ajax/libs/ace/1.18.0/ " +
             "https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.0/ " +
             "https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/ " +
-            "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/; " +
+            "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/ " +
+            "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/; " +
             "style-src 'self' 'unsafe-inline' " +
             "https://fonts.googleapis.com " +
             "https://cdnjs.cloudflare.com " +
             "https://gitcdn.github.io " +
-            "https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.0/ " +
             "https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/ " +
-            "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/; " +
+            "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/ " +
+            "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/; " +
             "font-src 'self' data: " +
             "https://fonts.gstatic.com " +
             "https://cdnjs.cloudflare.com " +

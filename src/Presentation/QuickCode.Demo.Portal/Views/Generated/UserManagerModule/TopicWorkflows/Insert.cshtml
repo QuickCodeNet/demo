@@ -11,7 +11,7 @@
         <div class="card-body">
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" class="needs-validation" bc-validation="true">
                 <form-group>
-	<select bc-label="Kafka Events Topic Name" class="custom-select " asp-for="SelectedItem.KafkaEventsTopicName" asp-items="@Model.GetComboBoxList("KafkaEvents", Model.SelectedItem.KafkaEventsTopicName)"></select>
+	<select bc-label="Kafka Events Topic Name" class="custom-select searchable-select" asp-for="SelectedItem.KafkaEventsTopicName" asp-items="@Model.GetComboBoxList("KafkaEvents", Model.SelectedItem.KafkaEventsTopicName)"  data-placeholder="Search for KafkaEventsTopicName..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -206,4 +206,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

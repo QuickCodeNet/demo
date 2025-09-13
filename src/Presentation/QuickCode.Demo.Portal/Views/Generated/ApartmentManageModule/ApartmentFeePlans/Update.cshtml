@@ -15,19 +15,19 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Site Id" class="custom-select " asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"></select>
+	<select bc-label="Site Id" class="custom-select searchable-select" asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"  data-placeholder="Search for SiteId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Apartment Id" class="custom-select " asp-for="SelectedItem.ApartmentId" asp-items="@Model.GetComboBoxList("Apartments", Model.SelectedItem.ApartmentId)"></select>
+	<select bc-label="Apartment Id" class="custom-select searchable-select" asp-for="SelectedItem.ApartmentId" asp-items="@Model.GetComboBoxList("Apartments", Model.SelectedItem.ApartmentId)"  data-placeholder="Search for ApartmentId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Year Id" class="custom-select " asp-for="SelectedItem.YearId" asp-items="@Model.GetComboBoxList("PaymentYears", Model.SelectedItem.YearId)"></select>
+	<select bc-label="Year Id" class="custom-select searchable-select" asp-for="SelectedItem.YearId" asp-items="@Model.GetComboBoxList("PaymentYears", Model.SelectedItem.YearId)"  data-placeholder="Search for YearId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Month Id" class="custom-select " asp-for="SelectedItem.MonthId" asp-items="@Model.GetComboBoxList("PaymentMonths", Model.SelectedItem.MonthId)"></select>
+	<select bc-label="Month Id" class="custom-select searchable-select" asp-for="SelectedItem.MonthId" asp-items="@Model.GetComboBoxList("PaymentMonths", Model.SelectedItem.MonthId)"  data-placeholder="Search for MonthId..."></select>
 </form-group>
 
 <form-group>
@@ -242,4 +242,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

@@ -15,15 +15,15 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Site Id" class="custom-select " asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"></select>
+	<select bc-label="Site Id" class="custom-select searchable-select" asp-for="SelectedItem.SiteId" asp-items="@Model.GetComboBoxList("Sites", Model.SelectedItem.SiteId)"  data-placeholder="Search for SiteId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Flat Id" class="custom-select " asp-for="SelectedItem.FlatId" asp-items="@Model.GetComboBoxList("Flats", Model.SelectedItem.FlatId)"></select>
+	<select bc-label="Flat Id" class="custom-select searchable-select" asp-for="SelectedItem.FlatId" asp-items="@Model.GetComboBoxList("Flats", Model.SelectedItem.FlatId)"  data-placeholder="Search for FlatId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Access Type" class="custom-select " asp-for="SelectedItem.AccessType" asp-items="Html.GetEnumSelectList<ApartmentManageModuleApi.AccessType>()"></select>
+	<select bc-label="Access Type" class="custom-select searchable-select" asp-for="SelectedItem.AccessType" asp-items="Html.GetEnumSelectList<ApartmentManageModuleApi.AccessType>()" data-placeholder="Search for AccessType..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -248,4 +248,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

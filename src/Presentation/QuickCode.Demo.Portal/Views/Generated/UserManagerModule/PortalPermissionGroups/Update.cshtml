@@ -11,15 +11,15 @@
         <div class="card-body">
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" class="needs-validation" bc-validation="true">
                 <form-group>
-	<select bc-label="Portal Permission Name" class="custom-select " asp-for="SelectedItem.PortalPermissionName" asp-items="@Model.GetComboBoxList("PortalPermissions", Model.SelectedItem.PortalPermissionName)"></select>
+	<select bc-label="Portal Permission Name" class="custom-select searchable-select" asp-for="SelectedItem.PortalPermissionName" asp-items="@Model.GetComboBoxList("PortalPermissions", Model.SelectedItem.PortalPermissionName)"  data-placeholder="Search for PortalPermissionName..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Permission Group Name" class="custom-select " asp-for="SelectedItem.PermissionGroupName" asp-items="@Model.GetComboBoxList("PermissionGroups", Model.SelectedItem.PermissionGroupName)"></select>
+	<select bc-label="Permission Group Name" class="custom-select searchable-select" asp-for="SelectedItem.PermissionGroupName" asp-items="@Model.GetComboBoxList("PermissionGroups", Model.SelectedItem.PermissionGroupName)"  data-placeholder="Search for PermissionGroupName..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Portal Permission Type Id" class="custom-select " asp-for="SelectedItem.PortalPermissionTypeId" asp-items="@Model.GetComboBoxList("PortalPermissionTypes", Model.SelectedItem.PortalPermissionTypeId)"></select>
+	<select bc-label="Portal Permission Type Id" class="custom-select searchable-select" asp-for="SelectedItem.PortalPermissionTypeId" asp-items="@Model.GetComboBoxList("PortalPermissionTypes", Model.SelectedItem.PortalPermissionTypeId)"  data-placeholder="Search for PortalPermissionTypeId..."></select>
 </form-group>
 
 <div class="form-group row">
@@ -230,4 +230,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

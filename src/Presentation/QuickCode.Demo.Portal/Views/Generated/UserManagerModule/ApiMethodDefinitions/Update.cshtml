@@ -15,7 +15,7 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Http Method" class="custom-select " asp-for="SelectedItem.HttpMethod" asp-items="Html.GetEnumSelectList<UserManagerModuleApi.HttpMethodType>()"></select>
+	<select bc-label="Http Method" class="custom-select searchable-select" asp-for="SelectedItem.HttpMethod" asp-items="Html.GetEnumSelectList<UserManagerModuleApi.HttpMethodType>()" data-placeholder="Search for HttpMethod..."></select>
 </form-group>
 
 <form-group>
@@ -211,4 +211,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>

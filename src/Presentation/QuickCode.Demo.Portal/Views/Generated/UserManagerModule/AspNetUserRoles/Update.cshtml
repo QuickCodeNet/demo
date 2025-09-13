@@ -11,11 +11,11 @@
         <div class="card-body">
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" class="needs-validation" bc-validation="true">
                 <form-group>
-	<select bc-label="User Id" class="custom-select " asp-for="SelectedItem.UserId" asp-items="@Model.GetComboBoxList("AspNetUsers", Model.SelectedItem.UserId)"></select>
+	<select bc-label="User Id" class="custom-select searchable-select" asp-for="SelectedItem.UserId" asp-items="@Model.GetComboBoxList("AspNetUsers", Model.SelectedItem.UserId)"  data-placeholder="Search for UserId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Role Id" class="custom-select " asp-for="SelectedItem.RoleId" asp-items="@Model.GetComboBoxList("AspNetRoles", Model.SelectedItem.RoleId)"></select>
+	<select bc-label="Role Id" class="custom-select searchable-select" asp-for="SelectedItem.RoleId" asp-items="@Model.GetComboBoxList("AspNetRoles", Model.SelectedItem.RoleId)"  data-placeholder="Search for RoleId..."></select>
 </form-group>
 
 
@@ -203,4 +203,15 @@
                 form.classList.add('was-validated');
             });
         }, 50);
+        
+        $(document).ready(function() {
+            $('.searchable-select').select2({
+                placeholder: function() {
+                    return $(this).data('placeholder');
+                },
+                allowClear: true,
+                width: '100%',
+                dropdownParent: $('#itemDetailsModal')
+            });
+        });
 </script>
