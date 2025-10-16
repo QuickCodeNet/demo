@@ -1,0 +1,7 @@
+﻿{
+  "FEE_TYPES": [
+    { "NAME": "Aylık Aidat", "DESCRIPTION": "Aylık düzenli aidat ödemesi", "IS_ACTIVE": true },
+    { "NAME": "Ekstra Borç", "DESCRIPTION": "Ekstra borç ödemeleri", "IS_ACTIVE": true },
+    { "NAME": "Bakım/Onarım", "DESCRIPTION": "Bakım ve onarım giderleri", "IS_ACTIVE": true }
+  ]
+} 
