@@ -5,4 +5,4 @@ FROM [FLATS] F
 WHERE F.[IsDeleted] = 0 
 	AND A.[IsDeleted] = 0 
 	AND A.[ID] = @PRM_APARTMENTS_ID 
-ORDER BY F.[ID] 
+ORDER BY A.[ID] 

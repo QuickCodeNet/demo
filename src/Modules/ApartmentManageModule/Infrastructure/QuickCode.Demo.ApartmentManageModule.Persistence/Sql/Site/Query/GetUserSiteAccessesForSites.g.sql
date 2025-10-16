@@ -5,4 +5,4 @@ FROM [USER_SITE_ACCESSES] USA
 WHERE USA.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY USA.[ID] 
+ORDER BY S.[ID] 

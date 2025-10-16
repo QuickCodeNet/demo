@@ -25,7 +25,7 @@ using QuickCode.Demo.Common.Helpers;
 using QuickCode.Demo.SmsManagerModule.Persistence.Contexts;
 using QuickCode.Demo.SmsManagerModule.Application.Dtos.SmsSender;
 using QuickCode.Demo.SmsManagerModule.Application.Mappings;
-using QuickCode.Demo.SmsManagerModule.Application.Sql;
+using QuickCode.Demo.SmsManagerModule.Persistence.Sql;
 
 namespace QuickCode.Demo.SmsManagerModule.Persistence.Repositories
 {

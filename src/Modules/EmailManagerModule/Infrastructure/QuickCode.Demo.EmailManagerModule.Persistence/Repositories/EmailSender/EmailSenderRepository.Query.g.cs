@@ -25,7 +25,7 @@ using QuickCode.Demo.Common.Helpers;
 using QuickCode.Demo.EmailManagerModule.Persistence.Contexts;
 using QuickCode.Demo.EmailManagerModule.Application.Dtos.EmailSender;
 using QuickCode.Demo.EmailManagerModule.Application.Mappings;
-using QuickCode.Demo.EmailManagerModule.Application.Sql;
+using QuickCode.Demo.EmailManagerModule.Persistence.Sql;
 
 namespace QuickCode.Demo.EmailManagerModule.Persistence.Repositories
 {

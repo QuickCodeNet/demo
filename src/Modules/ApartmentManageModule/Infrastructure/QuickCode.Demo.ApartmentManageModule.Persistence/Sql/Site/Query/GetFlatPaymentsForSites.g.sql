@@ -5,4 +5,4 @@ FROM [FLAT_PAYMENTS] FP
 WHERE FP.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY FP.[ID] 
+ORDER BY S.[ID] 

@@ -3,4 +3,4 @@ FROM [KafkaEvents] K
 	INNER JOIN [ApiMethodDefinitions] A 
 			ON K.[ApiMethodDefinitionKey] = A.[Key] 
 WHERE A.[Key] = @PRM_ApiMethodDefinitions_Key 
-ORDER BY K.[TopicName] 
+ORDER BY A.[Key] 

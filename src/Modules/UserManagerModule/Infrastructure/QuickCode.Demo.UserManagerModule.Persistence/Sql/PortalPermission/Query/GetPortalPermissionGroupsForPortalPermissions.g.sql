@@ -3,4 +3,4 @@ FROM [PortalPermissionGroups] P
 	INNER JOIN [PortalPermissions] P2 
 			ON P.[PortalPermissionName] = P2.[Name] 
 WHERE P2.[Name] = @PRM_PortalPermissions_Name 
-ORDER BY P.[PortalPermissionName], P.[PermissionGroupName], P.[PortalPermissionTypeId] 
+ORDER BY P2.[Name] 

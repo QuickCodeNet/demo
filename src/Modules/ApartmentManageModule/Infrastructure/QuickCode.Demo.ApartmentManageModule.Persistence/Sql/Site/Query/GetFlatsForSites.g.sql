@@ -5,4 +5,4 @@ FROM [FLATS] F
 WHERE F.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY F.[ID] 
+ORDER BY S.[ID] 

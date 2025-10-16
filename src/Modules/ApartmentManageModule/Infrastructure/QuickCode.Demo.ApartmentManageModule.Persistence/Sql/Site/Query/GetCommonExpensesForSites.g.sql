@@ -5,4 +5,4 @@ FROM [COMMON_EXPENSES] CE
 WHERE CE.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY CE.[ID] 
+ORDER BY S.[ID] 

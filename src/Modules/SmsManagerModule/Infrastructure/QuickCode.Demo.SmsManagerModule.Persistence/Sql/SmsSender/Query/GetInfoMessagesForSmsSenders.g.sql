@@ -5,4 +5,4 @@ FROM [INFO_MESSAGES] IM
 WHERE IM.[IsDeleted] = 0 
 	AND SS.[IsDeleted] = 0 
 	AND SS.[ID] = @PRM_SMS_SENDERS_ID 
-ORDER BY IM.[ID] 
+ORDER BY SS.[ID] 

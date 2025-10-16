@@ -5,4 +5,4 @@ FROM [APARTMENTS] A
 WHERE A.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY A.[ID] 
+ORDER BY S.[ID] 

@@ -5,4 +5,4 @@ FROM [FLAT_CONTACTS] FC
 WHERE FC.[IsDeleted] = 0 
 	AND F.[IsDeleted] = 0 
 	AND F.[ID] = @PRM_FLATS_ID 
-ORDER BY FC.[ID] 
+ORDER BY F.[ID] 

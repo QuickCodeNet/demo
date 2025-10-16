@@ -5,4 +5,4 @@ FROM [FLAT_PAYMENTS] FP
 WHERE FP.[IsDeleted] = 0 
 	AND FT.[IsDeleted] = 0 
 	AND FT.[ID] = @PRM_FEE_TYPES_ID 
-ORDER BY FP.[ID] 
+ORDER BY FT.[ID] 

@@ -5,4 +5,4 @@ FROM [COMMON_EXPENSES] CE
 WHERE CE.[IsDeleted] = 0 
 	AND A.[IsDeleted] = 0 
 	AND A.[ID] = @PRM_APARTMENTS_ID 
-ORDER BY CE.[ID] 
+ORDER BY A.[ID] 

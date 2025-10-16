@@ -3,4 +3,4 @@ FROM [AspNetRoleClaims] A
 	INNER JOIN [AspNetRoles] A2 
 			ON A.[RoleId] = A2.[Id] 
 WHERE A2.[Id] = @PRM_AspNetRoles_Id 
-ORDER BY A.[Id] 
+ORDER BY A2.[Id] 

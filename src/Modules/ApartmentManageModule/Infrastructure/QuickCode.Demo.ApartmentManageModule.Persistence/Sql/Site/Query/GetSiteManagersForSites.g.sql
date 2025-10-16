@@ -5,4 +5,4 @@ FROM [SITE_MANAGERS] SM
 WHERE SM.[IsDeleted] = 0 
 	AND S.[IsDeleted] = 0 
 	AND S.[ID] = @PRM_SITES_ID 
-ORDER BY SM.[ID] 
+ORDER BY S.[ID] 

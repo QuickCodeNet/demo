@@ -5,4 +5,4 @@ FROM [INFO_MESSAGES] IM
 WHERE IM.[IsDeleted] = 0 
 	AND IT.[IsDeleted] = 0 
 	AND IT.[ID] = @PRM_INFO_TYPES_ID 
-ORDER BY IM.[ID] 
+ORDER BY IT.[ID] 

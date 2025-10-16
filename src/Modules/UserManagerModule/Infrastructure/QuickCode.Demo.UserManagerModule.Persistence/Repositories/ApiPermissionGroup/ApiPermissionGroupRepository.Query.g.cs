@@ -25,7 +25,7 @@ using QuickCode.Demo.Common.Helpers;
 using QuickCode.Demo.UserManagerModule.Persistence.Contexts;
 using QuickCode.Demo.UserManagerModule.Application.Dtos.ApiPermissionGroup;
 using QuickCode.Demo.UserManagerModule.Application.Mappings;
-using QuickCode.Demo.UserManagerModule.Application.Sql;
+using QuickCode.Demo.UserManagerModule.Persistence.Sql;
 using QuickCode.Demo.UserManagerModule.Domain.Enums;
 
 namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories

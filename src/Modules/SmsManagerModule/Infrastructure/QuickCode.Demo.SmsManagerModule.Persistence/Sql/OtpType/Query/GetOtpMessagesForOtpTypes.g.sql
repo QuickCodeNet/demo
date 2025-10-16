@@ -5,4 +5,4 @@ FROM [OTP_MESSAGES] OM
 WHERE OM.[IsDeleted] = 0 
 	AND OT.[IsDeleted] = 0 
 	AND OT.[ID] = @PRM_OTP_TYPES_ID 
-ORDER BY OM.[ID] 
+ORDER BY OT.[ID] 

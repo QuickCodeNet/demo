@@ -4,4 +4,4 @@ FROM [RefreshTokens] R
 			ON R.[UserId] = A.[Id] 
 WHERE R.[IsDeleted] = 0 
 	AND A.[Id] = @PRM_AspNetUsers_Id 
-ORDER BY R.[Id] 
+ORDER BY A.[Id] 

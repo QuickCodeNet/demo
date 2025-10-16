@@ -5,4 +5,4 @@ FROM [OTP_MESSAGES] OM
 WHERE OM.[IsDeleted] = 0 
 	AND SS.[IsDeleted] = 0 
 	AND SS.[ID] = @PRM_SMS_SENDERS_ID 
-ORDER BY OM.[ID] 
+ORDER BY SS.[ID] 

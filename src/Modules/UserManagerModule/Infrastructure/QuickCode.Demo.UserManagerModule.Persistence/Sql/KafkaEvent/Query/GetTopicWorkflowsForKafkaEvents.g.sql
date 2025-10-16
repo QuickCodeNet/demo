@@ -4,4 +4,4 @@ FROM [TopicWorkflows] T
 			ON T.[KafkaEventsTopicName] = K.[TopicName] 
 WHERE T.[IsDeleted] = 0 
 	AND K.[TopicName] = @PRM_KafkaEvents_TopicName 
-ORDER BY T.[Id] 
+ORDER BY K.[TopicName] 

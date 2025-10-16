@@ -25,7 +25,7 @@ using QuickCode.Demo.Common.Helpers;
 using QuickCode.Demo.ApartmentManageModule.Persistence.Contexts;
 using QuickCode.Demo.ApartmentManageModule.Application.Dtos.FeeType;
 using QuickCode.Demo.ApartmentManageModule.Application.Mappings;
-using QuickCode.Demo.ApartmentManageModule.Application.Sql;
+using QuickCode.Demo.ApartmentManageModule.Persistence.Sql;
 using QuickCode.Demo.ApartmentManageModule.Domain.Enums;
 
 namespace QuickCode.Demo.ApartmentManageModule.Persistence.Repositories
