@@ -42,9 +42,11 @@ namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.KafkaEvent.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.KafkaEvent.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<KafkaEventDto>(value, "Success");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<KafkaEventDto>(resultDto, "Success");
             });
         }
 

@@ -42,9 +42,11 @@ namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.TableComboboxSetting.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.TableComboboxSetting.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<TableComboboxSettingDto>(value, "Success");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<TableComboboxSettingDto>(resultDto, "Success");
             });
         }
 

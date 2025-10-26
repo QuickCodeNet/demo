@@ -42,9 +42,11 @@ namespace QuickCode.Demo.ApartmentManageModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.PaymentMonth.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.PaymentMonth.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<PaymentMonthDto>(value, "Success");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<PaymentMonthDto>(resultDto, "Success");
             });
         }
 

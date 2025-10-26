@@ -42,9 +42,11 @@ namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.AspNetUserToken.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.AspNetUserToken.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<AspNetUserTokenDto>(value, "Success");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<AspNetUserTokenDto>(resultDto, "Success");
             });
         }
 

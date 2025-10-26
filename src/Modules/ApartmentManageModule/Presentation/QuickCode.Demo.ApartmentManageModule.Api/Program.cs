@@ -24,6 +24,7 @@ using QuickCode.Demo.Common.Mappers;
 using Serilog;
 
 using AspNetCoreRateLimit;
+using Dapper;
 using Polly;
 using Polly.Extensions.Http;
 using Polly.CircuitBreaker;
@@ -32,6 +33,8 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Logs;
 using QuickCode.Demo.Common.Middleware;
+
+DefaultTypeMap.MatchNamesWithUnderscores = true;
 
 var builder = WebApplication.CreateBuilder(args);
 var runMigration = Environment.GetEnvironmentVariable("RUN_MIGRATION");

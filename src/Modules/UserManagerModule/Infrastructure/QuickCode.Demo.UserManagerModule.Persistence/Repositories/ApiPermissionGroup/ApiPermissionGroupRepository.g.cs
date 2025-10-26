@@ -42,9 +42,11 @@ namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.ApiPermissionGroup.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.ApiPermissionGroup.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<ApiPermissionGroupDto>(value, "Success");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<ApiPermissionGroupDto>(resultDto, "Success");
             });
         }
 

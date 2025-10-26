@@ -42,9 +42,11 @@ namespace QuickCode.Demo.ApartmentManageModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.Flat.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.Flat.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<FlatDto>(value, "Not Defined");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<FlatDto>(resultDto, "Success");
             });
         }
 

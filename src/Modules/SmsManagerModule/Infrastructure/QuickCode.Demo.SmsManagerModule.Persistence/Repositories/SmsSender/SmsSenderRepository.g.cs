@@ -41,9 +41,11 @@ namespace QuickCode.Demo.SmsManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.SmsSender.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.SmsSender.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<SmsSenderDto>(value, "Not Defined");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<SmsSenderDto>(resultDto, "Success");
             });
         }
 

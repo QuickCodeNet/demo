@@ -1,4 +1,5 @@
 using System;
+using Dapper;
 using System.Collections.Generic;
 using System.IO.Compression;
 using System.Reflection;
@@ -32,6 +33,7 @@ using Serilog;
 using QuickCode.Demo.Common.Middleware;
 using QuickCode.Demo.UserManagerModule.Persistence.Seed;
 
+DefaultTypeMap.MatchNamesWithUnderscores = true;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.UpdateConfigurationFromEnv();

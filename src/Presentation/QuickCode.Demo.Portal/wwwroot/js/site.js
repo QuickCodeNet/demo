@@ -161,11 +161,45 @@ function addYamlEditorsToFormData(formData) {
         const editorContent = aceEditor.getValue().trim();
         formData.append(editorId, editorContent);
     });
+
+    prepareFormData(formData);
 }
 
 function setPage(pageId) {
     $('#CurrentPage').val(pageId);
     $('#formList').submit();
+}
+
+function needsBase64Encoding(value) {
+    debugger;
+    if (typeof value !== "string") return false;
+    if (/^\s*[\{\[]/.test(value)) return true;
+    if (/[\u0000-\u001F\u007F-\u009F<>"{}\[\]]/.test(value)) return true;
+    if( /<[a-zA-Z][\s\S]*?>/.test(value)) return  true;
+    return (value.length > 10000);
+}
+
+function base64Encode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) =>
+        String.fromCharCode("0x" + p1)
+    ));
+}
+
+function base64Decode(str) {
+    return decodeURIComponent(
+        Array.prototype.map.call(atob(str), c =>
+            '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+        ).join('')
+    );
+}
+
+function prepareFormData(formData) {
+    for (const key of formData.keys()) {
+        let value = formData.get(key);
+        if (needsBase64Encoding(value)) {
+            formData.set(key, base64Encode(value) + "_IsBase64");
+        }
+    }
 }
 
 function loadJsonEditor(jsonEditorName, jsonDataItem, isReadonly) {

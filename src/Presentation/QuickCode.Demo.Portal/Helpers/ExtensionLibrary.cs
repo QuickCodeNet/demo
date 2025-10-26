@@ -68,6 +68,27 @@ namespace QuickCode.Demo.Portal.Helpers
             return obj.ToString();
         }
 
+        public static string DecodeEndsIsBase64(this string value)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                return value ?? string.Empty;
+
+            if (!value.EndsWith("_IsBase64"))
+                return value;
+
+            var cleanValue = value[..^9];
+
+            try
+            {
+                var decodedBytes = Convert.FromBase64String(cleanValue);
+                return Encoding.UTF8.GetString(decodedBytes);
+            }
+            catch
+            {
+                return value;
+            }
+        }
+        
         public static string SplitCamelCaseToString(this string source)
         {
             const string pattern = @"[A-Z][a-z]*|[a-z]+|\d+";

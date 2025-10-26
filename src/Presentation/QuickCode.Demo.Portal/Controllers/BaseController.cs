@@ -357,19 +357,19 @@ namespace QuickCode.Demo.Portal.Controllers
                     PropertyInfo pi = modelType.GetProperty(key);
                     if (pi != null)
                     {
-                        object propertyValue = pi.GetValue(requestModel, null);
+                        var propertyValue = pi.GetValue(requestModel, null);
                         pi.SetValue(mainModel, propertyValue, null);
                     }
                     else
                     {
-                        object val = GetValue(modelType, key, requestModel);
+                        var val = GetValue(modelType, key, requestModel);
                         string requestFormKeyValue = null;
                         if (Request.Form.Keys.Contains(key))
                         {
-                            requestFormKeyValue = Request.Form[key];
+                            requestFormKeyValue = Request.Form[key].AsString().DecodeEndsIsBase64();
                         }
-
-                        if (val == null && requestFormKeyValue != null)
+                        
+                        if ((val == null && requestFormKeyValue != null) || val.AsString().EndsWith("_IsBase64"))
                         {
                             SetValue(modelType, key, mainModel, requestFormKeyValue);
                         }

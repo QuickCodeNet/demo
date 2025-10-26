@@ -42,9 +42,11 @@ namespace QuickCode.Demo.UserManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.TopicWorkflow.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.TopicWorkflow.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<TopicWorkflowDto>(value, "Not Defined");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<TopicWorkflowDto>(resultDto, "Success");
             });
         }
 

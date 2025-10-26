@@ -41,9 +41,11 @@ namespace QuickCode.Demo.EmailManagerModule.Persistence.Repositories
         {
             return await ExecuteWithExceptionHandling("Insert", async () =>
             {
-                await _writeContext.OtpMessage.AddAsync(value.ToModel());
+                var entity = value.ToModel();
+                await _writeContext.OtpMessage.AddAsync(entity);
                 await _writeContext.SaveChangesAsync();
-                return new RepoResponse<OtpMessageDto>(value, "Not Defined");
+                var resultDto = entity.ToDto();
+                return new RepoResponse<OtpMessageDto>(resultDto, "Success");
             });
         }
 
