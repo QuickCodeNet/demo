@@ -1,0 +1,5 @@
+﻿{
+  "SITE_MANAGERS": [
+    { "SITE_ID": 1, "CONTACT_ID": 1, "START_DATE": "2020-01-01T00:00:00", "IS_ACTIVE": true }
+  ]
+} 

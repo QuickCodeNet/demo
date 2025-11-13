@@ -1,0 +1,11 @@
+﻿{
+  "APARTMENTS": [
+    {
+      "SITE_ID": 1,
+      "NAME": "QuickCode Apartmanı",
+      "ADDRESS": "Database Mahallesi No:1",
+      "TOTAL_FLATS": 10,
+      "IS_ACTIVE": true
+    }
+  ]
+} 
