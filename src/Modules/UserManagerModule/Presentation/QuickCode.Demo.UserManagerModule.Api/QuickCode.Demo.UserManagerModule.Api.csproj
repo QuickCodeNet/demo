@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <GenerateCode>True</GenerateCode>
@@ -17,9 +17,6 @@
         <PackageReference Include="RestSharp" />
         <PackageReference Include="Swashbuckle.AspNetCore" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" />
-        <PackageReference Include="System.Data.Common" />
-        <PackageReference Include="System.Runtime" />
-        <PackageReference Include="System.Text.RegularExpressions" />
         <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
         <PackageReference Include="Microsoft.IdentityModel.Tokens" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />

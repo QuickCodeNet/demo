@@ -56,8 +56,8 @@
 ### 1. Install Prerequisites
 - [ ] **Docker Desktop** (or Docker Engine) is installed and running  
   [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- [ ] **.NET 9 SDK** is installed  
-  [Download .NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- [ ] **.NET 10 SDK** is installed  
+  [Download .NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - [ ] **Git** is installed  
   [Download Git](https://git-scm.com/downloads)
 
@@ -140,7 +140,7 @@ It is designed for scalable, maintainable, and testable microservice architectur
 
 ## 2. Technologies & Stack
 
-- **.NET 9** (C#)
+- **.NET 10** (C#)
 - **Entity Framework Core**
 - **PostgreSQL / SQL Server / MySQL Support**
 - **Docker & Docker Compose**
@@ -438,4 +438,4 @@ For enterprise solutions, collaboration, or technical discussions, please reach 
 
 **Feel free to reach out or open an issue for further questions!**
 
-**Last generation Time**: [Generated on: 2025-11-13 08:24:08 UTC]
+**Last generation Time**: [Generated on: 2025-11-14 07:33:04 UTC]
