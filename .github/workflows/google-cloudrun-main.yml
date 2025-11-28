@@ -57,6 +57,6 @@ jobs:
       - name: Complete Notification
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/CompleteGeneration?actionId=${{ secrets.DEPLOYTOCLOUDRUNGATEWAY }}&sessionId=${{secrets.QUICKCODE_SESSION_ID}}&message=Completed'
+          command: curl 'https://api.quickcode.net/api/GenerateSite/CompleteGeneration?actionId=${{ secrets.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{secrets.QUICKCODE_SESSION_ID}}&message=Completed'
           max_attempts: 3
           timeout_minutes: 2
