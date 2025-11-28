@@ -4,6 +4,10 @@ on:
   push:
     branches: [ 'main' ]
 
+env:
+  QUICKCODE_SESSION_ID: ${{ secrets.QUICKCODE_SESSION_ID }}
+  BUILD_AND_PUSH_CONTAINER_SECRET: ${{ secrets.BUILD_AND_PUSH_CONTAINER_GATEWAY }}
+
 jobs:         
   event-listener-service:
     name: Kafka Event Listener Api
@@ -57,6 +61,6 @@ jobs:
       - name: Complete Notification
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/CompleteGeneration?actionId=${{ secrets.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{secrets.QUICKCODE_SESSION_ID}}&message=Completed'
+          command: curl 'https://api.quickcode.net/api/GenerateSite/CompleteGeneration?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{ env.QUICKCODE_SESSION_ID }}&message=Completed'
           max_attempts: 3
           timeout_minutes: 2
