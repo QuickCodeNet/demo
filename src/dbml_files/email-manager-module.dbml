@@ -45,11 +45,16 @@ Table "CAMPAIGN_TYPE" {
   "NAME" string [not null]
   "TEMPLATE" string [not null]
 }
+
+
 Table "EMAIL_SENDER" {
   "ID" integer [pk, increment, not null]
   "GSM_NUMBER" string [not null]
   "PROVIDER_NAME" string [not null]
 } 
+
+
+
 Ref: "EMAIL_SENDER"."ID" < "INFO_MESSAGE"."EMAIL_SENDER_ID"
 Ref: "EMAIL_SENDER"."ID" < "OTP_MESSAGE"."EMAIL_SENDER_ID"
 Ref: "OTP_TYPE"."ID" < "OTP_MESSAGE"."OTP_TYPE_ID"

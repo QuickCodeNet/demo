@@ -28,18 +28,22 @@ Table "TopicWorkflows" {
   "Id" int [pk, not null, increment]
   "KafkaEventsTopicName" varchar(1000) [not null]
   "WorkflowContent" yaml [not null]
-  Note: 'Query:GET_WORKFLOWS[] Where:KafkaEventsTopicName'
-  Note: 'Query:GET_WORKFLOWS2[] Where:KafkaEventsTopicName'
-  Note: 'Query:GET_TOPIC_WORKFLOWS[] Tables:TopicWorkflows T, KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true], K.TopicName, A.HttpMethod  Select:T.*'
+  Note: '''
+    Query:GET_WORKFLOWS[] Where:KafkaEventsTopicName
+    Query:GET_WORKFLOWS2[] Where:KafkaEventsTopicName
+    Query:GET_TOPIC_WORKFLOWS[] Tables:TopicWorkflows T, KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true], K.TopicName, A.HttpMethod  Select:T.*
+  '''
 }
 
 Table "KafkaEvents" {
   "TopicName" varchar(1000) [pk, not null]
   "ApiMethodDefinitionKey" varchar(1000) [not null]
   "IsActive" boolean [not null, default: '((0))']
-  Note: 'Query:GET_KAFKA_EVENTS[] Tables:KafkaEvents K, ApiMethodDefinitions A Select:K.*, A.HttpMethod, A.ControllerName, A.UrlPath '
-  Note: 'Query:GET_ACTIVE_KAFKA_EVENTS[] Tables:KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true] Select:K.*, A.HttpMethod, A.ControllerName, A.UrlPath '
-  Note: 'Query:GET_TOPIC_WORKFLOWS[] Tables:TopicWorkflows T, KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true], K.TopicName, A.HttpMethod  Select:T.*'
+  Note: '''
+    Query:GET_KAFKA_EVENTS[] Tables:KafkaEvents K, ApiMethodDefinitions A Select:K.*, A.HttpMethod, A.ControllerName, A.UrlPath
+    Query:GET_ACTIVE_KAFKA_EVENTS[] Tables:KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true] Select:K.*, A.HttpMethod, A.ControllerName, A.UrlPath
+    Query:GET_TOPIC_WORKFLOWS[] Tables:TopicWorkflows T, KafkaEvents K, ApiMethodDefinitions A Where:K.IsActive[Equals|true], K.TopicName, A.HttpMethod  Select:T.*
+  '''
 }
 
 Table "PermissionGroups" {
@@ -63,15 +67,19 @@ Table "PortalPermissionGroups" {
   "PermissionGroupName" varchar(1000) [pk, not null]
   "PortalPermissionTypeId" int [pk, not null]
   "IsActive" boolean [not null, default: '((0))']
-  Note: 'Query:GET_PORTAL_PERMISSION_GROUPS[] Where:PermissionGroupName, IsActive[Equals|true]'
-  Note: 'Query:GET_PORTAL_PERMISSION_GROUP[] Where:PortalPermissionName, PermissionGroupName, PortalPermissionTypeId, IsActive[Equals|true]'
+  Note: '''
+    Query:GET_PORTAL_PERMISSION_GROUPS[] Where:PermissionGroupName, IsActive[Equals|true]
+    Query:GET_PORTAL_PERMISSION_GROUP[] Where:PortalPermissionName, PermissionGroupName, PortalPermissionTypeId, IsActive[Equals|true]
+  '''
 }
 
 Table "ApiPermissionGroups" {
   "PermissionGroupName" varchar(1000) [pk, not null]
   "ApiMethodDefinitionKey" varchar(1000) [pk, not null]
   "IsActive" boolean [not null, default: '((0))']
-  Note: 'Query:GET_API_PERMISSION_GROUP_NAMES[] Where:PermissionGroupName, IsActive[Equals|true]'
+  Note: '''
+    Query:GET_API_PERMISSION_GROUP_NAMES[] Where:PermissionGroupName, IsActive[Equals|true]
+  '''
 }
 
 Table "ApiMethodDefinitions" {
@@ -114,7 +122,9 @@ Table "AspNetUsers" {
   "LockoutEnd" datetimeoffset [null]
   "LockoutEnabled" bit [not null]
   "AccessFailedCount" int [not null]
-  Note: 'Query:GET_USER[1] Where:Email'
+  Note: '''
+    Query:GET_USER[1] Where:Email
+  '''
 }
 
 Table "RefreshTokens" {
@@ -124,8 +134,10 @@ Table "RefreshTokens" {
   "ExpiryDate" datetime [not null]
   "CreatedDate" datetime [not null, default: '(getdate())']
   "IsRevoked" boolean [not null, default: '((0))']
-  Note: 'Query:GET_REFRESH_TOKEN[1] Where:Token, IsRevoked[Equals|false], ExpiryDate[>|Now]'
-  Note: 'Command:UPDATE_REFRESH_TOKENS Where:Token[Equals] Set: IsRevoked[true]'
+  Note: '''
+    Query:GET_REFRESH_TOKEN[1] Where:Token, IsRevoked[Equals|false], ExpiryDate[>|Now]
+    Command:UPDATE_REFRESH_TOKENS Where:Token[Equals] Set: IsRevoked[true]
+  '''
 }
 
 Table "AspNetRoleClaims" {
