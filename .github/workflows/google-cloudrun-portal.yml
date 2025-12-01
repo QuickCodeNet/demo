@@ -60,7 +60,7 @@ jobs:
         if: always()
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress'
+          command: curl "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress"
           max_attempts: 3
           timeout_minutes: 2
 
@@ -79,7 +79,7 @@ jobs:
         if: always()
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=Completed'
+          command: curl "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=Completed"
           max_attempts: 3
           timeout_minutes: 2
           
@@ -87,7 +87,7 @@ jobs:
         if: always()
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress' 
+          command: curl "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress" 
           max_attempts: 3
           timeout_minutes: 2
           
@@ -110,7 +110,7 @@ jobs:
         if: always()
         uses: nick-fields/retry@v2
         with:
-          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=${{ steps.deploy.outputs.url }}' 
+          command: curl "https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=${{ steps.deploy.outputs.url }}" 
           max_attempts: 3
           timeout_minutes: 2
           
