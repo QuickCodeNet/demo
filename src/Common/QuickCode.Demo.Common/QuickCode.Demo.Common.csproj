@@ -72,12 +72,6 @@
       <Compile Include="Nswag/Clients/UserManagerModuleApi/**/*.cs" />
     </ItemGroup>
   </Target>
-  <Target Name="NSwag__ApartmentManageModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
-    <Exec WorkingDirectory="$(SolutionDir)Common/QuickCode.Demo.Common/Nswag/Configs/" Command="$(NSwagExe_Net80) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagApartmentManageModuleUrl),ProjectDir=$(ProjectDir),ProjectName=ApartmentManageModuleApi" ContinueOnError="true" />
-    <ItemGroup>
-      <Compile Include="Nswag/Clients/ApartmentManageModuleApi/**/*.cs" />
-    </ItemGroup>
-  </Target>
   <Target Name="NSwag__EmailManagerModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
     <Exec WorkingDirectory="$(SolutionDir)Common/QuickCode.Demo.Common/Nswag/Configs/" Command="$(NSwagExe_Net80) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagEmailManagerModuleUrl),ProjectDir=$(ProjectDir),ProjectName=EmailManagerModuleApi" ContinueOnError="true" />
     <ItemGroup>
@@ -92,7 +86,6 @@
   </Target>
   <PropertyGroup>
     <ModuleNswagUserManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.UserManagerModule.Api-Swagger.json'))</ModuleNswagUserManagerModuleUrl>
-    <ModuleNswagApartmentManageModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.ApartmentManageModule.Api-Swagger.json'))</ModuleNswagApartmentManageModuleUrl>
     <ModuleNswagEmailManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.EmailManagerModule.Api-Swagger.json'))</ModuleNswagEmailManagerModuleUrl>
     <ModuleNswagSmsManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.SmsManagerModule.Api-Swagger.json'))</ModuleNswagSmsManagerModuleUrl>
   </PropertyGroup>

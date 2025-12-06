@@ -1,7 +1,0 @@
-﻿{
-  "USER_SITE_ACCESSES": [
-    { "USER_ID": 1, "SITE_ID": 1, "FLAT_ID": 1, "ACCESS_TYPE": "Owner", "IS_ACTIVE": true },
-    { "USER_ID": 2, "SITE_ID": 1, "FLAT_ID": 2, "ACCESS_TYPE": "Owner", "IS_ACTIVE": true },
-    { "USER_ID": 3, "SITE_ID": 1, "FLAT_ID": 7, "ACCESS_TYPE": "Manager", "IS_ACTIVE": true }
-  ]
-} 

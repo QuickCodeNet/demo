@@ -1,9 +1,0 @@
-﻿{
-  "COMMON_EXPENSES": [
-    { "SITE_ID": 1, "APARTMENT_ID": 1, "NAME": "Ocak Elektrik Gideri", "EXPENSE_TYPE_ID": 1, "YEAR_ID": 2025, "MONTH_ID": 1, "EXPENSE_AMOUNT": 1500, "DESCRIPTION": "Ocak ayı elektrik faturası", "PAID": false, "PAYMENT_TYPE_ID": 1 },
-    { "SITE_ID": 1, "APARTMENT_ID": 1, "NAME": "Ocak Su Gideri", "EXPENSE_TYPE_ID": 2, "YEAR_ID": 2025, "MONTH_ID": 1, "EXPENSE_AMOUNT": 800, "DESCRIPTION": "Ocak ayı su faturası", "PAID": false, "PAYMENT_TYPE_ID": 1 },
-    { "SITE_ID": 1, "APARTMENT_ID": 1, "NAME": "Ocak Temizlik Gideri", "EXPENSE_TYPE_ID": 3, "YEAR_ID": 2025, "MONTH_ID": 1, "EXPENSE_AMOUNT": 1200, "DESCRIPTION": "Ocak ayı temizlik hizmeti", "PAID": false, "PAYMENT_TYPE_ID": 1 },
-    { "SITE_ID": 1, "APARTMENT_ID": 1, "NAME": "Asansör Tamiri", "EXPENSE_TYPE_ID": 4, "YEAR_ID": 2025, "MONTH_ID": 1, "EXPENSE_AMOUNT": 15000, "DESCRIPTION": "Asansör tamir işlemi", "PAID": false, "PAYMENT_TYPE_ID": 1 },
-    { "SITE_ID": 1, "APARTMENT_ID": 1, "NAME": "Depo Tamiratı", "EXPENSE_TYPE_ID": 6, "YEAR_ID": 2025, "MONTH_ID": 1, "EXPENSE_AMOUNT": 12000, "DESCRIPTION": "Depo tamir işlemi", "PAID": false, "PAYMENT_TYPE_ID": 1 }
-  ]
-} 

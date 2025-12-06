@@ -1,8 +1,0 @@
-﻿{
-  "PAYMENT_TYPES": [
-    { "NAME": "Ödenmedi", "DESCRIPTION": "Henüz ödenmemiş", "IS_ACTIVE": true },
-    { "NAME": "Nakit Ödeme", "DESCRIPTION": "Nakit para ile ödeme", "IS_ACTIVE": true },
-    { "NAME": "Havale/EFT", "DESCRIPTION": "Banka havalesi ile ödeme", "IS_ACTIVE": true },
-    { "NAME": "Kredi Kartı", "DESCRIPTION": "Kredi kartı ile ödeme", "IS_ACTIVE": true }
-  ]
-} 
