@@ -37,6 +37,17 @@ services:
       - demo-pg-data
       
 
+  quickcode-demo-apartment-manage-module-api:
+    container_name: "quickcode-demo-apartment-manage-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-apartment-manage-module-api
+    build:
+      context: . 
+      dockerfile: Modules/ApartmentManageModule/Presentation/QuickCode.Demo.ApartmentManageModule.Api/Dockerfile
+    depends_on:
+      - demo-sql-data
+      - demo-pg-data
+      
+
   quickcode-demo-email-manager-module-api:
     container_name: "quickcode-demo-email-manager-module-api"
     image: ${DOCKER_REGISTRY-}quickcode-demo-email-manager-module-api

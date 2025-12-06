@@ -79,7 +79,7 @@ services:
       - "6001:80"
 
 
-  quickcode-demo-email-manager-module-api:
+  quickcode-demo-apartment-manage-module-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Local
       - ASPNETCORE_URLS=http://+
@@ -88,13 +88,22 @@ services:
       - "6002:80"
 
 
-  quickcode-demo-sms-manager-module-api:
+  quickcode-demo-email-manager-module-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Local
       - ASPNETCORE_URLS=http://+
       
     ports:
       - "6003:80"
+
+
+  quickcode-demo-sms-manager-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      
+    ports:
+      - "6004:80"
 
 
 #[-WEB-]

@@ -17,6 +17,14 @@
           }
         }
       },
+      "apartment-manage-module-api": {
+        "clusterId": "apartment-manage-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-apartment-manage-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
       "email-manager-module-api": {
         "clusterId": "email-manager-module-api",
         "destinations": {
@@ -72,6 +80,26 @@
         "transforms": [
           {
             "PathPattern": "api/user-manager-module/{**catch-all}"
+          }
+        ]
+      },
+      "apartment-manage-module": {
+        "routeId": "apartment-manage-module",
+        "clusterId": "apartment-manage-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/apartment-manage-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/apartment-manage-module/{**catch-all}"
           }
         ]
       },

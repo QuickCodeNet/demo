@@ -81,6 +81,78 @@
       "Description": "UserManagerModuleTopicWorkflows"
     },
     {
+      "Name": "ApartmentManageModuleApartments",
+      "Description": "ApartmentManageModuleApartments"
+    },
+    {
+      "Name": "ApartmentManageModuleApartmentFeePlans",
+      "Description": "ApartmentManageModuleApartmentFeePlans"
+    },
+    {
+      "Name": "ApartmentManageModuleAuditLogs",
+      "Description": "ApartmentManageModuleAuditLogs"
+    },
+    {
+      "Name": "ApartmentManageModuleCommonExpenses",
+      "Description": "ApartmentManageModuleCommonExpenses"
+    },
+    {
+      "Name": "ApartmentManageModuleContacts",
+      "Description": "ApartmentManageModuleContacts"
+    },
+    {
+      "Name": "ApartmentManageModuleExpenseInstallments",
+      "Description": "ApartmentManageModuleExpenseInstallments"
+    },
+    {
+      "Name": "ApartmentManageModuleExpenseTypes",
+      "Description": "ApartmentManageModuleExpenseTypes"
+    },
+    {
+      "Name": "ApartmentManageModuleFeeTypes",
+      "Description": "ApartmentManageModuleFeeTypes"
+    },
+    {
+      "Name": "ApartmentManageModuleFlats",
+      "Description": "ApartmentManageModuleFlats"
+    },
+    {
+      "Name": "ApartmentManageModuleFlatContacts",
+      "Description": "ApartmentManageModuleFlatContacts"
+    },
+    {
+      "Name": "ApartmentManageModuleFlatExpenseInstallments",
+      "Description": "ApartmentManageModuleFlatExpenseInstallments"
+    },
+    {
+      "Name": "ApartmentManageModuleFlatPayments",
+      "Description": "ApartmentManageModuleFlatPayments"
+    },
+    {
+      "Name": "ApartmentManageModulePaymentMonths",
+      "Description": "ApartmentManageModulePaymentMonths"
+    },
+    {
+      "Name": "ApartmentManageModulePaymentTypes",
+      "Description": "ApartmentManageModulePaymentTypes"
+    },
+    {
+      "Name": "ApartmentManageModulePaymentYears",
+      "Description": "ApartmentManageModulePaymentYears"
+    },
+    {
+      "Name": "ApartmentManageModuleSites",
+      "Description": "ApartmentManageModuleSites"
+    },
+    {
+      "Name": "ApartmentManageModuleSiteManagers",
+      "Description": "ApartmentManageModuleSiteManagers"
+    },
+    {
+      "Name": "ApartmentManageModuleUserSiteAccesses",
+      "Description": "ApartmentManageModuleUserSiteAccesses"
+    },
+    {
       "Name": "EmailManagerModuleAuditLogs",
       "Description": "EmailManagerModuleAuditLogs"
     },
@@ -336,12 +408,183 @@
       "ParentName": "UserManagerModule"
     },
     {
+      "Key": "ApartmentManageModule_ApartmentManageModule",
+      "Name": "ApartmentManageModule",
+      "Text": "ApartmentManageModule",
+      "Tooltip": "ApartmentManageModule",
+      "ActionName": "",
+      "OrderNo": 120,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_Apartments",
+      "Name": "Apartments",
+      "Text": "Apartments",
+      "Tooltip": "Apartments",
+      "ActionName": "/ApartmentManageModuleApartments/List",
+      "OrderNo": 120,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_ApartmentFeePlans",
+      "Name": "ApartmentFeePlans",
+      "Text": "ApartmentFeePlans",
+      "Tooltip": "ApartmentFeePlans",
+      "ActionName": "/ApartmentManageModuleApartmentFeePlans/List",
+      "OrderNo": 121,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/ApartmentManageModuleAuditLogs/List",
+      "OrderNo": 122,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_CommonExpenses",
+      "Name": "CommonExpenses",
+      "Text": "CommonExpenses",
+      "Tooltip": "CommonExpenses",
+      "ActionName": "/ApartmentManageModuleCommonExpenses/List",
+      "OrderNo": 123,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_Contacts",
+      "Name": "Contacts",
+      "Text": "Contacts",
+      "Tooltip": "Contacts",
+      "ActionName": "/ApartmentManageModuleContacts/List",
+      "OrderNo": 124,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_ExpenseInstallments",
+      "Name": "ExpenseInstallments",
+      "Text": "ExpenseInstallments",
+      "Tooltip": "ExpenseInstallments",
+      "ActionName": "/ApartmentManageModuleExpenseInstallments/List",
+      "OrderNo": 125,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_ExpenseTypes",
+      "Name": "ExpenseTypes",
+      "Text": "ExpenseTypes",
+      "Tooltip": "ExpenseTypes",
+      "ActionName": "/ApartmentManageModuleExpenseTypes/List",
+      "OrderNo": 126,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_FeeTypes",
+      "Name": "FeeTypes",
+      "Text": "FeeTypes",
+      "Tooltip": "FeeTypes",
+      "ActionName": "/ApartmentManageModuleFeeTypes/List",
+      "OrderNo": 127,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_Flats",
+      "Name": "Flats",
+      "Text": "Flats",
+      "Tooltip": "Flats",
+      "ActionName": "/ApartmentManageModuleFlats/List",
+      "OrderNo": 128,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_FlatContacts",
+      "Name": "FlatContacts",
+      "Text": "FlatContacts",
+      "Tooltip": "FlatContacts",
+      "ActionName": "/ApartmentManageModuleFlatContacts/List",
+      "OrderNo": 129,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_FlatExpenseInstallments",
+      "Name": "FlatExpenseInstallments",
+      "Text": "FlatExpenseInstallments",
+      "Tooltip": "FlatExpenseInstallments",
+      "ActionName": "/ApartmentManageModuleFlatExpenseInstallments/List",
+      "OrderNo": 130,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_FlatPayments",
+      "Name": "FlatPayments",
+      "Text": "FlatPayments",
+      "Tooltip": "FlatPayments",
+      "ActionName": "/ApartmentManageModuleFlatPayments/List",
+      "OrderNo": 131,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_PaymentMonths",
+      "Name": "PaymentMonths",
+      "Text": "PaymentMonths",
+      "Tooltip": "PaymentMonths",
+      "ActionName": "/ApartmentManageModulePaymentMonths/List",
+      "OrderNo": 132,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_PaymentTypes",
+      "Name": "PaymentTypes",
+      "Text": "PaymentTypes",
+      "Tooltip": "PaymentTypes",
+      "ActionName": "/ApartmentManageModulePaymentTypes/List",
+      "OrderNo": 133,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_PaymentYears",
+      "Name": "PaymentYears",
+      "Text": "PaymentYears",
+      "Tooltip": "PaymentYears",
+      "ActionName": "/ApartmentManageModulePaymentYears/List",
+      "OrderNo": 134,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_Sites",
+      "Name": "Sites",
+      "Text": "Sites",
+      "Tooltip": "Sites",
+      "ActionName": "/ApartmentManageModuleSites/List",
+      "OrderNo": 135,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_SiteManagers",
+      "Name": "SiteManagers",
+      "Text": "SiteManagers",
+      "Tooltip": "SiteManagers",
+      "ActionName": "/ApartmentManageModuleSiteManagers/List",
+      "OrderNo": 136,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
+      "Key": "ApartmentManageModule_UserSiteAccesses",
+      "Name": "UserSiteAccesses",
+      "Text": "UserSiteAccesses",
+      "Tooltip": "UserSiteAccesses",
+      "ActionName": "/ApartmentManageModuleUserSiteAccesses/List",
+      "OrderNo": 137,
+      "ParentName": "ApartmentManageModule"
+    },
+    {
       "Key": "EmailManagerModule_EmailManagerModule",
       "Name": "EmailManagerModule",
       "Text": "EmailManagerModule",
       "Tooltip": "EmailManagerModule",
       "ActionName": "",
-      "OrderNo": 120,
+      "OrderNo": 138,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -350,7 +593,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/EmailManagerModuleAuditLogs/List",
-      "OrderNo": 120,
+      "OrderNo": 138,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -359,7 +602,7 @@
       "Text": "CampaignMessages",
       "Tooltip": "CampaignMessages",
       "ActionName": "/EmailManagerModuleCampaignMessages/List",
-      "OrderNo": 121,
+      "OrderNo": 139,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -368,7 +611,7 @@
       "Text": "CampaignTypes",
       "Tooltip": "CampaignTypes",
       "ActionName": "/EmailManagerModuleCampaignTypes/List",
-      "OrderNo": 122,
+      "OrderNo": 140,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -377,7 +620,7 @@
       "Text": "EmailSenders",
       "Tooltip": "EmailSenders",
       "ActionName": "/EmailManagerModuleEmailSenders/List",
-      "OrderNo": 123,
+      "OrderNo": 141,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -386,7 +629,7 @@
       "Text": "InfoMessages",
       "Tooltip": "InfoMessages",
       "ActionName": "/EmailManagerModuleInfoMessages/List",
-      "OrderNo": 124,
+      "OrderNo": 142,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -395,7 +638,7 @@
       "Text": "InfoTypes",
       "Tooltip": "InfoTypes",
       "ActionName": "/EmailManagerModuleInfoTypes/List",
-      "OrderNo": 125,
+      "OrderNo": 143,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -404,7 +647,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/EmailManagerModuleOtpMessages/List",
-      "OrderNo": 126,
+      "OrderNo": 144,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -413,7 +656,7 @@
       "Text": "OtpTypes",
       "Tooltip": "OtpTypes",
       "ActionName": "/EmailManagerModuleOtpTypes/List",
-      "OrderNo": 127,
+      "OrderNo": 145,
       "ParentName": "EmailManagerModule"
     },
     {
@@ -422,7 +665,7 @@
       "Text": "SmsManagerModule",
       "Tooltip": "SmsManagerModule",
       "ActionName": "",
-      "OrderNo": 128,
+      "OrderNo": 146,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -431,7 +674,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/SmsManagerModuleAuditLogs/List",
-      "OrderNo": 128,
+      "OrderNo": 146,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -440,7 +683,7 @@
       "Text": "CampaignMessages",
       "Tooltip": "CampaignMessages",
       "ActionName": "/SmsManagerModuleCampaignMessages/List",
-      "OrderNo": 129,
+      "OrderNo": 147,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -449,7 +692,7 @@
       "Text": "CampaignTypes",
       "Tooltip": "CampaignTypes",
       "ActionName": "/SmsManagerModuleCampaignTypes/List",
-      "OrderNo": 130,
+      "OrderNo": 148,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -458,7 +701,7 @@
       "Text": "InfoMessages",
       "Tooltip": "InfoMessages",
       "ActionName": "/SmsManagerModuleInfoMessages/List",
-      "OrderNo": 131,
+      "OrderNo": 149,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -467,7 +710,7 @@
       "Text": "InfoTypes",
       "Tooltip": "InfoTypes",
       "ActionName": "/SmsManagerModuleInfoTypes/List",
-      "OrderNo": 132,
+      "OrderNo": 150,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -476,7 +719,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/SmsManagerModuleOtpMessages/List",
-      "OrderNo": 133,
+      "OrderNo": 151,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -485,7 +728,7 @@
       "Text": "OtpTypes",
       "Tooltip": "OtpTypes",
       "ActionName": "/SmsManagerModuleOtpTypes/List",
-      "OrderNo": 134,
+      "OrderNo": 152,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -494,7 +737,7 @@
       "Text": "SmsSenders",
       "Tooltip": "SmsSenders",
       "ActionName": "/SmsManagerModuleSmsSenders/List",
-      "OrderNo": 135,
+      "OrderNo": 153,
       "ParentName": "SmsManagerModule"
     }
   ],
@@ -539,6 +782,78 @@
       "TableName": "PortalPermissionType",
       "IdColumn": "Id",
       "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Site",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Apartment",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentYear",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentMonth",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ApartmentFeePlan",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PaymentType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ExpenseType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "CommonExpense",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Contact",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ExpenseInstallment",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "FeeType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Flat",
+      "IdColumn": "Id",
+      "TextColumns": "FlatNumber",
       "StringFormat": "{0}"
     },
     {
@@ -1769,6 +2084,1086 @@
     },
     {
       "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleApartmentFeePlans",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleCommonExpenses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleExpenseTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFeeTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlats",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatContacts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatExpenseInstallments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleFlatPayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentMonths",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModulePaymentYears",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSites",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleSiteManagers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "ApartmentManageModuleUserSiteAccesses",
       "PermissionGroupName": "Viewer",
       "PortalPermissionTypeId": 4,
       "IsActive": false
