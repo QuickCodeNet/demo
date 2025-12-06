@@ -6,13 +6,6 @@
       "/api": "/api"
     }
   },
-  "apartment-manage-module-api": {
-    "Endpoint": "/swagger/apartment-manage-module-api/v1/swagger.json",
-    "Spec": "/swagger/v1/swagger.json",
-    "PathOptions": {
-      "/api": "/api"
-    }
-  },
   "email-manager-module-api": {
     "Endpoint": "/swagger/email-manager-module-api/v1/swagger.json",
     "Spec": "/swagger/v1/swagger.json",
