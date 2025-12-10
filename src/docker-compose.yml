@@ -48,28 +48,6 @@ services:
       - demo-pg-data
       
 
-  quickcode-demo-empty-test-module-api:
-    container_name: "quickcode-demo-empty-test-module-api"
-    image: ${DOCKER_REGISTRY-}quickcode-demo-empty-test-module-api
-    build:
-      context: . 
-      dockerfile: Modules/EmptyTestModule/Presentation/QuickCode.Demo.EmptyTestModule.Api/Dockerfile
-    depends_on:
-      - demo-sql-data
-      - demo-pg-data
-      
-
-  quickcode-demo-sms-manager-module-api:
-    container_name: "quickcode-demo-sms-manager-module-api"
-    image: ${DOCKER_REGISTRY-}quickcode-demo-sms-manager-module-api
-    build:
-      context: . 
-      dockerfile: Modules/SmsManagerModule/Presentation/QuickCode.Demo.SmsManagerModule.Api/Dockerfile
-    depends_on:
-      - demo-sql-data
-      - demo-pg-data
-      
-
 #[-WEB-]
   
   demo-zookeeper:
