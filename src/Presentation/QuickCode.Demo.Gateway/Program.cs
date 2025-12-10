@@ -238,9 +238,6 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareApiAuthorization(IServiceProvi
         
         if (string.IsNullOrEmpty(token))
         {
-            HandleEmptyToken(context, memoryCache, cacheKey);
-            AppendApiKey(context, configuration);
-            EnsureForwardedUserAgent(context);
             await next();
             return;
         }

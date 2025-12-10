@@ -174,6 +174,8 @@ using (var scope = app.Services.CreateScope())
         await dbContext.Database.MigrateAsync();
         await DatabaseSeeder.SeedAsync(dbContext, scope.ServiceProvider);
     }
+    
+    await DatabaseSeeder.SeedAsync(dbContext, scope.ServiceProvider);
 }
 
 await app.RunAsync();
