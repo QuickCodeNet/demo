@@ -25,6 +25,14 @@
           }
         }
       },
+      "empty-test-module-api": {
+        "clusterId": "empty-test-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-empty-test-module-api"
+          }
+        }
+      },
       "sms-manager-module-api": {
         "clusterId": "sms-manager-module-api",
         "destinations": {
@@ -92,6 +100,26 @@
         "transforms": [
           {
             "PathPattern": "api/email-manager-module/{**catch-all}"
+          }
+        ]
+      },
+      "empty-test-module": {
+        "routeId": "empty-test-module",
+        "clusterId": "empty-test-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/empty-test-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/empty-test-module/{**catch-all}"
           }
         ]
       },

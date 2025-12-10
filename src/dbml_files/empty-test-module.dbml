@@ -1,0 +1,4 @@
+﻿Table "CUSTOM_TABLE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]
+}

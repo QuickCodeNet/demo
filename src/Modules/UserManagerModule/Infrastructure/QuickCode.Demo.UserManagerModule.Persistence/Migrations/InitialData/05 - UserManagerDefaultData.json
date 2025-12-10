@@ -113,6 +113,14 @@
       "Description": "EmailManagerModuleOtpTypes"
     },
     {
+      "Name": "EmptyTestModuleAuditLogs",
+      "Description": "EmptyTestModuleAuditLogs"
+    },
+    {
+      "Name": "EmptyTestModuleCustomTables",
+      "Description": "EmptyTestModuleCustomTables"
+    },
+    {
       "Name": "SmsManagerModuleAuditLogs",
       "Description": "SmsManagerModuleAuditLogs"
     },
@@ -417,12 +425,39 @@
       "ParentName": "EmailManagerModule"
     },
     {
+      "Key": "EmptyTestModule_EmptyTestModule",
+      "Name": "EmptyTestModule",
+      "Text": "EmptyTestModule",
+      "Tooltip": "EmptyTestModule",
+      "ActionName": "",
+      "OrderNo": 128,
+      "ParentName": "EmptyTestModule"
+    },
+    {
+      "Key": "EmptyTestModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/EmptyTestModuleAuditLogs/List",
+      "OrderNo": 128,
+      "ParentName": "EmptyTestModule"
+    },
+    {
+      "Key": "EmptyTestModule_CustomTables",
+      "Name": "CustomTables",
+      "Text": "CustomTables",
+      "Tooltip": "CustomTables",
+      "ActionName": "/EmptyTestModuleCustomTables/List",
+      "OrderNo": 129,
+      "ParentName": "EmptyTestModule"
+    },
+    {
       "Key": "SmsManagerModule_SmsManagerModule",
       "Name": "SmsManagerModule",
       "Text": "SmsManagerModule",
       "Tooltip": "SmsManagerModule",
       "ActionName": "",
-      "OrderNo": 128,
+      "OrderNo": 130,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -431,7 +466,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/SmsManagerModuleAuditLogs/List",
-      "OrderNo": 128,
+      "OrderNo": 130,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -440,7 +475,7 @@
       "Text": "CampaignMessages",
       "Tooltip": "CampaignMessages",
       "ActionName": "/SmsManagerModuleCampaignMessages/List",
-      "OrderNo": 129,
+      "OrderNo": 131,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -449,7 +484,7 @@
       "Text": "CampaignTypes",
       "Tooltip": "CampaignTypes",
       "ActionName": "/SmsManagerModuleCampaignTypes/List",
-      "OrderNo": 130,
+      "OrderNo": 132,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -458,7 +493,7 @@
       "Text": "InfoMessages",
       "Tooltip": "InfoMessages",
       "ActionName": "/SmsManagerModuleInfoMessages/List",
-      "OrderNo": 131,
+      "OrderNo": 133,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -467,7 +502,7 @@
       "Text": "InfoTypes",
       "Tooltip": "InfoTypes",
       "ActionName": "/SmsManagerModuleInfoTypes/List",
-      "OrderNo": 132,
+      "OrderNo": 134,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -476,7 +511,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/SmsManagerModuleOtpMessages/List",
-      "OrderNo": 133,
+      "OrderNo": 135,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -485,7 +520,7 @@
       "Text": "OtpTypes",
       "Tooltip": "OtpTypes",
       "ActionName": "/SmsManagerModuleOtpTypes/List",
-      "OrderNo": 134,
+      "OrderNo": 136,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -494,7 +529,7 @@
       "Text": "SmsSenders",
       "Tooltip": "SmsSenders",
       "ActionName": "/SmsManagerModuleSmsSenders/List",
-      "OrderNo": 135,
+      "OrderNo": 137,
       "ParentName": "SmsManagerModule"
     }
   ],
@@ -2249,6 +2284,126 @@
     },
     {
       "PortalPermissionName": "EmailManagerModuleOtpTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
       "PermissionGroupName": "Viewer",
       "PortalPermissionTypeId": 4,
       "IsActive": false

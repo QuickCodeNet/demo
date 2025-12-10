@@ -34,6 +34,11 @@ jobs:
     uses: ./.github/workflows/google-cloudrun-email-manager-module.yml
     secrets: inherit
 
+  empty-test-module:
+    name: Empty Test Module Api
+    uses: ./.github/workflows/google-cloudrun-empty-test-module.yml
+    secrets: inherit
+
   sms-manager-module:
     name: Sms Manager Module Api
     uses: ./.github/workflows/google-cloudrun-sms-manager-module.yml
@@ -49,6 +54,7 @@ jobs:
       - portal
       - user-manager-module
       - email-manager-module
+      - empty-test-module
       - sms-manager-module
     if: always()
     steps:

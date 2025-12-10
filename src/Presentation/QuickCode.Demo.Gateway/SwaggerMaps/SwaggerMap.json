@@ -13,6 +13,13 @@
       "/api": "/api"
     }
   },
+  "empty-test-module-api": {
+    "Endpoint": "/swagger/empty-test-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
+  },
   "sms-manager-module-api": {
     "Endpoint": "/swagger/sms-manager-module-api/v1/swagger.json",
     "Spec": "/swagger/v1/swagger.json",
