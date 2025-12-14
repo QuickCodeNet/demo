@@ -1,0 +1,4704 @@
+﻿{
+  "PortalPermissions": [
+    {
+      "Name": "UserManagerModuleApiMethodDefinitions",
+      "Description": "UserManagerModuleApiMethodDefinitions"
+    },
+    {
+      "Name": "UserManagerModuleApiPermissionGroups",
+      "Description": "UserManagerModuleApiPermissionGroups"
+    },
+    {
+      "Name": "UserManagerModuleAspNetRoles",
+      "Description": "UserManagerModuleAspNetRoles"
+    },
+    {
+      "Name": "UserManagerModuleAspNetRoleClaims",
+      "Description": "UserManagerModuleAspNetRoleClaims"
+    },
+    {
+      "Name": "UserManagerModuleAspNetUsers",
+      "Description": "UserManagerModuleAspNetUsers"
+    },
+    {
+      "Name": "UserManagerModuleAspNetUserClaims",
+      "Description": "UserManagerModuleAspNetUserClaims"
+    },
+    {
+      "Name": "UserManagerModuleAspNetUserLogins",
+      "Description": "UserManagerModuleAspNetUserLogins"
+    },
+    {
+      "Name": "UserManagerModuleAspNetUserRoles",
+      "Description": "UserManagerModuleAspNetUserRoles"
+    },
+    {
+      "Name": "UserManagerModuleAspNetUserTokens",
+      "Description": "UserManagerModuleAspNetUserTokens"
+    },
+    {
+      "Name": "UserManagerModuleAuditLogs",
+      "Description": "UserManagerModuleAuditLogs"
+    },
+    {
+      "Name": "UserManagerModuleColumnTypes",
+      "Description": "UserManagerModuleColumnTypes"
+    },
+    {
+      "Name": "UserManagerModuleKafkaEvents",
+      "Description": "UserManagerModuleKafkaEvents"
+    },
+    {
+      "Name": "UserManagerModulePermissionGroups",
+      "Description": "UserManagerModulePermissionGroups"
+    },
+    {
+      "Name": "UserManagerModulePortalMenus",
+      "Description": "UserManagerModulePortalMenus"
+    },
+    {
+      "Name": "UserManagerModulePortalPermissions",
+      "Description": "UserManagerModulePortalPermissions"
+    },
+    {
+      "Name": "UserManagerModulePortalPermissionGroups",
+      "Description": "UserManagerModulePortalPermissionGroups"
+    },
+    {
+      "Name": "UserManagerModulePortalPermissionTypes",
+      "Description": "UserManagerModulePortalPermissionTypes"
+    },
+    {
+      "Name": "UserManagerModuleRefreshTokens",
+      "Description": "UserManagerModuleRefreshTokens"
+    },
+    {
+      "Name": "UserManagerModuleTableComboboxSettings",
+      "Description": "UserManagerModuleTableComboboxSettings"
+    },
+    {
+      "Name": "UserManagerModuleTopicWorkflows",
+      "Description": "UserManagerModuleTopicWorkflows"
+    },
+    {
+      "Name": "EmailManagerModuleAuditLogs",
+      "Description": "EmailManagerModuleAuditLogs"
+    },
+    {
+      "Name": "EmailManagerModuleBlackLists",
+      "Description": "EmailManagerModuleBlackLists"
+    },
+    {
+      "Name": "EmailManagerModuleCampaigns",
+      "Description": "EmailManagerModuleCampaigns"
+    },
+    {
+      "Name": "EmailManagerModuleMessages",
+      "Description": "EmailManagerModuleMessages"
+    },
+    {
+      "Name": "EmailManagerModuleMessageLogs",
+      "Description": "EmailManagerModuleMessageLogs"
+    },
+    {
+      "Name": "EmailManagerModuleMessageQueues",
+      "Description": "EmailManagerModuleMessageQueues"
+    },
+    {
+      "Name": "EmailManagerModuleMessageTemplates",
+      "Description": "EmailManagerModuleMessageTemplates"
+    },
+    {
+      "Name": "EmailManagerModuleOtpMessages",
+      "Description": "EmailManagerModuleOtpMessages"
+    },
+    {
+      "Name": "EmailManagerModuleOtpMessageLogs",
+      "Description": "EmailManagerModuleOtpMessageLogs"
+    },
+    {
+      "Name": "EmailManagerModuleOtpMessageQueues",
+      "Description": "EmailManagerModuleOtpMessageQueues"
+    },
+    {
+      "Name": "EmailManagerModuleSenders",
+      "Description": "EmailManagerModuleSenders"
+    },
+    {
+      "Name": "OnlineShopModuleAuditLogs",
+      "Description": "OnlineShopModuleAuditLogs"
+    },
+    {
+      "Name": "OnlineShopModuleCampaigns",
+      "Description": "OnlineShopModuleCampaigns"
+    },
+    {
+      "Name": "OnlineShopModuleCarts",
+      "Description": "OnlineShopModuleCarts"
+    },
+    {
+      "Name": "OnlineShopModuleCartItems",
+      "Description": "OnlineShopModuleCartItems"
+    },
+    {
+      "Name": "OnlineShopModuleCompanies",
+      "Description": "OnlineShopModuleCompanies"
+    },
+    {
+      "Name": "OnlineShopModuleCompanyInfos",
+      "Description": "OnlineShopModuleCompanyInfos"
+    },
+    {
+      "Name": "OnlineShopModuleCoupons",
+      "Description": "OnlineShopModuleCoupons"
+    },
+    {
+      "Name": "OnlineShopModuleHomePages",
+      "Description": "OnlineShopModuleHomePages"
+    },
+    {
+      "Name": "OnlineShopModuleOrders",
+      "Description": "OnlineShopModuleOrders"
+    },
+    {
+      "Name": "OnlineShopModuleOrderItems",
+      "Description": "OnlineShopModuleOrderItems"
+    },
+    {
+      "Name": "OnlineShopModulePayments",
+      "Description": "OnlineShopModulePayments"
+    },
+    {
+      "Name": "OnlineShopModuleProducts",
+      "Description": "OnlineShopModuleProducts"
+    },
+    {
+      "Name": "OnlineShopModuleProductGroups",
+      "Description": "OnlineShopModuleProductGroups"
+    },
+    {
+      "Name": "OnlineShopModuleProductImages",
+      "Description": "OnlineShopModuleProductImages"
+    },
+    {
+      "Name": "OnlineShopModuleProductReviews",
+      "Description": "OnlineShopModuleProductReviews"
+    },
+    {
+      "Name": "OnlineShopModuleProductTypes",
+      "Description": "OnlineShopModuleProductTypes"
+    },
+    {
+      "Name": "OnlineShopModuleShipments",
+      "Description": "OnlineShopModuleShipments"
+    },
+    {
+      "Name": "OnlineShopModuleShippingInfos",
+      "Description": "OnlineShopModuleShippingInfos"
+    },
+    {
+      "Name": "OnlineShopModuleUsers",
+      "Description": "OnlineShopModuleUsers"
+    },
+    {
+      "Name": "OnlineShopModuleUserCoupons",
+      "Description": "OnlineShopModuleUserCoupons"
+    },
+    {
+      "Name": "SmsManagerModuleAuditLogs",
+      "Description": "SmsManagerModuleAuditLogs"
+    },
+    {
+      "Name": "SmsManagerModuleBlackLists",
+      "Description": "SmsManagerModuleBlackLists"
+    },
+    {
+      "Name": "SmsManagerModuleCampaigns",
+      "Description": "SmsManagerModuleCampaigns"
+    },
+    {
+      "Name": "SmsManagerModuleMessages",
+      "Description": "SmsManagerModuleMessages"
+    },
+    {
+      "Name": "SmsManagerModuleMessageLogs",
+      "Description": "SmsManagerModuleMessageLogs"
+    },
+    {
+      "Name": "SmsManagerModuleMessageQueues",
+      "Description": "SmsManagerModuleMessageQueues"
+    },
+    {
+      "Name": "SmsManagerModuleMessageTemplates",
+      "Description": "SmsManagerModuleMessageTemplates"
+    },
+    {
+      "Name": "SmsManagerModuleOtpMessages",
+      "Description": "SmsManagerModuleOtpMessages"
+    },
+    {
+      "Name": "SmsManagerModuleOtpMessageLogs",
+      "Description": "SmsManagerModuleOtpMessageLogs"
+    },
+    {
+      "Name": "SmsManagerModuleOtpMessageQueues",
+      "Description": "SmsManagerModuleOtpMessageQueues"
+    },
+    {
+      "Name": "SmsManagerModuleSenders",
+      "Description": "SmsManagerModuleSenders"
+    }
+  ],
+  "PortalMenus": [
+    {
+      "Key": "UserManagerModule_UserManagerModule",
+      "Name": "UserManagerModule",
+      "Text": "UserManagerModule",
+      "Tooltip": "UserManagerModule",
+      "ActionName": "",
+      "OrderNo": 100,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ApiMethodDefinitions",
+      "Name": "ApiMethodDefinitions",
+      "Text": "ApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions",
+      "ActionName": "/UserManagerModuleApiMethodDefinitions/List",
+      "OrderNo": 100,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ApiPermissionGroups",
+      "Name": "ApiPermissionGroups",
+      "Text": "ApiPermissionGroups",
+      "Tooltip": "ApiPermissionGroups",
+      "ActionName": "/UserManagerModuleApiPermissionGroups/List",
+      "OrderNo": 101,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetRoles",
+      "Name": "AspNetRoles",
+      "Text": "AspNetRoles",
+      "Tooltip": "AspNetRoles",
+      "ActionName": "/UserManagerModuleAspNetRoles/List",
+      "OrderNo": 102,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetRoleClaims",
+      "Name": "AspNetRoleClaims",
+      "Text": "AspNetRoleClaims",
+      "Tooltip": "AspNetRoleClaims",
+      "ActionName": "/UserManagerModuleAspNetRoleClaims/List",
+      "OrderNo": 103,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUsers",
+      "Name": "AspNetUsers",
+      "Text": "AspNetUsers",
+      "Tooltip": "AspNetUsers",
+      "ActionName": "/UserManagerModuleAspNetUsers/List",
+      "OrderNo": 104,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserClaims",
+      "Name": "AspNetUserClaims",
+      "Text": "AspNetUserClaims",
+      "Tooltip": "AspNetUserClaims",
+      "ActionName": "/UserManagerModuleAspNetUserClaims/List",
+      "OrderNo": 105,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserLogins",
+      "Name": "AspNetUserLogins",
+      "Text": "AspNetUserLogins",
+      "Tooltip": "AspNetUserLogins",
+      "ActionName": "/UserManagerModuleAspNetUserLogins/List",
+      "OrderNo": 106,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserRoles",
+      "Name": "AspNetUserRoles",
+      "Text": "AspNetUserRoles",
+      "Tooltip": "AspNetUserRoles",
+      "ActionName": "/UserManagerModuleAspNetUserRoles/List",
+      "OrderNo": 107,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserTokens",
+      "Name": "AspNetUserTokens",
+      "Text": "AspNetUserTokens",
+      "Tooltip": "AspNetUserTokens",
+      "ActionName": "/UserManagerModuleAspNetUserTokens/List",
+      "OrderNo": 108,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/UserManagerModuleAuditLogs/List",
+      "OrderNo": 109,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ColumnTypes",
+      "Name": "ColumnTypes",
+      "Text": "ColumnTypes",
+      "Tooltip": "ColumnTypes",
+      "ActionName": "/UserManagerModuleColumnTypes/List",
+      "OrderNo": 110,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_KafkaEvents",
+      "Name": "KafkaEvents",
+      "Text": "KafkaEvents",
+      "Tooltip": "KafkaEvents",
+      "ActionName": "/UserManagerModuleKafkaEvents/List",
+      "OrderNo": 111,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PermissionGroups",
+      "Name": "PermissionGroups",
+      "Text": "PermissionGroups",
+      "Tooltip": "PermissionGroups",
+      "ActionName": "/UserManagerModulePermissionGroups/List",
+      "OrderNo": 112,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalMenus",
+      "Name": "PortalMenus",
+      "Text": "PortalMenus",
+      "Tooltip": "PortalMenus",
+      "ActionName": "/UserManagerModulePortalMenus/List",
+      "OrderNo": 113,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalPermissions",
+      "Name": "PortalPermissions",
+      "Text": "PortalPermissions",
+      "Tooltip": "PortalPermissions",
+      "ActionName": "/UserManagerModulePortalPermissions/List",
+      "OrderNo": 114,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalPermissionGroups",
+      "Name": "PortalPermissionGroups",
+      "Text": "PortalPermissionGroups",
+      "Tooltip": "PortalPermissionGroups",
+      "ActionName": "/UserManagerModulePortalPermissionGroups/List",
+      "OrderNo": 115,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalPermissionTypes",
+      "Name": "PortalPermissionTypes",
+      "Text": "PortalPermissionTypes",
+      "Tooltip": "PortalPermissionTypes",
+      "ActionName": "/UserManagerModulePortalPermissionTypes/List",
+      "OrderNo": 116,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_RefreshTokens",
+      "Name": "RefreshTokens",
+      "Text": "RefreshTokens",
+      "Tooltip": "RefreshTokens",
+      "ActionName": "/UserManagerModuleRefreshTokens/List",
+      "OrderNo": 117,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_TableComboboxSettings",
+      "Name": "TableComboboxSettings",
+      "Text": "TableComboboxSettings",
+      "Tooltip": "TableComboboxSettings",
+      "ActionName": "/UserManagerModuleTableComboboxSettings/List",
+      "OrderNo": 118,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_TopicWorkflows",
+      "Name": "TopicWorkflows",
+      "Text": "TopicWorkflows",
+      "Tooltip": "TopicWorkflows",
+      "ActionName": "/UserManagerModuleTopicWorkflows/List",
+      "OrderNo": 119,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_EmailManagerModule",
+      "Name": "EmailManagerModule",
+      "Text": "EmailManagerModule",
+      "Tooltip": "EmailManagerModule",
+      "ActionName": "",
+      "OrderNo": 120,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/EmailManagerModuleAuditLogs/List",
+      "OrderNo": 120,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_BlackLists",
+      "Name": "BlackLists",
+      "Text": "BlackLists",
+      "Tooltip": "BlackLists",
+      "ActionName": "/EmailManagerModuleBlackLists/List",
+      "OrderNo": 121,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/EmailManagerModuleCampaigns/List",
+      "OrderNo": 122,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Messages",
+      "Name": "Messages",
+      "Text": "Messages",
+      "Tooltip": "Messages",
+      "ActionName": "/EmailManagerModuleMessages/List",
+      "OrderNo": 123,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageLogs",
+      "Name": "MessageLogs",
+      "Text": "MessageLogs",
+      "Tooltip": "MessageLogs",
+      "ActionName": "/EmailManagerModuleMessageLogs/List",
+      "OrderNo": 124,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageQueues",
+      "Name": "MessageQueues",
+      "Text": "MessageQueues",
+      "Tooltip": "MessageQueues",
+      "ActionName": "/EmailManagerModuleMessageQueues/List",
+      "OrderNo": 125,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageTemplates",
+      "Name": "MessageTemplates",
+      "Text": "MessageTemplates",
+      "Tooltip": "MessageTemplates",
+      "ActionName": "/EmailManagerModuleMessageTemplates/List",
+      "OrderNo": 126,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessages",
+      "Name": "OtpMessages",
+      "Text": "OtpMessages",
+      "Tooltip": "OtpMessages",
+      "ActionName": "/EmailManagerModuleOtpMessages/List",
+      "OrderNo": 127,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessageLogs",
+      "Name": "OtpMessageLogs",
+      "Text": "OtpMessageLogs",
+      "Tooltip": "OtpMessageLogs",
+      "ActionName": "/EmailManagerModuleOtpMessageLogs/List",
+      "OrderNo": 128,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessageQueues",
+      "Name": "OtpMessageQueues",
+      "Text": "OtpMessageQueues",
+      "Tooltip": "OtpMessageQueues",
+      "ActionName": "/EmailManagerModuleOtpMessageQueues/List",
+      "OrderNo": 129,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Senders",
+      "Name": "Senders",
+      "Text": "Senders",
+      "Tooltip": "Senders",
+      "ActionName": "/EmailManagerModuleSenders/List",
+      "OrderNo": 130,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "OnlineShopModule_OnlineShopModule",
+      "Name": "OnlineShopModule",
+      "Text": "OnlineShopModule",
+      "Tooltip": "OnlineShopModule",
+      "ActionName": "",
+      "OrderNo": 131,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/OnlineShopModuleAuditLogs/List",
+      "OrderNo": 131,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/OnlineShopModuleCampaigns/List",
+      "OrderNo": 132,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Carts",
+      "Name": "Carts",
+      "Text": "Carts",
+      "Tooltip": "Carts",
+      "ActionName": "/OnlineShopModuleCarts/List",
+      "OrderNo": 133,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_CartItems",
+      "Name": "CartItems",
+      "Text": "CartItems",
+      "Tooltip": "CartItems",
+      "ActionName": "/OnlineShopModuleCartItems/List",
+      "OrderNo": 134,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Companies",
+      "Name": "Companies",
+      "Text": "Companies",
+      "Tooltip": "Companies",
+      "ActionName": "/OnlineShopModuleCompanies/List",
+      "OrderNo": 135,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_CompanyInfos",
+      "Name": "CompanyInfos",
+      "Text": "CompanyInfos",
+      "Tooltip": "CompanyInfos",
+      "ActionName": "/OnlineShopModuleCompanyInfos/List",
+      "OrderNo": 136,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Coupons",
+      "Name": "Coupons",
+      "Text": "Coupons",
+      "Tooltip": "Coupons",
+      "ActionName": "/OnlineShopModuleCoupons/List",
+      "OrderNo": 137,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_HomePages",
+      "Name": "HomePages",
+      "Text": "HomePages",
+      "Tooltip": "HomePages",
+      "ActionName": "/OnlineShopModuleHomePages/List",
+      "OrderNo": 138,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Orders",
+      "Name": "Orders",
+      "Text": "Orders",
+      "Tooltip": "Orders",
+      "ActionName": "/OnlineShopModuleOrders/List",
+      "OrderNo": 139,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_OrderItems",
+      "Name": "OrderItems",
+      "Text": "OrderItems",
+      "Tooltip": "OrderItems",
+      "ActionName": "/OnlineShopModuleOrderItems/List",
+      "OrderNo": 140,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Payments",
+      "Name": "Payments",
+      "Text": "Payments",
+      "Tooltip": "Payments",
+      "ActionName": "/OnlineShopModulePayments/List",
+      "OrderNo": 141,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Products",
+      "Name": "Products",
+      "Text": "Products",
+      "Tooltip": "Products",
+      "ActionName": "/OnlineShopModuleProducts/List",
+      "OrderNo": 142,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductGroups",
+      "Name": "ProductGroups",
+      "Text": "ProductGroups",
+      "Tooltip": "ProductGroups",
+      "ActionName": "/OnlineShopModuleProductGroups/List",
+      "OrderNo": 143,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductImages",
+      "Name": "ProductImages",
+      "Text": "ProductImages",
+      "Tooltip": "ProductImages",
+      "ActionName": "/OnlineShopModuleProductImages/List",
+      "OrderNo": 144,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductReviews",
+      "Name": "ProductReviews",
+      "Text": "ProductReviews",
+      "Tooltip": "ProductReviews",
+      "ActionName": "/OnlineShopModuleProductReviews/List",
+      "OrderNo": 145,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductTypes",
+      "Name": "ProductTypes",
+      "Text": "ProductTypes",
+      "Tooltip": "ProductTypes",
+      "ActionName": "/OnlineShopModuleProductTypes/List",
+      "OrderNo": 146,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Shipments",
+      "Name": "Shipments",
+      "Text": "Shipments",
+      "Tooltip": "Shipments",
+      "ActionName": "/OnlineShopModuleShipments/List",
+      "OrderNo": 147,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ShippingInfos",
+      "Name": "ShippingInfos",
+      "Text": "ShippingInfos",
+      "Tooltip": "ShippingInfos",
+      "ActionName": "/OnlineShopModuleShippingInfos/List",
+      "OrderNo": 148,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Users",
+      "Name": "Users",
+      "Text": "Users",
+      "Tooltip": "Users",
+      "ActionName": "/OnlineShopModuleUsers/List",
+      "OrderNo": 149,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_UserCoupons",
+      "Name": "UserCoupons",
+      "Text": "UserCoupons",
+      "Tooltip": "UserCoupons",
+      "ActionName": "/OnlineShopModuleUserCoupons/List",
+      "OrderNo": 150,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "SmsManagerModule_SmsManagerModule",
+      "Name": "SmsManagerModule",
+      "Text": "SmsManagerModule",
+      "Tooltip": "SmsManagerModule",
+      "ActionName": "",
+      "OrderNo": 151,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/SmsManagerModuleAuditLogs/List",
+      "OrderNo": 151,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_BlackLists",
+      "Name": "BlackLists",
+      "Text": "BlackLists",
+      "Tooltip": "BlackLists",
+      "ActionName": "/SmsManagerModuleBlackLists/List",
+      "OrderNo": 152,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/SmsManagerModuleCampaigns/List",
+      "OrderNo": 153,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Messages",
+      "Name": "Messages",
+      "Text": "Messages",
+      "Tooltip": "Messages",
+      "ActionName": "/SmsManagerModuleMessages/List",
+      "OrderNo": 154,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageLogs",
+      "Name": "MessageLogs",
+      "Text": "MessageLogs",
+      "Tooltip": "MessageLogs",
+      "ActionName": "/SmsManagerModuleMessageLogs/List",
+      "OrderNo": 155,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageQueues",
+      "Name": "MessageQueues",
+      "Text": "MessageQueues",
+      "Tooltip": "MessageQueues",
+      "ActionName": "/SmsManagerModuleMessageQueues/List",
+      "OrderNo": 156,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageTemplates",
+      "Name": "MessageTemplates",
+      "Text": "MessageTemplates",
+      "Tooltip": "MessageTemplates",
+      "ActionName": "/SmsManagerModuleMessageTemplates/List",
+      "OrderNo": 157,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessages",
+      "Name": "OtpMessages",
+      "Text": "OtpMessages",
+      "Tooltip": "OtpMessages",
+      "ActionName": "/SmsManagerModuleOtpMessages/List",
+      "OrderNo": 158,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessageLogs",
+      "Name": "OtpMessageLogs",
+      "Text": "OtpMessageLogs",
+      "Tooltip": "OtpMessageLogs",
+      "ActionName": "/SmsManagerModuleOtpMessageLogs/List",
+      "OrderNo": 159,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessageQueues",
+      "Name": "OtpMessageQueues",
+      "Text": "OtpMessageQueues",
+      "Tooltip": "OtpMessageQueues",
+      "ActionName": "/SmsManagerModuleOtpMessageQueues/List",
+      "OrderNo": 160,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Senders",
+      "Name": "Senders",
+      "Text": "Senders",
+      "Tooltip": "Senders",
+      "ActionName": "/SmsManagerModuleSenders/List",
+      "OrderNo": 161,
+      "ParentName": "SmsManagerModule"
+    }
+  ],
+  "TableComboboxSettings": [
+    {
+      "TableName": "ApiMethodDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "Key",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetRole",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetUser",
+      "IdColumn": "Id",
+      "TextColumns": "Id",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "KafkaEvent",
+      "IdColumn": "TopicName",
+      "TextColumns": "TopicName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PermissionGroup",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPermission",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPermissionType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Campaign",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Message",
+      "IdColumn": "Id",
+      "TextColumns": "Recipient",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Sender",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "MessageTemplate",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "OtpMessage",
+      "IdColumn": "Id",
+      "TextColumns": "Recipient",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "User",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Cart",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Product",
+      "IdColumn": "Id",
+      "TextColumns": "Model",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Company",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Coupon",
+      "IdColumn": "Id",
+      "TextColumns": "CouponCode",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Order",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Payment",
+      "IdColumn": "Id",
+      "TextColumns": "TransactionId",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ShippingInfo",
+      "IdColumn": "Id",
+      "TextColumns": "RecipientName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ProductGroup",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ProductType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    }
+  ],
+  "PortalPermissionGroups": [
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiMethodDefinitions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleApiPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetRoleClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserClaims",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserLogins",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserRoles",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAspNetUserTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleColumnTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleKafkaEvents",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalMenus",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissions",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModulePortalPermissionTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleRefreshTokens",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTableComboboxSettings",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "UserManagerModuleTopicWorkflows",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCarts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCartItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanies",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCompanyInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleHomePages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleOrderItems",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModulePayments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProducts",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductGroups",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductImages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductReviews",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleProductTypes",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShipments",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleShippingInfos",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUsers",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "OnlineShopModuleUserCoupons",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleBlackLists",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleCampaigns",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleMessageTemplates",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessages",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleOtpMessageQueues",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "SmsManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    }
+  ]
+}

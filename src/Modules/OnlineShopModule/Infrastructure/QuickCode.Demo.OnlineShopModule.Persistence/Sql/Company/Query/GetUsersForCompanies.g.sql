@@ -1,0 +1,8 @@
+﻿SELECT C.[ID], C.[NAME], C.[SECTOR] 
+FROM [USERS] U 
+	INNER JOIN [COMPANIES] C 
+			ON U.[COMPANY_ID] = C.[ID] 
+WHERE U.[IsDeleted] = 0 
+	AND C.[IsDeleted] = 0 
+	AND C.[ID] = @PRM_COMPANIES_ID 
+ORDER BY C.[ID] 

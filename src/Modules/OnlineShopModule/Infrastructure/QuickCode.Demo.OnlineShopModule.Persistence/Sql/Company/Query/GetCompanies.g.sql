@@ -1,0 +1,5 @@
+﻿SELECT [ID], [NAME], [SECTOR] 
+FROM [COMPANIES] 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_COMPANIES_ID 
+ORDER BY [ID] 

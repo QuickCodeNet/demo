@@ -1,0 +1,9 @@
+﻿SELECT C.[ID], C.[USER_ID], C.[CREATED_AT], C.[IS_ACTIVE] 
+FROM [CARTS] C 
+	INNER JOIN [USERS] U 
+			ON C.[USER_ID] = U.[ID] 
+WHERE C.[IsDeleted] = 0 
+	AND U.[IsDeleted] = 0 
+	AND C.[ID] = @PRM_CARTS_ID 
+	AND U.[ID] = @PRM_USERS_ID 
+ORDER BY C.[ID] 

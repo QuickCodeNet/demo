@@ -1,0 +1,3 @@
+﻿DELETE FROM [BLACK_LISTS] 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_BLACK_LISTS_ID

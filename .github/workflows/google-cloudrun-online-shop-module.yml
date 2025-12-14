@@ -1,0 +1,139 @@
+﻿name: "OnlineShopModule - Build and Deploy"
+
+on:
+  workflow_call:
+ 
+env:
+  PROJECT_ID: main-quickcode 
+  GAR_LOCATION: europe-west1 
+  SERVICE: demo-online-shop-module 
+  REGION: europe-west1 
+  REPO: main-quickcode-docker-repo
+  DOCKER_IMAGE_NAME: 'demo_online-shop-module_'
+  DOCKER_REPO_NAME: api
+  DOCKER_FILE_PATH: 'src/Modules/OnlineShopModule/Presentation/QuickCode.Demo.OnlineShopModule.Api/'
+  WIF_PROVIDER: ${{ secrets.WIF_PROVIDER }}
+  WIF_SERVICE_ACCOUNT: ${{ secrets.WIF_SERVICE_ACCOUNT }}
+  QUICKCODE_SESSION_ID: ${{ secrets.QUICKCODE_SESSION_ID }}
+  BUILD_AND_PUSH_CONTAINER_SECRET: ${{ secrets.BUILD_AND_PUSH_CONTAINER_ONLINE_SHOP_MODULE }}
+  DEPLOY_TO_CLOUD_RUN_SECRET: ${{ secrets.DEPLOY_TO_CLOUD_RUN_ONLINE_SHOP_MODULE }}
+  READ_CONNECTION_STRING: ${{secrets.QUICKCODE_ONLINE_SHOP_MODULE_DB}}
+  WRITE_CONNECTION_STRING: ${{secrets.QUICKCODE_ONLINE_SHOP_MODULE_DB}}
+  ELASTIC_CONNECTION_STRING: ${{secrets.QUICKCODE_ONLINE_SHOP_MODULE_ELASTIC}}
+  QUICKCODE_JWT_SECRET_KEY: ${{secrets.QUICKCODE_JWT_SECRET_KEY}}
+  AZURE_ACCOUNT_NAME: ${{ secrets.AZURE_ACCOUNT_NAME }}
+  AZURE_ACCOUNT_KEY: ${{ secrets.AZURE_ACCOUNT_KEY }}
+  AZURE_BLOB_CONTAINER_NAME: ${{ secrets.AZURE_BLOB_CONTAINER_NAME }}
+  
+jobs:
+  deploy:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            src:
+              - '.github/**'
+              - 'src/Common/**'
+              - 'src/Modules/OnlineShopModule/**'
+
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v2'
+        with:
+          token_format: 'access_token'
+          workload_identity_provider: '${{ env.WIF_PROVIDER }}' # e.g. - projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+          service_account: '${{ env.WIF_SERVICE_ACCOUNT }}' 
+          
+      - name: Docker Auth
+        id: docker-auth
+        uses: 'docker/login-action@v3'
+        with:
+          username: 'oauth2accesstoken'
+          password: '${{ steps.auth.outputs.access_token }}'
+          registry: '${{ env.GAR_LOCATION }}-docker.pkg.dev'
+      
+      - name: Build and Push Container Started
+        if: always()
+        uses: nick-fields/retry@v2
+        with:
+          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress'
+          max_attempts: 3
+          timeout_minutes: 2
+
+      - name: Build and Push Container
+        id: build
+        if: steps.changes.outputs.src == 'true'
+        continue-on-error: true
+        run: |-
+          docker buildx build \
+            --file ${{ env.DOCKER_FILE_PATH }}Dockerfile \
+            -t "${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPO }}/${{ env.DOCKER_REPO_NAME }}:${{ env.DOCKER_IMAGE_NAME }}${{ github.sha }}" \
+            --push \
+            ./
+          
+      - name: Build and Push Container Finished
+        if: always()
+        uses: nick-fields/retry@v2
+        with:
+          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.BUILD_AND_PUSH_CONTAINER_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=Completed'
+          max_attempts: 3
+          timeout_minutes: 2
+          
+      - name: Deploy to Cloud Run Started
+        if: always()
+        uses: nick-fields/retry@v2
+        with:
+          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=false&message=InProgress' 
+          max_attempts: 3
+          timeout_minutes: 2
+          
+      - name: Deploy to Cloud Run
+        id: deploy
+        if: steps.build.outcome == 'success'
+        uses: google-github-actions/deploy-cloudrun@v1
+        with:
+          service: ${{ env.SERVICE }}
+          region: ${{ env.REGION }}
+          env_vars: |
+            ASPNETCORE_ENVIRONMENT=CloudRun 
+            ASPNETCORE_URLS=http://+
+            READ_CONNECTION_STRING=${{env.READ_CONNECTION_STRING}}
+            WRITE_CONNECTION_STRING=${{env.WRITE_CONNECTION_STRING}}
+            ELASTIC_CONNECTION_STRING=${{env.ELASTIC_CONNECTION_STRING}}
+            DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP3SUPPORT=false 
+            QUICKCODE_USER_MANAGER_MODULE_API_KEY=${{secrets.QUICKCODE_USER_MANAGER_MODULE_API_KEY}}
+            QUICKCODE_EMAIL_MANAGER_MODULE_API_KEY=${{secrets.QUICKCODE_EMAIL_MANAGER_MODULE_API_KEY}}
+            QUICKCODE_ONLINE_SHOP_MODULE_API_KEY=${{secrets.QUICKCODE_ONLINE_SHOP_MODULE_API_KEY}}
+            QUICKCODE_SMS_MANAGER_MODULE_API_KEY=${{secrets.QUICKCODE_SMS_MANAGER_MODULE_API_KEY}}
+            QUICKCODE_EMAIL_SENDER_MODULE_API_KEY=${{secrets.QUICKCODE_EMAIL_SENDER_MODULE_API_KEY}}
+
+            QUICKCODE_JWT_SECRET_KEY=${{env.QUICKCODE_JWT_SECRET_KEY}}
+            AZURE_ACCOUNT_NAME=${{env.AZURE_ACCOUNT_NAME}}
+            AZURE_ACCOUNT_KEY=${{env.AZURE_ACCOUNT_KEY}}
+            AZURE_BLOB_CONTAINER_NAME=${{env.AZURE_BLOB_CONTAINER_NAME}}
+            
+          image: ${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPO }}/${{ env.DOCKER_REPO_NAME }}:${{ env.DOCKER_IMAGE_NAME }}${{ github.sha }}
+          flags: |
+            --port=80
+            --allow-unauthenticated
+      - name: Deploy to Cloud Run Finished
+        if: always()
+        uses: nick-fields/retry@v2
+        with:
+          command: curl 'https://api.quickcode.net/api/GenerateSite/UpdateGeneratorAction?actionId=${{ env.DEPLOY_TO_CLOUD_RUN_SECRET }}&sessionId=${{env.QUICKCODE_SESSION_ID}}&isCompleted=true&message=${{ steps.deploy.outputs.url }}' 
+          max_attempts: 3
+          timeout_minutes: 2
+          
+      - name: Show Output
+        run: echo ${{ steps.deploy.outputs.url }}
+

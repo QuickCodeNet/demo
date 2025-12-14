@@ -1,0 +1,4 @@
+﻿UPDATE [PRODUCTS] 
+	SET [STOCK_QUANTITY] = -1 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_PRODUCTS_ID

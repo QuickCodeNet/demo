@@ -1,0 +1,235 @@
+﻿enum TemplateTypes {
+  OTP
+  INFO
+  CAMPAIGN
+}
+
+enum MessageStatus {
+  PENDING
+  SENT
+  FAILED
+  EXPIRED
+  INVALID_RECIPIENT
+  SERVICE_UNAVAILABLE
+  QUOTA_EXCEEDED
+  TIMEOUT
+  UNKNOWN
+}
+
+enum BlacklistReasonType {
+  SPAM
+  UNSUBSCRIBED
+  INVALID_ADDRESS
+  BOUNCED
+  MANUAL_BLOCK
+}
+
+Table "MESSAGE" {
+  "ID" integer [pk, increment, not null]
+  "CAMPAIGN_ID" integer [not null]
+  "RECIPIENT" string [not null]
+  "SUBJECT" string [not null]
+  "BODY" string [not null]
+  "TEMPLATE_NAME" string [not null]
+  "STATUS" MessageStatus [not null]
+  "ATTEMPT_COUNT" integer [not null, default: 0]
+  "LAST_ATTEMPT_DATE" datetime [null]
+  "SENT_DATE" datetime [null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_CAMPAIGN[] Where:CAMPAIGN_ID
+    Query:GET_BY_STATUS[] Where:STATUS
+    Query:GET_PENDING_MESSAGES[] Where:STATUS[PENDING]
+    Query:GET_MESSAGES_COUNT[*] Where:CAMPAIGN_ID
+    Query:GET_MESSAGES_WITH_CAMPAIGN[] Tables:MESSAGE M, CAMPAIGN C Where:C.IS_ACTIVE[true], M.STATUS[PENDING] Select:M.ID, M.RECIPIENT, C.NAME CAMPAIGN_NAME
+    Update:UPDATE_STATUS Where:ID Set:STATUS
+    Update:INCREMENT_ATTEMPT Where:ID Set:ATTEMPT_COUNT[+1]
+  '''
+}
+
+Table "CAMPAIGN" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]             
+  "DESCRIPTION" string [null]          
+  "START_DATE" datetime [not null]     
+  "END_DATE" datetime [not null]        
+  "IS_ACTIVE" boolean [not null, default: true]
+  "PRIORITY" integer [not null, default: 1]
+  "TEMPLATE_NAME" string [not null]   
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_ACTIVE_CAMPAIGNS[] Where:IS_ACTIVE[true]
+    Query:GET_BY_NAME[1] Where:NAME
+    Query:EXISTS_BY_NAME[?] Where:NAME
+    Query:GET_CAMPAIGNS_COUNT[*] Where:IS_ACTIVE[true]
+    Update:UPDATE_STATUS Where:ID Set:IS_ACTIVE
+    Update:UPDATE_PRIORITY Where:ID Set:PRIORITY
+  '''
+}
+
+Table "MESSAGE_LOG" {
+  "ID" integer [pk, increment, not null]
+  "MESSAGE_ID" integer [not null]
+  "CAMPAIGN_ID" integer [not null]
+  "SENDER_ID" integer [null]
+  "ATTEMPT_DATE" datetime [not null]
+  "RECIPIENT" string [not null]
+  "SUBJECT" string [not null]
+  "BODY" string [not null]
+  "TEMPLATE_NAME" string [not null]
+  "STATUS" MessageStatus [not null]
+  "ATTEMPT_COUNT" integer [not null, default: 0]
+  "SENT_DATE" datetime [null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_MESSAGE[] Where:MESSAGE_ID
+    Query:GET_BY_CAMPAIGN[] Where:CAMPAIGN_ID
+    Query:GET_BY_SENDER[] Where:SENDER_ID
+    Query:GET_LOGS_COUNT[*] Where:CAMPAIGN_ID
+    Query:GET_LOGS_WITH_SENDER[] Tables:MESSAGE_LOG ML, SENDER S Where:S.IS_ACTIVE[true] Select:ML.ID, ML.RECIPIENT, S.NAME SENDER_NAME
+  '''
+}
+
+Table "OTP_MESSAGE_LOG" {
+  "ID" integer [pk, increment, not null]
+  "SENDER_ID" integer [null]
+  "OTP_MESSAGE_ID" integer [not null]
+  "RECIPIENT" string [not null]
+  "OTP_CODE" string [not null]
+  "HASH_CODE" string [not null]
+  "TEMPLATE_NAME" string [not null]
+  "STATUS" MessageStatus [not null]
+  "EXPIRE_TIME_SECONDS" integer [not null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_OTP_MESSAGE[] Where:OTP_MESSAGE_ID
+    Query:GET_BY_SENDER[] Where:SENDER_ID
+    Query:GET_BY_STATUS[] Where:STATUS
+    Query:GET_OTP_LOGS_WITH_MESSAGE[] Tables:OTP_MESSAGE_LOG L, OTP_MESSAGE M Where:L.STATUS[FAILED] Select:L.ID, L.RECIPIENT, M.OTP_CODE
+    Update:UPDATE_STATUS Where:ID Set:STATUS
+  '''
+}
+
+Table "OTP_MESSAGE" {
+  "ID" integer [pk, increment, not null]
+  "RECIPIENT" string [not null]
+  "OTP_CODE" string [not null]
+  "HASH_CODE" string [not null]
+  "TEMPLATE_NAME" string [not null]
+  "STATUS" MessageStatus [not null]
+  "EXPIRE_TIME_SECONDS" integer [not null]
+  "ATTEMPT_COUNT" integer [not null, default: 0]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_RECIPIENT[] Where:RECIPIENT
+    Query:EXISTS_BY_HASH[?] Where:HASH_CODE
+    Update:UPDATE_STATUS Where:ID Set:STATUS
+    Update:INCREMENT_ATTEMPT Where:ID Set:ATTEMPT_COUNT[+1]
+  '''
+}
+
+Table "MESSAGE_QUEUE" {
+  "ID" integer [pk, increment, not null]
+  "MESSAGE_ID" integer [not null]
+  "CAMPAIGN_ID" integer [not null]
+  "SENDER_ID" integer [null]
+  "RECIPIENT" string [not null]
+  "SUBJECT" string [not null]
+  "BODY" string [not null]
+  "PRIORITY" integer [not null, default: 1]
+  "STATUS" MessageStatus [not null]
+  "PROCESS_DATE" datetime [null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_CAMPAIGN[] Where:CAMPAIGN_ID
+    Query:GET_PENDING_QUEUE[] Where:STATUS[PENDING]
+    Query:GET_QUEUE_COUNT[*] Where:CAMPAIGN_ID
+    Query:GET_QUEUE_DETAILS[] Tables:MESSAGE_QUEUE Q, CAMPAIGN C, SENDER S Where:Q.STATUS[PENDING], C.IS_ACTIVE[true] Select:Q.ID, Q.RECIPIENT, C.NAME CAMPAIGN_NAME, S.NAME SENDER_NAME
+    Update:UPDATE_STATUS Where:ID Set:STATUS
+    Update:UPDATE_PRIORITY Where:ID Set:PRIORITY
+  '''
+}
+
+Table "OTP_MESSAGE_QUEUE" {
+  "ID" integer [pk, increment, not null]
+  "SENDER_ID" integer [null]
+  "OTP_MESSAGE_ID" integer [not null]
+  "RECIPIENT" string [not null]
+  "OTP_CODE" string [not null]
+  "HASH_CODE" string [not null]
+  "PRIORITY" integer [not null, default: 1]
+  "STATUS" MessageStatus [not null]
+  "PROCESS_DATE" datetime [null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_OTP_MESSAGE[] Where:OTP_MESSAGE_ID
+    Query:GET_PENDING_QUEUE[] Where:STATUS[PENDING]
+    Update:UPDATE_STATUS Where:ID Set:STATUS
+    Update:UPDATE_PRIORITY Where:ID Set:PRIORITY
+  '''
+}
+
+Table "SENDER" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]
+  "PHONE_NUMBER" string [not null]
+  "API_URL" string [not null]
+  "USERNAME" string [not null]
+  "PASSWORD" string [not null]
+  "IS_ACTIVE" boolean [not null, default: true]
+  "PRIORITY" integer [not null, default: 1]
+  "DAILY_LIMIT" integer [not null, default: 1000]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_ACTIVE_SENDERS[] Where:IS_ACTIVE[true]
+    Query:GET_BY_NAME[1] Where:NAME
+    Query:EXISTS_BY_PHONE[?] Where:PHONE_NUMBER
+    Update:UPDATE_STATUS Where:ID Set:IS_ACTIVE
+    Update:UPDATE_PRIORITY Where:ID Set:PRIORITY
+    Update:UPDATE_DAILY_LIMIT Where:ID Set:DAILY_LIMIT
+  '''
+}
+
+Table "MESSAGE_TEMPLATE" {
+  "NAME" string [pk, not null]
+  "CONTENT" string [not null]
+  "TYPE" TemplateTypes [not null]
+  Note: '''
+    Query:GET_BY_NAME[1] Where:NAME
+    Query:GET_BY_TYPE[] Where:TYPE
+    Query:EXISTS_BY_NAME[?] Where:NAME
+    Update:UPDATE_CONTENT Where:NAME Set:CONTENT
+    Update:UPDATE_TYPE Where:NAME Set:TYPE
+  '''
+}
+
+Table "BLACK_LIST" {
+  "ID" integer [pk, increment, not null]
+  "RECIPIENT" string [not null]
+  "REASON" string [not null]
+  "REASON_TYPE" BlacklistReasonType [not null]
+  Note: '''
+    Query:GET_BY_ID[1] Where:ID
+    Query:GET_BY_RECIPIENT[1] Where:RECIPIENT
+    Query:EXISTS_BY_RECIPIENT[?] Where:RECIPIENT
+    Query:GET_BLACKLIST_COUNT[*] Where:REASON_TYPE
+    Update:ADD_TO_BLACKLIST Where:RECIPIENT Set:REASON, REASON_TYPE
+    Delete:REMOVE_FROM_SMS_BLACKLIST Where:ID[>|3], REASON_TYPE
+  '''
+}
+
+Ref: "MESSAGE"."CAMPAIGN_ID" > "CAMPAIGN"."ID"
+Ref: "MESSAGE_QUEUE"."CAMPAIGN_ID" > "CAMPAIGN"."ID"
+Ref: "CAMPAIGN"."TEMPLATE_NAME" > "MESSAGE_TEMPLATE"."NAME"
+Ref: "MESSAGE"."TEMPLATE_NAME" > "MESSAGE_TEMPLATE"."NAME"
+Ref: "OTP_MESSAGE"."TEMPLATE_NAME" > "MESSAGE_TEMPLATE"."NAME"
+Ref: "OTP_MESSAGE_LOG"."TEMPLATE_NAME" > "MESSAGE_TEMPLATE"."NAME"
+Ref: "MESSAGE_LOG"."TEMPLATE_NAME" > "MESSAGE_TEMPLATE"."NAME"
+Ref: "MESSAGE_LOG"."SENDER_ID" > "SENDER"."ID"
+Ref: "OTP_MESSAGE_LOG"."SENDER_ID" > "SENDER"."ID"
+Ref: "MESSAGE_QUEUE"."MESSAGE_ID" > "MESSAGE"."ID"
+Ref: "MESSAGE_QUEUE"."SENDER_ID" > "SENDER"."ID"
+Ref: "OTP_MESSAGE_QUEUE"."OTP_MESSAGE_ID" > "OTP_MESSAGE"."ID"
+Ref: "OTP_MESSAGE_QUEUE"."SENDER_ID" > "SENDER"."ID"
+Ref: "MESSAGE_LOG"."MESSAGE_ID" > "MESSAGE"."ID"
+Ref: "OTP_MESSAGE_LOG"."OTP_MESSAGE_ID" > "OTP_MESSAGE"."ID"

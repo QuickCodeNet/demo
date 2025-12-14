@@ -1,0 +1,4174 @@
+﻿{
+"ApiMethodDefinitions": [
+  {
+    "Key": "GetapiusermanagermoduleportalmenusPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalmenuscountPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalmenusPortalMenusController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalmenuskeyPortalMenusController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalMenusController",
+    "UrlPath": "/api/user-manager-module/portal-menus/{key}"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypesColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypescountColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulecolumntypesColumnTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types"
+  },
+  {
+    "Key": "GetapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulecolumntypesidintColumnTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ColumnTypesController",
+    "UrlPath": "/api/user-manager-module/column-types/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsgetworkflowstopicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-workflows/{topicWorkflowsKafkaEventsTopicName}"
+  },
+  {
+    "Key": "Getapiusermanagermoduletopicworkflowsgetworkflows2topicworkflowskafkaeventstopicnameTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-workflows-2/{topicWorkflowsKafkaEventsTopicName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowscountTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduletopicworkflowsTopicWorkflowsController",
+    "HttpMethod": "Post",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Put",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduletopicworkflowsidintTopicWorkflowsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "TopicWorkflowsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgetkafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgetactivekafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-active-kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventskafkaeventtopicnametopicworkflowKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{kafkaEventTopicName}/topic-workflow"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventskafkaeventtopicnametopicworkflowtopicworkflowidKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{kafkaEventTopicName}/topic-workflow/{topicWorkflowId}"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventsKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventscountKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulekafkaeventsKafkaEventsController",
+    "HttpMethod": "Post",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events"
+  },
+  {
+    "Key": "GetapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "PutapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Put",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulekafkaeventstopicnameKafkaEventsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "KafkaEventsController",
+    "UrlPath": "/api/user-manager-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameaspnetuserPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/asp-net-user"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameaspnetuseraspnetuseridPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/asp-net-user/{aspNetUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameportalpermissiongroupPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/portal-permission-group"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameportalpermissiongroupportalpermissiongroupportalpermissionnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/portal-permission-group/{portalPermissionGroupPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameapipermissiongroupPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/api-permission-group"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupspermissiongroupnameapipermissiongroupapipermissiongrouppermissiongroupnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{permissionGroupName}/api-permission-group/{apiPermissionGroupPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupscountPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulepermissiongroupsPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "PutapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulepermissiongroupsnamePermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/permission-groups/{name}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypeidportalpermissiongroupPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{portalPermissionTypeId}/portal-permission-group"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesportalpermissiontypeidportalpermissiongroupportalpermissiongroupportalpermissionnamePortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{portalPermissionTypeId}/portal-permission-group/{portalPermissionGroupPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypescountPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissiontypesPortalPermissionTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissiontypesidintPortalPermissionTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionTypesController",
+    "UrlPath": "/api/user-manager-module/portal-permission-types/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsportalpermissionnameportalpermissiongroupPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{portalPermissionName}/portal-permission-group"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsportalpermissionnameportalpermissiongroupportalpermissiongroupportalpermissionnamePortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{portalPermissionName}/portal-permission-group/{portalPermissionGroupPortalPermissionName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionscountPortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissionsPortalPermissionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissionsnamePortalPermissionsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/{name}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupsportalpermissiongroupspermissiongroupnamePortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/get-portal-permission-groups/{portalPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsgetportalpermissiongroupportalpermissiongroupsportalpermissionnameportalpermissiongroupspermissiongroupnameportalpermissiongroupsportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/get-portal-permission-group/{portalPermissionGroupsPortalPermissionName}/{portalPermissionGroupsPermissionGroupName}/{portalPermissionGroupsPortalPermissionTypeId:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupscountPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissiongroupsPortalPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleportalpermissiongroupsportalpermissionnamepermissiongroupnameportalpermissiontypeidintPortalPermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/portal-permission-groups/{portalPermissionName}/{permissionGroupName}/{portalPermissionTypeId:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupsgetapipermissiongroupnamesapipermissiongroupspermissiongroupnameApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/get-api-permission-group-names/{apiPermissionGroupsPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupscountApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleapipermissiongroupsApiPermissionGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleapipermissiongroupspermissiongroupnameapimethoddefinitionkeyApiPermissionGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiPermissionGroupsController",
+    "UrlPath": "/api/user-manager-module/api-permission-groups/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionkeykafkaeventApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionKey}/kafka-event"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionkeykafkaeventkafkaeventtopicnameApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionKey}/kafka-event/{kafkaEventTopicName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionkeyapipermissiongroupApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionKey}/api-permission-group"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsapimethoddefinitionkeyapipermissiongroupapipermissiongrouppermissiongroupnameApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{apiMethodDefinitionKey}/api-permission-group/{apiPermissionGroupPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionscountApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingscountTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduletablecomboboxsettingsTableComboboxSettingsController",
+    "HttpMethod": "Post",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "PutapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Put",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "TableComboboxSettingsController",
+    "UrlPath": "/api/user-manager-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetroleidaspnetuserroleAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRoleId}/asp-net-user-role"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetroleidaspnetuserroleaspnetuserroleuseridAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRoleId}/asp-net-user-role/{aspNetUserRoleUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetroleidaspnetroleclaimAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRoleId}/asp-net-role-claim"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesaspnetroleidaspnetroleclaimaspnetroleclaimidAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{aspNetRoleId}/asp-net-role-claim/{aspNetRoleClaimId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolescountAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetrolesAspNetRolesController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetrolesidAspNetRolesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersgetuseraspnetusersemailAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/get-user/{aspNetUsersEmail}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserroleAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-role"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserroleaspnetuserroleuseridAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-role/{aspNetUserRoleUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserclaimAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-claim"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserclaimaspnetuserclaimidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-claim/{aspNetUserClaimId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetusertokenAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-token"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetusertokenaspnetusertokenuseridAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-token/{aspNetUserTokenUserId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserloginAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-login"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridaspnetuserloginaspnetuserloginloginproviderAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/asp-net-user-login/{aspNetUserLoginLoginProvider}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridrefreshtokenAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/refresh-token"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersaspnetuseridrefreshtokenrefreshtokenidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{aspNetUserId}/refresh-token/{refreshTokenId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserscountAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetusersAspNetUsersController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetusersidAspNetUsersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUsersController",
+    "UrlPath": "/api/user-manager-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensgetrefreshtokenrefreshtokenstokenRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/get-refresh-token/{refreshTokensToken}"
+  },
+  {
+    "Key": "PatchapiusermanagermodulerefreshtokensupdaterefreshtokensrefreshtokenstokenRefreshTokensController",
+    "HttpMethod": "Patch",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/update-refresh-tokens/{refreshTokensToken}"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokenscountRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/count"
+  },
+  {
+    "Key": "PostapiusermanagermodulerefreshtokensRefreshTokensController",
+    "HttpMethod": "Post",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Put",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermodulerefreshtokensidintRefreshTokensController",
+    "HttpMethod": "Delete",
+    "ControllerName": "RefreshTokensController",
+    "UrlPath": "/api/user-manager-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimscountAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRoleClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimscountAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserclaimsAspNetUserClaimsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserClaimsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginscountAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserloginsAspNetUserLoginsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserLoginsController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolescountAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetuserrolesAspNetUserRolesController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserRolesController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokenscountAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleaspnetusertokensAspNetUserTokensController",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleaspnetusertokensuseridAspNetUserTokensController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserTokensController",
+    "UrlPath": "/api/user-manager-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapiusermanagermoduleauditlogscountAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapiusermanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapiusermanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapiusermanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapiusermanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/user-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetbyidmessagesidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-by-id/{messagesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetbycampaignmessagescampaignidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-by-campaign/{messagesCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetbystatusmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-by-status/{messagesStatus}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetpendingmessagesmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-pending-messages/{messagesStatus}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetmessagescountmessagescampaignidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-messages-count/{messagesCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesgetmessageswithcampaigncampaignsisactiveboolmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/get-messages-with-campaign/{campaignsIsActive:bool}/{messagesStatus}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesmessageidmessagequeueMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{messageId}/message-queue"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesmessageidmessagequeuemessagequeueidMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{messageId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesmessageidmessagelogMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{messageId}/message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesmessageidmessagelogmessagelogidMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{messageId}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagesupdatestatusmessagesidintMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/update-status/{messagesId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagesincrementattemptmessagesidintMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/increment-attempt/{messagesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagescountMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulemessagesMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/email-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsgetbyidcampaignsidintCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/get-by-id/{campaignsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsgetactivecampaignscampaignsisactiveboolCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/get-active-campaigns/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsgetbynamecampaignsnameCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/get-by-name/{campaignsName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsexistsbynamecampaignsnameCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/exists-by-name/{campaignsName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsgetcampaignscountcampaignsisactiveboolCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/get-campaigns-count/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignscampaignidmessageCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{campaignId}/message"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignscampaignidmessagemessageidCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{campaignId}/message/{messageId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignscampaignidmessagequeueCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{campaignId}/message-queue"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignscampaignidmessagequeuemessagequeueidCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{campaignId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulecampaignsupdatestatuscampaignsidintCampaignsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/update-status/{campaignsId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulecampaignsupdateprioritycampaignsidintCampaignsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/update-priority/{campaignsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignscountCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulecampaignsCampaignsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns"
+  },
+  {
+    "Key": "GetapiemailmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/email-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetbyidmessagelogsidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-by-id/{messageLogsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetbymessagemessagelogsmessageidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-by-message/{messageLogsMessageId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetbycampaignmessagelogscampaignidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-by-campaign/{messageLogsCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetbysendermessagelogssenderidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-by-sender/{messageLogsSenderId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetlogscountmessagelogscampaignidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-logs-count/{messageLogsCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsgetlogswithsendersendersisactiveboolMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/get-logs-with-sender/{sendersIsActive:bool}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogscountMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulemessagelogsMessageLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/email-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsgetbyidotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/get-by-id/{otpMessageLogsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsgetbyotpmessageotpmessagelogsotpmessageidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/get-by-otp-message/{otpMessageLogsOtpMessageId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsgetbysenderotpmessagelogssenderidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/get-by-sender/{otpMessageLogsSenderId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsgetbystatusotpmessagelogsstatusOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/get-by-status/{otpMessageLogsStatus}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsgetotplogswithmessageotpmessagelogsstatusOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/get-otp-logs-with-message/{otpMessageLogsStatus}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleotpmessagelogsupdatestatusotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/update-status/{otpMessageLogsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogscountOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleotpmessagelogsOtpMessageLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/email-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesgetbyidotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/get-by-id/{otpMessagesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesgetbyrecipientotpmessagesrecipientOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/get-by-recipient/{otpMessagesRecipient}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesexistsbyhashotpmessageshashcodeOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/exists-by-hash/{otpMessagesHashCode}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesotpmessageidotpmessagequeueOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{otpMessageId}/otp-message-queue"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesotpmessageidotpmessagequeueotpmessagequeueidOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{otpMessageId}/otp-message-queue/{otpMessageQueueId}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesotpmessageidotpmessagelogOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{otpMessageId}/otp-message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesotpmessageidotpmessagelogotpmessagelogidOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{otpMessageId}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleotpmessagesupdatestatusotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/update-status/{otpMessagesId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleotpmessagesincrementattemptotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/increment-attempt/{otpMessagesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagescountOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/email-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesgetbyidmessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/get-by-id/{messageQueuesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesgetbycampaignmessagequeuescampaignidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/get-by-campaign/{messageQueuesCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesgetpendingqueuemessagequeuesstatusMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/get-pending-queue/{messageQueuesStatus}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesgetqueuecountmessagequeuescampaignidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/get-queue-count/{messageQueuesCampaignId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesgetqueuedetailsmessagequeuesstatuscampaignsisactiveboolMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/get-queue-details/{messageQueuesStatus}/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagequeuesupdatestatusmessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/update-status/{messageQueuesId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagequeuesupdateprioritymessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/update-priority/{messageQueuesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuescountMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulemessagequeuesMessageQueuesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/email-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuesgetbyidotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/get-by-id/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuesgetbyotpmessageotpmessagequeuesotpmessageidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/get-by-otp-message/{otpMessageQueuesOtpMessageId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuesgetpendingqueueotpmessagequeuesstatusOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/get-pending-queue/{otpMessageQueuesStatus}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleotpmessagequeuesupdatestatusotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/update-status/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleotpmessagequeuesupdatepriorityotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/update-priority/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuesOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuescountOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleotpmessagequeuesOtpMessageQueuesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/email-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersgetbyidsendersidintSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/get-by-id/{sendersId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersgetactivesenderssendersisactiveboolSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/get-active-senders/{sendersIsActive:bool}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersgetbynamesendersnameSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/get-by-name/{sendersName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersexistsbyemailsendersemailaddressSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/exists-by-email/{sendersEmailAddress}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidmessagelogSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidmessagelogmessagelogidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidotpmessagelogSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/otp-message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidotpmessagelogotpmessagelogidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidmessagequeueSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/message-queue"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidmessagequeuemessagequeueidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidotpmessagequeueSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/otp-message-queue"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderssenderidotpmessagequeueotpmessagequeueidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{senderId}/otp-message-queue/{otpMessageQueueId}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulesendersupdatestatussendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/update-status/{sendersId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulesendersupdateprioritysendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/update-priority/{sendersId:int}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulesendersupdatedailylimitsendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/update-daily-limit/{sendersId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesenderscountSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulesendersSendersController",
+    "HttpMethod": "Post",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders"
+  },
+  {
+    "Key": "GetapiemailmanagermodulesendersidintSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulesendersidintSendersController",
+    "HttpMethod": "Put",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulesendersidintSendersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/email-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesgetbynamemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/get-by-name/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesgetbytypemessagetemplatestypeMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/get-by-type/{messageTemplatesType}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesexistsbynamemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/exists-by-name/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamecampaignMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/campaign"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamecampaigncampaignidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/campaign/{campaignId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamemessageMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/message"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamemessagemessageidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/message/{messageId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenameotpmessageMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/otp-message"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenameotpmessageotpmessageidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/otp-message/{otpMessageId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenameotpmessagelogMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/otp-message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenameotpmessagelogotpmessagelogidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamemessagelogMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/message-log"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesmessagetemplatenamemessagelogmessagelogidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{messageTemplateName}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagetemplatesupdatecontentmessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/update-content/{messageTemplatesName}"
+  },
+  {
+    "Key": "PatchapiemailmanagermodulemessagetemplatesupdatetypemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/update-type/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatescountMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/count"
+  },
+  {
+    "Key": "PostapiemailmanagermodulemessagetemplatesMessageTemplatesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates"
+  },
+  {
+    "Key": "GetapiemailmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "PutapiemailmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/email-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsgetbyidblacklistsidintBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/get-by-id/{blackListsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsgetbyrecipientblacklistsrecipientBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/get-by-recipient/{blackListsRecipient}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsexistsbyrecipientblacklistsrecipientBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/exists-by-recipient/{blackListsRecipient}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsgetblacklistcountblacklistsreasontypeBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/get-blacklist-count/{blackListsReasonType}"
+  },
+  {
+    "Key": "PatchapiemailmanagermoduleblacklistsaddtoblacklistblacklistsrecipientBlackListsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/add-to-blacklist/{blackListsRecipient}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleblacklistsremovefromblacklistblacklistsidintBlackListsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/remove-from-blacklist/{blackListsId:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistscountBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleblacklistsBlackListsController",
+    "HttpMethod": "Post",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Put",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/email-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleauditlogscountAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapiemailmanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapiemailmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapiemailmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapiemailmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/email-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersgetnewusersusersisnewboolUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/get-new-users/{usersIsNew:bool}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridcouponUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/coupon"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridcouponcouponidUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/coupon/{couponId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridusercouponUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/user-coupon"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridusercouponusercouponuseridUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/user-coupon/{userCouponUserId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridproductreviewUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/product-review"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridproductreviewproductreviewidUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/product-review/{productReviewId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridcartUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/cart"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridcartcartidUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/cart/{cartId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridorderUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/order"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersuseridorderorderidUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{userId}/order/{orderId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users"
+  },
+  {
+    "Key": "GetapionlineshopmoduleuserscountUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleusersUsersController",
+    "HttpMethod": "Post",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusersidintUsersController",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleusersidintUsersController",
+    "HttpMethod": "Put",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleusersidintUsersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "UsersController",
+    "UrlPath": "/api/online-shop-module/users/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniesgetcompaniescompaniesidintCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/get-companies/{companiesId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniescompanyiduserCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/{companyId}/user"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniescompanyiduseruseridCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/{companyId}/user/{userId}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniesCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniescountCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecompaniesCompaniesController",
+    "HttpMethod": "Post",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompaniesidintCompaniesController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecompaniesidintCompaniesController",
+    "HttpMethod": "Put",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecompaniesidintCompaniesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CompaniesController",
+    "UrlPath": "/api/online-shop-module/companies/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignsgetactivecampaignscampaignsisactiveboolCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/get-active-campaigns/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignscampaignidcouponCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/{campaignId}/coupon"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignscampaignidcouponcouponidCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/{campaignId}/coupon/{couponId}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignsCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignscountCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecampaignsCampaignsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns"
+  },
+  {
+    "Key": "GetapionlineshopmodulecampaignsidintCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecampaignsidintCampaignsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecampaignsidintCampaignsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/online-shop-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponsgetvalidcouponscouponscouponcodeCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/get-valid-coupons/{couponsCouponCode}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponsgetusercouponscouponsuseridintCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/get-user-coupons/{couponsUserId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponscouponidusercouponCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/{couponId}/user-coupon"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponscouponidusercouponusercouponuseridCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/{couponId}/user-coupon/{userCouponUserId}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecouponsupdateusercouponscouponsuseridintCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/update-user-coupons/{couponsUserId:int}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecouponsupdateusercouponsprmcouponsuseridintCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/update-user-coupons-prm/{couponsUserId:int}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecouponsupdateusercouponssinglecouponsuseridintCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/update-user-coupons-single/{couponsUserId:int}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecouponsupdateusercouponswhereprmcouponsuseridintCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/update-user-coupons-where-prm/{couponsUserId:int}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecouponsupdateusercouponsrefcolcouponsuseridintCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/update-user-coupons-ref-col/{couponsUserId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponsCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponscountCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecouponsCouponsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons"
+  },
+  {
+    "Key": "GetapionlineshopmodulecouponsidintCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecouponsidintCouponsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecouponsidintCouponsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CouponsController",
+    "UrlPath": "/api/online-shop-module/coupons/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusercouponsgetusedcouponsusercouponsisusedboolUserCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/get-used-coupons/{userCouponsIsUsed:bool}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleusercouponsupdateusedcouponsusercouponsisusedboolUserCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/update-used-coupons/{userCouponsIsUsed:bool}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleusercouponsupdateallusedcouponsUserCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/update-all-used-coupons"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleusercouponsupdatealltrueusedcouponsUserCouponsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/update-all-true-used-coupons"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusercouponsUserCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusercouponscountUserCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleusercouponsUserCouponsController",
+    "HttpMethod": "Post",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons"
+  },
+  {
+    "Key": "GetapionlineshopmoduleusercouponsuseridintcouponidintUserCouponsController",
+    "HttpMethod": "Get",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/{userId:int}/{couponId:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleusercouponsuseridintcouponidintUserCouponsController",
+    "HttpMethod": "Put",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/{userId:int}/{couponId:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleusercouponsuseridintcouponidintUserCouponsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "UserCouponsController",
+    "UrlPath": "/api/online-shop-module/user-coupons/{userId:int}/{couponId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsgetgroupsbytypeproductgroupsproducttypeidintProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/get-groups-by-type/{productGroupsProductTypeId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsgetproductgroupsbytypeproductgroupsproducttypeidintProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/get-product-groups-by-type/{productGroupsProductTypeId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsproductgroupidproductProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/{productGroupId}/product"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsproductgroupidproductproductidProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/{productGroupId}/product/{productId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupscountProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleproductgroupsProductGroupsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductgroupsidintProductGroupsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleproductgroupsidintProductGroupsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleproductgroupsidintProductGroupsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductGroupsController",
+    "UrlPath": "/api/online-shop-module/product-groups/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypesgetproducttypesproductgroupsproducttypeidintProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/get-product-types/{productGroupsProductTypeId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypesproducttypeidproductgroupProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/{productTypeId}/product-group"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypesproducttypeidproductgroupproductgroupidProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/{productTypeId}/product-group/{productGroupId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypesProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypescountProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleproducttypesProductTypesController",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproducttypesidintProductTypesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleproducttypesidintProductTypesController",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleproducttypesidintProductTypesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductTypesController",
+    "UrlPath": "/api/online-shop-module/product-types/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductssearchproductsproductsproductgroupidintproductstitleproductspricedecimalProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/search-products/{productsProductGroupId:int}/{productsTitle}/{productsPrice:decimal}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductslistlowstockProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/list-low-stock"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidproductimageProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/product-image"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidproductimageproductimageidProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/product-image/{productImageId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidproductreviewProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/product-review"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidproductreviewproductreviewidProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/product-review/{productReviewId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidcartitemProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/cart-item"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidcartitemcartitemidProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/cart-item/{cartItemId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidorderitemProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/order-item"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsproductidorderitemorderitemidProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{productId}/order-item/{orderItemId}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleproductsreducestockproductsidintProductsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/reduce-stock/{productsId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductscountProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleproductsProductsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductsidintProductsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleproductsidintProductsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleproductsidintProductsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductsController",
+    "UrlPath": "/api/online-shop-module/products/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductimagesgetvalidproductimagesproductimagesproductidintProductImagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images/get-valid-product-images/{productImagesProductId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductimagesProductImagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductimagescountProductImagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleproductimagesProductImagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductimagesidintProductImagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleproductimagesidintProductImagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleproductimagesidintProductImagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductImagesController",
+    "UrlPath": "/api/online-shop-module/product-images/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductreviewsgetrecentreviewsproductreviewsproductidintProductReviewsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/get-recent-reviews/{productReviewsProductId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductreviewsgetproductreviewsproductreviewsproductidintProductReviewsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/get-product-reviews/{productReviewsProductId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductreviewsProductReviewsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductreviewscountProductReviewsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleproductreviewsProductReviewsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews"
+  },
+  {
+    "Key": "GetapionlineshopmoduleproductreviewsidintProductReviewsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleproductreviewsidintProductReviewsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleproductreviewsidintProductReviewsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductReviewsController",
+    "UrlPath": "/api/online-shop-module/product-reviews/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartsgetabandonedcartscartsisactiveboolCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/get-abandoned-carts/{cartsIsActive:bool}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartscartidcartitemCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/{cartId}/cart-item"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartscartidcartitemcartitemidCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/{cartId}/cart-item/{cartItemId}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulecartsdeactivatestalecartscartsisactiveboolCartsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/deactivate-stale-carts/{cartsIsActive:bool}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartsCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartscountCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecartsCartsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartsidintCartsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecartsidintCartsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecartsidintCartsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CartsController",
+    "UrlPath": "/api/online-shop-module/carts/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartitemsgetcartitemswithtotalcartitemscartidintCartItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items/get-cart-items-with-total/{cartItemsCartId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartitemsCartItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartitemscountCartItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecartitemsCartItemsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items"
+  },
+  {
+    "Key": "GetapionlineshopmodulecartitemsidintCartItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecartitemsidintCartItemsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecartitemsidintCartItemsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CartItemsController",
+    "UrlPath": "/api/online-shop-module/cart-items/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersgetordersyearlyordersuseridintorderstotalamountdecimalOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/get-orders-yearly/{ordersUserId:int}/{ordersTotalAmount:decimal}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersgetordersbystatusdateordersorderdatedatetimeordersstatusOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/get-orders-by-status-date/{ordersOrderDate:DateTime}/{ordersStatus}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersgetuserordersordersuseridintpaymentsstatusOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/get-user-orders/{ordersUserId:int}/{paymentsStatus}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersorderidorderitemOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{orderId}/order-item"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersorderidorderitemorderitemidOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{orderId}/order-item/{orderItemId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersorderidshipmentOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{orderId}/shipment"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersorderidshipmentshipmentidOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{orderId}/shipment/{shipmentId}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderscountOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleordersOrdersController",
+    "HttpMethod": "Post",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders"
+  },
+  {
+    "Key": "GetapionlineshopmoduleordersidintOrdersController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleordersidintOrdersController",
+    "HttpMethod": "Put",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleordersidintOrdersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrdersController",
+    "UrlPath": "/api/online-shop-module/orders/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderitemsgetorderitemsdetailsorderitemsorderidintOrderItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/get-order-items-details/{orderItemsOrderId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderitemsgetproductorderitemsorderitemsproductidintOrderItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/get-product-order-items/{orderItemsProductId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderitemsOrderItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderitemscountOrderItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleorderitemsOrderItemsController",
+    "HttpMethod": "Post",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items"
+  },
+  {
+    "Key": "GetapionlineshopmoduleorderitemsidintOrderItemsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleorderitemsidintOrderItemsController",
+    "HttpMethod": "Put",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleorderitemsidintOrderItemsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrderItemsController",
+    "UrlPath": "/api/online-shop-module/order-items/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentsgetpendingpaymentspaymentsstatusPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/get-pending-payments/{paymentsStatus}"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentspaymentidorderPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/{paymentId}/order"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentspaymentidorderorderidPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/{paymentId}/order/{orderId}"
+  },
+  {
+    "Key": "PatchapionlineshopmodulepaymentsmarkpaymentfailedpaymentsstatusPaymentsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/mark-payment-failed/{paymentsStatus}"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentsPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentscountPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulepaymentsPaymentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments"
+  },
+  {
+    "Key": "GetapionlineshopmodulepaymentsidintPaymentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulepaymentsidintPaymentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulepaymentsidintPaymentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "PaymentsController",
+    "UrlPath": "/api/online-shop-module/payments/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfosgetusershippinginfoshippinginfosuseridintShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/get-user-shipping-info/{shippingInfosUserId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfosshippinginfoidorderShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/{shippingInfoId}/order"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfosshippinginfoidorderorderidShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/{shippingInfoId}/order/{orderId}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleshippinginfossetdefaultshippingshippinginfosuseridintShippingInfosController",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/set-default-shipping/{shippingInfosUserId:int}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleshippinginfossetdefaultshippingaddressshippinginfosidintshippinginfosuseridintShippingInfosController",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/set-default-shipping-address/{shippingInfosId:int}/{shippingInfosUserId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfosShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfoscountShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleshippinginfosShippingInfosController",
+    "HttpMethod": "Post",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshippinginfosidintShippingInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleshippinginfosidintShippingInfosController",
+    "HttpMethod": "Put",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleshippinginfosidintShippingInfosController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ShippingInfosController",
+    "UrlPath": "/api/online-shop-module/shipping-infos/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshipmentsgetundeliveredshipmentsshipmentscargocompanyShipmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/get-undelivered-shipments/{shipmentsCargoCompany}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshipmentstrackshipmentshipmentstrackingcodeShipmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/track-shipment/{shipmentsTrackingCode}"
+  },
+  {
+    "Key": "PatchapionlineshopmoduleshipmentsmarkshipmentdeliveredshipmentsidintShipmentsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/mark-shipment-delivered/{shipmentsId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshipmentsShipmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshipmentscountShipmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleshipmentsShipmentsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments"
+  },
+  {
+    "Key": "GetapionlineshopmoduleshipmentsidintShipmentsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleshipmentsidintShipmentsController",
+    "HttpMethod": "Put",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleshipmentsidintShipmentsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "ShipmentsController",
+    "UrlPath": "/api/online-shop-module/shipments/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompanyinfosgetcompanycontactcompanyinfosidintCompanyInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos/get-company-contact/{companyInfosId:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompanyinfosCompanyInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompanyinfoscountCompanyInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulecompanyinfosCompanyInfosController",
+    "HttpMethod": "Post",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos"
+  },
+  {
+    "Key": "GetapionlineshopmodulecompanyinfosidintCompanyInfosController",
+    "HttpMethod": "Get",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulecompanyinfosidintCompanyInfosController",
+    "HttpMethod": "Put",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulecompanyinfosidintCompanyInfosController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CompanyInfosController",
+    "UrlPath": "/api/online-shop-module/company-infos/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmodulehomepagesgethomepagecontenthomepagestitleimageurlHomePagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/get-home-page-content/{homePagesTitleImageUrl}"
+  },
+  {
+    "Key": "GetapionlineshopmodulehomepagesgethomepagecontentgrhomepagestitleimageurlHomePagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/get-home-page-content-gr/{homePagesTitleImageUrl}"
+  },
+  {
+    "Key": "GetapionlineshopmodulehomepagesHomePagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages"
+  },
+  {
+    "Key": "GetapionlineshopmodulehomepagescountHomePagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/count"
+  },
+  {
+    "Key": "PostapionlineshopmodulehomepagesHomePagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages"
+  },
+  {
+    "Key": "GetapionlineshopmodulehomepagesidintHomePagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/{id:int}"
+  },
+  {
+    "Key": "PutapionlineshopmodulehomepagesidintHomePagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/{id:int}"
+  },
+  {
+    "Key": "DeleteapionlineshopmodulehomepagesidintHomePagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "HomePagesController",
+    "UrlPath": "/api/online-shop-module/home-pages/{id:int}"
+  },
+  {
+    "Key": "GetapionlineshopmoduleauditlogsAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs"
+  },
+  {
+    "Key": "GetapionlineshopmoduleauditlogscountAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapionlineshopmoduleauditlogsAuditLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs"
+  },
+  {
+    "Key": "GetapionlineshopmoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapionlineshopmoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapionlineshopmoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/online-shop-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetbyidmessagesidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-by-id/{messagesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetbycampaignmessagescampaignidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-by-campaign/{messagesCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetbystatusmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-by-status/{messagesStatus}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetpendingmessagesmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-pending-messages/{messagesStatus}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetmessagescountmessagescampaignidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-messages-count/{messagesCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesgetmessageswithcampaigncampaignsisactiveboolmessagesstatusMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/get-messages-with-campaign/{campaignsIsActive:bool}/{messagesStatus}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesmessageidmessagequeueMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{messageId}/message-queue"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesmessageidmessagequeuemessagequeueidMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{messageId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesmessageidmessagelogMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{messageId}/message-log"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesmessageidmessagelogmessagelogidMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{messageId}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagesupdatestatusmessagesidintMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/update-status/{messagesId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagesincrementattemptmessagesidintMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/increment-attempt/{messagesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagescountMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulemessagesMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulemessagesidintMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessagesController",
+    "UrlPath": "/api/sms-manager-module/messages/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsgetbyidcampaignsidintCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/get-by-id/{campaignsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsgetactivecampaignscampaignsisactiveboolCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/get-active-campaigns/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsgetbynamecampaignsnameCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/get-by-name/{campaignsName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsexistsbynamecampaignsnameCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/exists-by-name/{campaignsName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsgetcampaignscountcampaignsisactiveboolCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/get-campaigns-count/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignscampaignidmessageCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{campaignId}/message"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignscampaignidmessagemessageidCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{campaignId}/message/{messageId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignscampaignidmessagequeueCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{campaignId}/message-queue"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignscampaignidmessagequeuemessagequeueidCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{campaignId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulecampaignsupdatestatuscampaignsidintCampaignsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/update-status/{campaignsId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulecampaignsupdateprioritycampaignsidintCampaignsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/update-priority/{campaignsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignscountCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulecampaignsCampaignsController",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns"
+  },
+  {
+    "Key": "GetapismsmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulecampaignsidintCampaignsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignsController",
+    "UrlPath": "/api/sms-manager-module/campaigns/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetbyidmessagelogsidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-by-id/{messageLogsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetbymessagemessagelogsmessageidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-by-message/{messageLogsMessageId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetbycampaignmessagelogscampaignidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-by-campaign/{messageLogsCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetbysendermessagelogssenderidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-by-sender/{messageLogsSenderId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetlogscountmessagelogscampaignidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-logs-count/{messageLogsCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsgetlogswithsendersendersisactiveboolMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/get-logs-with-sender/{sendersIsActive:bool}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogscountMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulemessagelogsMessageLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulemessagelogsidintMessageLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageLogsController",
+    "UrlPath": "/api/sms-manager-module/message-logs/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsgetbyidotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/get-by-id/{otpMessageLogsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsgetbyotpmessageotpmessagelogsotpmessageidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/get-by-otp-message/{otpMessageLogsOtpMessageId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsgetbysenderotpmessagelogssenderidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/get-by-sender/{otpMessageLogsSenderId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsgetbystatusotpmessagelogsstatusOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/get-by-status/{otpMessageLogsStatus}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsgetotplogswithmessageotpmessagelogsstatusOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/get-otp-logs-with-message/{otpMessageLogsStatus}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleotpmessagelogsupdatestatusotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/update-status/{otpMessageLogsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogscountOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleotpmessagelogsOtpMessageLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleotpmessagelogsidintOtpMessageLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessageLogsController",
+    "UrlPath": "/api/sms-manager-module/otp-message-logs/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesgetbyidotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/get-by-id/{otpMessagesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesgetbyrecipientotpmessagesrecipientOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/get-by-recipient/{otpMessagesRecipient}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesexistsbyhashotpmessageshashcodeOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/exists-by-hash/{otpMessagesHashCode}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesotpmessageidotpmessagequeueOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{otpMessageId}/otp-message-queue"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesotpmessageidotpmessagequeueotpmessagequeueidOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{otpMessageId}/otp-message-queue/{otpMessageQueueId}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesotpmessageidotpmessagelogOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{otpMessageId}/otp-message-log"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesotpmessageidotpmessagelogotpmessagelogidOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{otpMessageId}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleotpmessagesupdatestatusotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/update-status/{otpMessagesId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleotpmessagesincrementattemptotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/increment-attempt/{otpMessagesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagescountOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleotpmessagesOtpMessagesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleotpmessagesidintOtpMessagesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessagesController",
+    "UrlPath": "/api/sms-manager-module/otp-messages/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesgetbyidmessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/get-by-id/{messageQueuesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesgetbycampaignmessagequeuescampaignidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/get-by-campaign/{messageQueuesCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesgetpendingqueuemessagequeuesstatusMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/get-pending-queue/{messageQueuesStatus}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesgetqueuecountmessagequeuescampaignidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/get-queue-count/{messageQueuesCampaignId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesgetqueuedetailsmessagequeuesstatuscampaignsisactiveboolMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/get-queue-details/{messageQueuesStatus}/{campaignsIsActive:bool}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagequeuesupdatestatusmessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/update-status/{messageQueuesId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagequeuesupdateprioritymessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/update-priority/{messageQueuesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuescountMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulemessagequeuesMessageQueuesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulemessagequeuesidintMessageQueuesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/message-queues/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuesgetbyidotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/get-by-id/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuesgetbyotpmessageotpmessagequeuesotpmessageidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/get-by-otp-message/{otpMessageQueuesOtpMessageId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuesgetpendingqueueotpmessagequeuesstatusOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/get-pending-queue/{otpMessageQueuesStatus}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleotpmessagequeuesupdatestatusotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/update-status/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleotpmessagequeuesupdatepriorityotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/update-priority/{otpMessageQueuesId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuesOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuescountOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleotpmessagequeuesOtpMessageQueuesController",
+    "HttpMethod": "Post",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues"
+  },
+  {
+    "Key": "GetapismsmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Get",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Put",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleotpmessagequeuesidintOtpMessageQueuesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "OtpMessageQueuesController",
+    "UrlPath": "/api/sms-manager-module/otp-message-queues/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersgetbyidsendersidintSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/get-by-id/{sendersId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersgetactivesenderssendersisactiveboolSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/get-active-senders/{sendersIsActive:bool}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersgetbynamesendersnameSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/get-by-name/{sendersName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersexistsbyphonesendersphonenumberSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/exists-by-phone/{sendersPhoneNumber}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidmessagelogSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/message-log"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidmessagelogmessagelogidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidotpmessagelogSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/otp-message-log"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidotpmessagelogotpmessagelogidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidmessagequeueSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/message-queue"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidmessagequeuemessagequeueidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/message-queue/{messageQueueId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidotpmessagequeueSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/otp-message-queue"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderssenderidotpmessagequeueotpmessagequeueidSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{senderId}/otp-message-queue/{otpMessageQueueId}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulesendersupdatestatussendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/update-status/{sendersId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulesendersupdateprioritysendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/update-priority/{sendersId:int}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulesendersupdatedailylimitsendersidintSendersController",
+    "HttpMethod": "Patch",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/update-daily-limit/{sendersId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders"
+  },
+  {
+    "Key": "GetapismsmanagermodulesenderscountSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulesendersSendersController",
+    "HttpMethod": "Post",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders"
+  },
+  {
+    "Key": "GetapismsmanagermodulesendersidintSendersController",
+    "HttpMethod": "Get",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermodulesendersidintSendersController",
+    "HttpMethod": "Put",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulesendersidintSendersController",
+    "HttpMethod": "Delete",
+    "ControllerName": "SendersController",
+    "UrlPath": "/api/sms-manager-module/senders/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesgetbynamemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/get-by-name/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesgetbytypemessagetemplatestypeMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/get-by-type/{messageTemplatesType}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesexistsbynamemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/exists-by-name/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamecampaignMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/campaign"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamecampaigncampaignidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/campaign/{campaignId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamemessageMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/message"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamemessagemessageidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/message/{messageId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenameotpmessageMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/otp-message"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenameotpmessageotpmessageidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/otp-message/{otpMessageId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenameotpmessagelogMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/otp-message-log"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenameotpmessagelogotpmessagelogidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/otp-message-log/{otpMessageLogId}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamemessagelogMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/message-log"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesmessagetemplatenamemessagelogmessagelogidMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{messageTemplateName}/message-log/{messageLogId}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagetemplatesupdatecontentmessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/update-content/{messageTemplatesName}"
+  },
+  {
+    "Key": "PatchapismsmanagermodulemessagetemplatesupdatetypemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Patch",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/update-type/{messageTemplatesName}"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatescountMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/count"
+  },
+  {
+    "Key": "PostapismsmanagermodulemessagetemplatesMessageTemplatesController",
+    "HttpMethod": "Post",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates"
+  },
+  {
+    "Key": "GetapismsmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Get",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "PutapismsmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Put",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "DeleteapismsmanagermodulemessagetemplatesnameMessageTemplatesController",
+    "HttpMethod": "Delete",
+    "ControllerName": "MessageTemplatesController",
+    "UrlPath": "/api/sms-manager-module/message-templates/{name}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsgetbyidblacklistsidintBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/get-by-id/{blackListsId:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsgetbyrecipientblacklistsrecipientBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/get-by-recipient/{blackListsRecipient}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsexistsbyrecipientblacklistsrecipientBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/exists-by-recipient/{blackListsRecipient}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsgetblacklistcountblacklistsreasontypeBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/get-blacklist-count/{blackListsReasonType}"
+  },
+  {
+    "Key": "PatchapismsmanagermoduleblacklistsaddtoblacklistblacklistsrecipientBlackListsController",
+    "HttpMethod": "Patch",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/add-to-blacklist/{blackListsRecipient}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleblacklistsremovefromsmsblacklistblacklistsreasontypeBlackListsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/remove-from-sms-blacklist/{blackListsReasonType}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistscountBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleblacklistsBlackListsController",
+    "HttpMethod": "Post",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists"
+  },
+  {
+    "Key": "GetapismsmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Get",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Put",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleblacklistsidintBlackListsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "BlackListsController",
+    "UrlPath": "/api/sms-manager-module/black-lists/{id:int}"
+  },
+  {
+    "Key": "GetapismsmanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapismsmanagermoduleauditlogscountAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapismsmanagermoduleauditlogsAuditLogsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs"
+  },
+  {
+    "Key": "GetapismsmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapismsmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapismsmanagermoduleauditlogsidguidAuditLogsController",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "UrlPath": "/api/sms-manager-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapiusermanagermoduleportalpermissionsgetportalpermissionspermissiongroupnamePortalPermissionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/get-portal-permissions/{permissionGroupName}"
+  },
+  {
+    "Key": "PostapiusermanagermoduleportalpermissionsupdateportalpermissionPortalPermissionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPermissionsController",
+    "UrlPath": "/api/user-manager-module/portal-permissions/update-portal-permission"
+  },
+  {
+    "Key": "GetapiusermanagermoduleapimethoddefinitionsgetapipermissionspermissiongroupnameApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/get-api-permissions/{permissionGroupName}"
+  },
+  {
+    "Key": "PostapiusermanagermoduleapimethoddefinitionsupdateapipermissionApiMethodDefinitionsController",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/api-method-definitions/update-api-permission"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsidumlApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id}/uml"
+  },
+  {
+    "Key": "GetapiusermanagermoduletopicworkflowsiddiagramApiMethodDefinitionsController",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "UrlPath": "/api/user-manager-module/topic-workflows/{id}/diagram"
+  },
+  {
+    "Key": "PostapiauthregisterAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/register"
+  },
+  {
+    "Key": "PostapiauthloginAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/login"
+  },
+  {
+    "Key": "PostapiauthvalidateAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/validate"
+  },
+  {
+    "Key": "PostapiauthrefreshAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/refresh"
+  },
+  {
+    "Key": "GetapiauthconfirmemailAuthenticationsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/confirmEmail"
+  },
+  {
+    "Key": "PostapiauthresendconfirmationemailAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/resendConfirmationEmail"
+  },
+  {
+    "Key": "PostapiauthforgotpasswordAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/forgotPassword"
+  },
+  {
+    "Key": "PostapiauthresetpasswordAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/resetPassword"
+  },
+  {
+    "Key": "Postapiauthmanageuser2faAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/manage/user2fa"
+  },
+  {
+    "Key": "GetapiauthmanageinfoAuthenticationsController",
+    "HttpMethod": "Get",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/manage/info"
+  },
+  {
+    "Key": "PostapiauthmanageinfoAuthenticationsController",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "UrlPath": "/api/auth/manage/info"
+  }
+]
+}

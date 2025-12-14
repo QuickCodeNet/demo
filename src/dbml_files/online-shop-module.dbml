@@ -1,0 +1,339 @@
+﻿Enum "CARGO_COMPANY" {
+  YURTICI [note: "Yurtiçi Kargo"]
+  ARAS [note: "Aras Kargo"]
+  MNG [note: "MNG Kargo"]
+  SURAT [note: "Sürat Kargo"]
+  PTT [note: "PTT Kargo"]
+}
+
+Enum "TARGET_AUDIENCE" {
+  ALL [note: "Tüm Kullanıcılar"]
+  NEW_USERS [note: "Yeni Kullanıcılar"]
+  COMPANY_USERS [note: "Firma Kullanıcıları"]
+}
+
+Enum "SHIPMENT_STATUS" {
+  PENDING [note: "Bekliyor"]
+  SHIPPED [note: "Kargolandı"]
+  DELIVERED [note: "Teslim Edildi"]
+  CANCELLED [note: "İptal Edildi"]
+}
+
+Enum "ORDER_STATUS" {
+  PENDING [note: "Bekliyor"]
+  PAID [note: "Ödendi"]
+  SHIPPED [note: "Kargolandı"]
+  DELIVERED [note: "Teslim Edildi"]
+  CANCELLED [note: "İptal Edildi"]
+}
+
+Enum "PAYMENT_STATUS" {
+  PENDING [note: "Bekliyor"]
+  COMPLETED [note: "Tamamlandı"]
+  FAILED [note: "Başarısız"]
+  REFUNDED [note: "İade Edildi"]
+}
+
+Enum "PAYMENT_METHOD" {
+  CREDIT_CARD [note: "Kredi Kartı"]
+  BANK_TRANSFER [note: "Havale/EFT"]
+  CASH_ON_DELIVERY [note: "Kapıda Ödeme"]
+  DIGITAL_WALLET [note: "Dijital Cüzdan"]
+}
+
+Enum "COMPANY_SECTOR" {
+  TECHNOLOGY [note: "Teknoloji"]
+  RETAIL [note: "Perakende"]
+  MANUFACTURING [note: "Üretim"]
+  SERVICES [note: "Hizmet"]
+}
+
+Enum "CURRENCY" {
+  TRY [note: "Türk Lirası"]
+  USD [note: "Amerikan Doları"]
+  EUR [note: "Euro"]
+}
+
+Table "USER" {
+  "ID" integer [pk, increment, not null]
+  "EMAIL" string
+  "NAME" string
+  "CREATED_AT" datetime
+  "IS_NEW" boolean
+  "COMPANY_ID" integer
+  Note: '''
+    Query:GET_NEW_USERS[] Where:IS_NEW[true], CREATED_AT[>|NowRemoveDays30] Select:ID, EMAIL, NAME, CREATED_AT
+  '''
+}
+
+Table "COMPANY" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string
+  "SECTOR" COMPANY_SECTOR
+  Note: '''
+    Query:GET_COMPANIES[] Where:ID Select:ID, NAME, SECTOR
+  '''
+}
+
+Table "CAMPAIGN" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string
+  "DESCRIPTION" string
+  "START_DATE" datetime
+  "END_DATE" datetime
+  "IS_ACTIVE" boolean
+  "BUDGET" decimal
+  "TARGET_AUDIENCE" TARGET_AUDIENCE
+  "MIN_ORDER_AMOUNT" decimal
+  Note: '''
+    Query:GET_ACTIVE_CAMPAIGNS[] Where:IS_ACTIVE[true], START_DATE[<=|Now], END_DATE[>=|Now] Select:ID, NAME, DESCRIPTION, TARGET_AUDIENCE, MIN_ORDER_AMOUNT
+  '''
+}
+
+Table "COUPON" {
+  "ID" integer [pk, increment, not null]
+  "COUPON_CODE" string
+  "CAMPAIGN_ID" integer
+  "USER_ID" integer
+  "DISCOUNT_RATE" decimal
+  "DISCOUNT_AMOUNT" decimal
+  "MAX_USAGE" integer
+  "USED_COUNT" integer
+  "START_DATE" datetime
+  "END_DATE" datetime
+  "IS_SINGLE_USE" boolean
+  Note: '''
+    Query:GET_VALID_COUPONS[] Where:COUPON_CODE, START_DATE[<=|Now], END_DATE[>=|Now] Select:ID, COUPON_CODE, DISCOUNT_RATE, DISCOUNT_AMOUNT
+    Query:GET_USER_COUPONS[] Tables:COUPON C, USER U Where:C.USER_ID, C.START_DATE[<=|Now], C.END_DATE[>=|Now] Select:C.ID COUPON_ID, C.COUPON_CODE COUPON_CODE, C.DISCOUNT_RATE COUPON_DISCOUNT_RATE
+    Update:UPDATE_USER_COUPONS Tables:COUPON C, USER U Where:C.USER_ID, C.START_DATE[<=|Now], C.END_DATE[>=|Now] Set:C.ID[12]
+    Update:UPDATE_USER_COUPONS_PRM Tables:COUPON C, USER U Where:C.USER_ID, C.START_DATE[<=|Now], C.END_DATE[>=|Now] Set:C.ID
+    Update:UPDATE_USER_COUPONS_SINGLE Where:USER_ID, START_DATE[<=|Now], END_DATE[>=|Now] Set:ID
+    Update:UPDATE_USER_COUPONS_WHERE_PRM Tables:COUPON C, USER U Where:C.USER_ID Set:C.ID
+    Update:UPDATE_USER_COUPONS_REF_COL Tables:COUPON C, USER U Where:C.USER_ID, C.START_DATE[<=|Now], C.END_DATE[>=|Now] Set:C.ID, C.END_DATE[NowRemoveDays30]
+  '''
+}
+
+Table "USER_COUPON" {
+  "USER_ID" integer [pk]
+  "COUPON_ID" integer [pk]
+  "IS_USED" boolean
+  "USED_AT" datetime
+  Note: '''
+    Query:GET_USED_COUPONS[] Where:IS_USED[true], USED_AT[>|NowRemoveDays30] Select:USER_ID, COUPON_ID, USED_AT
+    Update:UPDATE_USED_COUPONS Where:IS_USED[true] Set:IS_USED
+    Update:UPDATE_ALL_USED_COUPONS Set:IS_USED
+    Update:UPDATE_ALL_TRUE_USED_COUPONS Set:IS_USED[true]
+  '''
+}
+
+Table "PRODUCT_GROUP" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string
+  "TITLE" string
+  "IMAGE_URL" blob_image
+  "DESCRIPTION" string
+  "CODE" string
+  "PRODUCT_TYPE_ID" integer
+  Note: '''
+    Query:GET_GROUPS_BY_TYPE[] Tables:PRODUCT_GROUP PG, PRODUCT_TYPE PT, PRODUCT P Where:PG.PRODUCT_TYPE_ID, P.STOCK_QUANTITY[>|0] Select:PG.ID PRODUCT_GROUP_ID, PG.NAME PRODUCT_GROUP_NAME, PT.NAME PRODUCT_TYPE_NAME
+    Query:GET_PRODUCT_GROUPS_BY_TYPE[] Tables:PRODUCT_GROUP PG, PRODUCT_TYPE PT Where:PG.PRODUCT_TYPE_ID Select:PG.ID PRODUCT_GROUP_ID, PG.NAME PRODUCT_GROUP_NAME, PT.NAME PRODUCT_TYPE_NAME
+  '''
+}
+
+Table "PRODUCT_TYPE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string
+  "IMAGE_URL" blob_image
+  "TITLE" string
+  Note: '''
+    Query:GET_PRODUCT_TYPES[] Tables:PRODUCT_TYPE PT, PRODUCT_GROUP PG Where:PG.PRODUCT_TYPE_ID Select:PT.ID PRODUCT_TYPE_ID, PT.NAME PRODUCT_TYPE_NAME, PT.TITLE PRODUCT_TYPE_TITLE
+  '''
+}
+
+Table "PRODUCT" {
+  "ID" integer [pk, increment, not null]
+  "PRODUCT_GROUP_ID" integer
+  "MODEL" string
+  "TITLE" string
+  "DETAILS" json
+  "DESCRIPTION" json
+  "OPTIONS" json
+  "PRICE" decimal
+  "CURRENCY" CURRENCY
+  "STOCK_QUANTITY" integer
+  Note: '''
+    Query:SEARCH_PRODUCTS[] Where:TITLE[Like], PRICE[Between], PRODUCT_GROUP_ID Select:ID, TITLE, PRICE, CURRENCY
+    Query:LIST_LOW_STOCK[] Where:STOCK_QUANTITY[<|10] Select:ID, TITLE, STOCK_QUANTITY
+    Update:REDUCE_STOCK Where:ID Set:STOCK_QUANTITY[-1]
+  '''
+}
+
+Table "PRODUCT_IMAGE" {
+  "ID" integer [pk, increment, not null]
+  "PRODUCT_ID" integer
+  "IMAGE_URL" blob_image
+  Note: '''
+    Query:GET_VALID_PRODUCT_IMAGES[] Where:PRODUCT_ID Select:ID, IMAGE_URL
+  '''
+}
+
+Table "PRODUCT_REVIEW" {
+  "ID" integer [pk, increment, not null]
+  "PRODUCT_ID" integer
+  "USER_ID" integer
+  "RATING" integer
+  "COMMENT" string
+  "CREATED_AT" datetime
+  Note: '''
+    Query:GET_RECENT_REVIEWS[] Tables:PRODUCT_REVIEW PR, PRODUCT P Where:PR.PRODUCT_ID, PR.CREATED_AT[>|NowRemoveDays30] Select:PR.ID PRODUCT_REVIEW_ID, PR.RATING PRODUCT_REVIEW_RATING, PR.COMMENT PRODUCT_REVIEW_COMMENT, P.TITLE PRODUCT_TITLE
+    Query:GET_PRODUCT_REVIEWS[] Where:PRODUCT_ID Select:ID, RATING, COMMENT
+  '''
+}
+
+Table "CART" {
+  "ID" integer [pk, increment, not null]
+  "USER_ID" integer
+  "CREATED_AT" datetime
+  "IS_ACTIVE" boolean
+  Note: '''
+    Query:GET_ABANDONED_CARTS[] Where:IS_ACTIVE[true], CREATED_AT[<|NowAddHours24] Select:ID, USER_ID, CREATED_AT
+    Update:DEACTIVATE_STALE_CARTS Where:CREATED_AT[<|NowRemoveHours48], IS_ACTIVE[true] Set:IS_ACTIVE[false]
+  '''
+}
+
+Table "CART_ITEM" {
+  "ID" integer [pk, increment, not null]
+  "CART_ID" integer
+  "PRODUCT_ID" integer
+  "QUANTITY" integer
+  "UNIT_PRICE" decimal
+  Note: '''
+    Query:GET_CART_ITEMS_WITH_TOTAL[] Tables:CART_ITEM CI, PRODUCT P Where:CI.CART_ID Select:CI.ID CART_ITEM_ID, CI.QUANTITY CART_ITEM_QUANTITY, CI.UNIT_PRICE CART_ITEM_UNIT_PRICE, P.TITLE PRODUCT_TITLE
+  '''
+}
+
+Table "ORDER" {
+  "ID" integer [pk, increment, not null]
+  "USER_ID" integer
+  "ORDER_DATE" datetime
+  "TOTAL_AMOUNT" decimal
+  "STATUS" ORDER_STATUS
+  "PAYMENT_ID" integer
+  "SHIPPING_INFO_ID" integer
+  Note: '''
+    Query: GET_ORDERS_YEARLY[] Where: USER_ID, MAX(TOTAL_AMOUNT)[>] Select: ORDER_DATE, MAX(TOTAL_AMOUNT) MAX_TOTAL, COUNT(TOTAL_AMOUNT) COUNT_TOTAL
+    Query:GET_ORDERS_BY_STATUS_DATE[] Where:STATUS, ORDER_DATE[Between] Select:ID, ORDER_DATE, TOTAL_AMOUNT
+    Query:GET_USER_ORDERS[] Tables:ORDER O, PAYMENT P Where:O.USER_ID, P.STATUS[COMPLETED] Select:O.ID ORDER_ID, O.ORDER_DATE ORDER_DATE, O.TOTAL_AMOUNT ORDER_TOTAL_AMOUNT
+  '''
+}
+
+Table "ORDER_ITEM" {
+  "ID" integer [pk, increment, not null]
+  "ORDER_ID" integer
+  "PRODUCT_ID" integer
+  "QUANTITY" integer
+  "UNIT_PRICE" decimal
+  Note: '''
+    Query:GET_ORDER_ITEMS_DETAILS[] Tables:ORDER_ITEM OI, PRODUCT P Where:OI.ORDER_ID Select:OI.ID ORDER_ITEM_ID, OI.QUANTITY ORDER_ITEM_QUANTITY, OI.UNIT_PRICE ORDER_ITEM_UNIT_PRICE, P.TITLE PRODUCT_TITLE
+    Query:GET_PRODUCT_ORDER_ITEMS[] Where:PRODUCT_ID Select:ID, QUANTITY, UNIT_PRICE
+  '''
+}
+
+Table "PAYMENT" {
+  "ID" integer [pk, increment, not null]
+  "USER_ID" integer
+  "ORDER_ID" integer
+  "PAYMENT_DATE" datetime
+  "PAYMENT_METHOD" PAYMENT_METHOD
+  "TRANSACTION_ID" string
+  "AMOUNT" decimal
+  "STATUS" PAYMENT_STATUS
+  Note: '''
+    Query:GET_PENDING_PAYMENTS[] Where:STATUS[PENDING], PAYMENT_DATE[<|NowRemoveHours1] Select:ID, ORDER_ID, AMOUNT
+    Update:MARK_PAYMENT_FAILED Where:STATUS[PENDING], PAYMENT_DATE[<|NowRemoveHours1] Set:STATUS[FAILED]
+  '''
+}
+
+Table "SHIPPING_INFO" {
+  "ID" integer [pk, increment, not null]
+  "USER_ID" integer
+  "RECIPIENT_NAME" string
+  "ADDRESS_LINE" string
+  "CITY" string
+  "DISTRICT" string
+  "POSTAL_CODE" string
+  "IS_DEFAULT" boolean
+  "COUNTRY" string
+  "PHONE" string
+  Note: '''
+    Query:GET_USER_SHIPPING_INFO[] Tables:SHIPPING_INFO SI, ORDER O Where:SI.USER_ID Select:SI.ID SHIPPING_INFO_ID, SI.RECIPIENT_NAME SHIPPING_RECIPIENT_NAME, SI.ADDRESS_LINE SHIPPING_ADDRESS_LINE
+    Update:SET_DEFAULT_SHIPPING Where:USER_ID Set:IS_DEFAULT[false]
+    Update:SET_DEFAULT_SHIPPING_ADDRESS Where:ID, USER_ID Set:IS_DEFAULT[true]
+  '''
+}
+
+Table "SHIPMENT" {
+  "ID" integer [pk, increment, not null]
+  "ORDER_ID" integer
+  "CARGO_COMPANY" CARGO_COMPANY
+  "TRACKING_CODE" string
+  "SHIPPED_DATE" datetime
+  "DELIVERED_DATE" datetime
+  "STATUS" SHIPMENT_STATUS
+  "NOTE" string
+  Note: '''
+    Query:GET_UNDELIVERED_SHIPMENTS[] Where:STATUS[NotEquals|DELIVERED], CARGO_COMPANY Select:ID, ORDER_ID, TRACKING_CODE, STATUS
+    Query:TRACK_SHIPMENT[P] Where:TRACKING_CODE Select:ID, CARGO_COMPANY, STATUS, SHIPPED_DATE, DELIVERED_DATE
+    Update:MARK_SHIPMENT_DELIVERED Where:ID, STATUS[NotEquals|DELIVERED] Set:STATUS[DELIVERED], DELIVERED_DATE[Now]
+  '''
+}
+
+Table "COMPANY_INFO" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string
+  "ADDRESS" string
+  "CITY" string
+  "COUNTRY" string
+  "ABOUT_US" string
+  "EMAIL" string
+  "PHONE" string
+  "LONGITUDE" float
+  "LATITUDE" float
+  "COMPANY_ICON_URL" blob_image
+  "COMPANY_LOGO_URL" blob_image
+  Note: '''
+    Query:GET_COMPANY_CONTACT[] Where:ID Select:NAME, EMAIL, PHONE, CITY, COUNTRY
+  '''
+}
+
+Table "HOME_PAGE" {
+  "ID" integer [pk, increment, not null]
+  "MAIN_TITLE" string
+  "TITLE" string
+  "TITLE_DESCRIPTION" string
+  "TITLE_IMAGE_URL" blob_image
+  Note: '''
+    Query:GET_HOME_PAGE_CONTENT[] Where:TITLE_IMAGE_URL Select:MAIN_TITLE, TITLE, TITLE_DESCRIPTION, TITLE_IMAGE_URL
+    Query:GET_HOME_PAGE_CONTENT_GR[] Where:TITLE_IMAGE_URL Select:MAIN_TITLE, MAX(ID) MAX_HOME_PAGE_ID
+  '''
+}
+
+Ref: "USER"."COMPANY_ID" > "COMPANY"."ID"
+Ref: "COUPON"."CAMPAIGN_ID" > "CAMPAIGN"."ID"
+Ref: "COUPON"."USER_ID" > "USER"."ID"
+Ref: "USER_COUPON"."USER_ID" > "USER"."ID"
+Ref: "USER_COUPON"."COUPON_ID" > "COUPON"."ID"
+Ref: "PRODUCT"."PRODUCT_GROUP_ID" > "PRODUCT_GROUP"."ID"
+Ref: "PRODUCT_GROUP"."PRODUCT_TYPE_ID" > "PRODUCT_TYPE"."ID"
+Ref: "PRODUCT_IMAGE"."PRODUCT_ID" > "PRODUCT"."ID"
+Ref: "PRODUCT_REVIEW"."PRODUCT_ID" > "PRODUCT"."ID"
+Ref: "PRODUCT_REVIEW"."USER_ID" > "USER"."ID"
+Ref: "CART"."USER_ID" > "USER"."ID"
+Ref: "CART_ITEM"."CART_ID" > "CART"."ID"
+Ref: "CART_ITEM"."PRODUCT_ID" > "PRODUCT"."ID"
+Ref: "ORDER"."USER_ID" > "USER"."ID"
+Ref: "ORDER_ITEM"."ORDER_ID" > "ORDER"."ID"
+Ref: "ORDER_ITEM"."PRODUCT_ID" > "PRODUCT"."ID"
+Ref: "ORDER"."PAYMENT_ID" > "PAYMENT"."ID"
+Ref: "ORDER"."SHIPPING_INFO_ID" > "SHIPPING_INFO"."ID"
+Ref: "SHIPMENT"."ORDER_ID" > "ORDER"."ID"
