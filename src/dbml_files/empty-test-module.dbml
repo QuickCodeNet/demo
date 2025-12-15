@@ -1,0 +1,6 @@
+﻿Table "CUSTOM_TABLE" {
+  "ID" integer [pk, increment, not null]
+  "NAME" string [not null]
+  "SURNAME" string [not null]
+  "JSON_DATA" json [not null]
+}

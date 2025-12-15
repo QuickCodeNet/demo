@@ -78,6 +78,12 @@
       <Compile Include="Nswag/Clients/EmailManagerModuleApi/**/*.cs" />
     </ItemGroup>
   </Target>
+  <Target Name="NSwag__EmptyTestModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
+    <Exec WorkingDirectory="$(SolutionDir)Common/QuickCode.Demo.Common/Nswag/Configs/" Command="$(NSwagExe_Net80) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagEmptyTestModuleUrl),ProjectDir=$(ProjectDir),ProjectName=EmptyTestModuleApi" ContinueOnError="true" />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/EmptyTestModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
   <Target Name="NSwag__OnlineShopModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
     <Exec WorkingDirectory="$(SolutionDir)Common/QuickCode.Demo.Common/Nswag/Configs/" Command="$(NSwagExe_Net80) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagOnlineShopModuleUrl),ProjectDir=$(ProjectDir),ProjectName=OnlineShopModuleApi" ContinueOnError="true" />
     <ItemGroup>
@@ -93,6 +99,7 @@
   <PropertyGroup>
     <ModuleNswagUserManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.UserManagerModule.Api-Swagger.json'))</ModuleNswagUserManagerModuleUrl>
     <ModuleNswagEmailManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.EmailManagerModule.Api-Swagger.json'))</ModuleNswagEmailManagerModuleUrl>
+    <ModuleNswagEmptyTestModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.EmptyTestModule.Api-Swagger.json'))</ModuleNswagEmptyTestModuleUrl>
     <ModuleNswagOnlineShopModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.OnlineShopModule.Api-Swagger.json'))</ModuleNswagOnlineShopModuleUrl>
     <ModuleNswagSmsManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.SmsManagerModule.Api-Swagger.json'))</ModuleNswagSmsManagerModuleUrl>
   </PropertyGroup>

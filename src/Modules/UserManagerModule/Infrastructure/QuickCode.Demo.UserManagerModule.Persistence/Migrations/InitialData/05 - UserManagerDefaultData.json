@@ -125,6 +125,14 @@
       "Description": "EmailManagerModuleSenders"
     },
     {
+      "Name": "EmptyTestModuleAuditLogs",
+      "Description": "EmptyTestModuleAuditLogs"
+    },
+    {
+      "Name": "EmptyTestModuleCustomTables",
+      "Description": "EmptyTestModuleCustomTables"
+    },
+    {
       "Name": "OnlineShopModuleAuditLogs",
       "Description": "OnlineShopModuleAuditLogs"
     },
@@ -548,12 +556,39 @@
       "ParentName": "EmailManagerModule"
     },
     {
+      "Key": "EmptyTestModule_EmptyTestModule",
+      "Name": "EmptyTestModule",
+      "Text": "EmptyTestModule",
+      "Tooltip": "EmptyTestModule",
+      "ActionName": "",
+      "OrderNo": 131,
+      "ParentName": "EmptyTestModule"
+    },
+    {
+      "Key": "EmptyTestModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/EmptyTestModuleAuditLogs/List",
+      "OrderNo": 131,
+      "ParentName": "EmptyTestModule"
+    },
+    {
+      "Key": "EmptyTestModule_CustomTables",
+      "Name": "CustomTables",
+      "Text": "CustomTables",
+      "Tooltip": "CustomTables",
+      "ActionName": "/EmptyTestModuleCustomTables/List",
+      "OrderNo": 132,
+      "ParentName": "EmptyTestModule"
+    },
+    {
       "Key": "OnlineShopModule_OnlineShopModule",
       "Name": "OnlineShopModule",
       "Text": "OnlineShopModule",
       "Tooltip": "OnlineShopModule",
       "ActionName": "",
-      "OrderNo": 131,
+      "OrderNo": 133,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -562,7 +597,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/OnlineShopModuleAuditLogs/List",
-      "OrderNo": 131,
+      "OrderNo": 133,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -571,7 +606,7 @@
       "Text": "Campaigns",
       "Tooltip": "Campaigns",
       "ActionName": "/OnlineShopModuleCampaigns/List",
-      "OrderNo": 132,
+      "OrderNo": 134,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -580,7 +615,7 @@
       "Text": "Carts",
       "Tooltip": "Carts",
       "ActionName": "/OnlineShopModuleCarts/List",
-      "OrderNo": 133,
+      "OrderNo": 135,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -589,7 +624,7 @@
       "Text": "CartItems",
       "Tooltip": "CartItems",
       "ActionName": "/OnlineShopModuleCartItems/List",
-      "OrderNo": 134,
+      "OrderNo": 136,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -598,7 +633,7 @@
       "Text": "Companies",
       "Tooltip": "Companies",
       "ActionName": "/OnlineShopModuleCompanies/List",
-      "OrderNo": 135,
+      "OrderNo": 137,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -607,7 +642,7 @@
       "Text": "CompanyInfos",
       "Tooltip": "CompanyInfos",
       "ActionName": "/OnlineShopModuleCompanyInfos/List",
-      "OrderNo": 136,
+      "OrderNo": 138,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -616,7 +651,7 @@
       "Text": "Coupons",
       "Tooltip": "Coupons",
       "ActionName": "/OnlineShopModuleCoupons/List",
-      "OrderNo": 137,
+      "OrderNo": 139,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -625,7 +660,7 @@
       "Text": "HomePages",
       "Tooltip": "HomePages",
       "ActionName": "/OnlineShopModuleHomePages/List",
-      "OrderNo": 138,
+      "OrderNo": 140,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -634,7 +669,7 @@
       "Text": "Orders",
       "Tooltip": "Orders",
       "ActionName": "/OnlineShopModuleOrders/List",
-      "OrderNo": 139,
+      "OrderNo": 141,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -643,7 +678,7 @@
       "Text": "OrderItems",
       "Tooltip": "OrderItems",
       "ActionName": "/OnlineShopModuleOrderItems/List",
-      "OrderNo": 140,
+      "OrderNo": 142,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -652,7 +687,7 @@
       "Text": "Payments",
       "Tooltip": "Payments",
       "ActionName": "/OnlineShopModulePayments/List",
-      "OrderNo": 141,
+      "OrderNo": 143,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -661,7 +696,7 @@
       "Text": "Products",
       "Tooltip": "Products",
       "ActionName": "/OnlineShopModuleProducts/List",
-      "OrderNo": 142,
+      "OrderNo": 144,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -670,7 +705,7 @@
       "Text": "ProductGroups",
       "Tooltip": "ProductGroups",
       "ActionName": "/OnlineShopModuleProductGroups/List",
-      "OrderNo": 143,
+      "OrderNo": 145,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -679,7 +714,7 @@
       "Text": "ProductImages",
       "Tooltip": "ProductImages",
       "ActionName": "/OnlineShopModuleProductImages/List",
-      "OrderNo": 144,
+      "OrderNo": 146,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -688,7 +723,7 @@
       "Text": "ProductReviews",
       "Tooltip": "ProductReviews",
       "ActionName": "/OnlineShopModuleProductReviews/List",
-      "OrderNo": 145,
+      "OrderNo": 147,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -697,7 +732,7 @@
       "Text": "ProductTypes",
       "Tooltip": "ProductTypes",
       "ActionName": "/OnlineShopModuleProductTypes/List",
-      "OrderNo": 146,
+      "OrderNo": 148,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -706,7 +741,7 @@
       "Text": "Shipments",
       "Tooltip": "Shipments",
       "ActionName": "/OnlineShopModuleShipments/List",
-      "OrderNo": 147,
+      "OrderNo": 149,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -715,7 +750,7 @@
       "Text": "ShippingInfos",
       "Tooltip": "ShippingInfos",
       "ActionName": "/OnlineShopModuleShippingInfos/List",
-      "OrderNo": 148,
+      "OrderNo": 150,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -724,7 +759,7 @@
       "Text": "Users",
       "Tooltip": "Users",
       "ActionName": "/OnlineShopModuleUsers/List",
-      "OrderNo": 149,
+      "OrderNo": 151,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -733,7 +768,7 @@
       "Text": "UserCoupons",
       "Tooltip": "UserCoupons",
       "ActionName": "/OnlineShopModuleUserCoupons/List",
-      "OrderNo": 150,
+      "OrderNo": 152,
       "ParentName": "OnlineShopModule"
     },
     {
@@ -742,7 +777,7 @@
       "Text": "SmsManagerModule",
       "Tooltip": "SmsManagerModule",
       "ActionName": "",
-      "OrderNo": 151,
+      "OrderNo": 153,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -751,7 +786,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/SmsManagerModuleAuditLogs/List",
-      "OrderNo": 151,
+      "OrderNo": 153,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -760,7 +795,7 @@
       "Text": "BlackLists",
       "Tooltip": "BlackLists",
       "ActionName": "/SmsManagerModuleBlackLists/List",
-      "OrderNo": 152,
+      "OrderNo": 154,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -769,7 +804,7 @@
       "Text": "Campaigns",
       "Tooltip": "Campaigns",
       "ActionName": "/SmsManagerModuleCampaigns/List",
-      "OrderNo": 153,
+      "OrderNo": 155,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -778,7 +813,7 @@
       "Text": "Messages",
       "Tooltip": "Messages",
       "ActionName": "/SmsManagerModuleMessages/List",
-      "OrderNo": 154,
+      "OrderNo": 156,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -787,7 +822,7 @@
       "Text": "MessageLogs",
       "Tooltip": "MessageLogs",
       "ActionName": "/SmsManagerModuleMessageLogs/List",
-      "OrderNo": 155,
+      "OrderNo": 157,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -796,7 +831,7 @@
       "Text": "MessageQueues",
       "Tooltip": "MessageQueues",
       "ActionName": "/SmsManagerModuleMessageQueues/List",
-      "OrderNo": 156,
+      "OrderNo": 158,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -805,7 +840,7 @@
       "Text": "MessageTemplates",
       "Tooltip": "MessageTemplates",
       "ActionName": "/SmsManagerModuleMessageTemplates/List",
-      "OrderNo": 157,
+      "OrderNo": 159,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -814,7 +849,7 @@
       "Text": "OtpMessages",
       "Tooltip": "OtpMessages",
       "ActionName": "/SmsManagerModuleOtpMessages/List",
-      "OrderNo": 158,
+      "OrderNo": 160,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -823,7 +858,7 @@
       "Text": "OtpMessageLogs",
       "Tooltip": "OtpMessageLogs",
       "ActionName": "/SmsManagerModuleOtpMessageLogs/List",
-      "OrderNo": 159,
+      "OrderNo": 161,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -832,7 +867,7 @@
       "Text": "OtpMessageQueues",
       "Tooltip": "OtpMessageQueues",
       "ActionName": "/SmsManagerModuleOtpMessageQueues/List",
-      "OrderNo": 160,
+      "OrderNo": 162,
       "ParentName": "SmsManagerModule"
     },
     {
@@ -841,7 +876,7 @@
       "Text": "Senders",
       "Tooltip": "Senders",
       "ActionName": "/SmsManagerModuleSenders/List",
-      "OrderNo": 161,
+      "OrderNo": 163,
       "ParentName": "SmsManagerModule"
     }
   ],
@@ -2836,6 +2871,126 @@
     },
     {
       "PortalPermissionName": "EmailManagerModuleSenders",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleAuditLogs",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 4,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 0,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 1,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 2,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 2,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 3,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Viewer",
+      "PortalPermissionTypeId": 3,
+      "IsActive": false
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
+      "PermissionGroupName": "Admin",
+      "PortalPermissionTypeId": 4,
+      "IsActive": true
+    },
+    {
+      "PortalPermissionName": "EmptyTestModuleCustomTables",
       "PermissionGroupName": "Viewer",
       "PortalPermissionTypeId": 4,
       "IsActive": false
