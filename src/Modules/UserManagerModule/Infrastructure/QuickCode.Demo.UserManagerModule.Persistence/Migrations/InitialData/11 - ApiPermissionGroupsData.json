@@ -1601,66 +1601,6 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablesCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablescountCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PostapiemptytestmodulecustomtablesCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogsAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogscountAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PostapiemptytestmoduleauditlogsAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Admin",
-    "IsActive": true
-  },
-  {
     "ApiMethodDefinitionKey": "GetapionlineshopmoduleusersgetnewusersusersisnewboolUsersController",
     "PermissionGroupName": "Admin",
     "IsActive": true
@@ -5077,66 +5017,6 @@
   },
   {
     "ApiMethodDefinitionKey": "DeleteapiemailmanagermoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablesCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablescountCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PostapiemptytestmodulecustomtablesCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmodulecustomtablesidintCustomTablesController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogsAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogscountAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PostapiemptytestmoduleauditlogsAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "GetapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": true
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "PermissionGroupName": "Viewer",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmoduleauditlogsidguidAuditLogsController",
     "PermissionGroupName": "Viewer",
     "IsActive": false
   },

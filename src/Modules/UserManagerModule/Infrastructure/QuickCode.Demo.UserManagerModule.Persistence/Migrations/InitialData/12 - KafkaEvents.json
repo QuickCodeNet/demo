@@ -561,36 +561,6 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "PostapiemptytestmodulecustomtablesCustomTablesController",
-    "TopicName": "demo.empty_test_module.custom_tables_post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmodulecustomtablesidintCustomTablesController",
-    "TopicName": "demo.empty_test_module.custom_tables_put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmodulecustomtablesidintCustomTablesController",
-    "TopicName": "demo.empty_test_module.custom_tables_delete",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "PostapiemptytestmoduleauditlogsAuditLogsController",
-    "TopicName": "demo.empty_test_module.audit_logs_post",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "PutapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "TopicName": "demo.empty_test_module.audit_logs_put",
-    "IsActive": false
-  },
-  {
-    "ApiMethodDefinitionKey": "DeleteapiemptytestmoduleauditlogsidguidAuditLogsController",
-    "TopicName": "demo.empty_test_module.audit_logs_delete",
-    "IsActive": false
-  },
-  {
     "ApiMethodDefinitionKey": "PostapionlineshopmoduleusersUsersController",
     "TopicName": "demo.online_shop_module.users_post",
     "IsActive": false
