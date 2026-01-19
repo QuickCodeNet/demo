@@ -1,5 +1,5 @@
 using System.Linq;
-using QuickCode.Quickcode3.Common.Mediator;
+using QuickCode.Demo.Common.Mediator;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using System.Threading.Tasks;
