@@ -1,0 +1,8 @@
+﻿SELECT U.[ID], U.[EMAIL], U.[NAME], U.[CREATED_AT], U.[IS_NEW], U.[COMPANY_ID] 
+FROM [COUPONS] C 
+	INNER JOIN [USERS] U 
+			ON C.[USER_ID] = U.[ID] 
+WHERE C.[IsDeleted] = 0 
+	AND U.[IsDeleted] = 0 
+	AND U.[ID] = @PRM_USERS_ID 
+ORDER BY U.[ID] 

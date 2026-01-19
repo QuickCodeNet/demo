@@ -1,0 +1,4 @@
+﻿UPDATE [MESSAGES] 
+	SET [ATTEMPT_COUNT] = +1 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_MESSAGES_ID

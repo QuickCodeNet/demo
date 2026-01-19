@@ -1,0 +1,8 @@
+﻿UPDATE C 
+	SET C.[ID] = @COUPONS_ID 
+FROM [COUPONS] C 
+	INNER JOIN [USERS] U 
+			ON C.[USER_ID] = U.[ID] 
+WHERE C.[IsDeleted] = 0 
+	AND U.[IsDeleted] = 0 
+	AND C.[USER_ID] = @PRM_COUPONS_USER_ID

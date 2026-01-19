@@ -1,0 +1,8 @@
+﻿SELECT C.[ID], C.[USER_ID], C.[CREATED_AT], C.[IS_ACTIVE] 
+FROM [CART_ITEMS] CI 
+	INNER JOIN [CARTS] C 
+			ON CI.[CART_ID] = C.[ID] 
+WHERE CI.[IsDeleted] = 0 
+	AND C.[IsDeleted] = 0 
+	AND C.[ID] = @PRM_CARTS_ID 
+ORDER BY C.[ID] 

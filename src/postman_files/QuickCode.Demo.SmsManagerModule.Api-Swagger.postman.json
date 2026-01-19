@@ -1,0 +1,6327 @@
+{
+  "info": {
+    "name": "QuickCode - Demo - SmsManagerModule Api (1.0.0.0)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "v1"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/auth/login",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"demo@quickcode.net\",\r\n  \"password\": \"String1!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var json = pm.response.json();",
+                  "var token = json.accessToken;",
+                  "var refreshToken = json.refreshToken;",
+                  "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+                  "if (isEnvSelected) {",
+                  "    pm.environment.set(\"access_token\", token);",
+                  "    pm.environment.set(\"refresh_token\", refreshToken);",
+                  "} else {",
+                  "    pm.collectionVariables.set(\"access_token\", token);",
+                  "    pm.collectionVariables.set(\"refresh_token\", refreshToken);",
+                  "}",
+                  "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "AuditLogs",
+      "item": [
+        {
+          "name": "AuditLogsList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "AuditLogsInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":\"string\",\"entityName\":\"string\",\"entityId\":\"string\",\"action\":\"string\",\"userId\":\"string\",\"userName\":\"string\",\"userGroup\":\"string\",\"timestamp\":\"string\",\"oldValues\":\"string\",\"newValues\":\"string\",\"changedColumns\":\"string\",\"isChanged\":true,\"changeSummary\":\"string\",\"ipAddress\":\"string\",\"userAgent\":\"string\",\"correlationId\":\"string\",\"isSuccess\":true,\"errorMessage\":\"string\",\"hash\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "AuditLogsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "AuditLogsGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "AuditLogsUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":\"string\",\"entityName\":\"string\",\"entityId\":\"string\",\"action\":\"string\",\"userId\":\"string\",\"userName\":\"string\",\"userGroup\":\"string\",\"timestamp\":\"string\",\"oldValues\":\"string\",\"newValues\":\"string\",\"changedColumns\":\"string\",\"isChanged\":true,\"changeSummary\":\"string\",\"ipAddress\":\"string\",\"userAgent\":\"string\",\"correlationId\":\"string\",\"isSuccess\":true,\"errorMessage\":\"string\",\"hash\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "AuditLogsDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/audit-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "audit-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "BlackLists",
+      "item": [
+        {
+          "name": "BlackListsList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"recipient\":\"string\",\"reason\":\"string\",\"reasonType\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "BlackListsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"recipient\":\"string\",\"reason\":\"string\",\"reasonType\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "BlackListsDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/get-by-id/:blackListsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "get-by-id",
+                ":blackListsId"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsGetByRecipient",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/get-by-recipient/:blackListsRecipient",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "get-by-recipient",
+                ":blackListsRecipient"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsRecipient",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsExistsByRecipient",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/exists-by-recipient/:blackListsRecipient",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "exists-by-recipient",
+                ":blackListsRecipient"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsRecipient",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsGetBlacklistCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/get-blacklist-count/:blackListsReasonType",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "get-blacklist-count",
+                ":blackListsReasonType"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsReasonType",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "BlackListsAddToBlacklist",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/add-to-blacklist/:blackListsRecipient",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "add-to-blacklist",
+                ":blackListsRecipient"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsRecipient",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"blackListsReason\":\"string\",\"blackListsReasonType\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "BlackListsRemoveFromSmsBlacklist",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/black-lists/remove-from-sms-blacklist/:blackListsReasonType",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "black-lists",
+                "remove-from-sms-blacklist",
+                ":blackListsReasonType"
+              ],
+              "variable": [
+                {
+                  "key": "blackListsReasonType",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Campaigns",
+      "item": [
+        {
+          "name": "CampaignsList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"name\":\"string\",\"description\":\"string\",\"startDate\":\"string\",\"endDate\":\"string\",\"isActive\":true,\"priority\":123,\"templateName\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "CampaignsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"name\":\"string\",\"description\":\"string\",\"startDate\":\"string\",\"endDate\":\"string\",\"isActive\":true,\"priority\":123,\"templateName\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "CampaignsDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/get-by-id/:campaignsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "get-by-id",
+                ":campaignsId"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetActiveCampaigns",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/get-active-campaigns/:campaignsIsActive",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "get-active-campaigns",
+                ":campaignsIsActive"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsIsActive",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetByName",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/get-by-name/:campaignsName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "get-by-name",
+                ":campaignsName"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsName",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsExistsByName",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/exists-by-name/:campaignsName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "exists-by-name",
+                ":campaignsName"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsName",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetCampaignsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/get-campaigns-count/:campaignsIsActive",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "get-campaigns-count",
+                ":campaignsIsActive"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsIsActive",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetMessagesForCampaigns",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:campaignId/message",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":campaignId",
+                "message"
+              ],
+              "variable": [
+                {
+                  "key": "campaignId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "campaignsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetMessagesForCampaignsDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:campaignId/message/:messageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":campaignId",
+                "message",
+                ":messageId"
+              ],
+              "variable": [
+                {
+                  "key": "campaignId",
+                  "value": ""
+                },
+                {
+                  "key": "messageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "campaignsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetMessageQueuesForCampaigns",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:campaignId/message-queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":campaignId",
+                "message-queue"
+              ],
+              "variable": [
+                {
+                  "key": "campaignId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "campaignsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsGetMessageQueuesForCampaignsDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/:campaignId/message-queue/:messageQueueId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                ":campaignId",
+                "message-queue",
+                ":messageQueueId"
+              ],
+              "variable": [
+                {
+                  "key": "campaignId",
+                  "value": ""
+                },
+                {
+                  "key": "messageQueueId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "campaignsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageQueuesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "CampaignsUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/update-status/:campaignsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "update-status",
+                ":campaignsId"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"campaignsIsActive\":true}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "CampaignsUpdatePriority",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/campaigns/update-priority/:campaignsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "campaigns",
+                "update-priority",
+                ":campaignsId"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"campaignsPriority\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Error",
+      "item": [
+        {
+          "name": "ErrorHandleError",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/error",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "error"
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MessageLogs",
+      "item": [
+        {
+          "name": "MessageLogsList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"messageId\":123,\"campaignId\":123,\"senderId\":123,\"attemptDate\":\"string\",\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"attemptCount\":123,\"sentDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageLogsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"messageId\":123,\"campaignId\":123,\"senderId\":123,\"attemptDate\":\"string\",\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"attemptCount\":123,\"sentDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageLogsDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-by-id/:messageLogsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-by-id",
+                ":messageLogsId"
+              ],
+              "variable": [
+                {
+                  "key": "messageLogsId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetByMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-by-message/:messageLogsMessageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-by-message",
+                ":messageLogsMessageId"
+              ],
+              "variable": [
+                {
+                  "key": "messageLogsMessageId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetByCampaign",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-by-campaign/:messageLogsCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-by-campaign",
+                ":messageLogsCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messageLogsCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetBySender",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-by-sender/:messageLogsSenderId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-by-sender",
+                ":messageLogsSenderId"
+              ],
+              "variable": [
+                {
+                  "key": "messageLogsSenderId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetLogsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-logs-count/:messageLogsCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-logs-count",
+                ":messageLogsCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messageLogsCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageLogsGetLogsWithSender",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-logs/get-logs-with-sender/:sendersIsActive",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-logs",
+                "get-logs-with-sender",
+                ":sendersIsActive"
+              ],
+              "variable": [
+                {
+                  "key": "sendersIsActive",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MessageQueues",
+      "item": [
+        {
+          "name": "MessageQueuesList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"messageId\":123,\"campaignId\":123,\"senderId\":123,\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"priority\":123,\"status\":\"string\",\"processDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"messageId\":123,\"campaignId\":123,\"senderId\":123,\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"priority\":123,\"status\":\"string\",\"processDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/get-by-id/:messageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "get-by-id",
+                ":messageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetByCampaign",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/get-by-campaign/:messageQueuesCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "get-by-campaign",
+                ":messageQueuesCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetPendingQueue",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/get-pending-queue/:messageQueuesStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "get-pending-queue",
+                ":messageQueuesStatus"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetQueueCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/get-queue-count/:messageQueuesCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "get-queue-count",
+                ":messageQueuesCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesGetQueueDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/get-queue-details/:messageQueuesStatus/:campaignsIsActive",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "get-queue-details",
+                ":messageQueuesStatus",
+                ":campaignsIsActive"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesStatus",
+                  "value": ""
+                },
+                {
+                  "key": "campaignsIsActive",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/update-status/:messageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "update-status",
+                ":messageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"messageQueuesStatus\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageQueuesUpdatePriority",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-queues/update-priority/:messageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-queues",
+                "update-priority",
+                ":messageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "messageQueuesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"messageQueuesPriority\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Messages",
+      "item": [
+        {
+          "name": "MessagesList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"campaignId\":123,\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"attemptCount\":123,\"lastAttemptDate\":\"string\",\"sentDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessagesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"campaignId\":123,\"recipient\":\"string\",\"subject\":\"string\",\"body\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"attemptCount\":123,\"lastAttemptDate\":\"string\",\"sentDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessagesDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-by-id/:messagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-by-id",
+                ":messagesId"
+              ],
+              "variable": [
+                {
+                  "key": "messagesId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetByCampaign",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-by-campaign/:messagesCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-by-campaign",
+                ":messagesCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messagesCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetByStatus",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-by-status/:messagesStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-by-status",
+                ":messagesStatus"
+              ],
+              "variable": [
+                {
+                  "key": "messagesStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetPendingMessages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-pending-messages/:messagesStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-pending-messages",
+                ":messagesStatus"
+              ],
+              "variable": [
+                {
+                  "key": "messagesStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessagesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-messages-count/:messagesCampaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-messages-count",
+                ":messagesCampaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messagesCampaignId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessagesWithCampaign",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/get-messages-with-campaign/:campaignsIsActive/:messagesStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "get-messages-with-campaign",
+                ":campaignsIsActive",
+                ":messagesStatus"
+              ],
+              "variable": [
+                {
+                  "key": "campaignsIsActive",
+                  "value": ""
+                },
+                {
+                  "key": "messagesStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessageQueuesForMessages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:messageId/message-queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":messageId",
+                "message-queue"
+              ],
+              "variable": [
+                {
+                  "key": "messageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessageQueuesForMessagesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:messageId/message-queue/:messageQueueId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":messageId",
+                "message-queue",
+                ":messageQueueId"
+              ],
+              "variable": [
+                {
+                  "key": "messageId",
+                  "value": ""
+                },
+                {
+                  "key": "messageQueueId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageQueuesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessageLogsForMessages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:messageId/message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":messageId",
+                "message-log"
+              ],
+              "variable": [
+                {
+                  "key": "messageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesGetMessageLogsForMessagesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/:messageId/message-log/:messageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                ":messageId",
+                "message-log",
+                ":messageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "messageId",
+                  "value": ""
+                },
+                {
+                  "key": "messageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessagesUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/update-status/:messagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "update-status",
+                ":messagesId"
+              ],
+              "variable": [
+                {
+                  "key": "messagesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"messagesStatus\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessagesIncrementAttempt",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/messages/increment-attempt/:messagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "messages",
+                "increment-attempt",
+                ":messagesId"
+              ],
+              "variable": [
+                {
+                  "key": "messagesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MessageTemplates",
+      "item": [
+        {
+          "name": "MessageTemplatesList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"string\",\"content\":\"string\",\"type\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:name",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":name"
+              ],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:name",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":name"
+              ],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"string\",\"content\":\"string\",\"type\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:name",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":name"
+              ],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetByName",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/get-by-name/:messageTemplatesName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "get-by-name",
+                ":messageTemplatesName"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetByType",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/get-by-type/:messageTemplatesType",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "get-by-type",
+                ":messageTemplatesType"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplatesType",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesExistsByName",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/exists-by-name/:messageTemplatesName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "exists-by-name",
+                ":messageTemplatesName"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetCampaignsForMessageTemplates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/campaign",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "campaign"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetCampaignsForMessageTemplatesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/campaign/:campaignId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "campaign",
+                ":campaignId"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                },
+                {
+                  "key": "campaignId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "campaignsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetMessagesForMessageTemplates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/message",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "message"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetMessagesForMessageTemplatesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/message/:messageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "message",
+                ":messageId"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                },
+                {
+                  "key": "messageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetOtpMessagesForMessageTemplates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/otp-message",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "otp-message"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetOtpMessagesForMessageTemplatesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/otp-message/:otpMessageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "otp-message",
+                ":otpMessageId"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetOtpMessageLogsForMessageTemplates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/otp-message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "otp-message-log"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetOtpMessageLogsForMessageTemplatesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/otp-message-log/:otpMessageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "otp-message-log",
+                ":otpMessageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetMessageLogsForMessageTemplates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "message-log"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesGetMessageLogsForMessageTemplatesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/:messageTemplateName/message-log/:messageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                ":messageTemplateName",
+                "message-log",
+                ":messageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplateName",
+                  "value": ""
+                },
+                {
+                  "key": "messageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesUpdateContent",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/update-content/:messageTemplatesName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "update-content",
+                ":messageTemplatesName"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"messageTemplatesContent\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "MessageTemplatesUpdateType",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/message-templates/update-type/:messageTemplatesName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "message-templates",
+                "update-type",
+                ":messageTemplatesName"
+              ],
+              "variable": [
+                {
+                  "key": "messageTemplatesName",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"messageTemplatesType\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "OtpMessageLogs",
+      "item": [
+        {
+          "name": "OtpMessageLogsList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"senderId\":123,\"otpMessageId\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"expireTimeSeconds\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"senderId\":123,\"otpMessageId\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"expireTimeSeconds\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/get-by-id/:otpMessageLogsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "get-by-id",
+                ":otpMessageLogsId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetByOtpMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/get-by-otp-message/:otpMessageLogsOtpMessageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "get-by-otp-message",
+                ":otpMessageLogsOtpMessageId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsOtpMessageId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetBySender",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/get-by-sender/:otpMessageLogsSenderId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "get-by-sender",
+                ":otpMessageLogsSenderId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsSenderId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetByStatus",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/get-by-status/:otpMessageLogsStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "get-by-status",
+                ":otpMessageLogsStatus"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsGetOtpLogsWithMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/get-otp-logs-with-message/:otpMessageLogsStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "get-otp-logs-with-message",
+                ":otpMessageLogsStatus"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageLogsUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-logs/update-status/:otpMessageLogsId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-logs",
+                "update-status",
+                ":otpMessageLogsId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageLogsId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"otpMessageLogsStatus\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "OtpMessageQueues",
+      "item": [
+        {
+          "name": "OtpMessageQueuesList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"senderId\":123,\"otpMessageId\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"priority\":123,\"status\":\"string\",\"processDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"senderId\":123,\"otpMessageId\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"priority\":123,\"status\":\"string\",\"processDate\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/get-by-id/:otpMessageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "get-by-id",
+                ":otpMessageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageQueuesId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesGetByOtpMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/get-by-otp-message/:otpMessageQueuesOtpMessageId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "get-by-otp-message",
+                ":otpMessageQueuesOtpMessageId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageQueuesOtpMessageId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesGetPendingQueue",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/get-pending-queue/:otpMessageQueuesStatus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "get-pending-queue",
+                ":otpMessageQueuesStatus"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageQueuesStatus",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/update-status/:otpMessageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "update-status",
+                ":otpMessageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageQueuesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"otpMessageQueuesStatus\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessageQueuesUpdatePriority",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-message-queues/update-priority/:otpMessageQueuesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-message-queues",
+                "update-priority",
+                ":otpMessageQueuesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageQueuesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"otpMessageQueuesPriority\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "OtpMessages",
+      "item": [
+        {
+          "name": "OtpMessagesList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"expireTimeSeconds\":123,\"attemptCount\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"recipient\":\"string\",\"otpCode\":\"string\",\"hashCode\":\"string\",\"templateName\":\"string\",\"status\":\"string\",\"expireTimeSeconds\":123,\"attemptCount\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/get-by-id/:otpMessagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "get-by-id",
+                ":otpMessagesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessagesId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetByRecipient",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/get-by-recipient/:otpMessagesRecipient",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "get-by-recipient",
+                ":otpMessagesRecipient"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessagesRecipient",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesExistsByHash",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/exists-by-hash/:otpMessagesHashCode",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "exists-by-hash",
+                ":otpMessagesHashCode"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessagesHashCode",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetOtpMessageQueuesForOtpMessages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:otpMessageId/otp-message-queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":otpMessageId",
+                "otp-message-queue"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "otpMessagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetOtpMessageQueuesForOtpMessagesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:otpMessageId/otp-message-queue/:otpMessageQueueId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":otpMessageId",
+                "otp-message-queue",
+                ":otpMessageQueueId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageId",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageQueueId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "otpMessagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessageQueuesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetOtpMessageLogsForOtpMessages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:otpMessageId/otp-message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":otpMessageId",
+                "otp-message-log"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "otpMessagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesGetOtpMessageLogsForOtpMessagesDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/:otpMessageId/otp-message-log/:otpMessageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                ":otpMessageId",
+                "otp-message-log",
+                ":otpMessageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessageId",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "otpMessagesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/update-status/:otpMessagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "update-status",
+                ":otpMessagesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessagesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"otpMessagesStatus\":\"string\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "OtpMessagesIncrementAttempt",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/otp-messages/increment-attempt/:otpMessagesId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "otp-messages",
+                "increment-attempt",
+                ":otpMessagesId"
+              ],
+              "variable": [
+                {
+                  "key": "otpMessagesId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Senders",
+      "item": [
+        {
+          "name": "SendersList",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "size",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersInsert",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"name\":\"string\",\"phoneNumber\":\"string\",\"apiUrl\":\"string\",\"username\":\"string\",\"password\":\"string\",\"isActive\":true,\"priority\":123,\"dailyLimit\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "SendersCount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/count",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "count"
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetItem",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersUpdate",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":123,\"name\":\"string\",\"phoneNumber\":\"string\",\"apiUrl\":\"string\",\"username\":\"string\",\"password\":\"string\",\"isActive\":true,\"priority\":123,\"dailyLimit\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "SendersDelete",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetById",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/get-by-id/:sendersId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "get-by-id",
+                ":sendersId"
+              ],
+              "variable": [
+                {
+                  "key": "sendersId",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetActiveSenders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/get-active-senders/:sendersIsActive",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "get-active-senders",
+                ":sendersIsActive"
+              ],
+              "variable": [
+                {
+                  "key": "sendersIsActive",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetByName",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/get-by-name/:sendersName",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "get-by-name",
+                ":sendersName"
+              ],
+              "variable": [
+                {
+                  "key": "sendersName",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersExistsByPhone",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/exists-by-phone/:sendersPhoneNumber",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "exists-by-phone",
+                ":sendersPhoneNumber"
+              ],
+              "variable": [
+                {
+                  "key": "sendersPhoneNumber",
+                  "value": ""
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetMessageLogsForSenders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "message-log"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetMessageLogsForSendersDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/message-log/:messageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "message-log",
+                ":messageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                },
+                {
+                  "key": "messageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetOtpMessageLogsForSenders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/otp-message-log",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "otp-message-log"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetOtpMessageLogsForSendersDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/otp-message-log/:otpMessageLogId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "otp-message-log",
+                ":otpMessageLogId"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageLogId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessageLogsId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetMessageQueuesForSenders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/message-queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "message-queue"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetMessageQueuesForSendersDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/message-queue/:messageQueueId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "message-queue",
+                ":messageQueueId"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                },
+                {
+                  "key": "messageQueueId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "messageQueuesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetOtpMessageQueuesForSenders",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/otp-message-queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "otp-message-queue"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersGetOtpMessageQueuesForSendersDetails",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/:senderId/otp-message-queue/:otpMessageQueueId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                ":senderId",
+                "otp-message-queue",
+                ":otpMessageQueueId"
+              ],
+              "variable": [
+                {
+                  "key": "senderId",
+                  "value": ""
+                },
+                {
+                  "key": "otpMessageQueueId",
+                  "value": ""
+                }
+              ],
+              "query": [
+                {
+                  "key": "sendersId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                },
+                {
+                  "key": "otpMessageQueuesId",
+                  "value": "sample",
+                  "description": "",
+                  "disabled": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "SendersUpdateStatus",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/update-status/:sendersId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "update-status",
+                ":sendersId"
+              ],
+              "variable": [
+                {
+                  "key": "sendersId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"sendersIsActive\":true}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "SendersUpdatePriority",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/update-priority/:sendersId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "update-priority",
+                ":sendersId"
+              ],
+              "variable": [
+                {
+                  "key": "sendersId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"sendersPriority\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "SendersUpdateDailyLimit",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/sms-manager-module/senders/update-daily-limit/:sendersId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "sms-manager-module",
+                "senders",
+                "update-daily-limit",
+                ":sendersId"
+              ],
+              "variable": [
+                {
+                  "key": "sendersId",
+                  "value": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"sendersDailyLimit\":123}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const fallback_env = \"local\";",
+              "const default_base_url = \"http://localhost:6060\";",
+              "",
+              "const isEnvSelected = pm.environment.name && pm.environment.name !== \"no_env\";",
+              "",
+              "let env;",
+              "let base_url;",
+              "",
+              "env = pm.variables.get(\"active_env\") || fallback_env;",
+              "",
+              "if (isEnvSelected) {",
+              "    env = pm.environment.get(\"active_env\");",
+              "",
+              "    if (!env) {",
+              "        env = pm.variables.get(\"active_env\") || fallback_env;",
+              "        pm.environment.set(\"active_env\", env);",
+              "    }",
+              "}",
+              "",
+              "base_url = pm.variables.get(`base_url_${env}`) || default_base_url;",
+              "pm.variables.set(\"base_url\", base_url);",
+              "",
+              "console.log(`Selected Environment: ${pm.environment.name || \"none\"}`);",
+              "console.log(`Resolved active_env: ${env}`);",
+              "console.log(`Resolved base_url: ${base_url}`);"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:6060",
+      "type": "string"
+    },
+    {
+      "key": "base_url_docker",
+      "value": "http://localhost:6060",
+      "type": "string"
+    },
+    {
+      "key": "base_url_test",
+      "value": "http://localhost:6060",
+      "type": "string"
+    },
+    {
+      "key": "base_url_prod",
+      "value": "https://demo-gateway-821209474183.europe-west1.run.app",
+      "type": "string"
+    },
+    {
+      "key": "base_url_cloudrun",
+      "value": "https://demo-gateway.quickcode.net",
+      "type": "string"
+    },
+    {
+      "key": "active_env",
+      "value": "docker",
+      "type": "string"
+    },
+    {
+      "key": "projectName",
+      "value": "Demo",
+      "type": "string"
+    }
+  ]
+}

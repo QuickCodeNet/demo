@@ -1,0 +1,342 @@
+﻿{
+  "Modules": [
+    {
+      "Name": "UserManagerModule",
+      "Description": "UserManagerModule"
+    },
+    {
+      "Name": "EmailManagerModule",
+      "Description": "EmailManagerModule"
+    },
+    {
+      "Name": "OnlineShopModule",
+      "Description": "OnlineShopModule"
+    },
+    {
+      "Name": "SmsManagerModule",
+      "Description": "SmsManagerModule"
+    }
+  ],
+  "Models": [
+    {
+      "Name": "ApiMethodAccessGrants",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - ApiMethodAccessGrant"
+    },
+    {
+      "Name": "ApiMethodDefinitions",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - ApiMethodDefinition"
+    },
+    {
+      "Name": "AspNetRoles",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetRole"
+    },
+    {
+      "Name": "AspNetRoleClaims",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetRoleClaim"
+    },
+    {
+      "Name": "AspNetUsers",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetUser"
+    },
+    {
+      "Name": "AspNetUserClaims",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetUserClaim"
+    },
+    {
+      "Name": "AspNetUserLogins",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetUserLogin"
+    },
+    {
+      "Name": "AspNetUserRoles",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetUserRole"
+    },
+    {
+      "Name": "AspNetUserTokens",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AspNetUserToken"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - AuditLog"
+    },
+    {
+      "Name": "ColumnTypes",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - ColumnType"
+    },
+    {
+      "Name": "KafkaEvents",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - KafkaEvent"
+    },
+    {
+      "Name": "Models",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - Model"
+    },
+    {
+      "Name": "Modules",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - Module"
+    },
+    {
+      "Name": "PermissionGroups",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - PermissionGroup"
+    },
+    {
+      "Name": "PortalMenus",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - PortalMenu"
+    },
+    {
+      "Name": "PortalPageAccessGrants",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - PortalPageAccessGrant"
+    },
+    {
+      "Name": "PortalPageDefinitions",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - PortalPageDefinition"
+    },
+    {
+      "Name": "RefreshTokens",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - RefreshToken"
+    },
+    {
+      "Name": "TableComboboxSettings",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - TableComboboxSetting"
+    },
+    {
+      "Name": "TopicWorkflows",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule - TopicWorkflow"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - AuditLog"
+    },
+    {
+      "Name": "BlackLists",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - BlackList"
+    },
+    {
+      "Name": "Campaigns",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - Campaign"
+    },
+    {
+      "Name": "Messages",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - Message"
+    },
+    {
+      "Name": "MessageLogs",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - MessageLog"
+    },
+    {
+      "Name": "MessageQueues",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - MessageQueue"
+    },
+    {
+      "Name": "MessageTemplates",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - MessageTemplate"
+    },
+    {
+      "Name": "OtpMessages",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - OtpMessage"
+    },
+    {
+      "Name": "OtpMessageLogs",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - OtpMessageLog"
+    },
+    {
+      "Name": "OtpMessageQueues",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - OtpMessageQueue"
+    },
+    {
+      "Name": "Senders",
+      "ModuleName": "EmailManagerModule",
+      "Description": "EmailManagerModule - Sender"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - AuditLog"
+    },
+    {
+      "Name": "Campaigns",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Campaign"
+    },
+    {
+      "Name": "Carts",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Cart"
+    },
+    {
+      "Name": "CartItems",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - CartItem"
+    },
+    {
+      "Name": "Companies",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Company"
+    },
+    {
+      "Name": "CompanyInfos",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - CompanyInfo"
+    },
+    {
+      "Name": "Coupons",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Coupon"
+    },
+    {
+      "Name": "HomePages",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - HomePage"
+    },
+    {
+      "Name": "Orders",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Order"
+    },
+    {
+      "Name": "OrderItems",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - OrderItem"
+    },
+    {
+      "Name": "Payments",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Payment"
+    },
+    {
+      "Name": "Products",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Product"
+    },
+    {
+      "Name": "ProductGroups",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - ProductGroup"
+    },
+    {
+      "Name": "ProductImages",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - ProductImage"
+    },
+    {
+      "Name": "ProductReviews",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - ProductReview"
+    },
+    {
+      "Name": "ProductTypes",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - ProductType"
+    },
+    {
+      "Name": "Shipments",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - Shipment"
+    },
+    {
+      "Name": "ShippingInfos",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - ShippingInfo"
+    },
+    {
+      "Name": "Users",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - User"
+    },
+    {
+      "Name": "UserCoupons",
+      "ModuleName": "OnlineShopModule",
+      "Description": "OnlineShopModule - UserCoupon"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - AuditLog"
+    },
+    {
+      "Name": "BlackLists",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - BlackList"
+    },
+    {
+      "Name": "Campaigns",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - Campaign"
+    },
+    {
+      "Name": "Messages",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - Message"
+    },
+    {
+      "Name": "MessageLogs",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - MessageLog"
+    },
+    {
+      "Name": "MessageQueues",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - MessageQueue"
+    },
+    {
+      "Name": "MessageTemplates",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - MessageTemplate"
+    },
+    {
+      "Name": "OtpMessages",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - OtpMessage"
+    },
+    {
+      "Name": "OtpMessageLogs",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - OtpMessageLog"
+    },
+    {
+      "Name": "OtpMessageQueues",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - OtpMessageQueue"
+    },
+    {
+      "Name": "Senders",
+      "ModuleName": "SmsManagerModule",
+      "Description": "SmsManagerModule - Sender"
+    },
+    {
+      "Name": "Authentications",
+      "ModuleName": "UserManagerModule",
+      "Description": "UserManagerModule- Authentications"
+    }
+  ]
+}

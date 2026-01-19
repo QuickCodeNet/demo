@@ -1,0 +1,8 @@
+﻿SELECT U.[ID], U.[EMAIL], U.[NAME], U.[CREATED_AT], U.[IS_NEW], U.[COMPANY_ID] 
+FROM [PRODUCT_REVIEWS] PR 
+	INNER JOIN [USERS] U 
+			ON PR.[USER_ID] = U.[ID] 
+WHERE PR.[IsDeleted] = 0 
+	AND U.[IsDeleted] = 0 
+	AND U.[ID] = @PRM_USERS_ID 
+ORDER BY U.[ID] 

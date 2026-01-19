@@ -1,0 +1,747 @@
+﻿{
+  "PortalMenus": [
+    {
+      "Key": "UserManagerModule_UserManagerModule",
+      "Name": "UserManagerModule",
+      "Text": "UserManagerModule",
+      "Tooltip": "UserManagerModule",
+      "ActionName": "",
+      "OrderNo": 100,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ApiMethodAccessGrants",
+      "Name": "ApiMethodAccessGrants",
+      "Text": "ApiMethodAccessGrants",
+      "Tooltip": "ApiMethodAccessGrants",
+      "ActionName": "/UserManagerModuleApiMethodAccessGrants/List",
+      "OrderNo": 100,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ApiMethodDefinitions",
+      "Name": "ApiMethodDefinitions",
+      "Text": "ApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions",
+      "ActionName": "/UserManagerModuleApiMethodDefinitions/List",
+      "OrderNo": 101,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetRoles",
+      "Name": "AspNetRoles",
+      "Text": "AspNetRoles",
+      "Tooltip": "AspNetRoles",
+      "ActionName": "/UserManagerModuleAspNetRoles/List",
+      "OrderNo": 102,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetRoleClaims",
+      "Name": "AspNetRoleClaims",
+      "Text": "AspNetRoleClaims",
+      "Tooltip": "AspNetRoleClaims",
+      "ActionName": "/UserManagerModuleAspNetRoleClaims/List",
+      "OrderNo": 103,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUsers",
+      "Name": "AspNetUsers",
+      "Text": "AspNetUsers",
+      "Tooltip": "AspNetUsers",
+      "ActionName": "/UserManagerModuleAspNetUsers/List",
+      "OrderNo": 104,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserClaims",
+      "Name": "AspNetUserClaims",
+      "Text": "AspNetUserClaims",
+      "Tooltip": "AspNetUserClaims",
+      "ActionName": "/UserManagerModuleAspNetUserClaims/List",
+      "OrderNo": 105,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserLogins",
+      "Name": "AspNetUserLogins",
+      "Text": "AspNetUserLogins",
+      "Tooltip": "AspNetUserLogins",
+      "ActionName": "/UserManagerModuleAspNetUserLogins/List",
+      "OrderNo": 106,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserRoles",
+      "Name": "AspNetUserRoles",
+      "Text": "AspNetUserRoles",
+      "Tooltip": "AspNetUserRoles",
+      "ActionName": "/UserManagerModuleAspNetUserRoles/List",
+      "OrderNo": 107,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AspNetUserTokens",
+      "Name": "AspNetUserTokens",
+      "Text": "AspNetUserTokens",
+      "Tooltip": "AspNetUserTokens",
+      "ActionName": "/UserManagerModuleAspNetUserTokens/List",
+      "OrderNo": 108,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/UserManagerModuleAuditLogs/List",
+      "OrderNo": 109,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_ColumnTypes",
+      "Name": "ColumnTypes",
+      "Text": "ColumnTypes",
+      "Tooltip": "ColumnTypes",
+      "ActionName": "/UserManagerModuleColumnTypes/List",
+      "OrderNo": 110,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_KafkaEvents",
+      "Name": "KafkaEvents",
+      "Text": "KafkaEvents",
+      "Tooltip": "KafkaEvents",
+      "ActionName": "/UserManagerModuleKafkaEvents/List",
+      "OrderNo": 111,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_Models",
+      "Name": "Models",
+      "Text": "Models",
+      "Tooltip": "Models",
+      "ActionName": "/UserManagerModuleModels/List",
+      "OrderNo": 112,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_Modules",
+      "Name": "Modules",
+      "Text": "Modules",
+      "Tooltip": "Modules",
+      "ActionName": "/UserManagerModuleModules/List",
+      "OrderNo": 113,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PermissionGroups",
+      "Name": "PermissionGroups",
+      "Text": "PermissionGroups",
+      "Tooltip": "PermissionGroups",
+      "ActionName": "/UserManagerModulePermissionGroups/List",
+      "OrderNo": 114,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalMenus",
+      "Name": "PortalMenus",
+      "Text": "PortalMenus",
+      "Tooltip": "PortalMenus",
+      "ActionName": "/UserManagerModulePortalMenus/List",
+      "OrderNo": 115,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalPageAccessGrants",
+      "Name": "PortalPageAccessGrants",
+      "Text": "PortalPageAccessGrants",
+      "Tooltip": "PortalPageAccessGrants",
+      "ActionName": "/UserManagerModulePortalPageAccessGrants/List",
+      "OrderNo": 116,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_PortalPageDefinitions",
+      "Name": "PortalPageDefinitions",
+      "Text": "PortalPageDefinitions",
+      "Tooltip": "PortalPageDefinitions",
+      "ActionName": "/UserManagerModulePortalPageDefinitions/List",
+      "OrderNo": 117,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_RefreshTokens",
+      "Name": "RefreshTokens",
+      "Text": "RefreshTokens",
+      "Tooltip": "RefreshTokens",
+      "ActionName": "/UserManagerModuleRefreshTokens/List",
+      "OrderNo": 118,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_TableComboboxSettings",
+      "Name": "TableComboboxSettings",
+      "Text": "TableComboboxSettings",
+      "Tooltip": "TableComboboxSettings",
+      "ActionName": "/UserManagerModuleTableComboboxSettings/List",
+      "OrderNo": 119,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "UserManagerModule_TopicWorkflows",
+      "Name": "TopicWorkflows",
+      "Text": "TopicWorkflows",
+      "Tooltip": "TopicWorkflows",
+      "ActionName": "/UserManagerModuleTopicWorkflows/List",
+      "OrderNo": 120,
+      "ParentName": "UserManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_EmailManagerModule",
+      "Name": "EmailManagerModule",
+      "Text": "EmailManagerModule",
+      "Tooltip": "EmailManagerModule",
+      "ActionName": "",
+      "OrderNo": 121,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/EmailManagerModuleAuditLogs/List",
+      "OrderNo": 121,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_BlackLists",
+      "Name": "BlackLists",
+      "Text": "BlackLists",
+      "Tooltip": "BlackLists",
+      "ActionName": "/EmailManagerModuleBlackLists/List",
+      "OrderNo": 122,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/EmailManagerModuleCampaigns/List",
+      "OrderNo": 123,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Messages",
+      "Name": "Messages",
+      "Text": "Messages",
+      "Tooltip": "Messages",
+      "ActionName": "/EmailManagerModuleMessages/List",
+      "OrderNo": 124,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageLogs",
+      "Name": "MessageLogs",
+      "Text": "MessageLogs",
+      "Tooltip": "MessageLogs",
+      "ActionName": "/EmailManagerModuleMessageLogs/List",
+      "OrderNo": 125,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageQueues",
+      "Name": "MessageQueues",
+      "Text": "MessageQueues",
+      "Tooltip": "MessageQueues",
+      "ActionName": "/EmailManagerModuleMessageQueues/List",
+      "OrderNo": 126,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_MessageTemplates",
+      "Name": "MessageTemplates",
+      "Text": "MessageTemplates",
+      "Tooltip": "MessageTemplates",
+      "ActionName": "/EmailManagerModuleMessageTemplates/List",
+      "OrderNo": 127,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessages",
+      "Name": "OtpMessages",
+      "Text": "OtpMessages",
+      "Tooltip": "OtpMessages",
+      "ActionName": "/EmailManagerModuleOtpMessages/List",
+      "OrderNo": 128,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessageLogs",
+      "Name": "OtpMessageLogs",
+      "Text": "OtpMessageLogs",
+      "Tooltip": "OtpMessageLogs",
+      "ActionName": "/EmailManagerModuleOtpMessageLogs/List",
+      "OrderNo": 129,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_OtpMessageQueues",
+      "Name": "OtpMessageQueues",
+      "Text": "OtpMessageQueues",
+      "Tooltip": "OtpMessageQueues",
+      "ActionName": "/EmailManagerModuleOtpMessageQueues/List",
+      "OrderNo": 130,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "EmailManagerModule_Senders",
+      "Name": "Senders",
+      "Text": "Senders",
+      "Tooltip": "Senders",
+      "ActionName": "/EmailManagerModuleSenders/List",
+      "OrderNo": 131,
+      "ParentName": "EmailManagerModule"
+    },
+    {
+      "Key": "OnlineShopModule_OnlineShopModule",
+      "Name": "OnlineShopModule",
+      "Text": "OnlineShopModule",
+      "Tooltip": "OnlineShopModule",
+      "ActionName": "",
+      "OrderNo": 132,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/OnlineShopModuleAuditLogs/List",
+      "OrderNo": 132,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/OnlineShopModuleCampaigns/List",
+      "OrderNo": 133,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Carts",
+      "Name": "Carts",
+      "Text": "Carts",
+      "Tooltip": "Carts",
+      "ActionName": "/OnlineShopModuleCarts/List",
+      "OrderNo": 134,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_CartItems",
+      "Name": "CartItems",
+      "Text": "CartItems",
+      "Tooltip": "CartItems",
+      "ActionName": "/OnlineShopModuleCartItems/List",
+      "OrderNo": 135,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Companies",
+      "Name": "Companies",
+      "Text": "Companies",
+      "Tooltip": "Companies",
+      "ActionName": "/OnlineShopModuleCompanies/List",
+      "OrderNo": 136,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_CompanyInfos",
+      "Name": "CompanyInfos",
+      "Text": "CompanyInfos",
+      "Tooltip": "CompanyInfos",
+      "ActionName": "/OnlineShopModuleCompanyInfos/List",
+      "OrderNo": 137,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Coupons",
+      "Name": "Coupons",
+      "Text": "Coupons",
+      "Tooltip": "Coupons",
+      "ActionName": "/OnlineShopModuleCoupons/List",
+      "OrderNo": 138,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_HomePages",
+      "Name": "HomePages",
+      "Text": "HomePages",
+      "Tooltip": "HomePages",
+      "ActionName": "/OnlineShopModuleHomePages/List",
+      "OrderNo": 139,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Orders",
+      "Name": "Orders",
+      "Text": "Orders",
+      "Tooltip": "Orders",
+      "ActionName": "/OnlineShopModuleOrders/List",
+      "OrderNo": 140,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_OrderItems",
+      "Name": "OrderItems",
+      "Text": "OrderItems",
+      "Tooltip": "OrderItems",
+      "ActionName": "/OnlineShopModuleOrderItems/List",
+      "OrderNo": 141,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Payments",
+      "Name": "Payments",
+      "Text": "Payments",
+      "Tooltip": "Payments",
+      "ActionName": "/OnlineShopModulePayments/List",
+      "OrderNo": 142,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Products",
+      "Name": "Products",
+      "Text": "Products",
+      "Tooltip": "Products",
+      "ActionName": "/OnlineShopModuleProducts/List",
+      "OrderNo": 143,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductGroups",
+      "Name": "ProductGroups",
+      "Text": "ProductGroups",
+      "Tooltip": "ProductGroups",
+      "ActionName": "/OnlineShopModuleProductGroups/List",
+      "OrderNo": 144,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductImages",
+      "Name": "ProductImages",
+      "Text": "ProductImages",
+      "Tooltip": "ProductImages",
+      "ActionName": "/OnlineShopModuleProductImages/List",
+      "OrderNo": 145,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductReviews",
+      "Name": "ProductReviews",
+      "Text": "ProductReviews",
+      "Tooltip": "ProductReviews",
+      "ActionName": "/OnlineShopModuleProductReviews/List",
+      "OrderNo": 146,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ProductTypes",
+      "Name": "ProductTypes",
+      "Text": "ProductTypes",
+      "Tooltip": "ProductTypes",
+      "ActionName": "/OnlineShopModuleProductTypes/List",
+      "OrderNo": 147,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Shipments",
+      "Name": "Shipments",
+      "Text": "Shipments",
+      "Tooltip": "Shipments",
+      "ActionName": "/OnlineShopModuleShipments/List",
+      "OrderNo": 148,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_ShippingInfos",
+      "Name": "ShippingInfos",
+      "Text": "ShippingInfos",
+      "Tooltip": "ShippingInfos",
+      "ActionName": "/OnlineShopModuleShippingInfos/List",
+      "OrderNo": 149,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_Users",
+      "Name": "Users",
+      "Text": "Users",
+      "Tooltip": "Users",
+      "ActionName": "/OnlineShopModuleUsers/List",
+      "OrderNo": 150,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "OnlineShopModule_UserCoupons",
+      "Name": "UserCoupons",
+      "Text": "UserCoupons",
+      "Tooltip": "UserCoupons",
+      "ActionName": "/OnlineShopModuleUserCoupons/List",
+      "OrderNo": 151,
+      "ParentName": "OnlineShopModule"
+    },
+    {
+      "Key": "SmsManagerModule_SmsManagerModule",
+      "Name": "SmsManagerModule",
+      "Text": "SmsManagerModule",
+      "Tooltip": "SmsManagerModule",
+      "ActionName": "",
+      "OrderNo": 152,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/SmsManagerModuleAuditLogs/List",
+      "OrderNo": 152,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_BlackLists",
+      "Name": "BlackLists",
+      "Text": "BlackLists",
+      "Tooltip": "BlackLists",
+      "ActionName": "/SmsManagerModuleBlackLists/List",
+      "OrderNo": 153,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Campaigns",
+      "Name": "Campaigns",
+      "Text": "Campaigns",
+      "Tooltip": "Campaigns",
+      "ActionName": "/SmsManagerModuleCampaigns/List",
+      "OrderNo": 154,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Messages",
+      "Name": "Messages",
+      "Text": "Messages",
+      "Tooltip": "Messages",
+      "ActionName": "/SmsManagerModuleMessages/List",
+      "OrderNo": 155,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageLogs",
+      "Name": "MessageLogs",
+      "Text": "MessageLogs",
+      "Tooltip": "MessageLogs",
+      "ActionName": "/SmsManagerModuleMessageLogs/List",
+      "OrderNo": 156,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageQueues",
+      "Name": "MessageQueues",
+      "Text": "MessageQueues",
+      "Tooltip": "MessageQueues",
+      "ActionName": "/SmsManagerModuleMessageQueues/List",
+      "OrderNo": 157,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_MessageTemplates",
+      "Name": "MessageTemplates",
+      "Text": "MessageTemplates",
+      "Tooltip": "MessageTemplates",
+      "ActionName": "/SmsManagerModuleMessageTemplates/List",
+      "OrderNo": 158,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessages",
+      "Name": "OtpMessages",
+      "Text": "OtpMessages",
+      "Tooltip": "OtpMessages",
+      "ActionName": "/SmsManagerModuleOtpMessages/List",
+      "OrderNo": 159,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessageLogs",
+      "Name": "OtpMessageLogs",
+      "Text": "OtpMessageLogs",
+      "Tooltip": "OtpMessageLogs",
+      "ActionName": "/SmsManagerModuleOtpMessageLogs/List",
+      "OrderNo": 160,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_OtpMessageQueues",
+      "Name": "OtpMessageQueues",
+      "Text": "OtpMessageQueues",
+      "Tooltip": "OtpMessageQueues",
+      "ActionName": "/SmsManagerModuleOtpMessageQueues/List",
+      "OrderNo": 161,
+      "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "SmsManagerModule_Senders",
+      "Name": "Senders",
+      "Text": "Senders",
+      "Tooltip": "Senders",
+      "ActionName": "/SmsManagerModuleSenders/List",
+      "OrderNo": 162,
+      "ParentName": "SmsManagerModule"
+    }
+  ],
+  "TableComboboxSettings": [
+    {
+      "TableName": "ApiMethodDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "HttpMethod, UrlPath",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "AspNetRole",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetUser",
+      "IdColumn": "Id",
+      "TextColumns": "Id, FirstName, LastName",
+      "StringFormat": "{0} - {1} {2}"
+    },
+    {
+      "TableName": "KafkaEvent",
+      "IdColumn": "TopicName",
+      "TextColumns": "TopicName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Module",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Model",
+      "IdColumn": "Name",
+      "TextColumns": "Name, ModuleName",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "PermissionGroup",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPageDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "Key",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Campaign",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Message",
+      "IdColumn": "Id",
+      "TextColumns": "Recipient",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Sender",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "MessageTemplate",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "OtpMessage",
+      "IdColumn": "Id",
+      "TextColumns": "Recipient",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "User",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Cart",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Product",
+      "IdColumn": "Id",
+      "TextColumns": "Model",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Company",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Coupon",
+      "IdColumn": "Id",
+      "TextColumns": "CouponCode",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Order",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Payment",
+      "IdColumn": "Id",
+      "TextColumns": "TransactionId",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ShippingInfo",
+      "IdColumn": "Id",
+      "TextColumns": "RecipientName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ProductGroup",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ProductType",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    }
+  ]
+}

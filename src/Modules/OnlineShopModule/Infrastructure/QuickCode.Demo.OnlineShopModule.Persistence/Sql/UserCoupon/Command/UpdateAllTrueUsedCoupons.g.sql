@@ -1,0 +1,2 @@
+﻿UPDATE [USER_COUPONS] 
+	SET [IS_USED] = true 
