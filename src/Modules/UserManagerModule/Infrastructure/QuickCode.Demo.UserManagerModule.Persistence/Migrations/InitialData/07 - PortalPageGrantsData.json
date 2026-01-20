@@ -2204,6 +2204,41 @@
       "ModelName": "Senders",
       "PageAction": "Delete",
       "PagePath": "/SmsManagerModuleSenders/Delete"
+    },
+    {
+      "Key": "TodoListModuleAuditLogsList",
+      "ModuleName": "TodoListModule",
+      "ModelName": "AuditLogs",
+      "PageAction": "List",
+      "PagePath": "/TodoListModuleAuditLogs/List"
+    },
+    {
+      "Key": "TodoListModuleAuditLogsDetail",
+      "ModuleName": "TodoListModule",
+      "ModelName": "AuditLogs",
+      "PageAction": "Detail",
+      "PagePath": "/TodoListModuleAuditLogs/Detail"
+    },
+    {
+      "Key": "TodoListModuleAuditLogsInsert",
+      "ModuleName": "TodoListModule",
+      "ModelName": "AuditLogs",
+      "PageAction": "Insert",
+      "PagePath": "/TodoListModuleAuditLogs/Insert"
+    },
+    {
+      "Key": "TodoListModuleAuditLogsUpdate",
+      "ModuleName": "TodoListModule",
+      "ModelName": "AuditLogs",
+      "PageAction": "Update",
+      "PagePath": "/TodoListModuleAuditLogs/Update"
+    },
+    {
+      "Key": "TodoListModuleAuditLogsDelete",
+      "ModuleName": "TodoListModule",
+      "ModelName": "AuditLogs",
+      "PageAction": "Delete",
+      "PagePath": "/TodoListModuleAuditLogs/Delete"
     }
   ],
   "PortalPageAccessGrants": [
@@ -6612,6 +6647,76 @@
     },
     {
       "PortalPageDefinitionKey": "SmsManagerModuleSendersDelete",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Delete",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsList",
+      "PermissionGroupName": "Admin",
+      "PageAction": "List",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsList",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "List",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsDetail",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Detail",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsDetail",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Detail",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsInsert",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Insert",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsInsert",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Insert",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsUpdate",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Update",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsUpdate",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Update",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsDelete",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Delete",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "TodoListModuleAuditLogsDelete",
       "PermissionGroupName": "Viewer",
       "PageAction": "Delete",
       "ModifiedBy": "System",

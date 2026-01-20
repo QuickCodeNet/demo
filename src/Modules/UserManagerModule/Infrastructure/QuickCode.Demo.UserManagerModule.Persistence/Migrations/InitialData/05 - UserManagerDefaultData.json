@@ -602,6 +602,24 @@
       "ActionName": "/SmsManagerModuleSenders/List",
       "OrderNo": 162,
       "ParentName": "SmsManagerModule"
+    },
+    {
+      "Key": "TodoListModule_TodoListModule",
+      "Name": "TodoListModule",
+      "Text": "TodoListModule",
+      "Tooltip": "TodoListModule",
+      "ActionName": "",
+      "OrderNo": 163,
+      "ParentName": "TodoListModule"
+    },
+    {
+      "Key": "TodoListModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/TodoListModuleAuditLogs/List",
+      "OrderNo": 163,
+      "ParentName": "TodoListModule"
     }
   ],
   "TableComboboxSettings": [

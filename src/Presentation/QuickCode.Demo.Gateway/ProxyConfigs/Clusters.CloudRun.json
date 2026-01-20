@@ -40,6 +40,14 @@
             "address": "https://demo-sms-manager-module-821209474183.europe-west1.run.app"
           }
         }
+      },
+      "todo-list-module-api": {
+        "clusterId": "todo-list-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-todo-list-module-821209474183.europe-west1.run.app"
+          }
+        }
       }
     },
     "routes": {
@@ -140,6 +148,26 @@
         "transforms": [
           {
             "PathPattern": "api/sms-manager-module/{**catch-all}"
+          }
+        ]
+      },
+      "todo-list-module": {
+        "routeId": "todo-list-module",
+        "clusterId": "todo-list-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/todo-list-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/todo-list-module/{**catch-all}"
           }
         ]
       }

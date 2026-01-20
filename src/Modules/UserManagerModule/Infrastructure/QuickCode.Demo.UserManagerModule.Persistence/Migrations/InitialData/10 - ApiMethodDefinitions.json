@@ -6418,6 +6418,60 @@
     "UrlPath": "/api/sms-manager-module/audit-logs/{id:Guid}"
   },
   {
+    "Key": "GetapitodolistmoduleauditlogsAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/todo-list-module/audit-logs"
+  },
+  {
+    "Key": "GetapitodolistmoduleauditlogscountAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/todo-list-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapitodolistmoduleauditlogsAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/todo-list-module/audit-logs"
+  },
+  {
+    "Key": "GetapitodolistmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapitodolistmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapitodolistmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TodoListModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+  },
+  {
     "Key": "GetapiusermanagermoduleportalpagedefinitionsgetportalpagedefinitionspermissiongroupnamePortalPageDefinitionsController",
     "ModuleName": "UserManagerModule",
     "ModelName": "PortalPageDefinitions",

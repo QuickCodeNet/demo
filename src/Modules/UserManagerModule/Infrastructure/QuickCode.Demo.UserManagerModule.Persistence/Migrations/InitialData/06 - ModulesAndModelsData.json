@@ -15,6 +15,10 @@
     {
       "Name": "SmsManagerModule",
       "Description": "SmsManagerModule"
+    },
+    {
+      "Name": "TodoListModule",
+      "Description": "TodoListModule"
     }
   ],
   "Models": [
@@ -332,6 +336,11 @@
       "Name": "Senders",
       "ModuleName": "SmsManagerModule",
       "Description": "SmsManagerModule - Sender"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "TodoListModule",
+      "Description": "TodoListModule - AuditLog"
     },
     {
       "Name": "Authentications",

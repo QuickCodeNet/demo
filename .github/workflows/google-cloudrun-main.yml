@@ -44,6 +44,11 @@ jobs:
     uses: ./.github/workflows/google-cloudrun-sms-manager-module.yml
     secrets: inherit
 
+  todo-list-module:
+    name: Todo List Module Api
+    uses: ./.github/workflows/google-cloudrun-todo-list-module.yml
+    secrets: inherit
+
 
   complete:
     name: Complete Deployments
@@ -56,6 +61,7 @@ jobs:
       - email-manager-module
       - online-shop-module
       - sms-manager-module
+      - todo-list-module
     if: always()
     steps:
       - name: Complete Notification

@@ -106,6 +106,15 @@ services:
       - "6004:80"
 
 
+  quickcode-demo-todo-list-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      
+    ports:
+      - "6005:80"
+
+
 #[-WEB-]
   quickcode-demo-portal:
     environment:

@@ -91,10 +91,17 @@
       <Compile Include="Nswag/Clients/SmsManagerModuleApi/**/*.cs" />
     </ItemGroup>
   </Target>
+  <Target Name="NSwag__TodoListModule" BeforeTargets="AfterBuild" Condition="'$(GenerateCode)' == 'True'">
+    <Exec WorkingDirectory="$(SolutionDir)Common/QuickCode.Demo.Common/Nswag/Configs/" Command="$(NSwagExe_Net80) run nswag_config.json /variables:Configuration=$(Configuration),NswagUrl=$(ModuleNswagTodoListModuleUrl),ProjectDir=$(ProjectDir),ProjectName=TodoListModuleApi" ContinueOnError="true" />
+    <ItemGroup>
+      <Compile Include="Nswag/Clients/TodoListModuleApi/**/*.cs" />
+    </ItemGroup>
+  </Target>
   <PropertyGroup>
     <ModuleNswagUserManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.UserManagerModule.Api-Swagger.json'))</ModuleNswagUserManagerModuleUrl>
     <ModuleNswagEmailManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.EmailManagerModule.Api-Swagger.json'))</ModuleNswagEmailManagerModuleUrl>
     <ModuleNswagOnlineShopModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.OnlineShopModule.Api-Swagger.json'))</ModuleNswagOnlineShopModuleUrl>
     <ModuleNswagSmsManagerModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.SmsManagerModule.Api-Swagger.json'))</ModuleNswagSmsManagerModuleUrl>
+    <ModuleNswagTodoListModuleUrl>$([MSBuild]::Escape('$(SolutionDir)swagger_files/QuickCode.Demo.TodoListModule.Api-Swagger.json'))</ModuleNswagTodoListModuleUrl>
   </PropertyGroup>
 </Project>

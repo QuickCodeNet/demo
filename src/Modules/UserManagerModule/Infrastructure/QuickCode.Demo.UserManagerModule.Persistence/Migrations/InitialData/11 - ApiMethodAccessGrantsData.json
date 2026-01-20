@@ -4207,6 +4207,24 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogscountAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogsidguidAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiusermanagermoduleportalpagedefinitionsgetportalpagedefinitionspermissiongroupnamePortalPageDefinitionsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -8444,6 +8462,24 @@
   },
   {
     "ApiMethodDefinitionKey": "GetapismsmanagermoduleauditlogsidguidAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogscountAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapitodolistmoduleauditlogsidguidAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": true

@@ -1256,6 +1256,21 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "PostapitodolistmoduleauditlogsAuditLogsController",
+    "TopicName": "demo.todo_list_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitodolistmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.todo_list_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitodolistmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.todo_list_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "PostapiusermanagermoduleportalpagedefinitionsupdateportalpagepermissionPortalPageDefinitionsController",
     "TopicName": "demo.user_manager_module.portal_page_definitions.update_portal_page_permission_post",
     "IsActive": false

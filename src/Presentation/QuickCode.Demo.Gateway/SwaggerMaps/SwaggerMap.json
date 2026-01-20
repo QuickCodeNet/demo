@@ -26,5 +26,12 @@
     "PathOptions": {
       "/api": "/api"
     }
+  },
+  "todo-list-module-api": {
+    "Endpoint": "/swagger/todo-list-module-api/v1/swagger.json",
+    "Spec": "/swagger/v1/swagger.json",
+    "PathOptions": {
+      "/api": "/api"
+    }
   }
 }
