@@ -1,0 +1,4 @@
+﻿UPDATE [TASKS] 
+	SET [STATUS] = @TASKS_STATUS 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_TASKS_ID

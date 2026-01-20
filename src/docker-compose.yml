@@ -70,12 +70,12 @@ services:
       - demo-pg-data
       
 
-  quickcode-demo-todo-list-module-api:
-    container_name: "quickcode-demo-todo-list-module-api"
-    image: ${DOCKER_REGISTRY-}quickcode-demo-todo-list-module-api
+  quickcode-demo-task-manager-module-api:
+    container_name: "quickcode-demo-task-manager-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-task-manager-module-api
     build:
       context: . 
-      dockerfile: Modules/TodoListModule/Presentation/QuickCode.Demo.TodoListModule.Api/Dockerfile
+      dockerfile: Modules/TaskManagerModule/Presentation/QuickCode.Demo.TaskManagerModule.Api/Dockerfile
     depends_on:
       - demo-sql-data
       - demo-pg-data

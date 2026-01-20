@@ -17,8 +17,8 @@
       "Description": "SmsManagerModule"
     },
     {
-      "Name": "TodoListModule",
-      "Description": "TodoListModule"
+      "Name": "TaskManagerModule",
+      "Description": "TaskManagerModule"
     }
   ],
   "Models": [
@@ -339,8 +339,28 @@
     },
     {
       "Name": "AuditLogs",
-      "ModuleName": "TodoListModule",
-      "Description": "TodoListModule - AuditLog"
+      "ModuleName": "TaskManagerModule",
+      "Description": "TaskManagerModule - AuditLog"
+    },
+    {
+      "Name": "Projects",
+      "ModuleName": "TaskManagerModule",
+      "Description": "TaskManagerModule - Project"
+    },
+    {
+      "Name": "Tasks",
+      "ModuleName": "TaskManagerModule",
+      "Description": "TaskManagerModule - Task"
+    },
+    {
+      "Name": "TaskComments",
+      "ModuleName": "TaskManagerModule",
+      "Description": "TaskManagerModule - TaskComment"
+    },
+    {
+      "Name": "Users",
+      "ModuleName": "TaskManagerModule",
+      "Description": "TaskManagerModule - User"
     },
     {
       "Name": "Authentications",

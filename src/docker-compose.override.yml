@@ -106,7 +106,7 @@ services:
       - "6004:80"
 
 
-  quickcode-demo-todo-list-module-api:
+  quickcode-demo-task-manager-module-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Local
       - ASPNETCORE_URLS=http://+

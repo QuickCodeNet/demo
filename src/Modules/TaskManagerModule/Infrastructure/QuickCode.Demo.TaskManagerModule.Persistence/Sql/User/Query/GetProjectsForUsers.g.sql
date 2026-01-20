@@ -1,0 +1,8 @@
+﻿SELECT U.[ID], U.[USERNAME], U.[EMAIL], U.[PASSWORD], U.[IS_ACTIVE] 
+FROM [PROJECTS] P 
+	INNER JOIN [USERS] U 
+			ON P.[USER_ID] = U.[ID] 
+WHERE P.[IsDeleted] = 0 
+	AND U.[IsDeleted] = 0 
+	AND U.[ID] = @PRM_USERS_ID 
+ORDER BY U.[ID] 

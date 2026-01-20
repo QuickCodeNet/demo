@@ -604,22 +604,58 @@
       "ParentName": "SmsManagerModule"
     },
     {
-      "Key": "TodoListModule_TodoListModule",
-      "Name": "TodoListModule",
-      "Text": "TodoListModule",
-      "Tooltip": "TodoListModule",
+      "Key": "TaskManagerModule_TaskManagerModule",
+      "Name": "TaskManagerModule",
+      "Text": "TaskManagerModule",
+      "Tooltip": "TaskManagerModule",
       "ActionName": "",
       "OrderNo": 163,
-      "ParentName": "TodoListModule"
+      "ParentName": "TaskManagerModule"
     },
     {
-      "Key": "TodoListModule_AuditLogs",
+      "Key": "TaskManagerModule_AuditLogs",
       "Name": "AuditLogs",
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
-      "ActionName": "/TodoListModuleAuditLogs/List",
+      "ActionName": "/TaskManagerModuleAuditLogs/List",
       "OrderNo": 163,
-      "ParentName": "TodoListModule"
+      "ParentName": "TaskManagerModule"
+    },
+    {
+      "Key": "TaskManagerModule_Projects",
+      "Name": "Projects",
+      "Text": "Projects",
+      "Tooltip": "Projects",
+      "ActionName": "/TaskManagerModuleProjects/List",
+      "OrderNo": 164,
+      "ParentName": "TaskManagerModule"
+    },
+    {
+      "Key": "TaskManagerModule_Tasks",
+      "Name": "Tasks",
+      "Text": "Tasks",
+      "Tooltip": "Tasks",
+      "ActionName": "/TaskManagerModuleTasks/List",
+      "OrderNo": 165,
+      "ParentName": "TaskManagerModule"
+    },
+    {
+      "Key": "TaskManagerModule_TaskComments",
+      "Name": "TaskComments",
+      "Text": "TaskComments",
+      "Tooltip": "TaskComments",
+      "ActionName": "/TaskManagerModuleTaskComments/List",
+      "OrderNo": 166,
+      "ParentName": "TaskManagerModule"
+    },
+    {
+      "Key": "TaskManagerModule_Users",
+      "Name": "Users",
+      "Text": "Users",
+      "Tooltip": "Users",
+      "ActionName": "/TaskManagerModuleUsers/List",
+      "OrderNo": 167,
+      "ParentName": "TaskManagerModule"
     }
   ],
   "TableComboboxSettings": [
@@ -759,6 +795,12 @@
       "TableName": "ProductType",
       "IdColumn": "Id",
       "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Task",
+      "IdColumn": "Id",
+      "TextColumns": "Title",
       "StringFormat": "{0}"
     }
   ]

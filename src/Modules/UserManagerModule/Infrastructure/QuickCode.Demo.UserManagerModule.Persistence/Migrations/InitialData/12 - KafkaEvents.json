@@ -1256,18 +1256,118 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "PostapitodolistmoduleauditlogsAuditLogsController",
-    "TopicName": "demo.todo_list_module.audit_logs_post",
+    "ApiMethodDefinitionKey": "PatchapitaskmanagermoduleusersactivateuserusersidintUsersController",
+    "TopicName": "demo.task_manager_module.users.activate_user_patch",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "PutapitodolistmoduleauditlogsidguidAuditLogsController",
-    "TopicName": "demo.todo_list_module.audit_logs_put",
+    "ApiMethodDefinitionKey": "PatchapitaskmanagermoduleusersdeactivateuserusersidintUsersController",
+    "TopicName": "demo.task_manager_module.users.deactivate_user_patch",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "DeleteapitodolistmoduleauditlogsidguidAuditLogsController",
-    "TopicName": "demo.todo_list_module.audit_logs_delete",
+    "ApiMethodDefinitionKey": "PostapitaskmanagermoduleusersUsersController",
+    "TopicName": "demo.task_manager_module.users_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitaskmanagermoduleusersidintUsersController",
+    "TopicName": "demo.task_manager_module.users_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduleusersidintUsersController",
+    "TopicName": "demo.task_manager_module.users_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitaskmanagermoduletasksupdatetaskstatustasksidintTasksController",
+    "TopicName": "demo.task_manager_module.tasks.update_task_status_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitaskmanagermoduletasksupdatetaskprioritytasksidintTasksController",
+    "TopicName": "demo.task_manager_module.tasks.update_task_priority_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduletasksdeletetasktasksidintTasksController",
+    "TopicName": "demo.task_manager_module.tasks.delete_task_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitaskmanagermoduletasksTasksController",
+    "TopicName": "demo.task_manager_module.tasks_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitaskmanagermoduletasksidintTasksController",
+    "TopicName": "demo.task_manager_module.tasks_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduletasksidintTasksController",
+    "TopicName": "demo.task_manager_module.tasks_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapitaskmanagermoduleprojectsupdateprojectenddateprojectsidintProjectsController",
+    "TopicName": "demo.task_manager_module.projects.update_project_end_date_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduleprojectsdeleteprojectprojectsidintProjectsController",
+    "TopicName": "demo.task_manager_module.projects.delete_project_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitaskmanagermoduleprojectsProjectsController",
+    "TopicName": "demo.task_manager_module.projects_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitaskmanagermoduleprojectsidintProjectsController",
+    "TopicName": "demo.task_manager_module.projects_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduleprojectsidintProjectsController",
+    "TopicName": "demo.task_manager_module.projects_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduletaskcommentsdeletecommenttaskcommentsidintTaskCommentsController",
+    "TopicName": "demo.task_manager_module.task_comments.delete_comment_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitaskmanagermoduletaskcommentsTaskCommentsController",
+    "TopicName": "demo.task_manager_module.task_comments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitaskmanagermoduletaskcommentsidintTaskCommentsController",
+    "TopicName": "demo.task_manager_module.task_comments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduletaskcommentsidintTaskCommentsController",
+    "TopicName": "demo.task_manager_module.task_comments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapitaskmanagermoduleauditlogsAuditLogsController",
+    "TopicName": "demo.task_manager_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapitaskmanagermoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.task_manager_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapitaskmanagermoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.task_manager_module.audit_logs_delete",
     "IsActive": false
   },
   {

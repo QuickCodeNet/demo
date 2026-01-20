@@ -6418,58 +6418,544 @@
     "UrlPath": "/api/sms-manager-module/audit-logs/{id:Guid}"
   },
   {
-    "Key": "GetapitodolistmoduleauditlogsAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "GetapitaskmanagermoduleusersgetactiveusersusersisactiveboolUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "get-active-users/{usersIsActive:bool}",
+    "UrlPath": "/api/task-manager-module/users/get-active-users/{usersIsActive:bool}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersgetuserbyusernameusersusernameUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "get-user-by-username/{usersUsername}",
+    "UrlPath": "/api/task-manager-module/users/get-user-by-username/{usersUsername}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersgetuserbyemailusersemailUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "get-user-by-email/{usersEmail}",
+    "UrlPath": "/api/task-manager-module/users/get-user-by-email/{usersEmail}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersexistsbyusernameusersusernameUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "exists-by-username/{usersUsername}",
+    "UrlPath": "/api/task-manager-module/users/exists-by-username/{usersUsername}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersexistsbyemailusersemailUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "exists-by-email/{usersEmail}",
+    "UrlPath": "/api/task-manager-module/users/exists-by-email/{usersEmail}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridtaskUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/task",
+    "UrlPath": "/api/task-manager-module/users/{userId}/task"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridtasktaskidUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/task/{taskId}",
+    "UrlPath": "/api/task-manager-module/users/{userId}/task/{taskId}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridprojectUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/project",
+    "UrlPath": "/api/task-manager-module/users/{userId}/project"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridprojectprojectidUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/project/{projectId}",
+    "UrlPath": "/api/task-manager-module/users/{userId}/project/{projectId}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridtaskcommentUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/task-comment",
+    "UrlPath": "/api/task-manager-module/users/{userId}/task-comment"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersuseridtaskcommenttaskcommentidUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "{userId}/task-comment/{taskCommentId}",
+    "UrlPath": "/api/task-manager-module/users/{userId}/task-comment/{taskCommentId}"
+  },
+  {
+    "Key": "PatchapitaskmanagermoduleusersactivateuserusersidintUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Patch",
+    "ControllerName": "UsersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/task-manager-module/users/activate-user/{usersId:int}"
+  },
+  {
+    "Key": "PatchapitaskmanagermoduleusersdeactivateuserusersidintUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Patch",
+    "ControllerName": "UsersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/task-manager-module/users/deactivate-user/{usersId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/users"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleuserscountUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/users/count"
+  },
+  {
+    "Key": "PostapitaskmanagermoduleusersUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Post",
+    "ControllerName": "UsersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/task-manager-module/users"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleusersidintUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Get",
+    "ControllerName": "UsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/users/{id:int}"
+  },
+  {
+    "Key": "PutapitaskmanagermoduleusersidintUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Put",
+    "ControllerName": "UsersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/task-manager-module/users/{id:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduleusersidintUsersController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Users",
+    "HttpMethod": "Delete",
+    "ControllerName": "UsersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/users/{id:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksgettasksbyuseridtasksuseridintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "get-tasks-by-user-id/{tasksUserId:int}",
+    "UrlPath": "/api/task-manager-module/tasks/get-tasks-by-user-id/{tasksUserId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksgettasksbystatustasksstatusTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "get-tasks-by-status/{tasksStatus}",
+    "UrlPath": "/api/task-manager-module/tasks/get-tasks-by-status/{tasksStatus}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksgettasksbyprioritytaskspriorityshortTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "get-tasks-by-priority/{tasksPriority:short}",
+    "UrlPath": "/api/task-manager-module/tasks/get-tasks-by-priority/{tasksPriority:short}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksgettasksduetodaytasksduedatedatetimeTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "get-tasks-due-today/{tasksDueDate:DateTime}",
+    "UrlPath": "/api/task-manager-module/tasks/get-tasks-due-today/{tasksDueDate:DateTime}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskssearchtaskstaskstitleTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "search-tasks/{tasksTitle}",
+    "UrlPath": "/api/task-manager-module/tasks/search-tasks/{tasksTitle}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskstaskidtaskcommentTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "{taskId}/task-comment",
+    "UrlPath": "/api/task-manager-module/tasks/{taskId}/task-comment"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskstaskidtaskcommenttaskcommentidTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "{taskId}/task-comment/{taskCommentId}",
+    "UrlPath": "/api/task-manager-module/tasks/{taskId}/task-comment/{taskCommentId}"
+  },
+  {
+    "Key": "PatchapitaskmanagermoduletasksupdatetaskstatustasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Patch",
+    "ControllerName": "TasksController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/task-manager-module/tasks/update-task-status/{tasksId:int}"
+  },
+  {
+    "Key": "PatchapitaskmanagermoduletasksupdatetaskprioritytasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Patch",
+    "ControllerName": "TasksController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/task-manager-module/tasks/update-task-priority/{tasksId:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduletasksdeletetasktasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Delete",
+    "ControllerName": "TasksController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/tasks/delete-task/{tasksId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/tasks"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskscountTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/tasks/count"
+  },
+  {
+    "Key": "PostapitaskmanagermoduletasksTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Post",
+    "ControllerName": "TasksController",
+    "MethodName": "Post",
+    "UrlPath": "/api/task-manager-module/tasks"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Get",
+    "ControllerName": "TasksController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/tasks/{id:int}"
+  },
+  {
+    "Key": "PutapitaskmanagermoduletasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Put",
+    "ControllerName": "TasksController",
+    "MethodName": "Put",
+    "UrlPath": "/api/task-manager-module/tasks/{id:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduletasksidintTasksController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Tasks",
+    "HttpMethod": "Delete",
+    "ControllerName": "TasksController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/tasks/{id:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectsgetprojectsbyuseridprojectsuseridintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "get-projects-by-user-id/{projectsUserId:int}",
+    "UrlPath": "/api/task-manager-module/projects/get-projects-by-user-id/{projectsUserId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectsgetprojectsduesoonProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "get-projects-due-soon",
+    "UrlPath": "/api/task-manager-module/projects/get-projects-due-soon"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectssearchprojectsprojectsnameProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "search-projects/{projectsName}",
+    "UrlPath": "/api/task-manager-module/projects/search-projects/{projectsName}"
+  },
+  {
+    "Key": "PatchapitaskmanagermoduleprojectsupdateprojectenddateprojectsidintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/task-manager-module/projects/update-project-end-date/{projectsId:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduleprojectsdeleteprojectprojectsidintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/projects/delete-project/{projectsId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectsProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/projects"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectscountProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/projects/count"
+  },
+  {
+    "Key": "PostapitaskmanagermoduleprojectsProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Post",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/task-manager-module/projects"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleprojectsidintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Get",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/projects/{id:int}"
+  },
+  {
+    "Key": "PutapitaskmanagermoduleprojectsidintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Put",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/task-manager-module/projects/{id:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduleprojectsidintProjectsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "Projects",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProjectsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/projects/{id:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskcommentsgetcommentsfortasktaskcommentstaskidintTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Get",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "get-comments-for-task/{taskCommentsTaskId:int}",
+    "UrlPath": "/api/task-manager-module/task-comments/get-comments-for-task/{taskCommentsTaskId:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduletaskcommentsdeletecommenttaskcommentsidintTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Delete",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/task-comments/delete-comment/{taskCommentsId:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskcommentsTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Get",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/task-comments"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskcommentscountTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Get",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/task-comments/count"
+  },
+  {
+    "Key": "PostapitaskmanagermoduletaskcommentsTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Post",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/task-manager-module/task-comments"
+  },
+  {
+    "Key": "GetapitaskmanagermoduletaskcommentsidintTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Get",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/task-manager-module/task-comments/{id:int}"
+  },
+  {
+    "Key": "PutapitaskmanagermoduletaskcommentsidintTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Put",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/task-manager-module/task-comments/{id:int}"
+  },
+  {
+    "Key": "DeleteapitaskmanagermoduletaskcommentsidintTaskCommentsController",
+    "ModuleName": "TaskManagerModule",
+    "ModelName": "TaskComments",
+    "HttpMethod": "Delete",
+    "ControllerName": "TaskCommentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/task-manager-module/task-comments/{id:int}"
+  },
+  {
+    "Key": "GetapitaskmanagermoduleauditlogsAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Get",
     "ControllerName": "AuditLogsController",
     "MethodName": "Get",
-    "UrlPath": "/api/todo-list-module/audit-logs"
+    "UrlPath": "/api/task-manager-module/audit-logs"
   },
   {
-    "Key": "GetapitodolistmoduleauditlogscountAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "GetapitaskmanagermoduleauditlogscountAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Get",
     "ControllerName": "AuditLogsController",
     "MethodName": "Get",
-    "UrlPath": "/api/todo-list-module/audit-logs/count"
+    "UrlPath": "/api/task-manager-module/audit-logs/count"
   },
   {
-    "Key": "PostapitodolistmoduleauditlogsAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "PostapitaskmanagermoduleauditlogsAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Post",
     "ControllerName": "AuditLogsController",
     "MethodName": "Post",
-    "UrlPath": "/api/todo-list-module/audit-logs"
+    "UrlPath": "/api/task-manager-module/audit-logs"
   },
   {
-    "Key": "GetapitodolistmoduleauditlogsidguidAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "GetapitaskmanagermoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Get",
     "ControllerName": "AuditLogsController",
     "MethodName": "Get",
-    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+    "UrlPath": "/api/task-manager-module/audit-logs/{id:Guid}"
   },
   {
-    "Key": "PutapitodolistmoduleauditlogsidguidAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "PutapitaskmanagermoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Put",
     "ControllerName": "AuditLogsController",
     "MethodName": "Put",
-    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+    "UrlPath": "/api/task-manager-module/audit-logs/{id:Guid}"
   },
   {
-    "Key": "DeleteapitodolistmoduleauditlogsidguidAuditLogsController",
-    "ModuleName": "TodoListModule",
+    "Key": "DeleteapitaskmanagermoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "TaskManagerModule",
     "ModelName": "AuditLogs",
     "HttpMethod": "Delete",
     "ControllerName": "AuditLogsController",
     "MethodName": "Delete",
-    "UrlPath": "/api/todo-list-module/audit-logs/{id:Guid}"
+    "UrlPath": "/api/task-manager-module/audit-logs/{id:Guid}"
   },
   {
     "Key": "GetapiusermanagermoduleportalpagedefinitionsgetportalpagedefinitionspermissiongroupnamePortalPageDefinitionsController",

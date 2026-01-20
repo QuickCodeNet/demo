@@ -1,0 +1,5 @@
+﻿SELECT [ID], [NAME], [START_DATE], [END_DATE] 
+FROM [PROJECTS] 
+WHERE [IsDeleted] = 0 
+	AND [NAME] LIKE '%' + @PRM_PROJECTS_NAME + '%' 
+ORDER BY [ID] 

@@ -1,0 +1,5 @@
+﻿SELECT [ID], [TITLE], [STATUS], [PRIORITY], [DUE_DATE] 
+FROM [TASKS] 
+WHERE [IsDeleted] = 0 
+	AND [TITLE] LIKE '%' + @PRM_TASKS_TITLE + '%' 
+ORDER BY [ID] 

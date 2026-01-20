@@ -1,0 +1,4 @@
+﻿UPDATE [USERS] 
+	SET [IS_ACTIVE] = true 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_USERS_ID
