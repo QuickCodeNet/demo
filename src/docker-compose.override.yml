@@ -6,7 +6,7 @@ services:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=dockerf
     volumes:
-      - quickcode-demo-pg-data:/var/lib/postgresql/data
+      - quickcode-demo-pg-data:/var/lib/postgresql
   
   demo-mysql-data:
     ports:
@@ -104,15 +104,6 @@ services:
       
     ports:
       - "6004:80"
-
-
-  quickcode-demo-task-manager-module-api:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Local
-      - ASPNETCORE_URLS=http://+
-      
-    ports:
-      - "6005:80"
 
 
 #[-WEB-]

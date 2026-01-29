@@ -1,7 +1,7 @@
 services:
   demo-pg-data:
     container_name: "demo-pg-data"
-    image: postgres
+    image: postgres:18
 
   demo-sql-data:
     container_name: "demo-sql-data"
@@ -70,21 +70,10 @@ services:
       - demo-pg-data
       
 
-  quickcode-demo-task-manager-module-api:
-    container_name: "quickcode-demo-task-manager-module-api"
-    image: ${DOCKER_REGISTRY-}quickcode-demo-task-manager-module-api
-    build:
-      context: . 
-      dockerfile: Modules/TaskManagerModule/Presentation/QuickCode.Demo.TaskManagerModule.Api/Dockerfile
-    depends_on:
-      - demo-sql-data
-      - demo-pg-data
-      
-
 #[-WEB-]
   
   demo-zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.5.0
     container_name: demo-zookeeper
     ports:
       - "${ZOOKEEPER_PORT:-2181}:2181"
@@ -93,7 +82,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
 
   demo-kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.5.0
     container_name: demo-kafka
     depends_on:
       - demo-zookeeper

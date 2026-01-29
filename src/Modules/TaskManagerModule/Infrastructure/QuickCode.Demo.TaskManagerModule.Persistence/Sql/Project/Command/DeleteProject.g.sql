@@ -1,3 +1,0 @@
-﻿DELETE FROM [PROJECTS] 
-WHERE [IsDeleted] = 0 
-	AND [ID] = @PRM_PROJECTS_ID

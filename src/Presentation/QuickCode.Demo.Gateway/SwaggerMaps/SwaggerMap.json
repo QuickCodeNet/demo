@@ -26,12 +26,5 @@
     "PathOptions": {
       "/api": "/api"
     }
-  },
-  "task-manager-module-api": {
-    "Endpoint": "/swagger/task-manager-module-api/v1/swagger.json",
-    "Spec": "/swagger/v1/swagger.json",
-    "PathOptions": {
-      "/api": "/api"
-    }
   }
 }

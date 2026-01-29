@@ -40,14 +40,6 @@
             "address": "http://quickcode-demo-sms-manager-module-api"
           }
         }
-      },
-      "task-manager-module-api": {
-        "clusterId": "task-manager-module-api",
-        "destinations": {
-          "destination1": {
-            "address": "http://quickcode-demo-task-manager-module-api"
-          }
-        }
       }
     },
     "routes": {
@@ -148,26 +140,6 @@
         "transforms": [
           {
             "PathPattern": "api/sms-manager-module/{**catch-all}"
-          }
-        ]
-      },
-      "task-manager-module": {
-        "routeId": "task-manager-module",
-        "clusterId": "task-manager-module-api",
-        "authorizationPolicy": "QuickCodeGatewayPolicy",
-        "match": {
-          "path": "api/task-manager-module/{**catch-all}",
-          "hosts": [
-            "localhost:6060",
-            "demo-gateway-821209474183.europe-west1.run.app",
-            "demo-gateway",
-            "quickcode-demo-gateway-api",
-            "demo-gateway.quickcode.net"
-          ]
-        },
-        "transforms": [
-          {
-            "PathPattern": "api/task-manager-module/{**catch-all}"
           }
         ]
       }

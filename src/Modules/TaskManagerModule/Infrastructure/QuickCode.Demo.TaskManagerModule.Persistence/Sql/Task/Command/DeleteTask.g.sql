@@ -1,3 +1,0 @@
-﻿DELETE FROM [TASKS] 
-WHERE [IsDeleted] = 0 
-	AND [ID] = @PRM_TASKS_ID

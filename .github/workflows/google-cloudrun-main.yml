@@ -44,11 +44,6 @@ jobs:
     uses: ./.github/workflows/google-cloudrun-sms-manager-module.yml
     secrets: inherit
 
-  task-manager-module:
-    name: Task Manager Module Api
-    uses: ./.github/workflows/google-cloudrun-task-manager-module.yml
-    secrets: inherit
-
 
   complete:
     name: Complete Deployments
@@ -61,7 +56,6 @@ jobs:
       - email-manager-module
       - online-shop-module
       - sms-manager-module
-      - task-manager-module
     if: always()
     steps:
       - name: Complete Notification
