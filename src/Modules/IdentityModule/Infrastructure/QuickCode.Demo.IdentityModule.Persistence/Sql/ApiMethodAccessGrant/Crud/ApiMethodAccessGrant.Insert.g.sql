@@ -1,0 +1,13 @@
+﻿INSERT INTO [dbo].[ApiMethodAccessGrants] (
+    [PermissionGroupName],
+    [ApiMethodDefinitionKey],
+    [ModifiedBy],
+    [IsActive]
+)
+OUTPUT INSERTED.*
+VALUES (
+    @PRM_API_METHOD_ACCESS_GRANT_PERMISSION_GROUP_NAME,
+    @PRM_API_METHOD_ACCESS_GRANT_API_METHOD_DEFINITION_KEY,
+    @PRM_API_METHOD_ACCESS_GRANT_MODIFIED_BY,
+    @PRM_API_METHOD_ACCESS_GRANT_IS_ACTIVE
+    );

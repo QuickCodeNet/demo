@@ -1,0 +1,14 @@
+﻿DELETE FROM [dbo].[PRODUCT_CATEGORIES]
+WHERE
+    [PRODUCT_ID] = @PRM_PRODUCT_CATEGORY_PRODUCT_ID AND
+    [CATEGORY_ID] = @PRM_PRODUCT_CATEGORY_CATEGORY_ID
+    AND EXISTS (
+    SELECT 1
+    FROM [dbo].[PRODUCTS] qc_sd_p
+    WHERE qc_sd_p.[ID] = [dbo].[PRODUCT_CATEGORIES].[PRODUCT_ID]
+      AND qc_sd_p.[IsDeleted] = 0)
+    AND EXISTS (
+    SELECT 1
+    FROM [dbo].[CATEGORIES] qc_sd_p
+    WHERE qc_sd_p.[ID] = [dbo].[PRODUCT_CATEGORIES].[CATEGORY_ID]
+      AND qc_sd_p.[IsDeleted] = 0);

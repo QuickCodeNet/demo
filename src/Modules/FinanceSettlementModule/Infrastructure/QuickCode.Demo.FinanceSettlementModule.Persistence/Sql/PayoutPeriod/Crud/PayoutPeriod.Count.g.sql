@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[PAYOUT_PERIODS]
+WHERE [IsDeleted] = 0;

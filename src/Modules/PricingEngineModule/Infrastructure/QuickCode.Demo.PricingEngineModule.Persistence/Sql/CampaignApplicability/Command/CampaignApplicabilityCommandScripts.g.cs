@@ -1,0 +1,14 @@
+﻿namespace QuickCode.Demo.PricingEngineModule.Persistence.Sql;
+public static partial class SqlScripts
+{
+    public static partial class CampaignApplicability
+    {
+        public static class Command
+        {
+            private const string _prefix = "PricingEngineModule.CampaignApplicability.Command";
+            private const string _sqlScriptStem = "CampaignApplicability";
+            private static string ResourceKey(string sqlName) => $"{_prefix}.{sqlName}";
+            public static string RemoveApplicability => ResourceKey($"{_sqlScriptStem}.RemoveApplicability.g.sql");
+        }
+    }
+}

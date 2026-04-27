@@ -1,0 +1,8 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[CAMPAIGN_APPLICABILITIES]
+WHERE EXISTS (
+    SELECT 1
+    FROM [dbo].[PROMOTIONAL_CAMPAIGNS] qc_sd_p
+    WHERE qc_sd_p.[ID] = [dbo].[CAMPAIGN_APPLICABILITIES].[CAMPAIGN_ID]
+      AND qc_sd_p.[IsDeleted] = 0);

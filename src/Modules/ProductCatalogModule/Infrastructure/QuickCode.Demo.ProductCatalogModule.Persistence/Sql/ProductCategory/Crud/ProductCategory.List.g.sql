@@ -1,0 +1,19 @@
+﻿SELECT
+    [PRODUCT_ID],
+    [CATEGORY_ID]
+FROM [dbo].[PRODUCT_CATEGORIES]
+WHERE EXISTS (
+    SELECT 1
+    FROM [dbo].[PRODUCTS] qc_sd_p
+    WHERE qc_sd_p.[ID] = [dbo].[PRODUCT_CATEGORIES].[PRODUCT_ID]
+      AND qc_sd_p.[IsDeleted] = 0)
+    AND EXISTS (
+    SELECT 1
+    FROM [dbo].[CATEGORIES] qc_sd_p
+    WHERE qc_sd_p.[ID] = [dbo].[PRODUCT_CATEGORIES].[CATEGORY_ID]
+      AND qc_sd_p.[IsDeleted] = 0)
+ORDER BY
+    [PRODUCT_ID],
+    [CATEGORY_ID]
+OFFSET @PRM_QC_LIST_OFFSET ROWS
+FETCH NEXT @PRM_QC_LIST_PAGE_SIZE ROWS ONLY;

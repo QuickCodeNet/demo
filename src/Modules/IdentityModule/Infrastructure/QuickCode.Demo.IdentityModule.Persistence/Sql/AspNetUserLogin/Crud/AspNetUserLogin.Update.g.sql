@@ -1,0 +1,7 @@
+﻿UPDATE [dbo].[AspNetUserLogins]
+SET
+    [ProviderDisplayName] = @PRM_ASP_NET_USER_LOGIN_PROVIDER_DISPLAY_NAME,
+    [UserId] = @PRM_ASP_NET_USER_LOGIN_USER_ID
+WHERE
+    [LoginProvider] = @PRM_ASP_NET_USER_LOGIN_LOGIN_PROVIDER AND
+    [ProviderKey] = @PRM_ASP_NET_USER_LOGIN_PROVIDER_KEY;

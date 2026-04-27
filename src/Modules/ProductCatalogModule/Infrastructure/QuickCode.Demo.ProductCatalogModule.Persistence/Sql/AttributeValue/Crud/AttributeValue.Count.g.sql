@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[ATTRIBUTE_VALUES]
+WHERE [IsDeleted] = 0;

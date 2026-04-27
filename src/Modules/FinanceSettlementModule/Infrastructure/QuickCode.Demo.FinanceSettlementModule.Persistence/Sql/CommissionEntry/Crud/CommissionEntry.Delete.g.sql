@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[COMMISSION_ENTRIES]
+SET [IsDeleted] = 1, [DeletedOnUtc] = SYSUTCDATETIME()
+WHERE
+    [ID] = @PRM_COMMISSION_ENTRY_ID
+    AND [IsDeleted] = 0;

@@ -1,0 +1,4 @@
+﻿UPDATE [SELLERS] 
+	SET [STATUS] = 'REJECTED' 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_SELLER_ID

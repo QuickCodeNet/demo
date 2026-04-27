@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[SELLER_PERFORMANCE_REVIEWS]
+WHERE [IsDeleted] = 0;

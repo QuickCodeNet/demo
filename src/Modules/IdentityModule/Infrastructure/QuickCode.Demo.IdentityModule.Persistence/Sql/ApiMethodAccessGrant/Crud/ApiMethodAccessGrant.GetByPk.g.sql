@@ -1,0 +1,9 @@
+﻿SELECT
+    [PermissionGroupName],
+    [ApiMethodDefinitionKey],
+    [ModifiedBy],
+    [IsActive]
+FROM [dbo].[ApiMethodAccessGrants]
+WHERE
+    [PermissionGroupName] = @PRM_API_METHOD_ACCESS_GRANT_PERMISSION_GROUP_NAME AND
+    [ApiMethodDefinitionKey] = @PRM_API_METHOD_ACCESS_GRANT_API_METHOD_DEFINITION_KEY;

@@ -1,0 +1,4 @@
+﻿DELETE FROM [dbo].[AspNetUserLogins]
+WHERE
+    [LoginProvider] = @PRM_ASP_NET_USER_LOGIN_LOGIN_PROVIDER AND
+    [ProviderKey] = @PRM_ASP_NET_USER_LOGIN_PROVIDER_KEY;

@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[SELLER_DOCUMENTS]
+WHERE [IsDeleted] = 0;

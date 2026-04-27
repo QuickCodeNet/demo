@@ -1,0 +1,4 @@
+﻿UPDATE [SELLERS] 
+	SET [STATUS] = 'ACTIVE' 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_SELLER_ID

@@ -1,0 +1,12 @@
+﻿SELECT
+    [ID],
+    [SELLER_ID],
+    [AMOUNT],
+    [REASON],
+    [NOTES],
+    [CREATED_BY_USER_ID],
+    [CREATED_DATE]
+FROM [dbo].[FINANCIAL_ADJUSTMENTS]
+WHERE
+    [ID] = @PRM_FINANCIAL_ADJUSTMENT_ID
+    AND [IsDeleted] = 0;

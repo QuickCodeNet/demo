@@ -1,0 +1,11 @@
+﻿SELECT
+    [ID],
+    [NAME],
+    [START_DATE],
+    [END_DATE],
+    [DISCOUNT_PERCENTAGE],
+    [IS_ACTIVE]
+FROM [dbo].[PROMOTIONAL_CAMPAIGNS]
+WHERE
+    [ID] = @PRM_PROMOTIONAL_CAMPAIGN_ID
+    AND [IsDeleted] = 0;

@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[PROMOTIONAL_CAMPAIGNS]
+SET [IsDeleted] = 1, [DeletedOnUtc] = SYSUTCDATETIME()
+WHERE
+    [ID] = @PRM_PROMOTIONAL_CAMPAIGN_ID
+    AND [IsDeleted] = 0;

@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[PermissionGroups]
+SET
+    [Description] = @PRM_PERMISSION_GROUP_DESCRIPTION
+WHERE
+    [Name] = @PRM_PERMISSION_GROUP_NAME;

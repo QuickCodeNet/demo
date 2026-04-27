@@ -1,0 +1,7 @@
+﻿UPDATE [dbo].[AspNetRoleClaims]
+SET
+    [RoleId] = @PRM_ASP_NET_ROLE_CLAIM_ROLE_ID,
+    [ClaimType] = @PRM_ASP_NET_ROLE_CLAIM_CLAIM_TYPE,
+    [ClaimValue] = @PRM_ASP_NET_ROLE_CLAIM_CLAIM_VALUE
+WHERE
+    [Id] = @PRM_ASP_NET_ROLE_CLAIM_ID;

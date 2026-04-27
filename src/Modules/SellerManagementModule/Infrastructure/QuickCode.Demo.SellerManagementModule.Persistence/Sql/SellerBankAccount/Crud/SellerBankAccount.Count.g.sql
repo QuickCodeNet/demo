@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[SELLER_BANK_ACCOUNTS]
+WHERE [IsDeleted] = 0;

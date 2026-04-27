@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[COMMISSION_MODELS]
+WHERE [IsDeleted] = 0;

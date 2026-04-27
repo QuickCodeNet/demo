@@ -1,0 +1,13 @@
+﻿INSERT INTO [dbo].[TableComboboxSettings] (
+    [TableName],
+    [IdColumn],
+    [TextColumns],
+    [StringFormat]
+)
+OUTPUT INSERTED.*
+VALUES (
+    @PRM_TABLE_COMBOBOX_SETTING_TABLE_NAME,
+    @PRM_TABLE_COMBOBOX_SETTING_ID_COLUMN,
+    @PRM_TABLE_COMBOBOX_SETTING_TEXT_COLUMNS,
+    @PRM_TABLE_COMBOBOX_SETTING_STRING_FORMAT
+    );

@@ -1,0 +1,6 @@
+﻿UPDATE [dbo].[KafkaEvents]
+SET
+    [ApiMethodDefinitionKey] = @PRM_KAFKA_EVENT_API_METHOD_DEFINITION_KEY,
+    [IsActive] = @PRM_KAFKA_EVENT_IS_ACTIVE
+WHERE
+    [TopicName] = @PRM_KAFKA_EVENT_TOPIC_NAME;

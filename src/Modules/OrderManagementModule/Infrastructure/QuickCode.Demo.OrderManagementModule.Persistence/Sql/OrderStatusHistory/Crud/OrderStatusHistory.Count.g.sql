@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[ORDER_STATUS_HISTORIES]
+WHERE [IsDeleted] = 0;

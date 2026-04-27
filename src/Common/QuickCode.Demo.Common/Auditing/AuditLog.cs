@@ -1,0 +1,47 @@
+using System;
+
+namespace QuickCode.Demo.Common.Auditing;
+
+/// <summary>
+/// Payload for <see cref="BackgroundAuditLogWriter"/> (Dapper batch insert). Table <c>AUDIT_LOGS</c> is created by QuickCode SQL migrations from <c>AuditLog.dbml</c>, not EF Core.
+/// </summary>
+public class AuditLog
+{
+    public Guid Id { get; set; } = Guid.NewGuid();
+
+    public string EntityName { get; set; } = string.Empty;
+
+    public string EntityId { get; set; } = string.Empty;
+
+    public string Action { get; set; } = string.Empty;
+
+    public string? UserId { get; set; }
+
+    public string? UserName { get; set; }
+
+    public string? UserGroup { get; set; }
+
+    public DateTime Timestamp { get; set; }
+
+    public string? OldValues { get; set; }
+
+    public string? NewValues { get; set; }
+
+    public string? ChangedColumns { get; set; }
+
+    public bool IsChanged { get; set; }
+
+    public string? ChangeSummary { get; set; }
+
+    public string? IpAddress { get; set; }
+
+    public string? UserAgent { get; set; }
+
+    public string? CorrelationId { get; set; }
+
+    public bool IsSuccess { get; set; } = true;
+
+    public string? ErrorMessage { get; set; }
+
+    public string? Hash { get; set; }
+}

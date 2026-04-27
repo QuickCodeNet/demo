@@ -1,0 +1,13 @@
+﻿INSERT INTO [dbo].[AspNetUserLogins] (
+    [LoginProvider],
+    [ProviderKey],
+    [ProviderDisplayName],
+    [UserId]
+)
+OUTPUT INSERTED.*
+VALUES (
+    @PRM_ASP_NET_USER_LOGIN_LOGIN_PROVIDER,
+    @PRM_ASP_NET_USER_LOGIN_PROVIDER_KEY,
+    @PRM_ASP_NET_USER_LOGIN_PROVIDER_DISPLAY_NAME,
+    @PRM_ASP_NET_USER_LOGIN_USER_ID
+    );

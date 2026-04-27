@@ -1,0 +1,23 @@
+﻿SELECT
+    [ID],
+    [ENTITY_NAME],
+    [ENTITY_ID],
+    [ACTION],
+    [USER_ID],
+    [USER_NAME],
+    [USER_GROUP],
+    [TIMESTAMP],
+    [OLD_VALUES],
+    [NEW_VALUES],
+    [CHANGED_COLUMNS],
+    [IS_CHANGED],
+    [CHANGE_SUMMARY],
+    [IP_ADDRESS],
+    [USER_AGENT],
+    [CORRELATION_ID],
+    [IS_SUCCESS],
+    [ERROR_MESSAGE],
+    [HASH]
+FROM [dbo].[AUDIT_LOGS]
+WHERE
+    [ID] = @PRM_AUDIT_LOG_ID;

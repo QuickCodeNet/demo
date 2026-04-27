@@ -1,0 +1,141 @@
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using QuickCode.Demo.Common.Controllers;
+using QuickCode.Demo.FinanceSettlementModule.Application.Dtos.CommissionEntry;
+using QuickCode.Demo.FinanceSettlementModule.Application.Services.CommissionEntry;
+using QuickCode.Demo.FinanceSettlementModule.Domain.Enums;
+
+namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
+{
+    public partial class CommissionEntriesController : QuickCodeBaseApiController
+    {
+        private readonly ICommissionEntryService service;
+        private readonly ILogger<CommissionEntriesController> logger;
+        private readonly IServiceProvider serviceProvider;
+        public CommissionEntriesController(ICommissionEntryService service, IServiceProvider serviceProvider, ILogger<CommissionEntriesController> logger)
+        {
+            this.service = service;
+            this.logger = logger;
+            this.serviceProvider = serviceProvider;
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<CommissionEntryDto>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> ListAsync([FromQuery] int? page, int? size)
+        {
+            if (ValidatePagination(page, size) is {} error)
+                return error;
+            var response = await service.ListAsync(page, size);
+            if (HandleResponseError(response, logger, "CommissionEntry", "List") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("count")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> CountAsync()
+        {
+            var response = await service.TotalItemCountAsync();
+            if (HandleResponseError(response, logger, "CommissionEntry") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CommissionEntryDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetItemAsync(int id)
+        {
+            var response = await service.GetItemAsync(id);
+            if (HandleResponseError(response, logger, "CommissionEntry", $"Id: '{id}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CommissionEntryDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> InsertAsync(CommissionEntryDto model)
+        {
+            var response = await service.InsertAsync(model);
+            if (HandleResponseError(response, logger, "CommissionEntry") is {} responseError)
+                return responseError;
+            return CreatedAtRoute(new { id = response.Value.Id }, response.Value);
+        }
+
+        [HttpPut("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> UpdateAsync(int id, CommissionEntryDto model)
+        {
+            if (!(model.Id == id))
+            {
+                return BadRequest($"Id: '{id}' must be equal to model.Id: '{model.Id}'");
+            }
+
+            var response = await service.UpdateAsync(id, model);
+            if (HandleResponseError(response, logger, "CommissionEntry", $"Id: '{id}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpDelete("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var response = await service.DeleteItemAsync(id);
+            if (HandleResponseError(response, logger, "CommissionEntry", $"Id: '{id}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("get-by-order-id/{commissionEntryOrderId:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByOrderIdResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetByOrderIdAsync(int commissionEntryOrderId, int? page, int? size)
+        {
+            if (page < 1)
+            {
+                var pageNumberError = $"Page Number must be greater than 1";
+                logger.LogWarning($"List Error: '{pageNumberError}''");
+                return NotFound(pageNumberError);
+            }
+
+            var response = await service.GetByOrderIdAsync(commissionEntryOrderId, page, size);
+            if (HandleResponseError(response, logger, "CommissionEntry", $"CommissionEntryOrderId: '{commissionEntryOrderId}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("get-commissions-by-seller-for-period/{commissionEntriesSellerId:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetCommissionsBySellerForPeriodResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? page, int? size)
+        {
+            if (page < 1)
+            {
+                var pageNumberError = $"Page Number must be greater than 1";
+                logger.LogWarning($"List Error: '{pageNumberError}''");
+                return NotFound(pageNumberError);
+            }
+
+            var response = await service.GetCommissionsBySellerForPeriodAsync(commissionEntriesSellerId, page, size);
+            if (HandleResponseError(response, logger, "CommissionEntry", $"CommissionEntriesSellerId: '{commissionEntriesSellerId}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+    }
+}

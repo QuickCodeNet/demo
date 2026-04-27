@@ -1,0 +1,11 @@
+﻿SELECT
+    [ID],
+    [PRODUCT_ID],
+    [SKU],
+    [PRICE],
+    [STOCK_QUANTITY],
+    [IS_ACTIVE]
+FROM [dbo].[PRODUCT_VARIANTS]
+WHERE
+    [ID] = @PRM_PRODUCT_VARIANT_ID
+    AND [IsDeleted] = 0;

@@ -1,0 +1,13 @@
+﻿SELECT
+    [ID],
+    [COMMISSION_MODEL_ID],
+    [SCOPE],
+    [SCOPE_ID],
+    [COMMISSION_TYPE],
+    [PERCENTAGE_RATE],
+    [FIXED_AMOUNT],
+    [IS_ACTIVE]
+FROM [dbo].[COMMISSION_RULES]
+WHERE
+    [ID] = @PRM_COMMISSION_RULE_ID
+    AND [IsDeleted] = 0;

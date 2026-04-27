@@ -1,0 +1,470 @@
+{
+  "schemaSnapshotVersion": 1,
+  "moduleName": "SellerManagementModule",
+  "databaseProvider": "mssql",
+  "generatedAtUtc": "2026-04-27T17:57:58.1933906+00:00",
+  "tables": [
+    {
+      "schema": "dbo",
+      "physicalTableName": "AUDIT_LOGS",
+      "entityClassStem": "AuditLog",
+      "columns": [
+        {
+          "name": "ACTION",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGED_COLUMNS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_SUMMARY",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CORRELATION_ID",
+          "sqlType": "nvarchar(100)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ERROR_MESSAGE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "HASH",
+          "sqlType": "nvarchar(128)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "uniqueidentifier",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "IP_ADDRESS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_CHANGED",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_SUCCESS",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NEW_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "OLD_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TIMESTAMP",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_AGENT",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_GROUP",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "SELLERS",
+      "entityClassStem": "Seller",
+      "columns": [
+        {
+          "name": "COMPANY_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CONTACT_EMAIL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CONTACT_PHONE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "JOINED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_TIER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "SELLER_BANK_ACCOUNTS",
+      "entityClassStem": "SellerBankAccount",
+      "columns": [
+        {
+          "name": "ACCOUNT_HOLDER_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "BANK_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IBAN",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_DEFAULT",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_VERIFIED",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "SELLER_DOCUMENTS",
+      "entityClassStem": "SellerDocument",
+      "columns": [
+        {
+          "name": "DOCUMENT_TYPE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "FILE_URL",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "REJECTION_REASON",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REVIEWED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "UPLOADED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "SELLER_PERFORMANCE_REVIEWS",
+      "entityClassStem": "SellerPerformanceReview",
+      "columns": [
+        {
+          "name": "COMMENT",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "RATING",
+          "sqlType": "tinyint",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REVIEWER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REVIEW_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "SELLER_TIERS",
+      "entityClassStem": "SellerTier",
+      "columns": [
+        {
+          "name": "BENEFITS_DESCRIPTION",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "MIN_SALES_VOLUME",
+          "sqlType": "decimal(18,2)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "STORES",
+      "entityClassStem": "Store",
+      "columns": [
+        {
+          "name": "DESCRIPTION",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "LOGO_URL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SLUG",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    }
+  ]
+}

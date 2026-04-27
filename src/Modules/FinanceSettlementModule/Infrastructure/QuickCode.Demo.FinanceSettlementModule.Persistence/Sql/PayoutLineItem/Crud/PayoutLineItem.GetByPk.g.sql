@@ -1,0 +1,11 @@
+﻿SELECT
+    [ID],
+    [PAYOUT_ID],
+    [ORDER_ID],
+    [ITEM_AMOUNT],
+    [COMMISSION_AMOUNT],
+    [NET_AMOUNT]
+FROM [dbo].[PAYOUT_LINE_ITEMS]
+WHERE
+    [ID] = @PRM_PAYOUT_LINE_ITEM_ID
+    AND [IsDeleted] = 0;

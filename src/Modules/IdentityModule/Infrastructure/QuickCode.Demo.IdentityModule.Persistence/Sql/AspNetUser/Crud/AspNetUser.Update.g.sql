@@ -1,0 +1,21 @@
+﻿UPDATE [dbo].[AspNetUsers]
+SET
+    [FirstName] = @PRM_ASP_NET_USER_FIRST_NAME,
+    [LastName] = @PRM_ASP_NET_USER_LAST_NAME,
+    [PermissionGroupName] = @PRM_ASP_NET_USER_PERMISSION_GROUP_NAME,
+    [UserName] = @PRM_ASP_NET_USER_USER_NAME,
+    [NormalizedUserName] = @PRM_ASP_NET_USER_NORMALIZED_USER_NAME,
+    [Email] = @PRM_ASP_NET_USER_EMAIL,
+    [NormalizedEmail] = @PRM_ASP_NET_USER_NORMALIZED_EMAIL,
+    [EmailConfirmed] = @PRM_ASP_NET_USER_EMAIL_CONFIRMED,
+    [PasswordHash] = @PRM_ASP_NET_USER_PASSWORD_HASH,
+    [SecurityStamp] = @PRM_ASP_NET_USER_SECURITY_STAMP,
+    [ConcurrencyStamp] = @PRM_ASP_NET_USER_CONCURRENCY_STAMP,
+    [PhoneNumber] = @PRM_ASP_NET_USER_PHONE_NUMBER,
+    [PhoneNumberConfirmed] = @PRM_ASP_NET_USER_PHONE_NUMBER_CONFIRMED,
+    [TwoFactorEnabled] = @PRM_ASP_NET_USER_TWO_FACTOR_ENABLED,
+    [LockoutEnd] = @PRM_ASP_NET_USER_LOCKOUT_END,
+    [LockoutEnabled] = @PRM_ASP_NET_USER_LOCKOUT_ENABLED,
+    [AccessFailedCount] = @PRM_ASP_NET_USER_ACCESS_FAILED_COUNT
+WHERE
+    [Id] = @PRM_ASP_NET_USER_ID;

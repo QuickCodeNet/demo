@@ -1,0 +1,449 @@
+{
+  "schemaSnapshotVersion": 1,
+  "moduleName": "ProductCatalogModule",
+  "databaseProvider": "mssql",
+  "generatedAtUtc": "2026-04-27T17:57:58.2023057+00:00",
+  "tables": [
+    {
+      "schema": "dbo",
+      "physicalTableName": "ATTRIBUTES",
+      "entityClassStem": "Attribute",
+      "columns": [
+        {
+          "name": "CODE",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "ATTRIBUTE_VALUES",
+      "entityClassStem": "AttributeValue",
+      "columns": [
+        {
+          "name": "ATTRIBUTE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "VALUE",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "AUDIT_LOGS",
+      "entityClassStem": "AuditLog",
+      "columns": [
+        {
+          "name": "ACTION",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGED_COLUMNS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_SUMMARY",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CORRELATION_ID",
+          "sqlType": "nvarchar(100)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ENTITY_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ERROR_MESSAGE",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "HASH",
+          "sqlType": "nvarchar(128)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "uniqueidentifier",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "IP_ADDRESS",
+          "sqlType": "nvarchar(50)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_CHANGED",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "IS_SUCCESS",
+          "sqlType": "bit",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NEW_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "OLD_VALUES",
+          "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "TIMESTAMP",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_AGENT",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_GROUP",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_ID",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "USER_NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "BRANDS",
+      "entityClassStem": "Brand",
+      "columns": [
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "LOGO_URL",
+          "sqlType": "nvarchar(500)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "CATEGORIES",
+      "entityClassStem": "Category",
+      "columns": [
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PARENT_CATEGORY_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SLUG",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "PRODUCTS",
+      "entityClassStem": "Product",
+      "columns": [
+        {
+          "name": "BRAND_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CREATED_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DESCRIPTION",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_FEATURED",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NAME",
+          "sqlType": "nvarchar(250)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PRIMARY_CATEGORY_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SELLER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SKU",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "PRODUCT_CATEGORIES",
+      "entityClassStem": "ProductCategory",
+      "columns": [
+        {
+          "name": "CATEGORY_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "PRODUCT_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "PRODUCT_VARIANTS",
+      "entityClassStem": "ProductVariant",
+      "columns": [
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "IS_ACTIVE",
+          "sqlType": "bit",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PRICE",
+          "sqlType": "decimal(18,2)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PRODUCT_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "SKU",
+          "sqlType": "nvarchar(50)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STOCK_QUANTITY",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "PRODUCT_VARIANT_ATTRIBUTES",
+      "entityClassStem": "ProductVariantAttribute",
+      "columns": [
+        {
+          "name": "ATTRIBUTE_VALUE_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        },
+        {
+          "name": "VARIANT_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": false
+        }
+      ]
+    }
+  ]
+}

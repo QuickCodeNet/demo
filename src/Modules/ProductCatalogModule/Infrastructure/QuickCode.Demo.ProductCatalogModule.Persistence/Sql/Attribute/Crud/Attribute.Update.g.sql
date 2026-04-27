@@ -1,0 +1,7 @@
+﻿UPDATE [dbo].[ATTRIBUTES]
+SET
+    [NAME] = @PRM_ATTRIBUTE_NAME,
+    [CODE] = @PRM_ATTRIBUTE_CODE
+WHERE
+    [ID] = @PRM_ATTRIBUTE_ID
+    AND [IsDeleted] = 0;

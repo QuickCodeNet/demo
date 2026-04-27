@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[COMMISSION_ENTRIES]
+WHERE [IsDeleted] = 0;

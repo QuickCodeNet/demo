@@ -1,0 +1,13 @@
+﻿SELECT
+    [ID],
+    [SELLER_ID],
+    [DOCUMENT_TYPE],
+    [FILE_URL],
+    [STATUS],
+    [UPLOADED_DATE],
+    [REVIEWED_DATE],
+    [REJECTION_REASON]
+FROM [dbo].[SELLER_DOCUMENTS]
+WHERE
+    [ID] = @PRM_SELLER_DOCUMENT_ID
+    AND [IsDeleted] = 0;

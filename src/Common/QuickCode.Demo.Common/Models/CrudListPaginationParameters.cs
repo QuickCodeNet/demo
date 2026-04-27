@@ -1,0 +1,11 @@
+namespace QuickCode.Demo.Common.Models;
+
+/// <summary>
+/// Dapper parameter names for generated Crud <c>List</c> SQL (shared by all entities).
+/// Must stay aligned with <c>QuickCode.Generator.SqlGeneration.CrudSqlGenerator</c> list paging constants.
+/// </summary>
+public static class CrudListPaginationParameters
+{
+    public const string OffsetParameter = "PRM_QC_LIST_OFFSET";
+    public const string PageSizeParameter = "PRM_QC_LIST_PAGE_SIZE";
+}

@@ -1,0 +1,8 @@
+﻿UPDATE [dbo].[BRANDS]
+SET
+    [NAME] = @PRM_BRAND_NAME,
+    [LOGO_URL] = @PRM_BRAND_LOGO_URL,
+    [IS_ACTIVE] = @PRM_BRAND_IS_ACTIVE
+WHERE
+    [ID] = @PRM_BRAND_ID
+    AND [IsDeleted] = 0;

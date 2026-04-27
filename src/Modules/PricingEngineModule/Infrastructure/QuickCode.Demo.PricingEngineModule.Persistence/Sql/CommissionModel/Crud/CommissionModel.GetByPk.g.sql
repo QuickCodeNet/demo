@@ -1,0 +1,9 @@
+﻿SELECT
+    [ID],
+    [NAME],
+    [IS_ACTIVE],
+    [DESCRIPTION]
+FROM [dbo].[COMMISSION_MODELS]
+WHERE
+    [ID] = @PRM_COMMISSION_MODEL_ID
+    AND [IsDeleted] = 0;

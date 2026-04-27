@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[ORDER_STATUS_HISTORIES]
+SET [IsDeleted] = 1, [DeletedOnUtc] = SYSUTCDATETIME()
+WHERE
+    [ID] = @PRM_ORDER_STATUS_HISTORY_ID
+    AND [IsDeleted] = 0;

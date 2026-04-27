@@ -1,0 +1,8 @@
+﻿SELECT
+    [ID],
+    [ATTRIBUTE_ID],
+    [VALUE]
+FROM [dbo].[ATTRIBUTE_VALUES]
+WHERE
+    [ID] = @PRM_ATTRIBUTE_VALUE_ID
+    AND [IsDeleted] = 0;

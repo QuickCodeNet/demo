@@ -1,0 +1,11 @@
+﻿INSERT INTO [dbo].[BRANDS] (
+    [NAME],
+    [LOGO_URL],
+    [IS_ACTIVE]
+)
+OUTPUT INSERTED.*
+VALUES (
+    @PRM_BRAND_NAME,
+    @PRM_BRAND_LOGO_URL,
+    @PRM_BRAND_IS_ACTIVE
+    );

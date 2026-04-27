@@ -1,0 +1,12 @@
+﻿SELECT
+    [ID],
+    [SELLER_ID],
+    [BANK_NAME],
+    [ACCOUNT_HOLDER_NAME],
+    [IBAN],
+    [IS_DEFAULT],
+    [IS_VERIFIED]
+FROM [dbo].[SELLER_BANK_ACCOUNTS]
+WHERE
+    [ID] = @PRM_SELLER_BANK_ACCOUNT_ID
+    AND [IsDeleted] = 0;

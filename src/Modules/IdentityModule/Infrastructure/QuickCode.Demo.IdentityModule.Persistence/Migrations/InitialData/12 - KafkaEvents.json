@@ -1,0 +1,1179 @@
+﻿{
+"KafkaEvents": [
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodulesModulesController",
+    "TopicName": "demo.identity_module.modules_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodulesnameModulesController",
+    "TopicName": "demo.identity_module.modules_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodulesnameModulesController",
+    "TopicName": "demo.identity_module.modules_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsdeletemodelswithmodulenamemodelmodulenameModelsController",
+    "TopicName": "demo.identity_module.models.delete_models_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodelsModelsController",
+    "TopicName": "demo.identity_module.models_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "demo.identity_module.models_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "demo.identity_module.models_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulepermissiongroupsPermissionGroupsController",
+    "TopicName": "demo.identity_module.permission_groups_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "demo.identity_module.permission_groups_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "demo.identity_module.permission_groups_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions.delete_api_method_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions.delete_api_method_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions.delete_portal_page_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions.delete_portal_page_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsPortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantsclearapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "demo.identity_module.api_method_access_grants.clear_api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "demo.identity_module.api_method_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "demo.identity_module.api_method_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "demo.identity_module.api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantsclearportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "demo.identity_module.portal_page_access_grants.clear_portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "demo.identity_module.portal_page_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "demo.identity_module.portal_page_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "demo.identity_module.portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodulenameportalmenukeyPortalMenusController",
+    "TopicName": "demo.identity_module.portal_menus.delete_portal_menu_items_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodelnameportalmenukeyportalmenunamePortalMenusController",
+    "TopicName": "demo.identity_module.portal_menus.delete_portal_menu_items_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalmenusPortalMenusController",
+    "TopicName": "demo.identity_module.portal_menus_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "demo.identity_module.portal_menus_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "demo.identity_module.portal_menus_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulecolumntypesColumnTypesController",
+    "TopicName": "demo.identity_module.column_types_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "demo.identity_module.column_types_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "demo.identity_module.column_types_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletablecomboboxsettingsTableComboboxSettingsController",
+    "TopicName": "demo.identity_module.table_combobox_settings_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "demo.identity_module.table_combobox_settings_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "demo.identity_module.table_combobox_settings_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodulenameapimethoddefinitionsmodulenameKafkaEventsController",
+    "TopicName": "demo.identity_module.kafka_events.clean_kafka_events_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodelnameapimethoddefinitionsmodelnameKafkaEventsController",
+    "TopicName": "demo.identity_module.kafka_events.clean_kafka_events_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulekafkaeventsKafkaEventsController",
+    "TopicName": "demo.identity_module.kafka_events_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "demo.identity_module.kafka_events_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "demo.identity_module.kafka_events_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletopicworkflowsTopicWorkflowsController",
+    "TopicName": "demo.identity_module.topic_workflows_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "demo.identity_module.topic_workflows_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "demo.identity_module.topic_workflows_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetrolesAspNetRolesController",
+    "TopicName": "demo.identity_module.asp_net_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "demo.identity_module.asp_net_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "demo.identity_module.asp_net_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusersAspNetUsersController",
+    "TopicName": "demo.identity_module.asp_net_users_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "demo.identity_module.asp_net_users_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "demo.identity_module.asp_net_users_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiidentitymodulerefreshtokensupdaterefreshtokensrefreshtokentokenRefreshTokensController",
+    "TopicName": "demo.identity_module.refresh_tokens.update_refresh_tokens_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulerefreshtokensRefreshTokensController",
+    "TopicName": "demo.identity_module.refresh_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "demo.identity_module.refresh_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "demo.identity_module.refresh_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "TopicName": "demo.identity_module.asp_net_role_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "demo.identity_module.asp_net_role_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "demo.identity_module.asp_net_role_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserclaimsAspNetUserClaimsController",
+    "TopicName": "demo.identity_module.asp_net_user_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "demo.identity_module.asp_net_user_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "demo.identity_module.asp_net_user_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserloginsAspNetUserLoginsController",
+    "TopicName": "demo.identity_module.asp_net_user_logins_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "demo.identity_module.asp_net_user_logins_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "demo.identity_module.asp_net_user_logins_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserrolesAspNetUserRolesController",
+    "TopicName": "demo.identity_module.asp_net_user_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "demo.identity_module.asp_net_user_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "demo.identity_module.asp_net_user_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusertokensAspNetUserTokensController",
+    "TopicName": "demo.identity_module.asp_net_user_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "demo.identity_module.asp_net_user_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "demo.identity_module.asp_net_user_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleauditlogsAuditLogsController",
+    "TopicName": "demo.identity_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.identity_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.identity_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapifinancesettlementmodulesellerpayoutsapprovesellerpayoutidintSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapifinancesettlementmodulesellerpayoutsmarkaspaidsellerpayoutidintSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts.mark_as_paid_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapifinancesettlementmodulesellerpayoutsmarkasfailedsellerpayoutidintSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts.mark_as_failed_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmodulesellerpayoutsSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmodulesellerpayoutsidintSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmodulesellerpayoutsidintSellerPayoutsController",
+    "TopicName": "demo.finance_settlement_module.seller_payouts_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmodulepayoutlineitemsPayoutLineItemsController",
+    "TopicName": "demo.finance_settlement_module.payout_line_items_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmodulepayoutlineitemsidintPayoutLineItemsController",
+    "TopicName": "demo.finance_settlement_module.payout_line_items_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmodulepayoutlineitemsidintPayoutLineItemsController",
+    "TopicName": "demo.finance_settlement_module.payout_line_items_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapifinancesettlementmodulepayoutperiodscloseperiodpayoutperiodidintPayoutPeriodsController",
+    "TopicName": "demo.finance_settlement_module.payout_periods.close_period_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmodulepayoutperiodsPayoutPeriodsController",
+    "TopicName": "demo.finance_settlement_module.payout_periods_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmodulepayoutperiodsidintPayoutPeriodsController",
+    "TopicName": "demo.finance_settlement_module.payout_periods_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmodulepayoutperiodsidintPayoutPeriodsController",
+    "TopicName": "demo.finance_settlement_module.payout_periods_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmodulecommissionentriesCommissionEntriesController",
+    "TopicName": "demo.finance_settlement_module.commission_entries_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmodulecommissionentriesidintCommissionEntriesController",
+    "TopicName": "demo.finance_settlement_module.commission_entries_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmodulecommissionentriesidintCommissionEntriesController",
+    "TopicName": "demo.finance_settlement_module.commission_entries_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmoduletransactionledgersTransactionLedgersController",
+    "TopicName": "demo.finance_settlement_module.transaction_ledgers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmoduletransactionledgersidintTransactionLedgersController",
+    "TopicName": "demo.finance_settlement_module.transaction_ledgers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmoduletransactionledgersidintTransactionLedgersController",
+    "TopicName": "demo.finance_settlement_module.transaction_ledgers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmodulefinancialadjustmentsFinancialAdjustmentsController",
+    "TopicName": "demo.finance_settlement_module.financial_adjustments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmodulefinancialadjustmentsidintFinancialAdjustmentsController",
+    "TopicName": "demo.finance_settlement_module.financial_adjustments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmodulefinancialadjustmentsidintFinancialAdjustmentsController",
+    "TopicName": "demo.finance_settlement_module.financial_adjustments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapifinancesettlementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo.finance_settlement_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapifinancesettlementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.finance_settlement_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapifinancesettlementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.finance_settlement_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmoduleordersupdatestatusorderidintOrdersController",
+    "TopicName": "demo.order_management_module.orders.update_status_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmoduleorderscancelorderorderidintOrdersController",
+    "TopicName": "demo.order_management_module.orders.cancel_order_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleordersOrdersController",
+    "TopicName": "demo.order_management_module.orders_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleordersidintOrdersController",
+    "TopicName": "demo.order_management_module.orders_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleordersidintOrdersController",
+    "TopicName": "demo.order_management_module.orders_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleorderitemsOrderItemsController",
+    "TopicName": "demo.order_management_module.order_items_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleorderitemsidintOrderItemsController",
+    "TopicName": "demo.order_management_module.order_items_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderitemsidintOrderItemsController",
+    "TopicName": "demo.order_management_module.order_items_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmoduleshipmentsmarkasshippedshipmentidintShipmentsController",
+    "TopicName": "demo.order_management_module.shipments.mark_as_shipped_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmoduleshipmentsmarkasdeliveredshipmentidintShipmentsController",
+    "TopicName": "demo.order_management_module.shipments.mark_as_delivered_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleshipmentsShipmentsController",
+    "TopicName": "demo.order_management_module.shipments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleshipmentsidintShipmentsController",
+    "TopicName": "demo.order_management_module.shipments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleshipmentsidintShipmentsController",
+    "TopicName": "demo.order_management_module.shipments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmoduleshippingmethodsdeactivateshippingmethodidintShippingMethodsController",
+    "TopicName": "demo.order_management_module.shipping_methods.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleshippingmethodsShippingMethodsController",
+    "TopicName": "demo.order_management_module.shipping_methods_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleshippingmethodsidintShippingMethodsController",
+    "TopicName": "demo.order_management_module.shipping_methods_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleshippingmethodsidintShippingMethodsController",
+    "TopicName": "demo.order_management_module.shipping_methods_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleorderstatushistoriesOrderStatusHistoriesController",
+    "TopicName": "demo.order_management_module.order_status_histories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "TopicName": "demo.order_management_module.order_status_histories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "TopicName": "demo.order_management_module.order_status_histories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmodulereturnrequestsapprovereturnrequestidintReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmodulereturnrequestsrejectreturnrequestidintReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests.reject_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiordermanagementmodulereturnrequestscompletereturnrequestidintReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests.complete_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmodulereturnrequestsReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmodulereturnrequestsidintReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmodulereturnrequestsidintReturnRequestsController",
+    "TopicName": "demo.order_management_module.return_requests_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo.order_management_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.order_management_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.order_management_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapipricingenginemodulecommissionmodelsdeactivatecommissionmodelidintCommissionModelsController",
+    "TopicName": "demo.pricing_engine_module.commission_models.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulecommissionmodelsCommissionModelsController",
+    "TopicName": "demo.pricing_engine_module.commission_models_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulecommissionmodelsidintCommissionModelsController",
+    "TopicName": "demo.pricing_engine_module.commission_models_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecommissionmodelsidintCommissionModelsController",
+    "TopicName": "demo.pricing_engine_module.commission_models_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapipricingenginemodulecommissionrulesdeactivatecommissionruleidintCommissionRulesController",
+    "TopicName": "demo.pricing_engine_module.commission_rules.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulecommissionrulesCommissionRulesController",
+    "TopicName": "demo.pricing_engine_module.commission_rules_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulecommissionrulesidintCommissionRulesController",
+    "TopicName": "demo.pricing_engine_module.commission_rules_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecommissionrulesidintCommissionRulesController",
+    "TopicName": "demo.pricing_engine_module.commission_rules_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulesellercommissionassignmentsremoveassignmentsellercommissionassignmentselleridintSellerCommissionAssignmentsController",
+    "TopicName": "demo.pricing_engine_module.seller_commission_assignments.remove_assignment_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulesellercommissionassignmentsSellerCommissionAssignmentsController",
+    "TopicName": "demo.pricing_engine_module.seller_commission_assignments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulesellercommissionassignmentsselleridintSellerCommissionAssignmentsController",
+    "TopicName": "demo.pricing_engine_module.seller_commission_assignments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulesellercommissionassignmentsselleridintSellerCommissionAssignmentsController",
+    "TopicName": "demo.pricing_engine_module.seller_commission_assignments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecategorycommissionoverridesremoveoverridecategorycommissionoverrideidintCategoryCommissionOverridesController",
+    "TopicName": "demo.pricing_engine_module.category_commission_overrides.remove_override_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulecategorycommissionoverridesCategoryCommissionOverridesController",
+    "TopicName": "demo.pricing_engine_module.category_commission_overrides_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulecategorycommissionoverridesidintCategoryCommissionOverridesController",
+    "TopicName": "demo.pricing_engine_module.category_commission_overrides_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecategorycommissionoverridesidintCategoryCommissionOverridesController",
+    "TopicName": "demo.pricing_engine_module.category_commission_overrides_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapipricingenginemodulepromotionalcampaignsdeactivatepromotionalcampaignidintPromotionalCampaignsController",
+    "TopicName": "demo.pricing_engine_module.promotional_campaigns.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulepromotionalcampaignsPromotionalCampaignsController",
+    "TopicName": "demo.pricing_engine_module.promotional_campaigns_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulepromotionalcampaignsidintPromotionalCampaignsController",
+    "TopicName": "demo.pricing_engine_module.promotional_campaigns_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulepromotionalcampaignsidintPromotionalCampaignsController",
+    "TopicName": "demo.pricing_engine_module.promotional_campaigns_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecampaignapplicabilitiesremoveapplicabilitycampaignapplicabilitycampaignidintcampaignapplicabilityscopecampaignapplicabilityscopeidintCampaignApplicabilitiesController",
+    "TopicName": "demo.pricing_engine_module.campaign_applicabilities.remove_applicability_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemodulecampaignapplicabilitiesCampaignApplicabilitiesController",
+    "TopicName": "demo.pricing_engine_module.campaign_applicabilities_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemodulecampaignapplicabilitiescampaignidintscopescopeidintCampaignApplicabilitiesController",
+    "TopicName": "demo.pricing_engine_module.campaign_applicabilities_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemodulecampaignapplicabilitiescampaignidintscopescopeidintCampaignApplicabilitiesController",
+    "TopicName": "demo.pricing_engine_module.campaign_applicabilities_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapipricingenginemoduleauditlogsAuditLogsController",
+    "TopicName": "demo.pricing_engine_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapipricingenginemoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.pricing_engine_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapipricingenginemoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.pricing_engine_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductsapproveproductidintProductsController",
+    "TopicName": "demo.product_catalog_module.products.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductsrejectproductidintProductsController",
+    "TopicName": "demo.product_catalog_module.products.reject_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductssetfeaturedproductidintProductsController",
+    "TopicName": "demo.product_catalog_module.products.set_featured_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleproductsProductsController",
+    "TopicName": "demo.product_catalog_module.products_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleproductsidintProductsController",
+    "TopicName": "demo.product_catalog_module.products_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductsidintProductsController",
+    "TopicName": "demo.product_catalog_module.products_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductvariantsupdatestockproductvariantidintProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants.update_stock_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductvariantsupdatepriceproductvariantidintProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants.update_price_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmoduleproductvariantsdeactivateproductvariantidintProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleproductvariantsProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleproductvariantsidintProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductvariantsidintProductVariantsController",
+    "TopicName": "demo.product_catalog_module.product_variants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmodulecategoriesdeactivatecategoryidintCategoriesController",
+    "TopicName": "demo.product_catalog_module.categories.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmodulecategoriesCategoriesController",
+    "TopicName": "demo.product_catalog_module.categories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmodulecategoriesidintCategoriesController",
+    "TopicName": "demo.product_catalog_module.categories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmodulecategoriesidintCategoriesController",
+    "TopicName": "demo.product_catalog_module.categories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductcategoriesremovefromcategoryproductcategoryproductidintproductcategorycategoryidintProductCategoriesController",
+    "TopicName": "demo.product_catalog_module.product_categories.remove_from_category_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleproductcategoriesProductCategoriesController",
+    "TopicName": "demo.product_catalog_module.product_categories_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleproductcategoriesproductidintcategoryidintProductCategoriesController",
+    "TopicName": "demo.product_catalog_module.product_categories_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductcategoriesproductidintcategoryidintProductCategoriesController",
+    "TopicName": "demo.product_catalog_module.product_categories_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiproductcatalogmodulebrandsdeactivatebrandidintBrandsController",
+    "TopicName": "demo.product_catalog_module.brands.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmodulebrandsBrandsController",
+    "TopicName": "demo.product_catalog_module.brands_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmodulebrandsidintBrandsController",
+    "TopicName": "demo.product_catalog_module.brands_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmodulebrandsidintBrandsController",
+    "TopicName": "demo.product_catalog_module.brands_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleattributesAttributesController",
+    "TopicName": "demo.product_catalog_module.attributes_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleattributesidintAttributesController",
+    "TopicName": "demo.product_catalog_module.attributes_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleattributesidintAttributesController",
+    "TopicName": "demo.product_catalog_module.attributes_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleattributevaluesAttributeValuesController",
+    "TopicName": "demo.product_catalog_module.attribute_values_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleattributevaluesidintAttributeValuesController",
+    "TopicName": "demo.product_catalog_module.attribute_values_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleattributevaluesidintAttributeValuesController",
+    "TopicName": "demo.product_catalog_module.attribute_values_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductvariantattributesremoveattributeproductvariantattributevariantidintproductvariantattributeattributevalueidintProductVariantAttributesController",
+    "TopicName": "demo.product_catalog_module.product_variant_attributes.remove_attribute_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleproductvariantattributesProductVariantAttributesController",
+    "TopicName": "demo.product_catalog_module.product_variant_attributes_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleproductvariantattributesvariantidintattributevalueidintProductVariantAttributesController",
+    "TopicName": "demo.product_catalog_module.product_variant_attributes_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleproductvariantattributesvariantidintattributevalueidintProductVariantAttributesController",
+    "TopicName": "demo.product_catalog_module.product_variant_attributes_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiproductcatalogmoduleauditlogsAuditLogsController",
+    "TopicName": "demo.product_catalog_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiproductcatalogmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.product_catalog_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiproductcatalogmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.product_catalog_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellersapproveselleridintSellersController",
+    "TopicName": "demo.seller_management_module.sellers.approve_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellerssuspendselleridintSellersController",
+    "TopicName": "demo.seller_management_module.sellers.suspend_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellersrejectselleridintSellersController",
+    "TopicName": "demo.seller_management_module.sellers.reject_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellersupdatetierselleridintSellersController",
+    "TopicName": "demo.seller_management_module.sellers.update_tier_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulesellersSellersController",
+    "TopicName": "demo.seller_management_module.sellers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulesellersidintSellersController",
+    "TopicName": "demo.seller_management_module.sellers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellersidintSellersController",
+    "TopicName": "demo.seller_management_module.sellers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulestoresupdateprofilestoreidintStoresController",
+    "TopicName": "demo.seller_management_module.stores.update_profile_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulestoresdeactivatestoreidintStoresController",
+    "TopicName": "demo.seller_management_module.stores.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulestoresStoresController",
+    "TopicName": "demo.seller_management_module.stores_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulestoresidintStoresController",
+    "TopicName": "demo.seller_management_module.stores_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulestoresidintStoresController",
+    "TopicName": "demo.seller_management_module.stores_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellerdocumentsverifysellerdocumentidintSellerDocumentsController",
+    "TopicName": "demo.seller_management_module.seller_documents.verify_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellerdocumentsrejectsellerdocumentidintSellerDocumentsController",
+    "TopicName": "demo.seller_management_module.seller_documents.reject_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulesellerdocumentsSellerDocumentsController",
+    "TopicName": "demo.seller_management_module.seller_documents_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulesellerdocumentsidintSellerDocumentsController",
+    "TopicName": "demo.seller_management_module.seller_documents_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellerdocumentsidintSellerDocumentsController",
+    "TopicName": "demo.seller_management_module.seller_documents_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellerbankaccountssetasdefaultsellerbankaccountselleridintSellerBankAccountsController",
+    "TopicName": "demo.seller_management_module.seller_bank_accounts.set_as_default_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapisellermanagementmodulesellerbankaccountssetdefaultaccountsellerbankaccountidintSellerBankAccountsController",
+    "TopicName": "demo.seller_management_module.seller_bank_accounts.set_default_account_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulesellerbankaccountsSellerBankAccountsController",
+    "TopicName": "demo.seller_management_module.seller_bank_accounts_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulesellerbankaccountsidintSellerBankAccountsController",
+    "TopicName": "demo.seller_management_module.seller_bank_accounts_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellerbankaccountsidintSellerBankAccountsController",
+    "TopicName": "demo.seller_management_module.seller_bank_accounts_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulesellertiersSellerTiersController",
+    "TopicName": "demo.seller_management_module.seller_tiers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulesellertiersidintSellerTiersController",
+    "TopicName": "demo.seller_management_module.seller_tiers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellertiersidintSellerTiersController",
+    "TopicName": "demo.seller_management_module.seller_tiers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmodulesellerperformancereviewsSellerPerformanceReviewsController",
+    "TopicName": "demo.seller_management_module.seller_performance_reviews_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "TopicName": "demo.seller_management_module.seller_performance_reviews_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "TopicName": "demo.seller_management_module.seller_performance_reviews_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapisellermanagementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo.seller_management_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapisellermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.seller_management_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapisellermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo.seller_management_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsupdateportalpagepermissionPortalPageDefinitionsController",
+    "TopicName": "demo.identity_module.portal_page_definitions.update_portal_page_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsupdateapipermissionApiMethodDefinitionsController",
+    "TopicName": "demo.identity_module.api_method_definitions.update_api_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthregisterAuthenticationsController",
+    "TopicName": "demo.auth.register_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthloginAuthenticationsController",
+    "TopicName": "demo.auth.login_post",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthvalidateAuthenticationsController",
+    "TopicName": "demo.auth.validate_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthrefreshAuthenticationsController",
+    "TopicName": "demo.auth.refresh_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresendconfirmationemailAuthenticationsController",
+    "TopicName": "demo.auth.resendconfirmationemail_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthforgotpasswordAuthenticationsController",
+    "TopicName": "demo.auth.forgotpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresetpasswordAuthenticationsController",
+    "TopicName": "demo.auth.resetpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Postapiauthmanageuser2faAuthenticationsController",
+    "TopicName": "demo.auth.manage.user2fa_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthmanageinfoAuthenticationsController",
+    "TopicName": "demo.auth.manage.info_post",
+    "IsActive": false
+  }
+]
+}

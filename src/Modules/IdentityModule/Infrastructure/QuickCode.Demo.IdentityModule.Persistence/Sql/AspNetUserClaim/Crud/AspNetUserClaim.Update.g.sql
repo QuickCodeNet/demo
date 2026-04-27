@@ -1,0 +1,7 @@
+﻿UPDATE [dbo].[AspNetUserClaims]
+SET
+    [UserId] = @PRM_ASP_NET_USER_CLAIM_USER_ID,
+    [ClaimType] = @PRM_ASP_NET_USER_CLAIM_CLAIM_TYPE,
+    [ClaimValue] = @PRM_ASP_NET_USER_CLAIM_CLAIM_VALUE
+WHERE
+    [Id] = @PRM_ASP_NET_USER_CLAIM_ID;

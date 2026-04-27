@@ -1,0 +1,3 @@
+﻿DELETE FROM [dbo].[AUDIT_LOGS]
+WHERE
+    [ID] = @PRM_AUDIT_LOG_ID;

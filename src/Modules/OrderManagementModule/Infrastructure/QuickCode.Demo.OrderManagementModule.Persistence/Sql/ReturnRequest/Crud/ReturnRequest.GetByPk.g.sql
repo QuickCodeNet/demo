@@ -1,0 +1,12 @@
+﻿SELECT
+    [ID],
+    [ORDER_ID],
+    [ORDER_ITEM_ID],
+    [REASON],
+    [STATUS],
+    [REQUESTED_DATE],
+    [UPDATED_DATE]
+FROM [dbo].[RETURN_REQUESTS]
+WHERE
+    [ID] = @PRM_RETURN_REQUEST_ID
+    AND [IsDeleted] = 0;

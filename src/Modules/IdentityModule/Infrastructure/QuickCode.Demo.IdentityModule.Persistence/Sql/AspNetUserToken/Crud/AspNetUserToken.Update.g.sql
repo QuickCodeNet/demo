@@ -1,0 +1,7 @@
+﻿UPDATE [dbo].[AspNetUserTokens]
+SET
+    [LoginProvider] = @PRM_ASP_NET_USER_TOKEN_LOGIN_PROVIDER,
+    [Name] = @PRM_ASP_NET_USER_TOKEN_NAME,
+    [Value] = @PRM_ASP_NET_USER_TOKEN_VALUE
+WHERE
+    [UserId] = @PRM_ASP_NET_USER_TOKEN_USER_ID;

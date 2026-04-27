@@ -1,0 +1,4594 @@
+﻿{
+"ApiMethodDefinitions": [
+  {
+    "Key": "GetapiidentitymodulemodulesmodulenameisexistsmodulenameModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Get",
+    "ControllerName": "ModulesController",
+    "MethodName": "module-name-is-exists/{moduleName}",
+    "UrlPath": "/api/identity-module/modules/module-name-is-exists/{moduleName}"
+  },
+  {
+    "Key": "GetapiidentitymodulemodulesModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Get",
+    "ControllerName": "ModulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/modules"
+  },
+  {
+    "Key": "GetapiidentitymodulemodulescountModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Get",
+    "ControllerName": "ModulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/modules/count"
+  },
+  {
+    "Key": "PostapiidentitymodulemodulesModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Post",
+    "ControllerName": "ModulesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/modules"
+  },
+  {
+    "Key": "GetapiidentitymodulemodulesnameModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Get",
+    "ControllerName": "ModulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/modules/{name}"
+  },
+  {
+    "Key": "PutapiidentitymodulemodulesnameModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Put",
+    "ControllerName": "ModulesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/modules/{name}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulemodulesnameModulesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Modules",
+    "HttpMethod": "Delete",
+    "ControllerName": "ModulesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/modules/{name}"
+  },
+  {
+    "Key": "GetapiidentitymodulemodelsmodulenameisexistsModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Get",
+    "ControllerName": "ModelsController",
+    "MethodName": "module-name-is-exists",
+    "UrlPath": "/api/identity-module/models/module-name-is-exists"
+  },
+  {
+    "Key": "DeleteapiidentitymodulemodelsdeletemodelswithmodulenamemodelmodulenameModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Delete",
+    "ControllerName": "ModelsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/models/delete-models-with-module-name/{modelModuleName}"
+  },
+  {
+    "Key": "GetapiidentitymodulemodelsModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Get",
+    "ControllerName": "ModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/models"
+  },
+  {
+    "Key": "GetapiidentitymodulemodelscountModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Get",
+    "ControllerName": "ModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/models/count"
+  },
+  {
+    "Key": "PostapiidentitymodulemodelsModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Post",
+    "ControllerName": "ModelsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/models"
+  },
+  {
+    "Key": "GetapiidentitymodulemodelsnamemodulenameModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Get",
+    "ControllerName": "ModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/models/{name}/{moduleName}"
+  },
+  {
+    "Key": "PutapiidentitymodulemodelsnamemodulenameModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Put",
+    "ControllerName": "ModelsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/models/{name}/{moduleName}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulemodelsnamemodulenameModelsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Models",
+    "HttpMethod": "Delete",
+    "ControllerName": "ModelsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/models/{name}/{moduleName}"
+  },
+  {
+    "Key": "GetapiidentitymodulepermissiongroupsPermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/permission-groups"
+  },
+  {
+    "Key": "GetapiidentitymodulepermissiongroupscountPermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/permission-groups/count"
+  },
+  {
+    "Key": "PostapiidentitymodulepermissiongroupsPermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Post",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/permission-groups"
+  },
+  {
+    "Key": "GetapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Get",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/permission-groups/{name}"
+  },
+  {
+    "Key": "PutapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Put",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/permission-groups/{name}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PermissionGroups",
+    "HttpMethod": "Delete",
+    "ControllerName": "PermissionGroupsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/permission-groups/{name}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsgetkafkaeventsapimethoddefinitionsapimethoddefinitionskeyApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "get-kafka-events-api-method-definitions/{apiMethodDefinitionsKey}",
+    "UrlPath": "/api/identity-module/api-method-definitions/get-kafka-events-api-method-definitions/{apiMethodDefinitionsKey}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsgetapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "get-api-method-definitions-with-module-name/{apiMethodDefinitionModuleName}",
+    "UrlPath": "/api/identity-module/api-method-definitions/get-api-method-definitions-with-module-name/{apiMethodDefinitionModuleName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsgetapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "get-api-method-definitions-with-model-name/{apiMethodDefinitionModelName}",
+    "UrlPath": "/api/identity-module/api-method-definitions/get-api-method-definitions-with-model-name/{apiMethodDefinitionModelName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsexistsapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "exists-api-method-definitions-with-module-name/{apiMethodDefinitionModuleName}",
+    "UrlPath": "/api/identity-module/api-method-definitions/exists-api-method-definitions-with-module-name/{apiMethodDefinitionModuleName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsexistsapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "exists-api-method-definitions-with-model-name/{apiMethodDefinitionModelName}",
+    "UrlPath": "/api/identity-module/api-method-definitions/exists-api-method-definitions-with-model-name/{apiMethodDefinitionModelName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/api-method-definitions/delete-api-method-definitions-with-module-name/{apiMethodDefinitionModuleName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/api-method-definitions/delete-api-method-definitions-with-model-name/{apiMethodDefinitionModelName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionscountApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-definitions/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/api-method-definitions"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "PutapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/api-method-definitions/{key}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsgetportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "get-portal-page-definitions-with-module-name/{portalPageDefinitionModuleName}",
+    "UrlPath": "/api/identity-module/portal-page-definitions/get-portal-page-definitions-with-module-name/{portalPageDefinitionModuleName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsgetportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "get-portal-page-definitions-with-model-name/{portalPageDefinitionModelName}",
+    "UrlPath": "/api/identity-module/portal-page-definitions/get-portal-page-definitions-with-model-name/{portalPageDefinitionModelName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsexistsportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "exists-portal-page-definitions-with-module-name/{portalPageDefinitionModuleName}",
+    "UrlPath": "/api/identity-module/portal-page-definitions/exists-portal-page-definitions-with-module-name/{portalPageDefinitionModuleName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsexistsportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "exists-portal-page-definitions-with-model-name/{portalPageDefinitionModelName}",
+    "UrlPath": "/api/identity-module/portal-page-definitions/exists-portal-page-definitions-with-model-name/{portalPageDefinitionModelName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-page-definitions/delete-portal-page-definitions-with-module-name/{portalPageDefinitionModuleName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-page-definitions/delete-portal-page-definitions-with-model-name/{portalPageDefinitionModelName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-definitions"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionscountPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-definitions/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleportalpagedefinitionsPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/portal-page-definitions"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-definitions/{key}"
+  },
+  {
+    "Key": "PutapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/portal-page-definitions/{key}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-page-definitions/{key}"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethodaccessgrantsgetapimethodaccessgrantnamesapimethodaccessgrantpermissiongroupnameApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "get-api-method-access-grant-names/{apiMethodAccessGrantPermissionGroupName}",
+    "UrlPath": "/api/identity-module/api-method-access-grants/get-api-method-access-grant-names/{apiMethodAccessGrantPermissionGroupName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleapimethodaccessgrantsclearapimethodaccessgrantsApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/api-method-access-grants/clear-api-method-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethodaccessgrantsApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethodaccessgrantscountApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-access-grants/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleapimethodaccessgrantsApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/api-method-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/api-method-access-grants/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "PutapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Put",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/api-method-access-grants/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodAccessGrants",
+    "HttpMethod": "Delete",
+    "ControllerName": "ApiMethodAccessGrantsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/api-method-access-grants/{permissionGroupName}/{apiMethodDefinitionKey}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpageaccessgrantsgetportalpageaccessgrantsportalpageaccessgrantpermissiongroupnamePortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "get-portal-page-access-grants/{portalPageAccessGrantPermissionGroupName}",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/get-portal-page-access-grants/{portalPageAccessGrantPermissionGroupName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpageaccessgrantsgetportalpageaccessgrantportalpageaccessgrantpermissiongroupnameportalpageaccessgrantportalpagedefinitionkeyportalpageaccessgrantpageactionPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "get-portal-page-access-grant/{portalPageAccessGrantPermissionGroupName}/{portalPageAccessGrantPortalPageDefinitionKey}/{portalPageAccessGrantPageAction}",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/get-portal-page-access-grant/{portalPageAccessGrantPermissionGroupName}/{portalPageAccessGrantPortalPageDefinitionKey}/{portalPageAccessGrantPageAction}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalpageaccessgrantsclearportalpageaccessgrantsPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/clear-portal-page-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpageaccessgrantsPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpageaccessgrantscountPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleportalpageaccessgrantsPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/portal-page-access-grants"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/{permissionGroupName}/{portalPageDefinitionKey}/{pageAction}"
+  },
+  {
+    "Key": "PutapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/{permissionGroupName}/{portalPageDefinitionKey}/{pageAction}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageAccessGrants",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalPageAccessGrantsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-page-access-grants/{permissionGroupName}/{portalPageDefinitionKey}/{pageAction}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodulenameportalmenukeyPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-menus/delete-portal-menu-items-with-module-name/{portalMenuKey}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodelnameportalmenukeyportalmenunamePortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-menus/delete-portal-menu-items-with-model-name/{portalMenuKey}/{portalMenuName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalmenusPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-menus"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalmenuscountPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-menus/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleportalmenusPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/portal-menus"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalmenuskeyPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/portal-menus/{key}"
+  },
+  {
+    "Key": "PutapiidentitymoduleportalmenuskeyPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Put",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/portal-menus/{key}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleportalmenuskeyPortalMenusController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalMenus",
+    "HttpMethod": "Delete",
+    "ControllerName": "PortalMenusController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/portal-menus/{key}"
+  },
+  {
+    "Key": "GetapiidentitymodulecolumntypesColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/column-types"
+  },
+  {
+    "Key": "GetapiidentitymodulecolumntypescountColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/column-types/count"
+  },
+  {
+    "Key": "PostapiidentitymodulecolumntypesColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Post",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/column-types"
+  },
+  {
+    "Key": "GetapiidentitymodulecolumntypesidintColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Get",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/column-types/{id:int}"
+  },
+  {
+    "Key": "PutapiidentitymodulecolumntypesidintColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Put",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/column-types/{id:int}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulecolumntypesidintColumnTypesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ColumnTypes",
+    "HttpMethod": "Delete",
+    "ControllerName": "ColumnTypesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/column-types/{id:int}"
+  },
+  {
+    "Key": "GetapiidentitymoduletablecomboboxsettingsTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiidentitymoduletablecomboboxsettingscountTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/table-combobox-settings/count"
+  },
+  {
+    "Key": "PostapiidentitymoduletablecomboboxsettingsTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Post",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/table-combobox-settings"
+  },
+  {
+    "Key": "GetapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Get",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "PutapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Put",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TableComboboxSettings",
+    "HttpMethod": "Delete",
+    "ControllerName": "TableComboboxSettingsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/table-combobox-settings/{tableName}"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventsgetkafkaeventsKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "get-kafka-events",
+    "UrlPath": "/api/identity-module/kafka-events/get-kafka-events"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventsgetactivekafkaeventsKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "get-active-kafka-events",
+    "UrlPath": "/api/identity-module/kafka-events/get-active-kafka-events"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}",
+    "UrlPath": "/api/identity-module/kafka-events/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventsgettopicworkflowskafkaeventskafkaeventstopicnameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "get-topic-workflows-kafka-events/{kafkaEventsTopicName}",
+    "UrlPath": "/api/identity-module/kafka-events/get-topic-workflows-kafka-events/{kafkaEventsTopicName}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodulenameapimethoddefinitionsmodulenameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Delete",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/kafka-events/clean-kafka-events-with-module-name/{apiMethodDefinitionsModuleName}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodelnameapimethoddefinitionsmodelnameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Delete",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/kafka-events/clean-kafka-events-with-model-name/{apiMethodDefinitionsModelName}"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventsKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/kafka-events"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventscountKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/kafka-events/count"
+  },
+  {
+    "Key": "PostapiidentitymodulekafkaeventsKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Post",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/kafka-events"
+  },
+  {
+    "Key": "GetapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Get",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "PutapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Put",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "KafkaEvents",
+    "HttpMethod": "Delete",
+    "ControllerName": "KafkaEventsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/kafka-events/{topicName}"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsgetworkflowstopicworkflowkafkaeventstopicnameTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "get-workflows/{topicWorkflowKafkaEventsTopicName}",
+    "UrlPath": "/api/identity-module/topic-workflows/get-workflows/{topicWorkflowKafkaEventsTopicName}"
+  },
+  {
+    "Key": "Getapiidentitymoduletopicworkflowsgetworkflows2topicworkflowkafkaeventstopicnameTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "get-workflows-2/{topicWorkflowKafkaEventsTopicName}",
+    "UrlPath": "/api/identity-module/topic-workflows/get-workflows-2/{topicWorkflowKafkaEventsTopicName}"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsgettopicworkflowskafkaeventstopicnameapimethoddefinitionshttpmethodTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}",
+    "UrlPath": "/api/identity-module/topic-workflows/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowscountTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/topic-workflows/count"
+  },
+  {
+    "Key": "PostapiidentitymoduletopicworkflowsTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Post",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/topic-workflows"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Get",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "PutapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Put",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "TopicWorkflows",
+    "HttpMethod": "Delete",
+    "ControllerName": "TopicWorkflowsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/topic-workflows/{id:int}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetrolesAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetrolescountAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-roles/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetrolesAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-roles"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoles",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRolesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-roles/{id}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersgetuseraspnetuseremailAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "get-user/{aspNetUserEmail}",
+    "UrlPath": "/api/identity-module/asp-net-users/get-user/{aspNetUserEmail}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersidentityuserbyidaspnetuseridAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "identity-user-by-id/{aspNetUserId}",
+    "UrlPath": "/api/identity-module/asp-net-users/identity-user-by-id/{aspNetUserId}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersidentityuserbynormalizedemailaspnetusernormalizedemailAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "identity-user-by-normalized-email/{aspNetUserNormalizedEmail}",
+    "UrlPath": "/api/identity-module/asp-net-users/identity-user-by-normalized-email/{aspNetUserNormalizedEmail}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersidentityuserbynormalizedusernameaspnetusernormalizedusernameAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "identity-user-by-normalized-username/{aspNetUserNormalizedUserName}",
+    "UrlPath": "/api/identity-module/asp-net-users/identity-user-by-normalized-username/{aspNetUserNormalizedUserName}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserscountAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-users/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetusersAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-users"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusersidAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetusersidAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetusersidAspNetUsersController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUsers",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUsersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-users/{id}"
+  },
+  {
+    "Key": "GetapiidentitymodulerefreshtokensgetrefreshtokenrefreshtokentokenRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "get-refresh-token/{refreshTokenToken}",
+    "UrlPath": "/api/identity-module/refresh-tokens/get-refresh-token/{refreshTokenToken}"
+  },
+  {
+    "Key": "PatchapiidentitymodulerefreshtokensupdaterefreshtokensrefreshtokentokenRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Patch",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/identity-module/refresh-tokens/update-refresh-tokens/{refreshTokenToken}"
+  },
+  {
+    "Key": "GetapiidentitymodulerefreshtokensRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiidentitymodulerefreshtokenscountRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/refresh-tokens/count"
+  },
+  {
+    "Key": "PostapiidentitymodulerefreshtokensRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Post",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/refresh-tokens"
+  },
+  {
+    "Key": "GetapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "PutapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Put",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "DeleteapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "RefreshTokens",
+    "HttpMethod": "Delete",
+    "ControllerName": "RefreshTokensController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/refresh-tokens/{id:int}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetroleclaimscountAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-role-claims/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-role-claims"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetRoleClaims",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetRoleClaimsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-role-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserclaimsAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserclaimscountAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-claims/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetuserclaimsAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-user-claims"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserClaims",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserClaimsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-user-claims/{id:int}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserloginsAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserloginscountAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-logins/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetuserloginsAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-user-logins"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserLogins",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserLoginsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-user-logins/{loginProvider}/{providerKey}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserrolesAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserrolescountAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-roles/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetuserrolesAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-user-roles"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserRoles",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserRolesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-user-roles/{userId}/{roleId}"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusertokensAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusertokenscountAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleaspnetusertokensAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Post",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens"
+  },
+  {
+    "Key": "GetapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Get",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "PutapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Put",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AspNetUserTokens",
+    "HttpMethod": "Delete",
+    "ControllerName": "AspNetUserTokensController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/asp-net-user-tokens/{userId}"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/audit-logs"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogscountAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapiidentitymoduleauditlogsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/identity-module/audit-logs"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/identity-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapiidentitymoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/identity-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapiidentitymoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/identity-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsgetbyselleridsellerpayoutselleridintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "get-by-seller-id/{sellerPayoutSellerId:int}",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/get-by-seller-id/{sellerPayoutSellerId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsgetbystatussellerpayoutstatusSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "get-by-status/{sellerPayoutStatus}",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/get-by-status/{sellerPayoutStatus}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsgetbyperiodsellerpayoutpayoutperiodidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "get-by-period/{sellerPayoutPayoutPeriodId:int}",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/get-by-period/{sellerPayoutPayoutPeriodId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsgetpendingpayoutssummarySellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "get-pending-payouts-summary",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/get-pending-payouts-summary"
+  },
+  {
+    "Key": "PatchapifinancesettlementmodulesellerpayoutsapprovesellerpayoutidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/approve/{sellerPayoutId:int}"
+  },
+  {
+    "Key": "PatchapifinancesettlementmodulesellerpayoutsmarkaspaidsellerpayoutidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/mark-as-paid/{sellerPayoutId:int}"
+  },
+  {
+    "Key": "PatchapifinancesettlementmodulesellerpayoutsmarkasfailedsellerpayoutidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/mark-as-failed/{sellerPayoutId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutscountSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmodulesellerpayoutsSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulesellerpayoutsidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmodulesellerpayoutsidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmodulesellerpayoutsidintSellerPayoutsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "SellerPayouts",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerPayoutsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/seller-payouts/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutlineitemsgetbypayoutidpayoutlineitempayoutidintPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "get-by-payout-id/{payoutLineItemPayoutId:int}",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items/get-by-payout-id/{payoutLineItemPayoutId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutlineitemsPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutlineitemscountPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmodulepayoutlineitemsPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Post",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutlineitemsidintPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmodulepayoutlineitemsidintPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Put",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmodulepayoutlineitemsidintPayoutLineItemsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutLineItems",
+    "HttpMethod": "Delete",
+    "ControllerName": "PayoutLineItemsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/payout-line-items/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodpayoutperiodisclosedboolPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "get-open-period/{payoutPeriodIsClosed:bool}",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/get-open-period/{payoutPeriodIsClosed:bool}"
+  },
+  {
+    "Key": "PatchapifinancesettlementmodulepayoutperiodscloseperiodpayoutperiodidintPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Patch",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/close-period/{payoutPeriodId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutperiodsPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-periods"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutperiodscountPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmodulepayoutperiodsPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Post",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/payout-periods"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulepayoutperiodsidintPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Get",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmodulepayoutperiodsidintPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Put",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmodulepayoutperiodsidintPayoutPeriodsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "PayoutPeriods",
+    "HttpMethod": "Delete",
+    "ControllerName": "PayoutPeriodsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulecommissionentriesgetbyorderidcommissionentryorderidintCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "get-by-order-id/{commissionEntryOrderId:int}",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/get-by-order-id/{commissionEntryOrderId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulecommissionentriesgetcommissionsbysellerforperiodcommissionentriesselleridintCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "get-commissions-by-seller-for-period/{commissionEntriesSellerId:int}",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/get-commissions-by-seller-for-period/{commissionEntriesSellerId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulecommissionentriesCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/commission-entries"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulecommissionentriescountCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmodulecommissionentriesCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Post",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/commission-entries"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulecommissionentriesidintCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmodulecommissionentriesidintCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Put",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmodulecommissionentriesidintCommissionEntriesController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "CommissionEntries",
+    "HttpMethod": "Delete",
+    "ControllerName": "CommissionEntriesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/commission-entries/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgersgetbyselleridtransactionledgerselleridintTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "get-by-seller-id/{transactionLedgerSellerId:int}",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/get-by-seller-id/{transactionLedgerSellerId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgersgetsellerbalancetransactionledgerselleridintTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "get-seller-balance/{transactionLedgerSellerId:int}",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/get-seller-balance/{transactionLedgerSellerId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgersgettransactionsbytypeanddatetransactionledgerselleridinttransactionledgertransactiontypeTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "get-transactions-by-type-and-date/{transactionLedgerSellerId:int}/{transactionLedgerTransactionType}",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/get-transactions-by-type-and-date/{transactionLedgerSellerId:int}/{transactionLedgerTransactionType}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgersTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgerscountTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmoduletransactionledgersTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Post",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduletransactionledgersidintTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Get",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmoduletransactionledgersidintTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Put",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmoduletransactionledgersidintTransactionLedgersController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "TransactionLedgers",
+    "HttpMethod": "Delete",
+    "ControllerName": "TransactionLedgersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/transaction-ledgers/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulefinancialadjustmentsgetbyselleridfinancialadjustmentselleridintFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Get",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "get-by-seller-id/{financialAdjustmentSellerId:int}",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments/get-by-seller-id/{financialAdjustmentSellerId:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulefinancialadjustmentsFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Get",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulefinancialadjustmentscountFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Get",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmodulefinancialadjustmentsFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Post",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments"
+  },
+  {
+    "Key": "GetapifinancesettlementmodulefinancialadjustmentsidintFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Get",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments/{id:int}"
+  },
+  {
+    "Key": "PutapifinancesettlementmodulefinancialadjustmentsidintFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Put",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments/{id:int}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmodulefinancialadjustmentsidintFinancialAdjustmentsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "FinancialAdjustments",
+    "HttpMethod": "Delete",
+    "ControllerName": "FinancialAdjustmentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/financial-adjustments/{id:int}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/audit-logs"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogscountAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapifinancesettlementmoduleauditlogsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/finance-settlement-module/audit-logs"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapifinancesettlementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapifinancesettlementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetbyordernumberorderordernumberOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-by-order-number/{orderOrderNumber}",
+    "UrlPath": "/api/order-management-module/orders/get-by-order-number/{orderOrderNumber}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetbycustomeridordercustomeridintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-by-customer-id/{orderCustomerId:int}",
+    "UrlPath": "/api/order-management-module/orders/get-by-customer-id/{orderCustomerId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetbyselleridorderselleridintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-by-seller-id/{orderSellerId:int}",
+    "UrlPath": "/api/order-management-module/orders/get-by-seller-id/{orderSellerId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetbystatusorderstatusOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-by-status/{orderStatus}",
+    "UrlPath": "/api/order-management-module/orders/get-by-status/{orderStatus}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetbydaterangeOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-by-date-range",
+    "UrlPath": "/api/order-management-module/orders/get-by-date-range"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintorderstatusOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-orders-for-settlement/{orderSellerId:int}/{orderStatus}",
+    "UrlPath": "/api/order-management-module/orders/get-orders-for-settlement/{orderSellerId:int}/{orderStatus}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersgetmonthlyrevenuebysellerorderselleridintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "get-monthly-revenue-by-seller/{orderSellerId:int}",
+    "UrlPath": "/api/order-management-module/orders/get-monthly-revenue-by-seller/{orderSellerId:int}"
+  },
+  {
+    "Key": "PatchapiordermanagementmoduleordersupdatestatusorderidintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Patch",
+    "ControllerName": "OrdersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/orders/update-status/{orderId:int}"
+  },
+  {
+    "Key": "PatchapiordermanagementmoduleorderscancelorderorderidintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Patch",
+    "ControllerName": "OrdersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/orders/cancel-order/{orderId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/orders"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderscountOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/orders/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleordersOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Post",
+    "ControllerName": "OrdersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/orders"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleordersidintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Get",
+    "ControllerName": "OrdersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/orders/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleordersidintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Put",
+    "ControllerName": "OrdersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/orders/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleordersidintOrdersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Orders",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrdersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/orders/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderitemsgetbyorderidorderitemorderidintOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "get-by-order-id/{orderItemOrderId:int}",
+    "UrlPath": "/api/order-management-module/order-items/get-by-order-id/{orderItemOrderId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderitemsOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-items"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderitemscountOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-items/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleorderitemsOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Post",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/order-items"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderitemsidintOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-items/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleorderitemsidintOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Put",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/order-items/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleorderitemsidintOrderItemsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderItems",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrderItemsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/order-items/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshipmentsgetbyorderidshipmentorderidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "get-by-order-id/{shipmentOrderId:int}",
+    "UrlPath": "/api/order-management-module/shipments/get-by-order-id/{shipmentOrderId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshipmentsgetbytrackingnumbershipmenttrackingnumberShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "get-by-tracking-number/{shipmentTrackingNumber}",
+    "UrlPath": "/api/order-management-module/shipments/get-by-tracking-number/{shipmentTrackingNumber}"
+  },
+  {
+    "Key": "PatchapiordermanagementmoduleshipmentsmarkasshippedshipmentidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/shipments/mark-as-shipped/{shipmentId:int}"
+  },
+  {
+    "Key": "PatchapiordermanagementmoduleshipmentsmarkasdeliveredshipmentidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/shipments/mark-as-delivered/{shipmentId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshipmentsShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipments"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshipmentscountShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipments/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleshipmentsShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Post",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/shipments"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshipmentsidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Get",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipments/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleshipmentsidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Put",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/shipments/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleshipmentsidintShipmentsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "Shipments",
+    "HttpMethod": "Delete",
+    "ControllerName": "ShipmentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/shipments/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshippingmethodsgetactiveshippingmethodisactiveboolShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "get-active/{shippingMethodIsActive:bool}",
+    "UrlPath": "/api/order-management-module/shipping-methods/get-active/{shippingMethodIsActive:bool}"
+  },
+  {
+    "Key": "PatchapiordermanagementmoduleshippingmethodsdeactivateshippingmethodidintShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Patch",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/shipping-methods/deactivate/{shippingMethodId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshippingmethodsShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipping-methods"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshippingmethodscountShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipping-methods/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleshippingmethodsShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Post",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/shipping-methods"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleshippingmethodsidintShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Get",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/shipping-methods/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleshippingmethodsidintShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Put",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/shipping-methods/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleshippingmethodsidintShippingMethodsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ShippingMethods",
+    "HttpMethod": "Delete",
+    "ControllerName": "ShippingMethodsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/shipping-methods/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatushistoriesgetbyorderidorderstatushistoryorderidintOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "get-by-order-id/{orderStatusHistoryOrderId:int}",
+    "UrlPath": "/api/order-management-module/order-status-histories/get-by-order-id/{orderStatusHistoryOrderId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatushistoriesOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-histories"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatushistoriescountOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-histories/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleorderstatushistoriesOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Post",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/order-status-histories"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-histories/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Put",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/order-status-histories/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusHistories",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrderStatusHistoriesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/order-status-histories/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmodulereturnrequestsgetbyorderidreturnrequestorderidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Get",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "get-by-order-id/{returnRequestOrderId:int}",
+    "UrlPath": "/api/order-management-module/return-requests/get-by-order-id/{returnRequestOrderId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintreturnrequestsstatusReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Get",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "get-pending-returns-by-seller/{ordersSellerId:int}/{returnRequestsStatus}",
+    "UrlPath": "/api/order-management-module/return-requests/get-pending-returns-by-seller/{ordersSellerId:int}/{returnRequestsStatus}"
+  },
+  {
+    "Key": "PatchapiordermanagementmodulereturnrequestsapprovereturnrequestidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Patch",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/return-requests/approve/{returnRequestId:int}"
+  },
+  {
+    "Key": "PatchapiordermanagementmodulereturnrequestsrejectreturnrequestidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Patch",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/return-requests/reject/{returnRequestId:int}"
+  },
+  {
+    "Key": "PatchapiordermanagementmodulereturnrequestscompletereturnrequestidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Patch",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/order-management-module/return-requests/complete/{returnRequestId:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmodulereturnrequestsReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Get",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/return-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmodulereturnrequestscountReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Get",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/return-requests/count"
+  },
+  {
+    "Key": "PostapiordermanagementmodulereturnrequestsReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Post",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/return-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmodulereturnrequestsidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Get",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/return-requests/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmodulereturnrequestsidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Put",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/return-requests/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmodulereturnrequestsidintReturnRequestsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "ReturnRequests",
+    "HttpMethod": "Delete",
+    "ControllerName": "ReturnRequestsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/return-requests/{id:int}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/audit-logs"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogscountAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleauditlogsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/audit-logs"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionmodelsgetactivecommissionmodelisactiveboolCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "get-active/{commissionModelIsActive:bool}",
+    "UrlPath": "/api/pricing-engine-module/commission-models/get-active/{commissionModelIsActive:bool}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionmodelsgetbynamecommissionmodelnameCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "get-by-name/{commissionModelName}",
+    "UrlPath": "/api/pricing-engine-module/commission-models/get-by-name/{commissionModelName}"
+  },
+  {
+    "Key": "PatchapipricingenginemodulecommissionmodelsdeactivatecommissionmodelidintCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Patch",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/pricing-engine-module/commission-models/deactivate/{commissionModelId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionmodelsCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-models"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionmodelscountCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-models/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulecommissionmodelsCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Post",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/commission-models"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionmodelsidintCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-models/{id:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulecommissionmodelsidintCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Put",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/commission-models/{id:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecommissionmodelsidintCommissionModelsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionModels",
+    "HttpMethod": "Delete",
+    "ControllerName": "CommissionModelsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/commission-models/{id:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionrulesgetbymodelidcommissionrulecommissionmodelidintCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "get-by-model-id/{commissionRuleCommissionModelId:int}",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/get-by-model-id/{commissionRuleCommissionModelId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintcommissionruleisactiveboolCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "get-active-rules-by-model/{commissionRuleCommissionModelId:int}/{commissionRuleIsActive:bool}",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/get-active-rules-by-model/{commissionRuleCommissionModelId:int}/{commissionRuleIsActive:bool}"
+  },
+  {
+    "Key": "PatchapipricingenginemodulecommissionrulesdeactivatecommissionruleidintCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Patch",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/deactivate/{commissionRuleId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionrulesCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-rules"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionrulescountCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulecommissionrulesCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Post",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/commission-rules"
+  },
+  {
+    "Key": "GetapipricingenginemodulecommissionrulesidintCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Get",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/{id:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulecommissionrulesidintCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Put",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/{id:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecommissionrulesidintCommissionRulesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CommissionRules",
+    "HttpMethod": "Delete",
+    "ControllerName": "CommissionRulesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/{id:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulesellercommissionassignmentsgetbyselleridsellercommissionassignmentselleridintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "get-by-seller-id/{sellerCommissionAssignmentSellerId:int}",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/get-by-seller-id/{sellerCommissionAssignmentSellerId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulesellercommissionassignmentsgetbymodelidsellercommissionassignmentcommissionmodelidintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "get-by-model-id/{sellerCommissionAssignmentCommissionModelId:int}",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/get-by-model-id/{sellerCommissionAssignmentCommissionModelId:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulesellercommissionassignmentsremoveassignmentsellercommissionassignmentselleridintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/remove-assignment/{sellerCommissionAssignmentSellerId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulesellercommissionassignmentsSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments"
+  },
+  {
+    "Key": "GetapipricingenginemodulesellercommissionassignmentscountSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulesellercommissionassignmentsSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments"
+  },
+  {
+    "Key": "GetapipricingenginemodulesellercommissionassignmentsselleridintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/{sellerId:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulesellercommissionassignmentsselleridintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/{sellerId:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulesellercommissionassignmentsselleridintSellerCommissionAssignmentsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "SellerCommissionAssignments",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerCommissionAssignmentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/seller-commission-assignments/{sellerId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecategorycommissionoverridesgetbycategoryidcategorycommissionoverridecategoryidintCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "get-by-category-id/{categoryCommissionOverrideCategoryId:int}",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/get-by-category-id/{categoryCommissionOverrideCategoryId:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecategorycommissionoverridesremoveoverridecategorycommissionoverrideidintCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Delete",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/remove-override/{categoryCommissionOverrideId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecategorycommissionoverridesCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides"
+  },
+  {
+    "Key": "GetapipricingenginemodulecategorycommissionoverridescountCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulecategorycommissionoverridesCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Post",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides"
+  },
+  {
+    "Key": "GetapipricingenginemodulecategorycommissionoverridesidintCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/{id:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulecategorycommissionoverridesidintCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Put",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/{id:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecategorycommissionoverridesidintCategoryCommissionOverridesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CategoryCommissionOverrides",
+    "HttpMethod": "Delete",
+    "ControllerName": "CategoryCommissionOverridesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/category-commission-overrides/{id:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignspromotionalcampaignisactiveboolPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Get",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "get-active-campaigns/{promotionalCampaignIsActive:bool}",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/get-active-campaigns/{promotionalCampaignIsActive:bool}"
+  },
+  {
+    "Key": "GetapipricingenginemodulepromotionalcampaignsgetcampaignsindaterangePromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Get",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "get-campaigns-in-date-range",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/get-campaigns-in-date-range"
+  },
+  {
+    "Key": "PatchapipricingenginemodulepromotionalcampaignsdeactivatepromotionalcampaignidintPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Patch",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/deactivate/{promotionalCampaignId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulepromotionalcampaignsPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Get",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns"
+  },
+  {
+    "Key": "GetapipricingenginemodulepromotionalcampaignscountPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Get",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulepromotionalcampaignsPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Post",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns"
+  },
+  {
+    "Key": "GetapipricingenginemodulepromotionalcampaignsidintPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Get",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/{id:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulepromotionalcampaignsidintPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Put",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/{id:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulepromotionalcampaignsidintPromotionalCampaignsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "PromotionalCampaigns",
+    "HttpMethod": "Delete",
+    "ControllerName": "PromotionalCampaignsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/{id:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecampaignapplicabilitiesgetbycampaignidcampaignapplicabilitycampaignidintCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "get-by-campaign-id/{campaignApplicabilityCampaignId:int}",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/get-by-campaign-id/{campaignApplicabilityCampaignId:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecampaignapplicabilitiesremoveapplicabilitycampaignapplicabilitycampaignidintcampaignapplicabilityscopecampaignapplicabilityscopeidintCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/remove-applicability/{campaignApplicabilityCampaignId:int}/{campaignApplicabilityScope}/{campaignApplicabilityScopeId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemodulecampaignapplicabilitiesCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities"
+  },
+  {
+    "Key": "GetapipricingenginemodulecampaignapplicabilitiescountCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/count"
+  },
+  {
+    "Key": "PostapipricingenginemodulecampaignapplicabilitiesCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Post",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities"
+  },
+  {
+    "Key": "GetapipricingenginemodulecampaignapplicabilitiescampaignidintscopescopeidintCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Get",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/{campaignId:int}/{scope}/{scopeId:int}"
+  },
+  {
+    "Key": "PutapipricingenginemodulecampaignapplicabilitiescampaignidintscopescopeidintCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Put",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/{campaignId:int}/{scope}/{scopeId:int}"
+  },
+  {
+    "Key": "DeleteapipricingenginemodulecampaignapplicabilitiescampaignidintscopescopeidintCampaignApplicabilitiesController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "CampaignApplicabilities",
+    "HttpMethod": "Delete",
+    "ControllerName": "CampaignApplicabilitiesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/{campaignId:int}/{scope}/{scopeId:int}"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/audit-logs"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogscountAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapipricingenginemoduleauditlogsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/pricing-engine-module/audit-logs"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapipricingenginemoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapipricingenginemoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetbyskuproductskuProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-by-sku/{productSku}",
+    "UrlPath": "/api/product-catalog-module/products/get-by-sku/{productSku}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintproductstatusProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-active-by-seller/{productSellerId:int}/{productStatus}",
+    "UrlPath": "/api/product-catalog-module/products/get-active-by-seller/{productSellerId:int}/{productStatus}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductssearchproductsproductnameproductstatusProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "search-products/{productName}/{productStatus}",
+    "UrlPath": "/api/product-catalog-module/products/search-products/{productName}/{productStatus}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetpendingapprovalproductstatusProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-pending-approval/{productStatus}",
+    "UrlPath": "/api/product-catalog-module/products/get-pending-approval/{productStatus}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetfeaturedproductstatusproductisfeaturedboolProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-featured/{productStatus}/{productIsFeatured:bool}",
+    "UrlPath": "/api/product-catalog-module/products/get-featured/{productStatus}/{productIsFeatured:bool}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetproductswithdetailsproductsbrandidintproductprimarycategoryidintcategoryidintbrandidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-products-with-details/{productsBrandId:int}/{productPrimaryCategoryId:int}/{categoryId:int}/{brandId:int}",
+    "UrlPath": "/api/product-catalog-module/products/get-products-with-details/{productsBrandId:int}/{productPrimaryCategoryId:int}/{categoryId:int}/{brandId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsgetcountbystatusproductstatusProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "get-count-by-status/{productStatus}",
+    "UrlPath": "/api/product-catalog-module/products/get-count-by-status/{productStatus}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductsapproveproductidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/products/approve/{productId:int}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductsrejectproductidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/products/reject/{productId:int}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductssetfeaturedproductidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/products/set-featured/{productId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/products"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductscountProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/products/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleproductsProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/products"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductsidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/products/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleproductsidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/products/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductsidintProductsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Products",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/products/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantsgetbyproductidproductvariantproductidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "get-by-product-id/{productVariantProductId:int}",
+    "UrlPath": "/api/product-catalog-module/product-variants/get-by-product-id/{productVariantProductId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintproductvariantisactiveboolProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "get-active-by-product-id/{productVariantProductId:int}/{productVariantIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/product-variants/get-active-by-product-id/{productVariantProductId:int}/{productVariantIsActive:bool}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsproductvariantisactiveboolProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "get-low-stock-variants/{productVariantIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/product-variants/get-low-stock-variants/{productVariantIsActive:bool}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductvariantsupdatestockproductvariantidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/product-variants/update-stock/{productVariantId:int}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductvariantsupdatepriceproductvariantidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/product-variants/update-price/{productVariantId:int}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmoduleproductvariantsdeactivateproductvariantidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Patch",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/product-variants/deactivate/{productVariantId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantsProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variants"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantscountProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variants/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleproductvariantsProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/product-variants"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantsidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variants/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleproductvariantsidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/product-variants/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductvariantsidintProductVariantsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariants",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductVariantsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/product-variants/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriesgetactivecategoryisactiveboolCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "get-active/{categoryIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/categories/get-active/{categoryIsActive:bool}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintcategoryisactiveboolCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "get-sub-categories/{categoryParentCategoryId:int}/{categoryIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/categories/get-sub-categories/{categoryParentCategoryId:int}/{categoryIsActive:bool}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugcategoryisactiveboolCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "get-by-slug/{categorySlug}/{categoryIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/categories/get-by-slug/{categorySlug}/{categoryIsActive:bool}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmodulecategoriesdeactivatecategoryidintCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Patch",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/categories/deactivate/{categoryId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriesCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/categories"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriescountCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/categories/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmodulecategoriesCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Post",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/categories"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulecategoriesidintCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Get",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/categories/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmodulecategoriesidintCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Put",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/categories/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmodulecategoriesidintCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Categories",
+    "HttpMethod": "Delete",
+    "ControllerName": "CategoriesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/categories/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductcategoriesgetbyproductidproductcategoryproductidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "get-by-product-id/{productCategoryProductId:int}",
+    "UrlPath": "/api/product-catalog-module/product-categories/get-by-product-id/{productCategoryProductId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductcategoriesgetbycategoryidproductcategorycategoryidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "get-by-category-id/{productCategoryCategoryId:int}",
+    "UrlPath": "/api/product-catalog-module/product-categories/get-by-category-id/{productCategoryCategoryId:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductcategoriesremovefromcategoryproductcategoryproductidintproductcategorycategoryidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/product-categories/remove-from-category/{productCategoryProductId:int}/{productCategoryCategoryId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductcategoriesProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-categories"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductcategoriescountProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-categories/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleproductcategoriesProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/product-categories"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductcategoriesproductidintcategoryidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-categories/{productId:int}/{categoryId:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleproductcategoriesproductidintcategoryidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/product-categories/{productId:int}/{categoryId:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductcategoriesproductidintcategoryidintProductCategoriesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductCategories",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductCategoriesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/product-categories/{productId:int}/{categoryId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulebrandsgetactivebrandisactiveboolBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Get",
+    "ControllerName": "BrandsController",
+    "MethodName": "get-active/{brandIsActive:bool}",
+    "UrlPath": "/api/product-catalog-module/brands/get-active/{brandIsActive:bool}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulebrandssearchbynamebrandnameBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Get",
+    "ControllerName": "BrandsController",
+    "MethodName": "search-by-name/{brandName}",
+    "UrlPath": "/api/product-catalog-module/brands/search-by-name/{brandName}"
+  },
+  {
+    "Key": "PatchapiproductcatalogmodulebrandsdeactivatebrandidintBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Patch",
+    "ControllerName": "BrandsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/product-catalog-module/brands/deactivate/{brandId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulebrandsBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Get",
+    "ControllerName": "BrandsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/brands"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulebrandscountBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Get",
+    "ControllerName": "BrandsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/brands/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmodulebrandsBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Post",
+    "ControllerName": "BrandsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/brands"
+  },
+  {
+    "Key": "GetapiproductcatalogmodulebrandsidintBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Get",
+    "ControllerName": "BrandsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/brands/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmodulebrandsidintBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Put",
+    "ControllerName": "BrandsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/brands/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmodulebrandsidintBrandsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Brands",
+    "HttpMethod": "Delete",
+    "ControllerName": "BrandsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/brands/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributesgetbycodeattributecodeAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributesController",
+    "MethodName": "get-by-code/{attributeCode}",
+    "UrlPath": "/api/product-catalog-module/attributes/get-by-code/{attributeCode}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributesAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attributes"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributescountAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attributes/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleattributesAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Post",
+    "ControllerName": "AttributesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/attributes"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributesidintAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attributes/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleattributesidintAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Put",
+    "ControllerName": "AttributesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/attributes/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleattributesidintAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "Attributes",
+    "HttpMethod": "Delete",
+    "ControllerName": "AttributesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/attributes/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributevaluesgetbyattributeidattributevalueattributeidintAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "get-by-attribute-id/{attributeValueAttributeId:int}",
+    "UrlPath": "/api/product-catalog-module/attribute-values/get-by-attribute-id/{attributeValueAttributeId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributevaluesAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attribute-values"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributevaluescountAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attribute-values/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleattributevaluesAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Post",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/attribute-values"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleattributevaluesidintAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Get",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/attribute-values/{id:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleattributevaluesidintAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Put",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/attribute-values/{id:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleattributevaluesidintAttributeValuesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AttributeValues",
+    "HttpMethod": "Delete",
+    "ControllerName": "AttributeValuesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/attribute-values/{id:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantattributesgetbyvariantidproductvariantattributevariantidintProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "get-by-variant-id/{productVariantAttributeVariantId:int}",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/get-by-variant-id/{productVariantAttributeVariantId:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductvariantattributesremoveattributeproductvariantattributevariantidintproductvariantattributeattributevalueidintProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/remove-attribute/{productVariantAttributeVariantId:int}/{productVariantAttributeAttributeValueId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantattributesProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantattributescountProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleproductvariantattributesProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Post",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleproductvariantattributesvariantidintattributevalueidintProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Get",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/{variantId:int}/{attributeValueId:int}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleproductvariantattributesvariantidintattributevalueidintProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Put",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/{variantId:int}/{attributeValueId:int}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleproductvariantattributesvariantidintattributevalueidintProductVariantAttributesController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "ProductVariantAttributes",
+    "HttpMethod": "Delete",
+    "ControllerName": "ProductVariantAttributesController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/product-variant-attributes/{variantId:int}/{attributeValueId:int}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/audit-logs"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogscountAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapiproductcatalogmoduleauditlogsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/product-catalog-module/audit-logs"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/product-catalog-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapiproductcatalogmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/product-catalog-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapiproductcatalogmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/product-catalog-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellersgetbyuseridselleruseridintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "get-by-user-id/{sellerUserId:int}",
+    "UrlPath": "/api/seller-management-module/sellers/get-by-user-id/{sellerUserId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellersgetbystatussellerstatusSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "get-by-status/{sellerStatus}",
+    "UrlPath": "/api/seller-management-module/sellers/get-by-status/{sellerStatus}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerssearchbycompanynamesellercompanynameSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "search-by-company-name/{sellerCompanyName}",
+    "UrlPath": "/api/seller-management-module/sellers/search-by-company-name/{sellerCompanyName}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellersgetpendingverificationcountsellerstatusSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "get-pending-verification-count/{sellerStatus}",
+    "UrlPath": "/api/seller-management-module/sellers/get-pending-verification-count/{sellerStatus}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellersapproveselleridintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/sellers/approve/{sellerId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellerssuspendselleridintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/sellers/suspend/{sellerId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellersrejectselleridintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/sellers/reject/{sellerId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellersupdatetierselleridintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellersController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/sellers/update-tier/{sellerId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellersSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/sellers"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerscountSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/sellers/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulesellersSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Post",
+    "ControllerName": "SellersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/sellers"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellersidintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/sellers/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulesellersidintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Put",
+    "ControllerName": "SellersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/sellers/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulesellersidintSellersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Sellers",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/sellers/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulestoresgetbyselleridStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Get",
+    "ControllerName": "StoresController",
+    "MethodName": "get-by-seller-id",
+    "UrlPath": "/api/seller-management-module/stores/get-by-seller-id"
+  },
+  {
+    "Key": "GetapisellermanagementmodulestoresgetbyslugStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Get",
+    "ControllerName": "StoresController",
+    "MethodName": "get-by-slug",
+    "UrlPath": "/api/seller-management-module/stores/get-by-slug"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulestoresupdateprofilestoreidintStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Patch",
+    "ControllerName": "StoresController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/stores/update-profile/{storeId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulestoresdeactivatestoreidintStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Patch",
+    "ControllerName": "StoresController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/stores/deactivate/{storeId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulestoresStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Get",
+    "ControllerName": "StoresController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/stores"
+  },
+  {
+    "Key": "GetapisellermanagementmodulestorescountStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Get",
+    "ControllerName": "StoresController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/stores/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulestoresStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Post",
+    "ControllerName": "StoresController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/stores"
+  },
+  {
+    "Key": "GetapisellermanagementmodulestoresidintStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Get",
+    "ControllerName": "StoresController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/stores/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulestoresidintStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Put",
+    "ControllerName": "StoresController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/stores/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulestoresidintStoresController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "Stores",
+    "HttpMethod": "Delete",
+    "ControllerName": "StoresController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/stores/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerdocumentsgetbyselleridsellerdocumentselleridintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "get-by-seller-id/{sellerDocumentSellerId:int}",
+    "UrlPath": "/api/seller-management-module/seller-documents/get-by-seller-id/{sellerDocumentSellerId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentssellerdocumentstatusSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "get-pending-documents/{sellerDocumentStatus}",
+    "UrlPath": "/api/seller-management-module/seller-documents/get-pending-documents/{sellerDocumentStatus}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellerdocumentsverifysellerdocumentidintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/seller-documents/verify/{sellerDocumentId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellerdocumentsrejectsellerdocumentidintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/seller-documents/reject/{sellerDocumentId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerdocumentsSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-documents"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerdocumentscountSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-documents/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulesellerdocumentsSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/seller-documents"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerdocumentsidintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-documents/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulesellerdocumentsidintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/seller-documents/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulesellerdocumentsidintSellerDocumentsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerDocuments",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerDocumentsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/seller-documents/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerbankaccountsgetbyselleridsellerbankaccountselleridintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "get-by-seller-id/{sellerBankAccountSellerId:int}",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/get-by-seller-id/{sellerBankAccountSellerId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintsellerbankaccountisdefaultboolSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "get-default-by-seller-id/{sellerBankAccountSellerId:int}/{sellerBankAccountIsDefault:bool}",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/get-default-by-seller-id/{sellerBankAccountSellerId:int}/{sellerBankAccountIsDefault:bool}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellerbankaccountssetasdefaultsellerbankaccountselleridintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/set-as-default/{sellerBankAccountSellerId:int}"
+  },
+  {
+    "Key": "PatchapisellermanagementmodulesellerbankaccountssetdefaultaccountsellerbankaccountidintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Patch",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Patch",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/set-default-account/{sellerBankAccountId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerbankaccountsSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerbankaccountscountSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulesellerbankaccountsSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerbankaccountsidintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulesellerbankaccountsidintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulesellerbankaccountsidintSellerBankAccountsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerBankAccounts",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerBankAccountsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellertiersgetbynamesellertiernameSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "get-by-name/{sellerTierName}",
+    "UrlPath": "/api/seller-management-module/seller-tiers/get-by-name/{sellerTierName}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellertiersSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-tiers"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellertierscountSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-tiers/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulesellertiersSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/seller-tiers"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellertiersidintSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-tiers/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulesellertiersidintSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/seller-tiers/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulesellertiersidintSellerTiersController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerTiers",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerTiersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/seller-tiers/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerperformancereviewsgetbyselleridsellerperformancereviewselleridintSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "get-by-seller-id/{sellerPerformanceReviewSellerId:int}",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/get-by-seller-id/{sellerPerformanceReviewSellerId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerperformancereviewsgetselleraverageratingsellerperformancereviewselleridintSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "get-seller-average-rating/{sellerPerformanceReviewSellerId:int}",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/get-seller-average-rating/{sellerPerformanceReviewSellerId:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerperformancereviewsSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerperformancereviewscountSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/count"
+  },
+  {
+    "Key": "PostapisellermanagementmodulesellerperformancereviewsSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Post",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews"
+  },
+  {
+    "Key": "GetapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Get",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/{id:int}"
+  },
+  {
+    "Key": "PutapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Put",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/{id:int}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "SellerPerformanceReviews",
+    "HttpMethod": "Delete",
+    "ControllerName": "SellerPerformanceReviewsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/seller-performance-reviews/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/audit-logs"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogscountAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/audit-logs/count"
+  },
+  {
+    "Key": "PostapisellermanagementmoduleauditlogsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Post",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Post",
+    "UrlPath": "/api/seller-management-module/audit-logs"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Get",
+    "UrlPath": "/api/seller-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "PutapisellermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Put",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Put",
+    "UrlPath": "/api/seller-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "DeleteapisellermanagementmoduleauditlogsidguidAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Delete",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/seller-management-module/audit-logs/{id:Guid}"
+  },
+  {
+    "Key": "GetapiidentitymoduleportalpagedefinitionsgetportalpagedefinitionspermissiongroupnamePortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "get-portal-page-definitions",
+    "UrlPath": "/api/identity-module/portal-page-definitions/get-portal-page-definitions/{permissionGroupName}"
+  },
+  {
+    "Key": "PostapiidentitymoduleportalpagedefinitionsupdateportalpagepermissionPortalPageDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "PortalPageDefinitions",
+    "HttpMethod": "Post",
+    "ControllerName": "PortalPageDefinitionsController",
+    "MethodName": "update-portal-page-permission",
+    "UrlPath": "/api/identity-module/portal-page-definitions/update-portal-page-permission"
+  },
+  {
+    "Key": "GetapiidentitymoduleapimethoddefinitionsgetapipermissionspermissiongroupnameApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "get-api-permissions",
+    "UrlPath": "/api/identity-module/api-method-definitions/get-api-permissions/{permissionGroupName}"
+  },
+  {
+    "Key": "PostapiidentitymoduleapimethoddefinitionsupdateapipermissionApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Post",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "update-api-permission",
+    "UrlPath": "/api/identity-module/api-method-definitions/update-api-permission"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsidumlApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "{id}/uml",
+    "UrlPath": "/api/identity-module/topic-workflows/{id}/uml"
+  },
+  {
+    "Key": "GetapiidentitymoduletopicworkflowsiddiagramApiMethodDefinitionsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "ApiMethodDefinitions",
+    "HttpMethod": "Get",
+    "ControllerName": "ApiMethodDefinitionsController",
+    "MethodName": "{id}/diagram",
+    "UrlPath": "/api/identity-module/topic-workflows/{id}/diagram"
+  },
+  {
+    "Key": "PostapiauthregisterAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/register",
+    "UrlPath": "/api/auth/register"
+  },
+  {
+    "Key": "PostapiauthloginAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/login",
+    "UrlPath": "/api/auth/login"
+  },
+  {
+    "Key": "PostapiauthvalidateAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/validate",
+    "UrlPath": "/api/auth/validate"
+  },
+  {
+    "Key": "PostapiauthrefreshAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/refresh",
+    "UrlPath": "/api/auth/refresh"
+  },
+  {
+    "Key": "GetapiauthconfirmemailAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Get",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/confirmEmail",
+    "UrlPath": "/api/auth/confirmEmail"
+  },
+  {
+    "Key": "PostapiauthresendconfirmationemailAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/resendConfirmationEmail",
+    "UrlPath": "/api/auth/resendConfirmationEmail"
+  },
+  {
+    "Key": "PostapiauthforgotpasswordAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/forgotPassword",
+    "UrlPath": "/api/auth/forgotPassword"
+  },
+  {
+    "Key": "PostapiauthresetpasswordAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/resetPassword",
+    "UrlPath": "/api/auth/resetPassword"
+  },
+  {
+    "Key": "Postapiauthmanageuser2faAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/manage/user2fa",
+    "UrlPath": "/api/auth/manage/user2fa"
+  },
+  {
+    "Key": "GetapiauthmanageinfoAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Get",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/manage/info",
+    "UrlPath": "/api/auth/manage/info"
+  },
+  {
+    "Key": "PostapiauthmanageinfoAuthenticationsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "Authentications",
+    "HttpMethod": "Post",
+    "ControllerName": "AuthenticationsController",
+    "MethodName": "/api/auth/manage/info",
+    "UrlPath": "/api/auth/manage/info"
+  }
+]
+}

@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[SELLER_PAYOUTS]
+WHERE [IsDeleted] = 0;

@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[TRANSACTION_LEDGERS]
+SET [IsDeleted] = 1, [DeletedOnUtc] = SYSUTCDATETIME()
+WHERE
+    [ID] = @PRM_TRANSACTION_LEDGER_ID
+    AND [IsDeleted] = 0;

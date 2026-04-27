@@ -1,0 +1,15 @@
+﻿INSERT INTO [dbo].[PortalPageDefinitions] (
+    [Key],
+    [ModuleName],
+    [ModelName],
+    [PageAction],
+    [PagePath]
+)
+OUTPUT INSERTED.*
+VALUES (
+    @PRM_PORTAL_PAGE_DEFINITION_KEY,
+    @PRM_PORTAL_PAGE_DEFINITION_MODULE_NAME,
+    @PRM_PORTAL_PAGE_DEFINITION_MODEL_NAME,
+    @PRM_PORTAL_PAGE_DEFINITION_PAGE_ACTION,
+    @PRM_PORTAL_PAGE_DEFINITION_PAGE_PATH
+    );

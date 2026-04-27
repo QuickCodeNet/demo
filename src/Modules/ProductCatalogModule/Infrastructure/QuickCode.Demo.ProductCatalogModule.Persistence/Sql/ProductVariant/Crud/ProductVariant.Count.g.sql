@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[PRODUCT_VARIANTS]
+WHERE [IsDeleted] = 0;

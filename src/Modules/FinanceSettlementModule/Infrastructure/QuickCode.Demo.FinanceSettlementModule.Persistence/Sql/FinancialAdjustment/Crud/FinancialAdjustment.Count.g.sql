@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[FINANCIAL_ADJUSTMENTS]
+WHERE [IsDeleted] = 0;

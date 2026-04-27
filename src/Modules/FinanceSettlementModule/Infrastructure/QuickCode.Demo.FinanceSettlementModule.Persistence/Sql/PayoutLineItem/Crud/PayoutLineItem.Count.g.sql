@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[PAYOUT_LINE_ITEMS]
+WHERE [IsDeleted] = 0;

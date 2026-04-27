@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[SHIPPING_METHODS]
+WHERE [IsDeleted] = 0;

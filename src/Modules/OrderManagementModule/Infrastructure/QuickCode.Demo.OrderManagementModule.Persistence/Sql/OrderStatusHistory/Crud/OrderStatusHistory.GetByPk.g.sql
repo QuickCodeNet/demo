@@ -1,0 +1,12 @@
+﻿SELECT
+    [ID],
+    [ORDER_ID],
+    [PREVIOUS_STATUS],
+    [NEW_STATUS],
+    [CHANGED_BY_USER_ID],
+    [CHANGE_DATE],
+    [NOTES]
+FROM [dbo].[ORDER_STATUS_HISTORIES]
+WHERE
+    [ID] = @PRM_ORDER_STATUS_HISTORY_ID
+    AND [IsDeleted] = 0;

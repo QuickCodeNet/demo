@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[PROMOTIONAL_CAMPAIGNS]
+WHERE [IsDeleted] = 0;

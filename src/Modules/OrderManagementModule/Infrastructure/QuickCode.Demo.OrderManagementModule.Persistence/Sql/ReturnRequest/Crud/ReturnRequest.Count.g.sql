@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[RETURN_REQUESTS]
+WHERE [IsDeleted] = 0;

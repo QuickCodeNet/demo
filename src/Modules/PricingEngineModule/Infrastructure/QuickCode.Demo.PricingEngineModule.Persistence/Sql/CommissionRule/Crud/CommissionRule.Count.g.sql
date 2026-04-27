@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[COMMISSION_RULES]
+WHERE [IsDeleted] = 0;

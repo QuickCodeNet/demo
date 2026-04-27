@@ -1,0 +1,5 @@
+﻿UPDATE [dbo].[FINANCIAL_ADJUSTMENTS]
+SET [IsDeleted] = 1, [DeletedOnUtc] = SYSUTCDATETIME()
+WHERE
+    [ID] = @PRM_FINANCIAL_ADJUSTMENT_ID
+    AND [IsDeleted] = 0;

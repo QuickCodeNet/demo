@@ -1,0 +1,9 @@
+﻿SELECT
+    [ID],
+    [NAME],
+    [MIN_SALES_VOLUME],
+    [BENEFITS_DESCRIPTION]
+FROM [dbo].[SELLER_TIERS]
+WHERE
+    [ID] = @PRM_SELLER_TIER_ID
+    AND [IsDeleted] = 0;

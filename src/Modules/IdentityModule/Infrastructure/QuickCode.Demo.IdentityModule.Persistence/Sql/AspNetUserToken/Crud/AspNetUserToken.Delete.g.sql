@@ -1,0 +1,3 @@
+﻿DELETE FROM [dbo].[AspNetUserTokens]
+WHERE
+    [UserId] = @PRM_ASP_NET_USER_TOKEN_USER_ID;

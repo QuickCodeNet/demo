@@ -1,0 +1,12 @@
+﻿SELECT
+    [ID],
+    [ORDER_ID],
+    [SHIPPING_METHOD_ID],
+    [TRACKING_NUMBER],
+    [STATUS],
+    [SHIPPED_DATE],
+    [DELIVERED_DATE]
+FROM [dbo].[SHIPMENTS]
+WHERE
+    [ID] = @PRM_SHIPMENT_ID
+    AND [IsDeleted] = 0;
