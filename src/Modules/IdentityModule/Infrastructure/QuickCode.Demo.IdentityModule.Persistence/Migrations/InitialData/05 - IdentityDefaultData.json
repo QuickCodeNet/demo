@@ -316,12 +316,21 @@
       "ParentName": "OrderManagementModule"
     },
     {
+      "Key": "OrderManagementModule_OrderStatusManagers",
+      "Name": "OrderStatusManagers",
+      "Text": "OrderStatusManagers",
+      "Tooltip": "OrderStatusManagers",
+      "ActionName": "/OrderManagementModuleOrderStatusManagers/List",
+      "OrderNo": 132,
+      "ParentName": "OrderManagementModule"
+    },
+    {
       "Key": "OrderManagementModule_ReturnRequests",
       "Name": "ReturnRequests",
       "Text": "ReturnRequests",
       "Tooltip": "ReturnRequests",
       "ActionName": "/OrderManagementModuleReturnRequests/List",
-      "OrderNo": 132,
+      "OrderNo": 133,
       "ParentName": "OrderManagementModule"
     },
     {
@@ -330,7 +339,7 @@
       "Text": "Shipments",
       "Tooltip": "Shipments",
       "ActionName": "/OrderManagementModuleShipments/List",
-      "OrderNo": 133,
+      "OrderNo": 134,
       "ParentName": "OrderManagementModule"
     },
     {
@@ -339,7 +348,7 @@
       "Text": "ShippingMethods",
       "Tooltip": "ShippingMethods",
       "ActionName": "/OrderManagementModuleShippingMethods/List",
-      "OrderNo": 134,
+      "OrderNo": 135,
       "ParentName": "OrderManagementModule"
     },
     {
@@ -348,7 +357,7 @@
       "Text": "PricingEngineModule",
       "Tooltip": "PricingEngineModule",
       "ActionName": "",
-      "OrderNo": 135,
+      "OrderNo": 136,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -357,7 +366,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/PricingEngineModuleAuditLogs/List",
-      "OrderNo": 135,
+      "OrderNo": 136,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -366,7 +375,7 @@
       "Text": "CampaignApplicabilities",
       "Tooltip": "CampaignApplicabilities",
       "ActionName": "/PricingEngineModuleCampaignApplicabilities/List",
-      "OrderNo": 136,
+      "OrderNo": 137,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -375,7 +384,7 @@
       "Text": "CategoryCommissionOverrides",
       "Tooltip": "CategoryCommissionOverrides",
       "ActionName": "/PricingEngineModuleCategoryCommissionOverrides/List",
-      "OrderNo": 137,
+      "OrderNo": 138,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -384,7 +393,7 @@
       "Text": "CommissionModels",
       "Tooltip": "CommissionModels",
       "ActionName": "/PricingEngineModuleCommissionModels/List",
-      "OrderNo": 138,
+      "OrderNo": 139,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -393,7 +402,7 @@
       "Text": "CommissionRules",
       "Tooltip": "CommissionRules",
       "ActionName": "/PricingEngineModuleCommissionRules/List",
-      "OrderNo": 139,
+      "OrderNo": 140,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -402,7 +411,7 @@
       "Text": "PromotionalCampaigns",
       "Tooltip": "PromotionalCampaigns",
       "ActionName": "/PricingEngineModulePromotionalCampaigns/List",
-      "OrderNo": 140,
+      "OrderNo": 141,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -411,7 +420,7 @@
       "Text": "SellerCommissionAssignments",
       "Tooltip": "SellerCommissionAssignments",
       "ActionName": "/PricingEngineModuleSellerCommissionAssignments/List",
-      "OrderNo": 141,
+      "OrderNo": 142,
       "ParentName": "PricingEngineModule"
     },
     {
@@ -420,7 +429,7 @@
       "Text": "ProductCatalogModule",
       "Tooltip": "ProductCatalogModule",
       "ActionName": "",
-      "OrderNo": 142,
+      "OrderNo": 143,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -429,7 +438,7 @@
       "Text": "Attributes",
       "Tooltip": "Attributes",
       "ActionName": "/ProductCatalogModuleAttributes/List",
-      "OrderNo": 142,
+      "OrderNo": 143,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -438,7 +447,7 @@
       "Text": "AttributeValues",
       "Tooltip": "AttributeValues",
       "ActionName": "/ProductCatalogModuleAttributeValues/List",
-      "OrderNo": 143,
+      "OrderNo": 144,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -447,7 +456,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/ProductCatalogModuleAuditLogs/List",
-      "OrderNo": 144,
+      "OrderNo": 145,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -456,7 +465,7 @@
       "Text": "Brands",
       "Tooltip": "Brands",
       "ActionName": "/ProductCatalogModuleBrands/List",
-      "OrderNo": 145,
+      "OrderNo": 146,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -465,7 +474,7 @@
       "Text": "Categories",
       "Tooltip": "Categories",
       "ActionName": "/ProductCatalogModuleCategories/List",
-      "OrderNo": 146,
+      "OrderNo": 147,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -474,7 +483,7 @@
       "Text": "Products",
       "Tooltip": "Products",
       "ActionName": "/ProductCatalogModuleProducts/List",
-      "OrderNo": 147,
+      "OrderNo": 148,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -483,7 +492,7 @@
       "Text": "ProductCategories",
       "Tooltip": "ProductCategories",
       "ActionName": "/ProductCatalogModuleProductCategories/List",
-      "OrderNo": 148,
+      "OrderNo": 149,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -492,7 +501,7 @@
       "Text": "ProductVariants",
       "Tooltip": "ProductVariants",
       "ActionName": "/ProductCatalogModuleProductVariants/List",
-      "OrderNo": 149,
+      "OrderNo": 150,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -501,7 +510,7 @@
       "Text": "ProductVariantAttributes",
       "Tooltip": "ProductVariantAttributes",
       "ActionName": "/ProductCatalogModuleProductVariantAttributes/List",
-      "OrderNo": 150,
+      "OrderNo": 151,
       "ParentName": "ProductCatalogModule"
     },
     {
@@ -510,7 +519,7 @@
       "Text": "SellerManagementModule",
       "Tooltip": "SellerManagementModule",
       "ActionName": "",
-      "OrderNo": 151,
+      "OrderNo": 152,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -519,7 +528,7 @@
       "Text": "AuditLogs",
       "Tooltip": "AuditLogs",
       "ActionName": "/SellerManagementModuleAuditLogs/List",
-      "OrderNo": 151,
+      "OrderNo": 152,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -528,7 +537,7 @@
       "Text": "Sellers",
       "Tooltip": "Sellers",
       "ActionName": "/SellerManagementModuleSellers/List",
-      "OrderNo": 152,
+      "OrderNo": 153,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -537,7 +546,7 @@
       "Text": "SellerBankAccounts",
       "Tooltip": "SellerBankAccounts",
       "ActionName": "/SellerManagementModuleSellerBankAccounts/List",
-      "OrderNo": 153,
+      "OrderNo": 154,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -546,7 +555,7 @@
       "Text": "SellerDocuments",
       "Tooltip": "SellerDocuments",
       "ActionName": "/SellerManagementModuleSellerDocuments/List",
-      "OrderNo": 154,
+      "OrderNo": 155,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -555,7 +564,7 @@
       "Text": "SellerPerformanceReviews",
       "Tooltip": "SellerPerformanceReviews",
       "ActionName": "/SellerManagementModuleSellerPerformanceReviews/List",
-      "OrderNo": 155,
+      "OrderNo": 156,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -564,7 +573,7 @@
       "Text": "SellerTiers",
       "Tooltip": "SellerTiers",
       "ActionName": "/SellerManagementModuleSellerTiers/List",
-      "OrderNo": 156,
+      "OrderNo": 157,
       "ParentName": "SellerManagementModule"
     },
     {
@@ -573,7 +582,7 @@
       "Text": "Stores",
       "Tooltip": "Stores",
       "ActionName": "/SellerManagementModuleStores/List",
-      "OrderNo": 157,
+      "OrderNo": 158,
       "ParentName": "SellerManagementModule"
     }
   ],

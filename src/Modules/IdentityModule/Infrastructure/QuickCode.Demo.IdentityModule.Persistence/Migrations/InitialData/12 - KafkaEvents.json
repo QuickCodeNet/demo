@@ -601,6 +601,21 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "TopicName": "demo.order_management_module.order_status_managers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "TopicName": "demo.order_management_module.order_status_managers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "TopicName": "demo.order_management_module.order_status_managers_delete",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "PatchapiordermanagementmodulereturnrequestsapprovereturnrequestidintReturnRequestsController",
     "TopicName": "demo.order_management_module.return_requests.approve_patch",
     "IsActive": false

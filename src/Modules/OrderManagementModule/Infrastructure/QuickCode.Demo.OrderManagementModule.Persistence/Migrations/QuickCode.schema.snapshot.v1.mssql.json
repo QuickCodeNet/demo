@@ -2,7 +2,7 @@
   "schemaSnapshotVersion": 1,
   "moduleName": "OrderManagementModule",
   "databaseProvider": "mssql",
-  "generatedAtUtc": "2026-04-27T17:57:58.1907088+00:00",
+  "generatedAtUtc": "2026-04-28T14:16:18.7679108+00:00",
   "tables": [
     {
       "schema": "dbo",
@@ -274,6 +274,62 @@
       "schema": "dbo",
       "physicalTableName": "ORDER_STATUS_HISTORIES",
       "entityClassStem": "OrderStatusHistory",
+      "columns": [
+        {
+          "name": "CHANGED_BY_USER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "CHANGE_DATE",
+          "sqlType": "datetime2(7)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "isIdentity": true
+        },
+        {
+          "name": "NEW_STATUS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "NOTES",
+          "sqlType": "nvarchar(1000)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "ORDER_ID",
+          "sqlType": "int",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "PREVIOUS_STATUS",
+          "sqlType": "nvarchar(max)",
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        }
+      ]
+    },
+    {
+      "schema": "dbo",
+      "physicalTableName": "ORDER_STATUS_MANAGERS",
+      "entityClassStem": "OrderStatusManager",
       "columns": [
         {
           "name": "CHANGED_BY_USER_ID",

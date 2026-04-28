@@ -1,0 +1,4 @@
+﻿SELECT
+    COUNT(*)
+FROM [dbo].[ORDER_STATUS_MANAGERS]
+WHERE [IsDeleted] = 0;

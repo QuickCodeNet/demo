@@ -187,6 +187,11 @@
       "Description": "OrderManagementModule - OrderStatusHistory"
     },
     {
+      "Name": "OrderStatusManagers",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - OrderStatusManager"
+    },
+    {
       "Name": "ReturnRequests",
       "ModuleName": "OrderManagementModule",
       "Description": "OrderManagementModule - ReturnRequest"

@@ -224,6 +224,42 @@ namespace QuickCode.Demo.Common.Nswag.Clients.OrderManagementModuleApi.Contracts
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial interface IOrderStatusManagersClient
+    {
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<OrderStatusManagerDto>> OrderStatusManagersListAsync(int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Created</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<OrderStatusManagerDto> OrderStatusManagersInsertAsync(OrderStatusManagerDto body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<int> OrderStatusManagersCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<OrderStatusManagerDto> OrderStatusManagersGetItemAsync(int id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<bool> OrderStatusManagersUpdateAsync(int id, OrderStatusManagerDto body = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<bool> OrderStatusManagersDeleteAsync(int id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial interface IReturnRequestsClient
     {
 
@@ -1087,6 +1123,59 @@ namespace QuickCode.Demo.Common.Nswag.Clients.OrderManagementModuleApi.Contracts
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<OrderStatusHistoryDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class OrderStatusManagerDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("orderId")]
+        public int OrderId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("previousStatus")]
+        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.JsonStringEnumConverter<OrderStatus>))]
+        public OrderStatus PreviousStatus { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("newStatus")]
+        [System.Text.Json.Serialization.JsonConverter(typeof(System.Text.Json.Serialization.JsonStringEnumConverter<OrderStatus>))]
+        public OrderStatus NewStatus { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("changedByUserId")]
+        public int ChangedByUserId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("changeDate")]
+        public System.DateTime ChangeDate { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("notes")]
+        public string Notes { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static OrderStatusManagerDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<OrderStatusManagerDto>(data, options);
 
         }
     }

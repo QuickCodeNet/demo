@@ -1579,6 +1579,42 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagerscountOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiordermanagementmodulereturnrequestsgetbyorderidreturnrequestorderidintReturnRequestsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -4460,6 +4496,42 @@
   },
   {
     "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderstatushistoriesidintOrderStatusHistoriesController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagerscountOrderStatusManagersController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false

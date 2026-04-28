@@ -2,15 +2,15 @@
   "ModuleDbmlHashes": {
     "IdentityModule": "Dh2slhYuk2oEigxCNR1v/A==",
     "FinanceSettlementModule": "909D/NnEc3UA6dO2XrQpSQ==",
-    "OrderManagementModule": "/xn/AXxzNpz1w/naFpeC6Q==",
+    "OrderManagementModule": "UNV8YqGDD9r6oJozaRZELA==",
     "PricingEngineModule": "4XdLHGt9dwQ/nwhzv7ElJw==",
     "ProductCatalogModule": "XwKYLG69gVTEb2DdyyR8Ug==",
     "SellerManagementModule": "MhE2qeuyhYtz2hR7qyAuUQ=="
   },
   "TemplateDirHash": "1aa751f2be73c2d3dac7679171506b7d5301d65aa4fd22a4e286908536614eb0",
   "GeneratorHash": "2026-04-27T14:42:32.1045731Z",
-  "GeneratedAt": "2026-04-27T17:57:50.727674Z",
+  "GeneratedAt": "2026-04-28T14:16:12.4817415Z",
   "LastBuildSucceeded": true,
-  "LastBuildAt": "2026-04-27T18:00:02.4425899Z",
+  "LastBuildAt": "2026-04-28T14:18:12.7117528Z",
   "LastBuildError": ""
 }

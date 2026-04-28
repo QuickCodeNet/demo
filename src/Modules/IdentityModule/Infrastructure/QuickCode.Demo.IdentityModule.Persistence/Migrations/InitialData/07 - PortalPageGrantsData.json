@@ -1121,6 +1121,41 @@
       "PagePath": "/OrderManagementModuleOrderStatusHistories/Delete"
     },
     {
+      "Key": "OrderManagementModuleOrderStatusManagersList",
+      "ModuleName": "OrderManagementModule",
+      "ModelName": "OrderStatusManagers",
+      "PageAction": "List",
+      "PagePath": "/OrderManagementModuleOrderStatusManagers/List"
+    },
+    {
+      "Key": "OrderManagementModuleOrderStatusManagersDetail",
+      "ModuleName": "OrderManagementModule",
+      "ModelName": "OrderStatusManagers",
+      "PageAction": "Detail",
+      "PagePath": "/OrderManagementModuleOrderStatusManagers/Detail"
+    },
+    {
+      "Key": "OrderManagementModuleOrderStatusManagersInsert",
+      "ModuleName": "OrderManagementModule",
+      "ModelName": "OrderStatusManagers",
+      "PageAction": "Insert",
+      "PagePath": "/OrderManagementModuleOrderStatusManagers/Insert"
+    },
+    {
+      "Key": "OrderManagementModuleOrderStatusManagersUpdate",
+      "ModuleName": "OrderManagementModule",
+      "ModelName": "OrderStatusManagers",
+      "PageAction": "Update",
+      "PagePath": "/OrderManagementModuleOrderStatusManagers/Update"
+    },
+    {
+      "Key": "OrderManagementModuleOrderStatusManagersDelete",
+      "ModuleName": "OrderManagementModule",
+      "ModelName": "OrderStatusManagers",
+      "PageAction": "Delete",
+      "PagePath": "/OrderManagementModuleOrderStatusManagers/Delete"
+    },
+    {
       "Key": "OrderManagementModuleReturnRequestsList",
       "ModuleName": "OrderManagementModule",
       "ModelName": "ReturnRequests",
@@ -4267,6 +4302,76 @@
     },
     {
       "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusHistoriesDelete",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Delete",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersList",
+      "PermissionGroupName": "Admin",
+      "PageAction": "List",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersList",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "List",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersDetail",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Detail",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersDetail",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Detail",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersInsert",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Insert",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersInsert",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Insert",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersUpdate",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Update",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersUpdate",
+      "PermissionGroupName": "Viewer",
+      "PageAction": "Update",
+      "ModifiedBy": "System",
+      "IsActive": false
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersDelete",
+      "PermissionGroupName": "Admin",
+      "PageAction": "Delete",
+      "ModifiedBy": "System",
+      "IsActive": true
+    },
+    {
+      "PortalPageDefinitionKey": "OrderManagementModuleOrderStatusManagersDelete",
       "PermissionGroupName": "Viewer",
       "PageAction": "Delete",
       "ModifiedBy": "System",

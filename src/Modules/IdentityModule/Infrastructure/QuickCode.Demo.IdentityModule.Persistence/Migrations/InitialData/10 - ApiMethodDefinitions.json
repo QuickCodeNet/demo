@@ -2422,6 +2422,60 @@
     "UrlPath": "/api/order-management-module/order-status-histories/{id:int}"
   },
   {
+    "Key": "GetapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-managers"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatusmanagerscountOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-managers/count"
+  },
+  {
+    "Key": "PostapiordermanagementmoduleorderstatusmanagersOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Post",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Post",
+    "UrlPath": "/api/order-management-module/order-status-managers"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Get",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Get",
+    "UrlPath": "/api/order-management-module/order-status-managers/{id:int}"
+  },
+  {
+    "Key": "PutapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Put",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Put",
+    "UrlPath": "/api/order-management-module/order-status-managers/{id:int}"
+  },
+  {
+    "Key": "DeleteapiordermanagementmoduleorderstatusmanagersidintOrderStatusManagersController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "OrderStatusManagers",
+    "HttpMethod": "Delete",
+    "ControllerName": "OrderStatusManagersController",
+    "MethodName": "Delete",
+    "UrlPath": "/api/order-management-module/order-status-managers/{id:int}"
+  },
+  {
     "Key": "GetapiordermanagementmodulereturnrequestsgetbyorderidreturnrequestorderidintReturnRequestsController",
     "ModuleName": "OrderManagementModule",
     "ModelName": "ReturnRequests",
