@@ -39,15 +39,10 @@
     .dashboard-filter {
         min-width: 260px;
         height: calc(1.5em + .75rem + 2px);
-        padding: .375rem 2.25rem .375rem .75rem;
-        border-radius: .35rem;
         border-color: #d1d3e2;
         color: #6e707e;
-        background-color: #fff;
         box-shadow: none;
         cursor: pointer;
-        appearance: auto;
-        -webkit-appearance: menulist;
     }
 
     .dashboard-filter:focus {
@@ -55,20 +50,15 @@
         box-shadow: 0 0 0 .2rem rgba(78, 115, 223, .15);
     }
 
-    .dashboard-filter-wrapper {
-        position: relative;
+    .dashboard-filter-combo .input-group-text {
+        color: #4e73df;
+        background: #f8f9fc;
+        border-color: #d1d3e2;
+        font-size: .8rem;
     }
 
-    .dashboard-filter-wrapper::after {
-        content: "\f078";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        position: absolute;
-        right: .8rem;
-        bottom: .56rem;
-        color: #858796;
-        font-size: .7rem;
-        pointer-events: none;
+    .dashboard-filter-combo .custom-select {
+        background-color: #fff;
     }
 
     .dashboard-card-loading {
@@ -177,9 +167,13 @@
             <div class="small text-muted">Live module health, traffic, latency, and access operations.</div>
         </div>
         <form method="get" action="@Url.Action("Index", "Home")" class="form-inline align-items-end">
-            <div class="dashboard-filter-wrapper">
+            <div class="dashboard-filter-combo">
                 <label for="selectedModule" class="text-xs font-weight-bold text-muted text-uppercase mb-1 d-block">Module Filter</label>
-                <select id="selectedModule" name="selectedModule" class="custom-select dashboard-filter">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-layer-group"></i></span>
+                    </div>
+                    <select id="selectedModule" name="selectedModule" class="custom-select dashboard-filter">
                 @{
                     var selectedModuleValue = ModuleOptionValue(Model.SelectedModule);
                 }
@@ -195,7 +189,8 @@
                         <option value="@optionValue">@module</option>
                     }
                 }
-                </select>
+                    </select>
+                </div>
             </div>
         </form>
     </div>
