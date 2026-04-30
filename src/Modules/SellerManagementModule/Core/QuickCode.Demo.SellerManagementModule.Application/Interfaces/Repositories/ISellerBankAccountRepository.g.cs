@@ -23,7 +23,7 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Interfaces.Repositor
     {
         Task<RepoResponse<SellerBankAccountDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerBankAccountSellerId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault);
+        Task<RepoResponse<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId);
         Task<RepoResponse<int>> SetAsDefaultAsync(int sellerBankAccountSellerId, SetAsDefaultRequestDto updateRequest);
         Task<RepoResponse<int>> SetDefaultAccountAsync(int sellerBankAccountId, SetDefaultAccountRequestDto updateRequest);
     }

@@ -69,15 +69,15 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Brand
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool brandIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveAsync(brandIsActive, page, size);
+            var returnValue = await _repository.GetActiveAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<SearchByNameResponseDto>>> SearchByNameAsync(string brandName, int? page, int? size)
+        public async Task<Response<List<SearchByNameResponseDto>>> SearchByNameAsync(string brandName, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.SearchByNameAsync(brandName, page, size);
+            var returnValue = await _repository.SearchByNameAsync(brandName, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

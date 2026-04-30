@@ -69,15 +69,15 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.PromotionalCam
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(bool promotionalCampaignIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveCampaignsAsync(promotionalCampaignIsActive, page, size);
+            var returnValue = await _repository.GetActiveCampaignsAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetCampaignsInDateRangeResponseDto>>> GetCampaignsInDateRangeAsync(DateTime promotionalCampaignStartDateFrom, DateTime promotionalCampaignStartDateTo, int? page, int? size)
+        public async Task<Response<List<GetCampaignsInDateRangeResponseDto>>> GetCampaignsInDateRangeAsync(DateTime promotionalCampaignStartDateFrom, DateTime promotionalCampaignStartDateTo, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetCampaignsInDateRangeAsync(promotionalCampaignStartDateFrom, promotionalCampaignStartDateTo, page, size);
+            var returnValue = await _repository.GetCampaignsInDateRangeAsync(promotionalCampaignStartDateFrom, promotionalCampaignStartDateTo, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

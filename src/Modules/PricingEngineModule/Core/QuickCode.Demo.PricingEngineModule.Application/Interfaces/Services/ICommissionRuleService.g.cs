@@ -20,8 +20,8 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.CommissionRule
         Task<Response<CommissionRuleDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int commissionRuleCommissionModelId, int? page, int? size);
-        Task<Response<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, bool commissionRuleIsActive, int? page, int? size);
+        Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize);
         Task<Response<int>> DeactivateAsync(int commissionRuleId, DeactivateRequestDto updateRequest);
     }
 }

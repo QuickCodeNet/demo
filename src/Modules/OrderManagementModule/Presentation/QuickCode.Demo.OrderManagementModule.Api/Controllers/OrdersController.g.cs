@@ -116,16 +116,16 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByCustomerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByCustomerIdAsync(int orderCustomerId, int? page, int? size)
+        public async Task<IActionResult> GetByCustomerIdAsync(int orderCustomerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByCustomerIdAsync(orderCustomerId, page, size);
+            var response = await service.GetByCustomerIdAsync(orderCustomerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Order", $"OrderCustomerId: '{orderCustomerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -135,16 +135,16 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int orderSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int orderSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(orderSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(orderSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Order", $"OrderSellerId: '{orderSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -154,16 +154,16 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByStatusResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByStatusAsync(OrderStatus orderStatus, int? page, int? size)
+        public async Task<IActionResult> GetByStatusAsync(OrderStatus orderStatus, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByStatusAsync(orderStatus, page, size);
+            var response = await service.GetByStatusAsync(orderStatus, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Order", $"OrderStatus: '{orderStatus}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -173,36 +173,36 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByDateRangeResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? page, int? size)
+        public async Task<IActionResult> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByDateRangeAsync(orderOrderDateFrom, orderOrderDateTo, page, size);
+            var response = await service.GetByDateRangeAsync(orderOrderDateFrom, orderOrderDateTo, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Order", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-orders-for-settlement/{orderSellerId:int}/{orderStatus}")]
+        [HttpGet("get-orders-for-settlement/{orderSellerId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetOrdersForSettlementResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetOrdersForSettlementAsync(int orderSellerId, OrderStatus orderStatus, int? page, int? size)
+        public async Task<IActionResult> GetOrdersForSettlementAsync(int orderSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetOrdersForSettlementAsync(orderSellerId, orderStatus, page, size);
-            if (HandleResponseError(response, logger, "Order", $"OrderSellerId: '{orderSellerId}', OrderStatus: '{orderStatus}'") is {} responseError)
+            var response = await service.GetOrdersForSettlementAsync(orderSellerId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Order", $"OrderSellerId: '{orderSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

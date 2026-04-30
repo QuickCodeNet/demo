@@ -100,21 +100,21 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active/{shippingMethodIsActive:bool}")]
+        [HttpGet("get-active")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveAsync(bool shippingMethodIsActive, int? page, int? size)
+        public async Task<IActionResult> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveAsync(shippingMethodIsActive, page, size);
-            if (HandleResponseError(response, logger, "ShippingMethod", $"ShippingMethodIsActive: '{shippingMethodIsActive}'") is {} responseError)
+            var response = await service.GetActiveAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "ShippingMethod", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

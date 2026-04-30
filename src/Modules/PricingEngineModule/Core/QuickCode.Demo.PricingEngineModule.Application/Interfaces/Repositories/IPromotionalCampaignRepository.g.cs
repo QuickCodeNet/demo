@@ -22,7 +22,7 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Interfaces.Repositories
     public partial interface IPromotionalCampaignRepository : IBaseRepository<PromotionalCampaignDto>
     {
         Task<RepoResponse<PromotionalCampaignDto>> GetByPkAsync(int id);
-        Task<RepoResponse<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(bool promotionalCampaignIsActive, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetCampaignsInDateRangeResponseDto>>> GetCampaignsInDateRangeAsync(DateTime promotionalCampaignStartDateFrom, DateTime promotionalCampaignStartDateTo, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> DeactivateAsync(int promotionalCampaignId, DeactivateRequestDto updateRequest);
     }

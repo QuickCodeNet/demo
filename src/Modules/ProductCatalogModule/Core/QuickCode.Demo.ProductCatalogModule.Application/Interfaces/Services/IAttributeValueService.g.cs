@@ -20,6 +20,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.AttributeValu
         Task<Response<AttributeValueDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByAttributeIdResponseDto>>> GetByAttributeIdAsync(int attributeValueAttributeId, int? page, int? size);
+        Task<Response<List<GetByAttributeIdResponseDto>>> GetByAttributeIdAsync(int attributeValueAttributeId, int? pageNumber, int? pageSize);
     }
 }

@@ -104,16 +104,16 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByAttributeIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByAttributeIdAsync(int attributeValueAttributeId, int? page, int? size)
+        public async Task<IActionResult> GetByAttributeIdAsync(int attributeValueAttributeId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByAttributeIdAsync(attributeValueAttributeId, page, size);
+            var response = await service.GetByAttributeIdAsync(attributeValueAttributeId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "AttributeValue", $"AttributeValueAttributeId: '{attributeValueAttributeId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

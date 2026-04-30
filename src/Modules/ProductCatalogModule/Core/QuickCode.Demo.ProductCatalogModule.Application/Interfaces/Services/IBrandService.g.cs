@@ -20,8 +20,8 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Brand
         Task<Response<BrandDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool brandIsActive, int? page, int? size);
-        Task<Response<List<SearchByNameResponseDto>>> SearchByNameAsync(string brandName, int? page, int? size);
+        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<SearchByNameResponseDto>>> SearchByNameAsync(string brandName, int? pageNumber, int? pageSize);
         Task<Response<int>> DeactivateAsync(int brandId, DeactivateRequestDto updateRequest);
     }
 }

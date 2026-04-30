@@ -68,5 +68,101 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.AuditLog
             var returnValue = await _repository.CountAsync();
             return returnValue.ToResponse();
         }
+
+        public async Task<Response<List<GetRecentHttpRequestsResponseDto>>> GetRecentHttpRequestsAsync(int? pageNumber, int? pageSize)
+        {
+            var returnValue = await _repository.GetRecentHttpRequestsAsync(pageNumber, pageSize);
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<GetRecentHttpRequestsByModuleResponseDto>>> GetRecentHttpRequestsByModuleAsync(string? auditLogRequestModule, int? pageNumber, int? pageSize)
+        {
+            var returnValue = await _repository.GetRecentHttpRequestsByModuleAsync(auditLogRequestModule, pageNumber, pageSize);
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsTodayHttpRequestsResponseDto>> StatsTodayHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsTodayHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsLastHourHttpRequestsResponseDto>> StatsLastHourHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsLastHourHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsYesterdayHttpRequestsResponseDto>> StatsYesterdayHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsYesterdayHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsWeeklyHttpRequestsResponseDto>> StatsWeeklyHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsWeeklyHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsMonthlyHttpRequestsResponseDto>> StatsMonthlyHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsMonthlyHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<StatsYearlyHttpRequestsResponseDto>> StatsYearlyHttpRequestsAsync()
+        {
+            var returnValue = await _repository.StatsYearlyHttpRequestsAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsDailyHttpRequestsByDayResponseDto>>> StatsDailyHttpRequestsByDayAsync()
+        {
+            var returnValue = await _repository.StatsDailyHttpRequestsByDayAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsDailyHttpRequestsByDayByModuleResponseDto>>> StatsDailyHttpRequestsByDayByModuleAsync()
+        {
+            var returnValue = await _repository.StatsDailyHttpRequestsByDayByModuleAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsHourlyHttpRequestsByModuleResponseDto>>> StatsHourlyHttpRequestsByModuleAsync()
+        {
+            var returnValue = await _repository.StatsHourlyHttpRequestsByModuleAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsTotalHttpRequestsByModuleResponseDto>>> StatsTotalHttpRequestsByModuleAsync()
+        {
+            var returnValue = await _repository.StatsTotalHttpRequestsByModuleAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsHttpStatusCodesLast24HoursByModuleResponseDto>>> StatsHttpStatusCodesLast24HoursByModuleAsync()
+        {
+            var returnValue = await _repository.StatsHttpStatusCodesLast24HoursByModuleAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsHttpStatusCodesResponseDto>>> StatsHttpStatusCodesAsync()
+        {
+            var returnValue = await _repository.StatsHttpStatusCodesAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsHttpStatusCodesByModuleResponseDto>>> StatsHttpStatusCodesByModuleAsync()
+        {
+            var returnValue = await _repository.StatsHttpStatusCodesByModuleAsync();
+            return returnValue.ToResponse();
+        }
+
+        public async Task<Response<List<StatsTopHttpServicesByModuleResponseDto>>> StatsTopHttpServicesByModuleAsync()
+        {
+            var returnValue = await _repository.StatsTopHttpServicesByModuleAsync();
+            return returnValue.ToResponse();
+        }
     }
 }

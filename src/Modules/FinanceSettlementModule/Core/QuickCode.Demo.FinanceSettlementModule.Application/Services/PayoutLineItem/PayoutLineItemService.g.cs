@@ -69,9 +69,9 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.PayoutLine
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByPayoutIdResponseDto>>> GetByPayoutIdAsync(int payoutLineItemPayoutId, int? page, int? size)
+        public async Task<Response<List<GetByPayoutIdResponseDto>>> GetByPayoutIdAsync(int payoutLineItemPayoutId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByPayoutIdAsync(payoutLineItemPayoutId, page, size);
+            var returnValue = await _repository.GetByPayoutIdAsync(payoutLineItemPayoutId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
     }

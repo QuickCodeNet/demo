@@ -21,9 +21,9 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.Seller
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<GetByUserIdResponseDto>> GetByUserIdAsync(int sellerUserId);
-        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(SellerStatus sellerStatus, int? page, int? size);
-        Task<Response<List<SearchByCompanyNameResponseDto>>> SearchByCompanyNameAsync(string sellerCompanyName, int? page, int? size);
-        Task<Response<long>> GetPendingVerificationCountAsync(SellerStatus sellerStatus);
+        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(SellerStatus sellerStatus, int? pageNumber, int? pageSize);
+        Task<Response<List<SearchByCompanyNameResponseDto>>> SearchByCompanyNameAsync(string sellerCompanyName, int? pageNumber, int? pageSize);
+        Task<Response<long>> GetPendingVerificationCountAsync();
         Task<Response<int>> ApproveAsync(int sellerId, ApproveRequestDto updateRequest);
         Task<Response<int>> SuspendAsync(int sellerId, SuspendRequestDto updateRequest);
         Task<Response<int>> RejectAsync(int sellerId, RejectRequestDto updateRequest);

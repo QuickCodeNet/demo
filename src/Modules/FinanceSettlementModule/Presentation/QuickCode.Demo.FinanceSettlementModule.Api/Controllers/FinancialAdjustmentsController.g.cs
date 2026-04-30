@@ -104,16 +104,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int financialAdjustmentSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int financialAdjustmentSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(financialAdjustmentSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(financialAdjustmentSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "FinancialAdjustment", $"FinancialAdjustmentSellerId: '{financialAdjustmentSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

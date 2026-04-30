@@ -20,8 +20,8 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.PromotionalCam
         Task<Response<PromotionalCampaignDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(bool promotionalCampaignIsActive, int? page, int? size);
-        Task<Response<List<GetCampaignsInDateRangeResponseDto>>> GetCampaignsInDateRangeAsync(DateTime promotionalCampaignStartDateFrom, DateTime promotionalCampaignStartDateTo, int? page, int? size);
+        Task<Response<List<GetActiveCampaignsResponseDto>>> GetActiveCampaignsAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<GetCampaignsInDateRangeResponseDto>>> GetCampaignsInDateRangeAsync(DateTime promotionalCampaignStartDateFrom, DateTime promotionalCampaignStartDateTo, int? pageNumber, int? pageSize);
         Task<Response<int>> DeactivateAsync(int promotionalCampaignId, DeactivateRequestDto updateRequest);
     }
 }

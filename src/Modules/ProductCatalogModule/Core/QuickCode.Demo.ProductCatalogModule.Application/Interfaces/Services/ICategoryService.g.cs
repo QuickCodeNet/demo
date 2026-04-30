@@ -20,9 +20,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Category
         Task<Response<CategoryDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool categoryIsActive, int? page, int? size);
-        Task<Response<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, bool categoryIsActive, int? page, int? size);
-        Task<Response<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug, bool categoryIsActive);
+        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, int? pageNumber, int? pageSize);
+        Task<Response<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug);
         Task<Response<int>> DeactivateAsync(int categoryId, DeactivateRequestDto updateRequest);
     }
 }

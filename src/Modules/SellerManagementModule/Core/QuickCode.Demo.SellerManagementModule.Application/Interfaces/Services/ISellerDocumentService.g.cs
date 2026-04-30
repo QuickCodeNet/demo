@@ -20,8 +20,8 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerDocum
         Task<Response<SellerDocumentDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerDocumentSellerId, int? page, int? size);
-        Task<Response<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? page, int? size);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerDocumentSellerId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(int? pageNumber, int? pageSize);
         Task<Response<int>> VerifyAsync(int sellerDocumentId, VerifyRequestDto updateRequest);
         Task<Response<int>> RejectAsync(int sellerDocumentId, RejectRequestDto updateRequest);
     }

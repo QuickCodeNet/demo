@@ -100,14 +100,14 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
             return Ok(response.Value);
         }
 
-        [HttpGet("get-open-period/{payoutPeriodIsClosed:bool}")]
+        [HttpGet("get-open-period")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetOpenPeriodResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetOpenPeriodAsync(bool payoutPeriodIsClosed)
+        public async Task<IActionResult> GetOpenPeriodAsync()
         {
-            var response = await service.GetOpenPeriodAsync(payoutPeriodIsClosed);
-            if (HandleResponseError(response, logger, "PayoutPeriod", $"PayoutPeriodIsClosed: '{payoutPeriodIsClosed}'") is {} responseError)
+            var response = await service.GetOpenPeriodAsync();
+            if (HandleResponseError(response, logger, "PayoutPeriod", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

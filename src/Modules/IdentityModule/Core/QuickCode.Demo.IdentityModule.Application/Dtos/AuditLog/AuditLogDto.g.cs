@@ -25,6 +25,10 @@ namespace QuickCode.Demo.IdentityModule.Application.Dtos.AuditLog
         public string? UserName { get; init; }
         public string? UserGroup { get; init; }
         public DateTime Timestamp { get; init; }
+        public int? DurationMs { get; init; }
+        public int? StatusCode { get; init; }
+        public string? RequestModule { get; init; }
+        public string? RequestPath { get; init; }
         public string? OldValues { get; init; }
         public string? NewValues { get; init; }
         public string? ChangedColumns { get; init; }

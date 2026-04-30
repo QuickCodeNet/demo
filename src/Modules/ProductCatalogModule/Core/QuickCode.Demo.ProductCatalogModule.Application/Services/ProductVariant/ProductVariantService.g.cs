@@ -69,21 +69,21 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.ProductVarian
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productVariantProductId, int? page, int? size)
+        public async Task<Response<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByProductIdAsync(productVariantProductId, page, size);
+            var returnValue = await _repository.GetByProductIdAsync(productVariantProductId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, bool productVariantIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveByProductIdAsync(productVariantProductId, productVariantIsActive, page, size);
+            var returnValue = await _repository.GetActiveByProductIdAsync(productVariantProductId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetLowStockVariantsAsync(bool productVariantIsActive)
+        public async Task<Response<long>> GetLowStockVariantsAsync()
         {
-            var returnValue = await _repository.GetLowStockVariantsAsync(productVariantIsActive);
+            var returnValue = await _repository.GetLowStockVariantsAsync();
             return returnValue.ToResponse();
         }
 

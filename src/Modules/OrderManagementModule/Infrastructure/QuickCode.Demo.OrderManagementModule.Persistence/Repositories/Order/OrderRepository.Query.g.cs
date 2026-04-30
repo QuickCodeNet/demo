@@ -166,7 +166,7 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, OrderStatus orderStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -186,7 +186,6 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_ORDER_SELLER_ID = orderSellerId,
-                        PRM_ORDER_STATUS = orderStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

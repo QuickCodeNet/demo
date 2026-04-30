@@ -20,5 +20,21 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.AuditLog
         Task<Response<AuditLogDto>> GetItemAsync(Guid id);
         Task<Response<bool>> DeleteItemAsync(Guid id);
         Task<Response<int>> TotalItemCountAsync();
+        Task<Response<List<GetRecentHttpRequestsResponseDto>>> GetRecentHttpRequestsAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<GetRecentHttpRequestsByModuleResponseDto>>> GetRecentHttpRequestsByModuleAsync(string? auditLogRequestModule, int? pageNumber, int? pageSize);
+        Task<Response<StatsTodayHttpRequestsResponseDto>> StatsTodayHttpRequestsAsync();
+        Task<Response<StatsLastHourHttpRequestsResponseDto>> StatsLastHourHttpRequestsAsync();
+        Task<Response<StatsYesterdayHttpRequestsResponseDto>> StatsYesterdayHttpRequestsAsync();
+        Task<Response<StatsWeeklyHttpRequestsResponseDto>> StatsWeeklyHttpRequestsAsync();
+        Task<Response<StatsMonthlyHttpRequestsResponseDto>> StatsMonthlyHttpRequestsAsync();
+        Task<Response<StatsYearlyHttpRequestsResponseDto>> StatsYearlyHttpRequestsAsync();
+        Task<Response<List<StatsDailyHttpRequestsByDayResponseDto>>> StatsDailyHttpRequestsByDayAsync();
+        Task<Response<List<StatsDailyHttpRequestsByDayByModuleResponseDto>>> StatsDailyHttpRequestsByDayByModuleAsync();
+        Task<Response<List<StatsHourlyHttpRequestsByModuleResponseDto>>> StatsHourlyHttpRequestsByModuleAsync();
+        Task<Response<List<StatsTotalHttpRequestsByModuleResponseDto>>> StatsTotalHttpRequestsByModuleAsync();
+        Task<Response<List<StatsHttpStatusCodesLast24HoursByModuleResponseDto>>> StatsHttpStatusCodesLast24HoursByModuleAsync();
+        Task<Response<List<StatsHttpStatusCodesResponseDto>>> StatsHttpStatusCodesAsync();
+        Task<Response<List<StatsHttpStatusCodesByModuleResponseDto>>> StatsHttpStatusCodesByModuleAsync();
+        Task<Response<List<StatsTopHttpServicesByModuleResponseDto>>> StatsTopHttpServicesByModuleAsync();
     }
 }

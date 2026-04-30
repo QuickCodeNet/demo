@@ -25,7 +25,7 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Interfaces.Repositor
         Task<RepoResponse<GetByUserIdResponseDto>> GetByUserIdAsync(int sellerUserId);
         Task<RepoResponse<List<GetByStatusResponseDto>>> GetByStatusAsync(SellerStatus sellerStatus, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<SearchByCompanyNameResponseDto>>> SearchByCompanyNameAsync(string sellerCompanyName, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<long>> GetPendingVerificationCountAsync(SellerStatus sellerStatus);
+        Task<RepoResponse<long>> GetPendingVerificationCountAsync();
         Task<RepoResponse<int>> ApproveAsync(int sellerId, ApproveRequestDto updateRequest);
         Task<RepoResponse<int>> SuspendAsync(int sellerId, SuspendRequestDto updateRequest);
         Task<RepoResponse<int>> RejectAsync(int sellerId, RejectRequestDto updateRequest);

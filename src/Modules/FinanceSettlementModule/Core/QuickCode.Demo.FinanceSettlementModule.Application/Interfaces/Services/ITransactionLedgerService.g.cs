@@ -20,8 +20,8 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.Transactio
         Task<Response<TransactionLedgerDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int transactionLedgerSellerId, int? page, int? size);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int transactionLedgerSellerId, int? pageNumber, int? pageSize);
         Task<Response<GetSellerBalanceResponseDto>> GetSellerBalanceAsync(int transactionLedgerSellerId);
-        Task<Response<List<GetTransactionsByTypeAndDateResponseDto>>> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? page, int? size);
+        Task<Response<List<GetTransactionsByTypeAndDateResponseDto>>> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? pageNumber, int? pageSize);
     }
 }

@@ -67,6 +67,10 @@ public class SecurityAuditMiddleware
             UserId = auditInfo.UserId,
             UserName = context.User.Identity?.Name,
             Timestamp = auditInfo.Timestamp,
+            DurationMs = (long)auditInfo.Duration.TotalMilliseconds,
+            StatusCode = auditInfo.StatusCode,
+            RequestModule = ExtractModuleName(auditInfo.Path),
+            RequestPath = auditInfo.Path,
             IpAddress = auditInfo.IpAddress,
             UserAgent = auditInfo.UserAgent,
             CorrelationId = context.TraceIdentifier,
@@ -106,6 +110,17 @@ public class SecurityAuditMiddleware
                auditInfo.StatusCode == 403 || 
                auditInfo.Path.Contains("/admin") ||
                auditInfo.Path.Contains("/api/auth");
+    }
+
+    private static string ExtractModuleName(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+            return string.Empty;
+        var segments = path.Split('/', StringSplitOptions.RemoveEmptyEntries);
+        var apiIndex = Array.FindIndex(segments, s => s.Equals("api", StringComparison.OrdinalIgnoreCase));
+        if (apiIndex >= 0 && apiIndex + 1 < segments.Length)
+            return segments[apiIndex + 1];
+        return segments.Length > 0 ? segments[0] : string.Empty;
     }
 }
 

@@ -112,78 +112,78 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active-by-seller/{productSellerId:int}/{productStatus}")]
+        [HttpGet("get-active-by-seller/{productSellerId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveBySellerResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveBySellerAsync(int productSellerId, ProductStatus productStatus, int? page, int? size)
+        public async Task<IActionResult> GetActiveBySellerAsync(int productSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveBySellerAsync(productSellerId, productStatus, page, size);
-            if (HandleResponseError(response, logger, "Product", $"ProductSellerId: '{productSellerId}', ProductStatus: '{productStatus}'") is {} responseError)
+            var response = await service.GetActiveBySellerAsync(productSellerId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Product", $"ProductSellerId: '{productSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("search-products/{productName}/{productStatus}")]
+        [HttpGet("search-products/{productName}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<SearchProductsResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> SearchProductsAsync(string productName, ProductStatus productStatus, int? page, int? size)
+        public async Task<IActionResult> SearchProductsAsync(string productName, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.SearchProductsAsync(productName, productStatus, page, size);
-            if (HandleResponseError(response, logger, "Product", $"ProductName: '{productName}', ProductStatus: '{productStatus}'") is {} responseError)
+            var response = await service.SearchProductsAsync(productName, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Product", $"ProductName: '{productName}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-pending-approval/{productStatus}")]
+        [HttpGet("get-pending-approval")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetPendingApprovalResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetPendingApprovalAsync(ProductStatus productStatus, int? page, int? size)
+        public async Task<IActionResult> GetPendingApprovalAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetPendingApprovalAsync(productStatus, page, size);
-            if (HandleResponseError(response, logger, "Product", $"ProductStatus: '{productStatus}'") is {} responseError)
+            var response = await service.GetPendingApprovalAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Product", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-featured/{productStatus}/{productIsFeatured:bool}")]
+        [HttpGet("get-featured")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetFeaturedResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetFeaturedAsync(ProductStatus productStatus, bool productIsFeatured, int? page, int? size)
+        public async Task<IActionResult> GetFeaturedAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetFeaturedAsync(productStatus, productIsFeatured, page, size);
-            if (HandleResponseError(response, logger, "Product", $"ProductStatus: '{productStatus}', ProductIsFeatured: '{productIsFeatured}'") is {} responseError)
+            var response = await service.GetFeaturedAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Product", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
@@ -192,16 +192,16 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetProductsWithDetailsResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? page, int? size)
+        public async Task<IActionResult> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetProductsWithDetailsAsync(productsBrandId, productPrimaryCategoryId, categoryId, brandId, productsPrimaryCategoryId, productBrandId, page, size);
+            var response = await service.GetProductsWithDetailsAsync(productsBrandId, productPrimaryCategoryId, categoryId, brandId, productsPrimaryCategoryId, productBrandId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Product", $"ProductsBrandId: '{productsBrandId}', ProductPrimaryCategoryId: '{productPrimaryCategoryId}', CategoryId: '{categoryId}', BrandId: '{brandId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

@@ -104,16 +104,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int transactionLedgerSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int transactionLedgerSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(transactionLedgerSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(transactionLedgerSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "TransactionLedger", $"TransactionLedgerSellerId: '{transactionLedgerSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -135,16 +135,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetTransactionsByTypeAndDateResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? page, int? size)
+        public async Task<IActionResult> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetTransactionsByTypeAndDateAsync(transactionLedgerSellerId, transactionLedgerTransactionType, transactionLedgerTransactionDateFrom, transactionLedgerTransactionDateTo, page, size);
+            var response = await service.GetTransactionsByTypeAndDateAsync(transactionLedgerSellerId, transactionLedgerTransactionType, transactionLedgerTransactionDateFrom, transactionLedgerTransactionDateTo, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "TransactionLedger", $"TransactionLedgerSellerId: '{transactionLedgerSellerId}', TransactionLedgerTransactionType: '{transactionLedgerTransactionType}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

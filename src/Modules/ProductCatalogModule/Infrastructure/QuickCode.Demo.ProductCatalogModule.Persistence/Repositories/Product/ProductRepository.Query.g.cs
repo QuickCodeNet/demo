@@ -45,7 +45,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, ProductStatus productStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -65,7 +65,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_PRODUCT_SELLER_ID = productSellerId,
-                        PRM_PRODUCT_STATUS = productStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -76,7 +75,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, ProductStatus productStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -96,7 +95,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_PRODUCT_NAME = productName,
-                        PRM_PRODUCT_STATUS = productStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -107,7 +105,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(ProductStatus productStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -126,7 +124,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_PRODUCT_STATUS = productStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -137,7 +134,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetFeaturedResponseDto>>> GetFeaturedAsync(ProductStatus productStatus, bool productIsFeatured, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetFeaturedResponseDto>>> GetFeaturedAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -156,8 +153,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_PRODUCT_IS_FEATURED = productIsFeatured,
-                        PRM_PRODUCT_STATUS = productStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -187,9 +182,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_PRODUCTS_PRIMARY_CATEGORY_ID = productPrimaryCategoryId,
+                        PRM_PRODUCTS_PRIMARY_CATEGORY_ID = productsPrimaryCategoryId,
                         PRM_CATEGORIES_ID = categoryId,
-                        PRM_PRODUCTS_BRAND_ID = productsBrandId,
+                        PRM_PRODUCTS_BRAND_ID = categoryId,
                         PRM_BRANDS_ID = brandId,
                         StartIndex = startIndex,
                         PageSize = pageSize

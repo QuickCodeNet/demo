@@ -22,7 +22,7 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Interfaces.Repositori
     public partial interface IShippingMethodRepository : IBaseRepository<ShippingMethodDto>
     {
         Task<RepoResponse<ShippingMethodDto>> GetByPkAsync(int id);
-        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool shippingMethodIsActive, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> DeactivateAsync(int shippingMethodId, DeactivateRequestDto updateRequest);
     }
 }

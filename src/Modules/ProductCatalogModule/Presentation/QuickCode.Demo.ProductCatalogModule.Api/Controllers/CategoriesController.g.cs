@@ -100,52 +100,52 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active/{categoryIsActive:bool}")]
+        [HttpGet("get-active")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveAsync(bool categoryIsActive, int? page, int? size)
+        public async Task<IActionResult> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveAsync(categoryIsActive, page, size);
-            if (HandleResponseError(response, logger, "Category", $"CategoryIsActive: '{categoryIsActive}'") is {} responseError)
+            var response = await service.GetActiveAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Category", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-sub-categories/{categoryParentCategoryId:int}/{categoryIsActive:bool}")]
+        [HttpGet("get-sub-categories/{categoryParentCategoryId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetSubCategoriesResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetSubCategoriesAsync(int categoryParentCategoryId, bool categoryIsActive, int? page, int? size)
+        public async Task<IActionResult> GetSubCategoriesAsync(int categoryParentCategoryId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetSubCategoriesAsync(categoryParentCategoryId, categoryIsActive, page, size);
-            if (HandleResponseError(response, logger, "Category", $"CategoryParentCategoryId: '{categoryParentCategoryId}', CategoryIsActive: '{categoryIsActive}'") is {} responseError)
+            var response = await service.GetSubCategoriesAsync(categoryParentCategoryId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Category", $"CategoryParentCategoryId: '{categoryParentCategoryId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-by-slug/{categorySlug}/{categoryIsActive:bool}")]
+        [HttpGet("get-by-slug/{categorySlug}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetBySlugResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySlugAsync(string categorySlug, bool categoryIsActive)
+        public async Task<IActionResult> GetBySlugAsync(string categorySlug)
         {
-            var response = await service.GetBySlugAsync(categorySlug, categoryIsActive);
-            if (HandleResponseError(response, logger, "Category", $"CategorySlug: '{categorySlug}', CategoryIsActive: '{categoryIsActive}'") is {} responseError)
+            var response = await service.GetBySlugAsync(categorySlug);
+            if (HandleResponseError(response, logger, "Category", $"CategorySlug: '{categorySlug}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

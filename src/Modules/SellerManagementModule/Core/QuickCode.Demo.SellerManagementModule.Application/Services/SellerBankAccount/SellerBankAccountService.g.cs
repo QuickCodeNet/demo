@@ -69,15 +69,15 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerBankA
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerBankAccountSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerBankAccountSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(sellerBankAccountSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(sellerBankAccountSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault)
+        public async Task<Response<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId)
         {
-            var returnValue = await _repository.GetDefaultBySellerIdAsync(sellerBankAccountSellerId, sellerBankAccountIsDefault);
+            var returnValue = await _repository.GetDefaultBySellerIdAsync(sellerBankAccountSellerId);
             return returnValue.ToResponse();
         }
 

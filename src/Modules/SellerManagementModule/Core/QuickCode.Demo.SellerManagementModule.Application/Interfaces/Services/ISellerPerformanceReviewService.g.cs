@@ -20,7 +20,7 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerPerfo
         Task<Response<SellerPerformanceReviewDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? page, int? size);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? pageNumber, int? pageSize);
         Task<Response<GetSellerAverageRatingResponseDto>> GetSellerAverageRatingAsync(int sellerPerformanceReviewSellerId);
     }
 }

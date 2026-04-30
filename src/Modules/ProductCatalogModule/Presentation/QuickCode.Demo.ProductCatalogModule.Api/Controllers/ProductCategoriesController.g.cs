@@ -116,16 +116,16 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByCategoryIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByCategoryIdAsync(int productCategoryCategoryId, int? page, int? size)
+        public async Task<IActionResult> GetByCategoryIdAsync(int productCategoryCategoryId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByCategoryIdAsync(productCategoryCategoryId, page, size);
+            var response = await service.GetByCategoryIdAsync(productCategoryCategoryId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "ProductCategory", $"ProductCategoryCategoryId: '{productCategoryCategoryId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

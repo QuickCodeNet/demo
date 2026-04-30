@@ -105,16 +105,16 @@ namespace QuickCode.Demo.IdentityModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetKafkaEventsApiMethodDefinitionsResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetKafkaEventsApiMethodDefinitionsAsync(string apiMethodDefinitionsKey, int? page, int? size)
+        public async Task<IActionResult> GetKafkaEventsApiMethodDefinitionsAsync(string apiMethodDefinitionsKey, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await mediator.Send(new GetKafkaEventsApiMethodDefinitionsQuery(apiMethodDefinitionsKey, page, size));
+            var response = await mediator.Send(new GetKafkaEventsApiMethodDefinitionsQuery(apiMethodDefinitionsKey, pageNumber, pageSize));
             if (HandleResponseError(response, logger, "ApiMethodDefinition", $"ApiMethodDefinitionsKey: '{apiMethodDefinitionsKey}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

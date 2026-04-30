@@ -30,7 +30,7 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
 {
     public partial class ShippingMethodRepository : BaseRepository, IShippingMethodRepository
     {
-        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool shippingMethodIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -49,7 +49,6 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_SHIPPING_METHOD_IS_ACTIVE = shippingMethodIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

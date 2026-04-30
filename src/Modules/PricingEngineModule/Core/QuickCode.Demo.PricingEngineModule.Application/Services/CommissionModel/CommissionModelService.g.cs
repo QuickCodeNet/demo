@@ -69,9 +69,9 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.CommissionMode
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool commissionModelIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveAsync(commissionModelIsActive, page, size);
+            var returnValue = await _repository.GetActiveAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

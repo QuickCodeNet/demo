@@ -2,7 +2,7 @@
   "schemaSnapshotVersion": 1,
   "moduleName": "PricingEngineModule",
   "databaseProvider": "mssql",
-  "generatedAtUtc": "2026-04-27T17:57:58.2228066+00:00",
+  "generatedAtUtc": "2026-04-30T08:12:02.5275681+00:00",
   "tables": [
     {
       "schema": "dbo",
@@ -33,6 +33,13 @@
         {
           "name": "CORRELATION_ID",
           "sqlType": "nvarchar(100)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "DURATION_MS",
+          "sqlType": "int",
           "isNullable": true,
           "isPrimaryKey": false,
           "isIdentity": false
@@ -103,6 +110,27 @@
         {
           "name": "OLD_VALUES",
           "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_MODULE",
+          "sqlType": "nvarchar(150)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_PATH",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS_CODE",
+          "sqlType": "int",
           "isNullable": true,
           "isPrimaryKey": false,
           "isIdentity": false

@@ -69,9 +69,9 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.OrderStatusH
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int orderStatusHistoryOrderId, int? page, int? size)
+        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int orderStatusHistoryOrderId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByOrderIdAsync(orderStatusHistoryOrderId, page, size);
+            var returnValue = await _repository.GetByOrderIdAsync(orderStatusHistoryOrderId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
     }

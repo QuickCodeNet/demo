@@ -20,8 +20,8 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.ReturnReques
         Task<Response<ReturnRequestDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int returnRequestOrderId, int? page, int? size);
-        Task<Response<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, ReturnStatus returnRequestsStatus, int? page, int? size);
+        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int returnRequestOrderId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, int? pageNumber, int? pageSize);
         Task<Response<int>> ApproveAsync(int returnRequestId, ApproveRequestDto updateRequest);
         Task<Response<int>> RejectAsync(int returnRequestId, RejectRequestDto updateRequest);
         Task<Response<int>> CompleteAsync(int returnRequestId, CompleteRequestDto updateRequest);

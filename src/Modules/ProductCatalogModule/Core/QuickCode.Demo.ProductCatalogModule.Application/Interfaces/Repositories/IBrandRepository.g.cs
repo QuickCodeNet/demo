@@ -22,7 +22,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Interfaces.Repositorie
     public partial interface IBrandRepository : IBaseRepository<BrandDto>
     {
         Task<RepoResponse<BrandDto>> GetByPkAsync(int id);
-        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool brandIsActive, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<SearchByNameResponseDto>>> SearchByNameAsync(string brandName, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> DeactivateAsync(int brandId, DeactivateRequestDto updateRequest);
     }

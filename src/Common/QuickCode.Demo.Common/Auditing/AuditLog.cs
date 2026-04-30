@@ -23,6 +23,17 @@ public class AuditLog
 
     public DateTime Timestamp { get; set; }
 
+    /// <summary>
+    /// Request duration in milliseconds (captured from SecurityAuditMiddleware).
+    /// </summary>
+    public long? DurationMs { get; set; }
+    
+    public int? StatusCode { get; set; }
+
+    public string? RequestModule { get; set; }
+
+    public string? RequestPath { get; set; }
+
     public string? OldValues { get; set; }
 
     public string? NewValues { get; set; }

@@ -20,7 +20,7 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.Shipment
         Task<Response<ShipmentDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int shipmentOrderId, int? page, int? size);
+        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int shipmentOrderId, int? pageNumber, int? pageSize);
         Task<Response<GetByTrackingNumberResponseDto>> GetByTrackingNumberAsync(string shipmentTrackingNumber);
         Task<Response<int>> MarkAsShippedAsync(int shipmentId, MarkAsShippedRequestDto updateRequest);
         Task<Response<int>> MarkAsDeliveredAsync(int shipmentId, MarkAsDeliveredRequestDto updateRequest);

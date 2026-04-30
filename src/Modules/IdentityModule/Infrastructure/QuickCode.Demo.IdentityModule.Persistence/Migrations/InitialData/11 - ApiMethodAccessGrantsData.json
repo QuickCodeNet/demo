@@ -949,6 +949,102 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiidentitymoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -1087,7 +1183,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodpayoutperiodisclosedboolPayoutPeriodsController",
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodPayoutPeriodsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1279,6 +1375,102 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapifinancesettlementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -1327,7 +1519,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintorderstatusOrdersController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintOrdersController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1489,7 +1681,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleshippingmethodsgetactiveshippingmethodisactiveboolShippingMethodsController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleshippingmethodsgetactiveShippingMethodsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1621,7 +1813,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintreturnrequestsstatusReturnRequestsController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintReturnRequestsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1681,6 +1873,102 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiordermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -1699,7 +1987,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionmodelsgetactivecommissionmodelisactiveboolCommissionModelsController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionmodelsgetactiveCommissionModelsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1759,7 +2047,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintcommissionruleisactiveboolCommissionRulesController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintCommissionRulesController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -1909,7 +2197,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignspromotionalcampaignisactiveboolPromotionalCampaignsController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignsPromotionalCampaignsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2011,6 +2299,102 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapipricingenginemoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -2035,25 +2419,25 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintProductsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductssearchproductsproductnameproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductssearchproductsproductnameProductsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetpendingapprovalproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetpendingapprovalProductsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetfeaturedproductstatusproductisfeaturedboolProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetfeaturedProductsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2131,13 +2515,13 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintproductvariantisactiveboolProductVariantsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintProductVariantsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsproductvariantisactiveboolProductVariantsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsProductVariantsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2197,19 +2581,19 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetactivecategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetactiveCategoriesController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintcategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintCategoriesController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugcategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugCategoriesController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2311,7 +2695,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulebrandsgetactivebrandisactiveboolBrandsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulebrandsgetactiveBrandsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2497,6 +2881,102 @@
     "IsActive": true
   },
   {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiproductcatalogmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
@@ -2533,7 +3013,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellersgetpendingverificationcountsellerstatusSellersController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellersgetpendingverificationcountSellersController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2665,7 +3145,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentssellerdocumentstatusSellerDocumentsController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentsSellerDocumentsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2725,7 +3205,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintsellerbankaccountisdefaultboolSellerBankAccountsController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintSellerBankAccountsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -2864,6 +3344,102 @@
   },
   {
     "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapisellermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Admin",
+    "ModifiedBy": "System",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
     "PermissionGroupName": "Admin",
     "ModifiedBy": "System",
     "IsActive": true
@@ -3871,6 +4447,102 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiidentitymoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiidentitymoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
@@ -4009,7 +4681,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodpayoutperiodisclosedboolPayoutPeriodsController",
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodPayoutPeriodsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4201,6 +4873,102 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapifinancesettlementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "GetapifinancesettlementmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
@@ -4249,7 +5017,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintorderstatusOrdersController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintOrdersController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4411,7 +5179,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleshippingmethodsgetactiveshippingmethodisactiveboolShippingMethodsController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleshippingmethodsgetactiveShippingMethodsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4543,7 +5311,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintreturnrequestsstatusReturnRequestsController",
+    "ApiMethodDefinitionKey": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintReturnRequestsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4603,6 +5371,102 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiordermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiordermanagementmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
@@ -4621,7 +5485,7 @@
     "IsActive": true
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionmodelsgetactivecommissionmodelisactiveboolCommissionModelsController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionmodelsgetactiveCommissionModelsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4681,7 +5545,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintcommissionruleisactiveboolCommissionRulesController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintCommissionRulesController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4831,7 +5695,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignspromotionalcampaignisactiveboolPromotionalCampaignsController",
+    "ApiMethodDefinitionKey": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignsPromotionalCampaignsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -4933,6 +5797,102 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapipricingenginemoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "GetapipricingenginemoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
@@ -4957,25 +5917,25 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintProductsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductssearchproductsproductnameproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductssearchproductsproductnameProductsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetpendingapprovalproductstatusProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetpendingapprovalProductsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetfeaturedproductstatusproductisfeaturedboolProductsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductsgetfeaturedProductsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5053,13 +6013,13 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintproductvariantisactiveboolProductVariantsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintProductVariantsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsproductvariantisactiveboolProductVariantsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsProductVariantsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5119,19 +6079,19 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetactivecategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetactiveCategoriesController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintcategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintCategoriesController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugcategoryisactiveboolCategoriesController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugCategoriesController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5233,7 +6193,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulebrandsgetactivebrandisactiveboolBrandsController",
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmodulebrandsgetactiveBrandsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5419,6 +6379,102 @@
     "IsActive": false
   },
   {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapiproductcatalogmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
     "ApiMethodDefinitionKey": "GetapiproductcatalogmoduleauditlogsAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
@@ -5455,7 +6511,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellersgetpendingverificationcountsellerstatusSellersController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellersgetpendingverificationcountSellersController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5587,7 +6643,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentssellerdocumentstatusSellerDocumentsController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentsSellerDocumentsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5647,7 +6703,7 @@
     "IsActive": false
   },
   {
-    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintsellerbankaccountisdefaultboolSellerBankAccountsController",
+    "ApiMethodDefinitionKey": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintSellerBankAccountsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false
@@ -5786,6 +6842,102 @@
   },
   {
     "ApiMethodDefinitionKey": "DeleteapisellermanagementmodulesellerperformancereviewsidintSellerPerformanceReviewsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Getapisellermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "PermissionGroupName": "Viewer",
+    "ModifiedBy": "System",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "GetapisellermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
     "PermissionGroupName": "Viewer",
     "ModifiedBy": "System",
     "IsActive": false

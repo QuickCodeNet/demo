@@ -75,33 +75,33 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.Order
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByCustomerIdResponseDto>>> GetByCustomerIdAsync(int orderCustomerId, int? page, int? size)
+        public async Task<Response<List<GetByCustomerIdResponseDto>>> GetByCustomerIdAsync(int orderCustomerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByCustomerIdAsync(orderCustomerId, page, size);
+            var returnValue = await _repository.GetByCustomerIdAsync(orderCustomerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int orderSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int orderSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(orderSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(orderSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(OrderStatus orderStatus, int? page, int? size)
+        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(OrderStatus orderStatus, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByStatusAsync(orderStatus, page, size);
+            var returnValue = await _repository.GetByStatusAsync(orderStatus, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByDateRangeResponseDto>>> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? page, int? size)
+        public async Task<Response<List<GetByDateRangeResponseDto>>> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByDateRangeAsync(orderOrderDateFrom, orderOrderDateTo, page, size);
+            var returnValue = await _repository.GetByDateRangeAsync(orderOrderDateFrom, orderOrderDateTo, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, OrderStatus orderStatus, int? page, int? size)
+        public async Task<Response<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetOrdersForSettlementAsync(orderSellerId, orderStatus, page, size);
+            var returnValue = await _repository.GetOrdersForSettlementAsync(orderSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

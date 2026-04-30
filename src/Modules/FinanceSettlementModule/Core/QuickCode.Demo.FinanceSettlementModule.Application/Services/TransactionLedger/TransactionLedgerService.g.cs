@@ -69,9 +69,9 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.Transactio
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int transactionLedgerSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int transactionLedgerSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(transactionLedgerSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(transactionLedgerSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
@@ -81,9 +81,9 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.Transactio
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetTransactionsByTypeAndDateResponseDto>>> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? page, int? size)
+        public async Task<Response<List<GetTransactionsByTypeAndDateResponseDto>>> GetTransactionsByTypeAndDateAsync(int transactionLedgerSellerId, TransactionType transactionLedgerTransactionType, DateTime transactionLedgerTransactionDateFrom, DateTime transactionLedgerTransactionDateTo, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetTransactionsByTypeAndDateAsync(transactionLedgerSellerId, transactionLedgerTransactionType, transactionLedgerTransactionDateFrom, transactionLedgerTransactionDateTo, page, size);
+            var returnValue = await _repository.GetTransactionsByTypeAndDateAsync(transactionLedgerSellerId, transactionLedgerTransactionType, transactionLedgerTransactionDateFrom, transactionLedgerTransactionDateTo, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
     }

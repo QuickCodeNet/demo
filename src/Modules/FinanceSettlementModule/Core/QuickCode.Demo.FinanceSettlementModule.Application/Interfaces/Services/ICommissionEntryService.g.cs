@@ -20,7 +20,7 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.Commission
         Task<Response<CommissionEntryDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int commissionEntryOrderId, int? page, int? size);
-        Task<Response<List<GetCommissionsBySellerForPeriodResponseDto>>> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? page, int? size);
+        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int commissionEntryOrderId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetCommissionsBySellerForPeriodResponseDto>>> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? pageNumber, int? pageSize);
     }
 }

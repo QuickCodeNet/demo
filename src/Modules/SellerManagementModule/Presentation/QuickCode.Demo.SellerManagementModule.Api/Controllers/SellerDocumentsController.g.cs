@@ -104,36 +104,36 @@ namespace QuickCode.Demo.SellerManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int sellerDocumentSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int sellerDocumentSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(sellerDocumentSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(sellerDocumentSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "SellerDocument", $"SellerDocumentSellerId: '{sellerDocumentSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-pending-documents/{sellerDocumentStatus}")]
+        [HttpGet("get-pending-documents")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetPendingDocumentsResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? page, int? size)
+        public async Task<IActionResult> GetPendingDocumentsAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetPendingDocumentsAsync(sellerDocumentStatus, page, size);
-            if (HandleResponseError(response, logger, "SellerDocument", $"SellerDocumentStatus: '{sellerDocumentStatus}'") is {} responseError)
+            var response = await service.GetPendingDocumentsAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "SellerDocument", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

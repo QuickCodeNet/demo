@@ -69,15 +69,15 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.CommissionRule
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int commissionRuleCommissionModelId, int? page, int? size)
+        public async Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByModelIdAsync(commissionRuleCommissionModelId, page, size);
+            var returnValue = await _repository.GetByModelIdAsync(commissionRuleCommissionModelId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, bool commissionRuleIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveRulesByModelAsync(commissionRuleCommissionModelId, commissionRuleIsActive, page, size);
+            var returnValue = await _repository.GetActiveRulesByModelAsync(commissionRuleCommissionModelId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

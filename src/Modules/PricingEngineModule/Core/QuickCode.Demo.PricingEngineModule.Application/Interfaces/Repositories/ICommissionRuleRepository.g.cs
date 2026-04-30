@@ -23,7 +23,7 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Interfaces.Repositories
     {
         Task<RepoResponse<CommissionRuleDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int commissionRuleCommissionModelId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, bool commissionRuleIsActive, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> DeactivateAsync(int commissionRuleId, DeactivateRequestDto updateRequest);
     }
 }

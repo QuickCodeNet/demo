@@ -23,10 +23,10 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Interfaces.Repositorie
     {
         Task<RepoResponse<ProductDto>> GetByPkAsync(int id);
         Task<RepoResponse<GetBySkuResponseDto>> GetBySkuAsync(string productSku);
-        Task<RepoResponse<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, ProductStatus productStatus, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, ProductStatus productStatus, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(ProductStatus productStatus, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetFeaturedResponseDto>>> GetFeaturedAsync(ProductStatus productStatus, bool productIsFeatured, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetFeaturedResponseDto>>> GetFeaturedAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetProductsWithDetailsResponseDto>>> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<long>> GetCountByStatusAsync(ProductStatus productStatus);
         Task<RepoResponse<int>> ApproveAsync(int productId, ApproveRequestDto updateRequest);

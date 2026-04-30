@@ -30,7 +30,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
 {
     public partial class CategoryRepository : BaseRepository, ICategoryRepository
     {
-        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool categoryIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -49,7 +49,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_CATEGORY_IS_ACTIVE = categoryIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -60,7 +59,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, bool categoryIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -80,7 +79,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_CATEGORY_PARENT_CATEGORY_ID = categoryParentCategoryId,
-                        PRM_CATEGORY_IS_ACTIVE = categoryIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -91,15 +89,14 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug, bool categoryIsActive)
+        public async Task<RepoResponse<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug)
         {
             return await ExecuteWithExceptionHandling(CategoryCrudSqlBindings.OperationNames.GetBySlug, async () =>
             {
                 var sql = SqlLoader.Load(SqlScripts.Category.Query.GetBySlug);
                 var parameters = new
                 {
-                    PRM_CATEGORY_SLUG = categorySlug,
-                    PRM_CATEGORY_IS_ACTIVE = categoryIsActive
+                    PRM_CATEGORY_SLUG = categorySlug
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
                 var value = await connection.QueryFirstOrDefaultAsync<GetBySlugResponseDto>(sql, parameters);

@@ -30,7 +30,7 @@ namespace QuickCode.Demo.PricingEngineModule.Persistence.Repositories
 {
     public partial class CommissionModelRepository : BaseRepository, ICommissionModelRepository
     {
-        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool commissionModelIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -49,7 +49,6 @@ namespace QuickCode.Demo.PricingEngineModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_COMMISSION_MODEL_IS_ACTIVE = commissionModelIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

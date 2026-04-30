@@ -60,7 +60,7 @@ namespace QuickCode.Demo.SellerManagementModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -79,7 +79,6 @@ namespace QuickCode.Demo.SellerManagementModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_SELLER_DOCUMENT_STATUS = sellerDocumentStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

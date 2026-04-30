@@ -22,9 +22,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Interfaces.Repositorie
     public partial interface ICategoryRepository : IBaseRepository<CategoryDto>
     {
         Task<RepoResponse<CategoryDto>> GetByPkAsync(int id);
-        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool categoryIsActive, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, bool categoryIsActive, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug, bool categoryIsActive);
+        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug);
         Task<RepoResponse<int>> DeactivateAsync(int categoryId, DeactivateRequestDto updateRequest);
     }
 }

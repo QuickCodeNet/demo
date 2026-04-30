@@ -60,7 +60,7 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, ReturnStatus returnRequestsStatus, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -80,7 +80,6 @@ namespace QuickCode.Demo.OrderManagementModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_ORDERS_SELLER_ID = ordersSellerId,
-                        PRM_RETURN_REQUESTS_STATUS = returnRequestsStatus,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

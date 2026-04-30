@@ -12,7 +12,7 @@ public class RateLimitingMiddleware
                 partitionKey: context.Connection.RemoteIpAddress?.ToString() ?? "unknown",
                 factory: _ => new FixedWindowRateLimiterOptions
                 {
-                    PermitLimit = 100,
+                    PermitLimit = 1000,
                     Window = TimeSpan.FromMinutes(1),
                     AutoReplenishment = true
                 }));

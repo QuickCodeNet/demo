@@ -22,5 +22,21 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Interfaces.Repositor
     public partial interface IAuditLogRepository : IBaseRepository<AuditLogDto>
     {
         Task<RepoResponse<AuditLogDto>> GetByPkAsync(Guid id);
+        Task<RepoResponse<List<GetRecentHttpRequestsResponseDto>>> GetRecentHttpRequestsAsync(int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetRecentHttpRequestsByModuleResponseDto>>> GetRecentHttpRequestsByModuleAsync(string? auditLogRequestModule, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<StatsTodayHttpRequestsResponseDto>> StatsTodayHttpRequestsAsync();
+        Task<RepoResponse<StatsLastHourHttpRequestsResponseDto>> StatsLastHourHttpRequestsAsync();
+        Task<RepoResponse<StatsYesterdayHttpRequestsResponseDto>> StatsYesterdayHttpRequestsAsync();
+        Task<RepoResponse<StatsWeeklyHttpRequestsResponseDto>> StatsWeeklyHttpRequestsAsync();
+        Task<RepoResponse<StatsMonthlyHttpRequestsResponseDto>> StatsMonthlyHttpRequestsAsync();
+        Task<RepoResponse<StatsYearlyHttpRequestsResponseDto>> StatsYearlyHttpRequestsAsync();
+        Task<RepoResponse<List<StatsDailyHttpRequestsByDayResponseDto>>> StatsDailyHttpRequestsByDayAsync();
+        Task<RepoResponse<List<StatsDailyHttpRequestsByDayByModuleResponseDto>>> StatsDailyHttpRequestsByDayByModuleAsync();
+        Task<RepoResponse<List<StatsHourlyHttpRequestsByModuleResponseDto>>> StatsHourlyHttpRequestsByModuleAsync();
+        Task<RepoResponse<List<StatsTotalHttpRequestsByModuleResponseDto>>> StatsTotalHttpRequestsByModuleAsync();
+        Task<RepoResponse<List<StatsHttpStatusCodesLast24HoursByModuleResponseDto>>> StatsHttpStatusCodesLast24HoursByModuleAsync();
+        Task<RepoResponse<List<StatsHttpStatusCodesResponseDto>>> StatsHttpStatusCodesAsync();
+        Task<RepoResponse<List<StatsHttpStatusCodesByModuleResponseDto>>> StatsHttpStatusCodesByModuleAsync();
+        Task<RepoResponse<List<StatsTopHttpServicesByModuleResponseDto>>> StatsTopHttpServicesByModuleAsync();
     }
 }

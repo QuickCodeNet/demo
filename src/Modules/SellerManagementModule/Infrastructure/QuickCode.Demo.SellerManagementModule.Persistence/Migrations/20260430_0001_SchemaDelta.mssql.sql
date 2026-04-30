@@ -1,0 +1,22 @@
+﻿-- QuickCode schema delta (mssql) — generated 2026-04-30T08:12:02.7070764+00:00
+-- Safe auto-ops: ADD TABLE, DROP TABLE, ADD COLUMN (idempotent where supported).
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'dbo.AUDIT_LOGS', N'U') AND name = N'DURATION_MS')
+BEGIN
+    ALTER TABLE [dbo].[AUDIT_LOGS] ADD [DURATION_MS] int NULL;
+END
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'dbo.AUDIT_LOGS', N'U') AND name = N'REQUEST_MODULE')
+BEGIN
+    ALTER TABLE [dbo].[AUDIT_LOGS] ADD [REQUEST_MODULE] nvarchar(150) NULL;
+END
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'dbo.AUDIT_LOGS', N'U') AND name = N'REQUEST_PATH')
+BEGIN
+    ALTER TABLE [dbo].[AUDIT_LOGS] ADD [REQUEST_PATH] nvarchar(500) NULL;
+END
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = OBJECT_ID(N'dbo.AUDIT_LOGS', N'U') AND name = N'STATUS_CODE')
+BEGIN
+    ALTER TABLE [dbo].[AUDIT_LOGS] ADD [STATUS_CODE] int NULL;
+END

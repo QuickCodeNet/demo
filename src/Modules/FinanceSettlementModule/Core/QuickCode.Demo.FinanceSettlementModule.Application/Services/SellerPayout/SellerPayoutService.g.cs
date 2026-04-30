@@ -69,21 +69,21 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.SellerPayo
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPayoutSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPayoutSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(sellerPayoutSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(sellerPayoutSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? page, int? size)
+        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByStatusAsync(sellerPayoutStatus, page, size);
+            var returnValue = await _repository.GetByStatusAsync(sellerPayoutStatus, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByPeriodResponseDto>>> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? page, int? size)
+        public async Task<Response<List<GetByPeriodResponseDto>>> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByPeriodAsync(sellerPayoutPayoutPeriodId, page, size);
+            var returnValue = await _repository.GetByPeriodAsync(sellerPayoutPayoutPeriodId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

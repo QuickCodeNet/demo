@@ -69,21 +69,21 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Category
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool categoryIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveAsync(categoryIsActive, page, size);
+            var returnValue = await _repository.GetActiveAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, bool categoryIsActive, int? page, int? size)
+        public async Task<Response<List<GetSubCategoriesResponseDto>>> GetSubCategoriesAsync(int categoryParentCategoryId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetSubCategoriesAsync(categoryParentCategoryId, categoryIsActive, page, size);
+            var returnValue = await _repository.GetSubCategoriesAsync(categoryParentCategoryId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug, bool categoryIsActive)
+        public async Task<Response<GetBySlugResponseDto>> GetBySlugAsync(string categorySlug)
         {
-            var returnValue = await _repository.GetBySlugAsync(categorySlug, categoryIsActive);
+            var returnValue = await _repository.GetBySlugAsync(categorySlug);
             return returnValue.ToResponse();
         }
 

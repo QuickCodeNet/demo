@@ -69,15 +69,15 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.ReturnReques
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int returnRequestOrderId, int? page, int? size)
+        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int returnRequestOrderId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByOrderIdAsync(returnRequestOrderId, page, size);
+            var returnValue = await _repository.GetByOrderIdAsync(returnRequestOrderId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, ReturnStatus returnRequestsStatus, int? page, int? size)
+        public async Task<Response<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetPendingReturnsBySellerAsync(ordersSellerId, returnRequestsStatus, page, size);
+            var returnValue = await _repository.GetPendingReturnsBySellerAsync(ordersSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

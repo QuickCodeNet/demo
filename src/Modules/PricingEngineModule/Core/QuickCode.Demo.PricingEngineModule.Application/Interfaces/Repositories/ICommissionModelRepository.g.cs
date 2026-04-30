@@ -22,7 +22,7 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Interfaces.Repositories
     public partial interface ICommissionModelRepository : IBaseRepository<CommissionModelDto>
     {
         Task<RepoResponse<CommissionModelDto>> GetByPkAsync(int id);
-        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool commissionModelIsActive, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<GetByNameResponseDto>> GetByNameAsync(string commissionModelName);
         Task<RepoResponse<int>> DeactivateAsync(int commissionModelId, DeactivateRequestDto updateRequest);
     }

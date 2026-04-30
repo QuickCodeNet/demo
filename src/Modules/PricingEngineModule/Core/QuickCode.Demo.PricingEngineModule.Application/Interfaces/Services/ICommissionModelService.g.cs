@@ -20,7 +20,7 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.CommissionMode
         Task<Response<CommissionModelDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool commissionModelIsActive, int? page, int? size);
+        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize);
         Task<Response<GetByNameResponseDto>> GetByNameAsync(string commissionModelName);
         Task<Response<int>> DeactivateAsync(int commissionModelId, DeactivateRequestDto updateRequest);
     }

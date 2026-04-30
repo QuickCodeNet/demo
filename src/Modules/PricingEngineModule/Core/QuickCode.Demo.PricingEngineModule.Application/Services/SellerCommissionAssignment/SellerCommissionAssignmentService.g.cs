@@ -75,9 +75,9 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.SellerCommissi
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int sellerCommissionAssignmentCommissionModelId, int? page, int? size)
+        public async Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int sellerCommissionAssignmentCommissionModelId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByModelIdAsync(sellerCommissionAssignmentCommissionModelId, page, size);
+            var returnValue = await _repository.GetByModelIdAsync(sellerCommissionAssignmentCommissionModelId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

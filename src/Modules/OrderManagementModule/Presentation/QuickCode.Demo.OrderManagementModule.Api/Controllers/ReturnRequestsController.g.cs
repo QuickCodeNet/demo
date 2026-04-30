@@ -104,36 +104,36 @@ namespace QuickCode.Demo.OrderManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByOrderIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByOrderIdAsync(int returnRequestOrderId, int? page, int? size)
+        public async Task<IActionResult> GetByOrderIdAsync(int returnRequestOrderId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByOrderIdAsync(returnRequestOrderId, page, size);
+            var response = await service.GetByOrderIdAsync(returnRequestOrderId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "ReturnRequest", $"ReturnRequestOrderId: '{returnRequestOrderId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-pending-returns-by-seller/{ordersSellerId:int}/{returnRequestsStatus}")]
+        [HttpGet("get-pending-returns-by-seller/{ordersSellerId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetPendingReturnsBySellerResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetPendingReturnsBySellerAsync(int ordersSellerId, ReturnStatus returnRequestsStatus, int? page, int? size)
+        public async Task<IActionResult> GetPendingReturnsBySellerAsync(int ordersSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetPendingReturnsBySellerAsync(ordersSellerId, returnRequestsStatus, page, size);
-            if (HandleResponseError(response, logger, "ReturnRequest", $"OrdersSellerId: '{ordersSellerId}', ReturnRequestsStatus: '{returnRequestsStatus}'") is {} responseError)
+            var response = await service.GetPendingReturnsBySellerAsync(ordersSellerId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "ReturnRequest", $"OrdersSellerId: '{ordersSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

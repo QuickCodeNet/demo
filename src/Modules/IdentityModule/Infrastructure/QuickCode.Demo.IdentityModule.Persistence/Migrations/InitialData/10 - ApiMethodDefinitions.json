@@ -1423,6 +1423,150 @@
     "UrlPath": "/api/identity-module/asp-net-user-tokens/{userId}"
   },
   {
+    "Key": "GetapiidentitymoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/identity-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/identity-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/identity-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapiidentitymoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/identity-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapiidentitymoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "IdentityModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/identity-module/audit-logs/stats-top-http-services-by-module"
+  },
+  {
     "Key": "GetapiidentitymoduleauditlogsAuditLogsController",
     "ModuleName": "IdentityModule",
     "ModelName": "AuditLogs",
@@ -1657,13 +1801,13 @@
     "UrlPath": "/api/finance-settlement-module/payout-line-items/{id:int}"
   },
   {
-    "Key": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodpayoutperiodisclosedboolPayoutPeriodsController",
+    "Key": "GetapifinancesettlementmodulepayoutperiodsgetopenperiodPayoutPeriodsController",
     "ModuleName": "FinanceSettlementModule",
     "ModelName": "PayoutPeriods",
     "HttpMethod": "Get",
     "ControllerName": "PayoutPeriodsController",
-    "MethodName": "get-open-period/{payoutPeriodIsClosed:bool}",
-    "UrlPath": "/api/finance-settlement-module/payout-periods/get-open-period/{payoutPeriodIsClosed:bool}"
+    "MethodName": "get-open-period",
+    "UrlPath": "/api/finance-settlement-module/payout-periods/get-open-period"
   },
   {
     "Key": "PatchapifinancesettlementmodulepayoutperiodscloseperiodpayoutperiodidintPayoutPeriodsController",
@@ -1945,6 +2089,150 @@
     "UrlPath": "/api/finance-settlement-module/financial-adjustments/{id:int}"
   },
   {
+    "Key": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapifinancesettlementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapifinancesettlementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "FinanceSettlementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/finance-settlement-module/audit-logs/stats-top-http-services-by-module"
+  },
+  {
     "Key": "GetapifinancesettlementmoduleauditlogsAuditLogsController",
     "ModuleName": "FinanceSettlementModule",
     "ModelName": "AuditLogs",
@@ -2044,13 +2332,13 @@
     "UrlPath": "/api/order-management-module/orders/get-by-date-range"
   },
   {
-    "Key": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintorderstatusOrdersController",
+    "Key": "GetapiordermanagementmoduleordersgetordersforsettlementorderselleridintOrdersController",
     "ModuleName": "OrderManagementModule",
     "ModelName": "Orders",
     "HttpMethod": "Get",
     "ControllerName": "OrdersController",
-    "MethodName": "get-orders-for-settlement/{orderSellerId:int}/{orderStatus}",
-    "UrlPath": "/api/order-management-module/orders/get-orders-for-settlement/{orderSellerId:int}/{orderStatus}"
+    "MethodName": "get-orders-for-settlement/{orderSellerId:int}",
+    "UrlPath": "/api/order-management-module/orders/get-orders-for-settlement/{orderSellerId:int}"
   },
   {
     "Key": "GetapiordermanagementmoduleordersgetmonthlyrevenuebysellerorderselleridintOrdersController",
@@ -2287,13 +2575,13 @@
     "UrlPath": "/api/order-management-module/shipments/{id:int}"
   },
   {
-    "Key": "GetapiordermanagementmoduleshippingmethodsgetactiveshippingmethodisactiveboolShippingMethodsController",
+    "Key": "GetapiordermanagementmoduleshippingmethodsgetactiveShippingMethodsController",
     "ModuleName": "OrderManagementModule",
     "ModelName": "ShippingMethods",
     "HttpMethod": "Get",
     "ControllerName": "ShippingMethodsController",
-    "MethodName": "get-active/{shippingMethodIsActive:bool}",
-    "UrlPath": "/api/order-management-module/shipping-methods/get-active/{shippingMethodIsActive:bool}"
+    "MethodName": "get-active",
+    "UrlPath": "/api/order-management-module/shipping-methods/get-active"
   },
   {
     "Key": "PatchapiordermanagementmoduleshippingmethodsdeactivateshippingmethodidintShippingMethodsController",
@@ -2485,13 +2773,13 @@
     "UrlPath": "/api/order-management-module/return-requests/get-by-order-id/{returnRequestOrderId:int}"
   },
   {
-    "Key": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintreturnrequestsstatusReturnRequestsController",
+    "Key": "GetapiordermanagementmodulereturnrequestsgetpendingreturnsbysellerordersselleridintReturnRequestsController",
     "ModuleName": "OrderManagementModule",
     "ModelName": "ReturnRequests",
     "HttpMethod": "Get",
     "ControllerName": "ReturnRequestsController",
-    "MethodName": "get-pending-returns-by-seller/{ordersSellerId:int}/{returnRequestsStatus}",
-    "UrlPath": "/api/order-management-module/return-requests/get-pending-returns-by-seller/{ordersSellerId:int}/{returnRequestsStatus}"
+    "MethodName": "get-pending-returns-by-seller/{ordersSellerId:int}",
+    "UrlPath": "/api/order-management-module/return-requests/get-pending-returns-by-seller/{ordersSellerId:int}"
   },
   {
     "Key": "PatchapiordermanagementmodulereturnrequestsapprovereturnrequestidintReturnRequestsController",
@@ -2575,6 +2863,150 @@
     "UrlPath": "/api/order-management-module/return-requests/{id:int}"
   },
   {
+    "Key": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/order-management-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapiordermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapiordermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "OrderManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/order-management-module/audit-logs/stats-top-http-services-by-module"
+  },
+  {
     "Key": "GetapiordermanagementmoduleauditlogsAuditLogsController",
     "ModuleName": "OrderManagementModule",
     "ModelName": "AuditLogs",
@@ -2629,13 +3061,13 @@
     "UrlPath": "/api/order-management-module/audit-logs/{id:Guid}"
   },
   {
-    "Key": "GetapipricingenginemodulecommissionmodelsgetactivecommissionmodelisactiveboolCommissionModelsController",
+    "Key": "GetapipricingenginemodulecommissionmodelsgetactiveCommissionModelsController",
     "ModuleName": "PricingEngineModule",
     "ModelName": "CommissionModels",
     "HttpMethod": "Get",
     "ControllerName": "CommissionModelsController",
-    "MethodName": "get-active/{commissionModelIsActive:bool}",
-    "UrlPath": "/api/pricing-engine-module/commission-models/get-active/{commissionModelIsActive:bool}"
+    "MethodName": "get-active",
+    "UrlPath": "/api/pricing-engine-module/commission-models/get-active"
   },
   {
     "Key": "GetapipricingenginemodulecommissionmodelsgetbynamecommissionmodelnameCommissionModelsController",
@@ -2719,13 +3151,13 @@
     "UrlPath": "/api/pricing-engine-module/commission-rules/get-by-model-id/{commissionRuleCommissionModelId:int}"
   },
   {
-    "Key": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintcommissionruleisactiveboolCommissionRulesController",
+    "Key": "GetapipricingenginemodulecommissionrulesgetactiverulesbymodelcommissionrulecommissionmodelidintCommissionRulesController",
     "ModuleName": "PricingEngineModule",
     "ModelName": "CommissionRules",
     "HttpMethod": "Get",
     "ControllerName": "CommissionRulesController",
-    "MethodName": "get-active-rules-by-model/{commissionRuleCommissionModelId:int}/{commissionRuleIsActive:bool}",
-    "UrlPath": "/api/pricing-engine-module/commission-rules/get-active-rules-by-model/{commissionRuleCommissionModelId:int}/{commissionRuleIsActive:bool}"
+    "MethodName": "get-active-rules-by-model/{commissionRuleCommissionModelId:int}",
+    "UrlPath": "/api/pricing-engine-module/commission-rules/get-active-rules-by-model/{commissionRuleCommissionModelId:int}"
   },
   {
     "Key": "PatchapipricingenginemodulecommissionrulesdeactivatecommissionruleidintCommissionRulesController",
@@ -2944,13 +3376,13 @@
     "UrlPath": "/api/pricing-engine-module/category-commission-overrides/{id:int}"
   },
   {
-    "Key": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignspromotionalcampaignisactiveboolPromotionalCampaignsController",
+    "Key": "GetapipricingenginemodulepromotionalcampaignsgetactivecampaignsPromotionalCampaignsController",
     "ModuleName": "PricingEngineModule",
     "ModelName": "PromotionalCampaigns",
     "HttpMethod": "Get",
     "ControllerName": "PromotionalCampaignsController",
-    "MethodName": "get-active-campaigns/{promotionalCampaignIsActive:bool}",
-    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/get-active-campaigns/{promotionalCampaignIsActive:bool}"
+    "MethodName": "get-active-campaigns",
+    "UrlPath": "/api/pricing-engine-module/promotional-campaigns/get-active-campaigns"
   },
   {
     "Key": "GetapipricingenginemodulepromotionalcampaignsgetcampaignsindaterangePromotionalCampaignsController",
@@ -3097,6 +3529,150 @@
     "UrlPath": "/api/pricing-engine-module/campaign-applicabilities/{campaignId:int}/{scope}/{scopeId:int}"
   },
   {
+    "Key": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapipricingenginemoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapipricingenginemoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "PricingEngineModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/pricing-engine-module/audit-logs/stats-top-http-services-by-module"
+  },
+  {
     "Key": "GetapipricingenginemoduleauditlogsAuditLogsController",
     "ModuleName": "PricingEngineModule",
     "ModelName": "AuditLogs",
@@ -3160,40 +3736,40 @@
     "UrlPath": "/api/product-catalog-module/products/get-by-sku/{productSku}"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintproductstatusProductsController",
+    "Key": "GetapiproductcatalogmoduleproductsgetactivebysellerproductselleridintProductsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Products",
     "HttpMethod": "Get",
     "ControllerName": "ProductsController",
-    "MethodName": "get-active-by-seller/{productSellerId:int}/{productStatus}",
-    "UrlPath": "/api/product-catalog-module/products/get-active-by-seller/{productSellerId:int}/{productStatus}"
+    "MethodName": "get-active-by-seller/{productSellerId:int}",
+    "UrlPath": "/api/product-catalog-module/products/get-active-by-seller/{productSellerId:int}"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductssearchproductsproductnameproductstatusProductsController",
+    "Key": "GetapiproductcatalogmoduleproductssearchproductsproductnameProductsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Products",
     "HttpMethod": "Get",
     "ControllerName": "ProductsController",
-    "MethodName": "search-products/{productName}/{productStatus}",
-    "UrlPath": "/api/product-catalog-module/products/search-products/{productName}/{productStatus}"
+    "MethodName": "search-products/{productName}",
+    "UrlPath": "/api/product-catalog-module/products/search-products/{productName}"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductsgetpendingapprovalproductstatusProductsController",
+    "Key": "GetapiproductcatalogmoduleproductsgetpendingapprovalProductsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Products",
     "HttpMethod": "Get",
     "ControllerName": "ProductsController",
-    "MethodName": "get-pending-approval/{productStatus}",
-    "UrlPath": "/api/product-catalog-module/products/get-pending-approval/{productStatus}"
+    "MethodName": "get-pending-approval",
+    "UrlPath": "/api/product-catalog-module/products/get-pending-approval"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductsgetfeaturedproductstatusproductisfeaturedboolProductsController",
+    "Key": "GetapiproductcatalogmoduleproductsgetfeaturedProductsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Products",
     "HttpMethod": "Get",
     "ControllerName": "ProductsController",
-    "MethodName": "get-featured/{productStatus}/{productIsFeatured:bool}",
-    "UrlPath": "/api/product-catalog-module/products/get-featured/{productStatus}/{productIsFeatured:bool}"
+    "MethodName": "get-featured",
+    "UrlPath": "/api/product-catalog-module/products/get-featured"
   },
   {
     "Key": "GetapiproductcatalogmoduleproductsgetproductswithdetailsproductsbrandidintproductprimarycategoryidintcategoryidintbrandidintProductsController",
@@ -3304,22 +3880,22 @@
     "UrlPath": "/api/product-catalog-module/product-variants/get-by-product-id/{productVariantProductId:int}"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintproductvariantisactiveboolProductVariantsController",
+    "Key": "GetapiproductcatalogmoduleproductvariantsgetactivebyproductidproductvariantproductidintProductVariantsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "ProductVariants",
     "HttpMethod": "Get",
     "ControllerName": "ProductVariantsController",
-    "MethodName": "get-active-by-product-id/{productVariantProductId:int}/{productVariantIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/product-variants/get-active-by-product-id/{productVariantProductId:int}/{productVariantIsActive:bool}"
+    "MethodName": "get-active-by-product-id/{productVariantProductId:int}",
+    "UrlPath": "/api/product-catalog-module/product-variants/get-active-by-product-id/{productVariantProductId:int}"
   },
   {
-    "Key": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsproductvariantisactiveboolProductVariantsController",
+    "Key": "GetapiproductcatalogmoduleproductvariantsgetlowstockvariantsProductVariantsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "ProductVariants",
     "HttpMethod": "Get",
     "ControllerName": "ProductVariantsController",
-    "MethodName": "get-low-stock-variants/{productVariantIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/product-variants/get-low-stock-variants/{productVariantIsActive:bool}"
+    "MethodName": "get-low-stock-variants",
+    "UrlPath": "/api/product-catalog-module/product-variants/get-low-stock-variants"
   },
   {
     "Key": "PatchapiproductcatalogmoduleproductvariantsupdatestockproductvariantidintProductVariantsController",
@@ -3403,31 +3979,31 @@
     "UrlPath": "/api/product-catalog-module/product-variants/{id:int}"
   },
   {
-    "Key": "GetapiproductcatalogmodulecategoriesgetactivecategoryisactiveboolCategoriesController",
+    "Key": "GetapiproductcatalogmodulecategoriesgetactiveCategoriesController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Categories",
     "HttpMethod": "Get",
     "ControllerName": "CategoriesController",
-    "MethodName": "get-active/{categoryIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/categories/get-active/{categoryIsActive:bool}"
+    "MethodName": "get-active",
+    "UrlPath": "/api/product-catalog-module/categories/get-active"
   },
   {
-    "Key": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintcategoryisactiveboolCategoriesController",
+    "Key": "GetapiproductcatalogmodulecategoriesgetsubcategoriescategoryparentcategoryidintCategoriesController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Categories",
     "HttpMethod": "Get",
     "ControllerName": "CategoriesController",
-    "MethodName": "get-sub-categories/{categoryParentCategoryId:int}/{categoryIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/categories/get-sub-categories/{categoryParentCategoryId:int}/{categoryIsActive:bool}"
+    "MethodName": "get-sub-categories/{categoryParentCategoryId:int}",
+    "UrlPath": "/api/product-catalog-module/categories/get-sub-categories/{categoryParentCategoryId:int}"
   },
   {
-    "Key": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugcategoryisactiveboolCategoriesController",
+    "Key": "GetapiproductcatalogmodulecategoriesgetbyslugcategoryslugCategoriesController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Categories",
     "HttpMethod": "Get",
     "ControllerName": "CategoriesController",
-    "MethodName": "get-by-slug/{categorySlug}/{categoryIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/categories/get-by-slug/{categorySlug}/{categoryIsActive:bool}"
+    "MethodName": "get-by-slug/{categorySlug}",
+    "UrlPath": "/api/product-catalog-module/categories/get-by-slug/{categorySlug}"
   },
   {
     "Key": "PatchapiproductcatalogmodulecategoriesdeactivatecategoryidintCategoriesController",
@@ -3574,13 +4150,13 @@
     "UrlPath": "/api/product-catalog-module/product-categories/{productId:int}/{categoryId:int}"
   },
   {
-    "Key": "GetapiproductcatalogmodulebrandsgetactivebrandisactiveboolBrandsController",
+    "Key": "GetapiproductcatalogmodulebrandsgetactiveBrandsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "Brands",
     "HttpMethod": "Get",
     "ControllerName": "BrandsController",
-    "MethodName": "get-active/{brandIsActive:bool}",
-    "UrlPath": "/api/product-catalog-module/brands/get-active/{brandIsActive:bool}"
+    "MethodName": "get-active",
+    "UrlPath": "/api/product-catalog-module/brands/get-active"
   },
   {
     "Key": "GetapiproductcatalogmodulebrandssearchbynamebrandnameBrandsController",
@@ -3853,6 +4429,150 @@
     "UrlPath": "/api/product-catalog-module/product-variant-attributes/{variantId:int}/{attributeValueId:int}"
   },
   {
+    "Key": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/product-catalog-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapiproductcatalogmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapiproductcatalogmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "ProductCatalogModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/product-catalog-module/audit-logs/stats-top-http-services-by-module"
+  },
+  {
     "Key": "GetapiproductcatalogmoduleauditlogsAuditLogsController",
     "ModuleName": "ProductCatalogModule",
     "ModelName": "AuditLogs",
@@ -3934,13 +4654,13 @@
     "UrlPath": "/api/seller-management-module/sellers/search-by-company-name/{sellerCompanyName}"
   },
   {
-    "Key": "GetapisellermanagementmodulesellersgetpendingverificationcountsellerstatusSellersController",
+    "Key": "GetapisellermanagementmodulesellersgetpendingverificationcountSellersController",
     "ModuleName": "SellerManagementModule",
     "ModelName": "Sellers",
     "HttpMethod": "Get",
     "ControllerName": "SellersController",
-    "MethodName": "get-pending-verification-count/{sellerStatus}",
-    "UrlPath": "/api/seller-management-module/sellers/get-pending-verification-count/{sellerStatus}"
+    "MethodName": "get-pending-verification-count",
+    "UrlPath": "/api/seller-management-module/sellers/get-pending-verification-count"
   },
   {
     "Key": "PatchapisellermanagementmodulesellersapproveselleridintSellersController",
@@ -4132,13 +4852,13 @@
     "UrlPath": "/api/seller-management-module/seller-documents/get-by-seller-id/{sellerDocumentSellerId:int}"
   },
   {
-    "Key": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentssellerdocumentstatusSellerDocumentsController",
+    "Key": "GetapisellermanagementmodulesellerdocumentsgetpendingdocumentsSellerDocumentsController",
     "ModuleName": "SellerManagementModule",
     "ModelName": "SellerDocuments",
     "HttpMethod": "Get",
     "ControllerName": "SellerDocumentsController",
-    "MethodName": "get-pending-documents/{sellerDocumentStatus}",
-    "UrlPath": "/api/seller-management-module/seller-documents/get-pending-documents/{sellerDocumentStatus}"
+    "MethodName": "get-pending-documents",
+    "UrlPath": "/api/seller-management-module/seller-documents/get-pending-documents"
   },
   {
     "Key": "PatchapisellermanagementmodulesellerdocumentsverifysellerdocumentidintSellerDocumentsController",
@@ -4222,13 +4942,13 @@
     "UrlPath": "/api/seller-management-module/seller-bank-accounts/get-by-seller-id/{sellerBankAccountSellerId:int}"
   },
   {
-    "Key": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintsellerbankaccountisdefaultboolSellerBankAccountsController",
+    "Key": "GetapisellermanagementmodulesellerbankaccountsgetdefaultbyselleridsellerbankaccountselleridintSellerBankAccountsController",
     "ModuleName": "SellerManagementModule",
     "ModelName": "SellerBankAccounts",
     "HttpMethod": "Get",
     "ControllerName": "SellerBankAccountsController",
-    "MethodName": "get-default-by-seller-id/{sellerBankAccountSellerId:int}/{sellerBankAccountIsDefault:bool}",
-    "UrlPath": "/api/seller-management-module/seller-bank-accounts/get-default-by-seller-id/{sellerBankAccountSellerId:int}/{sellerBankAccountIsDefault:bool}"
+    "MethodName": "get-default-by-seller-id/{sellerBankAccountSellerId:int}",
+    "UrlPath": "/api/seller-management-module/seller-bank-accounts/get-default-by-seller-id/{sellerBankAccountSellerId:int}"
   },
   {
     "Key": "PatchapisellermanagementmodulesellerbankaccountssetasdefaultsellerbankaccountselleridintSellerBankAccountsController",
@@ -4436,6 +5156,150 @@
     "ControllerName": "SellerPerformanceReviewsController",
     "MethodName": "Delete",
     "UrlPath": "/api/seller-management-module/seller-performance-reviews/{id:int}"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/get-recent-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsgetrecenthttprequestsbymoduleauditlogrequestmoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "get-recent-http-requests-by-module/{auditLogRequestModule}",
+    "UrlPath": "/api/seller-management-module/audit-logs/get-recent-http-requests-by-module/{auditLogRequestModule}"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatstodayhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-today-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-today-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatslasthourhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-last-hour-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-last-hour-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsyesterdayhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yesterday-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-yesterday-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsweeklyhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-weekly-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-weekly-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsmonthlyhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-monthly-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-monthly-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsyearlyhttprequestsAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-yearly-http-requests",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-yearly-http-requests"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydayAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-daily-http-requests-by-day"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatsdailyhttprequestsbydaybymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-daily-http-requests-by-day-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-daily-http-requests-by-day-by-module"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatshourlyhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-hourly-http-requests-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-hourly-http-requests-by-module"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatstotalhttprequestsbymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-total-http-requests-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-total-http-requests-by-module"
+  },
+  {
+    "Key": "Getapisellermanagementmoduleauditlogsstatshttpstatuscodeslast24hoursbymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-last-24-hours-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-http-status-codes-last-24-hours-by-module"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-http-status-codes"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatshttpstatuscodesbymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-http-status-codes-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-http-status-codes-by-module"
+  },
+  {
+    "Key": "GetapisellermanagementmoduleauditlogsstatstophttpservicesbymoduleAuditLogsController",
+    "ModuleName": "SellerManagementModule",
+    "ModelName": "AuditLogs",
+    "HttpMethod": "Get",
+    "ControllerName": "AuditLogsController",
+    "MethodName": "stats-top-http-services-by-module",
+    "UrlPath": "/api/seller-management-module/audit-logs/stats-top-http-services-by-module"
   },
   {
     "Key": "GetapisellermanagementmoduleauditlogsAuditLogsController",

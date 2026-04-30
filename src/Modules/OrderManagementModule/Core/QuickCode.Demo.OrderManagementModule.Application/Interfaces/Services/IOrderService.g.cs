@@ -21,11 +21,11 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.Order
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<GetByOrderNumberResponseDto>> GetByOrderNumberAsync(string orderOrderNumber);
-        Task<Response<List<GetByCustomerIdResponseDto>>> GetByCustomerIdAsync(int orderCustomerId, int? page, int? size);
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int orderSellerId, int? page, int? size);
-        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(OrderStatus orderStatus, int? page, int? size);
-        Task<Response<List<GetByDateRangeResponseDto>>> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? page, int? size);
-        Task<Response<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, OrderStatus orderStatus, int? page, int? size);
+        Task<Response<List<GetByCustomerIdResponseDto>>> GetByCustomerIdAsync(int orderCustomerId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int orderSellerId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(OrderStatus orderStatus, int? pageNumber, int? pageSize);
+        Task<Response<List<GetByDateRangeResponseDto>>> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? pageNumber, int? pageSize);
+        Task<Response<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, int? pageNumber, int? pageSize);
         Task<Response<GetMonthlyRevenueBySellerResponseDto>> GetMonthlyRevenueBySellerAsync(int orderSellerId);
         Task<Response<int>> UpdateStatusAsync(int orderId, UpdateStatusRequestDto updateRequest);
         Task<Response<int>> CancelOrderAsync(int orderId, CancelOrderRequestDto updateRequest);

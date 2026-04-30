@@ -60,7 +60,7 @@ namespace QuickCode.Demo.PricingEngineModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, bool commissionRuleIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveRulesByModelResponseDto>>> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -80,7 +80,6 @@ namespace QuickCode.Demo.PricingEngineModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_COMMISSION_RULE_COMMISSION_MODEL_ID = commissionRuleCommissionModelId,
-                        PRM_COMMISSION_RULE_IS_ACTIVE = commissionRuleIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

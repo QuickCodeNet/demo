@@ -69,9 +69,9 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.ShippingMeth
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool shippingMethodIsActive, int? page, int? size)
+        public async Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveAsync(shippingMethodIsActive, page, size);
+            var returnValue = await _repository.GetActiveAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

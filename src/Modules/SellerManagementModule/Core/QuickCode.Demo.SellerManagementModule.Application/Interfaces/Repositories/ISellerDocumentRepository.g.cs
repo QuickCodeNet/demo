@@ -23,7 +23,7 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Interfaces.Repositor
     {
         Task<RepoResponse<SellerDocumentDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerDocumentSellerId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> VerifyAsync(int sellerDocumentId, VerifyRequestDto updateRequest);
         Task<RepoResponse<int>> RejectAsync(int sellerDocumentId, RejectRequestDto updateRequest);
     }

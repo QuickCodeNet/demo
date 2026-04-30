@@ -44,6 +44,20 @@ public partial class AuditLog : IAuditableEntity
 	[Column("TIMESTAMP")]
 	public DateTime Timestamp { get; set; }
 	
+	[Column("DURATION_MS")]
+	public int? DurationMs { get; set; }
+	
+	[Column("STATUS_CODE")]
+	public int? StatusCode { get; set; }
+	
+	[Column("REQUEST_MODULE")]
+	[StringLength(150)]
+	public string? RequestModule { get; set; }
+	
+	[Column("REQUEST_PATH")]
+	[StringLength(500)]
+	public string? RequestPath { get; set; }
+	
 	[Column("OLD_VALUES")]
 	[StringLength(int.MaxValue)]
 	public string? OldValues { get; set; }

@@ -20,6 +20,6 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.FinancialA
         Task<Response<FinancialAdjustmentDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int financialAdjustmentSellerId, int? page, int? size);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int financialAdjustmentSellerId, int? pageNumber, int? pageSize);
     }
 }

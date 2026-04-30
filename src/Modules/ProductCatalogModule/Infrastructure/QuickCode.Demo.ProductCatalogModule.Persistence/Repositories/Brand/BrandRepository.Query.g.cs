@@ -30,7 +30,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
 {
     public partial class BrandRepository : BaseRepository, IBrandRepository
     {
-        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(bool brandIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -49,7 +49,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var startIndex = (pageNumber - 1) * pageSize;
                     var parameters = new
                     {
-                        PRM_BRAND_IS_ACTIVE = brandIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };

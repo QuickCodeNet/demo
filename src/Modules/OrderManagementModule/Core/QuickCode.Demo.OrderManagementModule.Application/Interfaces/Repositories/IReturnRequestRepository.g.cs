@@ -23,7 +23,7 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Interfaces.Repositori
     {
         Task<RepoResponse<ReturnRequestDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int returnRequestOrderId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, ReturnStatus returnRequestsStatus, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetPendingReturnsBySellerResponseDto>>> GetPendingReturnsBySellerAsync(int ordersSellerId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<int>> ApproveAsync(int returnRequestId, ApproveRequestDto updateRequest);
         Task<RepoResponse<int>> RejectAsync(int returnRequestId, RejectRequestDto updateRequest);
         Task<RepoResponse<int>> CompleteAsync(int returnRequestId, CompleteRequestDto updateRequest);

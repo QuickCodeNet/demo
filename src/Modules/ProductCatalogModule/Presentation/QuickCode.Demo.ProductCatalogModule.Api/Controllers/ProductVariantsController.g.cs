@@ -104,48 +104,48 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByProductIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByProductIdAsync(int productVariantProductId, int? page, int? size)
+        public async Task<IActionResult> GetByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByProductIdAsync(productVariantProductId, page, size);
+            var response = await service.GetByProductIdAsync(productVariantProductId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "ProductVariant", $"ProductVariantProductId: '{productVariantProductId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active-by-product-id/{productVariantProductId:int}/{productVariantIsActive:bool}")]
+        [HttpGet("get-active-by-product-id/{productVariantProductId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveByProductIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveByProductIdAsync(int productVariantProductId, bool productVariantIsActive, int? page, int? size)
+        public async Task<IActionResult> GetActiveByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveByProductIdAsync(productVariantProductId, productVariantIsActive, page, size);
-            if (HandleResponseError(response, logger, "ProductVariant", $"ProductVariantProductId: '{productVariantProductId}', ProductVariantIsActive: '{productVariantIsActive}'") is {} responseError)
+            var response = await service.GetActiveByProductIdAsync(productVariantProductId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "ProductVariant", $"ProductVariantProductId: '{productVariantProductId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-low-stock-variants/{productVariantIsActive:bool}")]
+        [HttpGet("get-low-stock-variants")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(long))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetLowStockVariantsAsync(bool productVariantIsActive)
+        public async Task<IActionResult> GetLowStockVariantsAsync()
         {
-            var response = await service.GetLowStockVariantsAsync(productVariantIsActive);
-            if (HandleResponseError(response, logger, "ProductVariant", $"ProductVariantIsActive: '{productVariantIsActive}'") is {} responseError)
+            var response = await service.GetLowStockVariantsAsync();
+            if (HandleResponseError(response, logger, "ProductVariant", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

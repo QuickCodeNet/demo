@@ -27,7 +27,7 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Interfaces.Repositori
         Task<RepoResponse<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int orderSellerId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetByStatusResponseDto>>> GetByStatusAsync(OrderStatus orderStatus, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<List<GetByDateRangeResponseDto>>> GetByDateRangeAsync(DateTime orderOrderDateFrom, DateTime orderOrderDateTo, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, OrderStatus orderStatus, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<List<GetOrdersForSettlementResponseDto>>> GetOrdersForSettlementAsync(int orderSellerId, int? pageNumber = null, int? pageSize = null);
         Task<RepoResponse<GetMonthlyRevenueBySellerResponseDto>> GetMonthlyRevenueBySellerAsync(int orderSellerId);
         Task<RepoResponse<int>> UpdateStatusAsync(int orderId, UpdateStatusRequestDto updateRequest);
         Task<RepoResponse<int>> CancelOrderAsync(int orderId, CancelOrderRequestDto updateRequest);

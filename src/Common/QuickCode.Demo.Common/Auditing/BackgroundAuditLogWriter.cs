@@ -183,6 +183,8 @@ public class BackgroundAuditLogWriter : BackgroundService, IAuditLogWriter
         log.IpAddress ??= string.Empty;
         log.UserAgent ??= string.Empty;
         log.CorrelationId ??= string.Empty;
+        log.RequestModule ??= string.Empty;
+        log.RequestPath ??= string.Empty;
         log.ErrorMessage ??= string.Empty;
         log.Hash ??= string.Empty;
     }
@@ -200,16 +202,16 @@ public class BackgroundAuditLogWriter : BackgroundService, IAuditLogWriter
     private static string InsertAuditSql(string databaseType) => databaseType.ToLowerInvariant() switch
     {
         "mssql" => """
-                   INSERT INTO [dbo].[AUDIT_LOGS] ([ID], [ENTITY_NAME], [ENTITY_ID], [ACTION], [USER_ID], [USER_NAME], [USER_GROUP], [TIMESTAMP], [OLD_VALUES], [NEW_VALUES], [CHANGED_COLUMNS], [IS_CHANGED], [CHANGE_SUMMARY], [IP_ADDRESS], [USER_AGENT], [CORRELATION_ID], [IS_SUCCESS], [ERROR_MESSAGE], [HASH])
-                   VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
+                   INSERT INTO [dbo].[AUDIT_LOGS] ([ID], [ENTITY_NAME], [ENTITY_ID], [ACTION], [USER_ID], [USER_NAME], [USER_GROUP], [TIMESTAMP], [DURATION_MS], [STATUS_CODE], [REQUEST_MODULE], [REQUEST_PATH], [OLD_VALUES], [NEW_VALUES], [CHANGED_COLUMNS], [IS_CHANGED], [CHANGE_SUMMARY], [IP_ADDRESS], [USER_AGENT], [CORRELATION_ID], [IS_SUCCESS], [ERROR_MESSAGE], [HASH])
+                   VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @DurationMs, @StatusCode, @RequestModule, @RequestPath, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
                    """,
         "postgresql" => """
-                        INSERT INTO "AUDIT_LOGS" ("ID", "ENTITY_NAME", "ENTITY_ID", "ACTION", "USER_ID", "USER_NAME", "USER_GROUP", "TIMESTAMP", "OLD_VALUES", "NEW_VALUES", "CHANGED_COLUMNS", "IS_CHANGED", "CHANGE_SUMMARY", "IP_ADDRESS", "USER_AGENT", "CORRELATION_ID", "IS_SUCCESS", "ERROR_MESSAGE", "HASH")
-                        VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
+                        INSERT INTO "AUDIT_LOGS" ("ID", "ENTITY_NAME", "ENTITY_ID", "ACTION", "USER_ID", "USER_NAME", "USER_GROUP", "TIMESTAMP", "DURATION_MS", "STATUS_CODE", "REQUEST_MODULE", "REQUEST_PATH", "OLD_VALUES", "NEW_VALUES", "CHANGED_COLUMNS", "IS_CHANGED", "CHANGE_SUMMARY", "IP_ADDRESS", "USER_AGENT", "CORRELATION_ID", "IS_SUCCESS", "ERROR_MESSAGE", "HASH")
+                        VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @DurationMs, @StatusCode, @RequestModule, @RequestPath, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
                         """,
         "mysql" => """
-                   INSERT INTO `AUDIT_LOGS` (`ID`, `ENTITY_NAME`, `ENTITY_ID`, `ACTION`, `USER_ID`, `USER_NAME`, `USER_GROUP`, `TIMESTAMP`, `OLD_VALUES`, `NEW_VALUES`, `CHANGED_COLUMNS`, `IS_CHANGED`, `CHANGE_SUMMARY`, `IP_ADDRESS`, `USER_AGENT`, `CORRELATION_ID`, `IS_SUCCESS`, `ERROR_MESSAGE`, `HASH`)
-                   VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
+                   INSERT INTO `AUDIT_LOGS` (`ID`, `ENTITY_NAME`, `ENTITY_ID`, `ACTION`, `USER_ID`, `USER_NAME`, `USER_GROUP`, `TIMESTAMP`, `DURATION_MS`, `STATUS_CODE`, `REQUEST_MODULE`, `REQUEST_PATH`, `OLD_VALUES`, `NEW_VALUES`, `CHANGED_COLUMNS`, `IS_CHANGED`, `CHANGE_SUMMARY`, `IP_ADDRESS`, `USER_AGENT`, `CORRELATION_ID`, `IS_SUCCESS`, `ERROR_MESSAGE`, `HASH`)
+                   VALUES (@Id, @EntityName, @EntityId, @Action, @UserId, @UserName, @UserGroup, @Timestamp, @DurationMs, @StatusCode, @RequestModule, @RequestPath, @OldValues, @NewValues, @ChangedColumns, @IsChanged, @ChangeSummary, @IpAddress, @UserAgent, @CorrelationId, @IsSuccess, @ErrorMessage, @Hash);
                    """,
         _ => throw new NotSupportedException($"Database type '{databaseType}' is not supported.")
     };

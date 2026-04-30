@@ -2,7 +2,7 @@
   "schemaSnapshotVersion": 1,
   "moduleName": "IdentityModule",
   "databaseProvider": "mssql",
-  "generatedAtUtc": "2026-04-27T17:57:58.2310695+00:00",
+  "generatedAtUtc": "2026-04-30T08:12:03.0363695+00:00",
   "tables": [
     {
       "schema": "dbo",
@@ -458,6 +458,13 @@
           "isIdentity": false
         },
         {
+          "name": "DURATION_MS",
+          "sqlType": "int",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
           "name": "ENTITY_ID",
           "sqlType": "nvarchar(250)",
           "isNullable": false,
@@ -523,6 +530,27 @@
         {
           "name": "OLD_VALUES",
           "sqlType": "nvarchar(max)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_MODULE",
+          "sqlType": "nvarchar(150)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "REQUEST_PATH",
+          "sqlType": "nvarchar(500)",
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isIdentity": false
+        },
+        {
+          "name": "STATUS_CODE",
+          "sqlType": "int",
           "isNullable": true,
           "isPrimaryKey": false,
           "isIdentity": false

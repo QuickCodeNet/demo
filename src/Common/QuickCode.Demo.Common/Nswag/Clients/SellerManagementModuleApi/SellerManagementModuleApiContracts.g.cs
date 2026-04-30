@@ -58,6 +58,86 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<bool> AuditLogsDeleteAsync(System.Guid id, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetRecentHttpRequestsResponseDto>> AuditLogsGetRecentHttpRequestsAsync(int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetRecentHttpRequestsByModuleResponseDto>> AuditLogsGetRecentHttpRequestsByModuleAsync(string auditLogRequestModule, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsTodayHttpRequestsResponseDto> AuditLogsStatsTodayHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsLastHourHttpRequestsResponseDto> AuditLogsStatsLastHourHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsYesterdayHttpRequestsResponseDto> AuditLogsStatsYesterdayHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsWeeklyHttpRequestsResponseDto> AuditLogsStatsWeeklyHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsMonthlyHttpRequestsResponseDto> AuditLogsStatsMonthlyHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<StatsYearlyHttpRequestsResponseDto> AuditLogsStatsYearlyHttpRequestsAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsDailyHttpRequestsByDayResponseDto>> AuditLogsStatsDailyHttpRequestsByDayAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsDailyHttpRequestsByDayByModuleResponseDto>> AuditLogsStatsDailyHttpRequestsByDayByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsHourlyHttpRequestsByModuleResponseDto>> AuditLogsStatsHourlyHttpRequestsByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsTotalHttpRequestsByModuleResponseDto>> AuditLogsStatsTotalHttpRequestsByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsHttpStatusCodesLast24HoursByModuleResponseDto>> AuditLogsStatsHttpStatusCodesLast24HoursByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsHttpStatusCodesResponseDto>> AuditLogsStatsHttpStatusCodesAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsHttpStatusCodesByModuleResponseDto>> AuditLogsStatsHttpStatusCodesByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>OK</returns>
+        /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<StatsTopHttpServicesByModuleResponseDto>> AuditLogsStatsTopHttpServicesByModuleAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
@@ -97,12 +177,12 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto>> SellerBankAccountsGetBySellerIdAsync(int sellerBankAccountSellerId, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto>> SellerBankAccountsGetBySellerIdAsync(int sellerBankAccountSellerId, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<GetDefaultBySellerIdResponseDto> SellerBankAccountsGetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetDefaultBySellerIdResponseDto> SellerBankAccountsGetDefaultBySellerIdAsync(int sellerBankAccountSellerId, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -153,12 +233,12 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto2>> SellerDocumentsGetBySellerIdAsync(int sellerDocumentSellerId, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto2>> SellerDocumentsGetBySellerIdAsync(int sellerDocumentSellerId, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetPendingDocumentsResponseDto>> SellerDocumentsGetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetPendingDocumentsResponseDto>> SellerDocumentsGetPendingDocumentsAsync(int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -209,7 +289,7 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto3>> SellerPerformanceReviewsGetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetBySellerIdResponseDto3>> SellerPerformanceReviewsGetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -260,17 +340,17 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetByStatusResponseDto>> SellersGetByStatusAsync(SellerStatus sellerStatus, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<GetByStatusResponseDto>> SellersGetByStatusAsync(SellerStatus sellerStatus, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<SearchByCompanyNameResponseDto>> SellersSearchByCompanyNameAsync(string sellerCompanyName, int? page = null, int? size = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<System.Collections.ObjectModel.ObservableCollection<SearchByCompanyNameResponseDto>> SellersSearchByCompanyNameAsync(string sellerCompanyName, int? pageNumber = null, int? pageSize = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
         /// <exception cref="QuickCode.Demo.Common.Models.QuickCodeSwaggerException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<long> SellersGetPendingVerificationCountAsync(SellerStatus sellerStatus, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<long> SellersGetPendingVerificationCountAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>OK</returns>
@@ -419,6 +499,18 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
         [System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         public System.DateTime Timestamp { get; set; }
 
+        [System.Text.Json.Serialization.JsonPropertyName("durationMs")]
+        public int? DurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestPath")]
+        public string RequestPath { get; set; }
+
         [System.Text.Json.Serialization.JsonPropertyName("oldValues")]
         public string OldValues { get; set; }
 
@@ -474,6 +566,669 @@ namespace QuickCode.Demo.Common.Nswag.Clients.SellerManagementModuleApi.Contract
                 options.Converters.Add(converter);
 
             return System.Text.Json.JsonSerializer.Deserialize<AuditLogDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetRecentHttpRequestsByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
+        public System.Guid Id { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("timestamp")]
+        public System.DateTime Timestamp { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("durationMs")]
+        public int? DurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string Action { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("userGroup")]
+        public string UserGroup { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("isSuccess")]
+        public bool? IsSuccess { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
+        public string ErrorMessage { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("newValues")]
+        public string NewValues { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetRecentHttpRequestsByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetRecentHttpRequestsByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class GetRecentHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("id")]
+        public System.Guid Id { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("timestamp")]
+        public System.DateTime Timestamp { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("durationMs")]
+        public int? DurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestPath")]
+        public string RequestPath { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string Action { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("userGroup")]
+        public string UserGroup { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("isSuccess")]
+        public bool? IsSuccess { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
+        public string ErrorMessage { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("newValues")]
+        public string NewValues { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static GetRecentHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<GetRecentHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsDailyHttpRequestsByDayByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestDay")]
+        public string RequestDay { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("maxDurationMs")]
+        public double MaxDurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("minDurationMs")]
+        public double MinDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsDailyHttpRequestsByDayByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsDailyHttpRequestsByDayByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsDailyHttpRequestsByDayResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestDay")]
+        public string RequestDay { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("maxDurationMs")]
+        public double MaxDurationMs { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("minDurationMs")]
+        public double MinDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsDailyHttpRequestsByDayResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsDailyHttpRequestsByDayResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsHourlyHttpRequestsByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestHour")]
+        public string RequestHour { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsHourlyHttpRequestsByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsHourlyHttpRequestsByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsHttpStatusCodesByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsHttpStatusCodesByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsHttpStatusCodesByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsHttpStatusCodesLast24HoursByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsHttpStatusCodesLast24HoursByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsHttpStatusCodesLast24HoursByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsHttpStatusCodesResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public int? StatusCode { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsHttpStatusCodesResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsHttpStatusCodesResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsLastHourHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsLastHourHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsLastHourHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsMonthlyHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsMonthlyHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsMonthlyHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsTodayHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsTodayHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsTodayHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsTopHttpServicesByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string Action { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestPath")]
+        public string RequestPath { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsTopHttpServicesByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsTopHttpServicesByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsTotalHttpRequestsByModuleResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("requestModule")]
+        public string RequestModule { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsTotalHttpRequestsByModuleResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsTotalHttpRequestsByModuleResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsWeeklyHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsWeeklyHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsWeeklyHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsYearlyHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsYearlyHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsYearlyHttpRequestsResponseDto>(data, options);
+
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.6.2.0 (NJsonSchema v11.5.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class StatsYesterdayHttpRequestsResponseDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
+        public int TotalRequests { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("avgDurationMs")]
+        public double AvgDurationMs { get; set; }
+
+        public string ToJson()
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Serialize(this, options);
+
+        }
+        public static StatsYesterdayHttpRequestsResponseDto FromJson(string data)
+        {
+
+            var options = new System.Text.Json.JsonSerializerOptions();
+
+            var converters = new System.Text.Json.Serialization.JsonConverter[] { new System.Text.Json.Serialization.JsonStringEnumConverter() };
+            foreach(var converter in converters)
+                options.Converters.Add(converter);
+
+            return System.Text.Json.JsonSerializer.Deserialize<StatsYesterdayHttpRequestsResponseDto>(data, options);
 
         }
     }

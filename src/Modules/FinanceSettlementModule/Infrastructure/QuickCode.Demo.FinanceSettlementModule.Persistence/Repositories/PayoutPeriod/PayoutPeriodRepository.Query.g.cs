@@ -30,14 +30,13 @@ namespace QuickCode.Demo.FinanceSettlementModule.Persistence.Repositories
 {
     public partial class PayoutPeriodRepository : BaseRepository, IPayoutPeriodRepository
     {
-        public async Task<RepoResponse<GetOpenPeriodResponseDto>> GetOpenPeriodAsync(bool payoutPeriodIsClosed)
+        public async Task<RepoResponse<GetOpenPeriodResponseDto>> GetOpenPeriodAsync()
         {
             return await ExecuteWithExceptionHandling(PayoutPeriodCrudSqlBindings.OperationNames.GetOpenPeriod, async () =>
             {
                 var sql = SqlLoader.Load(SqlScripts.PayoutPeriod.Query.GetOpenPeriod);
                 var parameters = new
                 {
-                    PRM_PAYOUT_PERIOD_IS_CLOSED = payoutPeriodIsClosed
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
                 var value = await connection.QueryFirstOrDefaultAsync<GetOpenPeriodResponseDto>(sql, parameters);

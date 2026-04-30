@@ -104,16 +104,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByOrderIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByOrderIdAsync(int commissionEntryOrderId, int? page, int? size)
+        public async Task<IActionResult> GetByOrderIdAsync(int commissionEntryOrderId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByOrderIdAsync(commissionEntryOrderId, page, size);
+            var response = await service.GetByOrderIdAsync(commissionEntryOrderId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "CommissionEntry", $"CommissionEntryOrderId: '{commissionEntryOrderId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -123,16 +123,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetCommissionsBySellerForPeriodResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? page, int? size)
+        public async Task<IActionResult> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetCommissionsBySellerForPeriodAsync(commissionEntriesSellerId, page, size);
+            var response = await service.GetCommissionsBySellerForPeriodAsync(commissionEntriesSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "CommissionEntry", $"CommissionEntriesSellerId: '{commissionEntriesSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

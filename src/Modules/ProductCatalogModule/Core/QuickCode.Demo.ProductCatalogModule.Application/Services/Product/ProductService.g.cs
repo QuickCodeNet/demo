@@ -75,33 +75,33 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Product
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, ProductStatus productStatus, int? page, int? size)
+        public async Task<Response<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetActiveBySellerAsync(productSellerId, productStatus, page, size);
+            var returnValue = await _repository.GetActiveBySellerAsync(productSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, ProductStatus productStatus, int? page, int? size)
+        public async Task<Response<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.SearchProductsAsync(productName, productStatus, page, size);
+            var returnValue = await _repository.SearchProductsAsync(productName, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(ProductStatus productStatus, int? page, int? size)
+        public async Task<Response<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetPendingApprovalAsync(productStatus, page, size);
+            var returnValue = await _repository.GetPendingApprovalAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetFeaturedResponseDto>>> GetFeaturedAsync(ProductStatus productStatus, bool productIsFeatured, int? page, int? size)
+        public async Task<Response<List<GetFeaturedResponseDto>>> GetFeaturedAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetFeaturedAsync(productStatus, productIsFeatured, page, size);
+            var returnValue = await _repository.GetFeaturedAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetProductsWithDetailsResponseDto>>> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? page, int? size)
+        public async Task<Response<List<GetProductsWithDetailsResponseDto>>> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetProductsWithDetailsAsync(productsBrandId, productPrimaryCategoryId, categoryId, brandId, productsPrimaryCategoryId, productBrandId, page, size);
+            var returnValue = await _repository.GetProductsWithDetailsAsync(productsBrandId, productPrimaryCategoryId, categoryId, brandId, productsPrimaryCategoryId, productBrandId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

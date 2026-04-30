@@ -20,9 +20,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.ProductVarian
         Task<Response<ProductVariantDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productVariantProductId, int? page, int? size);
-        Task<Response<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, bool productVariantIsActive, int? page, int? size);
-        Task<Response<long>> GetLowStockVariantsAsync(bool productVariantIsActive);
+        Task<Response<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, int? pageNumber, int? pageSize);
+        Task<Response<long>> GetLowStockVariantsAsync();
         Task<Response<int>> UpdateStockAsync(int productVariantId, UpdateStockRequestDto updateRequest);
         Task<Response<int>> UpdatePriceAsync(int productVariantId, UpdatePriceRequestDto updateRequest);
         Task<Response<int>> DeactivateAsync(int productVariantId, DeactivateRequestDto updateRequest);

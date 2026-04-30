@@ -22,7 +22,7 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Interfaces.Reposito
     public partial interface IPayoutPeriodRepository : IBaseRepository<PayoutPeriodDto>
     {
         Task<RepoResponse<PayoutPeriodDto>> GetByPkAsync(int id);
-        Task<RepoResponse<GetOpenPeriodResponseDto>> GetOpenPeriodAsync(bool payoutPeriodIsClosed);
+        Task<RepoResponse<GetOpenPeriodResponseDto>> GetOpenPeriodAsync();
         Task<RepoResponse<int>> ClosePeriodAsync(int payoutPeriodId, ClosePeriodRequestDto updateRequest);
     }
 }

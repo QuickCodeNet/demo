@@ -20,9 +20,9 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.SellerPayo
         Task<Response<SellerPayoutDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPayoutSellerId, int? page, int? size);
-        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? page, int? size);
-        Task<Response<List<GetByPeriodResponseDto>>> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? page, int? size);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPayoutSellerId, int? pageNumber, int? pageSize);
+        Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? pageNumber, int? pageSize);
+        Task<Response<List<GetByPeriodResponseDto>>> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? pageNumber, int? pageSize);
         Task<Response<GetPendingPayoutsSummaryResponseDto>> GetPendingPayoutsSummaryAsync();
         Task<Response<int>> ApproveAsync(int sellerPayoutId, ApproveRequestDto updateRequest);
         Task<Response<int>> MarkAsPaidAsync(int sellerPayoutId, MarkAsPaidRequestDto updateRequest);

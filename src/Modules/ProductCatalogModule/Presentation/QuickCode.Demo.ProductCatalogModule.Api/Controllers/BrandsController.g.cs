@@ -100,21 +100,21 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active/{brandIsActive:bool}")]
+        [HttpGet("get-active")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveAsync(bool brandIsActive, int? page, int? size)
+        public async Task<IActionResult> GetActiveAsync(int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveAsync(brandIsActive, page, size);
-            if (HandleResponseError(response, logger, "Brand", $"BrandIsActive: '{brandIsActive}'") is {} responseError)
+            var response = await service.GetActiveAsync(pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "Brand", $"") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
@@ -123,16 +123,16 @@ namespace QuickCode.Demo.ProductCatalogModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<SearchByNameResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> SearchByNameAsync(string brandName, int? page, int? size)
+        public async Task<IActionResult> SearchByNameAsync(string brandName, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.SearchByNameAsync(brandName, page, size);
+            var response = await service.SearchByNameAsync(brandName, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "Brand", $"BrandName: '{brandName}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

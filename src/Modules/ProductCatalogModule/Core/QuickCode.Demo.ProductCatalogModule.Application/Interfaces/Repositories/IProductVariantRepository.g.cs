@@ -23,8 +23,8 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Interfaces.Repositorie
     {
         Task<RepoResponse<ProductVariantDto>> GetByPkAsync(int id);
         Task<RepoResponse<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productVariantProductId, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, bool productVariantIsActive, int? pageNumber = null, int? pageSize = null);
-        Task<RepoResponse<long>> GetLowStockVariantsAsync(bool productVariantIsActive);
+        Task<RepoResponse<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, int? pageNumber = null, int? pageSize = null);
+        Task<RepoResponse<long>> GetLowStockVariantsAsync();
         Task<RepoResponse<int>> UpdateStockAsync(int productVariantId, UpdateStockRequestDto updateRequest);
         Task<RepoResponse<int>> UpdatePriceAsync(int productVariantId, UpdatePriceRequestDto updateRequest);
         Task<RepoResponse<int>> DeactivateAsync(int productVariantId, DeactivateRequestDto updateRequest);

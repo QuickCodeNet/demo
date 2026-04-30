@@ -20,6 +20,6 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.OrderItem
         Task<Response<OrderItemDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int orderItemOrderId, int? page, int? size);
+        Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int orderItemOrderId, int? pageNumber, int? pageSize);
     }
 }

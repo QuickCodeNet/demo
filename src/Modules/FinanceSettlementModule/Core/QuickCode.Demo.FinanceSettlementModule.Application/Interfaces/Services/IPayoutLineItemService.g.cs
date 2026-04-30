@@ -20,6 +20,6 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.PayoutLine
         Task<Response<PayoutLineItemDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetByPayoutIdResponseDto>>> GetByPayoutIdAsync(int payoutLineItemPayoutId, int? page, int? size);
+        Task<Response<List<GetByPayoutIdResponseDto>>> GetByPayoutIdAsync(int payoutLineItemPayoutId, int? pageNumber, int? pageSize);
     }
 }

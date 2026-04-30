@@ -75,9 +75,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.ProductCatego
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByCategoryIdResponseDto>>> GetByCategoryIdAsync(int productCategoryCategoryId, int? page, int? size)
+        public async Task<Response<List<GetByCategoryIdResponseDto>>> GetByCategoryIdAsync(int productCategoryCategoryId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByCategoryIdAsync(productCategoryCategoryId, page, size);
+            var returnValue = await _repository.GetByCategoryIdAsync(productCategoryCategoryId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

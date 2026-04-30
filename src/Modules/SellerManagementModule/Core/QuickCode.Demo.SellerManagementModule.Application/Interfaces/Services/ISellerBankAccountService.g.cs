@@ -20,8 +20,8 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerBankA
         Task<Response<SellerBankAccountDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerBankAccountSellerId, int? page, int? size);
-        Task<Response<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault);
+        Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerBankAccountSellerId, int? pageNumber, int? pageSize);
+        Task<Response<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId);
         Task<Response<int>> SetAsDefaultAsync(int sellerBankAccountSellerId, SetAsDefaultRequestDto updateRequest);
         Task<Response<int>> SetDefaultAccountAsync(int sellerBankAccountId, SetDefaultAccountRequestDto updateRequest);
     }

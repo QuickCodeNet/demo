@@ -104,36 +104,36 @@ namespace QuickCode.Demo.PricingEngineModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByModelIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByModelIdAsync(int commissionRuleCommissionModelId, int? page, int? size)
+        public async Task<IActionResult> GetByModelIdAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByModelIdAsync(commissionRuleCommissionModelId, page, size);
+            var response = await service.GetByModelIdAsync(commissionRuleCommissionModelId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "CommissionRule", $"CommissionRuleCommissionModelId: '{commissionRuleCommissionModelId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-active-rules-by-model/{commissionRuleCommissionModelId:int}/{commissionRuleIsActive:bool}")]
+        [HttpGet("get-active-rules-by-model/{commissionRuleCommissionModelId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetActiveRulesByModelResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, bool commissionRuleIsActive, int? page, int? size)
+        public async Task<IActionResult> GetActiveRulesByModelAsync(int commissionRuleCommissionModelId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetActiveRulesByModelAsync(commissionRuleCommissionModelId, commissionRuleIsActive, page, size);
-            if (HandleResponseError(response, logger, "CommissionRule", $"CommissionRuleCommissionModelId: '{commissionRuleCommissionModelId}', CommissionRuleIsActive: '{commissionRuleIsActive}'") is {} responseError)
+            var response = await service.GetActiveRulesByModelAsync(commissionRuleCommissionModelId, pageNumber, pageSize);
+            if (HandleResponseError(response, logger, "CommissionRule", $"CommissionRuleCommissionModelId: '{commissionRuleCommissionModelId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

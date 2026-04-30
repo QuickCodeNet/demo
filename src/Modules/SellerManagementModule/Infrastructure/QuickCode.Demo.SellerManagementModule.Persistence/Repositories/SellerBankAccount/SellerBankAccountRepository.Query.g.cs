@@ -60,15 +60,14 @@ namespace QuickCode.Demo.SellerManagementModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault)
+        public async Task<RepoResponse<GetDefaultBySellerIdResponseDto>> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId)
         {
             return await ExecuteWithExceptionHandling(SellerBankAccountCrudSqlBindings.OperationNames.GetDefaultBySellerId, async () =>
             {
                 var sql = SqlLoader.Load(SqlScripts.SellerBankAccount.Query.GetDefaultBySellerId);
                 var parameters = new
                 {
-                    PRM_SELLER_BANK_ACCOUNT_SELLER_ID = sellerBankAccountSellerId,
-                    PRM_SELLER_BANK_ACCOUNT_IS_DEFAULT = sellerBankAccountIsDefault
+                    PRM_SELLER_BANK_ACCOUNT_SELLER_ID = sellerBankAccountSellerId
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
                 var value = await connection.QueryFirstOrDefaultAsync<GetDefaultBySellerIdResponseDto>(sql, parameters);

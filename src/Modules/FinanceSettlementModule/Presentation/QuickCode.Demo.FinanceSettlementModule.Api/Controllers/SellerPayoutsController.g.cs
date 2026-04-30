@@ -104,16 +104,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int sellerPayoutSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int sellerPayoutSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(sellerPayoutSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(sellerPayoutSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "SellerPayout", $"SellerPayoutSellerId: '{sellerPayoutSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -123,16 +123,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByStatusResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? page, int? size)
+        public async Task<IActionResult> GetByStatusAsync(PayoutStatus sellerPayoutStatus, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByStatusAsync(sellerPayoutStatus, page, size);
+            var response = await service.GetByStatusAsync(sellerPayoutStatus, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "SellerPayout", $"SellerPayoutStatus: '{sellerPayoutStatus}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
@@ -142,16 +142,16 @@ namespace QuickCode.Demo.FinanceSettlementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetByPeriodResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? page, int? size)
+        public async Task<IActionResult> GetByPeriodAsync(int sellerPayoutPayoutPeriodId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetByPeriodAsync(sellerPayoutPayoutPeriodId, page, size);
+            var response = await service.GetByPeriodAsync(sellerPayoutPayoutPeriodId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "SellerPayout", $"SellerPayoutPayoutPeriodId: '{sellerPayoutPayoutPeriodId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);

@@ -21,7 +21,7 @@ namespace QuickCode.Demo.PricingEngineModule.Application.Services.SellerCommissi
         Task<Response<bool>> DeleteItemAsync(int sellerId);
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<GetBySellerIdResponseDto>> GetBySellerIdAsync(int sellerCommissionAssignmentSellerId);
-        Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int sellerCommissionAssignmentCommissionModelId, int? page, int? size);
+        Task<Response<List<GetByModelIdResponseDto>>> GetByModelIdAsync(int sellerCommissionAssignmentCommissionModelId, int? pageNumber, int? pageSize);
         Task<Response<int>> RemoveAssignmentAsync(int sellerCommissionAssignmentSellerId);
     }
 }

@@ -104,29 +104,29 @@ namespace QuickCode.Demo.SellerManagementModule.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetBySellerIdResponseDto>))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetBySellerIdAsync(int sellerBankAccountSellerId, int? page, int? size)
+        public async Task<IActionResult> GetBySellerIdAsync(int sellerBankAccountSellerId, int? pageNumber, int? pageSize)
         {
-            if (page < 1)
+            if (pageNumber < 1)
             {
                 var pageNumberError = $"Page Number must be greater than 1";
                 logger.LogWarning($"List Error: '{pageNumberError}''");
                 return NotFound(pageNumberError);
             }
 
-            var response = await service.GetBySellerIdAsync(sellerBankAccountSellerId, page, size);
+            var response = await service.GetBySellerIdAsync(sellerBankAccountSellerId, pageNumber, pageSize);
             if (HandleResponseError(response, logger, "SellerBankAccount", $"SellerBankAccountSellerId: '{sellerBankAccountSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }
 
-        [HttpGet("get-default-by-seller-id/{sellerBankAccountSellerId:int}/{sellerBankAccountIsDefault:bool}")]
+        [HttpGet("get-default-by-seller-id/{sellerBankAccountSellerId:int}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetDefaultBySellerIdResponseDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId, bool sellerBankAccountIsDefault)
+        public async Task<IActionResult> GetDefaultBySellerIdAsync(int sellerBankAccountSellerId)
         {
-            var response = await service.GetDefaultBySellerIdAsync(sellerBankAccountSellerId, sellerBankAccountIsDefault);
-            if (HandleResponseError(response, logger, "SellerBankAccount", $"SellerBankAccountSellerId: '{sellerBankAccountSellerId}', SellerBankAccountIsDefault: '{sellerBankAccountIsDefault}'") is {} responseError)
+            var response = await service.GetDefaultBySellerIdAsync(sellerBankAccountSellerId);
+            if (HandleResponseError(response, logger, "SellerBankAccount", $"SellerBankAccountSellerId: '{sellerBankAccountSellerId}'") is {} responseError)
                 return responseError;
             return Ok(response.Value);
         }

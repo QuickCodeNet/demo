@@ -69,9 +69,9 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerPerfo
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerPerformanceReviewSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(sellerPerformanceReviewSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(sellerPerformanceReviewSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

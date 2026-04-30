@@ -20,7 +20,7 @@ namespace QuickCode.Demo.OrderManagementModule.Application.Services.ShippingMeth
         Task<Response<ShippingMethodDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(bool shippingMethodIsActive, int? page, int? size);
+        Task<Response<List<GetActiveResponseDto>>> GetActiveAsync(int? pageNumber, int? pageSize);
         Task<Response<int>> DeactivateAsync(int shippingMethodId, DeactivateRequestDto updateRequest);
     }
 }

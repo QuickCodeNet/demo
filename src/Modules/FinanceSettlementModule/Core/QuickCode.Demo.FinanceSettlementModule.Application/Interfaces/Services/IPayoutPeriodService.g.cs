@@ -20,7 +20,7 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.PayoutPeri
         Task<Response<PayoutPeriodDto>> GetItemAsync(int id);
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
-        Task<Response<GetOpenPeriodResponseDto>> GetOpenPeriodAsync(bool payoutPeriodIsClosed);
+        Task<Response<GetOpenPeriodResponseDto>> GetOpenPeriodAsync();
         Task<Response<int>> ClosePeriodAsync(int payoutPeriodId, ClosePeriodRequestDto updateRequest);
     }
 }

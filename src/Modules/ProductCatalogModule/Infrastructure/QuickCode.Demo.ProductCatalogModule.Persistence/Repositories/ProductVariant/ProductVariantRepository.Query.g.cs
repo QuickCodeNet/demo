@@ -60,7 +60,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, bool productVariantIsActive, int? pageNumber = null, int? pageSize = null)
+        public async Task<RepoResponse<List<GetActiveByProductIdResponseDto>>> GetActiveByProductIdAsync(int productVariantProductId, int? pageNumber = null, int? pageSize = null)
         {
             pageNumber ??= ConfigurationConstants.MinPageNumber;
             pageSize ??= ConfigurationConstants.DefaultPageSize;
@@ -80,7 +80,6 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     var parameters = new
                     {
                         PRM_PRODUCT_VARIANT_PRODUCT_ID = productVariantProductId,
-                        PRM_PRODUCT_VARIANT_IS_ACTIVE = productVariantIsActive,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
@@ -91,14 +90,13 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetLowStockVariantsAsync(bool productVariantIsActive)
+        public async Task<RepoResponse<long>> GetLowStockVariantsAsync()
         {
             return await ExecuteWithExceptionHandling(ProductVariantCrudSqlBindings.OperationNames.GetLowStockVariants, async () =>
             {
                 var sql = SqlLoader.Load(SqlScripts.ProductVariant.Query.GetLowStockVariants);
                 var parameters = new
                 {
-                    PRM_PRODUCT_VARIANT_IS_ACTIVE = productVariantIsActive
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
                 var result = await connection.ExecuteScalarAsync<long>(sql, parameters);

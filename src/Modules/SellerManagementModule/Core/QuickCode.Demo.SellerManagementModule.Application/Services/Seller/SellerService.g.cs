@@ -75,21 +75,21 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.Seller
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(SellerStatus sellerStatus, int? page, int? size)
+        public async Task<Response<List<GetByStatusResponseDto>>> GetByStatusAsync(SellerStatus sellerStatus, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByStatusAsync(sellerStatus, page, size);
+            var returnValue = await _repository.GetByStatusAsync(sellerStatus, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<SearchByCompanyNameResponseDto>>> SearchByCompanyNameAsync(string sellerCompanyName, int? page, int? size)
+        public async Task<Response<List<SearchByCompanyNameResponseDto>>> SearchByCompanyNameAsync(string sellerCompanyName, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.SearchByCompanyNameAsync(sellerCompanyName, page, size);
+            var returnValue = await _repository.SearchByCompanyNameAsync(sellerCompanyName, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<long>> GetPendingVerificationCountAsync(SellerStatus sellerStatus)
+        public async Task<Response<long>> GetPendingVerificationCountAsync()
         {
-            var returnValue = await _repository.GetPendingVerificationCountAsync(sellerStatus);
+            var returnValue = await _repository.GetPendingVerificationCountAsync();
             return returnValue.ToResponse();
         }
 

@@ -69,15 +69,15 @@ namespace QuickCode.Demo.SellerManagementModule.Application.Services.SellerDocum
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerDocumentSellerId, int? page, int? size)
+        public async Task<Response<List<GetBySellerIdResponseDto>>> GetBySellerIdAsync(int sellerDocumentSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetBySellerIdAsync(sellerDocumentSellerId, page, size);
+            var returnValue = await _repository.GetBySellerIdAsync(sellerDocumentSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(VerificationStatus sellerDocumentStatus, int? page, int? size)
+        public async Task<Response<List<GetPendingDocumentsResponseDto>>> GetPendingDocumentsAsync(int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetPendingDocumentsAsync(sellerDocumentStatus, page, size);
+            var returnValue = await _repository.GetPendingDocumentsAsync(pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 

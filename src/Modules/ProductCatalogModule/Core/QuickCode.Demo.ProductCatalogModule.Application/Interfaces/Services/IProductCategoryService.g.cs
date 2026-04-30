@@ -21,7 +21,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.ProductCatego
         Task<Response<bool>> DeleteItemAsync(int productId, int categoryId);
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<List<GetByProductIdResponseDto>>> GetByProductIdAsync(int productCategoryProductId);
-        Task<Response<List<GetByCategoryIdResponseDto>>> GetByCategoryIdAsync(int productCategoryCategoryId, int? page, int? size);
+        Task<Response<List<GetByCategoryIdResponseDto>>> GetByCategoryIdAsync(int productCategoryCategoryId, int? pageNumber, int? pageSize);
         Task<Response<int>> RemoveFromCategoryAsync(int productCategoryProductId, int productCategoryCategoryId);
     }
 }

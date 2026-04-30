@@ -69,15 +69,15 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.Commission
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int commissionEntryOrderId, int? page, int? size)
+        public async Task<Response<List<GetByOrderIdResponseDto>>> GetByOrderIdAsync(int commissionEntryOrderId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByOrderIdAsync(commissionEntryOrderId, page, size);
+            var returnValue = await _repository.GetByOrderIdAsync(commissionEntryOrderId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetCommissionsBySellerForPeriodResponseDto>>> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? page, int? size)
+        public async Task<Response<List<GetCommissionsBySellerForPeriodResponseDto>>> GetCommissionsBySellerForPeriodAsync(int commissionEntriesSellerId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetCommissionsBySellerForPeriodAsync(commissionEntriesSellerId, page, size);
+            var returnValue = await _repository.GetCommissionsBySellerForPeriodAsync(commissionEntriesSellerId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
     }

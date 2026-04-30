@@ -100,5 +100,211 @@ namespace QuickCode.Demo.IdentityModule.Api.Controllers
                 return responseError;
             return Ok(response.Value);
         }
+
+        [HttpGet("get-recent-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetRecentHttpRequestsResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetRecentHttpRequestsAsync(int? pageNumber, int? pageSize)
+        {
+            if (pageNumber < 1)
+            {
+                var pageNumberError = $"Page Number must be greater than 1";
+                logger.LogWarning($"List Error: '{pageNumberError}''");
+                return NotFound(pageNumberError);
+            }
+
+            var response = await mediator.Send(new GetRecentHttpRequestsQuery(pageNumber, pageSize));
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("get-recent-http-requests-by-module/{auditLogRequestModule}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetRecentHttpRequestsByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> GetRecentHttpRequestsByModuleAsync(string auditLogRequestModule, int? pageNumber, int? pageSize)
+        {
+            if (pageNumber < 1)
+            {
+                var pageNumberError = $"Page Number must be greater than 1";
+                logger.LogWarning($"List Error: '{pageNumberError}''");
+                return NotFound(pageNumberError);
+            }
+
+            var response = await mediator.Send(new GetRecentHttpRequestsByModuleQuery(auditLogRequestModule, pageNumber, pageSize));
+            if (HandleResponseError(response, logger, "AuditLog", $"AuditLogRequestModule: '{auditLogRequestModule}'") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-today-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsTodayHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsTodayHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsTodayHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-last-hour-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsLastHourHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsLastHourHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsLastHourHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-yesterday-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsYesterdayHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsYesterdayHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsYesterdayHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-weekly-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsWeeklyHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsWeeklyHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsWeeklyHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-monthly-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsMonthlyHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsMonthlyHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsMonthlyHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-yearly-http-requests")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(StatsYearlyHttpRequestsResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsYearlyHttpRequestsAsync()
+        {
+            var response = await mediator.Send(new StatsYearlyHttpRequestsQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-daily-http-requests-by-day")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsDailyHttpRequestsByDayResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsDailyHttpRequestsByDayAsync()
+        {
+            var response = await mediator.Send(new StatsDailyHttpRequestsByDayQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-daily-http-requests-by-day-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsDailyHttpRequestsByDayByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsDailyHttpRequestsByDayByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsDailyHttpRequestsByDayByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-hourly-http-requests-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsHourlyHttpRequestsByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsHourlyHttpRequestsByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsHourlyHttpRequestsByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-total-http-requests-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsTotalHttpRequestsByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsTotalHttpRequestsByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsTotalHttpRequestsByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-http-status-codes-last-24-hours-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsHttpStatusCodesLast24HoursByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsHttpStatusCodesLast24HoursByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsHttpStatusCodesLast24HoursByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-http-status-codes")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsHttpStatusCodesResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsHttpStatusCodesAsync()
+        {
+            var response = await mediator.Send(new StatsHttpStatusCodesQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-http-status-codes-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsHttpStatusCodesByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsHttpStatusCodesByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsHttpStatusCodesByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
+
+        [HttpGet("stats-top-http-services-by-module")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<StatsTopHttpServicesByModuleResponseDto>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
+        public async Task<IActionResult> StatsTopHttpServicesByModuleAsync()
+        {
+            var response = await mediator.Send(new StatsTopHttpServicesByModuleQuery());
+            if (HandleResponseError(response, logger, "AuditLog", $"") is {} responseError)
+                return responseError;
+            return Ok(response.Value);
+        }
     }
 }

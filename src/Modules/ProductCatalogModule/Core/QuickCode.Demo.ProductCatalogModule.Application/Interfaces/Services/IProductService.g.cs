@@ -21,11 +21,11 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.Product
         Task<Response<bool>> DeleteItemAsync(int id);
         Task<Response<int>> TotalItemCountAsync();
         Task<Response<GetBySkuResponseDto>> GetBySkuAsync(string productSku);
-        Task<Response<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, ProductStatus productStatus, int? page, int? size);
-        Task<Response<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, ProductStatus productStatus, int? page, int? size);
-        Task<Response<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(ProductStatus productStatus, int? page, int? size);
-        Task<Response<List<GetFeaturedResponseDto>>> GetFeaturedAsync(ProductStatus productStatus, bool productIsFeatured, int? page, int? size);
-        Task<Response<List<GetProductsWithDetailsResponseDto>>> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? page, int? size);
+        Task<Response<List<GetActiveBySellerResponseDto>>> GetActiveBySellerAsync(int productSellerId, int? pageNumber, int? pageSize);
+        Task<Response<List<SearchProductsResponseDto>>> SearchProductsAsync(string productName, int? pageNumber, int? pageSize);
+        Task<Response<List<GetPendingApprovalResponseDto>>> GetPendingApprovalAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<GetFeaturedResponseDto>>> GetFeaturedAsync(int? pageNumber, int? pageSize);
+        Task<Response<List<GetProductsWithDetailsResponseDto>>> GetProductsWithDetailsAsync(int productsBrandId, int productPrimaryCategoryId, int categoryId, int brandId, int productsPrimaryCategoryId, int productBrandId, int? pageNumber, int? pageSize);
         Task<Response<long>> GetCountByStatusAsync(ProductStatus productStatus);
         Task<Response<int>> ApproveAsync(int productId, ApproveRequestDto updateRequest);
         Task<Response<int>> RejectAsync(int productId, RejectRequestDto updateRequest);

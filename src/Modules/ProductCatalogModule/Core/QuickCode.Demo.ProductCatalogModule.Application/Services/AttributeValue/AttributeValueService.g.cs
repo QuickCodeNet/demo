@@ -69,9 +69,9 @@ namespace QuickCode.Demo.ProductCatalogModule.Application.Services.AttributeValu
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<List<GetByAttributeIdResponseDto>>> GetByAttributeIdAsync(int attributeValueAttributeId, int? page, int? size)
+        public async Task<Response<List<GetByAttributeIdResponseDto>>> GetByAttributeIdAsync(int attributeValueAttributeId, int? pageNumber, int? pageSize)
         {
-            var returnValue = await _repository.GetByAttributeIdAsync(attributeValueAttributeId, page, size);
+            var returnValue = await _repository.GetByAttributeIdAsync(attributeValueAttributeId, pageNumber, pageSize);
             return returnValue.ToResponse();
         }
     }

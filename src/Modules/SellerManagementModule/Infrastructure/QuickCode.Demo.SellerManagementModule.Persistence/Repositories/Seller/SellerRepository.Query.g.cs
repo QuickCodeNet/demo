@@ -105,14 +105,13 @@ namespace QuickCode.Demo.SellerManagementModule.Persistence.Repositories
             });
         }
 
-        public async Task<RepoResponse<long>> GetPendingVerificationCountAsync(SellerStatus sellerStatus)
+        public async Task<RepoResponse<long>> GetPendingVerificationCountAsync()
         {
             return await ExecuteWithExceptionHandling(SellerCrudSqlBindings.OperationNames.GetPendingVerificationCount, async () =>
             {
                 var sql = SqlLoader.Load(SqlScripts.Seller.Query.GetPendingVerificationCount);
                 var parameters = new
                 {
-                    PRM_SELLER_STATUS = sellerStatus
                 };
                 await using var connection = await _connectionFactory.CreateReadConnectionAsync();
                 var result = await connection.ExecuteScalarAsync<long>(sql, parameters);

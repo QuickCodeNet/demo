@@ -69,9 +69,9 @@ namespace QuickCode.Demo.FinanceSettlementModule.Application.Services.PayoutPeri
             return returnValue.ToResponse();
         }
 
-        public async Task<Response<GetOpenPeriodResponseDto>> GetOpenPeriodAsync(bool payoutPeriodIsClosed)
+        public async Task<Response<GetOpenPeriodResponseDto>> GetOpenPeriodAsync()
         {
-            var returnValue = await _repository.GetOpenPeriodAsync(payoutPeriodIsClosed);
+            var returnValue = await _repository.GetOpenPeriodAsync();
             return returnValue.ToResponse();
         }
 

@@ -19,8 +19,24 @@ internal static class AuditLogCrudSqlBindings
         public const string Count = "Count";
         public const string Delete = "Delete";
         public const string GetByPk = "GetByPk";
+        public const string GetRecentHttpRequests = "GetRecentHttpRequests";
+        public const string GetRecentHttpRequestsByModule = "GetRecentHttpRequestsByModule";
         public const string Insert = "Insert";
         public const string Select = "Select";
+        public const string StatsDailyHttpRequestsByDay = "StatsDailyHttpRequestsByDay";
+        public const string StatsDailyHttpRequestsByDayByModule = "StatsDailyHttpRequestsByDayByModule";
+        public const string StatsHourlyHttpRequestsByModule = "StatsHourlyHttpRequestsByModule";
+        public const string StatsHttpStatusCodes = "StatsHttpStatusCodes";
+        public const string StatsHttpStatusCodesByModule = "StatsHttpStatusCodesByModule";
+        public const string StatsHttpStatusCodesLast24HoursByModule = "StatsHttpStatusCodesLast24HoursByModule";
+        public const string StatsLastHourHttpRequests = "StatsLastHourHttpRequests";
+        public const string StatsMonthlyHttpRequests = "StatsMonthlyHttpRequests";
+        public const string StatsTodayHttpRequests = "StatsTodayHttpRequests";
+        public const string StatsTopHttpServicesByModule = "StatsTopHttpServicesByModule";
+        public const string StatsTotalHttpRequestsByModule = "StatsTotalHttpRequestsByModule";
+        public const string StatsWeeklyHttpRequests = "StatsWeeklyHttpRequests";
+        public const string StatsYearlyHttpRequests = "StatsYearlyHttpRequests";
+        public const string StatsYesterdayHttpRequests = "StatsYesterdayHttpRequests";
         public const string Update = "Update";
     }
 
@@ -34,6 +50,10 @@ internal static class AuditLogCrudSqlBindings
         ("USER_NAME", nameof(AuditLogDto.UserName)),
         ("USER_GROUP", nameof(AuditLogDto.UserGroup)),
         ("TIMESTAMP", nameof(AuditLogDto.Timestamp)),
+        ("DURATION_MS", nameof(AuditLogDto.DurationMs)),
+        ("STATUS_CODE", nameof(AuditLogDto.StatusCode)),
+        ("REQUEST_MODULE", nameof(AuditLogDto.RequestModule)),
+        ("REQUEST_PATH", nameof(AuditLogDto.RequestPath)),
         ("OLD_VALUES", nameof(AuditLogDto.OldValues)),
         ("NEW_VALUES", nameof(AuditLogDto.NewValues)),
         ("CHANGED_COLUMNS", nameof(AuditLogDto.ChangedColumns)),
@@ -55,6 +75,10 @@ internal static class AuditLogCrudSqlBindings
         ("USER_NAME", nameof(AuditLogDto.UserName)),
         ("USER_GROUP", nameof(AuditLogDto.UserGroup)),
         ("TIMESTAMP", nameof(AuditLogDto.Timestamp)),
+        ("DURATION_MS", nameof(AuditLogDto.DurationMs)),
+        ("STATUS_CODE", nameof(AuditLogDto.StatusCode)),
+        ("REQUEST_MODULE", nameof(AuditLogDto.RequestModule)),
+        ("REQUEST_PATH", nameof(AuditLogDto.RequestPath)),
         ("OLD_VALUES", nameof(AuditLogDto.OldValues)),
         ("NEW_VALUES", nameof(AuditLogDto.NewValues)),
         ("CHANGED_COLUMNS", nameof(AuditLogDto.ChangedColumns)),
