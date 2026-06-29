@@ -104,6 +104,8 @@ void ConfigureMiddlewares()
 {
     app.UseExceptionHandler("/error");
 
+    app.ConfigureSitePipelineEarly(app.Environment);
+
 	if (!app.Environment.IsDevelopment())
 	{
     	app.UseHsts();
@@ -140,6 +142,8 @@ void ConfigureMiddlewares()
         .AllowAnyMethod()
         .WithOrigins(corsAllowedUrls!)
         .SetIsOriginAllowedToAllowWildcardSubdomains());
+
+    app.ConfigureSitePipeline(app.Environment);
 
     var gatewayGroup = app.MapGroup("/api/gateway").WithTags("Gateway");
     
@@ -181,6 +185,8 @@ void ConfigureMiddlewares()
         proxyPipeline.Use(YarpMiddlewareKafkaManager(app.Services));
         proxyPipeline.Use(YarpMiddlewareApiAuthorization(app.Services));
     });
+
+    app.ConfigureSitePipelineLate(app.Environment);
 }
 
 void ConfigureEnvironmentVariables(IConfiguration configuration)

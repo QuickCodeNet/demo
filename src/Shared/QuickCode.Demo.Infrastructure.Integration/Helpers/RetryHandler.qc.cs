@@ -3,6 +3,7 @@
 // This file is overwritten on full template regen. Add user logic in separate .cs files.
 // Where to put custom code: see AGENTS.md at repo root.
 // </auto-generated>
+using System.Net;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
@@ -61,63 +62,103 @@ public class RetryHandler : DelegatingHandler
             });
     }
 
+    private async Task SignOutCurrentUserAsync()
+    {
+        var httpContext = _httpContextAccessor.HttpContext;
+        if (httpContext?.User.Identity?.IsAuthenticated == true)
+        {
+            await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        }
+    }
+
+    private static bool IsTokenExpiredResponse(HttpResponseMessage response) =>
+        response.Headers.TryGetValues("Token-Expired", out _);
+
+    private async Task<bool> TryRefreshTokenAsync(CancellationToken cancellationToken)
+    {
+        var httpContext = _httpContextAccessor.HttpContext;
+        if (httpContext == null)
+            return false;
+
+        var refreshToken = httpContext.User.Claims
+            .FirstOrDefault(c => c.Type == "RefreshToken")?.Value;
+
+        if (string.IsNullOrEmpty(refreshToken))
+            return false;
+
+        var configKey = "QuickcodeClients:IdentityModuleApi";
+        var baseUrl = (_configuration[configKey] ?? string.Empty).TrimEnd('/') + "/";
+        var requestUri = $"{baseUrl}api/auth/refresh";
+        var requestModel = new RefreshRequest { RefreshToken = refreshToken };
+
+        var requestRefreshToken = new HttpRequestMessage(HttpMethod.Post, requestUri)
+        {
+            Content = new StringContent(JsonConvert.SerializeObject(requestModel), Encoding.UTF8,
+                "application/json")
+        };
+
+        var responseRefreshToken = await _httpClient.SendAsync(requestRefreshToken, cancellationToken);
+        if (!responseRefreshToken.IsSuccessStatusCode)
+            return false;
+
+        var jsonResponse = await responseRefreshToken.Content.ReadAsStringAsync(cancellationToken);
+        var newTokens = JsonConvert.DeserializeObject<AccessTokenResponse>(jsonResponse);
+        if (newTokens == null)
+            return false;
+
+        await UpdateHttpContextWithNewTokens(newTokens);
+        return true;
+    }
+
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {
         var retriesCounter = 0;
         HttpResponseMessage response = null!;
+
         do
         {
-            if (_httpContextAccessor.HttpContext!.User.Identity!.IsAuthenticated &&
-                _httpContextAccessor.HttpContext!.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+            var httpContext = _httpContextAccessor.HttpContext;
+            if (httpContext?.User.Identity?.IsAuthenticated == true &&
+                httpContext.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
             {
                 var claimAuthToken =
-                    _httpContextAccessor.HttpContext!.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
-                _httpContextAccessor.HttpContext.Request.Headers.Authorization = $"Bearer {claimAuthToken.Value}";
+                    httpContext.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
+                httpContext.Request.Headers.Authorization = $"Bearer {claimAuthToken.Value}";
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", claimAuthToken.Value);
             }
 
             response = await base.SendAsync(request, cancellationToken);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized &&
-                response.Headers.Contains("Token-Expired"))
+            if (response.StatusCode != HttpStatusCode.Unauthorized)
+                break;
+
+            var shouldAttemptRefresh = IsTokenExpiredResponse(response) ||
+                                       httpContext?.User.Claims.Any(c => c.Type == "RefreshToken") == true;
+
+            if (!shouldAttemptRefresh)
+                break;
+
+            var claimAuthorization = httpContext?.User.Claims
+                .FirstOrDefault(c => c.Type == "QuickCodeApiToken")?.Value;
+
+            if (!string.IsNullOrEmpty(claimAuthorization) &&
+                request.Headers.Authorization?.Parameter != null &&
+                !request.Headers.Authorization.Parameter.Equals(claimAuthorization))
             {
-                var claimAuthorization = _httpContextAccessor.HttpContext!.User.Claims
-                    .FirstOrDefault(c => c.Type == "QuickCodeApiToken")?.Value;
-
-                if (!request.Headers.Authorization!.Parameter!.Equals(claimAuthorization))
-                {
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", claimAuthorization);
-                    continue;
-                }
-
-                var configKey = "QuickcodeClients:IdentityModuleApi";
-                var baseUrl = _configuration[configKey] ?? "";
-                var refreshToken = _httpContextAccessor.HttpContext!.User.Claims
-                    .FirstOrDefault(c => c.Type == "RefreshToken")?.Value;
-
-                var requestUri = $"{baseUrl}api/auth/refresh";
-                var requestModel = new RefreshRequest { RefreshToken = refreshToken! };
-
-                var requestRefreshToken = new HttpRequestMessage(HttpMethod.Post, requestUri)
-                {
-                    Content = new StringContent(JsonConvert.SerializeObject(requestModel), Encoding.UTF8,
-                        "application/json")
-                };
-
-                var responseRefreshToken = await _httpClient.SendAsync(requestRefreshToken, cancellationToken);
-
-                if (responseRefreshToken.IsSuccessStatusCode)
-                {
-                    var jsonResponse = await responseRefreshToken.Content.ReadAsStringAsync(cancellationToken);
-                    var newTokens = JsonConvert.DeserializeObject<AccessTokenResponse>(jsonResponse);
-                    if (newTokens != null) await UpdateHttpContextWithNewTokens(newTokens);
-                }
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", claimAuthorization);
+                continue;
             }
-            else
+
+            if (!await TryRefreshTokenAsync(cancellationToken))
             {
+                await SignOutCurrentUserAsync();
                 break;
             }
         } while (MaxRetries > ++retriesCounter);
+
+        if (response.StatusCode == HttpStatusCode.Unauthorized)
+            await SignOutCurrentUserAsync();
 
         return response;
     }

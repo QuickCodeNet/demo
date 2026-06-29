@@ -3,6 +3,7 @@
 // This file is overwritten on full template regen. Add user logic in separate .cs files.
 // Where to put custom code: see AGENTS.md at repo root.
 // </auto-generated>
+using System;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Http;
 
@@ -29,6 +30,12 @@ public class RateLimitingMiddleware
 
     public async Task InvokeAsync(HttpContext context)
     {
+        if (IsExemptPath(context.Request.Path))
+        {
+            await _next(context);
+            return;
+        }
+
         var lease = await _rateLimiter.AcquireAsync(context);
 
         if (lease.IsAcquired)
@@ -47,6 +54,15 @@ public class RateLimitingMiddleware
             context.Response.StatusCode = 429; // Too Many Requests
             await context.Response.WriteAsync("Rate limit exceeded. Please try again later.");
         }
+    }
+
+    private static bool IsExemptPath(PathString path)
+    {
+        var value = path.Value ?? string.Empty;
+        return value.StartsWith("/api/auth/", StringComparison.OrdinalIgnoreCase)
+               || value.StartsWith("/Login", StringComparison.OrdinalIgnoreCase)
+               || value.StartsWith("/hc", StringComparison.OrdinalIgnoreCase)
+               || value.StartsWith("/health", StringComparison.OrdinalIgnoreCase);
     }
 }
 

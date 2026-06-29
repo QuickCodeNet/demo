@@ -9,6 +9,7 @@ using System.Globalization;
 using System.IO;
 using System.IO.Compression;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -129,6 +130,8 @@ namespace QuickCode.Demo.Portal
                 app.UseDeveloperExceptionPage();
             }
 
+            app.ConfigureSitePipelineEarly(env);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -146,6 +149,9 @@ namespace QuickCode.Demo.Portal
             app.UseRouting();
             app.UseResponseCaching();
             app.UseAuthorization();
+
+            app.ConfigureSitePipeline(env);
+
             app.UseMiddleware<CustomExceptionHandlingMiddleware>();
             
             app.UsePortalSecurityHeaders();
@@ -157,15 +163,24 @@ namespace QuickCode.Demo.Portal
             
             app.UseStatusCodePages(async context =>
             {
-                var response = context.HttpContext.Response;
+                var httpContext = context.HttpContext;
+                var response = httpContext.Response;
+
+                if (response.StatusCode == StatusCodes.Status401Unauthorized && !response.HasStarted)
+                {
+                    await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                    httpContext.Response.Redirect("/Login/Index");
+                    return;
+                }
+
                 var viewName = "Error";
 
                 try
                 {
-                    await RenderViewToStringAsync(context.HttpContext, viewName, new Dictionary<string, object>()
+                    await RenderViewToStringAsync(httpContext, viewName, new Dictionary<string, object>()
                     {
                         { "StatusCode", response.StatusCode },
-                        { "StatusDescription", context.HttpContext.Request.Path.Value },
+                        { "StatusDescription", httpContext.Request.Path.Value },
                     });
                 }
                 catch (Exception)
@@ -179,6 +194,8 @@ namespace QuickCode.Demo.Portal
             {
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.ConfigureSitePipelineLate(env);
         }
 
         private static async Task RenderViewToStringAsync(HttpContext context, string viewName, Dictionary<string,object> model)
@@ -247,6 +264,10 @@ namespace QuickCode.Demo.Portal
                 case 404:
                     errorMessage = "Page Not Found";
                     errorDescription = "The page you are looking for could not be found.";
+                    break;
+                case 429:
+                    errorMessage = "Too Many Requests";
+                    errorDescription = "You have sent too many requests. Please wait a moment and try again.";
                     break;
                 case 500:
                     errorMessage = "Server Error";

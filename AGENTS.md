@@ -45,6 +45,10 @@ Register custom services (DI)?
   → Edit SiteServiceRegistration.cs in the host project (Api / Portal / Gateway / EventListener)
   → Add registrations inside AddSiteCustomizations() — never edit Program.qc.cs or Startup.qc.cs
 
+Add custom middleware (HTTP pipeline)?
+  → Edit SitePipelineConfiguration.cs in the same host project
+  → Use ConfigureSitePipelineEarly / ConfigureSitePipeline / ConfigureSitePipelineLate — never edit Program.qc.cs or Startup.qc.cs
+
 New application / business logic (service, handler, validator)?
   → src/Modules/{Module}/Core/QuickCode.{Project}.{Module}.Application/
      Features/…  (CQRS)  or  Services/…  (Service pattern)
@@ -150,6 +154,42 @@ public static class SiteServiceRegistration
 ```
 
 Do **not** edit `Program.qc.cs` for DI.
+
+### Add custom middleware (HTTP pipeline)
+
+Each host project includes a user-owned `SitePipelineConfiguration.cs` (plain `.cs`, never overwritten on regen).
+QuickCode calls the hooks from `Program.qc.cs` or `Startup.qc.cs` at fixed positions in the pipeline.
+
+```csharp
+// File: src/Presentation/QuickCode.MyShop.Portal/SitePipelineConfiguration.cs
+public static class SitePipelineConfiguration
+{
+    public static IApplicationBuilder ConfigureSitePipelineEarly(this IApplicationBuilder app, IHostEnvironment env)
+    {
+        // app.UseForwardedHeaders(); // Cloud Run / reverse proxy
+        return app;
+    }
+
+    public static IApplicationBuilder ConfigureSitePipeline(this IApplicationBuilder app, IHostEnvironment env)
+    {
+        // app.UseMiddleware<MyCustomMiddleware>();
+        return app;
+    }
+
+    public static IApplicationBuilder ConfigureSitePipelineLate(this IApplicationBuilder app, IHostEnvironment env)
+    {
+        return app;
+    }
+}
+```
+
+| Hook | Portal | API / Gateway |
+|------|--------|----------------|
+| `ConfigureSitePipelineEarly` | After dev exception page | After exception handler |
+| `ConfigureSitePipeline` | After `UseAuthorization`, before endpoints | After auth, before `MapControllers` / YARP |
+| `ConfigureSitePipelineLate` | After `UseEndpoints` | After all routes mapped |
+
+Do **not** edit `Program.qc.cs` or `Startup.qc.cs` for middleware.
 
 ### New application service
 

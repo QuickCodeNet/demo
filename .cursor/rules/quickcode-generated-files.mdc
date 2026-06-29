@@ -25,6 +25,7 @@ Use plain `.cs` / `.cshtml` (never `.g.cs` / `.qc.cs` for your code).
 | New API/entity/query from schema | `src/dbml_files/{Module}.dbml` → `quickcode generate` |
 | Extend generated class | Same layer as `.g.cs` → new `{Name}Extensions.cs` with `partial class` |
 | Register DI (services) | `SiteServiceRegistration.cs` in Api / Portal / Gateway / EventListener → `AddSiteCustomizations()` |
+| Custom middleware | `SitePipelineConfiguration.cs` in same host → `ConfigureSitePipeline*` hooks |
 | Business logic / handlers | `src/Modules/{Module}/Core/QuickCode.{Project}.{Module}.Application/` |
 | Domain (non-DBML) | `src/Modules/{Module}/Core/QuickCode.{Project}.{Module}.Domain/` |
 | Custom repository / store | `src/Modules/{Module}/Infrastructure/QuickCode.{Project}.{Module}.Persistence/` |

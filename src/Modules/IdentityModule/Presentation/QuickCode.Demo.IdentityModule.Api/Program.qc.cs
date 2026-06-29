@@ -143,6 +143,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseExceptionHandler();
 
+app.ConfigureSitePipelineEarly(app.Environment);
+
 app.UseSecurityHeaders();
 app.UseRateLimiting();
 app.UseInputValidation();
@@ -173,9 +175,13 @@ app.UseAuthentication();
 app.UseRouting();
 app.UseAuthorization();
 
+app.ConfigureSitePipeline(app.Environment);
+
 app.MapGroup("/api/auth").WithTags("Authentications").MapQuickCodeIdentityApi<ApiUser>();
 
 app.MapControllers();
+
+app.ConfigureSitePipelineLate(app.Environment);
 
 using (var scope = app.Services.CreateScope())
 {

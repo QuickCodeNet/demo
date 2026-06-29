@@ -7,6 +7,8 @@ using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
@@ -62,6 +64,13 @@ public class CustomExceptionHandlingMiddleware
                 _ => (int)HttpStatusCode.InternalServerError
             };
 
+            if (statusCode == (int)HttpStatusCode.Unauthorized && !context.Response.HasStarted)
+            {
+                await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                context.Response.Redirect("/Login/Index");
+                return;
+            }
+
             var viewName = $"Error";
             var viewEngineResult = _viewEngine.FindView(actionContext, viewName, false);
             if (!viewEngineResult.Success)
@@ -98,6 +107,10 @@ public class CustomExceptionHandlingMiddleware
                 case 403:
                     errorMessage = "Forbidden";
                     errorDescription = "You do not have permission to perform this action.";
+                    break;
+                case 429:
+                    errorMessage = "Too Many Requests";
+                    errorDescription = "You have sent too many requests. Please wait a moment and try again.";
                     break;
                 case 404:
                     errorMessage = "Page not found";

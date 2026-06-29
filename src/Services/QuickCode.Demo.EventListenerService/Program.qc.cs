@@ -168,6 +168,8 @@ builder.Services.AddSiteCustomizations();
 
 var app = builder.Build();
 
+app.ConfigureSitePipelineEarly(app.Environment);
+
 if (useHealthCheck)
 {
     app.UseHealthChecks("/hc", new HealthCheckOptions
@@ -179,6 +181,8 @@ if (useHealthCheck)
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
+
+app.ConfigureSitePipeline(app.Environment);
 
 var apiGroup = app.MapGroup("/api");
 
@@ -218,5 +222,7 @@ apiGroup.MapPost("/execute-workflow", async (HttpContext context, IHttpClientFac
         return Results.Problem("Workflow execution failed", statusCode: 500);
     }
 }).WithOpenApi();
+
+app.ConfigureSitePipelineLate(app.Environment);
 
 await app.RunAsync();
