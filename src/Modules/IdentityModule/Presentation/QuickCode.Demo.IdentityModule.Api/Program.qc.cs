@@ -135,21 +135,23 @@ app.UseSerilogRequestLogging();
 app.UseResponseCompression();
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseHttpsRedirection();
 
-app.UseCors(x => x
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHsts();
+}
 
-app.UseAuthentication();
-app.UseRouting();
-app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseExceptionHandler();
 
-app.MapGroup("/api/auth").WithTags("Authentications").MapQuickCodeIdentityApi<ApiUser>();
+app.UseSecurityHeaders();
+app.UseRateLimiting();
+app.UseInputValidation();
+app.UseSecurityLogging();
+app.UseSecurityAudit();
+app.UsePasswordPolicy();
 
-app.MapControllers();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 if (useHealthCheck && databaseType != "inMemory")
 {
@@ -160,21 +162,20 @@ if (useHealthCheck && databaseType != "inMemory")
     });
 }
 
-app.UseExceptionHandler();
+app.UseHttpsRedirection();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHsts();
-}
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
-app.UseSecurityHeaders();
-app.UseRateLimiting();
-app.UseInputValidation();
-app.UseSecurityLogging();
-app.UseSecurityAudit();
-app.UsePasswordPolicy();
-app.UseSwagger();
-app.UseSwaggerUI();
+app.UseAuthentication();
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapGroup("/api/auth").WithTags("Authentications").MapQuickCodeIdentityApi<ApiUser>();
+
+app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {

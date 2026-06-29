@@ -170,34 +170,13 @@ app.UseIpRateLimiting();
 app.UseClientRateLimiting();
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseHttpsRedirection();
-
-app.UseCors(x => x
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
-
-app.UseAuthentication();
-app.UseRouting();
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
-
-if (useHealthCheck && databaseType != "inMemory")
-{
-    app.UseHealthChecks("/hc", new HealthCheckOptions
-    {
-        Predicate = _ => true,
-        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-    });
-}
-
-app.UseExceptionHandler();
 
 if (!app.Environment.IsDevelopment())
 {
     app.UseHsts();
 }
+
+app.UseExceptionHandler();
 
 app.UseSecurityHeaders();
 app.UseRateLimiting();
@@ -208,6 +187,27 @@ app.UsePasswordPolicy();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+if (useHealthCheck && databaseType != "inMemory")
+{
+    app.UseHealthChecks("/hc", new HealthCheckOptions
+    {
+        Predicate = _ => true,
+        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    });
+}
+
+app.UseHttpsRedirection();
+
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+
+app.UseAuthentication();
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {

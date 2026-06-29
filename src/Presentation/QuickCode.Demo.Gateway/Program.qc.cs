@@ -285,8 +285,15 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareApiAuthorization(IServiceProvi
     {
         try
         {
+            var path = context.Request.Path.Value ?? string.Empty;
+
+            if (IsPublicAuthPath(path))
+            {
+                await next();
+                return;
+            }
+
             var memoryCache = services.GetRequiredService<IMemoryCache>();
-            var configuration = services.GetRequiredService<IConfiguration>();
             var token = ExtractToken(context);
             var cacheKey = $"AuthJwtTokens-{token}";
         
@@ -299,10 +306,7 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareApiAuthorization(IServiceProvi
             if (token.IsTokenExpired())
             {
                 memoryCache.Remove(cacheKey);
-                context.Response.Headers.Append("Token-Expired", "true");
-                AppendApiKey(context, configuration);
-                EnsureForwardedUserAgent(context);
-                await next();
+                await HandleExpiredToken(context);
                 return;
             }
 
@@ -340,34 +344,23 @@ string ExtractToken(HttpContext context)
     return context.Request.Headers.Authorization.FirstOrDefault()?.Split(" ").Last() ?? string.Empty;
 }
 
-bool HandleTokenExpiration(string token, IMemoryCache memoryCache, string cacheKey)
-{
-    if (!string.IsNullOrEmpty(token) && token.IsTokenExpired())
-    {
-        memoryCache.Remove(cacheKey);
-        return true;
-    }
-    
-    return false;
-}
+static bool IsPublicAuthPath(string path) =>
+    path.StartsWith("/api/auth/login", StringComparison.OrdinalIgnoreCase)
+    || path.StartsWith("/api/auth/register", StringComparison.OrdinalIgnoreCase)
+    || path.StartsWith("/api/auth/refresh", StringComparison.OrdinalIgnoreCase)
+    || path.StartsWith("/api/auth/logout", StringComparison.OrdinalIgnoreCase);
 
-void HandleEmptyToken(HttpContext context, IMemoryCache memoryCache, string cacheKey)
+async Task HandleExpiredToken(HttpContext context)
 {
-    if (!context.Request.Path.Value!.StartsWith("/api/auth/logout"))
-    {
-        memoryCache.Remove(cacheKey);
-    }
+    context.Response.Headers.Append("Token-Expired", "true");
+    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+    await context.Response.WriteAsync("Token expired");
 }
 
 async Task<bool> ValidateAndProcessToken(HttpContext context, IServiceProvider services, string token, string cacheKey)
 {
     var memoryCache = services.GetRequiredService<IMemoryCache>();
     var configuration = services.GetRequiredService<IConfiguration>();
-
-    if (token.IsTokenExpired())
-    {
-        context.Response.Headers.Append("Token-Expired", "true");
-    }
 
     bool isValidToken;
     try
