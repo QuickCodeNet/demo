@@ -74,35 +74,53 @@ public static class EnvironmentHelper
                 continue;
             }
 
-            if (TryMapQuickCodeModuleApiKeyEnvVar(envKey, out var quickcodeApiKeysPath))
+            if (TryMapQuickCodeModuleApiKeyEnvVar(envKey, out var quickcodeApiKeysPath, out var moduleName)
+                || TryMapLegacyModuleApiKeyEnvVar(envKey, out quickcodeApiKeysPath, out moduleName))
             {
                 configuration[quickcodeApiKeysPath] = envValue;
                 Log.Information(
                     "Config {ConfigKey} updated from environment variable {EnvKey}",
                     quickcodeApiKeysPath,
                     envKey);
+
+                if (ShouldApplyModuleApiKeyToAppSettings(configuration, moduleName))
+                {
+                    configuration["AppSettings:ApiKey"] = envValue;
+                    Log.Information(
+                        "Config AppSettings:ApiKey updated from environment variable {EnvKey} for module {ModuleName}",
+                        envKey,
+                        moduleName);
+                }
+
                 continue;
             }
 
             if (envKey.Equals("API_KEY", StringComparison.OrdinalIgnoreCase))
             {
-                configuration["AppSettings:ApiKey"] = envValue;
-                Log.Information("Config AppSettings:ApiKey updated from environment variable API_KEY");
+                if (configuration["AppSettings:ApiKey"] != null)
+                {
+                    configuration["AppSettings:ApiKey"] = envValue;
+                    Log.Information("Config AppSettings:ApiKey updated from environment variable API_KEY");
+                }
+
                 continue;
             }
 
             configuration.TrySetConfigValueIfKeyExists($"QuickcodeApiKeys:{envKey.GetPascalCase()}", envValue);
             configuration.TrySetConfigValueIfKeyExists($"ConnectionStrings:{envKey.GetPascalCase()}", envValue);
         }
+
+        WarnIfModuleApiKeyStillMissing(configuration);
     }
 
     /// <summary>
-    /// Maps Cloud Run deploy vars such as <c>QUICKCODE_IDENTITY_MODULE_API_KEY</c>
+    /// Maps Cloud Run / Production deploy vars such as <c>QUICKCODE_IDENTITY_MODULE_API_KEY</c>
     /// to <c>QuickcodeApiKeys:IdentityModuleApiKey</c>.
     /// </summary>
-    public static bool TryMapQuickCodeModuleApiKeyEnvVar(string envKey, out string configPath)
+    public static bool TryMapQuickCodeModuleApiKeyEnvVar(string envKey, out string configPath, out string moduleName)
     {
         configPath = string.Empty;
+        moduleName = string.Empty;
 
         if (!envKey.StartsWith(QuickCodeEnvPrefix, StringComparison.OrdinalIgnoreCase)
             || !envKey.EndsWith(ApiKeyEnvSuffix, StringComparison.OrdinalIgnoreCase))
@@ -111,14 +129,87 @@ public static class EnvironmentHelper
         }
 
         var moduleSegment = envKey[QuickCodeEnvPrefix.Length..^ApiKeyEnvSuffix.Length];
+        return TryMapModuleApiKeySegment(moduleSegment, out configPath, out moduleName);
+    }
+
+    /// <summary>
+    /// Legacy deploy vars such as <c>IDENTITY_MODULE_API_KEY</c>.
+    /// </summary>
+    public static bool TryMapLegacyModuleApiKeyEnvVar(string envKey, out string configPath, out string moduleName)
+    {
+        configPath = string.Empty;
+        moduleName = string.Empty;
+
+        if (envKey.StartsWith(QuickCodeEnvPrefix, StringComparison.OrdinalIgnoreCase)
+            || !envKey.EndsWith(ApiKeyEnvSuffix, StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        var moduleSegment = envKey[..^ApiKeyEnvSuffix.Length];
+        return TryMapModuleApiKeySegment(moduleSegment, out configPath, out moduleName);
+    }
+
+    private static bool TryMapModuleApiKeySegment(string moduleSegment, out string configPath, out string moduleName)
+    {
+        configPath = string.Empty;
+        moduleName = string.Empty;
+
         if (string.IsNullOrWhiteSpace(moduleSegment))
         {
             return false;
         }
 
-        var moduleName = moduleSegment.GetPascalCase();
+        moduleName = moduleSegment.GetPascalCase();
         configPath = $"QuickcodeApiKeys:{moduleName}ApiKey";
         return true;
+    }
+
+    /// <summary>
+    /// Module APIs validate inbound calls with <c>AppSettings:ApiKey</c>.
+    /// Cloud Run injects every module key on each service; only apply the key for this API's module.
+    /// </summary>
+    public static bool ShouldApplyModuleApiKeyToAppSettings(IConfiguration configuration, string moduleNamePascal)
+    {
+        if (configuration["AppSettings:ApiKey"] == null)
+        {
+            return false;
+        }
+
+        var configuredModuleName = configuration["AppSettings:ModuleName"];
+        if (!string.IsNullOrWhiteSpace(configuredModuleName))
+        {
+            return string.Equals(configuredModuleName, moduleNamePascal, StringComparison.OrdinalIgnoreCase);
+        }
+
+        var apiName = configuration["Logging:ApiName"];
+        if (string.IsNullOrWhiteSpace(apiName))
+        {
+            return false;
+        }
+
+        var moduleKebab = moduleNamePascal.AsKebabCase();
+        var moduleCompact = moduleNamePascal.ToLowerInvariant();
+        return apiName.Contains(moduleKebab, StringComparison.OrdinalIgnoreCase)
+               || apiName.Contains(moduleCompact, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static void WarnIfModuleApiKeyStillMissing(IConfiguration configuration)
+    {
+        var moduleName = configuration["AppSettings:ModuleName"];
+        if (string.IsNullOrWhiteSpace(moduleName))
+        {
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(configuration["AppSettings:ApiKey"]))
+        {
+            return;
+        }
+
+        Log.Warning(
+            "Module API {ModuleName} still has empty AppSettings:ApiKey after environment configuration",
+            moduleName);
     }
 
     private static void TrySetConfigValueIfKeyExists(this IConfiguration configuration, string key, string value)
