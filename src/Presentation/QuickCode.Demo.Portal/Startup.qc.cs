@@ -39,6 +39,8 @@ using QuickCode.Demo.Portal.ViewEngines;
 using QuickCode.Demo.Infrastructure.Web.Middleware;
 using QuickCode.Demo.Portal.Middleware;
 using QuickCode.Demo.Infrastructure.Web.Auditing;
+using QuickCode.Demo.Infrastructure.Web.Extensions;
+using QuickCode.Demo.Infrastructure.Web.Helpers;
 
 namespace QuickCode.Demo.Portal
 {
@@ -165,11 +167,28 @@ namespace QuickCode.Demo.Portal
             {
                 var httpContext = context.HttpContext;
                 var response = httpContext.Response;
+                var statusCode = response.StatusCode;
+                var wantsJson = httpContext.Request.WantsJsonResponse();
 
-                if (response.StatusCode == StatusCodes.Status401Unauthorized && !response.HasStarted)
+                if (statusCode == StatusCodes.Status401Unauthorized && !response.HasStarted)
                 {
                     await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    if (wantsJson)
+                    {
+                        await JsonErrorResponseWriter.WriteAsync(httpContext, statusCode,
+                            "Your session has expired. Please log in again.", "/Login/Index");
+                        return;
+                    }
+
                     httpContext.Response.Redirect("/Login/Index");
+                    return;
+                }
+
+                if (wantsJson && !response.HasStarted)
+                {
+                    var (_, description) = GetStatusCodeMessages(statusCode);
+                    await JsonErrorResponseWriter.WriteAsync(httpContext, statusCode, description);
                     return;
                 }
 
@@ -244,6 +263,14 @@ namespace QuickCode.Demo.Portal
 
         private static void SetErrorMessages(int statusCode, ViewDataDictionary viewData)
         {
+            var (errorMessage, errorDescription) = GetStatusCodeMessages(statusCode);
+            viewData["ErrorMessage"] = errorMessage;
+            viewData["ErrorDescription"] = errorDescription;
+            viewData["ErrorIcon"] = $"ErrorIcon{statusCode}.png";
+        }
+
+        private static (string ErrorMessage, string ErrorDescription) GetStatusCodeMessages(int statusCode)
+        {
             string errorMessage = "Unknown Error";
             string errorDescription = "An unknown error occurred.";
 
@@ -275,9 +302,7 @@ namespace QuickCode.Demo.Portal
                     break;
             }
 
-            viewData["ErrorMessage"] = errorMessage;
-            viewData["ErrorDescription"] = errorDescription;
-            viewData["ErrorIcon"] = $"ErrorIcon{statusCode}.png";
+            return (errorMessage, errorDescription);
         }
     }
 }

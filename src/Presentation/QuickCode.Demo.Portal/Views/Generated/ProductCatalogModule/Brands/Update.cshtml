@@ -213,7 +213,14 @@
                     error: function (xhr, desc, error)
                     {
                         $("#actionResultMessage").css('color', 'red');
-                        $("#actionResultMessage").text(error);
+                        if (xhr.responseJSON && xhr.responseJSON.redirectUrl) {
+                            window.location = xhr.responseJSON.redirectUrl;
+                            return;
+                        }
+                        var msg = (xhr.responseJSON && xhr.responseJSON.message)
+                            ? xhr.responseJSON.message
+                            : (error || desc || 'Request failed');
+                        $("#actionResultMessage").text(msg);
                     }
                 });  
             }

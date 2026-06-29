@@ -19,6 +19,8 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Logging;
 using QuickCode.Demo.Infrastructure.Integration.Models;
+using QuickCode.Demo.Infrastructure.Web.Extensions;
+using QuickCode.Demo.Infrastructure.Web.Helpers;
 
 namespace QuickCode.Demo.Portal.Helpers;
 
@@ -49,20 +51,28 @@ public class CustomExceptionHandlingMiddleware
         }
         catch (Exception ex)
         {
-            _logger.LogError($"Unauthorized access. Status Code: {context.Response.StatusCode}");
-            
-            var actionContext = new ActionContext
-            {
-                HttpContext = context,
-                RouteData = context.GetRouteData(),
-                ActionDescriptor = new ActionDescriptor()
-            };
+            _logger.LogError(ex, "Portal request failed with status {StatusCode}", context.Response.StatusCode);
 
             var statusCode = ex switch
             {
-                QuickCodeSwaggerException swaggerException => swaggerException!.StatusCode, 
+                QuickCodeSwaggerException swaggerException => swaggerException.StatusCode,
                 _ => (int)HttpStatusCode.InternalServerError
             };
+
+            var (errorMessage, errorDescription) = GetErrorMessages(statusCode);
+
+            if (context.Request.WantsJsonResponse())
+            {
+                if (statusCode == (int)HttpStatusCode.Unauthorized)
+                    await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+                await JsonErrorResponseWriter.WriteAsync(
+                    context,
+                    statusCode,
+                    errorDescription,
+                    statusCode == (int)HttpStatusCode.Unauthorized ? "/Login/Index" : null);
+                return;
+            }
 
             if (statusCode == (int)HttpStatusCode.Unauthorized && !context.Response.HasStarted)
             {
@@ -71,74 +81,61 @@ public class CustomExceptionHandlingMiddleware
                 return;
             }
 
-            var viewName = $"Error";
-            var viewEngineResult = _viewEngine.FindView(actionContext, viewName, false);
-            if (!viewEngineResult.Success)
-            {
-                throw new InvalidOperationException($"Could not find view: {viewName}");
-            }
-
-            context.Response.ContentType = "text/html";
-
-            var viewData = new ViewDataDictionary(new EmptyModelMetadataProvider(), new ModelStateDictionary())
-            {
-                ["SessionData"] = context.Session.GetString("MenuItems") // Example
-            };
-            
-            viewData["Layout"] = "_Layout";
-            
-            var errorCode = statusCode.ToString();
-            var errorMessage = "Forbidden";
-            var errorDescription = "Undefined Error";
-
-            viewData["ErrorCode"] = errorCode.ToString();
-            viewData["ErrorIcon"] = $"ErrorIcon{statusCode}.png";
-            
-            switch (statusCode)
-            {
-                case 400:
-                    errorMessage = "Bad Request";
-                    errorDescription = "The server could not understand the request due to invalid syntax";
-                    break;
-                case 401:
-                    errorMessage = "Unauthorized access";
-                    errorDescription = "Your session has expired or you are not authorized to view this page. Please log in again.";
-                    break;
-                case 403:
-                    errorMessage = "Forbidden";
-                    errorDescription = "You do not have permission to perform this action.";
-                    break;
-                case 429:
-                    errorMessage = "Too Many Requests";
-                    errorDescription = "You have sent too many requests. Please wait a moment and try again.";
-                    break;
-                case 404:
-                    errorMessage = "Page not found";
-                    errorDescription = "The page you are looking for could not be found.";
-                    break;
-                case 500:
-                    errorMessage = "Server Error";
-                    errorDescription = "Internal Server Error. An unexpected error occurred on the server. Please try again later.";
-                    break;
-            }
-
-            viewData["ErrorMessage"] = errorMessage;
-            viewData["ErrorDescription"] = errorDescription;
-
-            await using var writer = new StringWriter();
-            var viewContext = new ViewContext(
-                actionContext,
-                viewEngineResult.View,
-                viewData,
-                new TempDataDictionary(context, _tempDataProvider),
-                writer,
-                new HtmlHelperOptions()
-            );
-
-            await viewContext.View.RenderAsync(viewContext);
-            var htmlContent = writer.ToString();
-
-            await context.Response.WriteAsync(htmlContent);
+            await WriteHtmlErrorPageAsync(context, statusCode, errorMessage, errorDescription);
         }
     }
+
+    private async Task WriteHtmlErrorPageAsync(HttpContext context, int statusCode, string errorMessage,
+        string errorDescription)
+    {
+        var actionContext = new ActionContext
+        {
+            HttpContext = context,
+            RouteData = context.GetRouteData(),
+            ActionDescriptor = new ActionDescriptor()
+        };
+
+        var viewName = "Error";
+        var viewEngineResult = _viewEngine.FindView(actionContext, viewName, false);
+        if (!viewEngineResult.Success)
+            throw new InvalidOperationException($"Could not find view: {viewName}");
+
+        context.Response.StatusCode = statusCode;
+        context.Response.ContentType = "text/html";
+
+        var viewData = new ViewDataDictionary(new EmptyModelMetadataProvider(), new ModelStateDictionary())
+        {
+            ["SessionData"] = context.Session.GetString("MenuItems"),
+            ["Layout"] = "_Layout",
+            ["ErrorCode"] = statusCode.ToString(),
+            ["ErrorIcon"] = $"ErrorIcon{statusCode}.png",
+            ["ErrorMessage"] = errorMessage,
+            ["ErrorDescription"] = errorDescription
+        };
+
+        await using var writer = new StringWriter();
+        var viewContext = new ViewContext(
+            actionContext,
+            viewEngineResult.View,
+            viewData,
+            new TempDataDictionary(context, _tempDataProvider),
+            writer,
+            new HtmlHelperOptions()
+        );
+
+        await viewContext.View.RenderAsync(viewContext);
+        await context.Response.WriteAsync(writer.ToString());
+    }
+
+    private static (string Message, string Description) GetErrorMessages(int statusCode) => statusCode switch
+    {
+        400 => ("Bad Request", "The server could not understand the request due to invalid syntax."),
+        401 => ("Unauthorized access",
+            "Your session has expired or you are not authorized. Please log in again."),
+        403 => ("Forbidden", "You do not have permission to perform this action."),
+        404 => ("Page not found", "The page you are looking for could not be found."),
+        429 => ("Too Many Requests", "You have sent too many requests. Please wait and try again."),
+        500 => ("Server Error", "An unexpected error occurred on the server. Please try again later."),
+        _ => ("Error", "An error occurred while processing your request.")
+    };
 }
