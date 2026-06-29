@@ -95,7 +95,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/identity-module/{**catch-all}"
           }
         ]
       },
@@ -115,7 +115,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/finance-settlement-module/{**catch-all}"
           }
         ]
       },
@@ -135,7 +135,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/order-management-module/{**catch-all}"
           }
         ]
       },
@@ -155,7 +155,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/pricing-engine-module/{**catch-all}"
           }
         ]
       },
@@ -175,7 +175,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/product-catalog-module/{**catch-all}"
           }
         ]
       },
@@ -195,7 +195,7 @@
         },
         "transforms": [
           {
-            "PathPattern": "/api/{**catch-all}"
+            "PathPattern": "api/seller-management-module/{**catch-all}"
           }
         ]
       }

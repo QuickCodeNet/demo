@@ -13,14 +13,23 @@ using QuickCode.Demo.Infrastructure.Integration.Models;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using QuickCode.Demo.Gateway.HTTP;
 using QuickCode.Demo.Gateway.KafkaProducer;
+using Serilog;
 
 namespace QuickCode.Demo.Gateway.Extensions;
 public static class KafkaHelper
 {
     internal static async Task<bool> GetTokenIsValid(IServiceProvider services, string token)
     {
-        var authenticationsClient = services.GetRequiredService<IAuthenticationsClient>();
-        return !token.IsTokenExpired() && await authenticationsClient.ApiAuthValidatePostAsync(token);
+        try
+        {
+            var authenticationsClient = services.GetRequiredService<IAuthenticationsClient>();
+            return !token.IsTokenExpired() && await authenticationsClient.ApiAuthValidatePostAsync(token);
+        }
+        catch (Exception ex)
+        {
+            GatewayLoggingHelper.LogDependencyError("ValidateToken", ex);
+            throw;
+        }
     }
 
     static async Task<List<GetKafkaEventsResponseDto>> GetKafkaEvents(IServiceProvider services, IMemoryCache memoryCache)
@@ -41,28 +50,50 @@ public static class KafkaHelper
     static async Task<List<GetKafkaEventsResponseDto>> GetAllKafkaEvents(IConfiguration configuration,
         IKafkaEventsClient kafkaEventsClient)
     {
-        var configApiKey = configuration.GetValue<string>("QuickcodeApiKeys:IdentityModuleApiKey");
-        SetKafkaApiKeyToClients(kafkaEventsClient, configApiKey!);
-        return (await kafkaEventsClient.KafkaEventsGetKafkaEventsAsync()).ToList();
+        const string apiKeyConfig = "QuickcodeApiKeys:IdentityModuleApiKey";
+        var configApiKey = configuration.GetValue<string>(apiKeyConfig);
+        if (string.IsNullOrEmpty(configApiKey))
+        {
+            GatewayLoggingHelper.LogMissingApiKey(apiKeyConfig);
+        }
+
+        try
+        {
+            SetKafkaApiKeyToClients(kafkaEventsClient, configApiKey!);
+            return (await kafkaEventsClient.KafkaEventsGetKafkaEventsAsync()).ToList();
+        }
+        catch (Exception ex)
+        {
+            GatewayLoggingHelper.LogDependencyError("LoadKafkaEvents", ex);
+            throw;
+        }
     }
 
     internal static async Task<GetKafkaEventsResponseDto?> CheckKafkaEventExists(IServiceProvider services,
         IMemoryCache memoryCache, HttpContext context)
     {
-        var allKafkaEvents = await GetKafkaEvents(services, memoryCache);
-        var kafkaEvent = allKafkaEvents.Find(endpoint =>
-            endpoint.UrlPath.IsRouteMatch(context.Request.Path) &&
-            endpoint.IsActive &&
-            endpoint.HttpMethod.ToString().Equals(context.Request.Method, StringComparison.OrdinalIgnoreCase));
-
-        if (kafkaEvent == null)
+        try
         {
-            return null;
-        }
+            var allKafkaEvents = await GetKafkaEvents(services, memoryCache);
+            var kafkaEvent = allKafkaEvents.Find(endpoint =>
+                endpoint.UrlPath.IsRouteMatch(context.Request.Path) &&
+                endpoint.IsActive &&
+                endpoint.HttpMethod.ToString().Equals(context.Request.Method, StringComparison.OrdinalIgnoreCase));
 
-        kafkaEvent = GetKafkaEventsResponseDto.FromJson(kafkaEvent.ToJson());
-        kafkaEvent.TopicName = $"{kafkaEvent.TopicName}_{kafkaEvent.HttpMethod.ToString().ToLowerInvariant()}";
-        return kafkaEvent;
+            if (kafkaEvent == null)
+            {
+                return null;
+            }
+
+            kafkaEvent = GetKafkaEventsResponseDto.FromJson(kafkaEvent.ToJson());
+            kafkaEvent.TopicName = $"{kafkaEvent.TopicName}_{kafkaEvent.HttpMethod.ToString().ToLowerInvariant()}";
+            return kafkaEvent;
+        }
+        catch (Exception ex)
+        {
+            GatewayLoggingHelper.LogDependencyError("CheckKafkaEvent", ex, context.Request.Path, context.Request.Method);
+            throw;
+        }
     }
 
     private static JObject ConvertToJsonObject(string json)
@@ -81,60 +112,74 @@ public static class KafkaHelper
     internal static async Task SendKafkaMessageIfEventExists(IServiceProvider services, IMemoryCache memoryCache,
         IKafkaProducerWrapper kafkaProducer, HttpContext context, Stopwatch stopwatch)
     {
-        var kafkaEvent = await CheckKafkaEventExists(services, memoryCache, context);
-        if (kafkaEvent is null) return;
-
-        var requestBodyText = await context.TryGetRequestBodyAsync();
-
-        context.Response.Body.Seek(0, SeekOrigin.Begin);
-        using var reader = new StreamReader(context.Response.Body, leaveOpen: true);
-        var responseBodyText = await reader.ReadToEndAsync();
-
-        var kafkaMessage = new KafkaMessage
+        try
         {
-            RequestInfo = new RequestInfo
-            {
-                Path = context.Request.Path,
-                Method = context.Request.Method,
-                Headers = context.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString()),
-                Body = ConvertToJsonObject(requestBodyText)
-            },
-            ResponseInfo = new ResponseInfo
-            {
-                StatusCode = context.Response.HasStarted ? context.Response.StatusCode : 500,
-                Headers = context.Response.Headers.ToDictionary(h => h.Key, h => h.Value.ToString()),
-                Body = ConvertToJsonObject(responseBodyText)
-            },
-            ElapsedMilliseconds = (int)stopwatch.ElapsedMilliseconds,
-            Timestamp = DateTime.UtcNow
-        };
+            var kafkaEvent = await CheckKafkaEventExists(services, memoryCache, context);
+            if (kafkaEvent is null) return;
 
-        var key = GenerateKey(context);
-        await SendKafkaMessage(kafkaProducer, kafkaEvent.TopicName, key, kafkaMessage);
+            var requestBodyText = await context.TryGetRequestBodyAsync();
+
+            context.Response.Body.Seek(0, SeekOrigin.Begin);
+            using var reader = new StreamReader(context.Response.Body, leaveOpen: true);
+            var responseBodyText = await reader.ReadToEndAsync();
+
+            var kafkaMessage = new KafkaMessage
+            {
+                RequestInfo = new RequestInfo
+                {
+                    Path = context.Request.Path,
+                    Method = context.Request.Method,
+                    Headers = context.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString()),
+                    Body = ConvertToJsonObject(requestBodyText)
+                },
+                ResponseInfo = new ResponseInfo
+                {
+                    StatusCode = context.Response.HasStarted ? context.Response.StatusCode : 500,
+                    Headers = context.Response.Headers.ToDictionary(h => h.Key, h => h.Value.ToString()),
+                    Body = ConvertToJsonObject(responseBodyText)
+                },
+                ElapsedMilliseconds = (int)stopwatch.ElapsedMilliseconds,
+                Timestamp = DateTime.UtcNow
+            };
+
+            var key = GenerateKey(context);
+            await SendKafkaMessage(kafkaProducer, kafkaEvent.TopicName, key, kafkaMessage);
+        }
+        catch (Exception ex)
+        {
+            GatewayLoggingHelper.LogDependencyError("SendKafkaMessageIfEventExists", ex, context.Request.Path, context.Request.Method);
+        }
     }
 
     internal static async Task SendErrorKafkaMessage(IKafkaProducerWrapper kafkaProducer, string topic,
         HttpContext context, Stopwatch stopwatch, Exception ex)
     {
-        var errorKafkaMessage = new KafkaMessage
+        try
         {
-            RequestInfo = new RequestInfo
+            var errorKafkaMessage = new KafkaMessage
             {
-                Path = context.Request.Path,
-                Method = context.Request.Method,
-                Headers = context.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString())
-            },
-            ResponseInfo = new ResponseInfo
-            {
-                StatusCode = context.Response.HasStarted ? context.Response.StatusCode : 500,
-                Body = new JObject { ["message"] = "An error occurred." }
-            },
-            ExceptionMessage = ex.Message,
-            ElapsedMilliseconds = (int)stopwatch.ElapsedMilliseconds,
-            Timestamp = DateTime.UtcNow
-        };
+                RequestInfo = new RequestInfo
+                {
+                    Path = context.Request.Path,
+                    Method = context.Request.Method,
+                    Headers = context.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString())
+                },
+                ResponseInfo = new ResponseInfo
+                {
+                    StatusCode = context.Response.HasStarted ? context.Response.StatusCode : 500,
+                    Body = new JObject { ["message"] = "An error occurred." }
+                },
+                ExceptionMessage = ex.Message,
+                ElapsedMilliseconds = (int)stopwatch.ElapsedMilliseconds,
+                Timestamp = DateTime.UtcNow
+            };
 
-        await SendKafkaMessage(kafkaProducer, topic, GenerateKey(context), errorKafkaMessage);
+            await SendKafkaMessage(kafkaProducer, topic, GenerateKey(context), errorKafkaMessage);
+        }
+        catch (Exception sendEx)
+        {
+            GatewayLoggingHelper.LogKafkaFailure("send-error-message", sendEx, topic);
+        }
     }
 
     static string GenerateKey(HttpContext context) =>
@@ -149,17 +194,17 @@ public static class KafkaHelper
             {
                 NullValueHandling = NullValueHandling.Include
             });
-            
+
             await kafkaProducer.ProduceAsync(topic, key, serializedMessage);
-            Console.WriteLine($"Message sent to Kafka topic: {topic}, Key: {key}");
+            Log.Information("Gateway Kafka message sent. Topic={Topic} Key={Key}", topic, key);
         }
-        catch (OperationCanceledException)
+        catch (OperationCanceledException ex)
         {
-            Console.WriteLine($"Message sending to Kafka timed out. Topic: {topic}, Key: {key}");
+            GatewayLoggingHelper.LogKafkaFailure("send-timeout", ex, topic, key);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Failed to send message to Kafka. Topic: {topic}, Key: {key}, Error: {ex.Message}");
+            GatewayLoggingHelper.LogKafkaFailure("send", ex, topic, key);
         }
     }
 }

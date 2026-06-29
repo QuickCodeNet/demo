@@ -7,6 +7,7 @@ using Yarp.ReverseProxy.Configuration;
 using Microsoft.Extensions.Caching.Memory;
 using System.Collections.Concurrent;
 using System.Threading;
+using Serilog;
 
 namespace QuickCode.Demo.Gateway.Extensions
 {
@@ -40,7 +41,16 @@ namespace QuickCode.Demo.Gateway.Extensions
                 if (cache.TryGetValue(key, out cachedValue!))
                     return cachedValue;
 
-                cachedValue = await valueFactory(args);
+                try
+                {
+                    cachedValue = await valueFactory(args);
+                }
+                catch (Exception ex)
+                {
+                    Log.Error(ex, "Gateway memory cache factory failed for key {CacheKey}", key);
+                    throw;
+                }
+
                 cache.Set(key, cachedValue, new MemoryCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = expiration

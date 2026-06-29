@@ -4,18 +4,31 @@
 // Where to put custom code: see AGENTS.md at repo root.
 // </auto-generated>
 using Confluent.Kafka;
+using QuickCode.Demo.Gateway.Extensions;
+using Serilog;
 
 namespace QuickCode.Demo.Gateway.KafkaProducer;
 
 public class KafkaProducerWrapper : IKafkaProducerWrapper, IDisposable
 {
     private readonly IProducer<string, string> _producer;
+    private readonly string _bootstrapServers;
 
     public KafkaProducerWrapper(IConfiguration config)
     {
+        _bootstrapServers = config["Kafka:BootstrapServers"] ?? string.Empty;
+        if (string.IsNullOrWhiteSpace(_bootstrapServers))
+        {
+            Log.Warning("Gateway Kafka producer: BootstrapServers is not configured");
+        }
+        else
+        {
+            Log.Information("Gateway Kafka producer initialized. BootstrapServers={BootstrapServers}", _bootstrapServers);
+        }
+
         var producerConfig = new ProducerConfig
         {
-            BootstrapServers = config["Kafka:BootstrapServers"],
+            BootstrapServers = _bootstrapServers,
             MessageSendMaxRetries = 3,
             RetryBackoffMs = 1000
         };
@@ -24,7 +37,22 @@ public class KafkaProducerWrapper : IKafkaProducerWrapper, IDisposable
 
     public async Task ProduceAsync(string topic, string key, string message)
     {
-        await _producer.ProduceAsync(topic, new Message<string, string> { Key = key, Value = message });
+        try
+        {
+            var deliveryResult = await _producer.ProduceAsync(topic, new Message<string, string> { Key = key, Value = message });
+            Log.Debug("Gateway Kafka message delivered. Topic={Topic} Key={Key} Partition={Partition} Offset={Offset}",
+                deliveryResult.Topic, key, deliveryResult.Partition.Value, deliveryResult.Offset.Value);
+        }
+        catch (ProduceException<string, string> ex)
+        {
+            GatewayLoggingHelper.LogKafkaFailure("produce", ex, topic, key);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            GatewayLoggingHelper.LogKafkaFailure("produce", ex, topic, key);
+            throw;
+        }
     }
 
     public void Dispose()

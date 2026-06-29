@@ -72,6 +72,23 @@ builder.Services.AddNoOpAuditLogWriter();
 builder.Services.AddLogger(builder.Configuration);
 Log.Information($"{builder.Configuration["Logging:ApiName"]} configuring.");
 
+var kafkaBootstrapServers = builder.Configuration["Kafka:BootstrapServers"];
+var identityModuleApiKeyConfigured = !string.IsNullOrEmpty(builder.Configuration["QuickcodeApiKeys:IdentityModuleApiKey"]);
+Log.Information(
+    "Gateway dependency config: Kafka BootstrapServers={BootstrapServers}, IdentityModuleApiKey configured={ApiKeyConfigured}",
+    string.IsNullOrWhiteSpace(kafkaBootstrapServers) ? "(empty)" : kafkaBootstrapServers,
+    identityModuleApiKeyConfigured);
+
+if (!identityModuleApiKeyConfigured)
+{
+    Log.Warning("Gateway IdentityModuleApiKey is not configured; Identity API calls from gateway will fail");
+}
+
+if (string.IsNullOrWhiteSpace(kafkaBootstrapServers))
+{
+    Log.Warning("Gateway Kafka BootstrapServers is not configured; Kafka publish will fail");
+}
+
 builder.Services.AddSiteCustomizations();
 
 var app = builder.Build();
@@ -130,6 +147,10 @@ void ConfigureMiddlewares()
     app.Map("/error", (HttpContext context) =>
     {
         var exception = context.Features.Get<IExceptionHandlerFeature>()?.Error;
+        if (exception != null)
+        {
+            GatewayLoggingHelper.LogDependencyError("UnhandledException", exception, context.Request.Path, context.Request.Method);
+        }
 
         var isDev = app.Environment.IsDevelopment();
 
@@ -187,6 +208,7 @@ void ConfigureEnvironmentVariables(IConfiguration configuration)
         });
 
     Console.WriteLine($"environmentName : {environmentName}");
+    Log.Information("Gateway environment: {EnvironmentName}", environmentName);
 }
 
 
@@ -210,7 +232,14 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareKafkaManager(IServiceProvider 
                 await next();
                 _ = Task.Run(async () =>
                 {
-                    await KafkaHelper.SendKafkaMessageIfEventExists(services, memoryCache, kafkaProducer, context, stopwatch);
+                    try
+                    {
+                        await KafkaHelper.SendKafkaMessageIfEventExists(services, memoryCache, kafkaProducer, context, stopwatch);
+                    }
+                    catch (Exception ex)
+                    {
+                        GatewayLoggingHelper.LogDependencyError("BackgroundKafkaPublish", ex, context.Request.Path, context.Request.Method);
+                    }
                 });
             }
             catch (Exception ex)
@@ -220,10 +249,18 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareKafkaManager(IServiceProvider 
                 {
                     _ = Task.Run(async () =>
                     {
-                        await KafkaHelper.SendErrorKafkaMessage(kafkaProducer, kafkaEvent.TopicName, context, stopwatch, ex);
+                        try
+                        {
+                            await KafkaHelper.SendErrorKafkaMessage(kafkaProducer, kafkaEvent.TopicName, context, stopwatch, ex);
+                        }
+                        catch (Exception sendEx)
+                        {
+                            GatewayLoggingHelper.LogKafkaFailure("background-error-publish", sendEx, kafkaEvent.TopicName);
+                        }
                     });
                 }
 
+                Log.Error(ex, "Gateway request pipeline failed for {Method} {Path}", context.Request.Method, context.Request.Path);
                 throw;
             }
             finally
@@ -235,7 +272,8 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareKafkaManager(IServiceProvider 
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            Log.Error(ex, "Gateway Kafka middleware failed for {Path}", context.Request.Path);
+            throw;
         }
     };
 }
@@ -244,33 +282,41 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareApiAuthorization(IServiceProvi
 {
     return async (context, next) =>
     {
-        var memoryCache = services.GetRequiredService<IMemoryCache>();
-        var configuration = services.GetRequiredService<IConfiguration>();
-        var token = ExtractToken(context);
-        var cacheKey = $"AuthJwtTokens-{token}";
+        try
+        {
+            var memoryCache = services.GetRequiredService<IMemoryCache>();
+            var configuration = services.GetRequiredService<IConfiguration>();
+            var token = ExtractToken(context);
+            var cacheKey = $"AuthJwtTokens-{token}";
         
-        if (string.IsNullOrEmpty(token))
-        {
-            await next();
-            return;
-        }
+            if (string.IsNullOrEmpty(token))
+            {
+                await next();
+                return;
+            }
         
-        if (token.IsTokenExpired())
-        {
-            memoryCache.Remove(cacheKey);
-            context.Response.Headers.Append("Token-Expired", "true");
-            AppendApiKey(context, configuration);
-            EnsureForwardedUserAgent(context);
+            if (token.IsTokenExpired())
+            {
+                memoryCache.Remove(cacheKey);
+                context.Response.Headers.Append("Token-Expired", "true");
+                AppendApiKey(context, configuration);
+                EnsureForwardedUserAgent(context);
+                await next();
+                return;
+            }
+
+            if (!await ValidateAndProcessToken(context, services, token, cacheKey))
+            {
+                return;
+            }
+
             await next();
-            return;
         }
-
-        if (!await ValidateAndProcessToken(context, services, token, cacheKey))
+        catch (Exception ex)
         {
-            return;
+            GatewayLoggingHelper.LogDependencyError("ApiAuthorization", ex, context.Request.Path, context.Request.Method);
+            throw;
         }
-
-        await next();
     };
 }
 
@@ -310,9 +356,20 @@ async Task<bool> ValidateAndProcessToken(HttpContext context, IServiceProvider s
         context.Response.Headers.Append("Token-Expired", "true");
     }
 
-    var isValidToken = await ValidateToken(services, token, cacheKey, memoryCache);
+    bool isValidToken;
+    try
+    {
+        isValidToken = await ValidateToken(services, token, cacheKey, memoryCache);
+    }
+    catch (Exception ex)
+    {
+        GatewayLoggingHelper.LogDependencyError("ValidateToken", ex, context.Request.Path, context.Request.Method);
+        throw;
+    }
+
     if (!isValidToken)
     {
+        Log.Warning("Gateway rejected invalid token for {Method} {Path}", context.Request.Method, context.Request.Path);
         await HandleInvalidToken(context);
         return false;
     }
@@ -320,8 +377,24 @@ async Task<bool> ValidateAndProcessToken(HttpContext context, IServiceProvider s
     var jwtClaims = token.ParseJwtPayload();
     var permissionGroupName = jwtClaims["PermissionGroupName"];
 
-    if (!await IsMethodValid(context, services, permissionGroupName, memoryCache))
+    bool isMethodValid;
+    try
     {
+        isMethodValid = await IsMethodValid(context, services, permissionGroupName, memoryCache);
+    }
+    catch (Exception ex)
+    {
+        GatewayLoggingHelper.LogDependencyError("ValidateMethodAccess", ex, context.Request.Path, context.Request.Method);
+        throw;
+    }
+
+    if (!isMethodValid)
+    {
+        Log.Warning(
+            "Gateway rejected method access. Method={Method} Path={Path} PermissionGroup={PermissionGroup}",
+            context.Request.Method,
+            context.Request.Path,
+            permissionGroupName);
         await HandleInvalidMethod(context);
         return false;
     }
@@ -379,14 +452,25 @@ async Task HandleInvalidMethod(HttpContext context)
 
 void AppendApiKey(HttpContext context, IConfiguration configuration)
 {
-    var moduleName = context.GetEndpoint()!.DisplayName!.KebabCaseToPascal("");
+    var endpoint = context.GetEndpoint();
+    if (endpoint?.DisplayName is null)
+    {
+        Log.Warning("Gateway AppendApiKey skipped: endpoint DisplayName missing for {Method} {Path}",
+            context.Request.Method, context.Request.Path);
+        return;
+    }
+
+    var moduleName = endpoint.DisplayName.KebabCaseToPascal("");
     var apiKeyConfigValue = $"QuickcodeApiKeys:{moduleName}ApiKey";
     var configApiKey = configuration.GetValue<string>(apiKeyConfigValue);
 
     if (configApiKey != null)
     {
         context.Request.Headers.Append("X-Api-Key", configApiKey);
+        return;
     }
+
+    GatewayLoggingHelper.LogMissingApiKey(apiKeyConfigValue, context.Request.Path);
 }
 
 void EnsureForwardedUserAgent(HttpContext context)
@@ -499,24 +583,38 @@ IResult GetServicesHtml(HttpContext context)
 
 async Task<List<GroupHttpMethodPath>> GetAllGroupMethods(IConfiguration configuration, IApiMethodAccessGrantsClient ApiMethodAccessGrantsClient, IApiMethodDefinitionsClient apiMethodDefinitionsClient)
 {
-    
-    var apiKeyConfigValue = $"QuickcodeApiKeys:IdentityModuleApiKey";
+    const string apiKeyConfigValue = "QuickcodeApiKeys:IdentityModuleApiKey";
     var configApiKey = configuration.GetValue<string>(apiKeyConfigValue);
-    SetApiKeyToClients(ApiMethodAccessGrantsClient, apiMethodDefinitionsClient, configApiKey!);
-    var authorizationsGroups = await ApiMethodAccessGrantsClient.ApiMethodAccessGrantsListAsync();
-    var authorizations = await apiMethodDefinitionsClient.ApiMethodDefinitionsListAsync();
-    
-    SetApiKeyToClients(ApiMethodAccessGrantsClient, apiMethodDefinitionsClient, "");
-    var authorizationsGroupsActive = authorizationsGroups.Where(i => i.IsActive);
-    
-    var allMethods = from authGroup in authorizationsGroupsActive
-        join a in authorizations on authGroup.ApiMethodDefinitionKey equals a.Key
-        select new GroupHttpMethodPath()
-        {
-            PermissionGroupName = authGroup.PermissionGroupName, HttpMethod = a.HttpMethod, Path = a.UrlPath
-        };
+    if (string.IsNullOrEmpty(configApiKey))
+    {
+        GatewayLoggingHelper.LogMissingApiKey(apiKeyConfigValue);
+    }
 
-    return allMethods.ToList();
+    try
+    {
+        SetApiKeyToClients(ApiMethodAccessGrantsClient, apiMethodDefinitionsClient, configApiKey!);
+        var authorizationsGroups = await ApiMethodAccessGrantsClient.ApiMethodAccessGrantsListAsync();
+        SetApiKeyToClients(ApiMethodAccessGrantsClient, apiMethodDefinitionsClient, configApiKey!);
+        var authorizations = await apiMethodDefinitionsClient.ApiMethodDefinitionsListAsync();
+    
+        SetApiKeyToClients(ApiMethodAccessGrantsClient, apiMethodDefinitionsClient, "");
+        var authorizationsGroupsActive = authorizationsGroups.Where(i => i.IsActive);
+    
+        var allMethods = from authGroup in authorizationsGroupsActive
+            join a in authorizations on authGroup.ApiMethodDefinitionKey equals a.Key
+            select new GroupHttpMethodPath()
+            {
+                PermissionGroupName = authGroup.PermissionGroupName, HttpMethod = a.HttpMethod, Path = a.UrlPath
+            };
+
+        Log.Debug("Gateway loaded {MethodCount} API method definitions for authorization", allMethods.Count());
+        return allMethods.ToList();
+    }
+    catch (Exception ex)
+    {
+        GatewayLoggingHelper.LogDependencyError("GetAllGroupMethods", ex);
+        throw;
+    }
 }
 
 void SetApiKeyToClients(IApiMethodAccessGrantsClient ApiMethodAccessGrantsClient, IApiMethodDefinitionsClient apiMethodDefinitionsClient, string configIdentityApiKey)
