@@ -13,6 +13,7 @@ using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http.Extensions;
+using QuickCode.Demo.Infrastructure.Integration.Models;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Primitives;
@@ -311,6 +312,18 @@ Func<HttpContext, Func<Task>, Task> YarpMiddlewareApiAuthorization(IServiceProvi
             }
 
             await next();
+        }
+        catch (QuickCodeSwaggerException ex)
+        {
+            GatewayLoggingHelper.LogDependencyError("ApiAuthorization", ex, context.Request.Path, context.Request.Method);
+            context.Response.StatusCode = ex.StatusCode is >= 400 and < 600 ? ex.StatusCode : StatusCodes.Status502BadGateway;
+            context.Response.ContentType = "application/json";
+            await context.Response.WriteAsync(JsonConvert.SerializeObject(new
+            {
+                message = "Gateway authorization dependency failed",
+                statusCode = ex.StatusCode,
+                response = ex.Response
+            }));
         }
         catch (Exception ex)
         {

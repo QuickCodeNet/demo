@@ -3,12 +3,17 @@
 // This file is overwritten on full template regen. Add user logic in separate .cs files.
 // Where to put custom code: see AGENTS.md at repo root.
 // </auto-generated>
+using System.Collections;
 using QuickCode.Demo.Infrastructure.Web.Extensions;
 using Serilog;
 
 namespace QuickCode.Demo.Infrastructure.Web.Helpers;
+
 public static class EnvironmentHelper
 {
+    private const string QuickCodeEnvPrefix = "QUICKCODE_";
+    private const string ApiKeyEnvSuffix = "_API_KEY";
+
     public static void LoadEnvFile(string? envFilePath = null)
     {
         try
@@ -56,30 +61,74 @@ public static class EnvironmentHelper
     {
         LoadEnvFile();
 
-        var envVariables = Environment.GetEnvironmentVariables();
-
-        foreach (var key in envVariables.Keys)
+        foreach (DictionaryEntry entry in Environment.GetEnvironmentVariables())
         {
-            var envKey = key.ToString();
-            if (string.IsNullOrEmpty(envKey))
+            if (entry.Key is not string envKey)
             {
                 continue;
             }
 
-            var envValue = envVariables[key]?.ToString();
-            configuration.SetConfigValue($"QuickcodeApiKeys:{envKey.GetPascalCase()}", envValue!);
-            configuration.SetConfigValue($"ConnectionStrings:{envKey.GetPascalCase()}", envValue!);
+            var envValue = entry.Value?.ToString();
+            if (string.IsNullOrWhiteSpace(envValue))
+            {
+                continue;
+            }
+
+            if (TryMapQuickCodeModuleApiKeyEnvVar(envKey, out var quickcodeApiKeysPath))
+            {
+                configuration[quickcodeApiKeysPath] = envValue;
+                Log.Information(
+                    "Config {ConfigKey} updated from environment variable {EnvKey}",
+                    quickcodeApiKeysPath,
+                    envKey);
+                continue;
+            }
+
+            if (envKey.Equals("API_KEY", StringComparison.OrdinalIgnoreCase))
+            {
+                configuration["AppSettings:ApiKey"] = envValue;
+                Log.Information("Config AppSettings:ApiKey updated from environment variable API_KEY");
+                continue;
+            }
+
+            configuration.TrySetConfigValueIfKeyExists($"QuickcodeApiKeys:{envKey.GetPascalCase()}", envValue);
+            configuration.TrySetConfigValueIfKeyExists($"ConnectionStrings:{envKey.GetPascalCase()}", envValue);
         }
     }
 
-    private static void SetConfigValue(this IConfiguration configuration, string key, string value)
+    /// <summary>
+    /// Maps Cloud Run deploy vars such as <c>QUICKCODE_IDENTITY_MODULE_API_KEY</c>
+    /// to <c>QuickcodeApiKeys:IdentityModuleApiKey</c>.
+    /// </summary>
+    public static bool TryMapQuickCodeModuleApiKeyEnvVar(string envKey, out string configPath)
+    {
+        configPath = string.Empty;
+
+        if (!envKey.StartsWith(QuickCodeEnvPrefix, StringComparison.OrdinalIgnoreCase)
+            || !envKey.EndsWith(ApiKeyEnvSuffix, StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        var moduleSegment = envKey[QuickCodeEnvPrefix.Length..^ApiKeyEnvSuffix.Length];
+        if (string.IsNullOrWhiteSpace(moduleSegment))
+        {
+            return false;
+        }
+
+        var moduleName = moduleSegment.GetPascalCase();
+        configPath = $"QuickcodeApiKeys:{moduleName}ApiKey";
+        return true;
+    }
+
+    private static void TrySetConfigValueIfKeyExists(this IConfiguration configuration, string key, string value)
     {
         if (configuration[key] == null)
         {
             return;
         }
-        
+
         configuration[key] = value;
-        Log.Information("Config Key:{Key} updated from environment variable", key);
+        Log.Information("Config {Key} updated from environment variable", key);
     }
 }
