@@ -61,6 +61,11 @@ public class CustomExceptionHandlingMiddleware
 
             var (errorMessage, errorDescription) = GetErrorMessages(statusCode);
 
+            if (ex is QuickCodeSwaggerException swaggerEx && !string.IsNullOrWhiteSpace(swaggerEx.Response))
+            {
+                errorDescription = swaggerEx.Response.Trim('"');
+            }
+
             if (context.Request.WantsJsonResponse())
             {
                 if (statusCode == (int)HttpStatusCode.Unauthorized)

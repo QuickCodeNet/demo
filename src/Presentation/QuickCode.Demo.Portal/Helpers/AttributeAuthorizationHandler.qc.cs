@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
+using QuickCode.Demo.Portal.Helpers;
 
 namespace QuickCode.Demo.Portal.Helpers.Authorization
 {
@@ -102,16 +103,35 @@ namespace QuickCode.Demo.Portal.Helpers.Authorization
 
         private async Task<bool> AuthorizeAsync(AuthorizationHandlerContext context, ClaimsPrincipal user, string permission)
         {
-            var actionName = (context.Resource as AuthorizationFilterContext).ActionDescriptor.RouteValues["action"];
-            var controllerName = (context.Resource as AuthorizationFilterContext).ActionDescriptor.RouteValues["controller"];
+            var authContext = context.Resource as AuthorizationFilterContext;
+            var actionName = authContext!.ActionDescriptor.RouteValues["action"];
+            var controllerName = authContext.ActionDescriptor.RouteValues["controller"];
 
             if (controllerName.IsIn("Home"))
             {
                 return true;
             }
 
-            var result = await portalPagePermissionManager.GetPagePermission(controllerName, actionName);
-            return result.IsPageAvailable;
+            var result = await portalPagePermissionManager.GetPagePermission(permission, actionName);
+            return HasActionPermission(result, actionName);
+        }
+
+        private static bool HasActionPermission(ViewPermission permission, string actionName)
+        {
+            if (!permission.IsPageAvailable)
+            {
+                return false;
+            }
+
+            return actionName switch
+            {
+                "List" => permission.List,
+                "Detail" or "DetailItem" => permission.Detail,
+                "Insert" or "InsertItem" => permission.Insert,
+                "Update" or "UpdateItem" => permission.Update,
+                "Delete" or "DeleteItem" => permission.Delete,
+                _ => true
+            };
         }
     }
 }

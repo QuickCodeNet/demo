@@ -432,15 +432,20 @@ async Task HandleInvalidToken(HttpContext context)
 
 async Task<bool> IsMethodValid(HttpContext context, IServiceProvider services, string permissionGroupName, IMemoryCache memoryCache)
 {
+    if (string.Equals(permissionGroupName, "Admin", StringComparison.OrdinalIgnoreCase))
+    {
+        return true;
+    }
+
     var groupMethods = await GetGroupMethods(services, memoryCache);
     var path = context.Request.Path.Value!;
     var validPaths = groupMethods
-        .Where(i => i.PermissionGroupName == permissionGroupName && i.HttpMethod.ToString().ToLowerInvariant()
-            .Equals(context.Request.Method.ToLowerInvariant()))
+        .Where(i => string.Equals(i.PermissionGroupName, permissionGroupName, StringComparison.OrdinalIgnoreCase)
+                    && i.HttpMethod.ToString().Equals(context.Request.Method, StringComparison.OrdinalIgnoreCase))
         .Select(i => i.Path)
         .ToList();
 
-    return path.IsRouteMatch(validPaths) || path.StartsWith("/api/auth/login");
+    return path.IsRouteMatch(validPaths) || path.StartsWith("/api/auth/login", StringComparison.OrdinalIgnoreCase);
 }
 
 
