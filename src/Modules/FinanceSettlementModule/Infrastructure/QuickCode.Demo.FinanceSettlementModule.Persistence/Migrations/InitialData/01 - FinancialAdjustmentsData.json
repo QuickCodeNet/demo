@@ -1,0 +1,68 @@
+﻿{
+  "FINANCIAL_ADJUSTMENTS": [
+    {
+      "SELLER_ID": 733,
+      "AMOUNT": 3274.49,
+      "REASON": "DisputeResolution",
+      "NOTES": "Project churn ledger alert module value calendar refund.",
+      "CREATED_BY_USER_ID": 939,
+      "CREATED_DATE": "2024-03-27T13:48:29.0835668Z"
+    },
+    {
+      "SELLER_ID": 959,
+      "AMOUNT": 2876.83,
+      "REASON": "DisputeResolution",
+      "NOTES": "Ledger metric calendar archived filter alert project agreement batch stage.",
+      "CREATED_BY_USER_ID": 33,
+      "CREATED_DATE": "2024-03-01T10:41:44.604283Z"
+    },
+    {
+      "SELLER_ID": 41,
+      "AMOUNT": 1759.60,
+      "REASON": "ShippingFee",
+      "NOTES": "Archive audience import contract batch service query.",
+      "CREATED_BY_USER_ID": 556,
+      "CREATED_DATE": "2023-08-19T16:01:37.8025407Z"
+    },
+    {
+      "SELLER_ID": 420,
+      "AMOUNT": 2575.71,
+      "REASON": "MarketingBonus",
+      "NOTES": "Export refund comment active value policy product.",
+      "CREATED_BY_USER_ID": 26,
+      "CREATED_DATE": "2022-06-06T03:11:07.9542177Z"
+    },
+    {
+      "SELLER_ID": 205,
+      "AMOUNT": 4409.36,
+      "REASON": "ShippingFee",
+      "NOTES": "Message record archived deadline profit contract.",
+      "CREATED_BY_USER_ID": 776,
+      "CREATED_DATE": "2023-11-02T03:53:01.1712047Z"
+    },
+    {
+      "SELLER_ID": 243,
+      "AMOUNT": 315.40,
+      "REASON": "ShippingFee",
+      "NOTES": "Audience notes churn module process value service.",
+      "CREATED_BY_USER_ID": 943,
+      "CREATED_DATE": "2022-04-19T15:39:25.858809Z"
+    },
+    {
+      "SELLER_ID": 308,
+      "AMOUNT": 4572.61,
+      "REASON": "MarketingBonus",
+      "NOTES": "System profile balance contract milestone comment.",
+      "CREATED_BY_USER_ID": 605,
+      "CREATED_DATE": "2022-09-22T11:45:28.2712135Z"
+    },
+    {
+      "SELLER_ID": 738,
+      "AMOUNT": 4713.46,
+      "REASON": "MarketingBonus",
+      "NOTES": "Session panel invoice event archived payment batch reminder issue response archive.",
+      "CREATED_BY_USER_ID": 307,
+      "CREATED_DATE": "2024-10-09T18:54:38.8170893Z"
+    }
+  ]
+}

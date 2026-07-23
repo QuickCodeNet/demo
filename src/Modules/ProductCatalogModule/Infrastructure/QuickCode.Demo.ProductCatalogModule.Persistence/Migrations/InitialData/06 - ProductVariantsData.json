@@ -1,0 +1,46 @@
+﻿{
+  "PRODUCT_VARIANTS": [
+    {
+      "PRODUCT_ID": 3,
+      "SKU": "EXP-0001",
+      "PRICE": 1745.58,
+      "STOCK_QUANTITY": 69,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 5,
+      "SKU": "EXT-0002",
+      "PRICE": 745.83,
+      "STOCK_QUANTITY": 32,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 4,
+      "SKU": "CRI-0003",
+      "PRICE": 4361.72,
+      "STOCK_QUANTITY": 25,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 6,
+      "SKU": "REQ-0004",
+      "PRICE": 1633.43,
+      "STOCK_QUANTITY": 10,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 4,
+      "SKU": "LEG-0005",
+      "PRICE": 107.99,
+      "STOCK_QUANTITY": 47,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 6,
+      "SKU": "SPE-0006",
+      "PRICE": 3077.96,
+      "STOCK_QUANTITY": 82,
+      "IS_ACTIVE": false
+    }
+  ]
+}

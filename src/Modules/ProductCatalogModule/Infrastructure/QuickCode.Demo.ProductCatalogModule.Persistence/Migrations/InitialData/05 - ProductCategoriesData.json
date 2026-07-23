@@ -1,0 +1,28 @@
+﻿{
+  "PRODUCT_CATEGORIES": [
+    {
+      "PRODUCT_ID": 2,
+      "CATEGORY_ID": 2
+    },
+    {
+      "PRODUCT_ID": 4,
+      "CATEGORY_ID": 2
+    },
+    {
+      "PRODUCT_ID": 2,
+      "CATEGORY_ID": 1
+    },
+    {
+      "PRODUCT_ID": 4,
+      "CATEGORY_ID": 6
+    },
+    {
+      "PRODUCT_ID": 5,
+      "CATEGORY_ID": 3
+    },
+    {
+      "PRODUCT_ID": 2,
+      "CATEGORY_ID": 2
+    }
+  ]
+}

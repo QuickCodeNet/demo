@@ -1,0 +1,68 @@
+﻿{
+  "TRANSACTION_LEDGERS": [
+    {
+      "SELLER_ID": 305,
+      "TRANSACTION_TYPE": "Commission",
+      "AMOUNT": 394.64,
+      "REFERENCE_ID": "SEC-0001",
+      "DESCRIPTION": "Balance campaign schedule archive deadline catalog draft debit request queue.",
+      "TRANSACTION_DATE": "2024-02-24T19:10:39.9103679Z"
+    },
+    {
+      "SELLER_ID": 269,
+      "TRANSACTION_TYPE": "AdjustmentDebit",
+      "AMOUNT": 4680.28,
+      "REFERENCE_ID": "NAT-0002",
+      "DESCRIPTION": "Agenda vendor task dashboard request task.",
+      "TRANSACTION_DATE": "2025-12-13T20:46:12.9217609Z"
+    },
+    {
+      "SELLER_ID": 765,
+      "TRANSACTION_TYPE": "AdjustmentDebit",
+      "AMOUNT": 3913.72,
+      "REFERENCE_ID": "EXP-0003",
+      "DESCRIPTION": "Promo balance filter batch alpha approve dashboard config backup.",
+      "TRANSACTION_DATE": "2024-12-04T00:18:26.1553364Z"
+    },
+    {
+      "SELLER_ID": 932,
+      "TRANSACTION_TYPE": "AdjustmentCredit",
+      "AMOUNT": 4264.26,
+      "REFERENCE_ID": "LIT-0004",
+      "DESCRIPTION": "Milestone meeting customer filter retention request credit event order template template.",
+      "TRANSACTION_DATE": "2025-03-10T04:47:39.0585967Z"
+    },
+    {
+      "SELLER_ID": 472,
+      "TRANSACTION_TYPE": "Payout",
+      "AMOUNT": 4404.59,
+      "REFERENCE_ID": "COM-0005",
+      "DESCRIPTION": "Process conversion revenue agreement project vendor catalog profile publish.",
+      "TRANSACTION_DATE": "2024-10-07T23:41:33.8813964Z"
+    },
+    {
+      "SELLER_ID": 569,
+      "TRANSACTION_TYPE": "Refund",
+      "AMOUNT": 1791.65,
+      "REFERENCE_ID": "MIN-0006",
+      "DESCRIPTION": "Import export reminder status import issue catalog result process.",
+      "TRANSACTION_DATE": "2024-05-12T01:52:13.3751083Z"
+    },
+    {
+      "SELLER_ID": 233,
+      "TRANSACTION_TYPE": "Sale",
+      "AMOUNT": 1410.60,
+      "REFERENCE_ID": "NEW-0007",
+      "DESCRIPTION": "Message reminder document issue pending cohort notes reject alpha budget system.",
+      "TRANSACTION_DATE": "2024-08-04T09:57:53.1126609Z"
+    },
+    {
+      "SELLER_ID": 423,
+      "TRANSACTION_TYPE": "AdjustmentDebit",
+      "AMOUNT": 1302.56,
+      "REFERENCE_ID": "LOC-0008",
+      "DESCRIPTION": "Cost session service cost supplier batch product catalog batch result cohort.",
+      "TRANSACTION_DATE": "2024-04-05T19:00:44.1665059Z"
+    }
+  ]
+}

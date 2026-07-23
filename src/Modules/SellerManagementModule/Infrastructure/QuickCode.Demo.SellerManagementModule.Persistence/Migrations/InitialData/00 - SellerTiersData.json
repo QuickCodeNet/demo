@@ -1,0 +1,44 @@
+﻿{
+  "SELLER_TIERS": [
+    {
+      "NAME": "Ultimate Zone 1",
+      "MIN_SALES_VOLUME": 108.64,
+      "BENEFITS_DESCRIPTION": "Debit approve detail forecast system refund budget import cost task archived."
+    },
+    {
+      "NAME": "Standard Access 2",
+      "MIN_SALES_VOLUME": 659.85,
+      "BENEFITS_DESCRIPTION": "Supplier export contract deadline cohort discount invoice metric import archived."
+    },
+    {
+      "NAME": "Extended Area 3",
+      "MIN_SALES_VOLUME": 338.06,
+      "BENEFITS_DESCRIPTION": "Filter panel filter export review filter widget."
+    },
+    {
+      "NAME": "Compact Version 4",
+      "MIN_SALES_VOLUME": 340.79,
+      "BENEFITS_DESCRIPTION": "Detail debit alert milestone publish inventory event metric approve result backup."
+    },
+    {
+      "NAME": "Critical Style 5",
+      "MIN_SALES_VOLUME": 197.99,
+      "BENEFITS_DESCRIPTION": "Reminder account inactive queue shipment export."
+    },
+    {
+      "NAME": "Basic Scope 6",
+      "MIN_SALES_VOLUME": 550.98,
+      "BENEFITS_DESCRIPTION": "Account approve phase invoice contract approve pipeline revenue review discount value."
+    },
+    {
+      "NAME": "Legacy Category 7",
+      "MIN_SALES_VOLUME": 953.22,
+      "BENEFITS_DESCRIPTION": "Account revenue queue document churn message result customer."
+    },
+    {
+      "NAME": "Regional Rule 8",
+      "MIN_SALES_VOLUME": 288.06,
+      "BENEFITS_DESCRIPTION": "Conversion module milestone system review summary query."
+    }
+  ]
+}

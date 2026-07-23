@@ -1,0 +1,36 @@
+﻿{
+  "ATTRIBUTE_DEFINITIONS": [
+    {
+      "NAME": "Required Schema 1",
+      "CODE": "ADV-0001"
+    },
+    {
+      "NAME": "International Record 2",
+      "CODE": "INT-0002"
+    },
+    {
+      "NAME": "Advanced Record 3",
+      "CODE": "OPT-0003"
+    },
+    {
+      "NAME": "Modern Edition 4",
+      "CODE": "LEG-0004"
+    },
+    {
+      "NAME": "Critical Plan 5",
+      "CODE": "PRI-0005"
+    },
+    {
+      "NAME": "Special Mode 6",
+      "CODE": "DEF-0006"
+    },
+    {
+      "NAME": "Plus Theme 7",
+      "CODE": "LOC-0007"
+    },
+    {
+      "NAME": "Optional Target 8",
+      "CODE": "REC-0008"
+    }
+  ]
+}

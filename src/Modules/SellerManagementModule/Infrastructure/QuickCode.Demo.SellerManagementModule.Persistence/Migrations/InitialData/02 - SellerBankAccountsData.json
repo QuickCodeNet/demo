@@ -1,0 +1,52 @@
+﻿{
+  "SELLER_BANK_ACCOUNTS": [
+    {
+      "SELLER_ID": 5,
+      "BANK_NAME": "Secure Sector 1",
+      "ACCOUNT_HOLDER_NAME": "Verified Lot 1",
+      "IBAN": "Public Profile 1",
+      "IS_DEFAULT": false,
+      "IS_VERIFIED": false
+    },
+    {
+      "SELLER_ID": 5,
+      "BANK_NAME": "External Setting 2",
+      "ACCOUNT_HOLDER_NAME": "Internal Level 2",
+      "IBAN": "Professional Type 2",
+      "IS_DEFAULT": false,
+      "IS_VERIFIED": false
+    },
+    {
+      "SELLER_ID": 2,
+      "BANK_NAME": "Max Style 3",
+      "ACCOUNT_HOLDER_NAME": "Public State 3",
+      "IBAN": "Optional Method 3",
+      "IS_DEFAULT": false,
+      "IS_VERIFIED": true
+    },
+    {
+      "SELLER_ID": 6,
+      "BANK_NAME": "Optional Series 4",
+      "ACCOUNT_HOLDER_NAME": "International Edition 4",
+      "IBAN": "Custom Tier 4",
+      "IS_DEFAULT": true,
+      "IS_VERIFIED": true
+    },
+    {
+      "SELLER_ID": 1,
+      "BANK_NAME": "Featured Type 5",
+      "ACCOUNT_HOLDER_NAME": "Default Lot 5",
+      "IBAN": "Express Sector 5",
+      "IS_DEFAULT": false,
+      "IS_VERIFIED": false
+    },
+    {
+      "SELLER_ID": 4,
+      "BANK_NAME": "Updated Source 6",
+      "ACCOUNT_HOLDER_NAME": "Standard Protocol 6",
+      "IBAN": "Lite Option 6",
+      "IS_DEFAULT": false,
+      "IS_VERIFIED": true
+    }
+  ]
+}

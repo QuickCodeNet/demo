@@ -1,0 +1,28 @@
+﻿{
+  "ATTRIBUTE_VALUES": [
+    {
+      "ATTRIBUTE_ID": 5,
+      "VALUE": "Updated Record 1"
+    },
+    {
+      "ATTRIBUTE_ID": 4,
+      "VALUE": "Verified Area 2"
+    },
+    {
+      "ATTRIBUTE_ID": 4,
+      "VALUE": "Standard Build 3"
+    },
+    {
+      "ATTRIBUTE_ID": 3,
+      "VALUE": "Compact Schema 4"
+    },
+    {
+      "ATTRIBUTE_ID": 8,
+      "VALUE": "Private Layout 5"
+    },
+    {
+      "ATTRIBUTE_ID": 7,
+      "VALUE": "Express Area 6"
+    }
+  ]
+}

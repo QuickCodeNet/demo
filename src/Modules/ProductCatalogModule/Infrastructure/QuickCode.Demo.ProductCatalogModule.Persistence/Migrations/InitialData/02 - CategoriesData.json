@@ -1,0 +1,52 @@
+﻿{
+  "CATEGORIES": [
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Default Tier 1",
+      "SLUG": "Pro Release 1",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Internal Status 2",
+      "SLUG": "Popular Source 2",
+      "IS_ACTIVE": false
+    },
+    {
+      "PARENT_CATEGORY_ID": 2,
+      "NAME": "Mini Lot 3",
+      "SLUG": "Recommended Type 3",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 2,
+      "NAME": "Required Model 4",
+      "SLUG": "Standard Scope 4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 4,
+      "NAME": "Express Source 5",
+      "SLUG": "Custom Area 5",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 4,
+      "NAME": "Basic Layout 6",
+      "SLUG": "Public Permission 6",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Enterprise Policy 7",
+      "SLUG": "Preferred Level 7",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Priority Series 8",
+      "SLUG": "Recommended Version 8",
+      "IS_ACTIVE": true
+    }
+  ]
+}

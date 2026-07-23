@@ -1,0 +1,28 @@
+﻿{
+  "PRODUCT_VARIANT_ATTRIBUTES": [
+    {
+      "VARIANT_ID": 1,
+      "ATTRIBUTE_VALUE_ID": 5
+    },
+    {
+      "VARIANT_ID": 3,
+      "ATTRIBUTE_VALUE_ID": 1
+    },
+    {
+      "VARIANT_ID": 5,
+      "ATTRIBUTE_VALUE_ID": 2
+    },
+    {
+      "VARIANT_ID": 6,
+      "ATTRIBUTE_VALUE_ID": 3
+    },
+    {
+      "VARIANT_ID": 6,
+      "ATTRIBUTE_VALUE_ID": 2
+    },
+    {
+      "VARIANT_ID": 2,
+      "ATTRIBUTE_VALUE_ID": 2
+    }
+  ]
+}

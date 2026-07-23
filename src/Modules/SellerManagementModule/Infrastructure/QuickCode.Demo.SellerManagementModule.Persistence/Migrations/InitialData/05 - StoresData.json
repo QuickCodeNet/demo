@@ -1,0 +1,52 @@
+﻿{
+  "STORES": [
+    {
+      "SELLER_ID": 3,
+      "NAME": "Compact Release 1",
+      "SLUG": "Updated Model 1",
+      "DESCRIPTION": "Phase message inactive system draft panel meeting message budget.",
+      "LOGO_URL": "https://picsum.photos/seed/325/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "SELLER_ID": 3,
+      "NAME": "Modern Entity 2",
+      "SLUG": "Extended Target 2",
+      "DESCRIPTION": "Segment widget value panel agreement batch cycle reminder detail result request.",
+      "LOGO_URL": "https://picsum.photos/seed/743/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "SELLER_ID": 4,
+      "NAME": "Mini Format 3",
+      "SLUG": "General Option 3",
+      "DESCRIPTION": "Margin service ledger pending schedule review calendar metric contract.",
+      "LOGO_URL": "https://picsum.photos/seed/36/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "SELLER_ID": 5,
+      "NAME": "Pro Brand 4",
+      "SLUG": "Featured Setting 4",
+      "DESCRIPTION": "Review module filter budget ledger forecast query revenue review.",
+      "LOGO_URL": "https://picsum.photos/seed/437/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "SELLER_ID": 4,
+      "NAME": "Professional Rule 5",
+      "SLUG": "Regional Sector 5",
+      "DESCRIPTION": "Import workflow status discount deadline segment calendar.",
+      "LOGO_URL": "https://picsum.photos/seed/383/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "SELLER_ID": 4,
+      "NAME": "Pro Version 6",
+      "SLUG": "National Release 6",
+      "DESCRIPTION": "Ledger channel profit process workflow policy message document project archived service.",
+      "LOGO_URL": "https://picsum.photos/seed/101/400/300",
+      "IS_ACTIVE": true
+    }
+  ]
+}

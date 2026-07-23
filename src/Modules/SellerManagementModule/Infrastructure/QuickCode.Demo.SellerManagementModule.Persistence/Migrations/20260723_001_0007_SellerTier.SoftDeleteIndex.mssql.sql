@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.SELLER_TIERS', N'U') AND name = N'IX_SELLER_TIERS_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_SELLER_TIERS_IsDeleted] ON [dbo].[SELLER_TIERS] ([IsDeleted]);
+END

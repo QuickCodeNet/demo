@@ -1,0 +1,34 @@
+﻿{
+  "SELLER_COMMISSION_ASSIGNMENTS": [
+    {
+      "SELLER_ID": 1,
+      "COMMISSION_MODEL_ID": 2,
+      "EFFECTIVE_DATE": "2024-09-05T14:42:55.653217Z"
+    },
+    {
+      "SELLER_ID": 2,
+      "COMMISSION_MODEL_ID": 1,
+      "EFFECTIVE_DATE": "2024-07-11T03:30:15.2055694Z"
+    },
+    {
+      "SELLER_ID": 3,
+      "COMMISSION_MODEL_ID": 4,
+      "EFFECTIVE_DATE": "2024-02-15T05:02:32.0910496Z"
+    },
+    {
+      "SELLER_ID": 4,
+      "COMMISSION_MODEL_ID": 5,
+      "EFFECTIVE_DATE": "2024-07-29T03:25:05.1523727Z"
+    },
+    {
+      "SELLER_ID": 5,
+      "COMMISSION_MODEL_ID": 4,
+      "EFFECTIVE_DATE": "2025-12-08T08:34:49.8852924Z"
+    },
+    {
+      "SELLER_ID": 6,
+      "COMMISSION_MODEL_ID": 1,
+      "EFFECTIVE_DATE": "2025-04-01T20:49:28.9589596Z"
+    }
+  ]
+}

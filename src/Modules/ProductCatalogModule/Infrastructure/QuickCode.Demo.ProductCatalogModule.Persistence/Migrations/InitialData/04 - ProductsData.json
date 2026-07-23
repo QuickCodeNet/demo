@@ -1,0 +1,70 @@
+﻿{
+  "PRODUCTS": [
+    {
+      "SELLER_ID": 52,
+      "BRAND_ID": 5,
+      "PRIMARY_CATEGORY_ID": 4,
+      "SKU": "EXP-0001",
+      "NAME": "Verified Format 1",
+      "DESCRIPTION": "Approve policy margin retention summary service profit export meeting active.",
+      "STATUS": "Active",
+      "IS_FEATURED": false,
+      "CREATED_DATE": "2022-09-07T08:47:56.1093123Z"
+    },
+    {
+      "SELLER_ID": 229,
+      "BRAND_ID": 5,
+      "PRIMARY_CATEGORY_ID": 8,
+      "SKU": "CRI-0002",
+      "NAME": "Plus Revision 2",
+      "DESCRIPTION": "Catalog coupon document calendar contract system ticket promo message contract.",
+      "STATUS": "Active",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2022-04-07T17:06:40.6117094Z"
+    },
+    {
+      "SELLER_ID": 739,
+      "BRAND_ID": 3,
+      "PRIMARY_CATEGORY_ID": 2,
+      "SKU": "NAT-0003",
+      "NAME": "Advanced Edition 3",
+      "DESCRIPTION": "Cycle detail ticket ledger publish segment cost.",
+      "STATUS": "Draft",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2023-12-10T00:14:17.4700627Z"
+    },
+    {
+      "SELLER_ID": 199,
+      "BRAND_ID": 5,
+      "PRIMARY_CATEGORY_ID": 1,
+      "SKU": "COM-0004",
+      "NAME": "National Lot 4",
+      "DESCRIPTION": "Ticket schedule record batch module supplier milestone profile.",
+      "STATUS": "PendingApproval",
+      "IS_FEATURED": false,
+      "CREATED_DATE": "2023-06-20T00:22:47.9167411Z"
+    },
+    {
+      "SELLER_ID": 949,
+      "BRAND_ID": 4,
+      "PRIMARY_CATEGORY_ID": 4,
+      "SKU": "CUS-0005",
+      "NAME": "Archived Entity 5",
+      "DESCRIPTION": "Order approve segment request forecast value channel forecast publish module audience.",
+      "STATUS": "Draft",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2022-10-31T21:45:20.0306258Z"
+    },
+    {
+      "SELLER_ID": 601,
+      "BRAND_ID": 6,
+      "PRIMARY_CATEGORY_ID": 2,
+      "SKU": "LOC-0006",
+      "NAME": "Lite Source 6",
+      "DESCRIPTION": "Phase revenue schedule product account archive policy status order alpha.",
+      "STATUS": "Active",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2024-04-07T13:37:47.7230541Z"
+    }
+  ]
+}

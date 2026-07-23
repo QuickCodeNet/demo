@@ -1,0 +1,68 @@
+﻿{
+  "ORDER_STATUS_MANAGERS": [
+    {
+      "ORDER_ID": 36,
+      "PREVIOUS_STATUS": "PendingPayment",
+      "NEW_STATUS": "ReturnRequested",
+      "CHANGED_BY_USER_ID": 344,
+      "CHANGE_DATE": "2024-08-11T14:29:13.9901618Z",
+      "NOTES": "Message meeting review meeting profile retention vendor balance."
+    },
+    {
+      "ORDER_ID": 617,
+      "PREVIOUS_STATUS": "Completed",
+      "NEW_STATUS": "Delivered",
+      "CHANGED_BY_USER_ID": 287,
+      "CHANGE_DATE": "2024-08-30T00:21:01.1839464Z",
+      "NOTES": "Filter task discount deadline invoice metric config refund milestone."
+    },
+    {
+      "ORDER_ID": 212,
+      "PREVIOUS_STATUS": "Shipped",
+      "NEW_STATUS": "Shipped",
+      "CHANGED_BY_USER_ID": 487,
+      "CHANGE_DATE": "2024-08-22T21:21:02.2032076Z",
+      "NOTES": "Result config approve shipment milestone module promo inactive margin customer result."
+    },
+    {
+      "ORDER_ID": 767,
+      "PREVIOUS_STATUS": "Cancelled",
+      "NEW_STATUS": "Completed",
+      "CHANGED_BY_USER_ID": 868,
+      "CHANGE_DATE": "2024-08-15T02:23:53.1681843Z",
+      "NOTES": "Archived comment balance notes inventory pending request segment milestone issue supplier."
+    },
+    {
+      "ORDER_ID": 328,
+      "PREVIOUS_STATUS": "Processing",
+      "NEW_STATUS": "Cancelled",
+      "CHANGED_BY_USER_ID": 453,
+      "CHANGE_DATE": "2025-12-05T11:10:14.0590229Z",
+      "NOTES": "Profile reject revenue record revenue export pending phase promo module pipeline."
+    },
+    {
+      "ORDER_ID": 634,
+      "PREVIOUS_STATUS": "Processing",
+      "NEW_STATUS": "Processing",
+      "CHANGED_BY_USER_ID": 500,
+      "CHANGE_DATE": "2025-10-20T15:43:28.4825988Z",
+      "NOTES": "Batch queue archive profile invoice publish dashboard ticket alpha."
+    },
+    {
+      "ORDER_ID": 768,
+      "PREVIOUS_STATUS": "Completed",
+      "NEW_STATUS": "Processing",
+      "CHANGED_BY_USER_ID": 710,
+      "CHANGE_DATE": "2025-01-06T22:40:37.5901825Z",
+      "NOTES": "Ledger refund review agreement task batch."
+    },
+    {
+      "ORDER_ID": 638,
+      "PREVIOUS_STATUS": "Processing",
+      "NEW_STATUS": "Processing",
+      "CHANGED_BY_USER_ID": 921,
+      "CHANGE_DATE": "2024-09-28T06:35:41.7254692Z",
+      "NOTES": "Budget customer status message queue widget attachment margin."
+    }
+  ]
+}

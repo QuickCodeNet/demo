@@ -1,0 +1,52 @@
+﻿{
+  "RETURN_REQUESTS": [
+    {
+      "ORDER_ID": 7,
+      "ORDER_ITEM_ID": 5,
+      "REASON": "Basic State 1",
+      "STATUS": "Approved",
+      "REQUESTED_DATE": "2024-03-04T12:00:51.8188499Z",
+      "UPDATED_DATE": "2025-11-13T11:46:28.2479552Z"
+    },
+    {
+      "ORDER_ID": 8,
+      "ORDER_ITEM_ID": 5,
+      "REASON": "Shared Tier 2",
+      "STATUS": "Received",
+      "REQUESTED_DATE": "2024-11-24T20:35:44.4461512Z",
+      "UPDATED_DATE": "2024-08-09T23:36:23.9398466Z"
+    },
+    {
+      "ORDER_ID": 3,
+      "ORDER_ITEM_ID": 1,
+      "REASON": "Legacy Package 3",
+      "STATUS": "Approved",
+      "REQUESTED_DATE": "2025-11-02T16:00:29.357931Z",
+      "UPDATED_DATE": "2024-11-03T20:53:13.0944971Z"
+    },
+    {
+      "ORDER_ID": 1,
+      "ORDER_ITEM_ID": 2,
+      "REASON": "Professional Option 4",
+      "STATUS": "Rejected",
+      "REQUESTED_DATE": "2024-03-18T09:44:20.1110755Z",
+      "UPDATED_DATE": "2024-10-04T04:39:43.991288Z"
+    },
+    {
+      "ORDER_ID": 3,
+      "ORDER_ITEM_ID": 1,
+      "REASON": "Required Item 5",
+      "STATUS": "Rejected",
+      "REQUESTED_DATE": "2024-04-05T22:20:55.1475109Z",
+      "UPDATED_DATE": "2025-12-29T04:52:57.8557009Z"
+    },
+    {
+      "ORDER_ID": 5,
+      "ORDER_ITEM_ID": 2,
+      "REASON": "Custom Version 6",
+      "STATUS": "Approved",
+      "REQUESTED_DATE": "2024-02-09T07:42:48.2626734Z",
+      "UPDATED_DATE": "2024-05-18T19:49:59.4589065Z"
+    }
+  ]
+}

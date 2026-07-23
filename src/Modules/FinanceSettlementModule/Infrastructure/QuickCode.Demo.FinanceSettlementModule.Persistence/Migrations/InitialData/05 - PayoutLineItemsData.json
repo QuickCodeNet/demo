@@ -1,0 +1,46 @@
+﻿{
+  "PAYOUT_LINE_ITEMS": [
+    {
+      "PAYOUT_ID": 2,
+      "ORDER_ID": 117,
+      "ITEM_AMOUNT": 156.17,
+      "COMMISSION_AMOUNT": 4720.21,
+      "NET_AMOUNT": 1889.38
+    },
+    {
+      "PAYOUT_ID": 2,
+      "ORDER_ID": 19,
+      "ITEM_AMOUNT": 2453.63,
+      "COMMISSION_AMOUNT": 3582.44,
+      "NET_AMOUNT": 2782.87
+    },
+    {
+      "PAYOUT_ID": 3,
+      "ORDER_ID": 946,
+      "ITEM_AMOUNT": 24.42,
+      "COMMISSION_AMOUNT": 984.07,
+      "NET_AMOUNT": 2386.19
+    },
+    {
+      "PAYOUT_ID": 5,
+      "ORDER_ID": 549,
+      "ITEM_AMOUNT": 1126.60,
+      "COMMISSION_AMOUNT": 2970.87,
+      "NET_AMOUNT": 2560.47
+    },
+    {
+      "PAYOUT_ID": 6,
+      "ORDER_ID": 200,
+      "ITEM_AMOUNT": 3824.48,
+      "COMMISSION_AMOUNT": 3363.98,
+      "NET_AMOUNT": 4269.68
+    },
+    {
+      "PAYOUT_ID": 6,
+      "ORDER_ID": 709,
+      "ITEM_AMOUNT": 3219.46,
+      "COMMISSION_AMOUNT": 278.57,
+      "NET_AMOUNT": 759.55
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "ReverseProxy": {
+    "clusters": {
+      "auth-api": {
+        "clusterId": "auth-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-identity-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "identity-module-api": {
+        "clusterId": "identity-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-identity-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "finance-settlement-module-api": {
+        "clusterId": "finance-settlement-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-finance-settlement-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "order-management-module-api": {
+        "clusterId": "order-management-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-order-management-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "pricing-engine-module-api": {
+        "clusterId": "pricing-engine-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-pricing-engine-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "product-catalog-module-api": {
+        "clusterId": "product-catalog-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-product-catalog-module-821209474183.europe-west1.run.app"
+          }
+        }
+      },
+      "seller-management-module-api": {
+        "clusterId": "seller-management-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "https://demo-seller-management-module-821209474183.europe-west1.run.app"
+          }
+        }
+      }
+    },
+    "routes": {
+      "auth": {
+        "routeId": "auth",
+        "clusterId": "auth-api",
+        "authorizationPolicy": null,
+        "match": {
+          "path": "api/auth/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/auth/{**catch-all}"
+          }
+        ]
+      },
+      "identity-module": {
+        "routeId": "identity-module",
+        "clusterId": "identity-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/identity-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/identity-module/{**catch-all}"
+          }
+        ]
+      },
+      "finance-settlement-module": {
+        "routeId": "finance-settlement-module",
+        "clusterId": "finance-settlement-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/finance-settlement-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/finance-settlement-module/{**catch-all}"
+          }
+        ]
+      },
+      "order-management-module": {
+        "routeId": "order-management-module",
+        "clusterId": "order-management-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/order-management-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/order-management-module/{**catch-all}"
+          }
+        ]
+      },
+      "pricing-engine-module": {
+        "routeId": "pricing-engine-module",
+        "clusterId": "pricing-engine-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/pricing-engine-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/pricing-engine-module/{**catch-all}"
+          }
+        ]
+      },
+      "product-catalog-module": {
+        "routeId": "product-catalog-module",
+        "clusterId": "product-catalog-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/product-catalog-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/product-catalog-module/{**catch-all}"
+          }
+        ]
+      },
+      "seller-management-module": {
+        "routeId": "seller-management-module",
+        "clusterId": "seller-management-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/seller-management-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-gateway-821209474183.europe-west1.run.app",
+            "demo-gateway",
+            "quickcode-demo-gateway-api",
+            "demo-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/seller-management-module/{**catch-all}"
+          }
+        ]
+      }
+    }
+  }
+}

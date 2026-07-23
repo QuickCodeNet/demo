@@ -1,0 +1,58 @@
+﻿{
+  "SELLERS": [
+    {
+      "USER_ID": 379,
+      "COMPANY_NAME": "Kinetic Software",
+      "CONTACT_EMAIL": "george.dixon@test.org",
+      "CONTACT_PHONE": "+1-793-431-5004",
+      "STATUS": "Active",
+      "SELLER_TIER_ID": 1,
+      "JOINED_DATE": "2024-01-24T09:40:04.5895082Z"
+    },
+    {
+      "USER_ID": 96,
+      "COMPANY_NAME": "Falcon Partners",
+      "CONTACT_EMAIL": "catherine.rivera@mail.com",
+      "CONTACT_PHONE": "+1-671-679-7548",
+      "STATUS": "Rejected",
+      "SELLER_TIER_ID": 3,
+      "JOINED_DATE": "2024-08-08T12:49:41.0976317Z"
+    },
+    {
+      "USER_ID": 389,
+      "COMPANY_NAME": "Globex Technologies",
+      "CONTACT_EMAIL": "doris.walker@contoso.test",
+      "CONTACT_PHONE": "+1-871-589-5583",
+      "STATUS": "Suspended",
+      "SELLER_TIER_ID": 5,
+      "JOINED_DATE": "2025-04-25T11:11:24.3351656Z"
+    },
+    {
+      "USER_ID": 272,
+      "COMPANY_NAME": "Riverbend Co",
+      "CONTACT_EMAIL": "michelle.hunter@northwind.example",
+      "CONTACT_PHONE": "+1-216-940-4685",
+      "STATUS": "Rejected",
+      "SELLER_TIER_ID": 2,
+      "JOINED_DATE": "2025-02-01T01:56:59.8998469Z"
+    },
+    {
+      "USER_ID": 490,
+      "COMPANY_NAME": "Globex Software",
+      "CONTACT_EMAIL": "brittany.gray@northwind.example",
+      "CONTACT_PHONE": "+1-780-755-4833",
+      "STATUS": "Suspended",
+      "SELLER_TIER_ID": 7,
+      "JOINED_DATE": "2024-06-07T18:26:12.9371037Z"
+    },
+    {
+      "USER_ID": 554,
+      "COMPANY_NAME": "Highline Partners",
+      "CONTACT_EMAIL": "jerry.jenkins@demo.io",
+      "CONTACT_PHONE": "+1-617-603-1501",
+      "STATUS": "Rejected",
+      "SELLER_TIER_ID": 7,
+      "JOINED_DATE": "2025-06-14T02:46:21.0905055Z"
+    }
+  ]
+}

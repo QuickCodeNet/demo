@@ -1,0 +1,58 @@
+﻿{
+  "SELLER_DOCUMENTS": [
+    {
+      "SELLER_ID": 5,
+      "DOCUMENT_TYPE": "BusinessRegistration",
+      "FILE_URL": "https://www.team.local",
+      "STATUS": "Pending",
+      "UPLOADED_DATE": "2024-10-03T13:55:34.354646Z",
+      "REVIEWED_DATE": "2025-11-01T12:27:17.0045796Z",
+      "REJECTION_REASON": "Recommended Category 1"
+    },
+    {
+      "SELLER_ID": 2,
+      "DOCUMENT_TYPE": "Identity",
+      "FILE_URL": "https://www.inbox.dev",
+      "STATUS": "Verified",
+      "UPLOADED_DATE": "2025-04-18T18:44:12.2091419Z",
+      "REVIEWED_DATE": "2024-05-11T03:36:30.6813845Z",
+      "REJECTION_REASON": "Premium Channel 2"
+    },
+    {
+      "SELLER_ID": 6,
+      "DOCUMENT_TYPE": "BankStatement",
+      "FILE_URL": "https://www.contoso.test",
+      "STATUS": "Pending",
+      "UPLOADED_DATE": "2024-01-17T12:25:05.8106824Z",
+      "REVIEWED_DATE": "2025-07-20T07:14:33.6622082Z",
+      "REJECTION_REASON": "New Format 3"
+    },
+    {
+      "SELLER_ID": 5,
+      "DOCUMENT_TYPE": "BankStatement",
+      "FILE_URL": "https://www.northwind.example",
+      "STATUS": "Rejected",
+      "UPLOADED_DATE": "2025-08-29T16:45:44.1536677Z",
+      "REVIEWED_DATE": "2025-07-23T21:06:00.3732164Z",
+      "REJECTION_REASON": "Basic Scope 4"
+    },
+    {
+      "SELLER_ID": 1,
+      "DOCUMENT_TYPE": "Identity",
+      "FILE_URL": "https://www.inbox.dev",
+      "STATUS": "Rejected",
+      "UPLOADED_DATE": "2025-02-24T03:34:08.5182449Z",
+      "REVIEWED_DATE": "2025-12-11T04:46:25.1762777Z",
+      "REJECTION_REASON": "Enterprise Class 5"
+    },
+    {
+      "SELLER_ID": 1,
+      "DOCUMENT_TYPE": "TaxId",
+      "FILE_URL": "https://www.fabrikam.example",
+      "STATUS": "Pending",
+      "UPLOADED_DATE": "2024-10-10T16:37:23.6204339Z",
+      "REVIEWED_DATE": "2025-12-21T04:20:50.0618918Z",
+      "REJECTION_REASON": "Recommended Revision 6"
+    }
+  ]
+}

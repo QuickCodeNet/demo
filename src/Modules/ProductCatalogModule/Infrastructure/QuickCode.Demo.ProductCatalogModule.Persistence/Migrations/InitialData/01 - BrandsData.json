@@ -1,0 +1,44 @@
+﻿{
+  "BRANDS": [
+    {
+      "NAME": "Verified Rule 1",
+      "LOGO_URL": "https://picsum.photos/seed/902/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Required Group 2",
+      "LOGO_URL": "https://picsum.photos/seed/704/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Legacy Region 3",
+      "LOGO_URL": "https://picsum.photos/seed/290/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Priority Option 4",
+      "LOGO_URL": "https://picsum.photos/seed/547/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Pro Preference 5",
+      "LOGO_URL": "https://picsum.photos/seed/268/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Secondary Template 6",
+      "LOGO_URL": "https://picsum.photos/seed/636/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Internal Template 7",
+      "LOGO_URL": "https://picsum.photos/seed/616/400/300",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Priority Batch 8",
+      "LOGO_URL": "https://picsum.photos/seed/990/400/300",
+      "IS_ACTIVE": true
+    }
+  ]
+}

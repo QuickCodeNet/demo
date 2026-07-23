@@ -1,0 +1,76 @@
+﻿{
+  "ORDERS": [
+    {
+      "CUSTOMER_ID": 481,
+      "SELLER_ID": 409,
+      "ORDER_NUMBER": "Featured Rule 1",
+      "TOTAL_AMOUNT": 1930.63,
+      "SHIPPING_ADDRESS": "1674 Third Path",
+      "STATUS": "Shipped",
+      "ORDER_DATE": "2024-01-08T23:28:55.6728351Z"
+    },
+    {
+      "CUSTOMER_ID": 609,
+      "SELLER_ID": 94,
+      "ORDER_NUMBER": "Plus Rule 2",
+      "TOTAL_AMOUNT": 4473.20,
+      "SHIPPING_ADDRESS": "1111 Vineyard Terrace",
+      "STATUS": "Delivered",
+      "ORDER_DATE": "2024-05-13T03:51:41.1029203Z"
+    },
+    {
+      "CUSTOMER_ID": 216,
+      "SELLER_ID": 953,
+      "ORDER_NUMBER": "Default Tier 3",
+      "TOTAL_AMOUNT": 1236.08,
+      "SHIPPING_ADDRESS": "5060 Bridge Alley",
+      "STATUS": "ReturnRequested",
+      "ORDER_DATE": "2025-07-08T15:11:10.6955225Z"
+    },
+    {
+      "CUSTOMER_ID": 183,
+      "SELLER_ID": 326,
+      "ORDER_NUMBER": "Professional Entity 4",
+      "TOTAL_AMOUNT": 976.12,
+      "SHIPPING_ADDRESS": "4707 North Path",
+      "STATUS": "Completed",
+      "ORDER_DATE": "2024-05-14T20:18:54.6005318Z"
+    },
+    {
+      "CUSTOMER_ID": 670,
+      "SELLER_ID": 396,
+      "ORDER_NUMBER": "Verified Package 5",
+      "TOTAL_AMOUNT": 4316.67,
+      "SHIPPING_ADDRESS": "9891 Grant Way",
+      "STATUS": "Cancelled",
+      "ORDER_DATE": "2025-04-02T05:04:18.0739791Z"
+    },
+    {
+      "CUSTOMER_ID": 453,
+      "SELLER_ID": 723,
+      "ORDER_NUMBER": "General Profile 6",
+      "TOTAL_AMOUNT": 166.25,
+      "SHIPPING_ADDRESS": "5280 Aspen Loop",
+      "STATUS": "Completed",
+      "ORDER_DATE": "2025-10-05T05:10:21.0673031Z"
+    },
+    {
+      "CUSTOMER_ID": 567,
+      "SELLER_ID": 27,
+      "ORDER_NUMBER": "Featured Schema 7",
+      "TOTAL_AMOUNT": 4143.96,
+      "SHIPPING_ADDRESS": "2846 Depot Boulevard",
+      "STATUS": "Completed",
+      "ORDER_DATE": "2024-11-06T03:15:16.5697673Z"
+    },
+    {
+      "CUSTOMER_ID": 410,
+      "SELLER_ID": 53,
+      "ORDER_NUMBER": "Classic Scope 8",
+      "TOTAL_AMOUNT": 2563.37,
+      "SHIPPING_ADDRESS": "8206 Franklin Plaza",
+      "STATUS": "Processing",
+      "ORDER_DATE": "2024-07-07T00:00:31.1480507Z"
+    }
+  ]
+}
