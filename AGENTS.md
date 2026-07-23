@@ -17,14 +17,17 @@ Regenerated on `quickcode generate`:
 | `*.qc.cs` | QuickCode template scaffold (Program, DI bootstrap, …) |
 | `*.g.sql` | Generated SQL scripts |
 | `Views/Generated/**` | Generated portal Razor views |
+| `Views/Shared/**`, `Views/Login/**`, `Views/Home/**`, `Views/IdentityModule/**`, `Views/_View*.cshtml` | Portal shell from TemplateBase (layouts, login, shared partials) — **overwritten on regen** |
+| `wwwroot/css/portal-entity-form.css`, `wwwroot/css/site.css`, `wwwroot/js/site.js` | Portal shell assets — **overwritten on regen** |
 
 ### User-owned — ALWAYS put new work here
 
 **Any plain `.cs` / `.cshtml` file that is NOT in the table above.**
 
-- Regen **never overwrites** existing user `.cs` files.
+- Regen **never overwrites** existing user `.cs` files (except portal shell paths in the table).
 - Regen **never deletes** user files.
 - Use **new files** with normal names (`OrderPricingService.cs`, not `*.g.cs` / `*.qc.cs`).
+- Custom portal pages: `Views/{YourModule}/…` — **not** `Views/Shared` / `Views/Login` (those reset on regen).
 
 ---
 
@@ -215,7 +218,7 @@ Edit `src/dbml_files/OrderModule.dbml` → add table/query Note → `quickcode m
 ## 5. Hooks & CI
 
 - Pre-commit: `.githooks/pre-commit` — run `git config core.hooksPath .githooks`
-- CI blocks manual edits to `*.g.cs`, `*.qc.cs`, `*.g.sql`, `Views/Generated/**`
+- CI blocks manual edits to `*.g.cs`, `*.qc.cs`, `*.g.sql`, `Views/Generated/**` (portal shell views are overwritten on regen but not CI-blocked)
 
 ---
 
