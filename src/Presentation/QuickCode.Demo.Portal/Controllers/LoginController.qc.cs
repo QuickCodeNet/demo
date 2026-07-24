@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using QuickCode.Demo.Infrastructure.Integration.Nswag;
+using QuickCode.Demo.Infrastructure.Integration.Helpers;
 using QuickCode.Demo.Infrastructure.Integration.Models;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using QuickCode.Demo.Portal.Models;
@@ -75,38 +76,44 @@ namespace QuickCode.Demo.Portal.Controllers
                 (usersClient as ClientBase)!.SetBearerToken(response.AccessToken);
                 var userData = await usersClient.AspNetUsersGetUserAsync(model.Username);
                 HttpContextAccessor.HttpContext!.Session.Clear();
+                PortalApiTokenStore.SetTokens(
+                    HttpContextAccessor.HttpContext.Session,
+                    response.AccessToken,
+                    response.RefreshToken,
+                    response.ExpiresIn);
 
                 var identity = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.NameIdentifier, $"{userData.Id}"),
                     new Claim(ClaimTypes.Name, $"{userData.FirstName} {userData.LastName}"),
                     new Claim(ClaimTypes.Email, userData.Email),
-                    new Claim(ClaimTypes.GroupSid, $"{userData.PermissionGroupName}"),
-                    new Claim("QuickCodeApiToken", response.AccessToken),
-                    new Claim("QuickCodeApiTokenExpiresIn", response.ExpiresIn.ToString()),
-                    new Claim("RefreshToken", response.RefreshToken)
+                    new Claim(ClaimTypes.GroupSid, $"{userData.PermissionGroupName}")
 
                 }, CookieAuthenticationDefaults.AuthenticationScheme);
 
                 var userPrincipal = new ClaimsPrincipal(identity);
+                var authProperties = new AuthenticationProperties
+                {
+                    IsPersistent = model.RememberMe,
+                    AllowRefresh = true,
+                    ExpiresUtc = model.RememberMe ? DateTimeOffset.UtcNow.AddDays(30) : DateTimeOffset.UtcNow.AddMinutes(30)
+                };
+                PortalApiTokenStore.ApplyTokensToProperties(
+                    authProperties,
+                    response.AccessToken,
+                    response.RefreshToken,
+                    response.ExpiresIn);
 
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, userPrincipal,
-                    new AuthenticationProperties
-                    {
-                        IsPersistent = model.RememberMe,
-                        AllowRefresh = true,
-                        ExpiresUtc = model.RememberMe ? DateTimeOffset.UtcNow.AddDays(30) : DateTimeOffset.UtcNow.AddMinutes(30)
-                    });
+                    authProperties);
                 
 
-                if (String.IsNullOrEmpty(model.ReturnUrl))
+                if (string.IsNullOrEmpty(model.ReturnUrl) || !Url.IsLocalUrl(model.ReturnUrl))
                 {
                     return RedirectToAction("Index", "Home");
                 }
-                else
-                {
-                    return Redirect(model.ReturnUrl);
-                }
+
+                return Redirect(model.ReturnUrl);
             }
             catch (QuickCodeSwaggerException ex)
             {

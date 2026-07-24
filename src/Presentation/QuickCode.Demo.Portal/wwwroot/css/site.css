@@ -848,3 +848,27 @@ footer.sticky-footer.portal-sticky-footer .copyright span {
     margin: 0;
     color: #5a5c69;
 }
+
+/* Portal toast close — avoid themed .btn styles */
+.portal-toast-close {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+    margin: 0 0.5rem 0 auto;
+    opacity: 0.85;
+    padding: 0.35rem 0.45rem;
+}
+
+.portal-toast-close:hover,
+.portal-toast-close:focus {
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+    opacity: 1;
+    outline: none;
+}

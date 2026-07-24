@@ -501,6 +501,7 @@ namespace QuickCode.Demo.Portal.Controllers
         public object GetValue(Type type, object val)
         {
             Type t = Nullable.GetUnderlyingType(type) ?? type;
+            var isNullable = Nullable.GetUnderlyingType(type) != null;
             if (val != null && typeof(bool) == t && val.ToString() == "true,false")
             {
                 return true;
@@ -513,10 +514,59 @@ namespace QuickCode.Demo.Portal.Controllers
 
             if (val.GetType() == typeof(string) && t != typeof(string) && val.ToString() == string.Empty)
             {
+                if (t == typeof(DateTime) && !isNullable)
+                    return DateTime.UtcNow;
                 return null;
             }
 
+            if (t == typeof(DateTime) && val is string dateText)
+            {
+                if (TryParsePortalDateTime(dateText, out var parsed))
+                {
+                    if (parsed.Year < 1753)
+                        return isNullable ? null : DateTime.UtcNow;
+                    return parsed;
+                }
+
+                if (string.IsNullOrWhiteSpace(dateText))
+                    return isNullable ? null : DateTime.UtcNow;
+            }
+
+            if (val is DateTime dt && dt.Year < 1753)
+                return isNullable ? null : DateTime.UtcNow;
+
             return (val == null) ? null : Convert.ChangeType(val, t);
+        }
+
+        private static bool TryParsePortalDateTime(string text, out DateTime parsed)
+        {
+            parsed = default;
+            if (string.IsNullOrWhiteSpace(text))
+                return false;
+
+            string[] formats =
+            {
+                "d.M.yyyy H:mm",
+                "dd.MM.yyyy HH:mm",
+                "d.M.yyyy HH:mm",
+                "dd.MM.yyyy H:mm",
+                "yyyy-MM-ddTHH:mm:ss",
+                "yyyy-MM-dd HH:mm:ss",
+                "yyyy-MM-ddTHH:mm",
+                "yyyy-MM-dd HH:mm"
+            };
+
+            return DateTime.TryParseExact(
+                       text.Trim(),
+                       formats,
+                       System.Globalization.CultureInfo.InvariantCulture,
+                       System.Globalization.DateTimeStyles.AllowWhiteSpaces,
+                       out parsed)
+                   || DateTime.TryParse(
+                       text.Trim(),
+                       System.Globalization.CultureInfo.CurrentCulture,
+                       System.Globalization.DateTimeStyles.AllowWhiteSpaces,
+                       out parsed);
         }
 
         public object GetValue(object value, string propertyName)

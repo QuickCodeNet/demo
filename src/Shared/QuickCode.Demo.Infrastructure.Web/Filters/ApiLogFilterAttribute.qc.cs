@@ -12,6 +12,7 @@ using System.Net.Http;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using QuickCode.Demo.Infrastructure.Integration.Helpers;
 using QuickCode.Demo.Infrastructure.Web.Extensions;
 using Serilog;
 using Serilog.Events;
@@ -35,10 +36,11 @@ public class ApiLogFilterAttribute : Attribute, IAsyncActionFilter
             HostName = context.HttpContext.Request.Path
         };
         
-        if (context.HttpContext!.User.Identity!.IsAuthenticated && context.HttpContext!.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+        if (context.HttpContext!.User.Identity!.IsAuthenticated &&
+            PortalApiTokenStore.HasAccessToken(context.HttpContext))
         {
-            var claimAuthToken = context.HttpContext!.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
-            context.HttpContext.Request.Headers.Authorization = $"Bearer {claimAuthToken.Value}";
+            var accessToken = PortalApiTokenStore.GetAccessToken(context.HttpContext);
+            context.HttpContext.Request.Headers.Authorization = $"Bearer {accessToken}";
         }
         
         var result = await next();

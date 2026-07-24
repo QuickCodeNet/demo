@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using QuickCode.Demo.Infrastructure.Integration.Helpers;
 using QuickCode.Demo.Infrastructure.Integration.Nswag;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using QuickCode.Demo.Portal.Helpers;
@@ -65,8 +66,8 @@ public class PortalBreadcrumbViewComponent : ViewComponent
         if (httpContext?.User.Identity?.IsAuthenticated != true)
             return;
 
-        var tokenClaim = httpContext.User.Claims.FirstOrDefault(i => i.Type.Equals("QuickCodeApiToken"));
-        if (tokenClaim != null)
-            ((ClientBase)_portalMenusClient).SetBearerToken(tokenClaim.Value);
+        var accessToken = PortalApiTokenStore.GetAccessToken(httpContext);
+        if (!string.IsNullOrEmpty(accessToken))
+            ((ClientBase)_portalMenusClient).SetBearerToken(accessToken);
     }
 }

@@ -1822,9 +1822,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
         [System.Text.Json.Serialization.JsonPropertyName("normalizedName")]
         public string NormalizedName { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
-
         public string ToJson()
         {
 
@@ -1924,15 +1921,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
         [System.Text.Json.Serialization.JsonPropertyName("emailConfirmed")]
         public bool EmailConfirmed { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("passwordHash")]
-        public string PasswordHash { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("securityStamp")]
-        public string SecurityStamp { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
-
         [System.Text.Json.Serialization.JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }
 
@@ -2007,15 +1995,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
 
         [System.Text.Json.Serialization.JsonPropertyName("emailConfirmed")]
         public bool EmailConfirmed { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("passwordHash")]
-        public string PasswordHash { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("securityStamp")]
-        public string SecurityStamp { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }
@@ -2092,15 +2071,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
         [System.Text.Json.Serialization.JsonPropertyName("emailConfirmed")]
         public bool EmailConfirmed { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("passwordHash")]
-        public string PasswordHash { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("securityStamp")]
-        public string SecurityStamp { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
-
         [System.Text.Json.Serialization.JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }
 
@@ -2176,15 +2146,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
         [System.Text.Json.Serialization.JsonPropertyName("emailConfirmed")]
         public bool EmailConfirmed { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("passwordHash")]
-        public string PasswordHash { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("securityStamp")]
-        public string SecurityStamp { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
-
         [System.Text.Json.Serialization.JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }
 
@@ -2259,15 +2220,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModule
 
         [System.Text.Json.Serialization.JsonPropertyName("emailConfirmed")]
         public bool EmailConfirmed { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("passwordHash")]
-        public string PasswordHash { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("securityStamp")]
-        public string SecurityStamp { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("concurrencyStamp")]
-        public string ConcurrencyStamp { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }

@@ -9,6 +9,7 @@ TempData["Title"] = title;
 }
 <div class="container-fluid" IsPageAvailable="true">
     <form method="post" id="formList">
+        @Html.AntiForgeryToken()
         <div class="card text shadow mb-4">
 
             <div class="card-body">

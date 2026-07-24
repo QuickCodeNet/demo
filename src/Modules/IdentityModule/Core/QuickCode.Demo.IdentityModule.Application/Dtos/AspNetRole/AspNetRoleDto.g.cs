@@ -16,6 +16,5 @@ namespace QuickCode.Demo.IdentityModule.Application.Dtos.AspNetRole
         public string Id { get; init; }
         public string Name { get; init; }
         public string? NormalizedName { get; init; }
-        public string? ConcurrencyStamp { get; init; }
     }
 }

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using QuickCode.Demo.Infrastructure.Integration.Helpers;
 using QuickCode.Demo.Infrastructure.Integration.Nswag;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using QuickCode.Demo.Portal.Controllers;
@@ -32,14 +33,11 @@ namespace QuickCode.Demo.Portal.Helpers
         {
             if (httpContextAccessor.HttpContext!.User.Identity!.IsAuthenticated)
             {
-                if (httpContextAccessor.HttpContext!.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+                var accessToken = PortalApiTokenStore.GetAccessToken(httpContextAccessor.HttpContext);
+                if (!string.IsNullOrEmpty(accessToken))
                 {
-                    var claimAuthToken =
-                        httpContextAccessor.HttpContext!.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
-       
-    
-                    ((ClientBase)portalPageDefinitionsClient).SetBearerToken(claimAuthToken!.Value);
-                    ((ClientBase)portalPageAccessGrantClient).SetBearerToken(claimAuthToken!.Value);
+                    ((ClientBase)portalPageDefinitionsClient).SetBearerToken(accessToken);
+                    ((ClientBase)portalPageAccessGrantClient).SetBearerToken(accessToken);
                 }
             }
             return httpContextAccessor;

@@ -25,14 +25,12 @@ internal static class AspNetRoleCrudSqlBindings
     {
         ("Id", nameof(AspNetRoleDto.Id)),
         ("Name", nameof(AspNetRoleDto.Name)),
-        ("NormalizedName", nameof(AspNetRoleDto.NormalizedName)),
-        ("ConcurrencyStamp", nameof(AspNetRoleDto.ConcurrencyStamp))
+        ("NormalizedName", nameof(AspNetRoleDto.NormalizedName))
     };
     public static readonly (string SqlColumnName, string DtoPropertyName)[] Update = new[]
     {
         ("Name", nameof(AspNetRoleDto.Name)),
         ("NormalizedName", nameof(AspNetRoleDto.NormalizedName)),
-        ("ConcurrencyStamp", nameof(AspNetRoleDto.ConcurrencyStamp)),
         ("Id", nameof(AspNetRoleDto.Id))
     };
     public static readonly (string SqlColumnName, string DtoPropertyName)[] Delete = new[]

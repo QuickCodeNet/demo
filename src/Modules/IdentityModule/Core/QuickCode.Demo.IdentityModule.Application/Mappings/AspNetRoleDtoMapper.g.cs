@@ -26,8 +26,7 @@ namespace QuickCode.Demo.IdentityModule.Application.Mappings
             {
                 Id = model.Id,
                 Name = model.Name,
-                NormalizedName = model.NormalizedName,
-                ConcurrencyStamp = model.ConcurrencyStamp
+                NormalizedName = model.NormalizedName
             };
         }
 
@@ -37,8 +36,7 @@ namespace QuickCode.Demo.IdentityModule.Application.Mappings
             {
                 Id = model.Id,
                 Name = model.Name,
-                NormalizedName = model.NormalizedName,
-                ConcurrencyStamp = model.ConcurrencyStamp
+                NormalizedName = model.NormalizedName
             };
         }
     }

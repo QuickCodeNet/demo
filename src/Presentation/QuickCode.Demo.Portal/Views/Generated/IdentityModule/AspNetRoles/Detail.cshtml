@@ -8,7 +8,8 @@
     <div class="modal-body">
      <div class="card" IsPageAvailable="true">
         <div class="card-body">
-            <form bc-label-width-sm="4" bc-horizontal="true" id="formDetail" action="Detail" class="needs-validation portal-entity-form" bc-validation="true">
+            <form bc-label-width-sm="4" bc-horizontal="true" id="formDetail" action="Detail" method="post" class="needs-validation portal-entity-form" bc-validation="true">
+                @Html.AntiForgeryToken()
                 <form-group>
 	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
@@ -19,10 +20,6 @@
 
 <form-group>
 	<input type="text" bc-label="Normalized Name" asp-for="SelectedItem.NormalizedName" bc-static="true" />
-</form-group>
-
-<form-group>
-	<input type="text" bc-label="Concurrency Stamp" asp-for="SelectedItem.ConcurrencyStamp" bc-static="true" />
 </form-group>
 
 
@@ -181,6 +178,17 @@
                         $("#actionResultDiv").show();
                         $("#actionResultMessage").css('color', 'green');
                         $("#actionResultMessage").text('Successfully Completed');
+
+                        var operation = ($('#formDetail').closest('.portal-entity-modal').attr('data-operation')
+                            || 'Detail'
+                            || '').toString();
+                        var successMessage = (typeof getPortalCrudSuccessMessage === 'function')
+                            ? getPortalCrudSuccessMessage(operation)
+                            : 'Operation completed successfully.';
+                        if (typeof queuePortalToast === 'function') {
+                            queuePortalToast(successMessage, 'success');
+                        }
+
                         document.location.reload(true);
                         setTimeout(function () { $('#itemDetailsModal').modal('toggle'); }, 1100);
                     },
@@ -195,6 +203,9 @@
                             ? xhr.responseJSON.message
                             : (error || desc || 'Request failed');
                         $("#actionResultMessage").text(msg);
+                        if (typeof showPortalToast === 'function') {
+                            showPortalToast(msg, 'error');
+                        }
                     }
                 });  
             }

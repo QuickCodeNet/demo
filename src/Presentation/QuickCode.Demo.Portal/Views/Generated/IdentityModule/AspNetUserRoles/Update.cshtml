@@ -8,7 +8,8 @@
     <div class="modal-body">
      <div class="card" IsPageAvailable="true">
         <div class="card-body">
-            <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" class="needs-validation portal-entity-form" bc-validation="true">
+            <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
+                @Html.AntiForgeryToken()
                 <form-group>
 	<select bc-label="User Id" class="form-select searchable-select" asp-for="SelectedItem.UserId" asp-items="@Model.GetComboBoxList("AspNetUsers", Model.SelectedItem.UserId)"  data-placeholder="Search for UserId..."></select>
 </form-group>
@@ -175,6 +176,17 @@
                         $("#actionResultDiv").show();
                         $("#actionResultMessage").css('color', 'green');
                         $("#actionResultMessage").text('Successfully Completed');
+
+                        var operation = ($('#formUpdate').closest('.portal-entity-modal').attr('data-operation')
+                            || 'Update'
+                            || '').toString();
+                        var successMessage = (typeof getPortalCrudSuccessMessage === 'function')
+                            ? getPortalCrudSuccessMessage(operation)
+                            : 'Operation completed successfully.';
+                        if (typeof queuePortalToast === 'function') {
+                            queuePortalToast(successMessage, 'success');
+                        }
+
                         document.location.reload(true);
                         setTimeout(function () { $('#itemDetailsModal').modal('toggle'); }, 1100);
                     },
@@ -189,6 +201,9 @@
                             ? xhr.responseJSON.message
                             : (error || desc || 'Request failed');
                         $("#actionResultMessage").text(msg);
+                        if (typeof showPortalToast === 'function') {
+                            showPortalToast(msg, 'error');
+                        }
                     }
                 });  
             }

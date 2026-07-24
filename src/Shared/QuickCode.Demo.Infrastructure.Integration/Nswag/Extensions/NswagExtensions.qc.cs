@@ -161,12 +161,11 @@ namespace QuickCode.Demo.Infrastructure.Integration.Nswag.Extensions
 
             if (httpContextAccessor.HttpContext!.User.Identity!.IsAuthenticated)
             {
-                if (httpContextAccessor.HttpContext!.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+                var accessToken = PortalApiTokenStore.GetAccessToken(httpContextAccessor.HttpContext);
+                if (!string.IsNullOrEmpty(accessToken))
                 {
-                    var claimAuthToken =
-                        httpContextAccessor.HttpContext!.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
                     client.DefaultRequestHeaders.Authorization =
-                        new AuthenticationHeaderValue("Bearer", claimAuthToken!.Value);
+                        new AuthenticationHeaderValue("Bearer", accessToken);
                 }
 
             }

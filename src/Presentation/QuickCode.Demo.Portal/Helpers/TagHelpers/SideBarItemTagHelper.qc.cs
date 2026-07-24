@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using QuickCode.Demo.Infrastructure.Integration.Helpers;
 using QuickCode.Demo.Infrastructure.Integration.Nswag;
 using QuickCode.Demo.Infrastructure.Integration.Nswag.Clients.IdentityModuleApi.Contracts;
 using QuickCode.Demo.Portal.Helpers;
@@ -40,13 +41,11 @@ namespace QuickCode.Demo.Portal.TagHelpers
 
             if (httpContextAccessor.HttpContext!.User.Identity!.IsAuthenticated)
             {
-                if (httpContextAccessor.HttpContext!.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+                var accessToken = PortalApiTokenStore.GetAccessToken(httpContextAccessor.HttpContext);
+                if (!string.IsNullOrEmpty(accessToken))
                 {
-                    var claimAuthToken =
-                        httpContextAccessor.HttpContext!.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
-                    //httpContextAccessor.HttpContext.Request.Headers.Authorization = $"Bearer {claimAuthToken!.Value}";
-                    ((ClientBase)this.portalMenusClient).SetBearerToken(claimAuthToken!.Value);
-                    ((ClientBase)this.portalPageDefinitionsClient).SetBearerToken(claimAuthToken!.Value);
+                    ((ClientBase)this.portalMenusClient).SetBearerToken(accessToken);
+                    ((ClientBase)this.portalPageDefinitionsClient).SetBearerToken(accessToken);
                 }
             }
         }

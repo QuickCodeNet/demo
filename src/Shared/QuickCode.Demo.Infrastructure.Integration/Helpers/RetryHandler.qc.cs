@@ -5,11 +5,11 @@
 // </auto-generated>
 using System.Net;
 using System.Net.Http.Headers;
-using System.Security.Claims;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.BearerToken;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity.Data;
 
 namespace QuickCode.Demo.Infrastructure.Integration.Helpers;
@@ -17,9 +17,6 @@ namespace QuickCode.Demo.Infrastructure.Integration.Helpers;
 public class RetryHandler : DelegatingHandler
 {
     public const string TokenRefreshHttpClientName = "TokenRefresh";
-
-    private static readonly string[] TokenClaimTypes =
-        ["QuickCodeApiToken", "QuickCodeApiTokenExpiresIn", "RefreshToken"];
 
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
@@ -42,37 +39,32 @@ public class RetryHandler : DelegatingHandler
         _configuration = configuration;
     }
 
-    private async Task UpdateHttpContextWithNewTokens(AccessTokenResponse newTokens)
+    private async Task UpdateSessionWithNewTokensAsync(AccessTokenResponse newTokens)
     {
         var httpContext = _httpContextAccessor.HttpContext;
         if (httpContext == null)
             return;
 
-        var authResult = await httpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-        var existingClaims = httpContext.User.Claims
-            .Where(c => !TokenClaimTypes.Contains(c.Type))
-            .ToList();
+        PortalApiTokenStore.SetTokens(
+            httpContext.Session,
+            newTokens.AccessToken,
+            newTokens.RefreshToken,
+            newTokens.ExpiresIn);
 
-        existingClaims.Add(new Claim("QuickCodeApiToken", newTokens.AccessToken));
-        existingClaims.Add(new Claim("QuickCodeApiTokenExpiresIn", newTokens.ExpiresIn.ToString()));
-        existingClaims.Add(new Claim("RefreshToken", newTokens.RefreshToken));
+        var authenticateResult = httpContext.Features.Get<IAuthenticateResultFeature>()?.AuthenticateResult;
+        if (authenticateResult?.Succeeded != true || authenticateResult.Principal == null)
+            return;
 
-        var identity = new ClaimsIdentity(
-            existingClaims,
-            CookieAuthenticationDefaults.AuthenticationScheme);
-        var principal = new ClaimsPrincipal(identity);
-        httpContext.User = principal;
-
-        var properties = authResult.Properties ?? new AuthenticationProperties();
-        properties.AllowRefresh = true;
-        if (!properties.IsPersistent)
-        {
-            properties.ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(30);
-        }
+        var properties = authenticateResult.Properties ?? new AuthenticationProperties();
+        PortalApiTokenStore.ApplyTokensToProperties(
+            properties,
+            newTokens.AccessToken,
+            newTokens.RefreshToken,
+            newTokens.ExpiresIn);
 
         await httpContext.SignInAsync(
             CookieAuthenticationDefaults.AuthenticationScheme,
-            principal,
+            authenticateResult.Principal,
             properties);
     }
 
@@ -81,6 +73,7 @@ public class RetryHandler : DelegatingHandler
         var httpContext = _httpContextAccessor.HttpContext;
         if (httpContext?.User.Identity?.IsAuthenticated == true)
         {
+            httpContext.Session.Clear();
             await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         }
     }
@@ -103,9 +96,7 @@ public class RetryHandler : DelegatingHandler
         if (httpContext == null)
             return false;
 
-        var refreshToken = httpContext.User.Claims
-            .FirstOrDefault(c => c.Type == "RefreshToken")?.Value;
-
+        var refreshToken = PortalApiTokenStore.GetRefreshToken(httpContext);
         if (string.IsNullOrEmpty(refreshToken))
             return false;
 
@@ -130,7 +121,7 @@ public class RetryHandler : DelegatingHandler
             return false;
         }
 
-        await UpdateHttpContextWithNewTokens(newTokens);
+        await UpdateSessionWithNewTokensAsync(newTokens);
         return true;
     }
 
@@ -144,12 +135,11 @@ public class RetryHandler : DelegatingHandler
         {
             var httpContext = _httpContextAccessor.HttpContext;
             if (httpContext?.User.Identity?.IsAuthenticated == true &&
-                httpContext.User.Claims.Any(i => i.Type.Equals("QuickCodeApiToken")))
+                PortalApiTokenStore.HasAccessToken(httpContext))
             {
-                var claimAuthToken =
-                    httpContext.User.Claims.First(i => i.Type.Equals("QuickCodeApiToken"));
-                httpContext.Request.Headers.Authorization = $"Bearer {claimAuthToken.Value}";
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", claimAuthToken.Value);
+                var accessToken = PortalApiTokenStore.GetAccessToken(httpContext)!;
+                httpContext.Request.Headers.Authorization = $"Bearer {accessToken}";
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
             }
 
             response = await base.SendAsync(request, cancellationToken);
@@ -158,7 +148,7 @@ public class RetryHandler : DelegatingHandler
                 break;
 
             var shouldAttemptRefresh = IsTokenExpiredResponse(response) ||
-                                       httpContext?.User.Claims.Any(c => c.Type == "RefreshToken") == true;
+                                       PortalApiTokenStore.HasRefreshToken(httpContext);
 
             if (!shouldAttemptRefresh)
             {
@@ -166,14 +156,12 @@ public class RetryHandler : DelegatingHandler
                 break;
             }
 
-            var claimAuthorization = httpContext?.User.Claims
-                .FirstOrDefault(c => c.Type == "QuickCodeApiToken")?.Value;
-
-            if (!string.IsNullOrEmpty(claimAuthorization) &&
+            var sessionAccessToken = PortalApiTokenStore.GetAccessToken(httpContext);
+            if (!string.IsNullOrEmpty(sessionAccessToken) &&
                 request.Headers.Authorization?.Parameter != null &&
-                !request.Headers.Authorization.Parameter.Equals(claimAuthorization))
+                !request.Headers.Authorization.Parameter.Equals(sessionAccessToken))
             {
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", claimAuthorization);
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", sessionAccessToken);
                 continue;
             }
 

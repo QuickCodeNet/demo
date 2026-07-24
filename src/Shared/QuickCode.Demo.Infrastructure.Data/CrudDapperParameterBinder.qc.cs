@@ -3,6 +3,7 @@
 // This file is overwritten on full template regen. Add user logic in separate .cs files.
 // Where to put custom code: see AGENTS.md at repo root.
 // </auto-generated>
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Dapper;
@@ -37,7 +38,13 @@ public static class CrudDapperParameterBinder
                 throw new InvalidOperationException(
                     $"Property '{dtoProp}' was not found on '{type.Name}' for CRUD parameter binding.");
 
-            parameters.Add(BuildPrmKey(parameterTableName, sqlColumn), prop.GetValue(dto));
+            var val = prop.GetValue(dto);
+            if (val is DateTime dt && dt.Year < 1753)
+                val = DateTime.UtcNow;
+            else if (val is DateTimeOffset dtoff && dtoff.Year < 1753)
+                val = DateTimeOffset.UtcNow;
+
+            parameters.Add(BuildPrmKey(parameterTableName, sqlColumn), val);
         }
     }
 
@@ -56,6 +63,11 @@ public static class CrudDapperParameterBinder
                     $"Property '{dtoProp}' was not found on '{type.Name}' for junction relink binding.");
 
             var val = prop.GetValue(dto);
+            if (val is DateTime dt && dt.Year < 1753)
+                val = DateTime.UtcNow;
+            else if (val is DateTimeOffset dtoff && dtoff.Year < 1753)
+                val = DateTimeOffset.UtcNow;
+
             var baseKey = BuildPrmKey(parameterTableName, sqlColumn);
             p.Add(baseKey + "_REMOVE", val);
             p.Add(baseKey + "_ADD", val);

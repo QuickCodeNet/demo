@@ -209,6 +209,11 @@
             }
         }
     </style>
+    @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
+    @{
+        var antiforgeryTokens = Antiforgery.GetAndStoreTokens(Context);
+    }
+    <meta name="request-verification-token" content="@antiforgeryTokens.RequestToken" />
 </head>
 <body id="page-top">
     <partial name="_CookieConsentPartial" />
@@ -409,6 +414,19 @@
         </div>
     </div>
 
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1090;" aria-live="polite" aria-atomic="true">
+        <div id="portalToast" class="toast align-items-center border-0 text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="3500">
+            <div class="d-flex align-items-center w-100">
+                <div class="toast-body d-flex align-items-center gap-2 py-2">
+                    <i id="portalToastIcon" class="fas fa-check-circle" aria-hidden="true"></i>
+                    <span id="portalToastBody"></span>
+                </div>
+                <button type="button" class="portal-toast-close" data-bs-dismiss="toast" aria-label="Close">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <environment include="Development">
         <script src="/lib/jquery/dist/jquery.min.js"></script>

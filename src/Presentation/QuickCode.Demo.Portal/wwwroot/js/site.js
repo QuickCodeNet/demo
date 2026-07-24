@@ -1,4 +1,19 @@
 ﻿$(function () {
+    // Send antiforgery token on all jQuery AJAX mutating requests (forms + JSON-style payloads).
+    var antiforgeryToken = $('meta[name="request-verification-token"]').attr('content')
+        || $('input[name="__RequestVerificationToken"]').first().val();
+    if (antiforgeryToken) {
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                var method = (settings.type || settings.method || 'GET').toUpperCase();
+                if (method === 'GET' || method === 'HEAD' || method === 'OPTIONS' || method === 'TRACE') {
+                    return;
+                }
+                xhr.setRequestHeader('RequestVerificationToken', antiforgeryToken);
+            }
+        });
+    }
+
     init();
 
     $('.opButtonDetail').click(function (e) {
@@ -191,6 +206,100 @@ function pinPortalEntityFooter(root) {
     modalContent.appendChild(footer);
 }
 
+var PORTAL_TOAST_STORAGE_KEY = 'portalToastMessage';
+
+function showPortalToast(message, type) {
+    if (!message) {
+        return;
+    }
+
+    var toastEl = document.getElementById('portalToast');
+    var toastBody = document.getElementById('portalToastBody');
+    var toastIcon = document.getElementById('portalToastIcon');
+    if (!toastEl || !toastBody) {
+        return;
+    }
+
+    var toastType = (type || 'success').toLowerCase();
+    toastEl.classList.remove('text-bg-success', 'text-bg-danger', 'text-bg-warning', 'text-bg-info');
+
+    var iconClass = 'fas fa-check-circle';
+    if (toastType === 'error' || toastType === 'danger') {
+        toastEl.classList.add('text-bg-danger');
+        iconClass = 'fas fa-exclamation-circle';
+    } else if (toastType === 'warning') {
+        toastEl.classList.add('text-bg-warning');
+        iconClass = 'fas fa-exclamation-triangle';
+    } else if (toastType === 'info') {
+        toastEl.classList.add('text-bg-info');
+        iconClass = 'fas fa-info-circle';
+    } else {
+        toastEl.classList.add('text-bg-success');
+        iconClass = 'fas fa-check-circle';
+    }
+
+    if (toastIcon) {
+        toastIcon.className = iconClass;
+    }
+
+    toastBody.textContent = message;
+
+    if (typeof bootstrap !== 'undefined' && bootstrap.Toast) {
+        var toast = bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 3500, autohide: true });
+        toast.show();
+    } else if (typeof $.fn.toast !== 'undefined') {
+        $(toastEl).toast({ delay: 3500, autohide: true }).toast('show');
+    }
+}
+
+function queuePortalToast(message, type) {
+    if (!message || typeof sessionStorage === 'undefined') {
+        return;
+    }
+
+    try {
+        sessionStorage.setItem(PORTAL_TOAST_STORAGE_KEY, JSON.stringify({
+            message: message,
+            type: type || 'success'
+        }));
+    } catch (e) {
+        // Ignore storage failures (private mode / quota).
+    }
+}
+
+function consumeQueuedPortalToast() {
+    if (typeof sessionStorage === 'undefined') {
+        return;
+    }
+
+    try {
+        var raw = sessionStorage.getItem(PORTAL_TOAST_STORAGE_KEY);
+        if (!raw) {
+            return;
+        }
+        sessionStorage.removeItem(PORTAL_TOAST_STORAGE_KEY);
+        var payload = JSON.parse(raw);
+        if (payload && payload.message) {
+            showPortalToast(payload.message, payload.type || 'success');
+        }
+    } catch (e) {
+        sessionStorage.removeItem(PORTAL_TOAST_STORAGE_KEY);
+    }
+}
+
+function getPortalCrudSuccessMessage(operation) {
+    switch ((operation || '').toLowerCase()) {
+        case 'update':
+            return 'Record updated successfully.';
+        case 'delete':
+            return 'Record deleted successfully.';
+        case 'insert':
+            return 'Record created successfully.';
+        default:
+            return 'Operation completed successfully.';
+    }
+}
+
 function init() {
     // Bootstrap 5 popover initialization
     if (typeof bootstrap !== 'undefined') {
@@ -204,6 +313,7 @@ function init() {
         $('[data-toggle="popover"]').popover();
         $('[data-bs-toggle="popover"]').popover();
     }
+    consumeQueuedPortalToast();
     const placeholderElement = $('#itemDetailsContainer');
     initFlatpickrModalFix();
     initDatePickers(document);
@@ -302,6 +412,71 @@ function isSentinelDateValue(value) {
     return false;
 }
 
+function formatPortalDateTime(date) {
+    var d = date instanceof Date ? date : new Date();
+    var pad = function (n) { return n < 10 ? '0' + n : String(n); };
+    return pad(d.getDate()) + '.' + pad(d.getMonth() + 1) + '.' + d.getFullYear()
+        + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+}
+
+function formatPortalDateTimeIso(date) {
+    var d = date instanceof Date ? date : new Date();
+    var pad = function (n) { return n < 10 ? '0' + n : String(n); };
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate())
+        + 'T' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':00';
+}
+
+function isPortalInsertContext(el) {
+    return !!(el && el.closest && el.closest('.portal-entity-modal[data-operation="Insert"]'));
+}
+
+function normalizePortalDateTimeFormData(formData) {
+    if (!formData || typeof formData.keys !== 'function') {
+        return;
+    }
+
+    var keys = Array.from(formData.keys());
+    keys.forEach(function (key) {
+        var value = formData.get(key);
+        if (typeof value !== 'string') {
+            return;
+        }
+
+        var escaped = (typeof CSS !== 'undefined' && CSS.escape)
+            ? CSS.escape(key)
+            : key.replace(/"/g, '\\"');
+        var input = document.querySelector(
+            'input.portal-datetime-input[name="' + escaped + '"], .flatpickr-datetime input[name="' + escaped + '"]'
+        );
+        if (!input) {
+            return;
+        }
+
+        if (isSentinelDateValue(value)) {
+            var now = new Date();
+            var displayValue = formatPortalDateTime(now);
+            formData.set(key, formatPortalDateTimeIso(now));
+            input.value = displayValue;
+            var wrap = input.closest('.flatpickr-datetime');
+            if (wrap && wrap._flatpickr) {
+                wrap._flatpickr.setDate(displayValue, false);
+            }
+            return;
+        }
+
+        // Convert flatpickr display values (d.m.Y H:i) to ISO for reliable server binding.
+        var parts = String(value).trim().match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})\s+(\d{1,2}):(\d{2})$/);
+        if (parts) {
+            var day = parts[1].padStart(2, '0');
+            var month = parts[2].padStart(2, '0');
+            var year = parts[3];
+            var hour = parts[4].padStart(2, '0');
+            var minute = parts[5];
+            formData.set(key, year + '-' + month + '-' + day + 'T' + hour + ':' + minute + ':00');
+        }
+    });
+}
+
 function initSearchableSelects(root) {
     if (typeof $.fn.select2 === 'undefined') {
         return;
@@ -344,8 +519,9 @@ function initDatePickers(root) {
         }
 
         var input = el.querySelector('[data-input]');
+        var useNowForInsert = isPortalInsertContext(el);
         if (input && isSentinelDateValue(input.value)) {
-            input.value = '';
+            input.value = useNowForInsert ? formatPortalDateTime(new Date()) : '';
         }
 
         var options = {
@@ -358,7 +534,11 @@ function initDatePickers(root) {
             disableMobile: true,
             onReady: function (_selectedDates, _dateStr, instance) {
                 if (instance.input && isSentinelDateValue(instance.input.value)) {
-                    instance.clear();
+                    if (useNowForInsert) {
+                        instance.setDate(formatPortalDateTime(new Date()), false);
+                    } else {
+                        instance.clear();
+                    }
                 }
             }
         };
@@ -488,6 +668,7 @@ function base64Decode(str) {
 }
 
 function prepareFormData(formData) {
+    normalizePortalDateTimeFormData(formData);
     for (const key of formData.keys()) {
         let value = formData.get(key);
         if (needsBase64Encoding(value)) {

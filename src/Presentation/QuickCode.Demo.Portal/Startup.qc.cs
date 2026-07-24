@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
@@ -64,14 +65,21 @@ namespace QuickCode.Demo.Portal
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
             });
+
+            services.AddDataProtection()
+                .PersistKeysToFileSystem(new DirectoryInfo(GetDataProtectionKeysPath()))
+                .SetApplicationName("QuickCode.Demo.Portal");
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
                 {
                     options.LoginPath = new PathString("/Login/Index");
                     options.AccessDeniedPath = new PathString("/Login/Index");
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+                    options.Cookie.SameSite = SameSiteMode.Lax;
                 });
 
             services.AddDistributedMemoryCache();
@@ -80,17 +88,23 @@ namespace QuickCode.Demo.Portal
                 options.IdleTimeout = TimeSpan.FromMinutes(20);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+                options.Cookie.SameSite = SameSiteMode.Lax;
             });
             
             services.AddResponseCompression();
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = CompressionLevel.Fastest);
             
-            services.AddAntiforgery(o => o.SuppressXFrameOptionsHeader = true);
+            services.AddAntiforgery(options =>
+            {
+                options.HeaderName = "RequestVerificationToken";
+            });
 
             services.AddSingleton<ITempDataProvider, SessionStateTempDataProvider>();
             
             services.AddControllersWithViews(options =>
             {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                 options.Filters.Add(typeof(ApiLogFilterAttribute));
             }).AddRazorRuntimeCompilation();
             
@@ -176,6 +190,7 @@ namespace QuickCode.Demo.Portal
 
                 if (statusCode == StatusCodes.Status401Unauthorized && !response.HasStarted)
                 {
+                    httpContext.Session.Clear();
                     await httpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
                     if (wantsJson)
@@ -307,6 +322,17 @@ namespace QuickCode.Demo.Portal
             }
 
             return (errorMessage, errorDescription);
+        }
+
+        private string GetDataProtectionKeysPath()
+        {
+            var configured = Configuration["DataProtection:KeysPath"]
+                             ?? Environment.GetEnvironmentVariable("DATA_PROTECTION_KEYS_PATH");
+            var path = string.IsNullOrWhiteSpace(configured)
+                ? Path.Combine(Directory.GetCurrentDirectory(), "dataprotection-keys")
+                : configured;
+            Directory.CreateDirectory(path);
+            return path;
         }
     }
 }
