@@ -1584,10 +1584,27 @@ form#formList table.is-col-reordering thead th:not(.is-dragging) {
 
 .content-area form#formList[data-portal-query="true"] .portal-query-params.portal-entity-form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16.5rem), 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.85rem 1.1rem;
   margin: 0;
   max-width: none;
+}
+
+.content-area form#formList[data-portal-query="true"] .portal-query-params .portal-query-date-range {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.1rem;
+  min-width: 0;
+}
+
+/* Keep From/To datetime pair on its own row when not wrapped by the generator yet. */
+.content-area form#formList[data-portal-query="true"] .portal-query-params > .form-group.row:has(.flatpickr-datetime [name$="From"], .flatpickr-datetime [id$="From"], .portal-datetime-input[name$="From"], .portal-datetime-input[id$="From"]) {
+  grid-column-start: 1;
+}
+
+.content-area form#formList[data-portal-query="true"] .portal-query-params > .form-group.row:has(.flatpickr-datetime [name$="To"], .flatpickr-datetime [id$="To"], .portal-datetime-input[name$="To"], .portal-datetime-input[id$="To"]) {
+  grid-column-start: 2;
 }
 
 .content-area form#formList[data-portal-query="true"] .portal-query-params .form-group.row,
@@ -1596,12 +1613,43 @@ form#formList table.is-col-reordering thead th:not(.is-dragging) {
   min-width: 0;
 }
 
+/* Stack datetime labels above the control (query filters are narrow cells). */
+.content-area form#formList[data-portal-query="true"] .portal-query-params .form-group.row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+}
+
+.content-area form#formList[data-portal-query="true"] .portal-query-params .form-group.row > [class*="col-"] {
+  width: 100%;
+  max-width: none;
+  flex: 0 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content-area form#formList[data-portal-query="true"] .portal-query-params .form-group.row > .col-form-label,
 .content-area form#formList[data-portal-query="true"] .portal-query-params .form-label {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   color: #475569;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .content-area form#formList[data-portal-query="true"] .portal-query-params.portal-entity-form,
+  .content-area form#formList[data-portal-query="true"] .portal-query-params .portal-query-date-range {
+    grid-template-columns: 1fr;
+  }
+
+  .content-area form#formList[data-portal-query="true"] .portal-query-params > .form-group.row:has(.flatpickr-datetime [name$="From"], .flatpickr-datetime [id$="From"], .portal-datetime-input[name$="From"], .portal-datetime-input[id$="From"]),
+  .content-area form#formList[data-portal-query="true"] .portal-query-params > .form-group.row:has(.flatpickr-datetime [name$="To"], .flatpickr-datetime [id$="To"], .portal-datetime-input[name$="To"], .portal-datetime-input[id$="To"]) {
+    grid-column: 1 / -1;
+  }
 }
 
 .content-area form#formList[data-portal-query="true"] .portal-query-params .form-select,
