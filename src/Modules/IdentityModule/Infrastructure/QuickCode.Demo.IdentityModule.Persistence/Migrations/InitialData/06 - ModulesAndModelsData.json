@@ -1,0 +1,965 @@
+﻿{
+  "Modules": [
+    {
+      "Name": "IdentityModule",
+      "Description": "IdentityModule"
+    },
+    {
+      "Name": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule"
+    },
+    {
+      "Name": "OrderManagementModule",
+      "Description": "OrderManagementModule"
+    },
+    {
+      "Name": "PricingEngineModule",
+      "Description": "PricingEngineModule"
+    },
+    {
+      "Name": "ProductCatalogModule",
+      "Description": "ProductCatalogModule"
+    },
+    {
+      "Name": "SellerManagementModule",
+      "Description": "SellerManagementModule"
+    }
+  ],
+  "Models": [
+    {
+      "Name": "ApiMethodAccessGrants",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ApiMethodAccessGrant"
+    },
+    {
+      "Name": "ApiMethodAccessGrantsGetApiMethodAccessGrantNames",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query ApiMethodAccessGrants.GetApiMethodAccessGrantNames"
+    },
+    {
+      "Name": "ApiMethodDefinitions",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ApiMethodDefinition"
+    },
+    {
+      "Name": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModelName",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query ApiMethodDefinitions.GetApiMethodDefinitionsWithModelName"
+    },
+    {
+      "Name": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModuleName",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query ApiMethodDefinitions.GetApiMethodDefinitionsWithModuleName"
+    },
+    {
+      "Name": "ApiMethodDefinitionsGetKafkaEventsApiMethodDefinitions",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query ApiMethodDefinitions.GetKafkaEventsApiMethodDefinitions"
+    },
+    {
+      "Name": "AspNetRoles",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetRole"
+    },
+    {
+      "Name": "AspNetRoleClaims",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetRoleClaim"
+    },
+    {
+      "Name": "AspNetUsers",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUser"
+    },
+    {
+      "Name": "AspNetUsersIdentityUserById",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AspNetUsers.IdentityUserById"
+    },
+    {
+      "Name": "AspNetUsersIdentityUserByNormalizedEmail",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AspNetUsers.IdentityUserByNormalizedEmail"
+    },
+    {
+      "Name": "AspNetUsersIdentityUserByNormalizedUsername",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AspNetUsers.IdentityUserByNormalizedUsername"
+    },
+    {
+      "Name": "AspNetUserClaims",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserClaim"
+    },
+    {
+      "Name": "AspNetUserLogins",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserLogin"
+    },
+    {
+      "Name": "AspNetUserRoles",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserRole"
+    },
+    {
+      "Name": "AspNetUserTokens",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AspNetUserToken"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "ColumnTypes",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - ColumnType"
+    },
+    {
+      "Name": "KafkaEvents",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - KafkaEvent"
+    },
+    {
+      "Name": "KafkaEventsGetActiveKafkaEvents",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query KafkaEvents.GetActiveKafkaEvents"
+    },
+    {
+      "Name": "KafkaEventsGetKafkaEvents",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query KafkaEvents.GetKafkaEvents"
+    },
+    {
+      "Name": "KafkaEventsGetTopicWorkflows",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query KafkaEvents.GetTopicWorkflows"
+    },
+    {
+      "Name": "KafkaEventsGetTopicWorkflowsKafkaEvents",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query KafkaEvents.GetTopicWorkflowsKafkaEvents"
+    },
+    {
+      "Name": "Models",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Model"
+    },
+    {
+      "Name": "Modules",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Module"
+    },
+    {
+      "Name": "PermissionGroups",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PermissionGroup"
+    },
+    {
+      "Name": "PortalMenus",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalMenu"
+    },
+    {
+      "Name": "PortalPageAccessGrants",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalPageAccessGrant"
+    },
+    {
+      "Name": "PortalPageAccessGrantsGetPortalPageAccessGrant",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query PortalPageAccessGrants.GetPortalPageAccessGrant"
+    },
+    {
+      "Name": "PortalPageAccessGrantsGetPortalPageAccessGrants",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query PortalPageAccessGrants.GetPortalPageAccessGrants"
+    },
+    {
+      "Name": "PortalPageDefinitions",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - PortalPageDefinition"
+    },
+    {
+      "Name": "PortalPageDefinitionsGetPortalPageDefinitionsWithModelName",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query PortalPageDefinitions.GetPortalPageDefinitionsWithModelName"
+    },
+    {
+      "Name": "PortalPageDefinitionsGetPortalPageDefinitionsWithModuleName",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query PortalPageDefinitions.GetPortalPageDefinitionsWithModuleName"
+    },
+    {
+      "Name": "RefreshTokens",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - RefreshToken"
+    },
+    {
+      "Name": "TableComboboxSettings",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - TableComboboxSetting"
+    },
+    {
+      "Name": "TopicWorkflows",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - TopicWorkflow"
+    },
+    {
+      "Name": "TopicWorkflowsGetTopicWorkflows",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query TopicWorkflows.GetTopicWorkflows"
+    },
+    {
+      "Name": "TopicWorkflowsGetWorkflows",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query TopicWorkflows.GetWorkflows"
+    },
+    {
+      "Name": "TopicWorkflowsGetWorkflows2",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule - Query TopicWorkflows.GetWorkflows2"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "CommissionEntries",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - CommissionEntry"
+    },
+    {
+      "Name": "CommissionEntriesGetByOrderId",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query CommissionEntries.GetByOrderId"
+    },
+    {
+      "Name": "CommissionEntriesGetCommissionsBySellerForPeriod",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query CommissionEntries.GetCommissionsBySellerForPeriod"
+    },
+    {
+      "Name": "FinancialAdjustments",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - FinancialAdjustment"
+    },
+    {
+      "Name": "FinancialAdjustmentsGetBySellerId",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query FinancialAdjustments.GetBySellerId"
+    },
+    {
+      "Name": "PayoutLineItems",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - PayoutLineItem"
+    },
+    {
+      "Name": "PayoutLineItemsGetByPayoutId",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query PayoutLineItems.GetByPayoutId"
+    },
+    {
+      "Name": "PayoutPeriods",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - PayoutPeriod"
+    },
+    {
+      "Name": "SellerPayouts",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - SellerPayout"
+    },
+    {
+      "Name": "SellerPayoutsGetByPeriod",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query SellerPayouts.GetByPeriod"
+    },
+    {
+      "Name": "SellerPayoutsGetBySellerId",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query SellerPayouts.GetBySellerId"
+    },
+    {
+      "Name": "SellerPayoutsGetByStatus",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query SellerPayouts.GetByStatus"
+    },
+    {
+      "Name": "TransactionLedgers",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - TransactionLedger"
+    },
+    {
+      "Name": "TransactionLedgersGetBySellerId",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query TransactionLedgers.GetBySellerId"
+    },
+    {
+      "Name": "TransactionLedgersGetTransactionsByTypeAndDate",
+      "ModuleName": "FinanceSettlementModule",
+      "Description": "FinanceSettlementModule - Query TransactionLedgers.GetTransactionsByTypeAndDate"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "Orders",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Order"
+    },
+    {
+      "Name": "OrdersGetByCustomerId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Orders.GetByCustomerId"
+    },
+    {
+      "Name": "OrdersGetByDateRange",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Orders.GetByDateRange"
+    },
+    {
+      "Name": "OrdersGetBySellerId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Orders.GetBySellerId"
+    },
+    {
+      "Name": "OrdersGetByStatus",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Orders.GetByStatus"
+    },
+    {
+      "Name": "OrdersGetOrdersForSettlement",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Orders.GetOrdersForSettlement"
+    },
+    {
+      "Name": "OrderItems",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - OrderItem"
+    },
+    {
+      "Name": "OrderItemsGetByOrderId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query OrderItems.GetByOrderId"
+    },
+    {
+      "Name": "OrderStatusHistories",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - OrderStatusHistory"
+    },
+    {
+      "Name": "OrderStatusHistoriesGetByOrderId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query OrderStatusHistories.GetByOrderId"
+    },
+    {
+      "Name": "OrderStatusManagers",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - OrderStatusManager"
+    },
+    {
+      "Name": "ReturnRequests",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - ReturnRequest"
+    },
+    {
+      "Name": "ReturnRequestsGetByOrderId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query ReturnRequests.GetByOrderId"
+    },
+    {
+      "Name": "ReturnRequestsGetPendingReturnsBySeller",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query ReturnRequests.GetPendingReturnsBySeller"
+    },
+    {
+      "Name": "Shipments",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Shipment"
+    },
+    {
+      "Name": "ShipmentsGetByOrderId",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query Shipments.GetByOrderId"
+    },
+    {
+      "Name": "ShippingMethods",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - ShippingMethod"
+    },
+    {
+      "Name": "ShippingMethodsGetActive",
+      "ModuleName": "OrderManagementModule",
+      "Description": "OrderManagementModule - Query ShippingMethods.GetActive"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "CampaignApplicabilities",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - CampaignApplicability"
+    },
+    {
+      "Name": "CampaignApplicabilitiesGetByCampaignId",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query CampaignApplicabilities.GetByCampaignId"
+    },
+    {
+      "Name": "CategoryCommissionOverrides",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - CategoryCommissionOverride"
+    },
+    {
+      "Name": "CommissionModels",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - CommissionModel"
+    },
+    {
+      "Name": "CommissionModelsGetActive",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query CommissionModels.GetActive"
+    },
+    {
+      "Name": "CommissionRules",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - CommissionRule"
+    },
+    {
+      "Name": "CommissionRulesGetActiveRulesByModel",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query CommissionRules.GetActiveRulesByModel"
+    },
+    {
+      "Name": "CommissionRulesGetByModelId",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query CommissionRules.GetByModelId"
+    },
+    {
+      "Name": "PromotionalCampaigns",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - PromotionalCampaign"
+    },
+    {
+      "Name": "PromotionalCampaignsGetActiveCampaigns",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query PromotionalCampaigns.GetActiveCampaigns"
+    },
+    {
+      "Name": "PromotionalCampaignsGetCampaignsInDateRange",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query PromotionalCampaigns.GetCampaignsInDateRange"
+    },
+    {
+      "Name": "SellerCommissionAssignments",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - SellerCommissionAssignment"
+    },
+    {
+      "Name": "SellerCommissionAssignmentsGetByModelId",
+      "ModuleName": "PricingEngineModule",
+      "Description": "PricingEngineModule - Query SellerCommissionAssignments.GetByModelId"
+    },
+    {
+      "Name": "AttributeDefinitions",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - AttributeDefinition"
+    },
+    {
+      "Name": "AttributeValues",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - AttributeValue"
+    },
+    {
+      "Name": "AttributeValuesGetByAttributeId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AttributeValues.GetByAttributeId"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "Brands",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Brand"
+    },
+    {
+      "Name": "BrandsGetActive",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Brands.GetActive"
+    },
+    {
+      "Name": "BrandsSearchByName",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Brands.SearchByName"
+    },
+    {
+      "Name": "Categories",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Category"
+    },
+    {
+      "Name": "CategoriesGetActive",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Categories.GetActive"
+    },
+    {
+      "Name": "CategoriesGetSubCategories",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Categories.GetSubCategories"
+    },
+    {
+      "Name": "Products",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Product"
+    },
+    {
+      "Name": "ProductsGetActiveBySeller",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Products.GetActiveBySeller"
+    },
+    {
+      "Name": "ProductsGetFeatured",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Products.GetFeatured"
+    },
+    {
+      "Name": "ProductsGetPendingApproval",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Products.GetPendingApproval"
+    },
+    {
+      "Name": "ProductsGetProductsWithDetails",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Products.GetProductsWithDetails"
+    },
+    {
+      "Name": "ProductsSearchProducts",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query Products.SearchProducts"
+    },
+    {
+      "Name": "ProductCategories",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - ProductCategory"
+    },
+    {
+      "Name": "ProductCategoriesGetByCategoryId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductCategories.GetByCategoryId"
+    },
+    {
+      "Name": "ProductCategoriesGetByProductId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductCategories.GetByProductId"
+    },
+    {
+      "Name": "ProductVariants",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - ProductVariant"
+    },
+    {
+      "Name": "ProductVariantsGetActiveByProductId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductVariants.GetActiveByProductId"
+    },
+    {
+      "Name": "ProductVariantsGetByProductId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductVariants.GetByProductId"
+    },
+    {
+      "Name": "ProductVariantsGetLowStockVariants",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductVariants.GetLowStockVariants"
+    },
+    {
+      "Name": "ProductVariantAttributes",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - ProductVariantAttribute"
+    },
+    {
+      "Name": "ProductVariantAttributesGetByVariantId",
+      "ModuleName": "ProductCatalogModule",
+      "Description": "ProductCatalogModule - Query ProductVariantAttributes.GetByVariantId"
+    },
+    {
+      "Name": "AuditLogs",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - AuditLog"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.GetRecentHttpRequests"
+    },
+    {
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.GetRecentHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsDailyHttpRequestsByDay"
+    },
+    {
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsDailyHttpRequestsByDayByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsHourlyHttpRequestsByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsHttpStatusCodes"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsHttpStatusCodesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsHttpStatusCodesLast24HoursByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsTopHttpServicesByModule"
+    },
+    {
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query AuditLogs.StatsTotalHttpRequestsByModule"
+    },
+    {
+      "Name": "Sellers",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Seller"
+    },
+    {
+      "Name": "SellersGetByStatus",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query Sellers.GetByStatus"
+    },
+    {
+      "Name": "SellersSearchByCompanyName",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query Sellers.SearchByCompanyName"
+    },
+    {
+      "Name": "SellerBankAccounts",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - SellerBankAccount"
+    },
+    {
+      "Name": "SellerBankAccountsGetBySellerId",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query SellerBankAccounts.GetBySellerId"
+    },
+    {
+      "Name": "SellerDocuments",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - SellerDocument"
+    },
+    {
+      "Name": "SellerDocumentsGetBySellerId",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query SellerDocuments.GetBySellerId"
+    },
+    {
+      "Name": "SellerDocumentsGetPendingDocuments",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query SellerDocuments.GetPendingDocuments"
+    },
+    {
+      "Name": "SellerPerformanceReviews",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - SellerPerformanceReview"
+    },
+    {
+      "Name": "SellerPerformanceReviewsGetBySellerId",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Query SellerPerformanceReviews.GetBySellerId"
+    },
+    {
+      "Name": "SellerTiers",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - SellerTier"
+    },
+    {
+      "Name": "Stores",
+      "ModuleName": "SellerManagementModule",
+      "Description": "SellerManagementModule - Store"
+    },
+    {
+      "Name": "Authentications",
+      "ModuleName": "IdentityModule",
+      "Description": "IdentityModule- Authentications"
+    }
+  ]
+}

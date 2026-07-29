@@ -1,0 +1,88 @@
+﻿{
+  "PRODUCTS": [
+    {
+      "SELLER_ID": 65,
+      "BRAND_ID": 3,
+      "PRIMARY_CATEGORY_ID": 7,
+      "SKU": "STA-0001",
+      "NAME": "Popular Brand 1",
+      "DESCRIPTION": "Import schedule policy draft record pipeline.",
+      "PHOTO": "https://picsum.photos/seed/462/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "PendingApproval",
+      "IS_FEATURED": false,
+      "CREATED_DATE": "2022-03-04T12:07:28.8121906Z"
+    },
+    {
+      "SELLER_ID": 784,
+      "BRAND_ID": 1,
+      "PRIMARY_CATEGORY_ID": 3,
+      "SKU": "PRI-0002",
+      "NAME": "General Permission 2",
+      "DESCRIPTION": "Import retention budget filter policy profit active profit order approve.",
+      "PHOTO": "https://picsum.photos/seed/906/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "Draft",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2023-03-06T17:33:38.0854957Z"
+    },
+    {
+      "SELLER_ID": 530,
+      "BRAND_ID": 1,
+      "PRIMARY_CATEGORY_ID": 8,
+      "SKU": "DEF-0003",
+      "NAME": "Public Permission 3",
+      "DESCRIPTION": "Comment account widget schedule widget meeting phase revenue schedule.",
+      "PHOTO": "https://picsum.photos/seed/258/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "Draft",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2022-08-12T01:08:49.763319Z"
+    },
+    {
+      "SELLER_ID": 8,
+      "BRAND_ID": 5,
+      "PRIMARY_CATEGORY_ID": 4,
+      "SKU": "COM-0004",
+      "NAME": "Critical Tier 4",
+      "DESCRIPTION": "Policy inventory report notification document phase product product message.",
+      "PHOTO": "https://picsum.photos/seed/420/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "Inactive",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2024-04-23T07:42:08.4239033Z"
+    },
+    {
+      "SELLER_ID": 339,
+      "BRAND_ID": 2,
+      "PRIMARY_CATEGORY_ID": 3,
+      "SKU": "LOC-0005",
+      "NAME": "Legacy Role 5",
+      "DESCRIPTION": "Product publish profit supplier ticket status deadline reminder inactive value result.",
+      "PHOTO": "https://picsum.photos/seed/121/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "Inactive",
+      "IS_FEATURED": false,
+      "CREATED_DATE": "2024-11-16T04:17:33.475028Z"
+    },
+    {
+      "SELLER_ID": 2,
+      "BRAND_ID": 6,
+      "PRIMARY_CATEGORY_ID": 4,
+      "SKU": "DEF-0006",
+      "NAME": "Mini Access 6",
+      "DESCRIPTION": "Metric segment shipment channel ticket panel credit reject agreement ticket cost.",
+      "PHOTO": "https://picsum.photos/seed/512/400/300",
+      "VIDEO": "/samples/sample.mp4",
+      "DATASHEET": "/samples/sample.pdf",
+      "STATUS": "Active",
+      "IS_FEATURED": true,
+      "CREATED_DATE": "2024-08-27T11:30:29.734747Z"
+    }
+  ]
+}

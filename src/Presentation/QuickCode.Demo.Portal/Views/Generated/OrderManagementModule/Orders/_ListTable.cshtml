@@ -1,0 +1,56 @@
+﻿@using QuickCode.Demo.Portal.Models.OrderManagementModule
+@model OrderManagementModule.OrderData
+@{
+    int startIndex = ((Model.CurrentPage - 1) * Model.PageSize) + 1;
+    int endIndex = ((Model.CurrentPage) * Model.PageSize);
+    if (endIndex > Model.NumberOfRecord) {
+        endIndex = Model.NumberOfRecord;
+    }
+
+    var pagerData = new PagerData() { CurrentPage = Model.CurrentPage, NumberOfRecord = Model.NumberOfRecord, PageSize = Model.PageSize, TotalPage = Model.TotalPage, StartIndex = startIndex, EndIndex = endIndex };
+}
+@if (Model.List.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        No Data available in OrderManagementModule.Order table.
+    </div>
+}
+else
+{
+    <vc:pager pager-data=pagerData></vc:pager>
+    <div class="table-responsive portal-table-scroll">
+        <table bc-border="Bordered" bc-striped="true" bc-hover="true" class="table" bc-theme="Light">
+            <thead bc-theme="Dark">
+                <tr>
+                    <vc:operation-buttons item-id="Header" controller-name="" action-name=""></vc:operation-buttons>
+                    <th class="portal-col" data-col-type="id" data-col-key="Id">Id</th>
+<th class="portal-col" data-col-type="int" data-col-key="CustomerId">Customer Id</th>
+<th class="portal-col" data-col-type="int" data-col-key="SellerId">Seller Id</th>
+<th class="portal-col" data-col-type="short" data-col-key="OrderNumber">Order Number</th>
+<th class="portal-col" data-col-type="money" data-col-key="TotalAmount">Total Amount</th>
+<th class="portal-col" data-col-type="text" data-col-key="ShippingAddress">Shipping Address</th>
+<th class="portal-col" data-col-type="text" data-col-key="Status">Status</th>
+<th class="portal-col" data-col-type="datetime" data-col-key="OrderDate">Order Date</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.List)
+                {
+                    <tr>
+                        <vc:operation-buttons item-id=@item.GetKey() controller-name="" action-name=""></vc:operation-buttons>
+                        <td class="portal-col" data-col-type="id" data-col-key="Id">@item.Id</td>
+<td class="portal-col" data-col-type="int" data-col-key="CustomerId">@item.CustomerId</td>
+<td class="portal-col" data-col-type="int" data-col-key="SellerId">@item.SellerId</td>
+<td class="portal-col" data-col-type="short" data-col-key="OrderNumber">@item.OrderNumber</td>
+<td class="portal-col" data-col-type="money" data-col-key="TotalAmount">@item.TotalAmount</td>
+<td class="portal-col" data-col-type="text" data-col-key="ShippingAddress">@item.ShippingAddress</td>
+<td class="portal-col" data-col-type="text" data-col-key="Status">@item.Status</td>
+<td class="portal-col" data-col-type="datetime" data-col-key="OrderDate">@item.OrderDate</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

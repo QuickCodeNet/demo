@@ -1,0 +1,69 @@
+﻿@using QuickCode.Demo.Portal.Models.SellerManagementModule
+@model SellerManagementModule.StoreData
+@{
+    int startIndex = ((Model.CurrentPage - 1) * Model.PageSize) + 1;
+    int endIndex = ((Model.CurrentPage) * Model.PageSize);
+    if (endIndex > Model.NumberOfRecord) {
+        endIndex = Model.NumberOfRecord;
+    }
+
+    var pagerData = new PagerData() { CurrentPage = Model.CurrentPage, NumberOfRecord = Model.NumberOfRecord, PageSize = Model.PageSize, TotalPage = Model.TotalPage, StartIndex = startIndex, EndIndex = endIndex };
+}
+@if (Model.List.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        No Data available in SellerManagementModule.Store table.
+    </div>
+}
+else
+{
+    <vc:pager pager-data=pagerData></vc:pager>
+    <div class="table-responsive portal-table-scroll">
+        <table bc-border="Bordered" bc-striped="true" bc-hover="true" class="table" bc-theme="Light">
+            <thead bc-theme="Dark">
+                <tr>
+                    <vc:operation-buttons item-id="Header" controller-name="" action-name=""></vc:operation-buttons>
+                    <th class="portal-col" data-col-type="id" data-col-key="Id">Id</th>
+<th class="portal-col" data-col-type="fk" data-col-key="SellerId">Seller Id</th>
+<th class="portal-col" data-col-type="text" data-col-key="Name">Name</th>
+<th class="portal-col" data-col-type="short" data-col-key="Slug">Slug</th>
+<th class="portal-col" data-col-type="large" data-col-key="Description">Description</th>
+<th class="portal-col" data-col-type="thumb" data-col-key="LogoUrl">Logo Url</th>
+<th class="portal-col" data-col-type="bool" data-col-key="IsActive">Is Active</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.List)
+                {
+                    <tr>
+                        <vc:operation-buttons item-id=@item.GetKey() controller-name="" action-name=""></vc:operation-buttons>
+                        <td class="portal-col" data-col-type="id" data-col-key="Id">@item.Id</td>
+<td class="portal-col" data-col-type="fk" data-col-key="SellerId">			@string.Format("{0}", Model.GetComboBoxValue("Sellers", item.SellerId))</td>
+<td class="portal-col" data-col-type="text" data-col-key="Name">@item.Name</td>
+<td class="portal-col" data-col-type="short" data-col-key="Slug">@item.Slug</td>
+<td class="portal-col" data-col-type="large" data-col-key="Description">@item.Description</td>
+<td class="portal-col" data-col-type="thumb" data-col-key="LogoUrl"><a href="@(item.LogoUrl == null || item.LogoUrl.Length == 0 ? "/images/no_image.png" : item.LogoUrl)" data-toggle="lightbox" data-type="image" class="portal-list-thumb-link">
+   <img class="lazyload img-fluid" src="/images/loading.svg" data-src="@(item.LogoUrl == null || item.LogoUrl.Length == 0 ? "/images/no_image.png" : item.LogoUrl)" style="height:auto;  width:auto; max-height: 110px; max-width: 110px;display: block;margin-left: auto;margin-right: auto;" bc-thumbnail="true" bc-round="true" />
+</a>
+</td>
+<td class="portal-col" data-col-type="bool" data-col-key="IsActive">@if (item.IsActive == true)
+{
+    <div class="ios-switch-wrapper checked">
+        <input class="ios-switch" type="checkbox" onchange="checkBoxChanged(this);" id="cbox_item_IsActive" checked disabled />
+    </div>
+}
+else
+{
+    <div class="ios-switch-wrapper">
+        <input class="ios-switch" type="checkbox" onchange="checkBoxChanged(this);" id="cbox_item_IsActive" disabled />
+    </div>
+}
+</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

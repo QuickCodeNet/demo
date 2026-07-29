@@ -1,0 +1,28 @@
+﻿{
+  "ATTRIBUTE_VALUES": [
+    {
+      "ATTRIBUTE_ID": 6,
+      "VALUE": "Internal Plan 1"
+    },
+    {
+      "ATTRIBUTE_ID": 3,
+      "VALUE": "Preferred Option 2"
+    },
+    {
+      "ATTRIBUTE_ID": 3,
+      "VALUE": "Global Package 3"
+    },
+    {
+      "ATTRIBUTE_ID": 1,
+      "VALUE": "Mini Permission 4"
+    },
+    {
+      "ATTRIBUTE_ID": 2,
+      "VALUE": "National Group 5"
+    },
+    {
+      "ATTRIBUTE_ID": 6,
+      "VALUE": "Express Build 6"
+    }
+  ]
+}

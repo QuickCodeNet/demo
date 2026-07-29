@@ -1,0 +1,49 @@
+﻿@model QuickCode.Demo.Portal.Models.IdentityModule.ApiMethodAccessGrantGetApiMethodAccessGrantNamesData
+@{
+    string title = "GetApiMethodAccessGrantNames".SplitCamelCaseToString();
+    TempData["Title"] = title;
+}
+<div class="container-fluid portal-query-page" IsPageAvailable="true">
+    <form method="post" id="formList" data-portal-query="true" class="portal-entity-form portal-query-form" data-list-partial-url="/IdentityModuleApiMethodAccessGrants/Queries/GetApiMethodAccessGrantNamesPartial">
+        @Html.AntiForgeryToken()
+        <div class="portal-query-shell">
+            <header class="portal-query-header">
+                <div class="portal-query-header__copy">
+                    <p class="portal-query-kicker">Query</p>
+                    <h2 class="portal-query-title">@title</h2>
+                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                </div>
+                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                    <span class="portal-query-endpoint__method">GET</span>
+                    <code class="portal-query-endpoint__path">/api/identity-module/api-method-access-grants/get-api-method-access-grant-names/{apiMethodAccessGrantPermissionGroupName}</code>
+                </div>
+            </header>
+
+            <section class="portal-query-workspace" aria-label="Query parameters">
+                <div class="portal-query-toolbar">
+                    <div class="portal-query-params portal-entity-form">
+<form-group>
+	<select bc-label="Api Method Access Grant Permission Group Name" class="form-select searchable-select" asp-for="ApiMethodAccessGrantPermissionGroupName" asp-items="@Model.GetComboBoxList("PermissionGroups", Model.ApiMethodAccessGrantPermissionGroupName)"  data-placeholder="Search for Api Method Access Grant Permission Group Name..."></select>
+</form-group>
+                    </div>
+                    <div class="portal-query-actions">
+                        <button type="submit" class="portal-query-run">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Run Query</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+                @await Html.PartialAsync("_GetApiMethodAccessGrantNamesTable", Model)
+            </section>
+        </div>
+        <input type="hidden" asp-for="CurrentPage" />
+        <input type="hidden" asp-for="PageSize" />
+        <input type="hidden" asp-for="HasRun" />
+    </form>
+</div>
+<div class="container-fluid" IsPageAvailable="false">
+ @await Html.PartialAsync("_NotAuthorized")
+</div>

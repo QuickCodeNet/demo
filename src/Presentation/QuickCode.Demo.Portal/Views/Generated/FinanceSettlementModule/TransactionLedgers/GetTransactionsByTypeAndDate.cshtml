@@ -1,0 +1,79 @@
+﻿@model QuickCode.Demo.Portal.Models.FinanceSettlementModule.TransactionLedgerGetTransactionsByTypeAndDateData
+@{
+    string title = "GetTransactionsByTypeAndDate".SplitCamelCaseToString();
+    TempData["Title"] = title;
+}
+<div class="container-fluid portal-query-page" IsPageAvailable="true">
+    <form method="post" id="formList" data-portal-query="true" class="portal-entity-form portal-query-form" data-list-partial-url="/FinanceSettlementModuleTransactionLedgers/Queries/GetTransactionsByTypeAndDatePartial">
+        @Html.AntiForgeryToken()
+        <div class="portal-query-shell">
+            <header class="portal-query-header">
+                <div class="portal-query-header__copy">
+                    <p class="portal-query-kicker">Query</p>
+                    <h2 class="portal-query-title">@title</h2>
+                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                </div>
+                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                    <span class="portal-query-endpoint__method">GET</span>
+                    <code class="portal-query-endpoint__path">/api/finance-settlement-module/transaction-ledgers/get-transactions-by-type-and-date/{transactionLedgerSellerId}/{transactionLedgerTransactionType}/{transactionLedgerTransactionDateFrom}/{transactionLedgerTransactionDateTo}?pageNumber={pageNumber}&pageSize={pageSize}</code>
+                </div>
+            </header>
+
+            <section class="portal-query-workspace" aria-label="Query parameters">
+                <div class="portal-query-toolbar">
+                    <div class="portal-query-params portal-entity-form">
+<form-group>
+	<input asp-for="TransactionLedgerSellerId" placeholder="Enter your Transaction Ledger Seller Id" bc-label="Transaction Ledger Seller Id" type="Text"  bc-required="true" bc-tooltip="Enter your Transaction Ledger Seller Id" bc-validation="true" />
+</form-group>
+
+<form-group>
+	<select bc-label="Transaction Ledger Transaction Type" class="form-select searchable-select" asp-for="TransactionLedgerTransactionType" asp-items="Html.GetEnumSelectList<FinanceSettlementModuleApi.TransactionType>()" data-placeholder="Search for Transaction Ledger Transaction Type..."></select>
+</form-group>
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-4" for="TransactionLedgerTransactionDateFrom">Transaction Ledger Transaction Date From</label>
+    <div class="col-sm-8">
+        <div class="input-group flatpickr flatpickr-datetime" id="fp_TransactionLedgerTransactionDateFrom">
+            <!input id="TransactionLedgerTransactionDateFrom" name="TransactionLedgerTransactionDateFrom" class="form-control portal-datetime-input" type="text" data-input autocomplete="off" placeholder="dd.MM.yyyy HH:mm"
+                value="@(Model.TransactionLedgerTransactionDateFrom == null ? string.Empty : (Convert.ToDateTime(Model.TransactionLedgerTransactionDateFrom).Year > 1 ? Convert.ToDateTime(Model.TransactionLedgerTransactionDateFrom).ToString("dd.MM.yyyy HH:mm") : string.Empty))" />
+            <!button class="input-group-text portal-datetime-toggle" type="button" data-toggle title="Select date" tabindex="-1" aria-label="Select date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </!button>
+        </div>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-4" for="TransactionLedgerTransactionDateTo">Transaction Ledger Transaction Date To</label>
+    <div class="col-sm-8">
+        <div class="input-group flatpickr flatpickr-datetime" id="fp_TransactionLedgerTransactionDateTo">
+            <!input id="TransactionLedgerTransactionDateTo" name="TransactionLedgerTransactionDateTo" class="form-control portal-datetime-input" type="text" data-input autocomplete="off" placeholder="dd.MM.yyyy HH:mm"
+                value="@(Model.TransactionLedgerTransactionDateTo == null ? string.Empty : (Convert.ToDateTime(Model.TransactionLedgerTransactionDateTo).Year > 1 ? Convert.ToDateTime(Model.TransactionLedgerTransactionDateTo).ToString("dd.MM.yyyy HH:mm") : string.Empty))" />
+            <!button class="input-group-text portal-datetime-toggle" type="button" data-toggle title="Select date" tabindex="-1" aria-label="Select date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </!button>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="portal-query-actions">
+                        <button type="submit" class="portal-query-run">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Run Query</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+                @await Html.PartialAsync("_GetTransactionsByTypeAndDateTable", Model)
+            </section>
+        </div>
+        <input type="hidden" asp-for="CurrentPage" />
+        <input type="hidden" asp-for="PageSize" />
+        <input type="hidden" asp-for="HasRun" />
+    </form>
+</div>
+<div class="container-fluid" IsPageAvailable="false">
+ @await Html.PartialAsync("_NotAuthorized")
+</div>

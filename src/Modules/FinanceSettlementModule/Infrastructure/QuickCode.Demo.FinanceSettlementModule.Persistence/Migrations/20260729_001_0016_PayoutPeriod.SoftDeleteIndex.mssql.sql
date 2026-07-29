@@ -1,0 +1,4 @@
+﻿IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE object_id = OBJECT_ID(N'dbo.PAYOUT_PERIODS', N'U') AND name = N'IX_PAYOUT_PERIODS_IsDeleted')
+BEGIN
+    CREATE INDEX [IX_PAYOUT_PERIODS_IsDeleted] ON [dbo].[PAYOUT_PERIODS] ([IsDeleted]);
+END

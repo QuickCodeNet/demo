@@ -1,0 +1,53 @@
+﻿@model QuickCode.Demo.Portal.Models.IdentityModule.TopicWorkflowGetTopicWorkflowsData
+@{
+    string title = "GetTopicWorkflows".SplitCamelCaseToString();
+    TempData["Title"] = title;
+}
+<div class="container-fluid portal-query-page" IsPageAvailable="true">
+    <form method="post" id="formList" data-portal-query="true" class="portal-entity-form portal-query-form" data-list-partial-url="/IdentityModuleTopicWorkflows/Queries/GetTopicWorkflowsPartial">
+        @Html.AntiForgeryToken()
+        <div class="portal-query-shell">
+            <header class="portal-query-header">
+                <div class="portal-query-header__copy">
+                    <p class="portal-query-kicker">Query</p>
+                    <h2 class="portal-query-title">@title</h2>
+                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                </div>
+                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                    <span class="portal-query-endpoint__method">GET</span>
+                    <code class="portal-query-endpoint__path">/api/identity-module/topic-workflows/get-topic-workflows/{kafkaEventsTopicName}/{apiMethodDefinitionsHttpMethod}</code>
+                </div>
+            </header>
+
+            <section class="portal-query-workspace" aria-label="Query parameters">
+                <div class="portal-query-toolbar">
+                    <div class="portal-query-params portal-entity-form">
+<form-group>
+	<select bc-label="Kafka Events Topic Name" class="form-select searchable-select" asp-for="KafkaEventsTopicName" asp-items="@Model.GetComboBoxList("KafkaEvents", Model.KafkaEventsTopicName)"  data-placeholder="Search for Kafka Events Topic Name..."></select>
+</form-group>
+
+<form-group>
+	<select bc-label="Api Method Definitions Http Method" class="form-select searchable-select" asp-for="ApiMethodDefinitionsHttpMethod" asp-items="Html.GetEnumSelectList<IdentityModuleApi.HttpMethodType>()" data-placeholder="Search for Api Method Definitions Http Method..."></select>
+</form-group>
+                    </div>
+                    <div class="portal-query-actions">
+                        <button type="submit" class="portal-query-run">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Run Query</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+                @await Html.PartialAsync("_GetTopicWorkflowsTable", Model)
+            </section>
+        </div>
+        <input type="hidden" asp-for="CurrentPage" />
+        <input type="hidden" asp-for="PageSize" />
+        <input type="hidden" asp-for="HasRun" />
+    </form>
+</div>
+<div class="container-fluid" IsPageAvailable="false">
+ @await Html.PartialAsync("_NotAuthorized")
+</div>

@@ -1,0 +1,44 @@
+﻿{
+  "SHIPPING_METHODS": [
+    {
+      "NAME": "Pro Target 1",
+      "COST": 4071.73,
+      "IS_ACTIVE": false
+    },
+    {
+      "NAME": "Premium Model 2",
+      "COST": 3635.38,
+      "IS_ACTIVE": false
+    },
+    {
+      "NAME": "Max Brand 3",
+      "COST": 2564.84,
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Legacy Version 4",
+      "COST": 4152.71,
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Classic Mode 5",
+      "COST": 2794.44,
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "General Entity 6",
+      "COST": 1326.58,
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Trusted Group 7",
+      "COST": 166.14,
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Popular Record 8",
+      "COST": 3882.69,
+      "IS_ACTIVE": true
+    }
+  ]
+}

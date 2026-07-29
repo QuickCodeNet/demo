@@ -1,0 +1,68 @@
+﻿{
+  "BRANDS": [
+    {
+      "NAME": "Verified Rule 1",
+      "LOGO": "https://picsum.photos/seed/902/400/300",
+      "PHOTO": "https://picsum.photos/seed/496/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Required Record 2",
+      "LOGO": "https://picsum.photos/seed/340/400/300",
+      "PHOTO": "https://picsum.photos/seed/290/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Professional Permission 3",
+      "LOGO": "https://picsum.photos/seed/665/400/300",
+      "PHOTO": "https://picsum.photos/seed/877/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Popular Unit 4",
+      "LOGO": "https://picsum.photos/seed/480/400/300",
+      "PHOTO": "https://picsum.photos/seed/301/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Priority Batch 5",
+      "LOGO": "https://picsum.photos/seed/990/400/300",
+      "PHOTO": "https://picsum.photos/seed/22/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Compact Channel 6",
+      "LOGO": "https://picsum.photos/seed/574/400/300",
+      "PHOTO": "https://picsum.photos/seed/303/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Archived Template 7",
+      "LOGO": "https://picsum.photos/seed/722/400/300",
+      "PHOTO": "https://picsum.photos/seed/678/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": true
+    },
+    {
+      "NAME": "Global Access 8",
+      "LOGO": "https://picsum.photos/seed/550/400/300",
+      "PHOTO": "https://picsum.photos/seed/10/400/300",
+      "BRAND_VIDEO": "/samples/sample.mp4",
+      "CATALOG_PDF": "/samples/sample.pdf",
+      "IS_ACTIVE": false
+    }
+  ]
+}

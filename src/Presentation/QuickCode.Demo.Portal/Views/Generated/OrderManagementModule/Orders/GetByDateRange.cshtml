@@ -1,0 +1,71 @@
+﻿@model QuickCode.Demo.Portal.Models.OrderManagementModule.OrderGetByDateRangeData
+@{
+    string title = "GetByDateRange".SplitCamelCaseToString();
+    TempData["Title"] = title;
+}
+<div class="container-fluid portal-query-page" IsPageAvailable="true">
+    <form method="post" id="formList" data-portal-query="true" class="portal-entity-form portal-query-form" data-list-partial-url="/OrderManagementModuleOrders/Queries/GetByDateRangePartial">
+        @Html.AntiForgeryToken()
+        <div class="portal-query-shell">
+            <header class="portal-query-header">
+                <div class="portal-query-header__copy">
+                    <p class="portal-query-kicker">Query</p>
+                    <h2 class="portal-query-title">@title</h2>
+                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                </div>
+                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                    <span class="portal-query-endpoint__method">GET</span>
+                    <code class="portal-query-endpoint__path">/api/order-management-module/orders/get-by-date-range/{orderOrderDateFrom}/{orderOrderDateTo}?pageNumber={pageNumber}&pageSize={pageSize}</code>
+                </div>
+            </header>
+
+            <section class="portal-query-workspace" aria-label="Query parameters">
+                <div class="portal-query-toolbar">
+                    <div class="portal-query-params portal-entity-form">
+<div class="form-group row">
+    <label class="col-form-label col-sm-4" for="OrderOrderDateFrom">Order Order Date From</label>
+    <div class="col-sm-8">
+        <div class="input-group flatpickr flatpickr-datetime" id="fp_OrderOrderDateFrom">
+            <!input id="OrderOrderDateFrom" name="OrderOrderDateFrom" class="form-control portal-datetime-input" type="text" data-input autocomplete="off" placeholder="dd.MM.yyyy HH:mm"
+                value="@(Model.OrderOrderDateFrom == null ? string.Empty : (Convert.ToDateTime(Model.OrderOrderDateFrom).Year > 1 ? Convert.ToDateTime(Model.OrderOrderDateFrom).ToString("dd.MM.yyyy HH:mm") : string.Empty))" />
+            <!button class="input-group-text portal-datetime-toggle" type="button" data-toggle title="Select date" tabindex="-1" aria-label="Select date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </!button>
+        </div>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-form-label col-sm-4" for="OrderOrderDateTo">Order Order Date To</label>
+    <div class="col-sm-8">
+        <div class="input-group flatpickr flatpickr-datetime" id="fp_OrderOrderDateTo">
+            <!input id="OrderOrderDateTo" name="OrderOrderDateTo" class="form-control portal-datetime-input" type="text" data-input autocomplete="off" placeholder="dd.MM.yyyy HH:mm"
+                value="@(Model.OrderOrderDateTo == null ? string.Empty : (Convert.ToDateTime(Model.OrderOrderDateTo).Year > 1 ? Convert.ToDateTime(Model.OrderOrderDateTo).ToString("dd.MM.yyyy HH:mm") : string.Empty))" />
+            <!button class="input-group-text portal-datetime-toggle" type="button" data-toggle title="Select date" tabindex="-1" aria-label="Select date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </!button>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="portal-query-actions">
+                        <button type="submit" class="portal-query-run">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Run Query</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+                @await Html.PartialAsync("_GetByDateRangeTable", Model)
+            </section>
+        </div>
+        <input type="hidden" asp-for="CurrentPage" />
+        <input type="hidden" asp-for="PageSize" />
+        <input type="hidden" asp-for="HasRun" />
+    </form>
+</div>
+<div class="container-fluid" IsPageAvailable="false">
+ @await Html.PartialAsync("_NotAuthorized")
+</div>

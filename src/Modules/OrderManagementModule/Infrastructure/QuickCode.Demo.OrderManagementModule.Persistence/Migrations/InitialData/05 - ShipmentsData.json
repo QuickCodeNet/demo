@@ -1,0 +1,52 @@
+﻿{
+  "SHIPMENTS": [
+    {
+      "ORDER_ID": 2,
+      "SHIPPING_METHOD_ID": 6,
+      "TRACKING_NUMBER": "Public Plan 1",
+      "STATUS": "Pending",
+      "SHIPPED_DATE": "2025-03-10T22:42:08.2620706Z",
+      "DELIVERED_DATE": "2025-10-24T11:29:45.8685596Z"
+    },
+    {
+      "ORDER_ID": 4,
+      "SHIPPING_METHOD_ID": 3,
+      "TRACKING_NUMBER": "Express Batch 2",
+      "STATUS": "FailedDelivery",
+      "SHIPPED_DATE": "2024-08-28T22:13:54.5653221Z",
+      "DELIVERED_DATE": "2024-01-28T23:02:14.1122998Z"
+    },
+    {
+      "ORDER_ID": 4,
+      "SHIPPING_METHOD_ID": 8,
+      "TRACKING_NUMBER": "Professional Item 3",
+      "STATUS": "FailedDelivery",
+      "SHIPPED_DATE": "2024-07-12T18:01:00.5222527Z",
+      "DELIVERED_DATE": "2025-12-28T06:46:35.9599012Z"
+    },
+    {
+      "ORDER_ID": 7,
+      "SHIPPING_METHOD_ID": 3,
+      "TRACKING_NUMBER": "Priority Source 4",
+      "STATUS": "FailedDelivery",
+      "SHIPPED_DATE": "2024-10-03T14:49:47.500229Z",
+      "DELIVERED_DATE": "2025-12-22T19:29:16.5106286Z"
+    },
+    {
+      "ORDER_ID": 1,
+      "SHIPPING_METHOD_ID": 3,
+      "TRACKING_NUMBER": "Archived Class 5",
+      "STATUS": "Delivered",
+      "SHIPPED_DATE": "2025-12-09T10:46:35.8146931Z",
+      "DELIVERED_DATE": "2025-11-12T13:17:54.0012242Z"
+    },
+    {
+      "ORDER_ID": 1,
+      "SHIPPING_METHOD_ID": 5,
+      "TRACKING_NUMBER": "Enterprise Scope 6",
+      "STATUS": "InTransit",
+      "SHIPPED_DATE": "2025-11-10T15:55:53.8405759Z",
+      "DELIVERED_DATE": "2025-09-23T08:25:40.8123902Z"
+    }
+  ]
+}

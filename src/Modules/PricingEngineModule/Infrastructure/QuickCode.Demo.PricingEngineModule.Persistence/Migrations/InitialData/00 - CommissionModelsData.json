@@ -1,0 +1,44 @@
+﻿{
+  "COMMISSION_MODELS": [
+    {
+      "NAME": "Trusted Profile 1",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Ticket project segment publish audience publish result invoice."
+    },
+    {
+      "NAME": "New Preference 2",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Archive document refund issue promo contract audience active issue."
+    },
+    {
+      "NAME": "Ultimate Template 3",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Alert channel notification metric cycle import template agreement retention config process."
+    },
+    {
+      "NAME": "Preferred Protocol 4",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Reject task stage process batch funnel cost forecast result detail profit."
+    },
+    {
+      "NAME": "Professional Plan 5",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Stage panel schedule archived customer issue."
+    },
+    {
+      "NAME": "Trusted Policy 6",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Attachment agreement reject event ledger result budget cost."
+    },
+    {
+      "NAME": "Popular Type 7",
+      "IS_ACTIVE": false,
+      "DESCRIPTION": "Coupon export alpha event batch response issue queue retention template."
+    },
+    {
+      "NAME": "Classic Template 8",
+      "IS_ACTIVE": true,
+      "DESCRIPTION": "Invoice audience report event attachment approve inactive calendar config."
+    }
+  ]
+}

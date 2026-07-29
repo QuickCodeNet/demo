@@ -1,0 +1,1872 @@
+﻿{
+  "PortalMenus": [
+    {
+      "Key": "IdentityModule_IdentityModule",
+      "Name": "IdentityModule",
+      "Text": "IdentityModule",
+      "Tooltip": "IdentityModule",
+      "ActionName": "",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodAccessGrants",
+      "Name": "ApiMethodAccessGrants",
+      "Text": "ApiMethodAccessGrants",
+      "Tooltip": "ApiMethodAccessGrants",
+      "ActionName": "/IdentityModuleApiMethodAccessGrants/List",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_ApiMethodAccessGrants_GetApiMethodAccessGrantNames",
+      "Name": "ApiMethodAccessGrantsGetApiMethodAccessGrantNames",
+      "Text": "ApiMethodAccessGrantsGetApiMethodAccessGrantNames",
+      "Tooltip": "ApiMethodAccessGrants GetApiMethodAccessGrantNames",
+      "ActionName": "/IdentityModuleApiMethodAccessGrants/Queries/GetApiMethodAccessGrantNames",
+      "OrderNo": 101,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodDefinitions",
+      "Name": "ApiMethodDefinitions",
+      "Text": "ApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/List",
+      "OrderNo": 102,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_ApiMethodDefinitions_GetApiMethodDefinitionsWithModelName",
+      "Name": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModelName",
+      "Text": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModelName",
+      "Tooltip": "ApiMethodDefinitions GetApiMethodDefinitionsWithModelName",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/Queries/GetApiMethodDefinitionsWithModelName",
+      "OrderNo": 103,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_ApiMethodDefinitions_GetApiMethodDefinitionsWithModuleName",
+      "Name": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModuleName",
+      "Text": "ApiMethodDefinitionsGetApiMethodDefinitionsWithModuleName",
+      "Tooltip": "ApiMethodDefinitions GetApiMethodDefinitionsWithModuleName",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/Queries/GetApiMethodDefinitionsWithModuleName",
+      "OrderNo": 104,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_ApiMethodDefinitions_GetKafkaEventsApiMethodDefinitions",
+      "Name": "ApiMethodDefinitionsGetKafkaEventsApiMethodDefinitions",
+      "Text": "ApiMethodDefinitionsGetKafkaEventsApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions GetKafkaEventsApiMethodDefinitions",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/Queries/GetKafkaEventsApiMethodDefinitions",
+      "OrderNo": 105,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoles",
+      "Name": "AspNetRoles",
+      "Text": "AspNetRoles",
+      "Tooltip": "AspNetRoles",
+      "ActionName": "/IdentityModuleAspNetRoles/List",
+      "OrderNo": 106,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoleClaims",
+      "Name": "AspNetRoleClaims",
+      "Text": "AspNetRoleClaims",
+      "Tooltip": "AspNetRoleClaims",
+      "ActionName": "/IdentityModuleAspNetRoleClaims/List",
+      "OrderNo": 107,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUsers",
+      "Name": "AspNetUsers",
+      "Text": "AspNetUsers",
+      "Tooltip": "AspNetUsers",
+      "ActionName": "/IdentityModuleAspNetUsers/List",
+      "OrderNo": 108,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_AspNetUsers_IdentityUserById",
+      "Name": "AspNetUsersIdentityUserById",
+      "Text": "AspNetUsersIdentityUserById",
+      "Tooltip": "AspNetUsers IdentityUserById",
+      "ActionName": "/IdentityModuleAspNetUsers/Queries/IdentityUserById",
+      "OrderNo": 109,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AspNetUsers_IdentityUserByNormalizedEmail",
+      "Name": "AspNetUsersIdentityUserByNormalizedEmail",
+      "Text": "AspNetUsersIdentityUserByNormalizedEmail",
+      "Tooltip": "AspNetUsers IdentityUserByNormalizedEmail",
+      "ActionName": "/IdentityModuleAspNetUsers/Queries/IdentityUserByNormalizedEmail",
+      "OrderNo": 110,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AspNetUsers_IdentityUserByNormalizedUsername",
+      "Name": "AspNetUsersIdentityUserByNormalizedUsername",
+      "Text": "AspNetUsersIdentityUserByNormalizedUsername",
+      "Tooltip": "AspNetUsers IdentityUserByNormalizedUsername",
+      "ActionName": "/IdentityModuleAspNetUsers/Queries/IdentityUserByNormalizedUsername",
+      "OrderNo": 111,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserClaims",
+      "Name": "AspNetUserClaims",
+      "Text": "AspNetUserClaims",
+      "Tooltip": "AspNetUserClaims",
+      "ActionName": "/IdentityModuleAspNetUserClaims/List",
+      "OrderNo": 112,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserLogins",
+      "Name": "AspNetUserLogins",
+      "Text": "AspNetUserLogins",
+      "Tooltip": "AspNetUserLogins",
+      "ActionName": "/IdentityModuleAspNetUserLogins/List",
+      "OrderNo": 113,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserRoles",
+      "Name": "AspNetUserRoles",
+      "Text": "AspNetUserRoles",
+      "Tooltip": "AspNetUserRoles",
+      "ActionName": "/IdentityModuleAspNetUserRoles/List",
+      "OrderNo": 114,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserTokens",
+      "Name": "AspNetUserTokens",
+      "Text": "AspNetUserTokens",
+      "Tooltip": "AspNetUserTokens",
+      "ActionName": "/IdentityModuleAspNetUserTokens/List",
+      "OrderNo": 115,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/IdentityModuleAuditLogs/List",
+      "OrderNo": 116,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 117,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 118,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 119,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 120,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 121,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 122,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 123,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 124,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 125,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/IdentityModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 126,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_ColumnTypes",
+      "Name": "ColumnTypes",
+      "Text": "ColumnTypes",
+      "Tooltip": "ColumnTypes",
+      "ActionName": "/IdentityModuleColumnTypes/List",
+      "OrderNo": 127,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_KafkaEvents",
+      "Name": "KafkaEvents",
+      "Text": "KafkaEvents",
+      "Tooltip": "KafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/List",
+      "OrderNo": 128,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_KafkaEvents_GetActiveKafkaEvents",
+      "Name": "KafkaEventsGetActiveKafkaEvents",
+      "Text": "KafkaEventsGetActiveKafkaEvents",
+      "Tooltip": "KafkaEvents GetActiveKafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/Queries/GetActiveKafkaEvents",
+      "OrderNo": 129,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_KafkaEvents_GetKafkaEvents",
+      "Name": "KafkaEventsGetKafkaEvents",
+      "Text": "KafkaEventsGetKafkaEvents",
+      "Tooltip": "KafkaEvents GetKafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/Queries/GetKafkaEvents",
+      "OrderNo": 130,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_KafkaEvents_GetTopicWorkflows",
+      "Name": "KafkaEventsGetTopicWorkflows",
+      "Text": "KafkaEventsGetTopicWorkflows",
+      "Tooltip": "KafkaEvents GetTopicWorkflows",
+      "ActionName": "/IdentityModuleKafkaEvents/Queries/GetTopicWorkflows",
+      "OrderNo": 131,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_KafkaEvents_GetTopicWorkflowsKafkaEvents",
+      "Name": "KafkaEventsGetTopicWorkflowsKafkaEvents",
+      "Text": "KafkaEventsGetTopicWorkflowsKafkaEvents",
+      "Tooltip": "KafkaEvents GetTopicWorkflowsKafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/Queries/GetTopicWorkflowsKafkaEvents",
+      "OrderNo": 132,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_Models",
+      "Name": "Models",
+      "Text": "Models",
+      "Tooltip": "Models",
+      "ActionName": "/IdentityModuleModels/List",
+      "OrderNo": 133,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_Modules",
+      "Name": "Modules",
+      "Text": "Modules",
+      "Tooltip": "Modules",
+      "ActionName": "/IdentityModuleModules/List",
+      "OrderNo": 134,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PermissionGroups",
+      "Name": "PermissionGroups",
+      "Text": "PermissionGroups",
+      "Tooltip": "PermissionGroups",
+      "ActionName": "/IdentityModulePermissionGroups/List",
+      "OrderNo": 135,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalMenus",
+      "Name": "PortalMenus",
+      "Text": "PortalMenus",
+      "Tooltip": "PortalMenus",
+      "ActionName": "/IdentityModulePortalMenus/List",
+      "OrderNo": 136,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalPageAccessGrants",
+      "Name": "PortalPageAccessGrants",
+      "Text": "PortalPageAccessGrants",
+      "Tooltip": "PortalPageAccessGrants",
+      "ActionName": "/IdentityModulePortalPageAccessGrants/List",
+      "OrderNo": 137,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_PortalPageAccessGrants_GetPortalPageAccessGrant",
+      "Name": "PortalPageAccessGrantsGetPortalPageAccessGrant",
+      "Text": "PortalPageAccessGrantsGetPortalPageAccessGrant",
+      "Tooltip": "PortalPageAccessGrants GetPortalPageAccessGrant",
+      "ActionName": "/IdentityModulePortalPageAccessGrants/Queries/GetPortalPageAccessGrant",
+      "OrderNo": 138,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_PortalPageAccessGrants_GetPortalPageAccessGrants",
+      "Name": "PortalPageAccessGrantsGetPortalPageAccessGrants",
+      "Text": "PortalPageAccessGrantsGetPortalPageAccessGrants",
+      "Tooltip": "PortalPageAccessGrants GetPortalPageAccessGrants",
+      "ActionName": "/IdentityModulePortalPageAccessGrants/Queries/GetPortalPageAccessGrants",
+      "OrderNo": 139,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_PortalPageDefinitions",
+      "Name": "PortalPageDefinitions",
+      "Text": "PortalPageDefinitions",
+      "Tooltip": "PortalPageDefinitions",
+      "ActionName": "/IdentityModulePortalPageDefinitions/List",
+      "OrderNo": 140,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_PortalPageDefinitions_GetPortalPageDefinitionsWithModelName",
+      "Name": "PortalPageDefinitionsGetPortalPageDefinitionsWithModelName",
+      "Text": "PortalPageDefinitionsGetPortalPageDefinitionsWithModelName",
+      "Tooltip": "PortalPageDefinitions GetPortalPageDefinitionsWithModelName",
+      "ActionName": "/IdentityModulePortalPageDefinitions/Queries/GetPortalPageDefinitionsWithModelName",
+      "OrderNo": 141,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_PortalPageDefinitions_GetPortalPageDefinitionsWithModuleName",
+      "Name": "PortalPageDefinitionsGetPortalPageDefinitionsWithModuleName",
+      "Text": "PortalPageDefinitionsGetPortalPageDefinitionsWithModuleName",
+      "Tooltip": "PortalPageDefinitions GetPortalPageDefinitionsWithModuleName",
+      "ActionName": "/IdentityModulePortalPageDefinitions/Queries/GetPortalPageDefinitionsWithModuleName",
+      "OrderNo": 142,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "IdentityModule_RefreshTokens",
+      "Name": "RefreshTokens",
+      "Text": "RefreshTokens",
+      "Tooltip": "RefreshTokens",
+      "ActionName": "/IdentityModuleRefreshTokens/List",
+      "OrderNo": 143,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TableComboboxSettings",
+      "Name": "TableComboboxSettings",
+      "Text": "TableComboboxSettings",
+      "Tooltip": "TableComboboxSettings",
+      "ActionName": "/IdentityModuleTableComboboxSettings/List",
+      "OrderNo": 144,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TopicWorkflows",
+      "Name": "TopicWorkflows",
+      "Text": "TopicWorkflows",
+      "Tooltip": "TopicWorkflows",
+      "ActionName": "/IdentityModuleTopicWorkflows/List",
+      "OrderNo": 145,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "Queries_IdentityModule_TopicWorkflows_GetTopicWorkflows",
+      "Name": "TopicWorkflowsGetTopicWorkflows",
+      "Text": "TopicWorkflowsGetTopicWorkflows",
+      "Tooltip": "TopicWorkflows GetTopicWorkflows",
+      "ActionName": "/IdentityModuleTopicWorkflows/Queries/GetTopicWorkflows",
+      "OrderNo": 146,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_TopicWorkflows_GetWorkflows",
+      "Name": "TopicWorkflowsGetWorkflows",
+      "Text": "TopicWorkflowsGetWorkflows",
+      "Tooltip": "TopicWorkflows GetWorkflows",
+      "ActionName": "/IdentityModuleTopicWorkflows/Queries/GetWorkflows",
+      "OrderNo": 147,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "Queries_IdentityModule_TopicWorkflows_GetWorkflows2",
+      "Name": "TopicWorkflowsGetWorkflows2",
+      "Text": "TopicWorkflowsGetWorkflows2",
+      "Tooltip": "TopicWorkflows GetWorkflows2",
+      "ActionName": "/IdentityModuleTopicWorkflows/Queries/GetWorkflows2",
+      "OrderNo": 148,
+      "ParentName": "IdentityModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_FinanceSettlementModule",
+      "Name": "FinanceSettlementModule",
+      "Text": "FinanceSettlementModule",
+      "Tooltip": "FinanceSettlementModule",
+      "ActionName": "",
+      "OrderNo": 149,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "FinanceSettlementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/List",
+      "OrderNo": 149,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 150,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 151,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 152,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 153,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 154,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 155,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 156,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 157,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 158,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/FinanceSettlementModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 159,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_CommissionEntries",
+      "Name": "CommissionEntries",
+      "Text": "CommissionEntries",
+      "Tooltip": "CommissionEntries",
+      "ActionName": "/FinanceSettlementModuleCommissionEntries/List",
+      "OrderNo": 160,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_CommissionEntries_GetByOrderId",
+      "Name": "CommissionEntriesGetByOrderId",
+      "Text": "CommissionEntriesGetByOrderId",
+      "Tooltip": "CommissionEntries GetByOrderId",
+      "ActionName": "/FinanceSettlementModuleCommissionEntries/Queries/GetByOrderId",
+      "OrderNo": 161,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_CommissionEntries_GetCommissionsBySellerForPeriod",
+      "Name": "CommissionEntriesGetCommissionsBySellerForPeriod",
+      "Text": "CommissionEntriesGetCommissionsBySellerForPeriod",
+      "Tooltip": "CommissionEntries GetCommissionsBySellerForPeriod",
+      "ActionName": "/FinanceSettlementModuleCommissionEntries/Queries/GetCommissionsBySellerForPeriod",
+      "OrderNo": 162,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_FinancialAdjustments",
+      "Name": "FinancialAdjustments",
+      "Text": "FinancialAdjustments",
+      "Tooltip": "FinancialAdjustments",
+      "ActionName": "/FinanceSettlementModuleFinancialAdjustments/List",
+      "OrderNo": 163,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_FinancialAdjustments_GetBySellerId",
+      "Name": "FinancialAdjustmentsGetBySellerId",
+      "Text": "FinancialAdjustmentsGetBySellerId",
+      "Tooltip": "FinancialAdjustments GetBySellerId",
+      "ActionName": "/FinanceSettlementModuleFinancialAdjustments/Queries/GetBySellerId",
+      "OrderNo": 164,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_PayoutLineItems",
+      "Name": "PayoutLineItems",
+      "Text": "PayoutLineItems",
+      "Tooltip": "PayoutLineItems",
+      "ActionName": "/FinanceSettlementModulePayoutLineItems/List",
+      "OrderNo": 165,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_PayoutLineItems_GetByPayoutId",
+      "Name": "PayoutLineItemsGetByPayoutId",
+      "Text": "PayoutLineItemsGetByPayoutId",
+      "Tooltip": "PayoutLineItems GetByPayoutId",
+      "ActionName": "/FinanceSettlementModulePayoutLineItems/Queries/GetByPayoutId",
+      "OrderNo": 166,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_PayoutPeriods",
+      "Name": "PayoutPeriods",
+      "Text": "PayoutPeriods",
+      "Tooltip": "PayoutPeriods",
+      "ActionName": "/FinanceSettlementModulePayoutPeriods/List",
+      "OrderNo": 167,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "FinanceSettlementModule_SellerPayouts",
+      "Name": "SellerPayouts",
+      "Text": "SellerPayouts",
+      "Tooltip": "SellerPayouts",
+      "ActionName": "/FinanceSettlementModuleSellerPayouts/List",
+      "OrderNo": 168,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_SellerPayouts_GetByPeriod",
+      "Name": "SellerPayoutsGetByPeriod",
+      "Text": "SellerPayoutsGetByPeriod",
+      "Tooltip": "SellerPayouts GetByPeriod",
+      "ActionName": "/FinanceSettlementModuleSellerPayouts/Queries/GetByPeriod",
+      "OrderNo": 169,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_SellerPayouts_GetBySellerId",
+      "Name": "SellerPayoutsGetBySellerId",
+      "Text": "SellerPayoutsGetBySellerId",
+      "Tooltip": "SellerPayouts GetBySellerId",
+      "ActionName": "/FinanceSettlementModuleSellerPayouts/Queries/GetBySellerId",
+      "OrderNo": 170,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_SellerPayouts_GetByStatus",
+      "Name": "SellerPayoutsGetByStatus",
+      "Text": "SellerPayoutsGetByStatus",
+      "Tooltip": "SellerPayouts GetByStatus",
+      "ActionName": "/FinanceSettlementModuleSellerPayouts/Queries/GetByStatus",
+      "OrderNo": 171,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "FinanceSettlementModule_TransactionLedgers",
+      "Name": "TransactionLedgers",
+      "Text": "TransactionLedgers",
+      "Tooltip": "TransactionLedgers",
+      "ActionName": "/FinanceSettlementModuleTransactionLedgers/List",
+      "OrderNo": 172,
+      "ParentName": "FinanceSettlementModule"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_TransactionLedgers_GetBySellerId",
+      "Name": "TransactionLedgersGetBySellerId",
+      "Text": "TransactionLedgersGetBySellerId",
+      "Tooltip": "TransactionLedgers GetBySellerId",
+      "ActionName": "/FinanceSettlementModuleTransactionLedgers/Queries/GetBySellerId",
+      "OrderNo": 173,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "Queries_FinanceSettlementModule_TransactionLedgers_GetTransactionsByTypeAndDate",
+      "Name": "TransactionLedgersGetTransactionsByTypeAndDate",
+      "Text": "TransactionLedgersGetTransactionsByTypeAndDate",
+      "Tooltip": "TransactionLedgers GetTransactionsByTypeAndDate",
+      "ActionName": "/FinanceSettlementModuleTransactionLedgers/Queries/GetTransactionsByTypeAndDate",
+      "OrderNo": 174,
+      "ParentName": "FinanceSettlementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_OrderManagementModule",
+      "Name": "OrderManagementModule",
+      "Text": "OrderManagementModule",
+      "Tooltip": "OrderManagementModule",
+      "ActionName": "",
+      "OrderNo": 175,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "OrderManagementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/OrderManagementModuleAuditLogs/List",
+      "OrderNo": 175,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 176,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 177,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 178,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 179,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 180,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 181,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 182,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 183,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 184,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/OrderManagementModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 185,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_Orders",
+      "Name": "Orders",
+      "Text": "Orders",
+      "Tooltip": "Orders",
+      "ActionName": "/OrderManagementModuleOrders/List",
+      "OrderNo": 186,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Orders_GetByCustomerId",
+      "Name": "OrdersGetByCustomerId",
+      "Text": "OrdersGetByCustomerId",
+      "Tooltip": "Orders GetByCustomerId",
+      "ActionName": "/OrderManagementModuleOrders/Queries/GetByCustomerId",
+      "OrderNo": 187,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Orders_GetByDateRange",
+      "Name": "OrdersGetByDateRange",
+      "Text": "OrdersGetByDateRange",
+      "Tooltip": "Orders GetByDateRange",
+      "ActionName": "/OrderManagementModuleOrders/Queries/GetByDateRange",
+      "OrderNo": 188,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Orders_GetBySellerId",
+      "Name": "OrdersGetBySellerId",
+      "Text": "OrdersGetBySellerId",
+      "Tooltip": "Orders GetBySellerId",
+      "ActionName": "/OrderManagementModuleOrders/Queries/GetBySellerId",
+      "OrderNo": 189,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Orders_GetByStatus",
+      "Name": "OrdersGetByStatus",
+      "Text": "OrdersGetByStatus",
+      "Tooltip": "Orders GetByStatus",
+      "ActionName": "/OrderManagementModuleOrders/Queries/GetByStatus",
+      "OrderNo": 190,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Orders_GetOrdersForSettlement",
+      "Name": "OrdersGetOrdersForSettlement",
+      "Text": "OrdersGetOrdersForSettlement",
+      "Tooltip": "Orders GetOrdersForSettlement",
+      "ActionName": "/OrderManagementModuleOrders/Queries/GetOrdersForSettlement",
+      "OrderNo": 191,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_OrderItems",
+      "Name": "OrderItems",
+      "Text": "OrderItems",
+      "Tooltip": "OrderItems",
+      "ActionName": "/OrderManagementModuleOrderItems/List",
+      "OrderNo": 192,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_OrderItems_GetByOrderId",
+      "Name": "OrderItemsGetByOrderId",
+      "Text": "OrderItemsGetByOrderId",
+      "Tooltip": "OrderItems GetByOrderId",
+      "ActionName": "/OrderManagementModuleOrderItems/Queries/GetByOrderId",
+      "OrderNo": 193,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_OrderStatusHistories",
+      "Name": "OrderStatusHistories",
+      "Text": "OrderStatusHistories",
+      "Tooltip": "OrderStatusHistories",
+      "ActionName": "/OrderManagementModuleOrderStatusHistories/List",
+      "OrderNo": 194,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_OrderStatusHistories_GetByOrderId",
+      "Name": "OrderStatusHistoriesGetByOrderId",
+      "Text": "OrderStatusHistoriesGetByOrderId",
+      "Tooltip": "OrderStatusHistories GetByOrderId",
+      "ActionName": "/OrderManagementModuleOrderStatusHistories/Queries/GetByOrderId",
+      "OrderNo": 195,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_OrderStatusManagers",
+      "Name": "OrderStatusManagers",
+      "Text": "OrderStatusManagers",
+      "Tooltip": "OrderStatusManagers",
+      "ActionName": "/OrderManagementModuleOrderStatusManagers/List",
+      "OrderNo": 196,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "OrderManagementModule_ReturnRequests",
+      "Name": "ReturnRequests",
+      "Text": "ReturnRequests",
+      "Tooltip": "ReturnRequests",
+      "ActionName": "/OrderManagementModuleReturnRequests/List",
+      "OrderNo": 197,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_ReturnRequests_GetByOrderId",
+      "Name": "ReturnRequestsGetByOrderId",
+      "Text": "ReturnRequestsGetByOrderId",
+      "Tooltip": "ReturnRequests GetByOrderId",
+      "ActionName": "/OrderManagementModuleReturnRequests/Queries/GetByOrderId",
+      "OrderNo": 198,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_ReturnRequests_GetPendingReturnsBySeller",
+      "Name": "ReturnRequestsGetPendingReturnsBySeller",
+      "Text": "ReturnRequestsGetPendingReturnsBySeller",
+      "Tooltip": "ReturnRequests GetPendingReturnsBySeller",
+      "ActionName": "/OrderManagementModuleReturnRequests/Queries/GetPendingReturnsBySeller",
+      "OrderNo": 199,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_Shipments",
+      "Name": "Shipments",
+      "Text": "Shipments",
+      "Tooltip": "Shipments",
+      "ActionName": "/OrderManagementModuleShipments/List",
+      "OrderNo": 200,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_Shipments_GetByOrderId",
+      "Name": "ShipmentsGetByOrderId",
+      "Text": "ShipmentsGetByOrderId",
+      "Tooltip": "Shipments GetByOrderId",
+      "ActionName": "/OrderManagementModuleShipments/Queries/GetByOrderId",
+      "OrderNo": 201,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "OrderManagementModule_ShippingMethods",
+      "Name": "ShippingMethods",
+      "Text": "ShippingMethods",
+      "Tooltip": "ShippingMethods",
+      "ActionName": "/OrderManagementModuleShippingMethods/List",
+      "OrderNo": 202,
+      "ParentName": "OrderManagementModule"
+    },
+    {
+      "Key": "Queries_OrderManagementModule_ShippingMethods_GetActive",
+      "Name": "ShippingMethodsGetActive",
+      "Text": "ShippingMethodsGetActive",
+      "Tooltip": "ShippingMethods GetActive",
+      "ActionName": "/OrderManagementModuleShippingMethods/Queries/GetActive",
+      "OrderNo": 203,
+      "ParentName": "OrderManagementModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_PricingEngineModule",
+      "Name": "PricingEngineModule",
+      "Text": "PricingEngineModule",
+      "Tooltip": "PricingEngineModule",
+      "ActionName": "",
+      "OrderNo": 204,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "PricingEngineModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/PricingEngineModuleAuditLogs/List",
+      "OrderNo": 204,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 205,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 206,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 207,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 208,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 209,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 210,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 211,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 212,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 213,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/PricingEngineModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 214,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_CampaignApplicabilities",
+      "Name": "CampaignApplicabilities",
+      "Text": "CampaignApplicabilities",
+      "Tooltip": "CampaignApplicabilities",
+      "ActionName": "/PricingEngineModuleCampaignApplicabilities/List",
+      "OrderNo": 215,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_CampaignApplicabilities_GetByCampaignId",
+      "Name": "CampaignApplicabilitiesGetByCampaignId",
+      "Text": "CampaignApplicabilitiesGetByCampaignId",
+      "Tooltip": "CampaignApplicabilities GetByCampaignId",
+      "ActionName": "/PricingEngineModuleCampaignApplicabilities/Queries/GetByCampaignId",
+      "OrderNo": 216,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_CategoryCommissionOverrides",
+      "Name": "CategoryCommissionOverrides",
+      "Text": "CategoryCommissionOverrides",
+      "Tooltip": "CategoryCommissionOverrides",
+      "ActionName": "/PricingEngineModuleCategoryCommissionOverrides/List",
+      "OrderNo": 217,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "PricingEngineModule_CommissionModels",
+      "Name": "CommissionModels",
+      "Text": "CommissionModels",
+      "Tooltip": "CommissionModels",
+      "ActionName": "/PricingEngineModuleCommissionModels/List",
+      "OrderNo": 218,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_CommissionModels_GetActive",
+      "Name": "CommissionModelsGetActive",
+      "Text": "CommissionModelsGetActive",
+      "Tooltip": "CommissionModels GetActive",
+      "ActionName": "/PricingEngineModuleCommissionModels/Queries/GetActive",
+      "OrderNo": 219,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_CommissionRules",
+      "Name": "CommissionRules",
+      "Text": "CommissionRules",
+      "Tooltip": "CommissionRules",
+      "ActionName": "/PricingEngineModuleCommissionRules/List",
+      "OrderNo": 220,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_CommissionRules_GetActiveRulesByModel",
+      "Name": "CommissionRulesGetActiveRulesByModel",
+      "Text": "CommissionRulesGetActiveRulesByModel",
+      "Tooltip": "CommissionRules GetActiveRulesByModel",
+      "ActionName": "/PricingEngineModuleCommissionRules/Queries/GetActiveRulesByModel",
+      "OrderNo": 221,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_CommissionRules_GetByModelId",
+      "Name": "CommissionRulesGetByModelId",
+      "Text": "CommissionRulesGetByModelId",
+      "Tooltip": "CommissionRules GetByModelId",
+      "ActionName": "/PricingEngineModuleCommissionRules/Queries/GetByModelId",
+      "OrderNo": 222,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_PromotionalCampaigns",
+      "Name": "PromotionalCampaigns",
+      "Text": "PromotionalCampaigns",
+      "Tooltip": "PromotionalCampaigns",
+      "ActionName": "/PricingEngineModulePromotionalCampaigns/List",
+      "OrderNo": 223,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_PromotionalCampaigns_GetActiveCampaigns",
+      "Name": "PromotionalCampaignsGetActiveCampaigns",
+      "Text": "PromotionalCampaignsGetActiveCampaigns",
+      "Tooltip": "PromotionalCampaigns GetActiveCampaigns",
+      "ActionName": "/PricingEngineModulePromotionalCampaigns/Queries/GetActiveCampaigns",
+      "OrderNo": 224,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_PromotionalCampaigns_GetCampaignsInDateRange",
+      "Name": "PromotionalCampaignsGetCampaignsInDateRange",
+      "Text": "PromotionalCampaignsGetCampaignsInDateRange",
+      "Tooltip": "PromotionalCampaigns GetCampaignsInDateRange",
+      "ActionName": "/PricingEngineModulePromotionalCampaigns/Queries/GetCampaignsInDateRange",
+      "OrderNo": 225,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "PricingEngineModule_SellerCommissionAssignments",
+      "Name": "SellerCommissionAssignments",
+      "Text": "SellerCommissionAssignments",
+      "Tooltip": "SellerCommissionAssignments",
+      "ActionName": "/PricingEngineModuleSellerCommissionAssignments/List",
+      "OrderNo": 226,
+      "ParentName": "PricingEngineModule"
+    },
+    {
+      "Key": "Queries_PricingEngineModule_SellerCommissionAssignments_GetByModelId",
+      "Name": "SellerCommissionAssignmentsGetByModelId",
+      "Text": "SellerCommissionAssignmentsGetByModelId",
+      "Tooltip": "SellerCommissionAssignments GetByModelId",
+      "ActionName": "/PricingEngineModuleSellerCommissionAssignments/Queries/GetByModelId",
+      "OrderNo": 227,
+      "ParentName": "PricingEngineModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_ProductCatalogModule",
+      "Name": "ProductCatalogModule",
+      "Text": "ProductCatalogModule",
+      "Tooltip": "ProductCatalogModule",
+      "ActionName": "",
+      "OrderNo": 228,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "ProductCatalogModule_AttributeDefinitions",
+      "Name": "AttributeDefinitions",
+      "Text": "AttributeDefinitions",
+      "Tooltip": "AttributeDefinitions",
+      "ActionName": "/ProductCatalogModuleAttributeDefinitions/List",
+      "OrderNo": 228,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "ProductCatalogModule_AttributeValues",
+      "Name": "AttributeValues",
+      "Text": "AttributeValues",
+      "Tooltip": "AttributeValues",
+      "ActionName": "/ProductCatalogModuleAttributeValues/List",
+      "OrderNo": 229,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AttributeValues_GetByAttributeId",
+      "Name": "AttributeValuesGetByAttributeId",
+      "Text": "AttributeValuesGetByAttributeId",
+      "Tooltip": "AttributeValues GetByAttributeId",
+      "ActionName": "/ProductCatalogModuleAttributeValues/Queries/GetByAttributeId",
+      "OrderNo": 230,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/ProductCatalogModuleAuditLogs/List",
+      "OrderNo": 231,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 232,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 233,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 234,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 235,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 236,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 237,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 238,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 239,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 240,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/ProductCatalogModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 241,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_Brands",
+      "Name": "Brands",
+      "Text": "Brands",
+      "Tooltip": "Brands",
+      "ActionName": "/ProductCatalogModuleBrands/List",
+      "OrderNo": 242,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Brands_GetActive",
+      "Name": "BrandsGetActive",
+      "Text": "BrandsGetActive",
+      "Tooltip": "Brands GetActive",
+      "ActionName": "/ProductCatalogModuleBrands/Queries/GetActive",
+      "OrderNo": 243,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Brands_SearchByName",
+      "Name": "BrandsSearchByName",
+      "Text": "BrandsSearchByName",
+      "Tooltip": "Brands SearchByName",
+      "ActionName": "/ProductCatalogModuleBrands/Queries/SearchByName",
+      "OrderNo": 244,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_Categories",
+      "Name": "Categories",
+      "Text": "Categories",
+      "Tooltip": "Categories",
+      "ActionName": "/ProductCatalogModuleCategories/List",
+      "OrderNo": 245,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Categories_GetActive",
+      "Name": "CategoriesGetActive",
+      "Text": "CategoriesGetActive",
+      "Tooltip": "Categories GetActive",
+      "ActionName": "/ProductCatalogModuleCategories/Queries/GetActive",
+      "OrderNo": 246,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Categories_GetSubCategories",
+      "Name": "CategoriesGetSubCategories",
+      "Text": "CategoriesGetSubCategories",
+      "Tooltip": "Categories GetSubCategories",
+      "ActionName": "/ProductCatalogModuleCategories/Queries/GetSubCategories",
+      "OrderNo": 247,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_Products",
+      "Name": "Products",
+      "Text": "Products",
+      "Tooltip": "Products",
+      "ActionName": "/ProductCatalogModuleProducts/List",
+      "OrderNo": 248,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Products_GetActiveBySeller",
+      "Name": "ProductsGetActiveBySeller",
+      "Text": "ProductsGetActiveBySeller",
+      "Tooltip": "Products GetActiveBySeller",
+      "ActionName": "/ProductCatalogModuleProducts/Queries/GetActiveBySeller",
+      "OrderNo": 249,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Products_GetFeatured",
+      "Name": "ProductsGetFeatured",
+      "Text": "ProductsGetFeatured",
+      "Tooltip": "Products GetFeatured",
+      "ActionName": "/ProductCatalogModuleProducts/Queries/GetFeatured",
+      "OrderNo": 250,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Products_GetPendingApproval",
+      "Name": "ProductsGetPendingApproval",
+      "Text": "ProductsGetPendingApproval",
+      "Tooltip": "Products GetPendingApproval",
+      "ActionName": "/ProductCatalogModuleProducts/Queries/GetPendingApproval",
+      "OrderNo": 251,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Products_GetProductsWithDetails",
+      "Name": "ProductsGetProductsWithDetails",
+      "Text": "ProductsGetProductsWithDetails",
+      "Tooltip": "Products GetProductsWithDetails",
+      "ActionName": "/ProductCatalogModuleProducts/Queries/GetProductsWithDetails",
+      "OrderNo": 252,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_Products_SearchProducts",
+      "Name": "ProductsSearchProducts",
+      "Text": "ProductsSearchProducts",
+      "Tooltip": "Products SearchProducts",
+      "ActionName": "/ProductCatalogModuleProducts/Queries/SearchProducts",
+      "OrderNo": 253,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_ProductCategories",
+      "Name": "ProductCategories",
+      "Text": "ProductCategories",
+      "Tooltip": "ProductCategories",
+      "ActionName": "/ProductCatalogModuleProductCategories/List",
+      "OrderNo": 254,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductCategories_GetByCategoryId",
+      "Name": "ProductCategoriesGetByCategoryId",
+      "Text": "ProductCategoriesGetByCategoryId",
+      "Tooltip": "ProductCategories GetByCategoryId",
+      "ActionName": "/ProductCatalogModuleProductCategories/Queries/GetByCategoryId",
+      "OrderNo": 255,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductCategories_GetByProductId",
+      "Name": "ProductCategoriesGetByProductId",
+      "Text": "ProductCategoriesGetByProductId",
+      "Tooltip": "ProductCategories GetByProductId",
+      "ActionName": "/ProductCatalogModuleProductCategories/Queries/GetByProductId",
+      "OrderNo": 256,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_ProductVariants",
+      "Name": "ProductVariants",
+      "Text": "ProductVariants",
+      "Tooltip": "ProductVariants",
+      "ActionName": "/ProductCatalogModuleProductVariants/List",
+      "OrderNo": 257,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductVariants_GetActiveByProductId",
+      "Name": "ProductVariantsGetActiveByProductId",
+      "Text": "ProductVariantsGetActiveByProductId",
+      "Tooltip": "ProductVariants GetActiveByProductId",
+      "ActionName": "/ProductCatalogModuleProductVariants/Queries/GetActiveByProductId",
+      "OrderNo": 258,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductVariants_GetByProductId",
+      "Name": "ProductVariantsGetByProductId",
+      "Text": "ProductVariantsGetByProductId",
+      "Tooltip": "ProductVariants GetByProductId",
+      "ActionName": "/ProductCatalogModuleProductVariants/Queries/GetByProductId",
+      "OrderNo": 259,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductVariants_GetLowStockVariants",
+      "Name": "ProductVariantsGetLowStockVariants",
+      "Text": "ProductVariantsGetLowStockVariants",
+      "Tooltip": "ProductVariants GetLowStockVariants",
+      "ActionName": "/ProductCatalogModuleProductVariants/Queries/GetLowStockVariants",
+      "OrderNo": 260,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "ProductCatalogModule_ProductVariantAttributes",
+      "Name": "ProductVariantAttributes",
+      "Text": "ProductVariantAttributes",
+      "Tooltip": "ProductVariantAttributes",
+      "ActionName": "/ProductCatalogModuleProductVariantAttributes/List",
+      "OrderNo": 261,
+      "ParentName": "ProductCatalogModule"
+    },
+    {
+      "Key": "Queries_ProductCatalogModule_ProductVariantAttributes_GetByVariantId",
+      "Name": "ProductVariantAttributesGetByVariantId",
+      "Text": "ProductVariantAttributesGetByVariantId",
+      "Tooltip": "ProductVariantAttributes GetByVariantId",
+      "ActionName": "/ProductCatalogModuleProductVariantAttributes/Queries/GetByVariantId",
+      "OrderNo": 262,
+      "ParentName": "ProductCatalogModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_SellerManagementModule",
+      "Name": "SellerManagementModule",
+      "Text": "SellerManagementModule",
+      "Tooltip": "SellerManagementModule",
+      "ActionName": "",
+      "OrderNo": 263,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "SellerManagementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/SellerManagementModuleAuditLogs/List",
+      "OrderNo": 263,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_GetRecentHttpRequests",
+      "Name": "AuditLogsGetRecentHttpRequests",
+      "Text": "AuditLogsGetRecentHttpRequests",
+      "Tooltip": "AuditLogs GetRecentHttpRequests",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/GetRecentHttpRequests",
+      "OrderNo": 264,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_GetRecentHttpRequestsByModule",
+      "Name": "AuditLogsGetRecentHttpRequestsByModule",
+      "Text": "AuditLogsGetRecentHttpRequestsByModule",
+      "Tooltip": "AuditLogs GetRecentHttpRequestsByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/GetRecentHttpRequestsByModule",
+      "OrderNo": 265,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsDailyHttpRequestsByDay",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDay",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDay",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDay",
+      "OrderNo": 266,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsDailyHttpRequestsByDayByModule",
+      "Name": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Text": "AuditLogsStatsDailyHttpRequestsByDayByModule",
+      "Tooltip": "AuditLogs StatsDailyHttpRequestsByDayByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsDailyHttpRequestsByDayByModule",
+      "OrderNo": 267,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsHourlyHttpRequestsByModule",
+      "Name": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Text": "AuditLogsStatsHourlyHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsHourlyHttpRequestsByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsHourlyHttpRequestsByModule",
+      "OrderNo": 268,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsHttpStatusCodes",
+      "Name": "AuditLogsStatsHttpStatusCodes",
+      "Text": "AuditLogsStatsHttpStatusCodes",
+      "Tooltip": "AuditLogs StatsHttpStatusCodes",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsHttpStatusCodes",
+      "OrderNo": 269,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsHttpStatusCodesByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsHttpStatusCodesByModule",
+      "OrderNo": 270,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsHttpStatusCodesLast24HoursByModule",
+      "Name": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Text": "AuditLogsStatsHttpStatusCodesLast24HoursByModule",
+      "Tooltip": "AuditLogs StatsHttpStatusCodesLast24HoursByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsHttpStatusCodesLast24HoursByModule",
+      "OrderNo": 271,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsTopHttpServicesByModule",
+      "Name": "AuditLogsStatsTopHttpServicesByModule",
+      "Text": "AuditLogsStatsTopHttpServicesByModule",
+      "Tooltip": "AuditLogs StatsTopHttpServicesByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsTopHttpServicesByModule",
+      "OrderNo": 272,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_AuditLogs_StatsTotalHttpRequestsByModule",
+      "Name": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Text": "AuditLogsStatsTotalHttpRequestsByModule",
+      "Tooltip": "AuditLogs StatsTotalHttpRequestsByModule",
+      "ActionName": "/SellerManagementModuleAuditLogs/Queries/StatsTotalHttpRequestsByModule",
+      "OrderNo": 273,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_Sellers",
+      "Name": "Sellers",
+      "Text": "Sellers",
+      "Tooltip": "Sellers",
+      "ActionName": "/SellerManagementModuleSellers/List",
+      "OrderNo": 274,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_Sellers_GetByStatus",
+      "Name": "SellersGetByStatus",
+      "Text": "SellersGetByStatus",
+      "Tooltip": "Sellers GetByStatus",
+      "ActionName": "/SellerManagementModuleSellers/Queries/GetByStatus",
+      "OrderNo": 275,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_Sellers_SearchByCompanyName",
+      "Name": "SellersSearchByCompanyName",
+      "Text": "SellersSearchByCompanyName",
+      "Tooltip": "Sellers SearchByCompanyName",
+      "ActionName": "/SellerManagementModuleSellers/Queries/SearchByCompanyName",
+      "OrderNo": 276,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_SellerBankAccounts",
+      "Name": "SellerBankAccounts",
+      "Text": "SellerBankAccounts",
+      "Tooltip": "SellerBankAccounts",
+      "ActionName": "/SellerManagementModuleSellerBankAccounts/List",
+      "OrderNo": 277,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_SellerBankAccounts_GetBySellerId",
+      "Name": "SellerBankAccountsGetBySellerId",
+      "Text": "SellerBankAccountsGetBySellerId",
+      "Tooltip": "SellerBankAccounts GetBySellerId",
+      "ActionName": "/SellerManagementModuleSellerBankAccounts/Queries/GetBySellerId",
+      "OrderNo": 278,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_SellerDocuments",
+      "Name": "SellerDocuments",
+      "Text": "SellerDocuments",
+      "Tooltip": "SellerDocuments",
+      "ActionName": "/SellerManagementModuleSellerDocuments/List",
+      "OrderNo": 279,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_SellerDocuments_GetBySellerId",
+      "Name": "SellerDocumentsGetBySellerId",
+      "Text": "SellerDocumentsGetBySellerId",
+      "Tooltip": "SellerDocuments GetBySellerId",
+      "ActionName": "/SellerManagementModuleSellerDocuments/Queries/GetBySellerId",
+      "OrderNo": 280,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_SellerDocuments_GetPendingDocuments",
+      "Name": "SellerDocumentsGetPendingDocuments",
+      "Text": "SellerDocumentsGetPendingDocuments",
+      "Tooltip": "SellerDocuments GetPendingDocuments",
+      "ActionName": "/SellerManagementModuleSellerDocuments/Queries/GetPendingDocuments",
+      "OrderNo": 281,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_SellerPerformanceReviews",
+      "Name": "SellerPerformanceReviews",
+      "Text": "SellerPerformanceReviews",
+      "Tooltip": "SellerPerformanceReviews",
+      "ActionName": "/SellerManagementModuleSellerPerformanceReviews/List",
+      "OrderNo": 282,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "Queries_SellerManagementModule_SellerPerformanceReviews_GetBySellerId",
+      "Name": "SellerPerformanceReviewsGetBySellerId",
+      "Text": "SellerPerformanceReviewsGetBySellerId",
+      "Tooltip": "SellerPerformanceReviews GetBySellerId",
+      "ActionName": "/SellerManagementModuleSellerPerformanceReviews/Queries/GetBySellerId",
+      "OrderNo": 283,
+      "ParentName": "SellerManagementModuleQueries"
+    },
+    {
+      "Key": "SellerManagementModule_SellerTiers",
+      "Name": "SellerTiers",
+      "Text": "SellerTiers",
+      "Tooltip": "SellerTiers",
+      "ActionName": "/SellerManagementModuleSellerTiers/List",
+      "OrderNo": 284,
+      "ParentName": "SellerManagementModule"
+    },
+    {
+      "Key": "SellerManagementModule_Stores",
+      "Name": "Stores",
+      "Text": "Stores",
+      "Tooltip": "Stores",
+      "ActionName": "/SellerManagementModuleStores/List",
+      "OrderNo": 285,
+      "ParentName": "SellerManagementModule"
+    }
+  ],
+  "TableComboboxSettings": [
+    {
+      "TableName": "ApiMethodDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "HttpMethod, UrlPath",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "AspNetRole",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetUser",
+      "IdColumn": "Id",
+      "TextColumns": "Id, FirstName, LastName",
+      "StringFormat": "{0} - {1} {2}"
+    },
+    {
+      "TableName": "KafkaEvent",
+      "IdColumn": "TopicName",
+      "TextColumns": "TopicName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Module",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Model",
+      "IdColumn": "Name",
+      "TextColumns": "Name, ModuleName",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "PermissionGroup",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPageDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "Key",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "SellerPayout",
+      "IdColumn": "Id",
+      "TextColumns": "TransactionId",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PayoutPeriod",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Order",
+      "IdColumn": "Id",
+      "TextColumns": "OrderNumber",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "OrderItem",
+      "IdColumn": "Id",
+      "TextColumns": "ProductName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ShippingMethod",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "CommissionModel",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PromotionalCampaign",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AttributeDefinition",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AttributeValue",
+      "IdColumn": "Id",
+      "TextColumns": "Value",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Brand",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Category",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Product",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "ProductVariant",
+      "IdColumn": "Id",
+      "TextColumns": "Sku",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Seller",
+      "IdColumn": "Id",
+      "TextColumns": "CompanyName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "SellerTier",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    }
+  ]
+}

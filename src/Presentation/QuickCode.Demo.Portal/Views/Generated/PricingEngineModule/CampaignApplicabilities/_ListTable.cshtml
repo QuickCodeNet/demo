@@ -1,0 +1,46 @@
+﻿@using QuickCode.Demo.Portal.Models.PricingEngineModule
+@model PricingEngineModule.CampaignApplicabilityData
+@{
+    int startIndex = ((Model.CurrentPage - 1) * Model.PageSize) + 1;
+    int endIndex = ((Model.CurrentPage) * Model.PageSize);
+    if (endIndex > Model.NumberOfRecord) {
+        endIndex = Model.NumberOfRecord;
+    }
+
+    var pagerData = new PagerData() { CurrentPage = Model.CurrentPage, NumberOfRecord = Model.NumberOfRecord, PageSize = Model.PageSize, TotalPage = Model.TotalPage, StartIndex = startIndex, EndIndex = endIndex };
+}
+@if (Model.List.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        No Data available in PricingEngineModule.CampaignApplicability table.
+    </div>
+}
+else
+{
+    <vc:pager pager-data=pagerData></vc:pager>
+    <div class="table-responsive portal-table-scroll">
+        <table bc-border="Bordered" bc-striped="true" bc-hover="true" class="table" bc-theme="Light">
+            <thead bc-theme="Dark">
+                <tr>
+                    <vc:operation-buttons item-id="Header" controller-name="" action-name=""></vc:operation-buttons>
+                    <th class="portal-col" data-col-type="fk" data-col-key="CampaignId">Campaign Id</th>
+<th class="portal-col" data-col-type="text" data-col-key="Scope">Scope</th>
+<th class="portal-col" data-col-type="int" data-col-key="ScopeId">Scope Id</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.List)
+                {
+                    <tr>
+                        <vc:operation-buttons item-id=@item.GetKey() controller-name="" action-name=""></vc:operation-buttons>
+                        <td class="portal-col" data-col-type="fk" data-col-key="CampaignId">			@string.Format("{0}", Model.GetComboBoxValue("PromotionalCampaigns", item.CampaignId))</td>
+<td class="portal-col" data-col-type="text" data-col-key="Scope">@item.Scope</td>
+<td class="portal-col" data-col-type="int" data-col-key="ScopeId">@item.ScopeId</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

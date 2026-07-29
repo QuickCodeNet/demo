@@ -1,0 +1,61 @@
+﻿@model QuickCode.Demo.Portal.Models.ProductCatalogModule.ProductGetProductsWithDetailsData
+@{
+    string title = "GetProductsWithDetails".SplitCamelCaseToString();
+    TempData["Title"] = title;
+}
+<div class="container-fluid portal-query-page" IsPageAvailable="true">
+    <form method="post" id="formList" data-portal-query="true" class="portal-entity-form portal-query-form" data-list-partial-url="/ProductCatalogModuleProducts/Queries/GetProductsWithDetailsPartial">
+        @Html.AntiForgeryToken()
+        <div class="portal-query-shell">
+            <header class="portal-query-header">
+                <div class="portal-query-header__copy">
+                    <p class="portal-query-kicker">Query</p>
+                    <h2 class="portal-query-title">@title</h2>
+                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                </div>
+                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                    <span class="portal-query-endpoint__method">GET</span>
+                    <code class="portal-query-endpoint__path">/api/product-catalog-module/products/get-products-with-details/{productsBrandId}/{productPrimaryCategoryId}/{categoryId}/{brandId}?pageNumber={pageNumber}&pageSize={pageSize}</code>
+                </div>
+            </header>
+
+            <section class="portal-query-workspace" aria-label="Query parameters">
+                <div class="portal-query-toolbar">
+                    <div class="portal-query-params portal-entity-form">
+<form-group>
+	<select bc-label="Products Brand Id" class="form-select searchable-select" asp-for="ProductsBrandId" asp-items="@Model.GetComboBoxList("Brands", Model.ProductsBrandId)"  data-placeholder="Search for Products Brand Id..."></select>
+</form-group>
+
+<form-group>
+	<select bc-label="Product Primary Category Id" class="form-select searchable-select" asp-for="ProductPrimaryCategoryId" asp-items="@Model.GetComboBoxList("Categories", Model.ProductPrimaryCategoryId)"  data-placeholder="Search for Product Primary Category Id..."></select>
+</form-group>
+
+<form-group>
+	<select bc-label="Category Id" class="form-select searchable-select" asp-for="CategoryId" asp-items="@Model.GetComboBoxList("Categories", Model.CategoryId)"  data-placeholder="Search for Category Id..."></select>
+</form-group>
+
+<form-group>
+	<select bc-label="Brand Id" class="form-select searchable-select" asp-for="BrandId" asp-items="@Model.GetComboBoxList("Brands", Model.BrandId)"  data-placeholder="Search for Brand Id..."></select>
+</form-group>
+                    </div>
+                    <div class="portal-query-actions">
+                        <button type="submit" class="portal-query-run">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                            <span>Run Query</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+                @await Html.PartialAsync("_GetProductsWithDetailsTable", Model)
+            </section>
+        </div>
+        <input type="hidden" asp-for="CurrentPage" />
+        <input type="hidden" asp-for="PageSize" />
+        <input type="hidden" asp-for="HasRun" />
+    </form>
+</div>
+<div class="container-fluid" IsPageAvailable="false">
+ @await Html.PartialAsync("_NotAuthorized")
+</div>

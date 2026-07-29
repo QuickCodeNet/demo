@@ -1,0 +1,58 @@
+﻿{
+  "ORDER_ITEMS": [
+    {
+      "ORDER_ID": 1,
+      "PRODUCT_VARIANT_ID": 534,
+      "PRODUCT_NAME": "Vertex Mechanical Keyboard",
+      "SKU": "PUB-0001",
+      "QUANTITY": 4,
+      "UNIT_PRICE": 3008.71,
+      "TOTAL_PRICE": 1432.98
+    },
+    {
+      "ORDER_ID": 7,
+      "PRODUCT_VARIANT_ID": 61,
+      "PRODUCT_NAME": "Quill Fountain Pen",
+      "SKU": "ENT-0002",
+      "QUANTITY": 25,
+      "UNIT_PRICE": 2048.43,
+      "TOTAL_PRICE": 1030.33
+    },
+    {
+      "ORDER_ID": 7,
+      "PRODUCT_VARIANT_ID": 652,
+      "PRODUCT_NAME": "Ember Candle Trio",
+      "SKU": "PRO-0003",
+      "QUANTITY": 55,
+      "UNIT_PRICE": 3067.25,
+      "TOTAL_PRICE": 4343.45
+    },
+    {
+      "ORDER_ID": 8,
+      "PRODUCT_VARIANT_ID": 824,
+      "PRODUCT_NAME": "Summit Hiking Backpack",
+      "SKU": "CUS-0004",
+      "QUANTITY": 58,
+      "UNIT_PRICE": 426.21,
+      "TOTAL_PRICE": 4777.13
+    },
+    {
+      "ORDER_ID": 5,
+      "PRODUCT_VARIANT_ID": 671,
+      "PRODUCT_NAME": "Nimbus Wireless Mouse",
+      "SKU": "PRI-0005",
+      "QUANTITY": 22,
+      "UNIT_PRICE": 3430.05,
+      "TOTAL_PRICE": 826.52
+    },
+    {
+      "ORDER_ID": 1,
+      "PRODUCT_VARIANT_ID": 374,
+      "PRODUCT_NAME": "Drift Yoga Mat",
+      "SKU": "SHA-0006",
+      "QUANTITY": 3,
+      "UNIT_PRICE": 4505.28,
+      "TOTAL_PRICE": 3851.30
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+﻿{
+  "COMMISSION_RULES": [
+    {
+      "COMMISSION_MODEL_ID": 3,
+      "SCOPE": "SellerTier",
+      "SCOPE_ID": 25,
+      "COMMISSION_TYPE": "Percentage",
+      "PERCENTAGE_RATE": 27.54647309,
+      "FIXED_AMOUNT": 2324.53,
+      "IS_ACTIVE": true
+    },
+    {
+      "COMMISSION_MODEL_ID": 5,
+      "SCOPE": "Global",
+      "SCOPE_ID": 389,
+      "COMMISSION_TYPE": "Percentage",
+      "PERCENTAGE_RATE": 79.72682765,
+      "FIXED_AMOUNT": 4218.31,
+      "IS_ACTIVE": true
+    },
+    {
+      "COMMISSION_MODEL_ID": 2,
+      "SCOPE": "Category",
+      "SCOPE_ID": 680,
+      "COMMISSION_TYPE": "Percentage",
+      "PERCENTAGE_RATE": 9.43322862,
+      "FIXED_AMOUNT": 4709.87,
+      "IS_ACTIVE": true
+    },
+    {
+      "COMMISSION_MODEL_ID": 6,
+      "SCOPE": "SellerTier",
+      "SCOPE_ID": 24,
+      "COMMISSION_TYPE": "Percentage",
+      "PERCENTAGE_RATE": 77.33597638,
+      "FIXED_AMOUNT": 1124.07,
+      "IS_ACTIVE": false
+    },
+    {
+      "COMMISSION_MODEL_ID": 5,
+      "SCOPE": "SellerTier",
+      "SCOPE_ID": 136,
+      "COMMISSION_TYPE": "Mixed",
+      "PERCENTAGE_RATE": 2.63337433,
+      "FIXED_AMOUNT": 2979.89,
+      "IS_ACTIVE": true
+    },
+    {
+      "COMMISSION_MODEL_ID": 2,
+      "SCOPE": "Category",
+      "SCOPE_ID": 342,
+      "COMMISSION_TYPE": "FixedAmount",
+      "PERCENTAGE_RATE": 73.83308395,
+      "FIXED_AMOUNT": 155.11,
+      "IS_ACTIVE": false
+    }
+  ]
+}

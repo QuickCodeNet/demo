@@ -1,0 +1,34 @@
+﻿{
+  "CAMPAIGN_APPLICABILITIES": [
+    {
+      "CAMPAIGN_ID": 4,
+      "SCOPE": "Global",
+      "SCOPE_ID": 985
+    },
+    {
+      "CAMPAIGN_ID": 1,
+      "SCOPE": "Global",
+      "SCOPE_ID": 204
+    },
+    {
+      "CAMPAIGN_ID": 1,
+      "SCOPE": "Seller",
+      "SCOPE_ID": 779
+    },
+    {
+      "CAMPAIGN_ID": 4,
+      "SCOPE": "SellerTier",
+      "SCOPE_ID": 349
+    },
+    {
+      "CAMPAIGN_ID": 1,
+      "SCOPE": "Category",
+      "SCOPE_ID": 797
+    },
+    {
+      "CAMPAIGN_ID": 3,
+      "SCOPE": "Category",
+      "SCOPE_ID": 720
+    }
+  ]
+}

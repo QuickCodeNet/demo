@@ -1,0 +1,70 @@
+﻿{
+  "SELLER_PAYOUTS": [
+    {
+      "SELLER_ID": 120,
+      "PAYOUT_PERIOD_ID": 2,
+      "TOTAL_EARNINGS": 4921.14,
+      "TOTAL_COMMISSION": 1026.87,
+      "NET_PAYOUT_AMOUNT": 2911.02,
+      "STATUS": "Pending",
+      "REQUESTED_DATE": "2025-11-26T08:04:25.5134932Z",
+      "PROCESSED_DATE": "2024-12-24T18:43:02.348527Z",
+      "TRANSACTION_ID": "Premium Option 1"
+    },
+    {
+      "SELLER_ID": 639,
+      "PAYOUT_PERIOD_ID": 7,
+      "TOTAL_EARNINGS": 4582.74,
+      "TOTAL_COMMISSION": 3029.49,
+      "NET_PAYOUT_AMOUNT": 3570.88,
+      "STATUS": "Processing",
+      "REQUESTED_DATE": "2024-01-28T20:31:17.8199167Z",
+      "PROCESSED_DATE": "2025-09-09T21:51:09.8346027Z",
+      "TRANSACTION_ID": "Mini Revision 2"
+    },
+    {
+      "SELLER_ID": 759,
+      "PAYOUT_PERIOD_ID": 4,
+      "TOTAL_EARNINGS": 307.50,
+      "TOTAL_COMMISSION": 595.30,
+      "NET_PAYOUT_AMOUNT": 4169.85,
+      "STATUS": "Failed",
+      "REQUESTED_DATE": "2025-10-10T10:30:20.5837321Z",
+      "PROCESSED_DATE": "2025-09-01T22:47:37.062822Z",
+      "TRANSACTION_ID": "National Group 3"
+    },
+    {
+      "SELLER_ID": 786,
+      "PAYOUT_PERIOD_ID": 4,
+      "TOTAL_EARNINGS": 3867.58,
+      "TOTAL_COMMISSION": 2134.11,
+      "NET_PAYOUT_AMOUNT": 4447.05,
+      "STATUS": "Pending",
+      "REQUESTED_DATE": "2024-01-21T06:35:46.4879861Z",
+      "PROCESSED_DATE": "2024-03-07T20:49:22.0068347Z",
+      "TRANSACTION_ID": "Trusted Schema 4"
+    },
+    {
+      "SELLER_ID": 309,
+      "PAYOUT_PERIOD_ID": 8,
+      "TOTAL_EARNINGS": 4159.47,
+      "TOTAL_COMMISSION": 4180.90,
+      "NET_PAYOUT_AMOUNT": 2624.43,
+      "STATUS": "Processing",
+      "REQUESTED_DATE": "2024-03-01T01:19:53.4389792Z",
+      "PROCESSED_DATE": "2025-05-17T04:35:54.3657379Z",
+      "TRANSACTION_ID": "Advanced Revision 5"
+    },
+    {
+      "SELLER_ID": 223,
+      "PAYOUT_PERIOD_ID": 8,
+      "TOTAL_EARNINGS": 3710.47,
+      "TOTAL_COMMISSION": 653.12,
+      "NET_PAYOUT_AMOUNT": 1860.54,
+      "STATUS": "Paid",
+      "REQUESTED_DATE": "2024-04-30T13:58:29.9009479Z",
+      "PROCESSED_DATE": "2025-09-25T01:42:12.23377Z",
+      "TRANSACTION_ID": "Private Unit 6"
+    }
+  ]
+}

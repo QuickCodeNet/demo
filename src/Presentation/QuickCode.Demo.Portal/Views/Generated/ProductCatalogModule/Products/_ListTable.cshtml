@@ -1,0 +1,101 @@
+﻿@using QuickCode.Demo.Portal.Models.ProductCatalogModule
+@model ProductCatalogModule.ProductData
+@{
+    int startIndex = ((Model.CurrentPage - 1) * Model.PageSize) + 1;
+    int endIndex = ((Model.CurrentPage) * Model.PageSize);
+    if (endIndex > Model.NumberOfRecord) {
+        endIndex = Model.NumberOfRecord;
+    }
+
+    var pagerData = new PagerData() { CurrentPage = Model.CurrentPage, NumberOfRecord = Model.NumberOfRecord, PageSize = Model.PageSize, TotalPage = Model.TotalPage, StartIndex = startIndex, EndIndex = endIndex };
+}
+@if (Model.List.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        No Data available in ProductCatalogModule.Product table.
+    </div>
+}
+else
+{
+    <vc:pager pager-data=pagerData></vc:pager>
+    <div class="table-responsive portal-table-scroll">
+        <table bc-border="Bordered" bc-striped="true" bc-hover="true" class="table" bc-theme="Light">
+            <thead bc-theme="Dark">
+                <tr>
+                    <vc:operation-buttons item-id="Header" controller-name="" action-name=""></vc:operation-buttons>
+                    <th class="portal-col" data-col-type="id" data-col-key="Id">Id</th>
+<th class="portal-col" data-col-type="int" data-col-key="SellerId">Seller Id</th>
+<th class="portal-col" data-col-type="fk" data-col-key="BrandId">Brand Id</th>
+<th class="portal-col" data-col-type="fk" data-col-key="PrimaryCategoryId">Primary Category Id</th>
+<th class="portal-col" data-col-type="short" data-col-key="Sku">Sku</th>
+<th class="portal-col" data-col-type="text" data-col-key="Name">Name</th>
+<th class="portal-col" data-col-type="large" data-col-key="Description">Description</th>
+<th class="portal-col" data-col-type="thumb" data-col-key="Photo">Photo</th>
+<th class="portal-col" data-col-type="file" data-col-key="Video">Video</th>
+<th class="portal-col" data-col-type="file" data-col-key="Datasheet">Datasheet</th>
+<th class="portal-col" data-col-type="text" data-col-key="Status">Status</th>
+<th class="portal-col" data-col-type="bool" data-col-key="IsFeatured">Is Featured</th>
+<th class="portal-col" data-col-type="datetime" data-col-key="CreatedDate">Created Date</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.List)
+                {
+                    <tr>
+                        <vc:operation-buttons item-id=@item.GetKey() controller-name="" action-name=""></vc:operation-buttons>
+                        <td class="portal-col" data-col-type="id" data-col-key="Id">@item.Id</td>
+<td class="portal-col" data-col-type="int" data-col-key="SellerId">@item.SellerId</td>
+<td class="portal-col" data-col-type="fk" data-col-key="BrandId">			@string.Format("{0}", Model.GetComboBoxValue("Brands", item.BrandId))</td>
+<td class="portal-col" data-col-type="fk" data-col-key="PrimaryCategoryId">			@string.Format("{0}", Model.GetComboBoxValue("Categories", item.PrimaryCategoryId))</td>
+<td class="portal-col" data-col-type="short" data-col-key="Sku">@item.Sku</td>
+<td class="portal-col" data-col-type="text" data-col-key="Name">@item.Name</td>
+<td class="portal-col" data-col-type="large" data-col-key="Description">@item.Description</td>
+<td class="portal-col" data-col-type="thumb" data-col-key="Photo"><a href="@(item.Photo == null || item.Photo.Length == 0 ? "/images/no_image.png" : item.Photo)" data-toggle="lightbox" data-type="image" class="portal-list-thumb-link">
+   <img class="lazyload img-fluid" src="/images/loading.svg" data-src="@(item.Photo == null || item.Photo.Length == 0 ? "/images/no_image.png" : item.Photo)" style="height:auto;  width:auto; max-height: 110px; max-width: 110px;display: block;margin-left: auto;margin-right: auto;" bc-thumbnail="true" bc-round="true" />
+</a>
+</td>
+<td class="portal-col" data-col-type="file" data-col-key="Video">@if (!string.IsNullOrEmpty(item.Video))
+{
+    <a href="@item.Video" data-toggle="lightbox" data-type="video" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-file-video" aria-hidden="true"></i> Preview video
+    </a>
+}
+else
+{
+    <span class="text-muted">-</span>
+}
+</td>
+<td class="portal-col" data-col-type="file" data-col-key="Datasheet">@if (!string.IsNullOrEmpty(item.Datasheet))
+{
+    <a href="@item.Datasheet" data-toggle="lightbox" data-type="pdf" class="btn btn-sm btn-outline-secondary">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i> Preview PDF
+    </a>
+}
+else
+{
+    <span class="text-muted">-</span>
+}
+</td>
+<td class="portal-col" data-col-type="text" data-col-key="Status">@item.Status</td>
+<td class="portal-col" data-col-type="bool" data-col-key="IsFeatured">@if (item.IsFeatured == true)
+{
+    <div class="ios-switch-wrapper checked">
+        <input class="ios-switch" type="checkbox" onchange="checkBoxChanged(this);" id="cbox_item_IsFeatured" checked disabled />
+    </div>
+}
+else
+{
+    <div class="ios-switch-wrapper">
+        <input class="ios-switch" type="checkbox" onchange="checkBoxChanged(this);" id="cbox_item_IsFeatured" disabled />
+    </div>
+}
+</td>
+<td class="portal-col" data-col-type="datetime" data-col-key="CreatedDate">@item.CreatedDate</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

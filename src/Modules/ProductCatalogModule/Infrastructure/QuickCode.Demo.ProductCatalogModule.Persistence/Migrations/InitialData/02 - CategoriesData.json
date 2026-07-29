@@ -1,0 +1,76 @@
+﻿{
+  "CATEGORIES": [
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Express Source 1",
+      "SLUG": "Custom Area 1",
+      "ICON": "https://picsum.photos/seed/447/400/300",
+      "BANNER": "https://picsum.photos/seed/697/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": false
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Optional Method 2",
+      "SLUG": "Primary Format 2",
+      "ICON": "https://picsum.photos/seed/806/400/300",
+      "BANNER": "https://picsum.photos/seed/860/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Priority Series 3",
+      "SLUG": "Recommended Version 3",
+      "ICON": "https://picsum.photos/seed/757/400/300",
+      "BANNER": "https://picsum.photos/seed/623/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 2,
+      "NAME": "Verified Area 4",
+      "SLUG": "Regional Plan 4",
+      "ICON": "https://picsum.photos/seed/777/400/300",
+      "BANNER": "https://picsum.photos/seed/320/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 4,
+      "NAME": "Private Layout 5",
+      "SLUG": "Compact Status 5",
+      "ICON": "https://picsum.photos/seed/372/400/300",
+      "BANNER": "https://picsum.photos/seed/52/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 2,
+      "NAME": "Verified Format 6",
+      "SLUG": "Mini Model 6",
+      "ICON": "https://picsum.photos/seed/195/400/300",
+      "BANNER": "https://picsum.photos/seed/975/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 1,
+      "NAME": "Archived Method 7",
+      "SLUG": "Pro Entity 7",
+      "ICON": "https://picsum.photos/seed/403/400/300",
+      "BANNER": "https://picsum.photos/seed/852/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    },
+    {
+      "PARENT_CATEGORY_ID": 4,
+      "NAME": "Popular Role 8",
+      "SLUG": "Plus Revision 8",
+      "ICON": "https://picsum.photos/seed/761/400/300",
+      "BANNER": "https://picsum.photos/seed/269/400/300",
+      "INTRO_VIDEO": "/samples/sample.mp4",
+      "IS_ACTIVE": true
+    }
+  ]
+}

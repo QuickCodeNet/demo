@@ -1,0 +1,46 @@
+﻿{
+  "PRODUCT_VARIANTS": [
+    {
+      "PRODUCT_ID": 6,
+      "SKU": "LIM-0001",
+      "PRICE": 2646.64,
+      "STOCK_QUANTITY": 23,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 6,
+      "SKU": "LOC-0002",
+      "PRICE": 4300.88,
+      "STOCK_QUANTITY": 19,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 1,
+      "SKU": "EXP-0003",
+      "PRICE": 4582.66,
+      "STOCK_QUANTITY": 80,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 2,
+      "SKU": "PRI-0004",
+      "PRICE": 1075.70,
+      "STOCK_QUANTITY": 54,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 4,
+      "SKU": "ENT-0005",
+      "PRICE": 2592.89,
+      "STOCK_QUANTITY": 89,
+      "IS_ACTIVE": true
+    },
+    {
+      "PRODUCT_ID": 6,
+      "SKU": "VER-0006",
+      "PRICE": 2726.38,
+      "STOCK_QUANTITY": 64,
+      "IS_ACTIVE": true
+    }
+  ]
+}
