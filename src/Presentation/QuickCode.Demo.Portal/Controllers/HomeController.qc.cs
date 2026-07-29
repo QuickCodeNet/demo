@@ -836,7 +836,32 @@ namespace QuickCode.Demo.Portal.Controllers
             return rows
                 .Where(i => !string.IsNullOrWhiteSpace(i.Module))
                 .Where(i => !string.IsNullOrWhiteSpace(i.Path))
+                .Where(i => !IsDashboardExcludedServicePath(i.Path))
                 .ToList();
+        }
+
+        private static bool IsDashboardExcludedServicePath(string? path)
+        {
+            if (string.IsNullOrWhiteSpace(path))
+                return true;
+
+            var value = path.Trim();
+            if (value.Length == 0)
+                return true;
+
+            // Normalize "/hc/" -> "/hc"
+            if (value.Length > 1 && value.EndsWith('/'))
+                value = value.TrimEnd('/');
+
+            return value.Equals("/hc", StringComparison.OrdinalIgnoreCase)
+                   || value.StartsWith("/hc/", StringComparison.OrdinalIgnoreCase)
+                   || value.StartsWith("/hc-", StringComparison.OrdinalIgnoreCase)
+                   || value.Equals("/health", StringComparison.OrdinalIgnoreCase)
+                   || value.StartsWith("/health/", StringComparison.OrdinalIgnoreCase)
+                   || value.StartsWith("/healthz", StringComparison.OrdinalIgnoreCase)
+                   || value.Equals("/ready", StringComparison.OrdinalIgnoreCase)
+                   || value.Equals("/live", StringComparison.OrdinalIgnoreCase)
+                   || value.Equals("/alive", StringComparison.OrdinalIgnoreCase);
         }
 
         private async Task<object> TryInvokeAcrossAuditClientsAsync(List<string> moduleOptions, string selectedModule, params string[] methodNames)
