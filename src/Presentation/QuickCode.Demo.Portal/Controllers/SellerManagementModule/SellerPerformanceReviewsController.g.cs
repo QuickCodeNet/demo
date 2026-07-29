@@ -219,7 +219,7 @@ namespace QuickCode.Demo.Portal.Controllers.SellerManagementModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.SellerPerformanceReviewsGetBySellerIdAsync(sellerPerformanceReviewSellerId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.SellerPerformanceReviewsGetBySellerIdAsync(model.SellerPerformanceReviewSellerId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);

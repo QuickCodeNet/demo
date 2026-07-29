@@ -222,7 +222,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.ProductVariantAttributesGetByVariantIdAsync(productVariantAttributeVariantId);
+                var result = await pageClient.ProductVariantAttributesGetByVariantIdAsync(model.ProductVariantAttributeVariantId);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
