@@ -208,14 +208,17 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 var result = await pageClient.AuditLogsGetRecentHttpRequestsAsync(pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
-                model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);
+                var seen = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count;
+                model.NumberOfRecord = seen;
                 model.TotalPage = hasMore ? model.CurrentPage + 1 : model.CurrentPage;
+                model.HasMoreRecords = hasMore;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -263,14 +266,17 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 var result = await pageClient.AuditLogsGetRecentHttpRequestsByModuleAsync(model.AuditLogRequestModule, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
-                model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);
+                var seen = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count;
+                model.NumberOfRecord = seen;
                 model.TotalPage = hasMore ? model.CurrentPage + 1 : model.CurrentPage;
+                model.HasMoreRecords = hasMore;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -319,12 +325,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -373,12 +381,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -427,12 +437,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -481,12 +493,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -535,12 +549,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -589,12 +605,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -643,12 +661,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }
@@ -697,12 +717,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }

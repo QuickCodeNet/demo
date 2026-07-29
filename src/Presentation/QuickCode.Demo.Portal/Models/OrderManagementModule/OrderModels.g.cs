@@ -40,6 +40,8 @@ namespace QuickCode.Demo.Portal.Models.OrderManagementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int OrderCustomerId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -53,6 +55,8 @@ namespace QuickCode.Demo.Portal.Models.OrderManagementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public DateTime OrderOrderDateFrom { get; set; }
         public DateTime OrderOrderDateTo { get; set; }
         public List<dynamic> List { get; set; } = new();
@@ -67,6 +71,8 @@ namespace QuickCode.Demo.Portal.Models.OrderManagementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int OrderSellerId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -80,6 +86,8 @@ namespace QuickCode.Demo.Portal.Models.OrderManagementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public OrderStatus OrderStatus { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -93,6 +101,8 @@ namespace QuickCode.Demo.Portal.Models.OrderManagementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int OrderSellerId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

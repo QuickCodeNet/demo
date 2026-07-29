@@ -732,9 +732,10 @@ function init() {
     }
     consumeQueuedPortalToast();
     const placeholderElement = $('#itemDetailsContainer');
+    // Select2 first — before Flatpickr — so combos do not sit unenhanced for long.
+    initSearchableSelects(document);
     initFlatpickrModalFix();
     initDatePickers(document);
-    initSearchableSelects(document);
 
     $('button[data-toggle="ajax-modal"]').click(function (event) {
         let url = $(this).data('url');
@@ -1569,8 +1570,13 @@ function normalizePortalDateTimeFormData(formData) {
     });
 }
 
-function initSearchableSelects(root) {
+function initSearchableSelects(root, attempt) {
+    attempt = attempt || 0;
     if (typeof $.fn.select2 === 'undefined') {
+        // CDN may lag behind site.js; retry briefly instead of leaving native selects visible.
+        if (attempt < 40) {
+            setTimeout(function () { initSearchableSelects(root, attempt + 1); }, 50);
+        }
         return;
     }
 
@@ -1597,6 +1603,21 @@ function initSearchableSelects(root) {
         $select.select2(options);
     });
 }
+
+/* Boot combos as soon as DOM is ready — do not wait for other init work. */
+(function bootSearchableSelectsEarly() {
+    function run() {
+        if (typeof window.jQuery === 'undefined') {
+            return;
+        }
+        initSearchableSelects(document);
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+    } else {
+        run();
+    }
+})();
 
 function initDatePickers(root) {
     if (typeof flatpickr === 'undefined') {

@@ -33,6 +33,12 @@ namespace QuickCode.Demo.Portal.Models
 
         public int EndIndex { get; set; }
 
+        /// <summary>
+        /// When true, <see cref="NumberOfRecord"/> is only the count seen so far (another page may exist).
+        /// Pager must not present it as an exact grand total.
+        /// </summary>
+        public bool HasMoreRecords { get; set; }
+
         /// <summary>Singular count noun (default <c>item</c>; query pages use <c>row</c>).</summary>
         public string RecordNounSingular { get; set; } = "item";
 

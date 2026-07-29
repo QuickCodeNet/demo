@@ -47,6 +47,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int ProductSellerId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -60,6 +62,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
 
@@ -72,6 +76,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
 
@@ -84,6 +90,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int ProductsBrandId { get; set; }
         public int ProductPrimaryCategoryId { get; set; }
         public int CategoryId { get; set; }
@@ -102,6 +110,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public string ProductName { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

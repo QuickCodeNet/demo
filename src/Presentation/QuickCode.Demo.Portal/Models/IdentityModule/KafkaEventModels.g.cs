@@ -40,6 +40,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
 
@@ -52,6 +54,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
 
@@ -64,6 +68,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public string KafkaEventsTopicName { get; set; }
         public HttpMethodType ApiMethodDefinitionsHttpMethod { get; set; }
         public List<dynamic> List { get; set; } = new();
@@ -78,6 +84,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public string KafkaEventsTopicName { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

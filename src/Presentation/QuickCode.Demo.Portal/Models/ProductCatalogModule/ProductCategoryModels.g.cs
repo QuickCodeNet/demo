@@ -40,6 +40,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int ProductCategoryCategoryId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -53,6 +55,8 @@ namespace QuickCode.Demo.Portal.Models.ProductCatalogModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int ProductCategoryProductId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

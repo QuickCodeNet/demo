@@ -226,12 +226,14 @@ namespace QuickCode.Demo.Portal.Controllers.IdentityModule
                 model.NumberOfRecord = model.List.Count;
                 model.TotalPage = 1;
                 model.CurrentPage = 1;
+                model.HasMoreRecords = false;
             }
             catch (QuickCodeSwaggerException ex)
             {
                 model.List = new();
                 model.NumberOfRecord = 0;
                 model.TotalPage = 1;
+                model.HasMoreRecords = false;
                 model.QueryHttpStatus = ex.StatusCode;
                 model.ErrorMessage = FormatPortalQueryError(ex);
             }

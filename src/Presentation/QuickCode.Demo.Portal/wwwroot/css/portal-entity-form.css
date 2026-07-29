@@ -622,7 +622,7 @@ body.modal-open .portal-sidebar {
 .portal-entity-modal .select2-container--default .select2-selection--single {
   min-height: 2.4rem;
   border: 1px solid var(--pe-line);
-  border-radius: var(--pe-radius-sm);
+  border-radius: 12px !important;
   padding: 0.2rem 0.4rem;
 }
 

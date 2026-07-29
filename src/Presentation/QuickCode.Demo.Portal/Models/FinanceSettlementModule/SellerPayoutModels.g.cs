@@ -40,6 +40,8 @@ namespace QuickCode.Demo.Portal.Models.FinanceSettlementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int SellerPayoutPayoutPeriodId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -53,6 +55,8 @@ namespace QuickCode.Demo.Portal.Models.FinanceSettlementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public int SellerPayoutSellerId { get; set; }
         public List<dynamic> List { get; set; } = new();
     }
@@ -66,6 +70,8 @@ namespace QuickCode.Demo.Portal.Models.FinanceSettlementModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public PayoutStatus SellerPayoutStatus { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

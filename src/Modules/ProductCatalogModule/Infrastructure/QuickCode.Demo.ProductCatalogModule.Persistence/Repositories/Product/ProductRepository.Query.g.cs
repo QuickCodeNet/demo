@@ -180,7 +180,7 @@ namespace QuickCode.Demo.ProductCatalogModule.Persistence.Repositories
                     {
                         PRM_PRODUCTS_PRIMARY_CATEGORY_ID = productsPrimaryCategoryId,
                         PRM_CATEGORIES_ID = categoryId,
-                        PRM_PRODUCTS_BRAND_ID = categoryId,
+                        PRM_PRODUCTS_BRAND_ID = productsBrandId,
                         PRM_BRANDS_ID = brandId,
                         StartIndex = startIndex,
                         PageSize = pageSize

@@ -40,6 +40,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public string PortalPageAccessGrantPermissionGroupName { get; set; }
         public string PortalPageAccessGrantPortalPageDefinitionKey { get; set; }
         public PageActionType PortalPageAccessGrantPageAction { get; set; }
@@ -55,6 +57,8 @@ namespace QuickCode.Demo.Portal.Models.IdentityModule
         public bool HasRun { get; set; }
         public string ErrorMessage { get; set; }
         public int? QueryHttpStatus { get; set; }
+        /// <summary>True when total row count is unknown and another page may exist.</summary>
+        public bool HasMoreRecords { get; set; }
         public string PortalPageAccessGrantPermissionGroupName { get; set; }
         public List<dynamic> List { get; set; } = new();
     }

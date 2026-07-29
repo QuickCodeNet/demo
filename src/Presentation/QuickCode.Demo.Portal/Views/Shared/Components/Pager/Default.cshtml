@@ -27,7 +27,7 @@
     var nounPlural = string.IsNullOrWhiteSpace(Model.RecordNounPlural) ? "items" : Model.RecordNounPlural.Trim();
     var itemsWord = Model.NumberOfRecord == 1 ? nounSingular : nounPlural;
     // All rows on one page — skip "1–2 of 2 rows" in favor of "2 rows".
-    var showCompactCount = Model.NumberOfRecord == 0 || Model.TotalPage <= 1;
+    var showCompactCount = !Model.HasMoreRecords && (Model.NumberOfRecord == 0 || Model.TotalPage <= 1);
     var rangeLabel = Model.NumberOfRecord == 0
         ? "0"
         : $"{Model.StartIndex}–{Model.EndIndex}";
@@ -38,6 +38,11 @@
             @if (showCompactCount)
             {
                 <span class="portal-list-pager__range-strong">@totalLabel</span>
+                <span class="portal-list-pager__range-muted">@itemsWord</span>
+            }
+            else if (Model.HasMoreRecords)
+            {
+                <span class="portal-list-pager__range-strong">@rangeLabel</span>
                 <span class="portal-list-pager__range-muted">@itemsWord</span>
             }
             else
