@@ -222,7 +222,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.ProductsGetActiveBySellerAsync(productSellerId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.ProductsGetActiveBySellerAsync(model.ProductSellerId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);
@@ -389,7 +389,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.ProductsGetProductsWithDetailsAsync(productsBrandId, productPrimaryCategoryId, categoryId, brandId, productsPrimaryCategoryId, productBrandId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.ProductsGetProductsWithDetailsAsync(model.ProductsBrandId, model.ProductPrimaryCategoryId, model.CategoryId, model.BrandId, model.ProductsPrimaryCategoryId, model.ProductBrandId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);
@@ -446,7 +446,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.ProductsSearchProductsAsync(productName, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.ProductsSearchProductsAsync(model.ProductName, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);

@@ -261,7 +261,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.QueryHttpStatus = null;
             try
             {
-                var result = await pageClient.AuditLogsGetRecentHttpRequestsByModuleAsync(auditLogRequestModule, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.AuditLogsGetRecentHttpRequestsByModuleAsync(model.AuditLogRequestModule, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);

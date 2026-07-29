@@ -272,7 +272,7 @@ namespace QuickCode.Demo.Portal.Controllers.ProductCatalogModule
             model.ComboList = await FillPageComboBoxes(model.ComboList);
             try
             {
-                var result = await pageClient.CategoriesGetSubCategoriesAsync(categoryParentCategoryId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
+                var result = await pageClient.CategoriesGetSubCategoriesAsync(model.CategoryParentCategoryId, pageNumber: model.CurrentPage, pageSize: model.PageSize);
                 model.List = result?.Cast<dynamic>().ToList() ?? new();
                 var hasMore = model.List.Count >= model.PageSize;
                 model.NumberOfRecord = ((model.CurrentPage - 1) * model.PageSize) + model.List.Count + (hasMore ? 1 : 0);
