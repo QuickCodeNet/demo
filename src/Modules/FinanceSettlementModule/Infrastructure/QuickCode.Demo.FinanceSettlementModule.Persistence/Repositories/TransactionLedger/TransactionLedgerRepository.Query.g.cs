@@ -92,8 +92,8 @@ namespace QuickCode.Demo.FinanceSettlementModule.Persistence.Repositories
                     {
                         PRM_TRANSACTION_LEDGER_SELLER_ID = transactionLedgerSellerId,
                         PRM_TRANSACTION_LEDGER_TRANSACTION_TYPE = transactionLedgerTransactionType.ToString(),
-                        PRM_TRANSACTION_LEDGER_TRANSACTION_DATE_From = transactionLedgerSellerId,
-                        PRM_TRANSACTION_LEDGER_TRANSACTION_DATE_To = transactionLedgerTransactionType.ToString(),
+                        PRM_TRANSACTION_LEDGER_TRANSACTION_DATE_From = transactionLedgerTransactionDateFrom,
+                        PRM_TRANSACTION_LEDGER_TRANSACTION_DATE_To = transactionLedgerTransactionDateTo,
                         StartIndex = startIndex,
                         PageSize = pageSize
                     };
