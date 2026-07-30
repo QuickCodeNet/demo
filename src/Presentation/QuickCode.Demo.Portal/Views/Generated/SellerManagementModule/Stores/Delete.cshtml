@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formDelete" action="Delete" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
+	<input type="text" bc-label="ID" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
 
 <form-group>
@@ -40,7 +40,7 @@
 </div>
 
 <form-group>
-    <label class="col-sm-4 col-form-label">Logo Url</label>
+    <label class="col-sm-4 col-form-label">Logo URL</label>
     <span class="col-sm-8">
          <a href="@(Model.SelectedItem.LogoUrl == null || Model.SelectedItem.LogoUrl.Length == 0 ? "/images/no_image.png" : Model.SelectedItem.LogoUrl)" data-toggle="lightbox" data-type="image" >
              <img id = 'SelectedItem_LogoUrlImg' class="lazyload" src="/images/loading.svg" data-src="@(Model.SelectedItem.LogoUrl == null || Model.SelectedItem.LogoUrl.Length == 0 ? "/images/no_image.png" : Model.SelectedItem.LogoUrl)" style="height:auto;  width:auto; max-height: 250px; max-width: 350px; margin-bottom: -10px; margin-top: 0px; display: block;margin-right: auto;" bc-thumbnail="true" bc-round="true" />

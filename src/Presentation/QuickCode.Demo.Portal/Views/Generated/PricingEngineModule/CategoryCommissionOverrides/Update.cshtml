@@ -12,15 +12,15 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
+	<input type="text" bc-label="ID" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.CategoryId" placeholder="Enter your CategoryId" bc-label="Category Id" type="Text"  bc-required="true" bc-tooltip="Enter your CategoryId" bc-validation="true" />
+	<input asp-for="SelectedItem.CategoryId" placeholder="Enter your CategoryId" bc-label="Category ID" type="Text"  bc-required="true" bc-tooltip="Enter your CategoryId" bc-validation="true" />
 </form-group>
 
 <form-group>
-	<select bc-label="Commission Model Id" class="form-select searchable-select" asp-for="SelectedItem.CommissionModelId" asp-items="@Model.GetComboBoxList("CommissionModels", Model.SelectedItem.CommissionModelId)"  data-placeholder="Search for CommissionModelId..."></select>
+	<select bc-label="Commission Model ID" class="form-select searchable-select" asp-for="SelectedItem.CommissionModelId" asp-items="@Model.GetComboBoxList("CommissionModels", Model.SelectedItem.CommissionModelId)"  data-placeholder="Search for CommissionModelId..."></select>
 </form-group>
 
 <div class="form-group row">

@@ -12,11 +12,11 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Payout Id" class="form-select searchable-select" asp-for="SelectedItem.PayoutId" asp-items="@Model.GetComboBoxList("SellerPayouts", Model.SelectedItem.PayoutId)"  data-placeholder="Search for PayoutId..."></select>
+	<select bc-label="Payout ID" class="form-select searchable-select" asp-for="SelectedItem.PayoutId" asp-items="@Model.GetComboBoxList("SellerPayouts", Model.SelectedItem.PayoutId)"  data-placeholder="Search for PayoutId..."></select>
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.OrderId" placeholder="Enter your OrderId" bc-label="Order Id" type="Text"  bc-required="true" bc-tooltip="Enter your OrderId" bc-validation="true" />
+	<input asp-for="SelectedItem.OrderId" placeholder="Enter your OrderId" bc-label="Order ID" type="Text"  bc-required="true" bc-tooltip="Enter your OrderId" bc-validation="true" />
 </form-group>
 
 <form-group>

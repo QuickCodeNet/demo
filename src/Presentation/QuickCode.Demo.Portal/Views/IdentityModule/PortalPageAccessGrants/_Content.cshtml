@@ -16,8 +16,8 @@
             <span class="pgp-tab-count">@view.PageItemCount</span>
         </button>
         <button type="button" class="pgp-tab" role="tab" aria-selected="false" data-tab="queries" id="pgpTabQueries">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            Queries
+            <i class="fas fa-chart-bar" aria-hidden="true"></i>
+            Live Reports
             <span class="pgp-tab-count">@view.QueryItemCount</span>
         </button>
     </div>
@@ -89,18 +89,18 @@
 
     <div class="pgp-panel" data-panel="queries" role="tabpanel" aria-labelledby="pgpTabQueries" hidden>
         <div class="pgp-breadcrumb-hint">
-            <span class="pgp-crumb">Queries</span>
+            <span class="pgp-crumb">Live Reports</span>
             <span class="pgp-crumb-sep" aria-hidden="true">/</span>
             <span>Module</span>
             <span class="pgp-crumb-sep" aria-hidden="true">/</span>
             <span>Tables</span>
             <span class="pgp-crumb-sep" aria-hidden="true">/</span>
-            <span>Query page</span>
+            <span>Report page</span>
         </div>
 
         @if (view.QueryItemCount == 0)
         {
-            <div class="pgp-empty">No query pages found for this permission group.</div>
+            <div class="pgp-empty">No live report pages found for this permission group.</div>
         }
         else
         {
@@ -116,7 +116,7 @@
                             <i class="fas fa-layer-group" aria-hidden="true"></i>
                             @moduleLabel
                         </span>
-                        <span class="pgp-module-meta module-count-badge" data-total="@module.QueryCount">@module.QueryCount queries · @module.Tables.Count tables</span>
+                        <span class="pgp-module-meta module-count-badge" data-total="@module.QueryCount">@module.QueryCount reports · @module.Tables.Count tables</span>
                     </div>
                     <div class="pgp-module-body" id="@moduleId">
                         <div class="pgp-tree">

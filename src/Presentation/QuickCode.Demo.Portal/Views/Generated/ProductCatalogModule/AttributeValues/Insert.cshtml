@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Attribute Id" class="form-select searchable-select" asp-for="SelectedItem.AttributeId" asp-items="@Model.GetComboBoxList("AttributeDefinitions", Model.SelectedItem.AttributeId)"  data-placeholder="Search for AttributeId..."></select>
+	<select bc-label="Attribute ID" class="form-select searchable-select" asp-for="SelectedItem.AttributeId" asp-items="@Model.GetComboBoxList("AttributeDefinitions", Model.SelectedItem.AttributeId)"  data-placeholder="Search for AttributeId..."></select>
 </form-group>
 
 <form-group>

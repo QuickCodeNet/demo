@@ -337,11 +337,11 @@
 
             <p class="portal-sidebar-section-label portal-sidebar-section-divider portal-sidebar-section--queries">
                 <span class="portal-sidebar-section-main">
-                    <i class="fas fa-fw fa-search portal-sidebar-section-icon" aria-hidden="true"></i>
-                    <span>Queries</span>
+                    <i class="fas fa-fw fa-chart-bar portal-sidebar-section-icon" aria-hidden="true"></i>
+                    <span>Live Reports</span>
                 </span>
             </p>
-            <sidebar-item title="Queries" key="Queries"></sidebar-item>
+            <sidebar-item title="Live Reports" key="Queries"></sidebar-item>
             </div>
 
             <div class="portal-sidebar-search-empty" id="portalSidebarSearchEmpty" hidden>
@@ -685,18 +685,55 @@
                     $item.toggleClass('portal-nav-hidden', !matchesSearch(text, query));
                 });
 
-                $nav.find('[data-bs-toggle="collapse"]').each(function() {
+                // Queries: table groups first — hide tables with zero matching queries
+                // (unless the table label itself matches the search).
+                $nav.find('.portal-nav-table-group').each(function() {
+                    var $group = $(this);
+                    var $trigger = $group.children('.portal-nav-table-trigger');
+                    var $collapse = $group.children('.portal-nav-table-collapse');
+                    var triggerMatch = matchesSearch(getItemText($trigger), query);
+
+                    if (triggerMatch) {
+                        $collapse.find('.portal-nav-subitem, .collapse-item').removeClass('portal-nav-hidden');
+                    }
+
+                    var hasVisibleChild = $collapse.find('.portal-nav-subitem:not(.portal-nav-hidden), .collapse-item:not(.portal-nav-hidden)').length > 0;
+                    var visible = triggerMatch || hasVisibleChild;
+
+                    $group.toggleClass('portal-nav-hidden', !visible);
+                    $trigger.toggleClass('portal-nav-hidden', !visible);
+                    $collapse.toggleClass('portal-nav-hidden', !visible);
+
+                    if (visible) {
+                        expandSearchCollapse($collapse, $trigger);
+                    }
+                });
+
+                // Module / section collapses (skip table triggers — handled above)
+                $nav.find('[data-bs-toggle="collapse"]').not('.portal-nav-table-trigger').each(function() {
                     var $trigger = $(this);
                     var triggerText = getItemText($trigger);
                     var target = $trigger.attr('data-bs-target');
                     var $collapse = target ? $(target) : $();
-                    var hasVisibleChild = $collapse.find('.portal-nav-subitem:not(.portal-nav-hidden), .collapse-item:not(.portal-nav-hidden)').length > 0;
                     var triggerMatch = matchesSearch(triggerText, query);
 
                     if (triggerMatch) {
-                        $collapse.find('.portal-nav-subitem, .collapse-item, .portal-nav-table-trigger').removeClass('portal-nav-hidden');
-                        hasVisibleChild = $collapse.find('.portal-nav-subitem, .collapse-item').length > 0;
+                        // Tables section: reveal direct leaf links
+                        $collapse.find('.portal-collapse-inner').children('.portal-nav-subitem, .collapse-item').removeClass('portal-nav-hidden');
+                        // Queries: module match reveals every table + query under it
+                        $collapse.find('.portal-nav-table-group').each(function() {
+                            var $tg = $(this);
+                            var $tt = $tg.children('.portal-nav-table-trigger');
+                            var $tc = $tg.children('.portal-nav-table-collapse');
+                            $tg.add($tt).add($tc).removeClass('portal-nav-hidden');
+                            $tc.find('.portal-nav-subitem, .collapse-item').removeClass('portal-nav-hidden');
+                            expandSearchCollapse($tc, $tt);
+                        });
                     }
+
+                    var hasVisibleChild =
+                        $collapse.find('.portal-nav-subitem:not(.portal-nav-hidden), .collapse-item:not(.portal-nav-hidden)').length > 0 ||
+                        $collapse.find('.portal-nav-table-group:not(.portal-nav-hidden)').length > 0;
 
                     var visible = triggerMatch || hasVisibleChild;
 
@@ -710,7 +747,7 @@
 
                 $nav.find('.portal-nav-group').each(function() {
                     var $group = $(this);
-                    var hasVisible = $group.find('.portal-nav-link:not(.portal-nav-hidden), .portal-nav-table-trigger:not(.portal-nav-hidden), .portal-nav-subitem:not(.portal-nav-hidden), .collapse-item:not(.portal-nav-hidden)').length > 0;
+                    var hasVisible = $group.find('.portal-nav-link:not(.portal-nav-hidden), .portal-nav-table-trigger:not(.portal-nav-hidden), .portal-nav-table-group:not(.portal-nav-hidden), .portal-nav-subitem:not(.portal-nav-hidden), .collapse-item:not(.portal-nav-hidden)').length > 0;
                     $group.toggleClass('portal-nav-hidden', !hasVisible);
                 });
 

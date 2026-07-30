@@ -12,11 +12,11 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
+	<input type="text" bc-label="ID" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.UserId" placeholder="Enter your UserId" bc-label="User Id" type="Text"  bc-required="true" bc-tooltip="Enter your UserId" bc-validation="true" />
+	<input asp-for="SelectedItem.UserId" placeholder="Enter your UserId" bc-label="User ID" type="Text"  bc-required="true" bc-tooltip="Enter your UserId" bc-validation="true" />
 </form-group>
 
 <form-group>
@@ -36,7 +36,7 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Seller Tier Id" class="form-select searchable-select" asp-for="SelectedItem.SellerTierId" asp-items="@Model.GetComboBoxList("SellerTiers", Model.SelectedItem.SellerTierId)"  data-placeholder="Search for SellerTierId..."></select>
+	<select bc-label="Seller Tier ID" class="form-select searchable-select" asp-for="SelectedItem.SellerTierId" asp-items="@Model.GetComboBoxList("SellerTiers", Model.SelectedItem.SellerTierId)"  data-placeholder="Search for SellerTierId..."></select>
 </form-group>
 
 <div class="form-group row">

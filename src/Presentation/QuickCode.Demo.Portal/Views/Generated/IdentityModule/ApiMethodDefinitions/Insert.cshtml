@@ -2,7 +2,7 @@
 @model IdentityModule.ApiMethodDefinitionData
 <div class="modal-content portal-entity-modal" data-operation="Insert">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Api Method Definition Insert Form</h5>
+        <h5 class="modal-title" id="exampleModalLabel">API Method Definition Insert Form</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
         </button>
     </div>
@@ -24,7 +24,7 @@
 </form-group>
 
 <form-group>
-	<select bc-label="Http Method" class="form-select searchable-select" asp-for="SelectedItem.HttpMethod" asp-items="Html.GetEnumSelectList<IdentityModuleApi.HttpMethodType>()" data-placeholder="Search for HttpMethod..."></select>
+	<select bc-label="HTTP Method" class="form-select searchable-select" asp-for="SelectedItem.HttpMethod" asp-items="Html.GetEnumSelectList<IdentityModuleApi.HttpMethodType>()" data-placeholder="Search for HttpMethod..."></select>
 </form-group>
 
 <form-group>
@@ -36,7 +36,7 @@
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.UrlPath" placeholder="Enter your UrlPath" bc-label="Url Path" type="Text"  bc-required="true" bc-tooltip="Enter your UrlPath" bc-validation="true" />
+	<input asp-for="SelectedItem.UrlPath" placeholder="Enter your UrlPath" bc-label="URL Path" type="Text"  bc-required="true" bc-tooltip="Enter your UrlPath" bc-validation="true" />
 </form-group>
 
 

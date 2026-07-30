@@ -381,7 +381,7 @@ public static class PortalNavigationHelper
 
         return new PortalBreadcrumbItem
         {
-            Text = "Queries",
+            Text = "Live Reports",
             Url = moduleLinks.FirstOrDefault()?.Url,
             RelatedLinks = moduleLinks
         };

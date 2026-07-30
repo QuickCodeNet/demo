@@ -9,28 +9,28 @@
         <div class="portal-query-shell">
             <header class="portal-query-header">
                 <div class="portal-query-header__copy">
-                    <p class="portal-query-kicker">Query</p>
+                    <p class="portal-query-kicker">Live Report</p>
                     <h2 class="portal-query-title">@title</h2>
-                    <p class="portal-query-lead">Set the filters, run once, then scan the rows below.</p>
+                    <p class="portal-query-lead">Set the parameters, run the report, then scan the rows below.</p>
                 </div>
-                <div class="portal-query-endpoint" title="API endpoint used by this query">
+                <div class="portal-query-endpoint" title="API endpoint used by this report">
                     <span class="portal-query-endpoint__method">GET</span>
                     <code class="portal-query-endpoint__path">/api/identity-module/audit-logs/stats-daily-http-requests-by-day</code>
                 </div>
             </header>
 
-            <section class="portal-query-workspace" aria-label="Query parameters">
+            <section class="portal-query-workspace" aria-label="Report parameters">
                 <div class="portal-query-toolbar">
                     <div class="portal-query-actions">
                         <button type="submit" class="portal-query-run">
                             <i class="fas fa-play" aria-hidden="true"></i>
-                            <span>Run Query</span>
+                            <span>Run Report</span>
                         </button>
                     </div>
                 </div>
             </section>
 
-            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Query results">
+            <section id="list-region" class="portal-list-region portal-query-results" aria-label="Report results">
                 @await Html.PartialAsync("_StatsDailyHttpRequestsByDayTable", Model)
             </section>
         </div>

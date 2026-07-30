@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Seller Id" class="form-select searchable-select" asp-for="SelectedItem.SellerId" asp-items="@Model.GetComboBoxList("Sellers", Model.SelectedItem.SellerId)"  data-placeholder="Search for SellerId..."></select>
+	<select bc-label="Seller ID" class="form-select searchable-select" asp-for="SelectedItem.SellerId" asp-items="@Model.GetComboBoxList("Sellers", Model.SelectedItem.SellerId)"  data-placeholder="Search for SellerId..."></select>
 </form-group>
 
 <form-group>
@@ -20,7 +20,7 @@
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.FileUrl" placeholder="Enter your FileUrl" bc-label="File Url" type="url"  bc-required="true" bc-tooltip="Enter your FileUrl" bc-validation="true" />
+	<input asp-for="SelectedItem.FileUrl" placeholder="Enter your FileUrl" bc-label="File URL" type="url"  bc-required="true" bc-tooltip="Enter your FileUrl" bc-validation="true" />
 </form-group>
 
 <form-group>

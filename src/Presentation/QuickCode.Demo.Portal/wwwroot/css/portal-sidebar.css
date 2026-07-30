@@ -626,7 +626,10 @@ body.portal-sidebar-mobile-open {
 .portal-sidebar .portal-nav-collapse.portal-nav-hidden,
 .portal-sidebar .portal-nav-subitem.portal-nav-hidden,
 .portal-sidebar .collapse-item.portal-nav-hidden,
-.portal-sidebar .portal-sidebar-section-label.portal-nav-hidden {
+.portal-sidebar .portal-sidebar-section-label.portal-nav-hidden,
+.portal-sidebar .portal-nav-table-group.portal-nav-hidden,
+.portal-sidebar .portal-nav-table-trigger.portal-nav-hidden,
+.portal-sidebar .portal-nav-table-collapse.portal-nav-hidden {
     display: none !important;
 }
 

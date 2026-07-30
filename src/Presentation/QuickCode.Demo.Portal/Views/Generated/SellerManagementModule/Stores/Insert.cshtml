@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Seller Id" class="form-select searchable-select" asp-for="SelectedItem.SellerId" asp-items="@Model.GetComboBoxList("Sellers", Model.SelectedItem.SellerId)"  data-placeholder="Search for SellerId..."></select>
+	<select bc-label="Seller ID" class="form-select searchable-select" asp-for="SelectedItem.SellerId" asp-items="@Model.GetComboBoxList("Sellers", Model.SelectedItem.SellerId)"  data-placeholder="Search for SellerId..."></select>
 </form-group>
 
 <form-group>
@@ -28,7 +28,7 @@
 </form-group>
 
 <form-group>
-    <label class="col-sm-4 col-form-label">Logo Url</label>
+    <label class="col-sm-4 col-form-label">Logo URL</label>
     <span class="col-sm-8">
          <a href="@(Model.SelectedItem.LogoUrl == null || Model.SelectedItem.LogoUrl.Length == 0 ? "/images/no_image.png" : Model.SelectedItem.LogoUrl)" data-toggle="lightbox" data-type="image" >
              <img id = 'SelectedItem_LogoUrlImg' class="lazyload" src="/images/loading.svg" data-src="@(Model.SelectedItem.LogoUrl == null || Model.SelectedItem.LogoUrl.Length == 0 ? "/images/no_image.png" : Model.SelectedItem.LogoUrl)" style="height:auto;  width:auto; max-height: 250px; max-width: 350px; margin-bottom: -10px; margin-top: 0px; display: block;margin-right: auto;" bc-thumbnail="true" bc-round="true" />

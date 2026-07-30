@@ -12,11 +12,11 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="User Id" class="form-select searchable-select" asp-for="SelectedItem.UserId" asp-items="@Model.GetComboBoxList("AspNetUsers", Model.SelectedItem.UserId)"  data-placeholder="Search for UserId..."></select>
+	<select bc-label="User ID" class="form-select searchable-select" asp-for="SelectedItem.UserId" asp-items="@Model.GetComboBoxList("AspNetUsers", Model.SelectedItem.UserId)"  data-placeholder="Search for UserId..."></select>
 </form-group>
 
 <form-group>
-	<select bc-label="Role Id" class="form-select searchable-select" asp-for="SelectedItem.RoleId" asp-items="@Model.GetComboBoxList("AspNetRoles", Model.SelectedItem.RoleId)"  data-placeholder="Search for RoleId..."></select>
+	<select bc-label="Role ID" class="form-select searchable-select" asp-for="SelectedItem.RoleId" asp-items="@Model.GetComboBoxList("AspNetRoles", Model.SelectedItem.RoleId)"  data-placeholder="Search for RoleId..."></select>
 </form-group>
 
 

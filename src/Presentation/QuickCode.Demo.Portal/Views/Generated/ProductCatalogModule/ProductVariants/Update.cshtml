@@ -12,15 +12,15 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
+	<input type="text" bc-label="ID" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
 
 <form-group>
-	<select bc-label="Product Id" class="form-select searchable-select" asp-for="SelectedItem.ProductId" asp-items="@Model.GetComboBoxList("Products", Model.SelectedItem.ProductId)"  data-placeholder="Search for ProductId..."></select>
+	<select bc-label="Product ID" class="form-select searchable-select" asp-for="SelectedItem.ProductId" asp-items="@Model.GetComboBoxList("Products", Model.SelectedItem.ProductId)"  data-placeholder="Search for ProductId..."></select>
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.Sku" placeholder="Enter your Sku" bc-label="Sku" type="Text"  bc-required="true" bc-tooltip="Enter your Sku" bc-validation="true" />
+	<input asp-for="SelectedItem.Sku" placeholder="Enter your Sku" bc-label="SKU" type="Text"  bc-required="true" bc-tooltip="Enter your Sku" bc-validation="true" />
 </form-group>
 
 <form-group>

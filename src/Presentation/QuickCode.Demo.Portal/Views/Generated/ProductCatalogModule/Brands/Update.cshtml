@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<input type="text" bc-label="Id" asp-for="SelectedItem.Id" bc-static="true" />
+	<input type="text" bc-label="ID" asp-for="SelectedItem.Id" bc-static="true" />
 </form-group>
 
 <form-group>
@@ -71,7 +71,7 @@
 
 
 <form-group>
-    <label class="col-sm-4 col-form-label">Catalog Pdf</label>
+    <label class="col-sm-4 col-form-label">Catalog PDF</label>
     <span class="col-sm-8">
         @if (!string.IsNullOrEmpty(Model.SelectedItem.CatalogPdf))
         {

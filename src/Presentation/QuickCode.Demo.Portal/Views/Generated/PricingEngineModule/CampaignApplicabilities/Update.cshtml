@@ -12,7 +12,7 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formUpdate" action="Update" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Campaign Id" class="form-select searchable-select" asp-for="SelectedItem.CampaignId" asp-items="@Model.GetComboBoxList("PromotionalCampaigns", Model.SelectedItem.CampaignId)"  data-placeholder="Search for CampaignId..."></select>
+	<select bc-label="Campaign ID" class="form-select searchable-select" asp-for="SelectedItem.CampaignId" asp-items="@Model.GetComboBoxList("PromotionalCampaigns", Model.SelectedItem.CampaignId)"  data-placeholder="Search for CampaignId..."></select>
 </form-group>
 
 <form-group>
@@ -20,7 +20,7 @@
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.ScopeId" placeholder="Enter your ScopeId" bc-label="Scope Id" type="Text"  bc-required="true" bc-tooltip="Enter your ScopeId" bc-validation="true" />
+	<input asp-for="SelectedItem.ScopeId" placeholder="Enter your ScopeId" bc-label="Scope ID" type="Text"  bc-required="true" bc-tooltip="Enter your ScopeId" bc-validation="true" />
 </form-group>
 
 

@@ -12,11 +12,11 @@
             <form bc-label-width-sm="4" bc-horizontal="true" id="formInsert" action="Insert" method="post" class="needs-validation portal-entity-form" bc-validation="true">
                 @Html.AntiForgeryToken()
                 <form-group>
-	<select bc-label="Order Id" class="form-select searchable-select" asp-for="SelectedItem.OrderId" asp-items="@Model.GetComboBoxList("Orders", Model.SelectedItem.OrderId)"  data-placeholder="Search for OrderId..."></select>
+	<select bc-label="Order ID" class="form-select searchable-select" asp-for="SelectedItem.OrderId" asp-items="@Model.GetComboBoxList("Orders", Model.SelectedItem.OrderId)"  data-placeholder="Search for OrderId..."></select>
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.ProductVariantId" placeholder="Enter your ProductVariantId" bc-label="Product Variant Id" type="Text"  bc-required="true" bc-tooltip="Enter your ProductVariantId" bc-validation="true" />
+	<input asp-for="SelectedItem.ProductVariantId" placeholder="Enter your ProductVariantId" bc-label="Product Variant ID" type="Text"  bc-required="true" bc-tooltip="Enter your ProductVariantId" bc-validation="true" />
 </form-group>
 
 <form-group>
@@ -24,7 +24,7 @@
 </form-group>
 
 <form-group>
-	<input asp-for="SelectedItem.Sku" placeholder="Enter your Sku" bc-label="Sku" type="Text"  bc-required="true" bc-tooltip="Enter your Sku" bc-validation="true" />
+	<input asp-for="SelectedItem.Sku" placeholder="Enter your Sku" bc-label="SKU" type="Text"  bc-required="true" bc-tooltip="Enter your Sku" bc-validation="true" />
 </form-group>
 
 <form-group>

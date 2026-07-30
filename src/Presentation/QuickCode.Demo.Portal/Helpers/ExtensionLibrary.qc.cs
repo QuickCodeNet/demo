@@ -94,11 +94,30 @@ namespace QuickCode.Demo.Portal.Helpers
             }
         }
         
+        /// <summary>
+        /// Keep in sync with QuickCode.Common KnownAcronyms (display labels).
+        /// </summary>
+        private static readonly HashSet<string> KnownAcronyms = new(StringComparer.OrdinalIgnoreCase)
+        {
+            "ID", "PK", "FK", "UID", "UUID", "GUID",
+            "API", "URL", "URI", "URN", "HTTP", "HTTPS", "HTML", "XML", "JSON", "SQL", "CSV", "PDF",
+            "TCP", "UDP", "SSH", "SSL", "TLS", "FTP", "SMTP", "IMAP", "DNS", "CDN", "VPN", "IP",
+            "JWT", "SSO", "MFA", "OTP", "PIN", "ACL", "RBAC", "CORS", "CSRF", "XSS", "OAUTH", "OIDC", "PKCE",
+            "SMS", "GSM", "IMEI", "IMSI", "MMS", "NFC", "RFID", "GPS", "QR",
+            "DB", "UI", "UX", "IO", "OS", "CPU", "GPU", "RAM", "SKU", "VAT", "IBAN", "CVV", "ISBN",
+            "DTO", "DAO", "ORM", "CRUD", "CQRS", "AI", "ML"
+        };
+
         public static string SplitCamelCaseToString(this string source)
         {
-            const string pattern = @"[A-Z][a-z]*|[a-z]+|\d+";
+            if (string.IsNullOrEmpty(source))
+                return source;
+
+            // Keep ALL-CAPS acronyms together; map known tokens to UPPER for display.
+            const string pattern = @"[A-Z]{2,}(?=[A-Z][a-z]|[0-9]|\b)|[A-Z][a-z]*|[a-z]+|\d+";
             var matches = Regex.Matches(source, pattern);
-            return String.Join(" ", matches);
+            return string.Join(" ", matches.Cast<Match>().Select(m =>
+                KnownAcronyms.Contains(m.Value) ? m.Value.ToUpperInvariant() : m.Value));
         }
 
         public static IEnumerable<string> SplitCamelCase(this string source)
